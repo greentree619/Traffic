@@ -1,0 +1,117 @@
+﻿@model String
+
+@{
+    ViewData["Title"] = "Log View";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Log View</h2>
+
+<div class="row">
+    <div class="col-md-8">
+        <h4>Job Name: @ViewData["job_name"]</h4>
+    </div>
+    <div class="col-md-4 text-right">
+        <a asp-action="Index" class="btn btn-primary">Back to List</a>
+    </div>
+</div>
+<style>
+    .table thead tr th {
+        text-align: center;
+    }
+
+    .table tbody tr td {
+        text-align: center;
+    }
+</style>
+<div class="row">
+    <div class="col-md-12">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>
+                        No
+                    </th>
+                    <th>
+                        sub
+                    </th>
+                    <th>
+                        Date
+                    </th>
+                    <th>
+                        Time
+                    </th>
+                    <th>
+                        Next
+                    </th>
+                    <th>
+                        Search
+                    </th>
+                    <th>
+                        Keyword
+                    </th>
+                    <th>
+                        Agent
+                    </th>
+                    <th">
+                        Proxy
+                    </th>
+                    <th>
+                        IP
+                    </th>
+                    <th>
+                        Size
+                    </th>
+                    <th>
+                        Google
+                    </th>
+                    <th>
+
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (ViewData["log"] != null)
+                {
+                    @foreach (var item in (string[])ViewData["log"])
+                    {
+                        string[] rows = item.Split("\t");
+                        @if (rows.Length < 13) { continue; }
+                        <tr>
+                            <td>@rows[0]</td>@*No*@
+                            <td>@rows[1]</td>@*sub*@
+                            <td style="white-space: nowrap;">@rows[2]</td>@*Date*@
+                            <td>@rows[3]</td>@*Time*@
+                            <td>@rows[4]</td>@*Next*@
+                            <td>@rows[5]</td>@*Search*@
+                            <td>@rows[6]</td>@*Keyword*@
+                            <td>@rows[7]</td>@*Agent*@
+                            <td>@rows[8]</td>@*Proxy*@
+                            <td>@rows[9]</td>@*IP*@
+                            <td>@rows[10]</td>@*Size*@
+                            <td>@rows[12]</td>@*Google*@
+                            <td>
+                                @if ("True".CompareTo(@rows[11]) == 0)
+                                {
+                                    <img src="~/images/pass.png" asp-append-version="true" style="width:30px;" />
+                                }
+                                else
+                                {
+                                    <img src="~/images/fail.png" asp-append-version="true" style="width:30px;" />
+                                }
+                            </td>
+                        </tr>
+                    }
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div class="text-right">
+    <a asp-action="Index" class="btn btn-primary">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

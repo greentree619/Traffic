@@ -1,0 +1,150 @@
+﻿@model IEnumerable<Traffic.Models.trafficjob>
+
+@{
+    String startLabel = "";
+    String stopConfirm = "return true;";
+    String pauseLabel = "";
+    String disableCls = "btn-disabled";
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+</br>
+<p class="text-right">
+    <a asp-action="CreateFolder" class="btn btn-info">Create Folder</a> <a asp-action="Create" asp-route-id="-1" class="btn btn-info">Create Job</a>
+</p>
+<style>
+    .crop {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis
+    }
+
+    .btn-disable {
+        cursor: not-allowed;
+        pointer-events: none;
+        /*Button disabled - CSS color class*/
+        color: #c0c0c0;
+        background-color: #ffffff;
+    }
+</style>
+<table class="table">
+    <thead>
+        <tr>
+            <th style="width: 10%;text-align:center;">
+                Job Name
+            </th>
+            <th style="width: 20%;text-align:center;">
+                Target URL
+            </th>
+            <th style="width: 30%;text-align:center;">
+                Keyword
+            </th>
+            <th style="width: 10%;text-align:center;">
+                Search Engine
+            </th>
+            <th style="width: 10%;text-align:center;">
+                Count
+            </th>
+            <th style="width: 20%;text-align:center;">
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            @if (item.search_term.CompareTo("FOLDER") == 0 && item.session_count == -1)
+            {
+                //folder
+                <tr style="background-color:cadetblue;">
+                    <td>
+                        <div class="crop" style="width: 100px;">
+                            @Html.DisplayFor(modelItem => item.job_name)
+                        </div>
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.target_url)
+                    </td>
+                    <td>
+                        <div class="crop" style="width: 300px;">
+                            @*@Html.DisplayFor(modelItem => item.search_term)*@
+                        </div>
+                    </td>
+                    <td style="text-align:center;">
+                        @*@Html.DisplayFor(modelItem => item.search_engine)*@
+                    </td>
+                    <td style="text-align:center;">
+                        @*@Html.DisplayFor(modelItem => item.session_count)*@
+                    </td>
+                    <td style="text-align:center;">
+                        <div style="white-space: nowrap;">
+                            <a asp-action="Create" asp-route-id="@item.id" class="btn btn-success btn-xs">Add New Job</a>
+                            <a asp-action="RemoveFolder" asp-route-id="@item.id" class="btn btn-success btn-xs" onclick="return RemoveConfirm();">Remove Folder</a>
+                        </div>
+                    </td>
+                </tr>
+            }
+            else
+            {
+                <tr style="background-color:@Html.Raw((@item.group_id != -1 ? "honeydew" : ""));">
+                    <td>
+                        <div class="crop" style="width: 100px;">
+                            @Html.Raw((@item.group_id != -1 ? "&nbsp;&nbsp;&nbsp;" : ""))
+                            @Html.DisplayFor(modelItem => item.job_name)
+                        </div>
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.target_url)
+                    </td>
+                    <td>
+                        <div class="crop" style="width: 300px;">
+                            @Html.DisplayFor(modelItem => item.search_term)
+                        </div>
+                    </td>
+                    <td style="text-align:center;">
+                        @Html.DisplayFor(modelItem => item.search_engine)
+                    </td>
+                    <td style="text-align:center;">
+                        @Html.DisplayFor(modelItem => item.session_count)
+                    </td>
+                    <td style="text-align:center;">
+                        @{
+                            startLabel = "Stop";
+                            stopConfirm = "return StopConfirm();";
+                            disableCls = "";
+                            if (!SettingManager.IsRunning(item.job_name))
+                            {
+                                startLabel = "Start";
+                                stopConfirm = "return true;";
+                                disableCls = "btn-disable";
+                            }
+
+                            pauseLabel = "Resume";
+                            if (!SettingManager.IsPause(item.job_name))
+                            {
+                                pauseLabel = "Pause";
+                            }
+                        }
+                        <div style="white-space: nowrap;">
+                            <a asp-action="Start" asp-route-id="@item.id" class="btn btn-success btn-xs" onclick="@stopConfirm">@startLabel</a>
+                            <a asp-action="Pause" asp-route-id="@item.id" class="btn btn-success btn-xs @disableCls">@pauseLabel</a>
+                            @*<a asp-action="Edit" asp-route-id="@item.id">Edit</a>*@
+                            <a asp-action="Details" asp-route-id="@item.id" class="btn btn-success btn-xs">View</a>
+                            @*<a asp-action="Delete" asp-route-id="@item.id">Delete</a>*@
+                            <a asp-action="LogView" asp-route-id="@item.id" asp-route-date="@DateTime.Now.ToString("yyyy-MM-dd").Substring(2)" class="btn btn-success btn-xs">Log</a>
+                        </div>
+                    </td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>
+<script>
+    function StopConfirm() {
+        return confirm("Are you going to stop really?");
+    }
+
+    function RemoveConfirm() {
+        return confirm("Are you going to remove folder really?");
+    }
+</script>

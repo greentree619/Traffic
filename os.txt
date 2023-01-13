@@ -1,0 +1,50 @@
+﻿Windows NT 10.0;Win64;x64
+Windows NT 10.0;Win32;x32
+Windows NT 6.2;Win64;x64
+Windows NT 6.2;Win32;x32
+Windows NT 6.1;Win64;x64
+Windows NT 6.1;Win32;x32
+Windows NT 6.0;Win64;x64
+Windows NT 6.0;Win32;x32
+Windows NT 5.2;Win64;x64
+Windows NT 5.2;Win32;x32
+Windows NT 5.1;Win64;x64
+Windows NT 5.1;Win32;x32
+Windows NT 4.0;Win64;x64
+Windows NT 4.0;Win32;x32
+Macintosh;Intel Mac OS X 7_5_1
+Macintosh;Intel Mac OS X 7_5_2
+Macintosh;Intel Mac OS X 7_5_3
+Macintosh;Intel Mac OS X 7_5_4
+Macintosh;Intel Mac OS X 7_5_5
+Macintosh;Intel Mac OS X 7_6
+Macintosh;Intel Mac OS X 7_6_1
+Macintosh;Intel Mac OS X 8_0
+Macintosh;Intel Mac OS X 8_1
+Macintosh;Intel Mac OS X 8_5
+Macintosh;Intel Mac OS X 8_5_1
+Macintosh;Intel Mac OS X 8_6
+Macintosh;Intel Mac OS X 9_0_0
+Macintosh;Intel Mac OS X 9_0_2
+Macintosh;Intel Mac OS X 9_0_3
+Macintosh;Intel Mac OS X 9_0_4
+Macintosh;Intel Mac OS X 9_1
+Macintosh;Intel Mac OS X 9_2_0
+Macintosh;Intel Mac OS X 9_2_1
+Macintosh;Intel Mac OS X 9_2_2
+Macintosh;Intel Mac OS X 10_0_0
+Macintosh;Intel Mac OS X 10_0_1
+Macintosh;Intel Mac OS X 10_0_2
+Macintosh;Intel Mac OS X 10_0_3
+Macintosh;Intel Mac OS X 10_0_4
+Macintosh;Intel Mac OS X 10_1_0
+Macintosh;Intel Mac OS X 10_1_1
+Macintosh;Intel Mac OS X 10_1_2
+Macintosh;Intel Mac OS X 10_1_3
+Macintosh;Intel Mac OS X 10_1_4
+Macintosh;Intel Mac OS X 10_1_5
+Macintosh;Intel Mac OS X 10_13_0
+Macintosh;Intel Mac OS X 10_13_1
+Macintosh;Intel Mac OS X 10_13_2
+Macintosh;Intel Mac OS X 10_13_3
+Macintosh;Intel Mac OS X 10_13_4

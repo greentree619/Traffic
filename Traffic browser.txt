@@ -1,0 +1,1002 @@
+Amazon Silk/63.1.34
+Amazon Silk/64.3.4
+Amazon Silk/64.1.41
+Amazon Silk/65.2.3
+Amazon Silk/64.2.1
+Amazon Silk/1.0.146.3-Gen4_12000410
+Amazon Silk/62.7.1
+Android Browser/4.0
+Android Browser/3.1.2
+Android Browser/535.7
+Android Browser/537.36
+Android Webview/64.0.3282.137
+Android Webview/65.0.3325.109
+Android Webview/63.0.3239.111
+Android Webview/62.0.3202.84
+Android Webview/55.0.2883.91
+Android Webview/56.0.2924.87
+Android Webview/61.0.3163.98
+Android Webview/60.0.3112.116
+Android Webview/58.0.3029.83
+Android Webview/64.0.3282.123
+Android Webview/30.0.0.0
+Android Webview/66.0.3359.126
+Android Webview/59.0.3071.125
+Android Webview/33.0.0.0
+Android Webview/50.0.2661.86
+Android Webview/46.0.2490.76
+Android Webview/43.0.2357.121
+Android Webview/57.0.2987.132
+Android Webview/37.0.0.0
+Android Webview/60.0.3112.107
+Android Webview/49.0.2623.105
+Android Webview/51.0.2704.81
+Android Webview/44.0.2403.119
+Android Webview/48.0.2564.106
+Android Webview/66.0.3359.106
+Android Webview/39.0.0.0
+Android Webview/55.0.2883.77
+Android Webview/45.0.2454.95
+Android Webview/63.0.3239.107
+Android Webview/52.0.2743.98
+Android Webview/62.0.3202.73
+Android Webview/34.0.0.0
+Android Webview/42.0.2311.138
+Android Webview/47.0.2526.100
+Android Webview/49.0.2623.108
+Android Webview/49.0.2623.91
+Android Webview/51.0.2704.91
+Android Webview/53.0.2785.124
+Android Webview/54.0.2840.68
+Android Webview/58.0.3029.125
+Android Webview/63.0.3239.83
+BlackBerry/10.3.2.2876
+BlackBerry/10.3.3.2163
+BlackBerry/10.2.1.2228
+BlackBerry/10.3.2.2639
+BlackBerry/10.3.3.2205
+BlackBerry/7.1.0.346
+BlackBerry/7.2.1.0
+Chrome/65.0.3325.181
+Chrome/64.0.3282.186
+Chrome/63.0.3239.132
+Chrome/57.0.2987.133
+Chrome/64.0.3282.167
+Chrome/64.0.3282.140
+Chrome/65.0.3325.162
+Chrome/66.0.3359.117
+Chrome/64.0.3282.119
+Chrome/65.0.3325.146
+Chrome/65.0.3325.109
+Chrome/64.0.3282.137
+Chrome/63.0.3239.84
+Chrome/63.0.3239.108
+Chrome/62.0.3202.94
+Chrome/61.0.3163.100
+Chrome/64.0.3282.112
+Chrome/65.0.3325.152
+Chrome/56.0.2924.87
+Chrome/64.0.3282.168
+Chrome/49.0.2623.112
+Chrome/62.0.3202.75
+Chrome/63.0.3239.111
+Chrome/66.0.3359.139
+Chrome/62.0.3202.62
+Chrome/59.0.3071.115
+Chrome/63.0.3239.140
+Chrome/60.0.3112.113
+Chrome/66.0.3359.126
+Chrome/52.0.2743.116
+Chrome/58.0.3029.110
+Chrome/62.0.3202.89
+Chrome/55.0.2883.87
+Chrome/61.0.3163.79
+Chrome/64.0.3282.190
+Chrome/60.0.3112.90
+Chrome/58.0.3029.81
+Chrome/60.0.3112.78
+Chrome/40.0.2214.111
+Chrome/60.0.3112.101
+Chrome/41.0.2228.0
+Chrome/66.0.3359.106
+Chrome/65.0.3325.209
+Chrome/64.0.3282.123
+Chrome/59.0.3071.86
+Chrome/47.0.2526.111
+Chrome/66.0.3355.0
+Chrome/56.0.2924.76
+Chrome/64.0.3282.144
+Chrome/57.0.2987.110
+Chrome/62.0.3202.84
+Chrome/59.0.3071.109
+Chrome/58.0.3029.96
+Chrome/61.0.3163.91
+Chrome/54.0.2840.87
+Chrome/54.0.2840.99
+Chrome/61.0.3163.98
+Chrome/53.0.2785.116
+Chrome/50.0.2661.102
+Chrome/39.0.2171.95
+Chrome/57.0.2987.98
+Chrome/55.0.2883.75
+Chrome/65.0.3325.184
+Chrome/51.0.2704.84
+Chrome/59.0.3071.104
+Chrome/58.0.3029.83
+Chrome/66.0.3359.122
+Chrome/59.0.3071.125
+Chrome/66.0.3347.0
+Chrome/63.0.3239.73
+Chrome/54.0.2840.71
+Chrome/60.0.3112.116
+Chrome/55.0.2883.91
+Chrome/66.0.3359.81
+Chrome/55.0.2883.95
+Chrome/36.0.1985.125
+Chrome/53.0.2785.143
+Chrome/67.0.3372.0
+Chrome/52.0.2743.82
+Chrome/54.0.2840.59
+Chrome/64.0.3282.189
+Chrome/65.0.3325.106
+Chrome/45.0.2454.101
+Chrome/50.0.2661.89
+Chrome/65.0.3325.88
+Chrome/38.0.2125.104
+Chrome/65.0.3325.125
+Chrome/65.0.3325.73
+Chrome/48.0.2564.109
+Chrome/50.0.2661.94
+Chrome/51.0.2704.106
+Chrome/66.0.3359.45
+Chrome/66.0.3359.66
+Chrome/65.0.3325.51
+Chrome/49.0.2623.87
+Chrome/47.0.2526.106
+Chrome/48.0.2564.116
+Chrome/66.0.3359.33
+Chrome/46.0.2490.76
+Chrome/54.0.2840.98
+Chrome/58.0.2988.0
+Chrome/28.0.1500.94
+Chrome/43.0.2357.130
+Chrome/48.0.2564.97
+Chrome/64.0.3282.169
+Chrome/65.0.3325.124
+Chrome/41.0.2272.118
+Chrome/51.0.2704.103
+Chrome/51.0.2704.63
+Chrome/53.0.2785.146
+Chrome/62.0.3202.97
+Chrome/52.0.2743.98
+Chrome/62.0.3202.70
+Chrome/64.0.3282.170
+Chrome/35.0.1916.114
+Chrome/38.0.2125.102
+Chrome/40.0.2214.85
+Chrome/44.0.2403.157
+Chrome/53.0.2785.124
+Chrome/60.0.3112.107
+Chrome/63.0.3239.116
+Chrome/64.0.3282.121
+Chrome/1.0.154.53
+Chrome/36.0.1944.0
+Chrome/41.0.2272.101
+Chrome/43.0.2357.93
+Chrome/46.0.2490.86
+Chrome/51.0.2704.79
+Chrome/51.0.2704.81
+Chrome/57.0.2987.132
+Chrome/59.0.3071.102
+Chrome/61.0.3163.73
+Chrome/65.0.3325.31
+Chrome/67.0.3379.0
+Chrome/40.0.2214.109
+Chrome/43.0.2357.124
+Chrome/49.0.2623.110
+Chrome/50.0.2661.75
+Chrome/53.0.2785.0
+Chrome/54.0.2840.85
+Chrome/65.0.3325.112
+Chrome/67.0.3362.0
+Chrome/67.0.3375.0
+Chrome/68.0.3397.0
+Chrome/29.0.1547.72
+Chrome/48.0.2564.103
+Chrome/50.0.2661.87
+Chrome/53.0.2785.101
+Chrome/59.0.3071.90
+Chrome/61.0.3163.123
+Chrome/64.0.3282.143
+Chrome/66.0.3330.0
+Chrome/66.0.3351.0
+Chrome/66.0.3359.30
+Chrome/67.0.3364.0
+Chrome/67.0.3366.0
+Chrome/67.0.3371.0
+Chrome/67.0.3382.0
+Chrome/43.0.2357.134
+Chrome/46.0.2490.80
+Chrome/49.0.2623.221
+Chrome/49.0.2623.75
+Chrome/60.0.3112.114
+Chrome/61.0.3116.0
+Chrome/64.0.3264.0
+Chrome/64.0.3278.0
+Chrome/66.0.3342.0
+Chrome/66.0.3346.8
+Chrome/67.0.3369.0
+Chrome/67.0.3377.0
+Chrome/67.0.3391.0
+Chrome/23.0.1271.97
+Chrome/30.0.1599.38
+Chrome/38.0.2125.122
+Chrome/44.0.2403.125
+Chrome/45.0.2454.85
+Chrome/45.0.2454.94
+Chrome/47.0.2526.107
+Chrome/47.0.2526.80
+Chrome/51.0.2683.0
+Chrome/51.0.2684.0
+Chrome/58.0.3014.0
+Chrome/60.0.0.1508
+Chrome/60.0.3112.50
+Chrome/60.0.3112.89
+Chrome/62.0.3198.0
+Chrome/63.0.3239.150
+Chrome/63.0.3239.83
+Chrome/63.0.3300.0
+Chrome/64.0.3282.203
+Chrome/65.0.3299.5
+Chrome/65.0.3325.183
+Chrome/66.0.3340.0
+Chrome/66.0.3343.3
+Chrome/66.0.3348.0
+Chrome/67.0.3368.0
+Chrome/67.0.3390.0
+Chrome/67.0.3394.0
+Chrome/13.0.837.0
+Chrome/13.0.864.0
+Chrome/14.0.809.0
+Chrome/14.0.828.0
+Chrome/14.0.896.0
+Chrome/15.0.825.0
+Chrome/15.0.849.0
+Chrome/15.0.854.0
+Chrome/38.0.2125.101
+Chrome/38.0.2125.111
+Chrome/39.0.2171.93
+Chrome/40.0.2214.115
+Chrome/42.0.2311.90
+Chrome/43.0.2357.65
+Chrome/44.0.2403.107
+Chrome/45.0.2454.93
+Chrome/47.0.2526.73
+Chrome/47.0.2526.83
+Chrome/48.0.2564.82
+Chrome/49.0.2623.91
+Chrome/53.0.2785.104
+Chrome/53.0.2785.8
+Chrome/53.0.2785.89
+Chrome/55.0.2883.79
+Chrome/56.0.2924.75
+Chrome/56.0.2924.79
+Chrome/59.0.3071.84
+Chrome/61.0.3163.120
+Chrome/61.0.3163.140
+Chrome/61.0.3163.81
+Chrome/64.0.3282.101
+Chrome/64.0.3282.134
+Chrome/65.0.3298.3
+Chrome/65.0.3325.107
+Chrome/65.0.3325.167
+Chrome/65.0.3325.65
+Chrome/66.0.3344.0
+Chrome/66.0.3346.0
+Chrome/66.0.3349.0
+Chrome/66.0.3354.0
+Chrome/66.0.3358.0
+Chrome/67.0.3378.0
+Chrome/67.0.3381.1
+Chrome/67.0.3387.0
+Chrome/67.0.3389.0
+Chrome/67.0.3396.18
+Chrome/68.0.3404.0
+Chrome/68.0.3405.0
+Chrome/13.0.812.0
+Chrome/13.0.821.0
+Chrome/13.0.829.0
+Chrome/13.0.831.0
+Chrome/13.0.833.0
+Chrome/13.0.847.0
+Chrome/13.0.863.0
+Chrome/13.0.871.0
+Chrome/13.0.873.0
+Chrome/13.0.879.0
+Chrome/14.0.823.0
+Chrome/14.0.826.0
+Chrome/14.0.838.0
+Chrome/14.0.845.0
+Chrome/14.0.854.0
+Chrome/14.0.858.0
+Chrome/14.0.893.0
+Chrome/14.0.895.0
+Chrome/14.0.897.0
+Chrome/15.0.803.0
+Chrome/15.0.813.0
+Chrome/15.0.816.0
+Chrome/15.0.842.0
+Chrome/15.0.866.0
+Chrome/15.0.874.121
+Chrome/15.0.884.0
+Chrome/15.0.891.0
+Chrome/18.0.1025.166
+Chrome/21.0.1180.82
+Chrome/21.0.1180.90
+Chrome/29.0.1547.76
+Chrome/30.0.1599.101
+Chrome/31.0.1650.59
+Chrome/33.0.1750.112
+Chrome/33.0.1750.170
+Chrome/34.0.1847.131
+Chrome/36.0.1985.135
+Chrome/37.0.2062.120
+Chrome/37.0.2062.124
+Chrome/39.0.2171.99
+Chrome/40.0.2214.94
+Chrome/41.0.2272.76
+Chrome/43.0.2357.132
+Chrome/44.0.2403.128
+Chrome/44.0.2403.130
+Chrome/44.0.2403.155
+Chrome/46.0.2490.71
+Chrome/48.0.2564.95
+Chrome/49.0.2623.105
+Chrome/49.0.2623.108
+Chrome/50.0.2661.77
+Chrome/51.0.2704.104
+Chrome/53.0.2785.21
+Chrome/54.0.2840.68
+Chrome/54.0.2840.90
+Chrome/56.0.2924.118
+Chrome/57.0.0.12335
+Chrome/57.0.2987.100
+Chrome/58.0.3025.0
+Chrome/58.0.3029.113
+Chrome/58.0.3029.140
+Chrome/59.0.3043.0
+Chrome/59.0.3071.134
+Chrome/64.0.3253.3
+Chrome/64.0.3282.122
+Chrome/64.0.3350.0
+Chrome/65.0.3325.144
+Chrome/65.0.3325.148
+Chrome/65.0.3325.74
+Chrome/66.0.3334.0
+Chrome/66.0.3346.9
+Chrome/66.0.3350.0
+Chrome/66.0.3352.0
+Chrome/66.0.3357.0
+Chrome/66.0.3359.0
+Chrome/66.0.3359.46
+Chrome/66.0.3359.67
+Chrome/66.0.3359.82
+Chrome/67.0.3365.0
+Chrome/67.0.3370.0
+Chrome/67.0.3383.0
+Chrome/67.0.3386.0
+Chrome/67.0.3386.1
+Chrome/67.0.3388.0
+Chrome/67.0.3393.0
+Chrome/67.0.3393.4
+Chrome/67.0.3395.0
+Chrome/67.0.3396.10
+Chrome/68.0.3399.0
+Chrome/68.0.3406.0
+Chrome/13.0.800.0
+Chrome/13.0.801.0
+Chrome/13.0.803.0
+Chrome/13.0.808.0
+Chrome/13.0.810.0
+Chrome/13.0.811.0
+Chrome/13.0.817.0
+Chrome/13.0.823.0
+Chrome/13.0.828.0
+Chrome/13.0.832.0
+Chrome/13.0.835.0
+Chrome/13.0.836.0
+Chrome/13.0.838.0
+Chrome/13.0.848.0
+Chrome/13.0.849.0
+Chrome/13.0.852.0
+Chrome/13.0.854.0
+Chrome/13.0.856.0
+Chrome/13.0.857.0
+Chrome/13.0.858.0
+Chrome/13.0.859.0
+Chrome/13.0.860.0
+Chrome/13.0.862.0
+Chrome/13.0.866.0
+Chrome/13.0.869.0
+Chrome/13.0.872.0
+Chrome/13.0.875.0
+Chrome/13.0.878.0
+Chrome/13.0.881.0
+Chrome/13.0.883.0
+Chrome/13.0.885.0
+Chrome/13.0.887.0
+Chrome/13.0.888.0
+Chrome/13.0.890.0
+Chrome/13.0.891.0
+Chrome/13.0.892.0
+Chrome/13.0.893.0
+Chrome/14.0.802.0
+Chrome/14.0.804.0
+Chrome/14.0.808.0
+Chrome/14.0.810.0
+Chrome/14.0.817.0
+Chrome/14.0.821.0
+Chrome/14.0.829.0
+Chrome/14.0.830.0
+Chrome/14.0.832.0
+Chrome/14.0.846.0
+Chrome/14.0.850.0
+Chrome/14.0.852.0
+Chrome/14.0.859.0
+Chrome/14.0.860.0
+Chrome/14.0.862.0
+Chrome/14.0.870.0
+Chrome/14.0.871.0
+Chrome/14.0.874.0
+Chrome/14.0.877.0
+Chrome/14.0.880.0
+Chrome/14.0.881.0
+Chrome/14.0.882.0
+Chrome/14.0.883.0
+Chrome/14.0.887.0
+Chrome/14.0.892.0
+Chrome/14.0.899.0
+Chrome/15.0.802.0
+Chrome/15.0.804.0
+Chrome/15.0.805.0
+Chrome/15.0.806.0
+Chrome/15.0.810.0
+Chrome/15.0.811.0
+Chrome/15.0.812.0
+Chrome/15.0.818.0
+Chrome/15.0.819.0
+Chrome/15.0.827.0
+Chrome/15.0.828.0
+Chrome/15.0.829.0
+Chrome/15.0.832.0
+Chrome/15.0.833.0
+Chrome/15.0.834.0
+Chrome/15.0.835.0
+Chrome/15.0.836.0
+Chrome/15.0.837.0
+Chrome/15.0.839.0
+Chrome/15.0.840.0
+Chrome/15.0.843.0
+Chrome/15.0.844.0
+Chrome/15.0.847.0
+Chrome/15.0.848.0
+Chrome/15.0.852.0
+Chrome/15.0.858.0
+Chrome/15.0.861.0
+Chrome/15.0.864.0
+Chrome/15.0.870.0
+Chrome/15.0.873.0
+Chrome/15.0.876.0
+Chrome/15.0.878.0
+Chrome/15.0.885.0
+Chrome/15.0.886.0
+Chrome/15.0.889.0
+Chrome/15.0.892.0
+Chrome/15.0.893.0
+Chrome/15.0.896.0
+Chrome/17.0.942.0
+Chrome/17.0.963.33
+Chrome/18.0.1025.308
+Chrome/20.0.1132.57
+Chrome/22.0.1229.94
+Chrome/23.0.1271.64
+Chrome/24.0.1312.57
+Chrome/24.0.1312.71
+Chrome/27.0.1453.110
+Chrome/27.0.1453.116
+Chrome/27.0.1453.94
+Chrome/28.0.1500.44
+Chrome/28.0.1500.71
+Chrome/29.0.1530.2
+Chrome/29.0.1547.11
+Chrome/30.0.1599.103
+Chrome/30.0.1599.114
+Chrome/30.0.1599.65
+Chrome/31.0.1650.57
+Chrome/31.0.1650.63
+Chrome/32.0.1664.3
+Chrome/33.0.1750.154
+Chrome/34.0.1847.114
+Chrome/34.0.1847.118
+Chrome/34.0.1847.132
+Chrome/34.0.1847.137
+Chrome/34.0.1847.76
+Chrome/35.0.1916.141
+Chrome/35.0.1916.153
+Chrome/36.0.1985.534
+Chrome/38.0.2125.509
+Chrome/39.0.2171.50
+Chrome/39.0.2171.59
+Chrome/4.0.211.4
+Chrome/40.0.2214.89
+Chrome/40.0.2214.91
+Chrome/41.0.2272.118Safari
+Chrome/41.0.2272.87
+Chrome/41.0.2272.89
+Chrome/42.0.2311.111
+Chrome/42.0.2311.153
+Chrome/43.0.2323.2
+Chrome/44.0.2403.133
+Chrome/44.0.2403.89
+Chrome/46.0.2461.0
+Chrome/46.0.2480.0
+Chrome/47.0.2526.108
+Chrome/47.0.2526.69
+Chrome/48.0.2564.10
+Chrome/48.0.2564.269
+Chrome/5.0.375.999
+Chrome/50.0.2631.0
+Chrome/50.0.2632.0
+Chrome/51.0.2681.0
+Chrome/52.0.2743.84
+Chrome/52.0.2750.0
+Chrome/53.0.2785.113
+Chrome/53.0.2785.134
+Chrome/53.0.2785.154
+Chrome/54.9.2840.71
+Chrome/55.0.0.12137
+Chrome/56.0.1750.154
+Chrome/56.0.2924.101
+Chrome/56.0.2924.110
+Chrome/56.0.2924.28
+Chrome/56.15.2924.87
+Chrome/56.18.2924.87
+Chrome/57.0.2966.0
+Chrome/57.0.2979.0
+Chrome/57.0.2987.146
+Chrome/58.0.2991.0
+Chrome/58.0.2993.0
+Chrome/58.0.3012.0
+Chrome/58.0.3021.0
+Chrome/58.0.3029.141
+Chrome/58.0.3029.145
+Chrome/59.0.3071.113
+Chrome/59.0.3071.36
+Chrome/60.0.3072.0
+Chrome/60.0.3090.0
+Chrome/60.0.3112.112
+Chrome/60.0.3112.72
+Chrome/60.0.3150.1
+Chrome/61.0.3153.0
+Chrome/61.0.3163.102
+Chrome/61.0.3163.128
+Chrome/61.0.3163.39
+Chrome/62.0.3085.55
+Chrome/62.0.3177.0
+Chrome/62.0.3180.0
+Chrome/62.0.3202.101
+Chrome/62.0.3202.45
+Chrome/62.0.3202.60
+Chrome/62.0.3202.82
+Chrome/62.0.3202.9
+Chrome/62.0.3250.0
+Chrome/63.0.3213.3
+Chrome/63.0.3226.0
+Chrome/63.0.3239.107
+Chrome/63.0.3239.9
+Chrome/63.1.3239.108
+Chrome/64_Chrome
+Chrome/64.0.3274.0
+Chrome/64.0.3282.113
+Chrome/64.0.3282.116
+Chrome/64.0.3282.151
+Chrome/64.0.3282.24
+Chrome/64.0.3282.85
+Chrome/64.0.3282.87
+Chrome/65.0.3202.8
+Chrome/65.0.3294.5
+Chrome/65.0.3317.0
+Chrome/65.0.3322.3
+Chrome/65.0.3322.4
+Chrome/65.0.3325.170
+Chrome/65.0.3325.18
+Chrome/65.0.3325.38
+Chrome/65.0.3325.53
+Chrome/65.0.3325.85
+Chrome/65.0.3400.0
+Chrome/66.0.3331.2
+Chrome/66.0.3335.0
+Chrome/66.0.3335.5
+Chrome/66.0.3336.5
+Chrome/66.0.3339.0
+Chrome/66.0.3341.0
+Chrome/66.0.3343.0
+Chrome/66.0.3345.0
+Chrome/66.0.3347.2
+Chrome/66.0.3356.0
+Chrome/66.0.3357.1
+Chrome/66.0.3359.22
+Chrome/66.0.3359.27
+Chrome/66.0.3359.48
+Chrome/66.0.3359.79
+Chrome/67.0.3361.0
+Chrome/67.0.3364.1
+Chrome/67.0.3365.2
+Chrome/67.0.3367.0
+Chrome/67.0.3368.1
+Chrome/67.0.3373.0
+Chrome/67.0.3374.0
+Chrome/67.0.3377.1
+Chrome/67.0.3381.0
+Chrome/67.0.3384.0
+Chrome/67.0.3385.0
+Chrome/67.0.3393.2
+Chrome/67.0.3396.0
+Chrome/67.0.3396.11
+Chrome/68.0.3398.0
+Chrome/68.0.3400.0
+Chrome/68.0.3401.0
+Chrome/68.0.3402.0
+Chrome/68.0.3409.0
+Chrome/68.0.3410.0
+Chromeless 1.3.0/(not set)
+Coc Coc/68.4.154
+Coc Coc/68.4.126
+Coc Coc/56.3.120
+Coc Coc/60.4.136
+DemandbaseBot/(not set)
+Edge/16.16299
+Edge/15.15063
+Edge/14.14393
+Edge/13.10586
+Edge/12.10240
+Edge/15.15254
+Edge/17.17133
+Edge/17.17079
+Edge/17.17650
+Edge/12.0
+Edge/17.17607
+Edge/17.17620
+Edge/17.17632
+Edge/17.17649
+Edge/16.17025
+Edge/17.17083
+Edge/17.17088
+Edge/17.17093
+Edge/17.17101
+Edge/17.17106
+Edge/17.17107
+Edge/17.17110
+Edge/17.17112
+Edge/17.17120
+Edge/17.17123
+Edge/17.17125
+Edge/17.17127
+Edge/17.17131
+Edge/17.17132
+Edge/17.17134
+Edge/17.17604
+Edge/17.17613
+Edge/17.17639
+Edge/17.17643
+Edge/17.17645
+Firefox/58.0
+Firefox/59.0
+Firefox/52.0
+Firefox/57.0
+Firefox/45.0
+Firefox/60.0
+Firefox/56.0
+Firefox/38.0
+Firefox/54.0
+Firefox/51.0
+Firefox/46.0
+Firefox/47.0
+Firefox/48.0
+Firefox/50.0
+Firefox/53.0
+Firefox/55.0
+Firefox/49.0
+Firefox/43.0
+Firefox/3.8
+Firefox/39.0
+Firefox/31.0
+Firefox/42.0
+Firefox/5.0
+Firefox/25.0
+Firefox/7.0
+Firefox/6.0.1
+Firefox/40.1
+Firefox/44.0
+Firefox/24.0
+Firefox/3.6.13
+Firefox/6.0
+Firefox/7.0.1
+Firefox/29.0
+Firefox/41.0
+Firefox/30.0
+Firefox/34.0
+Firefox/40.0
+Firefox/5.0.1
+Firefox/56.0.4
+Firefox/32.0
+Firefox/33.0
+Firefox/35.0
+Firefox/3.6.7
+Firefox/28.0
+Firefox/37.0
+Firefox/10.0
+Firefox/26.0
+Firefox/3.6.10
+Firefox/3.6.9
+Firefox/36.0
+Firefox/52.9
+Firefox/61.0
+Firefox/17.0
+Firefox/21.0
+Firefox/22.0
+Firefox/23.0
+Firefox/3.6.16
+Firefox/3.6.17
+Firefox/3.6.3
+Firefox/3.6.4
+Firefox/52.6.0
+Firefox/55
+Firefox/12.0
+Firefox/14.0.1
+Firefox/16.0
+Firefox/19.0
+Firefox/2.0.0.14
+Firefox/27.0
+Firefox/3.0.5
+Firefox/3.6.12
+Firefox/3.6.14
+Firefox/3.6.18
+Firefox/3.6.19
+Firefox/3.6.2
+Firefox/3.6.20
+Firefox/3.6.5
+Firefox/3.6.6
+Firefox/38.9
+Firefox/52.0.0
+Firefox/8.0
+Internet Explorer/11.0
+Internet Explorer/8.0
+Internet Explorer/9.0
+Internet Explorer/10.0
+Internet Explorer/7.0
+Internet Explorer/6.0
+Iron/2.0.0
+Iron/2.1.1
+Iron/2.2.0
+Iron/2.3.1
+Iron/29.0.1600.1
+Maxthon/5.2.1.1000
+Maxthon/4.4.8.1000
+Maxthon/4.4.8.2000
+Mozilla/1.9.2.17
+Mozilla/52.0
+Mozilla Compatible Agent/5.0
+MRCHROME/(not set)
+Nintendo Browser/4.3.2.11274.US
+Nokia Browser/8.5.0
+Opera/50.0.2762.67
+Opera/51.0.2830.55
+Opera/52.0.2871.64
+Opera/52.0.2871.40
+Opera/51.0.2830.40
+Opera/29.0.1795.47
+Opera/51.0.2830.34
+Opera/11.00
+Opera/44.1.2246.123029
+Opera/10.00
+Opera/12.16
+Opera/50.0.2762.58
+Opera/51.0.2830.26
+Opera/12.00
+Opera/36.0.2130.80
+Opera/45.0.2246.125120
+Opera/45.1.2246.125351
+Opera/52.0.2871.30
+Opera/52.0.2871.97
+Opera/41.0.0.235318212
+Opera/46.0.2597.57
+Opera/49.0.2725.64
+Opera/50.0.2762.45
+Opera/52.0.2871.37
+Opera/53.0.2880.0
+Opera/54.0.2920.0
+Opera/11.10
+Opera/12.15
+Opera/12.17
+Opera/12.18
+Opera/25.0.1614.71
+Opera/30.0.1835.125
+Opera/31.0.2254.122029
+Opera/34.0.2044.98679
+Opera/37.0.2178.41
+Opera/37.0.2192.110129
+Opera/37.0.2192.110486
+Opera/37.0.2192.112031
+Opera/38.0.2220.29
+Opera/42.0.2393.137
+Opera/42.7.2246.120770
+Opera/43.0.2246.121183
+Opera/43.0.2442.1144
+Opera/47.0.2631.80
+Opera/48.0.2685.32
+Opera/49.0.2725.47
+Opera/51.0.2830.23
+Opera/52.0.2857.0
+Opera/52.0.2864.0
+Opera/52.0.2871.0
+Opera/52.0.2871.55
+Opera/52.0.2871.99
+Opera/53.0.2893.0
+Opera/9.80
+Opera Mini/32.0.2254
+Opera Mini/7.6.40234
+Opera Mini/30.0.2254
+Opera Mini/33.0.2254
+Opera Mini/13.0.2036
+Opera Mini/20.0.2254
+Opera Mini/24.0.2254
+Opera Mini/7.7.18
+Opera Mini/8.0.35626
+Opera Mini/11.0.1912
+Opera Mini/14.0.2065
+Opera Mini/15.0.2125
+Opera Mini/16.0.2168
+Opera Mini/17.0.2211
+Opera Mini/19.0.2254
+Opera Mini/22.0.2254
+Opera Mini/26.0.2254
+Opera Mini/29.0.2254
+Opera Mini/31.0.2254
+Opera Mini/4.2.23449
+Opera Mini/4.4.33576
+Opera Mini/4.4.39014
+Opera Mini/6.5.27431
+Opera Mini/7.5.33361
+Opera Mini/7.5.33391
+Opera Mini/7.5.33942
+Opera Mini/7.5.35199
+Opera Mini/7.5.35721
+Opera Mini/7.6.40077
+Opera Mini/8.0.40326
+Puffin/7.0.6.18027AT,gzip(gfe)
+Puffin/5.2.2IP,gzip(gfe)
+Puffin/7.0.6.18027AP,gzip(gfe)
+Puffin/7.1.2.18064AP,gzip(gfe)
+Safari/11.0
+Safari/11.0.3
+Safari/11.1
+Safari/10.0
+Safari/11.0.2
+Safari/11.0.1
+Safari/10.1.2
+Safari/604.1
+Safari/9.0
+Safari/9.1.2
+Safari/10.1.1
+Safari/9.1.3
+Safari/10.0.3
+Safari/10.1
+Safari/602.1
+Safari/531.2
+Safari/9.0.3
+Safari/10.0.1
+Safari/9.1.1
+Safari/10.0.2
+Safari/7.0
+Safari/8.0
+Safari/604.5.6
+Safari/9.1
+Safari/534.34
+Safari/537
+Safari/600.1.4
+Safari/6.0
+Safari/4.0
+Safari/537.36
+Safari/601.1
+Safari/9.0.2
+Safari/11.2
+Safari/8.0.7
+Safari/3.0
+Safari/5.0
+Safari/5.1.9
+Safari/6.2.8
+Safari/9.0.1
+Safari/11.1.1
+Safari/5.1
+Safari/8.0.8
+Safari/5.1.7
+Safari/8.0.5
+Safari/2.0
+Safari/603.3.8
+Safari/605.1.15
+Safari/9537.53
+Safari/11.2.5
+Safari/6.1.6
+Safari/601.1.46
+Safari/604.1.38
+Safari/604.3.5
+Safari/7.0.2
+Safari/7.0.3
+Safari/8.0.3
+Safari/11.2.6
+Safari/11.3
+Safari/3.0.4
+Safari/4.1.3
+Safari/5.0.6
+Safari/528.16
+Safari/6.0.2
+Safari/6.0.5
+Safari/6.1.5
+Safari/6.2.6
+Safari/6.2.7
+Safari/604.4.7
+Safari/7.0.5
+Safari/7.0.6
+Safari/7.1.8
+Safari/8.0.2
+Safari/8.0.6
+Safari (in-app)/(not set)
+Safari (in-app)/3.2
+Samsung Internet/6.4
+Samsung Internet/6.2
+Samsung Internet/5.2
+Samsung Internet/7.0
+Samsung Internet/5.4
+Samsung Internet/3.3
+Samsung Internet/4.0
+Samsung Internet/2.1
+Samsung Internet/3.5
+Samsung Internet/5.0
+Samsung Internet/1.1
+Samsung Internet/2.0
+Samsung Internet/4.2
+Samsung Internet/CrossApp
+Samsung Internet/6.0
+SeaMonkey/2.40
+SeaMonkey/2.46
+SeaMonkey/2.49.1
+SeaMonkey/2.49.2
+UC Browser/12.0.0.1088
+UC Browser/12.2.1.1108
+UC Browser/12.2.5.1102
+UC Browser/11.4.8.1012
+UC Browser/11.1.1.1091
+UC Browser/11.2.0.915
+UC Browser/12.2.0.1089
+UC Browser/10.10.5.809
+UC Browser/10.7.2.688
+UC Browser/11.1.0.1041
+UC Browser/11.3.0.950
+UC Browser/11.5.0.1015
+UC Browser/11.9.3.1064
+UC Browser/9.6.0.514
+UCWEB/2.0
+X-MS-Developer/(not set)
+YaBrowser/18.1.1.839
+YaBrowser/17.11.1.988
+YaBrowser/18.2.0.284
+YaBrowser/15.10.2454.3845.00
+YaBrowser/15.10.2454.3865
+YaBrowser/17.11.0.2191
+YaBrowser/17.11.1.989
+YaBrowser/18.1.1.645.00
+YaBrowser/18.1.1.835
+YaBrowser/18.1.1.840
+YaBrowser/18.2.1.174
+Zendesk for iPhone Mozilla/5.0

@@ -1,0 +1,137 @@
+﻿using Microsoft.AspNetCore.Html;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Razor;
+using Microsoft.AspNetCore.Mvc.Razor.Internal;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.Mvc.TagHelpers;
+using Microsoft.AspNetCore.Mvc.ViewFeatures;
+using Microsoft.AspNetCore.Razor.Runtime.TagHelpers;
+using Microsoft.AspNetCore.Razor.TagHelpers;
+using System;
+using System.Collections.Generic;
+using System.Linq.Expressions;
+using System.Text.Encodings.Web;
+using System.Threading.Tasks;
+using Traffic.Models.AccountViewModels;
+
+namespace AspNetCore
+{
+  public class _Views_Account_EditUser_cshtml : RazorPage<RegisterViewModel>
+  {
+    private static readonly TagHelperAttribute __tagHelperAttribute_0 = new TagHelperAttribute("class", (object) new HtmlString("form-control"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_1 = new TagHelperAttribute("type", (object) "hidden", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_2 = new TagHelperAttribute("class", (object) new HtmlString("text-danger"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_3 = new TagHelperAttribute("readonly", (object) new HtmlString("true"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_4 = new TagHelperAttribute("type", (object) "checkbox", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_5 = new TagHelperAttribute("method", (object) "post", HtmlAttributeValueStyle.DoubleQuotes);
+    private string __tagHelperStringValueBuffer;
+    private TagHelperExecutionContext __tagHelperExecutionContext;
+    private TagHelperRunner __tagHelperRunner = new TagHelperRunner();
+    private TagHelperScopeManager __backed__tagHelperScopeManager;
+    private FormTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper;
+    private RenderAtEndOfFormTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper;
+    private InputTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper;
+    private ValidationSummaryTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_ValidationSummaryTagHelper;
+    private LabelTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_LabelTagHelper;
+    private ValidationMessageTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper;
+    private static readonly Expression<Func<RegisterViewModel, string>> __h0 = (Expression<Func<RegisterViewModel, string>>) (__model => __model.Id);
+    private static readonly Expression<Func<RegisterViewModel, string>> __h1 = (Expression<Func<RegisterViewModel, string>>) (__model => __model.Email);
+    private static readonly Expression<Func<RegisterViewModel, string>> __h2 = (Expression<Func<RegisterViewModel, string>>) (__model => __model.Email);
+    private static readonly Expression<Func<RegisterViewModel, string>> __h3 = (Expression<Func<RegisterViewModel, string>>) (__model => __model.Email);
+    private static readonly Expression<Func<RegisterViewModel, string>> __h4 = (Expression<Func<RegisterViewModel, string>>) (__model => __model.Password);
+    private static readonly Expression<Func<RegisterViewModel, string>> __h5 = (Expression<Func<RegisterViewModel, string>>) (__model => __model.ConfirmPassword);
+    private static readonly Expression<Func<RegisterViewModel, int>> __h6 = (Expression<Func<RegisterViewModel, int>>) (__model => __model.MaxJourneyCount);
+    private static readonly Expression<Func<RegisterViewModel, int>> __h7 = (Expression<Func<RegisterViewModel, int>>) (__model => __model.MaxJourneyCount);
+    private static readonly Expression<Func<RegisterViewModel, int>> __h8 = (Expression<Func<RegisterViewModel, int>>) (__model => __model.MaxJourneyCount);
+    private static readonly Expression<Func<RegisterViewModel, int>> __h9 = (Expression<Func<RegisterViewModel, int>>) (__model => __model.MaxRunCountPerDay);
+    private static readonly Expression<Func<RegisterViewModel, int>> __h10 = (Expression<Func<RegisterViewModel, int>>) (__model => __model.MaxRunCountPerDay);
+    private static readonly Expression<Func<RegisterViewModel, int>> __h11 = (Expression<Func<RegisterViewModel, int>>) (__model => __model.MaxRunCountPerDay);
+    private static readonly Expression<Func<RegisterViewModel, bool>> __h12 = (Expression<Func<RegisterViewModel, bool>>) (__model => __model.EnableCreateJobFromFile);
+    private static readonly Expression<Func<RegisterViewModel, bool>> __h13 = (Expression<Func<RegisterViewModel, bool>>) (__model => __model.EnableCreateJobFromFile);
+    private static readonly Expression<Func<RegisterViewModel, bool>> __h14 = (Expression<Func<RegisterViewModel, bool>>) (__model => __model.EnableGoogleSearchConsole);
+    private static readonly Expression<Func<RegisterViewModel, bool>> __h15 = (Expression<Func<RegisterViewModel, bool>>) (__model => __model.EnableGoogleSearchConsole);
+    private static readonly Expression<Func<RegisterViewModel, bool>> __h16 = (Expression<Func<RegisterViewModel, bool>>) (__model => __model.EnableSeeAdminLog);
+    private static readonly Expression<Func<RegisterViewModel, bool>> __h17 = (Expression<Func<RegisterViewModel, bool>>) (__model => __model.EnableSeeAdminLog);
+    private static readonly Expression<Func<RegisterViewModel, bool>> __h18 = (Expression<Func<RegisterViewModel, bool>>) (__model => __model.EnableScheduleInterupt);
+    private static readonly Expression<Func<RegisterViewModel, bool>> __h19 = (Expression<Func<RegisterViewModel, bool>>) (__model => __model.EnableScheduleInterupt);
+    private static readonly Expression<Func<RegisterViewModel, bool>> __h20 = (Expression<Func<RegisterViewModel, bool>>) (__model => __model.EnableGeoLocation);
+    private static readonly Expression<Func<RegisterViewModel, bool>> __h21 = (Expression<Func<RegisterViewModel, bool>>) (__model => __model.EnableGeoLocation);
+    private static readonly Expression<Func<RegisterViewModel, bool>> __h22 = (Expression<Func<RegisterViewModel, bool>>) (__model => __model.EnableGMB);
+    private static readonly Expression<Func<RegisterViewModel, bool>> __h23 = (Expression<Func<RegisterViewModel, bool>>) (__model => __model.EnableGMB);
+    private static readonly Expression<Func<RegisterViewModel, bool>> __h24 = (Expression<Func<RegisterViewModel, bool>>) (__model => __model.EnableHtml);
+    private static readonly Expression<Func<RegisterViewModel, bool>> __h25 = (Expression<Func<RegisterViewModel, bool>>) (__model => __model.EnableHtml);
+    private static readonly Expression<Func<RegisterViewModel, bool>> __h26 = (Expression<Func<RegisterViewModel, bool>>) (__model => __model.EnableTwitter);
+    private static readonly Expression<Func<RegisterViewModel, bool>> __h27 = (Expression<Func<RegisterViewModel, bool>>) (__model => __model.EnableTwitter);
+    private static readonly Expression<Func<RegisterViewModel, List<CheckboxJourney>>> __h28 = (Expression<Func<RegisterViewModel, List<CheckboxJourney>>>) (__model => __model.JourneyOptions);
+
+    private TagHelperScopeManager __tagHelperScopeManager
+    {
+      get
+      {
+        if (this.__backed__tagHelperScopeManager == null)
+          this.__backed__tagHelperScopeManager = new TagHelperScopeManager(new Action<HtmlEncoder>(((RazorPageBase) this).StartTagHelperWritingScope), new Func<TagHelperContent>(((RazorPageBase) this).EndTagHelperWritingScope));
+        return this.__backed__tagHelperScopeManager;
+      }
+    }
+
+    public virtual async Task ExecuteAsync()
+    {
+      _Views_Account_EditUser_cshtml accountEditUserCshtml = this;
+      accountEditUserCshtml.BeginContext(26, 2, true);
+      accountEditUserCshtml.WriteLiteral("\r\n");
+      accountEditUserCshtml.EndContext();
+      accountEditUserCshtml.ViewData["Title"] = (object) "Edit";
+      accountEditUserCshtml.BeginContext(68, 6, true);
+      accountEditUserCshtml.WriteLiteral("\r\n<h2>");
+      accountEditUserCshtml.EndContext();
+      accountEditUserCshtml.BeginContext(75, 17, false);
+      accountEditUserCshtml.Write(accountEditUserCshtml.ViewData["Title"]);
+      accountEditUserCshtml.EndContext();
+      accountEditUserCshtml.BeginContext(92, 9, true);
+      accountEditUserCshtml.WriteLiteral("</h2>\r\n\r\n");
+      accountEditUserCshtml.EndContext();
+      accountEditUserCshtml.BeginContext(101, 4060, false);
+      // ISSUE: reference to a compiler-generated method
+      accountEditUserCshtml.__tagHelperExecutionContext = accountEditUserCshtml.__tagHelperScopeManager.Begin("form", TagMode.StartTagAndEndTag, "55dbb3d52d2147acb96a8e063043a9ac", new Func<Task>(accountEditUserCshtml.\u003CExecuteAsync\u003Eb__18_0));
+      accountEditUserCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper = accountEditUserCshtml.CreateTagHelper<FormTagHelper>();
+      accountEditUserCshtml.__tagHelperExecutionContext.Add((ITagHelper) accountEditUserCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper);
+      accountEditUserCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper = accountEditUserCshtml.CreateTagHelper<RenderAtEndOfFormTagHelper>();
+      accountEditUserCshtml.__tagHelperExecutionContext.Add((ITagHelper) accountEditUserCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper);
+      if (accountEditUserCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper.RouteValues == null)
+        throw new InvalidOperationException(accountEditUserCshtml.InvalidTagHelperIndexerAssignment("asp-route-returnUrl", "Microsoft.AspNetCore.Mvc.TagHelpers.FormTagHelper", "RouteValues"));
+      accountEditUserCshtml.BeginWriteTagHelperAttribute();
+      accountEditUserCshtml.WriteLiteral(accountEditUserCshtml.ViewData["ReturnUrl"]);
+      accountEditUserCshtml.__tagHelperStringValueBuffer = accountEditUserCshtml.EndWriteTagHelperAttribute();
+      accountEditUserCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper.RouteValues["returnUrl"] = accountEditUserCshtml.__tagHelperStringValueBuffer;
+      accountEditUserCshtml.__tagHelperExecutionContext.AddTagHelperAttribute("asp-route-returnUrl", (object) accountEditUserCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper.RouteValues["returnUrl"], HtmlAttributeValueStyle.DoubleQuotes);
+      accountEditUserCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper.Method = (string) _Views_Account_EditUser_cshtml.__tagHelperAttribute_5.Value;
+      accountEditUserCshtml.__tagHelperExecutionContext.AddTagHelperAttribute(_Views_Account_EditUser_cshtml.__tagHelperAttribute_5);
+      await accountEditUserCshtml.__tagHelperRunner.RunAsync(accountEditUserCshtml.__tagHelperExecutionContext);
+      if (!accountEditUserCshtml.__tagHelperExecutionContext.Output.IsContentModified)
+        await accountEditUserCshtml.__tagHelperExecutionContext.SetOutputContentAsync();
+      accountEditUserCshtml.Write((object) accountEditUserCshtml.__tagHelperExecutionContext.Output);
+      accountEditUserCshtml.__tagHelperExecutionContext = accountEditUserCshtml.__tagHelperScopeManager.End();
+      accountEditUserCshtml.EndContext();
+      accountEditUserCshtml.BeginContext(4161, 10, true);
+      accountEditUserCshtml.WriteLiteral("\r\n    \r\n\r\n");
+      accountEditUserCshtml.EndContext();
+      // ISSUE: reference to a compiler-generated method
+      accountEditUserCshtml.DefineSection("Scripts", new RenderAsyncDelegate(accountEditUserCshtml.\u003CExecuteAsync\u003Eb__18_35));
+    }
+
+    [RazorInject]
+    public IModelExpressionProvider ModelExpressionProvider { get; private set; }
+
+    [RazorInject]
+    public IUrlHelper Url { get; private set; }
+
+    [RazorInject]
+    public IViewComponentHelper Component { get; private set; }
+
+    [RazorInject]
+    public IJsonHelper Json { get; private set; }
+
+    [RazorInject]
+    public IHtmlHelper<RegisterViewModel> Html { get; private set; }
+  }
+}

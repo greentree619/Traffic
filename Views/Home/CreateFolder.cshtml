@@ -1,0 +1,46 @@
+﻿@model Traffic.Models.trafficjob
+
+@{
+    ViewData["Title"] = "Create Folder";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Create Job Folder</h2>
+<hr />
+<div class="row">
+    <div class="col-md-12">
+        <form asp-action="CreateFolder">
+            <div class="form-horizontal">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label class="control-label col-md-2">Folder Name</label>
+                    <div class="col-md-10">
+                        <input asp-for="job_name" class="form-control" />
+                        <span asp-validation-for="job_name" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-md-2">Description</label>
+                    <div class="col-md-10">
+                        <input asp-for="target_url" class="form-control" />
+                        <span asp-validation-for="target_url" class="text-danger"></span>
+                    </div>
+                </div>
+                <input asp-for="search_term" value="FOLDER" style="display:none;" />
+                <input asp-for="search_engine" value="0" style="display:none;" />
+                <input asp-for="session_count" value="-1" style="display:none;" />
+                <input asp-for="group_id" value="-1" style="display:none;" />
+                <div class="form-group">
+                    <div class="col-md-10 col-lg-offset-2">
+                        <input type="submit" value="CreateFolder" class="btn btn-success" />
+                        <a asp-action="Index" class="btn btn-primary">Back to List</a>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
