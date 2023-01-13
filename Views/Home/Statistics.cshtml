@@ -1,0 +1,597 @@
+﻿// Decompiled with JetBrains decompiler
+// Type: AspNetCore._Views_Home_Statistics_cshtml
+// Assembly: Traffic.PrecompiledViews, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+// MVID: 8B37BA40-0390-40A7-A536-D9CCDBC36390
+// Assembly location: D:\Workstation\TonniProjects\TrafficWebDeploy\Traffic.PrecompiledViews.dll
+
+using Microsoft.AspNetCore.Html;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Razor;
+using Microsoft.AspNetCore.Mvc.Razor.Internal;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.Mvc.TagHelpers;
+using Microsoft.AspNetCore.Mvc.ViewFeatures;
+using Microsoft.AspNetCore.Razor.Runtime.TagHelpers;
+using Microsoft.AspNetCore.Razor.TagHelpers;
+using System;
+using System.Collections.Generic;
+using System.Linq.Expressions;
+using System.Text.Encodings.Web;
+using System.Threading.Tasks;
+using Traffic.Models;
+
+namespace AspNetCore
+{
+  public class _Views_Home_Statistics_cshtml : RazorPage<IEnumerable<dailystateDesc>>
+  {
+    private static readonly TagHelperAttribute __tagHelperAttribute_0 = new TagHelperAttribute("asp-action", (object) "Statistics", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_1 = new TagHelperAttribute("asp-action", (object) "Index", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_2 = new TagHelperAttribute("class", (object) new HtmlString("btn btn-primary"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_3 = new TagHelperAttribute("asp-action", (object) "Edit", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_4 = new TagHelperAttribute("asp-action", (object) "ResetJourney", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_5 = new TagHelperAttribute("class", (object) new HtmlString("btn btn-success btn-xs"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_6 = new TagHelperAttribute("onclick", (object) new HtmlString("return ResetConfirm();"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_7 = new TagHelperAttribute("asp-action", (object) "RunNow", HtmlAttributeValueStyle.DoubleQuotes);
+    private string __tagHelperStringValueBuffer;
+    private TagHelperExecutionContext __tagHelperExecutionContext;
+    private TagHelperRunner __tagHelperRunner = new TagHelperRunner();
+    private TagHelperScopeManager __backed__tagHelperScopeManager;
+    private FormTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper;
+    private RenderAtEndOfFormTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper;
+    private AnchorTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper;
+
+    private TagHelperScopeManager __tagHelperScopeManager
+    {
+      get
+      {
+        if (this.__backed__tagHelperScopeManager == null)
+          this.__backed__tagHelperScopeManager = new TagHelperScopeManager(new Action<HtmlEncoder>(((RazorPageBase) this).StartTagHelperWritingScope), new Func<TagHelperContent>(((RazorPageBase) this).EndTagHelperWritingScope));
+        return this.__backed__tagHelperScopeManager;
+      }
+    }
+
+    public virtual async Task ExecuteAsync()
+    {
+      _Views_Home_Statistics_cshtml statisticsCshtml1 = this;
+      statisticsCshtml1.BeginContext(51, 2, true);
+      statisticsCshtml1.WriteLiteral("\r\n");
+      statisticsCshtml1.EndContext();
+      statisticsCshtml1.ViewData["Title"] = (object) "Statistics";
+      // ISSUE: explicit non-virtual call
+      __nonvirtual (statisticsCshtml1.Layout) = "~/Views/Shared/_Layout.cshtml";
+      statisticsCshtml1.BeginContext(146, 462, true);
+      statisticsCshtml1.WriteLiteral("<link rel=\"stylesheet\" href=\"http://code.jquery.com/ui/1.10.4/themes/trontastic/jquery-ui.css\">\r\n<script src=\"http://code.jquery.com/jquery-1.10.2.js\"></script>\r\n<script src=\"http://code.jquery.com/ui/1.10.4/jquery-ui.js\"></script>\r\n<script language=\"javascript\">\r\n    $(function () {\r\n        $(\"#datepicker\").datepicker({ dateFormat: 'yy-mm-dd' });\r\n    });\r\n</script>\r\n<h2>Statistics</h2>\r\n\r\n<div class=\"row\">\r\n    <div class=\"col-md-12\">\r\n        <h4>Total: ");
+      statisticsCshtml1.EndContext();
+      statisticsCshtml1.BeginContext(609, 22, false);
+      statisticsCshtml1.Write(statisticsCshtml1.ViewData["TotalCount"]);
+      statisticsCshtml1.EndContext();
+      statisticsCshtml1.BeginContext(631, 20, true);
+      statisticsCshtml1.WriteLiteral(" (Yesterday/Today : ");
+      statisticsCshtml1.EndContext();
+      statisticsCshtml1.BeginContext(652, 26, false);
+      statisticsCshtml1.Write(statisticsCshtml1.ViewData["YesterdayCount"]);
+      statisticsCshtml1.EndContext();
+      statisticsCshtml1.BeginContext(678, 1, true);
+      statisticsCshtml1.WriteLiteral("/");
+      statisticsCshtml1.EndContext();
+      statisticsCshtml1.BeginContext(680, 22, false);
+      statisticsCshtml1.Write(statisticsCshtml1.ViewData["TodayCount"]);
+      statisticsCshtml1.EndContext();
+      statisticsCshtml1.BeginContext(702, 33, true);
+      statisticsCshtml1.WriteLiteral(") <br />   Already Runned Count: ");
+      statisticsCshtml1.EndContext();
+      statisticsCshtml1.BeginContext(736, 27, false);
+      statisticsCshtml1.Write(statisticsCshtml1.ViewData["AlreadyRunCount"]);
+      statisticsCshtml1.EndContext();
+      statisticsCshtml1.BeginContext(763, 2, true);
+      statisticsCshtml1.WriteLiteral(" (");
+      statisticsCshtml1.EndContext();
+      statisticsCshtml1.BeginContext(766, 31, false);
+      statisticsCshtml1.Write(statisticsCshtml1.ViewData["AlreadySuccessCount"]);
+      statisticsCshtml1.EndContext();
+      statisticsCshtml1.BeginContext(797, 32, true);
+      statisticsCshtml1.WriteLiteral(" Successed) <br />Remain Count: ");
+      statisticsCshtml1.EndContext();
+      statisticsCshtml1.BeginContext(830, 23, false);
+      statisticsCshtml1.Write(statisticsCshtml1.ViewData["RemainCount"]);
+      statisticsCshtml1.EndContext();
+      statisticsCshtml1.BeginContext(853, 23, true);
+      statisticsCshtml1.WriteLiteral("</h4>\r\n    </div>\r\n    ");
+      statisticsCshtml1.EndContext();
+      statisticsCshtml1.BeginContext(876, 261, false);
+      // ISSUE: reference to a compiler-generated method
+      statisticsCshtml1.__tagHelperExecutionContext = statisticsCshtml1.__tagHelperScopeManager.Begin("form", TagMode.StartTagAndEndTag, "324b5bca4c5c4f7aa65d9891207a4e5b", new Func<Task>(statisticsCshtml1.\u003CExecuteAsync\u003Eb__17_0));
+      statisticsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper = statisticsCshtml1.CreateTagHelper<FormTagHelper>();
+      statisticsCshtml1.__tagHelperExecutionContext.Add((ITagHelper) statisticsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper);
+      statisticsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper = statisticsCshtml1.CreateTagHelper<RenderAtEndOfFormTagHelper>();
+      statisticsCshtml1.__tagHelperExecutionContext.Add((ITagHelper) statisticsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper);
+      statisticsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper.Action = (string) _Views_Home_Statistics_cshtml.__tagHelperAttribute_0.Value;
+      statisticsCshtml1.__tagHelperExecutionContext.AddTagHelperAttribute(_Views_Home_Statistics_cshtml.__tagHelperAttribute_0);
+      await statisticsCshtml1.__tagHelperRunner.RunAsync(statisticsCshtml1.__tagHelperExecutionContext);
+      if (!statisticsCshtml1.__tagHelperExecutionContext.Output.IsContentModified)
+        await statisticsCshtml1.__tagHelperExecutionContext.SetOutputContentAsync();
+      statisticsCshtml1.Write((object) statisticsCshtml1.__tagHelperExecutionContext.Output);
+      statisticsCshtml1.__tagHelperExecutionContext = statisticsCshtml1.__tagHelperScopeManager.End();
+      statisticsCshtml1.EndContext();
+      statisticsCshtml1.BeginContext(1137, 49, true);
+      statisticsCshtml1.WriteLiteral("\r\n    <div class=\"col-md-4 text-right\">\r\n        ");
+      statisticsCshtml1.EndContext();
+      statisticsCshtml1.BeginContext(1186, 54, false);
+      // ISSUE: reference to a compiler-generated method
+      statisticsCshtml1.__tagHelperExecutionContext = statisticsCshtml1.__tagHelperScopeManager.Begin("a", TagMode.StartTagAndEndTag, "e297b11b9c104b4fabb6cc96aba80f3d", new Func<Task>(statisticsCshtml1.\u003CExecuteAsync\u003Eb__17_1));
+      statisticsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper = statisticsCshtml1.CreateTagHelper<AnchorTagHelper>();
+      statisticsCshtml1.__tagHelperExecutionContext.Add((ITagHelper) statisticsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper);
+      statisticsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.Action = (string) _Views_Home_Statistics_cshtml.__tagHelperAttribute_1.Value;
+      statisticsCshtml1.__tagHelperExecutionContext.AddTagHelperAttribute(_Views_Home_Statistics_cshtml.__tagHelperAttribute_1);
+      statisticsCshtml1.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_Statistics_cshtml.__tagHelperAttribute_2);
+      await statisticsCshtml1.__tagHelperRunner.RunAsync(statisticsCshtml1.__tagHelperExecutionContext);
+      if (!statisticsCshtml1.__tagHelperExecutionContext.Output.IsContentModified)
+        await statisticsCshtml1.__tagHelperExecutionContext.SetOutputContentAsync();
+      statisticsCshtml1.Write((object) statisticsCshtml1.__tagHelperExecutionContext.Output);
+      statisticsCshtml1.__tagHelperExecutionContext = statisticsCshtml1.__tagHelperScopeManager.End();
+      statisticsCshtml1.EndContext();
+      statisticsCshtml1.BeginContext(1240, 1664, true);
+      statisticsCshtml1.WriteLiteral("\r\n    </div>\r\n\r\n    \r\n</div>\r\n<div class=\"row\">\r\n    <div class=\"col-md-6\">\r\n        <a class=\"btn btn-info\" onclick=\"BulkResetIgnore()\">Reset Ignore</a>\r\n    </div>\r\n    <div class=\"col-md-6\">\r\n        <a class=\"btn btn-info right\" onclick=\"BulkResetIgnore()\">Reset All</a>\r\n    </div>\r\n</div>\r\n<style>\r\n    .table thead tr th {\r\n        text-align: center;\r\n    }\r\n\r\n    .table tbody tr td {\r\n        text-align: center;\r\n    }\r\n</style>\r\n<div class=\"row\">\r\n    <div class=\"col-md-12\">\r\n        <table class=\"table\" id=\"journeylist\">\r\n            <thead>\r\n                <tr>\r\n                    <th style=\"width: 5%;\">\r\n                        <input type=\"checkbox\" name=\"chkselectall\" onchange='ChangeBulkCheckbox(this);'>\r\n                    </th>\r\n                    <th>\r\n                        No\r\n                    </th>\r\n                    <th>\r\n                        Job ID\r\n                    </th>\r\n                    <th>\r\n                        Result\r\n                    </th>\r\n               ");
+      statisticsCshtml1.WriteLiteral("     <th>\r\n                        RetryCount\r\n                    </th>\r\n                    <th>\r\n                        PredictTime\r\n                    </th>\r\n                    <th>\r\n                        StartTime\r\n                    </th>\r\n                    <th>\r\n                        EndTime\r\n                    </th>\r\n                    <th>\r\n                        IsOldJourney\r\n                    </th>\r\n                    <th>\r\n                        Worker IP\r\n                    </th>\r\n                    <th>\r\n\r\n                    </th>\r\n\r\n                </tr>\r\n            </thead>\r\n            <tbody>\r\n");
+      statisticsCshtml1.EndContext();
+      foreach (dailystateDesc dailystateDesc in statisticsCshtml1.Model)
+      {
+        _Views_Home_Statistics_cshtml statisticsCshtml = statisticsCshtml1;
+        dailystateDesc item = dailystateDesc;
+        if (item.state != 2)
+        {
+          string str1 = "black";
+          if (item.isrunning)
+            str1 = "magenta";
+          statisticsCshtml1.BeginContext(3337, 23, true);
+          statisticsCshtml1.WriteLiteral("                    <tr");
+          statisticsCshtml1.EndContext();
+          statisticsCshtml1.BeginWriteAttribute("title", " title=\"", 3360, "\"", 3411, 1);
+          statisticsCshtml1.WriteAttributeValue("", 3368, (object) statisticsCshtml1.Html.DisplayFor<IEnumerable<dailystateDesc>, string>((Expression<Func<IEnumerable<dailystateDesc>, string>>) (modelItem => item.JobDesc)), 3368, 43, false);
+          statisticsCshtml1.EndWriteAttribute();
+          statisticsCshtml1.BeginWriteAttribute("style", " style=\"", 3412, "\"", 3433, 2);
+          statisticsCshtml1.WriteAttributeValue("", 3420, (object) "color:", 3420, 6, true);
+          statisticsCshtml1.WriteAttributeValue(" ", 3426, (object) str1, 3427, 6, false);
+          statisticsCshtml1.EndWriteAttribute();
+          statisticsCshtml1.BeginContext(3434, 35, true);
+          statisticsCshtml1.WriteLiteral(">\r\n\r\n                        <td>\r\n");
+          statisticsCshtml1.EndContext();
+          if (Convert.ToBoolean(statisticsCshtml1.ViewData["IsToday"]) && item.state == 3)
+          {
+            statisticsCshtml1.BeginContext(3601, 71, true);
+            statisticsCshtml1.WriteLiteral("                                <input type=\"checkbox\" name=\"journeyid\"");
+            statisticsCshtml1.EndContext();
+            statisticsCshtml1.BeginWriteAttribute("value", " value=\"", 3672, "\"", 3688, 1);
+            statisticsCshtml1.WriteAttributeValue("", 3680, (object) item.id, 3680, 8, false);
+            statisticsCshtml1.EndWriteAttribute();
+            statisticsCshtml1.BeginContext(3689, 3, true);
+            statisticsCshtml1.WriteLiteral(">\r\n");
+            statisticsCshtml1.EndContext();
+          }
+          statisticsCshtml1.BeginContext(3723, 59, true);
+          statisticsCshtml1.WriteLiteral("                        </td>\r\n                        <td>");
+          statisticsCshtml1.EndContext();
+          statisticsCshtml1.BeginContext(3783, 37, false);
+          statisticsCshtml1.Write((object) statisticsCshtml1.Html.DisplayFor<IEnumerable<dailystateDesc>, int>((Expression<Func<IEnumerable<dailystateDesc>, int>>) (modelItem => item.id)));
+          statisticsCshtml1.EndContext();
+          statisticsCshtml1.BeginContext(3820, 64, true);
+          statisticsCshtml1.WriteLiteral("</td>\r\n                        <td style=\"white-space: nowrap;\">");
+          statisticsCshtml1.EndContext();
+          statisticsCshtml1.BeginContext(3884, 95, false);
+          statisticsCshtml1.__tagHelperExecutionContext = statisticsCshtml1.__tagHelperScopeManager.Begin("a", TagMode.StartTagAndEndTag, "5f0cdc0be83b43c894d18ef1184084ee", (Func<Task>) (async () =>
+          {
+            statisticsCshtml.BeginContext(3934, 41, false);
+            statisticsCshtml.Write((object) statisticsCshtml.Html.DisplayFor<IEnumerable<dailystateDesc>, int>((Expression<Func<IEnumerable<dailystateDesc>, int>>) (modelItem => item.job_id)));
+            statisticsCshtml.EndContext();
+          }));
+          statisticsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper = statisticsCshtml1.CreateTagHelper<AnchorTagHelper>();
+          statisticsCshtml1.__tagHelperExecutionContext.Add((ITagHelper) statisticsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper);
+          statisticsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.Action = (string) _Views_Home_Statistics_cshtml.__tagHelperAttribute_3.Value;
+          statisticsCshtml1.__tagHelperExecutionContext.AddTagHelperAttribute(_Views_Home_Statistics_cshtml.__tagHelperAttribute_3);
+          if (statisticsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues == null)
+            throw new InvalidOperationException(statisticsCshtml1.InvalidTagHelperIndexerAssignment("asp-route-id", "Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper", "RouteValues"));
+          statisticsCshtml1.BeginWriteTagHelperAttribute();
+          statisticsCshtml1.WriteLiteral((object) item.job_id);
+          statisticsCshtml1.__tagHelperStringValueBuffer = statisticsCshtml1.EndWriteTagHelperAttribute();
+          statisticsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues["id"] = statisticsCshtml1.__tagHelperStringValueBuffer;
+          statisticsCshtml1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-route-id", (object) statisticsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues["id"], HtmlAttributeValueStyle.DoubleQuotes);
+          await statisticsCshtml1.__tagHelperRunner.RunAsync(statisticsCshtml1.__tagHelperExecutionContext);
+          if (!statisticsCshtml1.__tagHelperExecutionContext.Output.IsContentModified)
+            await statisticsCshtml1.__tagHelperExecutionContext.SetOutputContentAsync();
+          statisticsCshtml1.Write((object) statisticsCshtml1.__tagHelperExecutionContext.Output);
+          statisticsCshtml1.__tagHelperExecutionContext = statisticsCshtml1.__tagHelperScopeManager.End();
+          statisticsCshtml1.EndContext();
+          statisticsCshtml1.BeginContext(3979, 9, true);
+          statisticsCshtml1.WriteLiteral("</td>\r\n\r\n");
+          statisticsCshtml1.EndContext();
+          string str2 = "Unknown";
+          if (item.state == 3)
+            str2 = "Ignore";
+          else if (item.state == 2)
+            str2 = "Successed";
+          else if (item.state == 1)
+            str2 = "Failed";
+          else if (item.state == 0)
+            str2 = "-";
+          statisticsCshtml1.BeginContext(4770, 28, true);
+          statisticsCshtml1.WriteLiteral("                        <td>");
+          statisticsCshtml1.EndContext();
+          statisticsCshtml1.BeginContext(4799, 6, false);
+          statisticsCshtml1.Write(str2);
+          statisticsCshtml1.EndContext();
+          statisticsCshtml1.BeginContext(4805, 7, true);
+          statisticsCshtml1.WriteLiteral("</td>\r\n");
+          statisticsCshtml1.EndContext();
+          statisticsCshtml1.BeginContext(4846, 30, true);
+          statisticsCshtml1.WriteLiteral("\r\n                        <td>");
+          statisticsCshtml1.EndContext();
+          statisticsCshtml1.BeginContext(4877, 48, false);
+          statisticsCshtml1.Write((object) statisticsCshtml1.Html.DisplayFor<IEnumerable<dailystateDesc>, int>((Expression<Func<IEnumerable<dailystateDesc>, int>>) (modelItem => item.consfailcount)));
+          statisticsCshtml1.EndContext();
+          statisticsCshtml1.BeginContext(4925, 35, true);
+          statisticsCshtml1.WriteLiteral("</td>\r\n                        <td>");
+          statisticsCshtml1.EndContext();
+          statisticsCshtml1.BeginContext(4961, 47, false);
+          statisticsCshtml1.Write((object) statisticsCshtml1.Html.DisplayFor<IEnumerable<dailystateDesc>, DateTime>((Expression<Func<IEnumerable<dailystateDesc>, DateTime>>) (modelItem => item.predict_time)));
+          statisticsCshtml1.EndContext();
+          statisticsCshtml1.BeginContext(5008, 35, true);
+          statisticsCshtml1.WriteLiteral("</td>\r\n                        <td>");
+          statisticsCshtml1.EndContext();
+          statisticsCshtml1.BeginContext(5044, 45, false);
+          statisticsCshtml1.Write((object) statisticsCshtml1.Html.DisplayFor<IEnumerable<dailystateDesc>, DateTime>((Expression<Func<IEnumerable<dailystateDesc>, DateTime>>) (modelItem => item.start_time)));
+          statisticsCshtml1.EndContext();
+          statisticsCshtml1.BeginContext(5089, 35, true);
+          statisticsCshtml1.WriteLiteral("</td>\r\n                        <td>");
+          statisticsCshtml1.EndContext();
+          statisticsCshtml1.BeginContext(5125, 43, false);
+          statisticsCshtml1.Write((object) statisticsCshtml1.Html.DisplayFor<IEnumerable<dailystateDesc>, DateTime>((Expression<Func<IEnumerable<dailystateDesc>, DateTime>>) (modelItem => item.end_time)));
+          statisticsCshtml1.EndContext();
+          statisticsCshtml1.BeginContext(5168, 7, true);
+          statisticsCshtml1.WriteLiteral("</td>\r\n");
+          statisticsCshtml1.EndContext();
+          string str3 = "New";
+          if (item.isoldjourney)
+            str3 = "Old";
+          statisticsCshtml1.BeginContext(5457, 28, true);
+          statisticsCshtml1.WriteLiteral("                        <td>");
+          statisticsCshtml1.EndContext();
+          statisticsCshtml1.BeginContext(5486, 10, false);
+          statisticsCshtml1.Write(str3);
+          statisticsCshtml1.EndContext();
+          statisticsCshtml1.BeginContext(5496, 7, true);
+          statisticsCshtml1.WriteLiteral("</td>\r\n");
+          statisticsCshtml1.EndContext();
+          statisticsCshtml1.BeginContext(5537, 28, true);
+          statisticsCshtml1.WriteLiteral("                        <td>");
+          statisticsCshtml1.EndContext();
+          statisticsCshtml1.BeginContext(5566, 44, false);
+          statisticsCshtml1.Write((object) statisticsCshtml1.Html.DisplayFor<IEnumerable<dailystateDesc>, string>((Expression<Func<IEnumerable<dailystateDesc>, string>>) (modelItem => item.runner_id)));
+          statisticsCshtml1.EndContext();
+          statisticsCshtml1.BeginContext(5610, 37, true);
+          statisticsCshtml1.WriteLiteral("</td>\r\n                        <td>\r\n");
+          statisticsCshtml1.EndContext();
+          if (item.state != 0 && !item.isrunning && item.state != 2)
+          {
+            statisticsCshtml1.BeginContext(5775, 32, true);
+            statisticsCshtml1.WriteLiteral("                                ");
+            statisticsCshtml1.EndContext();
+            statisticsCshtml1.BeginContext(5807, 126, false);
+            // ISSUE: reference to a compiler-generated method
+            statisticsCshtml1.__tagHelperExecutionContext = statisticsCshtml1.__tagHelperScopeManager.Begin("a", TagMode.StartTagAndEndTag, "58fe61f828ab4b0fa1206b8773740f88", new Func<Task>(statisticsCshtml1.\u003CExecuteAsync\u003Eb__17_3));
+            statisticsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper = statisticsCshtml1.CreateTagHelper<AnchorTagHelper>();
+            statisticsCshtml1.__tagHelperExecutionContext.Add((ITagHelper) statisticsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper);
+            statisticsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.Action = (string) _Views_Home_Statistics_cshtml.__tagHelperAttribute_4.Value;
+            statisticsCshtml1.__tagHelperExecutionContext.AddTagHelperAttribute(_Views_Home_Statistics_cshtml.__tagHelperAttribute_4);
+            if (statisticsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues == null)
+              throw new InvalidOperationException(statisticsCshtml1.InvalidTagHelperIndexerAssignment("asp-route-id", "Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper", "RouteValues"));
+            statisticsCshtml1.BeginWriteTagHelperAttribute();
+            statisticsCshtml1.WriteLiteral((object) item.id);
+            statisticsCshtml1.__tagHelperStringValueBuffer = statisticsCshtml1.EndWriteTagHelperAttribute();
+            statisticsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues["id"] = statisticsCshtml1.__tagHelperStringValueBuffer;
+            statisticsCshtml1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-route-id", (object) statisticsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues["id"], HtmlAttributeValueStyle.DoubleQuotes);
+            statisticsCshtml1.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_Statistics_cshtml.__tagHelperAttribute_5);
+            statisticsCshtml1.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_Statistics_cshtml.__tagHelperAttribute_6);
+            await statisticsCshtml1.__tagHelperRunner.RunAsync(statisticsCshtml1.__tagHelperExecutionContext);
+            if (!statisticsCshtml1.__tagHelperExecutionContext.Output.IsContentModified)
+              await statisticsCshtml1.__tagHelperExecutionContext.SetOutputContentAsync();
+            statisticsCshtml1.Write((object) statisticsCshtml1.__tagHelperExecutionContext.Output);
+            statisticsCshtml1.__tagHelperExecutionContext = statisticsCshtml1.__tagHelperScopeManager.End();
+            statisticsCshtml1.EndContext();
+            statisticsCshtml1.BeginContext(5933, 2, true);
+            statisticsCshtml1.WriteLiteral("\r\n");
+            statisticsCshtml1.EndContext();
+          }
+          statisticsCshtml1.BeginContext(5966, 28, true);
+          statisticsCshtml1.WriteLiteral("                            ");
+          statisticsCshtml1.EndContext();
+          if (Convert.ToBoolean(statisticsCshtml1.ViewData["IsToday"]) && item.state == 0 && !item.isoldjourney && !item.isrunning)
+          {
+            DateTime predictTime = item.predict_time;
+            if (predictTime.Hour == 0)
+            {
+              predictTime = item.predict_time;
+              if (predictTime.Minute == 0)
+              {
+                predictTime = item.predict_time;
+                if (predictTime.Second == 0)
+                  goto label_45;
+              }
+            }
+            statisticsCshtml1.BeginContext(6254, 32, true);
+            statisticsCshtml1.WriteLiteral("                                ");
+            statisticsCshtml1.EndContext();
+            statisticsCshtml1.BeginContext(6286, 89, false);
+            // ISSUE: reference to a compiler-generated method
+            statisticsCshtml1.__tagHelperExecutionContext = statisticsCshtml1.__tagHelperScopeManager.Begin("a", TagMode.StartTagAndEndTag, "ff0fe92bcfcf4785baade18fb2cb8574", new Func<Task>(statisticsCshtml1.\u003CExecuteAsync\u003Eb__17_4));
+            statisticsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper = statisticsCshtml1.CreateTagHelper<AnchorTagHelper>();
+            statisticsCshtml1.__tagHelperExecutionContext.Add((ITagHelper) statisticsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper);
+            statisticsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.Action = (string) _Views_Home_Statistics_cshtml.__tagHelperAttribute_7.Value;
+            statisticsCshtml1.__tagHelperExecutionContext.AddTagHelperAttribute(_Views_Home_Statistics_cshtml.__tagHelperAttribute_7);
+            if (statisticsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues == null)
+              throw new InvalidOperationException(statisticsCshtml1.InvalidTagHelperIndexerAssignment("asp-route-id", "Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper", "RouteValues"));
+            statisticsCshtml1.BeginWriteTagHelperAttribute();
+            statisticsCshtml1.WriteLiteral((object) item.id);
+            statisticsCshtml1.__tagHelperStringValueBuffer = statisticsCshtml1.EndWriteTagHelperAttribute();
+            statisticsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues["id"] = statisticsCshtml1.__tagHelperStringValueBuffer;
+            statisticsCshtml1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-route-id", (object) statisticsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues["id"], HtmlAttributeValueStyle.DoubleQuotes);
+            statisticsCshtml1.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_Statistics_cshtml.__tagHelperAttribute_5);
+            await statisticsCshtml1.__tagHelperRunner.RunAsync(statisticsCshtml1.__tagHelperExecutionContext);
+            if (!statisticsCshtml1.__tagHelperExecutionContext.Output.IsContentModified)
+              await statisticsCshtml1.__tagHelperExecutionContext.SetOutputContentAsync();
+            statisticsCshtml1.Write((object) statisticsCshtml1.__tagHelperExecutionContext.Output);
+            statisticsCshtml1.__tagHelperExecutionContext = statisticsCshtml1.__tagHelperScopeManager.End();
+            statisticsCshtml1.EndContext();
+            statisticsCshtml1.BeginContext(6375, 2, true);
+            statisticsCshtml1.WriteLiteral("\r\n");
+            statisticsCshtml1.EndContext();
+          }
+label_45:
+          statisticsCshtml1.BeginContext(6408, 60, true);
+          statisticsCshtml1.WriteLiteral("                        </td>\r\n\r\n                    </tr>\r\n");
+          statisticsCshtml1.EndContext();
+        }
+      }
+      statisticsCshtml1.BeginContext(6487, 16, true);
+      statisticsCshtml1.WriteLiteral("                ");
+      statisticsCshtml1.EndContext();
+      foreach (dailystateDesc dailystateDesc in statisticsCshtml1.Model)
+      {
+        _Views_Home_Statistics_cshtml statisticsCshtml = statisticsCshtml1;
+        dailystateDesc item = dailystateDesc;
+        if (item.state == 2)
+        {
+          string str4 = "black";
+          if (item.isrunning)
+            str4 = "magenta";
+          statisticsCshtml1.BeginContext(6873, 23, true);
+          statisticsCshtml1.WriteLiteral("                    <tr");
+          statisticsCshtml1.EndContext();
+          statisticsCshtml1.BeginWriteAttribute("title", " title=\"", 6896, "\"", 6947, 1);
+          statisticsCshtml1.WriteAttributeValue("", 6904, (object) statisticsCshtml1.Html.DisplayFor<IEnumerable<dailystateDesc>, string>((Expression<Func<IEnumerable<dailystateDesc>, string>>) (modelItem => item.JobDesc)), 6904, 43, false);
+          statisticsCshtml1.EndWriteAttribute();
+          statisticsCshtml1.BeginWriteAttribute("style", " style=\"", 6948, "\"", 6969, 2);
+          statisticsCshtml1.WriteAttributeValue("", 6956, (object) "color:", 6956, 6, true);
+          statisticsCshtml1.WriteAttributeValue(" ", 6962, (object) str4, 6963, 6, false);
+          statisticsCshtml1.EndWriteAttribute();
+          statisticsCshtml1.BeginContext(6970, 35, true);
+          statisticsCshtml1.WriteLiteral(">\r\n\r\n                        <td>\r\n");
+          statisticsCshtml1.EndContext();
+          if (Convert.ToBoolean(statisticsCshtml1.ViewData["IsToday"]) && item.state == 3)
+          {
+            statisticsCshtml1.BeginContext(7137, 71, true);
+            statisticsCshtml1.WriteLiteral("                                <input type=\"checkbox\" name=\"journeyid\"");
+            statisticsCshtml1.EndContext();
+            statisticsCshtml1.BeginWriteAttribute("value", " value=\"", 7208, "\"", 7224, 1);
+            statisticsCshtml1.WriteAttributeValue("", 7216, (object) item.id, 7216, 8, false);
+            statisticsCshtml1.EndWriteAttribute();
+            statisticsCshtml1.BeginContext(7225, 3, true);
+            statisticsCshtml1.WriteLiteral(">\r\n");
+            statisticsCshtml1.EndContext();
+          }
+          statisticsCshtml1.BeginContext(7259, 59, true);
+          statisticsCshtml1.WriteLiteral("                        </td>\r\n                        <td>");
+          statisticsCshtml1.EndContext();
+          statisticsCshtml1.BeginContext(7319, 37, false);
+          statisticsCshtml1.Write((object) statisticsCshtml1.Html.DisplayFor<IEnumerable<dailystateDesc>, int>((Expression<Func<IEnumerable<dailystateDesc>, int>>) (modelItem => item.id)));
+          statisticsCshtml1.EndContext();
+          statisticsCshtml1.BeginContext(7356, 64, true);
+          statisticsCshtml1.WriteLiteral("</td>\r\n                        <td style=\"white-space: nowrap;\">");
+          statisticsCshtml1.EndContext();
+          statisticsCshtml1.BeginContext(7420, 95, false);
+          statisticsCshtml1.__tagHelperExecutionContext = statisticsCshtml1.__tagHelperScopeManager.Begin("a", TagMode.StartTagAndEndTag, "4d95b56b2a8c4abb98047bf0cb6821a4", (Func<Task>) (async () =>
+          {
+            statisticsCshtml.BeginContext(7470, 41, false);
+            statisticsCshtml.Write((object) statisticsCshtml.Html.DisplayFor<IEnumerable<dailystateDesc>, int>((Expression<Func<IEnumerable<dailystateDesc>, int>>) (modelItem => item.job_id)));
+            statisticsCshtml.EndContext();
+          }));
+          statisticsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper = statisticsCshtml1.CreateTagHelper<AnchorTagHelper>();
+          statisticsCshtml1.__tagHelperExecutionContext.Add((ITagHelper) statisticsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper);
+          statisticsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.Action = (string) _Views_Home_Statistics_cshtml.__tagHelperAttribute_3.Value;
+          statisticsCshtml1.__tagHelperExecutionContext.AddTagHelperAttribute(_Views_Home_Statistics_cshtml.__tagHelperAttribute_3);
+          if (statisticsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues == null)
+            throw new InvalidOperationException(statisticsCshtml1.InvalidTagHelperIndexerAssignment("asp-route-id", "Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper", "RouteValues"));
+          statisticsCshtml1.BeginWriteTagHelperAttribute();
+          statisticsCshtml1.WriteLiteral((object) item.job_id);
+          statisticsCshtml1.__tagHelperStringValueBuffer = statisticsCshtml1.EndWriteTagHelperAttribute();
+          statisticsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues["id"] = statisticsCshtml1.__tagHelperStringValueBuffer;
+          statisticsCshtml1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-route-id", (object) statisticsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues["id"], HtmlAttributeValueStyle.DoubleQuotes);
+          await statisticsCshtml1.__tagHelperRunner.RunAsync(statisticsCshtml1.__tagHelperExecutionContext);
+          if (!statisticsCshtml1.__tagHelperExecutionContext.Output.IsContentModified)
+            await statisticsCshtml1.__tagHelperExecutionContext.SetOutputContentAsync();
+          statisticsCshtml1.Write((object) statisticsCshtml1.__tagHelperExecutionContext.Output);
+          statisticsCshtml1.__tagHelperExecutionContext = statisticsCshtml1.__tagHelperScopeManager.End();
+          statisticsCshtml1.EndContext();
+          statisticsCshtml1.BeginContext(7515, 9, true);
+          statisticsCshtml1.WriteLiteral("</td>\r\n\r\n");
+          statisticsCshtml1.EndContext();
+          string str5 = "Unknown";
+          if (item.state == 3)
+            str5 = "Ignore";
+          else if (item.state == 2)
+            str5 = "Successed";
+          else if (item.state == 1)
+            str5 = "Failed";
+          else if (item.state == 0)
+            str5 = "-";
+          statisticsCshtml1.BeginContext(8306, 28, true);
+          statisticsCshtml1.WriteLiteral("                        <td>");
+          statisticsCshtml1.EndContext();
+          statisticsCshtml1.BeginContext(8335, 6, false);
+          statisticsCshtml1.Write(str5);
+          statisticsCshtml1.EndContext();
+          statisticsCshtml1.BeginContext(8341, 7, true);
+          statisticsCshtml1.WriteLiteral("</td>\r\n");
+          statisticsCshtml1.EndContext();
+          statisticsCshtml1.BeginContext(8382, 30, true);
+          statisticsCshtml1.WriteLiteral("\r\n                        <td>");
+          statisticsCshtml1.EndContext();
+          statisticsCshtml1.BeginContext(8413, 48, false);
+          statisticsCshtml1.Write((object) statisticsCshtml1.Html.DisplayFor<IEnumerable<dailystateDesc>, int>((Expression<Func<IEnumerable<dailystateDesc>, int>>) (modelItem => item.consfailcount)));
+          statisticsCshtml1.EndContext();
+          statisticsCshtml1.BeginContext(8461, 35, true);
+          statisticsCshtml1.WriteLiteral("</td>\r\n                        <td>");
+          statisticsCshtml1.EndContext();
+          statisticsCshtml1.BeginContext(8497, 47, false);
+          statisticsCshtml1.Write((object) statisticsCshtml1.Html.DisplayFor<IEnumerable<dailystateDesc>, DateTime>((Expression<Func<IEnumerable<dailystateDesc>, DateTime>>) (modelItem => item.predict_time)));
+          statisticsCshtml1.EndContext();
+          statisticsCshtml1.BeginContext(8544, 35, true);
+          statisticsCshtml1.WriteLiteral("</td>\r\n                        <td>");
+          statisticsCshtml1.EndContext();
+          statisticsCshtml1.BeginContext(8580, 45, false);
+          statisticsCshtml1.Write((object) statisticsCshtml1.Html.DisplayFor<IEnumerable<dailystateDesc>, DateTime>((Expression<Func<IEnumerable<dailystateDesc>, DateTime>>) (modelItem => item.start_time)));
+          statisticsCshtml1.EndContext();
+          statisticsCshtml1.BeginContext(8625, 35, true);
+          statisticsCshtml1.WriteLiteral("</td>\r\n                        <td>");
+          statisticsCshtml1.EndContext();
+          statisticsCshtml1.BeginContext(8661, 43, false);
+          statisticsCshtml1.Write((object) statisticsCshtml1.Html.DisplayFor<IEnumerable<dailystateDesc>, DateTime>((Expression<Func<IEnumerable<dailystateDesc>, DateTime>>) (modelItem => item.end_time)));
+          statisticsCshtml1.EndContext();
+          statisticsCshtml1.BeginContext(8704, 7, true);
+          statisticsCshtml1.WriteLiteral("</td>\r\n");
+          statisticsCshtml1.EndContext();
+          string str6 = "New";
+          if (item.isoldjourney)
+            str6 = "Old";
+          statisticsCshtml1.BeginContext(8993, 28, true);
+          statisticsCshtml1.WriteLiteral("                        <td>");
+          statisticsCshtml1.EndContext();
+          statisticsCshtml1.BeginContext(9022, 10, false);
+          statisticsCshtml1.Write(str6);
+          statisticsCshtml1.EndContext();
+          statisticsCshtml1.BeginContext(9032, 7, true);
+          statisticsCshtml1.WriteLiteral("</td>\r\n");
+          statisticsCshtml1.EndContext();
+          statisticsCshtml1.BeginContext(9073, 28, true);
+          statisticsCshtml1.WriteLiteral("                        <td>");
+          statisticsCshtml1.EndContext();
+          statisticsCshtml1.BeginContext(9102, 44, false);
+          statisticsCshtml1.Write((object) statisticsCshtml1.Html.DisplayFor<IEnumerable<dailystateDesc>, string>((Expression<Func<IEnumerable<dailystateDesc>, string>>) (modelItem => item.runner_id)));
+          statisticsCshtml1.EndContext();
+          statisticsCshtml1.BeginContext(9146, 37, true);
+          statisticsCshtml1.WriteLiteral("</td>\r\n                        <td>\r\n");
+          statisticsCshtml1.EndContext();
+          if (item.state != 0 && !item.isrunning && item.state != 2)
+          {
+            statisticsCshtml1.BeginContext(9311, 32, true);
+            statisticsCshtml1.WriteLiteral("                                ");
+            statisticsCshtml1.EndContext();
+            statisticsCshtml1.BeginContext(9343, 126, false);
+            // ISSUE: reference to a compiler-generated method
+            statisticsCshtml1.__tagHelperExecutionContext = statisticsCshtml1.__tagHelperScopeManager.Begin("a", TagMode.StartTagAndEndTag, "cf47a036f8aa45ae827b7a90ca93639f", new Func<Task>(statisticsCshtml1.\u003CExecuteAsync\u003Eb__17_6));
+            statisticsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper = statisticsCshtml1.CreateTagHelper<AnchorTagHelper>();
+            statisticsCshtml1.__tagHelperExecutionContext.Add((ITagHelper) statisticsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper);
+            statisticsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.Action = (string) _Views_Home_Statistics_cshtml.__tagHelperAttribute_4.Value;
+            statisticsCshtml1.__tagHelperExecutionContext.AddTagHelperAttribute(_Views_Home_Statistics_cshtml.__tagHelperAttribute_4);
+            if (statisticsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues == null)
+              throw new InvalidOperationException(statisticsCshtml1.InvalidTagHelperIndexerAssignment("asp-route-id", "Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper", "RouteValues"));
+            statisticsCshtml1.BeginWriteTagHelperAttribute();
+            statisticsCshtml1.WriteLiteral((object) item.id);
+            statisticsCshtml1.__tagHelperStringValueBuffer = statisticsCshtml1.EndWriteTagHelperAttribute();
+            statisticsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues["id"] = statisticsCshtml1.__tagHelperStringValueBuffer;
+            statisticsCshtml1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-route-id", (object) statisticsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues["id"], HtmlAttributeValueStyle.DoubleQuotes);
+            statisticsCshtml1.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_Statistics_cshtml.__tagHelperAttribute_5);
+            statisticsCshtml1.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_Statistics_cshtml.__tagHelperAttribute_6);
+            await statisticsCshtml1.__tagHelperRunner.RunAsync(statisticsCshtml1.__tagHelperExecutionContext);
+            if (!statisticsCshtml1.__tagHelperExecutionContext.Output.IsContentModified)
+              await statisticsCshtml1.__tagHelperExecutionContext.SetOutputContentAsync();
+            statisticsCshtml1.Write((object) statisticsCshtml1.__tagHelperExecutionContext.Output);
+            statisticsCshtml1.__tagHelperExecutionContext = statisticsCshtml1.__tagHelperScopeManager.End();
+            statisticsCshtml1.EndContext();
+            statisticsCshtml1.BeginContext(9469, 2, true);
+            statisticsCshtml1.WriteLiteral("\r\n");
+            statisticsCshtml1.EndContext();
+          }
+          statisticsCshtml1.BeginContext(9502, 28, true);
+          statisticsCshtml1.WriteLiteral("                            ");
+          statisticsCshtml1.EndContext();
+          if (Convert.ToBoolean(statisticsCshtml1.ViewData["IsToday"]) && item.state == 0 && !item.isoldjourney && !item.isrunning)
+          {
+            DateTime predictTime = item.predict_time;
+            if (predictTime.Hour == 0)
+            {
+              predictTime = item.predict_time;
+              if (predictTime.Minute == 0)
+              {
+                predictTime = item.predict_time;
+                if (predictTime.Second == 0)
+                  goto label_89;
+              }
+            }
+            statisticsCshtml1.BeginContext(9790, 32, true);
+            statisticsCshtml1.WriteLiteral("                                ");
+            statisticsCshtml1.EndContext();
+            statisticsCshtml1.BeginContext(9822, 89, false);
+            // ISSUE: reference to a compiler-generated method
+            statisticsCshtml1.__tagHelperExecutionContext = statisticsCshtml1.__tagHelperScopeManager.Begin("a", TagMode.StartTagAndEndTag, "a29839f039c141c294eea2e12d590402", new Func<Task>(statisticsCshtml1.\u003CExecuteAsync\u003Eb__17_7));
+            statisticsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper = statisticsCshtml1.CreateTagHelper<AnchorTagHelper>();
+            statisticsCshtml1.__tagHelperExecutionContext.Add((ITagHelper) statisticsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper);
+            statisticsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.Action = (string) _Views_Home_Statistics_cshtml.__tagHelperAttribute_7.Value;
+            statisticsCshtml1.__tagHelperExecutionContext.AddTagHelperAttribute(_Views_Home_Statistics_cshtml.__tagHelperAttribute_7);
+            if (statisticsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues == null)
+              throw new InvalidOperationException(statisticsCshtml1.InvalidTagHelperIndexerAssignment("asp-route-id", "Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper", "RouteValues"));
+            statisticsCshtml1.BeginWriteTagHelperAttribute();
+            statisticsCshtml1.WriteLiteral((object) item.id);
+            statisticsCshtml1.__tagHelperStringValueBuffer = statisticsCshtml1.EndWriteTagHelperAttribute();
+            statisticsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues["id"] = statisticsCshtml1.__tagHelperStringValueBuffer;
+            statisticsCshtml1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-route-id", (object) statisticsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues["id"], HtmlAttributeValueStyle.DoubleQuotes);
+            statisticsCshtml1.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_Statistics_cshtml.__tagHelperAttribute_5);
+            await statisticsCshtml1.__tagHelperRunner.RunAsync(statisticsCshtml1.__tagHelperExecutionContext);
+            if (!statisticsCshtml1.__tagHelperExecutionContext.Output.IsContentModified)
+              await statisticsCshtml1.__tagHelperExecutionContext.SetOutputContentAsync();
+            statisticsCshtml1.Write((object) statisticsCshtml1.__tagHelperExecutionContext.Output);
+            statisticsCshtml1.__tagHelperExecutionContext = statisticsCshtml1.__tagHelperScopeManager.End();
+            statisticsCshtml1.EndContext();
+            statisticsCshtml1.BeginContext(9911, 2, true);
+            statisticsCshtml1.WriteLiteral("\r\n");
+            statisticsCshtml1.EndContext();
+          }
+label_89:
+          statisticsCshtml1.BeginContext(9944, 60, true);
+          statisticsCshtml1.WriteLiteral("                        </td>\r\n\r\n                    </tr>\r\n");
+          statisticsCshtml1.EndContext();
+        }
+      }
+      statisticsCshtml1.BeginContext(10023, 1091, true);
+      statisticsCshtml1.WriteLiteral("            </tbody>\r\n        </table>\r\n    </div>\r\n</div>\r\n<script>\r\n    function ResetConfirm() {\r\n        return confirm(\"Are you going to reset this journey?\");\r\n    }\r\n\r\n    function BulkResetIgnore() {\r\n        \r\n\r\n        var tableVal = \"\";\r\n\r\n        var isSelected = false;\r\n        $(\"input[name='journeyid']\").each(function () {\r\n            if ($(this).prop('checked') == true) {\r\n                tableVal += $(this).attr('value') + \",\";\r\n                isSelected = true;\r\n            }\r\n        });\r\n\r\n        if (isSelected == false) {\r\n            alert(\"Please select journeys to reset.\");\r\n            return;\r\n        }\r\n\r\n        if (confirm(\"Are you going to reset all selected 'ignore' journeys to ready start?\") != true)\r\n            return;\r\n\r\n        $.post(\"/Home/BulkResetIgnore/\", { param: tableVal }, function (result) {\r\n            window.location.reload();\r\n        });\r\n    }\r\n\r\n    function ChangeBulkCheckbox() {\r\n        var a = $(\"input[name='chkselectall']\").is(':checked');\r\n        $");
+      statisticsCshtml1.WriteLiteral("(\"input[name='journeyid']\").prop('checked', a);\r\n    }\r\n</script>\r\n");
+      statisticsCshtml1.EndContext();
+      // ISSUE: reference to a compiler-generated method
+      statisticsCshtml1.DefineSection("Scripts", new RenderAsyncDelegate(statisticsCshtml1.\u003CExecuteAsync\u003Eb__17_8));
+    }
+
+    [RazorInject]
+    public IModelExpressionProvider ModelExpressionProvider { get; private set; }
+
+    [RazorInject]
+    public IUrlHelper Url { get; private set; }
+
+    [RazorInject]
+    public IViewComponentHelper Component { get; private set; }
+
+    [RazorInject]
+    public IJsonHelper Json { get; private set; }
+
+    [RazorInject]
+    public IHtmlHelper<IEnumerable<dailystateDesc>> Html { get; private set; }
+  }
+}

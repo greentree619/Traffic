@@ -1,0 +1,1124 @@
+﻿// Decompiled with JetBrains decompiler
+// Type: AspNetCore._Views_Home_GMBPost_cshtml
+// Assembly: Traffic.PrecompiledViews, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+// MVID: 8B37BA40-0390-40A7-A536-D9CCDBC36390
+// Assembly location: D:\Workstation\TonniProjects\TrafficWebDeploy\Traffic.PrecompiledViews.dll
+
+using Microsoft.AspNetCore.Html;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Razor;
+using Microsoft.AspNetCore.Mvc.Razor.Internal;
+using Microsoft.AspNetCore.Mvc.Razor.TagHelpers;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.Mvc.TagHelpers;
+using Microsoft.AspNetCore.Mvc.ViewFeatures;
+using Microsoft.AspNetCore.Razor.Runtime.TagHelpers;
+using Microsoft.AspNetCore.Razor.TagHelpers;
+using Microsoft.CSharp.RuntimeBinder;
+using System;
+using System.Collections.Generic;
+using System.Linq.Expressions;
+using System.Runtime.CompilerServices;
+using System.Text.Encodings.Web;
+using System.Threading.Tasks;
+using Traffic.Models;
+
+namespace AspNetCore
+{
+  public class _Views_Home_GMBPost_cshtml : RazorPage<trafficjob>
+  {
+    private static readonly TagHelperAttribute __tagHelperAttribute_0 = new TagHelperAttribute("asp-action", (object) "GMBLocation", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_1 = new TagHelperAttribute("value", (object) "Morocco Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_2 = new TagHelperAttribute("value", (object) "GMT Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_3 = new TagHelperAttribute("value", (object) "Greenwich Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_4 = new TagHelperAttribute("value", (object) "W. Europe Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_5 = new TagHelperAttribute("value", (object) "Central Europe Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_6 = new TagHelperAttribute("value", (object) "Romance Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_7 = new TagHelperAttribute("value", (object) "Central European Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_8 = new TagHelperAttribute("value", (object) "W. Central Africa Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_9 = new TagHelperAttribute("value", (object) "Jordan Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_10 = new TagHelperAttribute("value", (object) "GTB Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_11 = new TagHelperAttribute("value", (object) "Middle East Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_12 = new TagHelperAttribute("value", (object) "Egypt Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_13 = new TagHelperAttribute("value", (object) "South Africa Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_14 = new TagHelperAttribute("value", (object) "FLE Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_15 = new TagHelperAttribute("value", (object) "Israel Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_16 = new TagHelperAttribute("value", (object) "E. Europe Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_17 = new TagHelperAttribute("value", (object) "Namibia Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_18 = new TagHelperAttribute("value", (object) "Arabic Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_19 = new TagHelperAttribute("value", (object) "Arab Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_20 = new TagHelperAttribute("value", (object) "Russian Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_21 = new TagHelperAttribute("value", (object) "E. Africa Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_22 = new TagHelperAttribute("value", (object) "Georgian Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_23 = new TagHelperAttribute("value", (object) "Iran Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_24 = new TagHelperAttribute("value", (object) "Arabian Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_25 = new TagHelperAttribute("value", (object) "Azerbaijan Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_26 = new TagHelperAttribute("value", (object) "Mauritius Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_27 = new TagHelperAttribute("value", (object) "Caucasus Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_28 = new TagHelperAttribute("value", (object) "Afghanistan Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_29 = new TagHelperAttribute("value", (object) "Ekaterinburg Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_30 = new TagHelperAttribute("value", (object) "Pakistan Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_31 = new TagHelperAttribute("value", (object) "West Asia Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_32 = new TagHelperAttribute("value", (object) "India Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_33 = new TagHelperAttribute("value", (object) "Sri Lanka Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_34 = new TagHelperAttribute("value", (object) "Nepal Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_35 = new TagHelperAttribute("value", (object) "N. Central Asia Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_36 = new TagHelperAttribute("value", (object) "Central Asia Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_37 = new TagHelperAttribute("value", (object) "Myanmar Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_38 = new TagHelperAttribute("value", (object) "SE Asia Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_39 = new TagHelperAttribute("value", (object) "North Asia Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_40 = new TagHelperAttribute("value", (object) "China Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_41 = new TagHelperAttribute("value", (object) "North Asia East Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_42 = new TagHelperAttribute("value", (object) "Singapore Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_43 = new TagHelperAttribute("value", (object) "W. Australia Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_44 = new TagHelperAttribute("value", (object) "Taipei Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_45 = new TagHelperAttribute("value", (object) "Tokyo Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_46 = new TagHelperAttribute("value", (object) "Korea Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_47 = new TagHelperAttribute("value", (object) "Yakutsk Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_48 = new TagHelperAttribute("value", (object) "Cen. Australia Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_49 = new TagHelperAttribute("value", (object) "AUS Central Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_50 = new TagHelperAttribute("value", (object) "E. Australia Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_51 = new TagHelperAttribute("value", (object) "AUS Eastern Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_52 = new TagHelperAttribute("value", (object) "West Pacific Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_53 = new TagHelperAttribute("value", (object) "Tasmania Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_54 = new TagHelperAttribute("value", (object) "Vladivostok Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_55 = new TagHelperAttribute("value", (object) "Central Pacific Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_56 = new TagHelperAttribute("value", (object) "New Zealand Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_57 = new TagHelperAttribute("value", (object) "Fiji Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_58 = new TagHelperAttribute("value", (object) "Tonga Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_59 = new TagHelperAttribute("value", (object) "Azores Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_60 = new TagHelperAttribute("value", (object) "Cape Verde Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_61 = new TagHelperAttribute("value", (object) "Mid-Atlantic Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_62 = new TagHelperAttribute("value", (object) "E. South America Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_63 = new TagHelperAttribute("value", (object) "Argentina Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_64 = new TagHelperAttribute("value", (object) "SA Eastern Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_65 = new TagHelperAttribute("value", (object) "Greenland Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_66 = new TagHelperAttribute("value", (object) "Montevideo Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_67 = new TagHelperAttribute("value", (object) "Newfoundland Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_68 = new TagHelperAttribute("value", (object) "Atlantic Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_69 = new TagHelperAttribute("value", (object) "SA Western Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_70 = new TagHelperAttribute("value", (object) "Central Brazilian Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_71 = new TagHelperAttribute("value", (object) "Pacific SA Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_72 = new TagHelperAttribute("value", (object) "Venezuela Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_73 = new TagHelperAttribute("value", (object) "SA Pacific Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_74 = new TagHelperAttribute("value", (object) "Eastern Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_75 = new TagHelperAttribute("value", (object) "US Eastern Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_76 = new TagHelperAttribute("value", (object) "Central America Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_77 = new TagHelperAttribute("value", (object) "Central Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_78 = new TagHelperAttribute("value", (object) "Central Standard Time (Mexico)", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_79 = new TagHelperAttribute("value", (object) "Canada Central Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_80 = new TagHelperAttribute("value", (object) "US Mountain Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_81 = new TagHelperAttribute("value", (object) "Mountain Standard Time (Mexico)", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_82 = new TagHelperAttribute("value", (object) "Mountain Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_83 = new TagHelperAttribute("value", (object) "Pacific Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_84 = new TagHelperAttribute("value", (object) "Pacific Standard Time (Mexico)", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_85 = new TagHelperAttribute("value", (object) "Alaskan Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_86 = new TagHelperAttribute("value", (object) "Hawaiian Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_87 = new TagHelperAttribute("value", (object) "Samoa Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_88 = new TagHelperAttribute("value", (object) "Dateline Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_89 = new TagHelperAttribute("value", (object) "BOOK", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_90 = new TagHelperAttribute("value", (object) "ORDER", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_91 = new TagHelperAttribute("value", (object) "SHOP", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_92 = new TagHelperAttribute("value", (object) "LEARN_MORE", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_93 = new TagHelperAttribute("value", (object) "SIGN_UP", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_94 = new TagHelperAttribute("value", (object) "CALL", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_95 = new TagHelperAttribute("value", (object) "PHOTO", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_96 = new TagHelperAttribute("value", (object) "VIDEO", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_97 = new TagHelperAttribute("method", (object) "post", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_98 = new TagHelperAttribute("enctype", (object) new HtmlString("multipart/form-data"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_99 = new TagHelperAttribute("asp-controller", (object) "Home", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_100 = new TagHelperAttribute("asp-action", (object) "CreateGMBOfferPost", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_101 = new TagHelperAttribute("asp-action", (object) "CreateGMBOfferPostBatch", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_102 = new TagHelperAttribute("id", (object) new HtmlString("droplist"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_103 = new TagHelperAttribute("style", (object) new HtmlString("width:100%;margin-top:7px"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_104 = new TagHelperAttribute("id", (object) new HtmlString("droplist1"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_105 = new TagHelperAttribute("id", (object) new HtmlString("droplist2"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_106 = new TagHelperAttribute("href", (object) new HtmlString("~/js/datatables/responsive.bootstrap.min.css"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_107 = new TagHelperAttribute("rel", (object) new HtmlString("stylesheet"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_108 = new TagHelperAttribute("type", (object) new HtmlString("text/css"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_109 = new TagHelperAttribute("href", (object) new HtmlString("~/js/datatables/scroller.bootstrap.min.css"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_110 = new TagHelperAttribute("src", (object) new HtmlString("~/js/datatables/jquery.dataTables.min.js"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_111 = new TagHelperAttribute("src", (object) new HtmlString("~/js/datatables/dataTables.bootstrap.js"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_112 = new TagHelperAttribute("src", (object) new HtmlString("~/js/datatables/dataTables.buttons.min.js"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_113 = new TagHelperAttribute("src", (object) new HtmlString("~/js/datatables/buttons.bootstrap.min.js"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_114 = new TagHelperAttribute("src", (object) new HtmlString("~/js/datatables/jszip.min.js"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_115 = new TagHelperAttribute("src", (object) new HtmlString("~/js/datatables/pdfmake.min.js"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_116 = new TagHelperAttribute("src", (object) new HtmlString("~/js/datatables/vfs_fonts.js"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_117 = new TagHelperAttribute("src", (object) new HtmlString("~/js/datatables/buttons.html5.min.js"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_118 = new TagHelperAttribute("src", (object) new HtmlString("~/js/datatables/buttons.print.min.js"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_119 = new TagHelperAttribute("src", (object) new HtmlString("~/js/datatables/dataTables.fixedHeader.min.js"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_120 = new TagHelperAttribute("src", (object) new HtmlString("~/js/datatables/dataTables.keyTable.min.js"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_121 = new TagHelperAttribute("src", (object) new HtmlString("~/js/datatables/dataTables.responsive.min.js"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_122 = new TagHelperAttribute("src", (object) new HtmlString("~/js/datatables/responsive.bootstrap.min.js"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_123 = new TagHelperAttribute("src", (object) new HtmlString("~/js/datatables/dataTables.scroller.min.js"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_124 = new TagHelperAttribute("href", (object) new HtmlString("~/js/datetimepicker/bootstrap-datetimepicker.min.css"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_125 = new TagHelperAttribute("src", (object) new HtmlString("~/js/datetimepicker/bootstrap-datetimepicker.min.js"), HtmlAttributeValueStyle.DoubleQuotes);
+    private string __tagHelperStringValueBuffer;
+    private TagHelperExecutionContext __tagHelperExecutionContext;
+    private TagHelperRunner __tagHelperRunner = new TagHelperRunner();
+    private TagHelperScopeManager __backed__tagHelperScopeManager;
+    private AnchorTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper;
+    private FormTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper;
+    private RenderAtEndOfFormTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper;
+    private OptionTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_OptionTagHelper;
+    private SelectTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper;
+    private UrlResolutionTagHelper __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper;
+    private static readonly Expression<Func<trafficjob, int>> __h0 = (Expression<Func<trafficjob, int>>) (__model => __model.id);
+    private static readonly Expression<Func<trafficjob, int>> __h1 = (Expression<Func<trafficjob, int>>) (__model => __model.id);
+    private static readonly Expression<Func<trafficjob, int>> __h2 = (Expression<Func<trafficjob, int>>) (__model => __model.id);
+
+    private TagHelperScopeManager __tagHelperScopeManager
+    {
+      get
+      {
+        if (this.__backed__tagHelperScopeManager == null)
+          this.__backed__tagHelperScopeManager = new TagHelperScopeManager(new Action<HtmlEncoder>(((RazorPageBase) this).StartTagHelperWritingScope), new Func<TagHelperContent>(((RazorPageBase) this).EndTagHelperWritingScope));
+        return this.__backed__tagHelperScopeManager;
+      }
+    }
+
+    public virtual async Task ExecuteAsync()
+    {
+      _Views_Home_GMBPost_cshtml homeGmbPostCshtml1 = this;
+      homeGmbPostCshtml1.BeginContext(34, 2, true);
+      homeGmbPostCshtml1.WriteLiteral("\r\n");
+      homeGmbPostCshtml1.EndContext();
+      homeGmbPostCshtml1.ViewData["Title"] = (object) "Create";
+      // ISSUE: explicit non-virtual call
+      __nonvirtual (homeGmbPostCshtml1.Layout) = "~/Views/Shared/_Layout.cshtml";
+      homeGmbPostCshtml1.BeginContext(125, 617, true);
+      homeGmbPostCshtml1.WriteLiteral("<br />\r\n<div class=\"btn-group pull-right\">\r\n    <div class=\"btn-group\">\r\n        <button type=\"button\" class=\"btn btn-success dropdown-toggle \" data-toggle=\"dropdown\">\r\n            Action Menu\r\n        </button>\r\n        <button type=\"button\" class=\"btn btn-success dropdown-toggle\" data-toggle=\"dropdown\">\r\n            &nbsp;&nbsp;<span class=\"caret\"></span>&nbsp;&nbsp;\r\n        </button>\r\n        <ul class=\"dropdown-menu\" role=\"menu\" style=\"background: #e8ece3;\">\r\n            <li><a id=\"modalshow\">Create New Post</a></li>\r\n\r\n            <li><a id=\"copyT1Urls\">To Add T1 Company Urls</a></li>\r\n\r\n            <li>");
+      homeGmbPostCshtml1.EndContext();
+      homeGmbPostCshtml1.BeginContext(742, 120, false);
+      // ISSUE: reference to a compiler-generated method
+      homeGmbPostCshtml1.__tagHelperExecutionContext = homeGmbPostCshtml1.__tagHelperScopeManager.Begin("a", TagMode.StartTagAndEndTag, "32ee0252a0484797a920b20525570b86", new Func<Task>(homeGmbPostCshtml1.\u003CExecuteAsync\u003Eb__138_0));
+      homeGmbPostCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper = homeGmbPostCshtml1.CreateTagHelper<AnchorTagHelper>();
+      homeGmbPostCshtml1.__tagHelperExecutionContext.Add((ITagHelper) homeGmbPostCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper);
+      homeGmbPostCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.Action = (string) _Views_Home_GMBPost_cshtml.__tagHelperAttribute_0.Value;
+      homeGmbPostCshtml1.__tagHelperExecutionContext.AddTagHelperAttribute(_Views_Home_GMBPost_cshtml.__tagHelperAttribute_0);
+      if (homeGmbPostCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues == null)
+        throw new InvalidOperationException(homeGmbPostCshtml1.InvalidTagHelperIndexerAssignment("asp-route-id", "Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper", "RouteValues"));
+      homeGmbPostCshtml1.BeginWriteTagHelperAttribute();
+      // ISSUE: reference to a compiler-generated field
+      if (_Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__1 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        _Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__1 = CallSite<Action<CallSite, _Views_Home_GMBPost_cshtml, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "WriteLiteral", (IEnumerable<Type>) null, typeof (_Views_Home_GMBPost_cshtml), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, _Views_Home_GMBPost_cshtml, object> target1 = _Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__1.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, _Views_Home_GMBPost_cshtml, object>> p1 = _Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__1;
+      _Views_Home_GMBPost_cshtml homeGmbPostCshtml2 = homeGmbPostCshtml1;
+      // ISSUE: reference to a compiler-generated field
+      if (_Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__0 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        _Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__0 = CallSite<Func<CallSite, object, object>>.Create(Binder.GetMember(CSharpBinderFlags.None, "Userid", typeof (_Views_Home_GMBPost_cshtml), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj1 = _Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__0.Target((CallSite) _Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__0, homeGmbPostCshtml1.ViewBag);
+      target1((CallSite) p1, homeGmbPostCshtml2, obj1);
+      homeGmbPostCshtml1.__tagHelperStringValueBuffer = homeGmbPostCshtml1.EndWriteTagHelperAttribute();
+      homeGmbPostCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues["id"] = homeGmbPostCshtml1.__tagHelperStringValueBuffer;
+      homeGmbPostCshtml1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-route-id", (object) homeGmbPostCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues["id"], HtmlAttributeValueStyle.DoubleQuotes);
+      homeGmbPostCshtml1.BeginWriteTagHelperAttribute();
+      // ISSUE: reference to a compiler-generated field
+      if (_Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__3 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        _Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__3 = CallSite<Action<CallSite, _Views_Home_GMBPost_cshtml, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "WriteLiteral", (IEnumerable<Type>) null, typeof (_Views_Home_GMBPost_cshtml), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, _Views_Home_GMBPost_cshtml, object> target2 = _Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__3.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, _Views_Home_GMBPost_cshtml, object>> p3 = _Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__3;
+      _Views_Home_GMBPost_cshtml homeGmbPostCshtml3 = homeGmbPostCshtml1;
+      // ISSUE: reference to a compiler-generated field
+      if (_Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__2 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        _Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__2 = CallSite<Func<CallSite, object, object>>.Create(Binder.GetMember(CSharpBinderFlags.None, "Projectid", typeof (_Views_Home_GMBPost_cshtml), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj2 = _Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__2.Target((CallSite) _Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__2, homeGmbPostCshtml1.ViewBag);
+      target2((CallSite) p3, homeGmbPostCshtml3, obj2);
+      homeGmbPostCshtml1.__tagHelperStringValueBuffer = homeGmbPostCshtml1.EndWriteTagHelperAttribute();
+      homeGmbPostCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues["projectid"] = homeGmbPostCshtml1.__tagHelperStringValueBuffer;
+      homeGmbPostCshtml1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-route-projectid", (object) homeGmbPostCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues["projectid"], HtmlAttributeValueStyle.DoubleQuotes);
+      await homeGmbPostCshtml1.__tagHelperRunner.RunAsync(homeGmbPostCshtml1.__tagHelperExecutionContext);
+      if (!homeGmbPostCshtml1.__tagHelperExecutionContext.Output.IsContentModified)
+        await homeGmbPostCshtml1.__tagHelperExecutionContext.SetOutputContentAsync();
+      homeGmbPostCshtml1.Write((object) homeGmbPostCshtml1.__tagHelperExecutionContext.Output);
+      homeGmbPostCshtml1.__tagHelperExecutionContext = homeGmbPostCshtml1.__tagHelperScopeManager.End();
+      homeGmbPostCshtml1.EndContext();
+      homeGmbPostCshtml1.BeginContext(862, 86, true);
+      homeGmbPostCshtml1.WriteLiteral("</li>\r\n        </ul>\r\n    </div>\r\n</div>\r\n<div class=\"row\">\r\n    <h1 id=\"accountname\">");
+      homeGmbPostCshtml1.EndContext();
+      homeGmbPostCshtml1.BeginContext(949, 19, false);
+      // ISSUE: reference to a compiler-generated field
+      if (_Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__5 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        _Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__5 = CallSite<Action<CallSite, _Views_Home_GMBPost_cshtml, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (_Views_Home_GMBPost_cshtml), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, _Views_Home_GMBPost_cshtml, object> target3 = _Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__5.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, _Views_Home_GMBPost_cshtml, object>> p5 = _Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__5;
+      _Views_Home_GMBPost_cshtml homeGmbPostCshtml4 = homeGmbPostCshtml1;
+      // ISSUE: reference to a compiler-generated field
+      if (_Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__4 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        _Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__4 = CallSite<Func<CallSite, object, object>>.Create(Binder.GetMember(CSharpBinderFlags.None, "AccountName", typeof (_Views_Home_GMBPost_cshtml), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj3 = _Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__4.Target((CallSite) _Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__4, homeGmbPostCshtml1.ViewBag);
+      target3((CallSite) p5, homeGmbPostCshtml4, obj3);
+      homeGmbPostCshtml1.EndContext();
+      homeGmbPostCshtml1.BeginContext(968, 934, true);
+      homeGmbPostCshtml1.WriteLiteral("</h1>\r\n</div>\r\n\r\n<div class=\"row\">\r\n    <div class=\"form-group\">\r\n        <div class=\"form-group\" style=\"margin-top: 20px;\">\r\n            <table id=\"posttable\" class=\"table table-striped table-bordered dt-responsive nowrap\" cellspacing=\"0\" width=\"100%;\" style=\"border:0px solid\">\r\n                <thead>\r\n                    <tr style=\"background-color:#;box-shadow: 0 8px 12px 0 rgba(0.1,0.1,0.1,0.1);\">\r\n                        <th style=\"width:0px\" data-val=\"asc\" id=\"tgname\"><i class=\"fa fa-sort\" aria-hidden=\"true\"></i>Name</th>\r\n                        <th style=\"width:15%\" data-val=\"asc\" id=\"tgname\"><i class=\"fa fa-sort\" aria-hidden=\"true\"></i>GMB Name</th>\r\n                        <th style=\"width:5%\" data-val=\"asc\" id=\"ttype\"><i class=\"fa fa-sort\" aria-hidden=\"true\"></i> Type</th>\r\n                        <th style=\"width:10%\" data-val=\"asc\" id=\"tsdate\"><i class=\"fa fa-sort\" aria-hidden=\"true\"></i> Date : Time</th>\r\n");
+      homeGmbPostCshtml1.EndContext();
+      homeGmbPostCshtml1.BeginContext(2034, 1600, true);
+      homeGmbPostCshtml1.WriteLiteral("                        <th style=\"width:5%\" data-val=\"asc\" id=\"tviews\"><i class=\"fa fa-sort\" aria-hidden=\"true\"></i> Views/Clicks</th>\r\n                        <th style=\"width:5%\" data-val=\"asc\" id=\"tstatus\"><i class=\"fa fa-sort\" aria-hidden=\"true\"></i> Status</th>\r\n                        <th style=\"width:5%\" data-val=\"asc\" id=\"tstate\"><i class=\"fa fa-sort\" aria-hidden=\"true\"></i> State</th>\r\n                        <th style=\"width:5%;display:none\">url</th>\r\n                        <th style=\"width:9%\">Action</th>\r\n                    </tr>\r\n                </thead>\r\n                <tbody></tbody>\r\n            </table>\r\n        </div>\r\n    </div>\r\n</div>\r\n\r\n<div id=\"AddModal\" class=\"modal fade\" tabindex=\"-1\" role=\"dialog\" aria-hidden=\"true\">\r\n    <div class=\"modal-dialog\" style=\"width:1060px\">\r\n        <div class=\"modal-content\">\r\n            <div class=\"modal-header\">\r\n                <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\">\r\n                    <span aria-hidden=\"tru");
+      homeGmbPostCshtml1.WriteLiteral("e\">×</span>\r\n                </button>\r\n                <h4 class=\"modal-title\">Create</h4>\r\n            </div>\r\n            <div class=\"modal-body\" style=\"height:500px;width:1050px\">\r\n                <div>\r\n                    <div id=\"controltab\" style=\"border:0px solid\">\r\n                        <ul>\r\n                            <li><a href=\"#tabs-1\">Create (Offer Post)</a></li>\r\n                            <li><a href=\"#tabs-2\">Create Batch(Offer Posts)</a></li>\r\n                        </ul>\r\n                        <div id=\"tabs-1\">\r\n\r\n                            ");
+      homeGmbPostCshtml1.EndContext();
+      homeGmbPostCshtml1.BeginContext(3634, 15370, false);
+      // ISSUE: reference to a compiler-generated method
+      homeGmbPostCshtml1.__tagHelperExecutionContext = homeGmbPostCshtml1.__tagHelperScopeManager.Begin("form", TagMode.StartTagAndEndTag, "245fe365c8bf4ec79db3299012b0eea0", new Func<Task>(homeGmbPostCshtml1.\u003CExecuteAsync\u003Eb__138_1));
+      homeGmbPostCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper = homeGmbPostCshtml1.CreateTagHelper<FormTagHelper>();
+      homeGmbPostCshtml1.__tagHelperExecutionContext.Add((ITagHelper) homeGmbPostCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper);
+      homeGmbPostCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper = homeGmbPostCshtml1.CreateTagHelper<RenderAtEndOfFormTagHelper>();
+      homeGmbPostCshtml1.__tagHelperExecutionContext.Add((ITagHelper) homeGmbPostCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper);
+      homeGmbPostCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper.Method = (string) _Views_Home_GMBPost_cshtml.__tagHelperAttribute_97.Value;
+      homeGmbPostCshtml1.__tagHelperExecutionContext.AddTagHelperAttribute(_Views_Home_GMBPost_cshtml.__tagHelperAttribute_97);
+      homeGmbPostCshtml1.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_GMBPost_cshtml.__tagHelperAttribute_98);
+      homeGmbPostCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper.Controller = (string) _Views_Home_GMBPost_cshtml.__tagHelperAttribute_99.Value;
+      homeGmbPostCshtml1.__tagHelperExecutionContext.AddTagHelperAttribute(_Views_Home_GMBPost_cshtml.__tagHelperAttribute_99);
+      homeGmbPostCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper.Action = (string) _Views_Home_GMBPost_cshtml.__tagHelperAttribute_100.Value;
+      homeGmbPostCshtml1.__tagHelperExecutionContext.AddTagHelperAttribute(_Views_Home_GMBPost_cshtml.__tagHelperAttribute_100);
+      await homeGmbPostCshtml1.__tagHelperRunner.RunAsync(homeGmbPostCshtml1.__tagHelperExecutionContext);
+      if (!homeGmbPostCshtml1.__tagHelperExecutionContext.Output.IsContentModified)
+        await homeGmbPostCshtml1.__tagHelperExecutionContext.SetOutputContentAsync();
+      homeGmbPostCshtml1.Write((object) homeGmbPostCshtml1.__tagHelperExecutionContext.Output);
+      homeGmbPostCshtml1.__tagHelperExecutionContext = homeGmbPostCshtml1.__tagHelperScopeManager.End();
+      homeGmbPostCshtml1.EndContext();
+      homeGmbPostCshtml1.BeginContext(19004, 186, true);
+      homeGmbPostCshtml1.WriteLiteral("\r\n\r\n                        </div>\r\n                        <div id=\"tabs-2\">\r\n                            <div class=\"form-group\" style=\"display:flex\">\r\n                                ");
+      homeGmbPostCshtml1.EndContext();
+      homeGmbPostCshtml1.BeginContext(19190, 570, false);
+      // ISSUE: reference to a compiler-generated method
+      homeGmbPostCshtml1.__tagHelperExecutionContext = homeGmbPostCshtml1.__tagHelperScopeManager.Begin("form", TagMode.StartTagAndEndTag, "4b969dab33544a809792b3e28208a65d", new Func<Task>(homeGmbPostCshtml1.\u003CExecuteAsync\u003Eb__138_98));
+      homeGmbPostCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper = homeGmbPostCshtml1.CreateTagHelper<FormTagHelper>();
+      homeGmbPostCshtml1.__tagHelperExecutionContext.Add((ITagHelper) homeGmbPostCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper);
+      homeGmbPostCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper = homeGmbPostCshtml1.CreateTagHelper<RenderAtEndOfFormTagHelper>();
+      homeGmbPostCshtml1.__tagHelperExecutionContext.Add((ITagHelper) homeGmbPostCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper);
+      homeGmbPostCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper.Method = (string) _Views_Home_GMBPost_cshtml.__tagHelperAttribute_97.Value;
+      homeGmbPostCshtml1.__tagHelperExecutionContext.AddTagHelperAttribute(_Views_Home_GMBPost_cshtml.__tagHelperAttribute_97);
+      homeGmbPostCshtml1.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_GMBPost_cshtml.__tagHelperAttribute_98);
+      homeGmbPostCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper.Controller = (string) _Views_Home_GMBPost_cshtml.__tagHelperAttribute_99.Value;
+      homeGmbPostCshtml1.__tagHelperExecutionContext.AddTagHelperAttribute(_Views_Home_GMBPost_cshtml.__tagHelperAttribute_99);
+      homeGmbPostCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper.Action = (string) _Views_Home_GMBPost_cshtml.__tagHelperAttribute_101.Value;
+      homeGmbPostCshtml1.__tagHelperExecutionContext.AddTagHelperAttribute(_Views_Home_GMBPost_cshtml.__tagHelperAttribute_101);
+      await homeGmbPostCshtml1.__tagHelperRunner.RunAsync(homeGmbPostCshtml1.__tagHelperExecutionContext);
+      if (!homeGmbPostCshtml1.__tagHelperExecutionContext.Output.IsContentModified)
+        await homeGmbPostCshtml1.__tagHelperExecutionContext.SetOutputContentAsync();
+      homeGmbPostCshtml1.Write((object) homeGmbPostCshtml1.__tagHelperExecutionContext.Output);
+      homeGmbPostCshtml1.__tagHelperExecutionContext = homeGmbPostCshtml1.__tagHelperScopeManager.End();
+      homeGmbPostCshtml1.EndContext();
+      homeGmbPostCshtml1.BeginContext(19760, 900, true);
+      homeGmbPostCshtml1.WriteLiteral("\r\n                            </div>\r\n                        </div>\r\n\r\n                    </div>\r\n                </div>\r\n            </div>\r\n          \r\n        </div>\r\n    </div>\r\n</div>\r\n\r\n<div id=\"SelectFolder\" class=\"modal fade\" tabindex=\"-1\" role=\"dialog\" aria-hidden=\"true\">\r\n    <div class=\"modal-dialog\">\r\n        <div class=\"modal-content\">\r\n            <div class=\"modal-header\">\r\n                <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\">\r\n                    <span aria-hidden=\"true\">×</span>\r\n                </button>\r\n                <h4 class=\"modal-title\">Create</h4>\r\n            </div>\r\n            <div class=\"modal-body\">\r\n                <div>\r\n                    <input id=\"weburl\" type=\"hidden\" value=\"0\" />\r\n                    <input id=\"contentSnipet\" type=\"hidden\" value=\"0\" />\r\n                    <input id=\"firsturls\" type=\"hidden\"");
+      homeGmbPostCshtml1.EndContext();
+      homeGmbPostCshtml1.BeginWriteAttribute("value", " value=\"", 20660, "\"", 20688, 1);
+      // ISSUE: reference to a compiler-generated field
+      if (_Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__13 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        _Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__13 = CallSite<Action<CallSite, _Views_Home_GMBPost_cshtml, string, int, object, int, int, bool>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "WriteAttributeValue", (IEnumerable<Type>) null, typeof (_Views_Home_GMBPost_cshtml), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[7]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, _Views_Home_GMBPost_cshtml, string, int, object, int, int, bool> target4 = _Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__13.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, _Views_Home_GMBPost_cshtml, string, int, object, int, int, bool>> p13 = _Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__13;
+      _Views_Home_GMBPost_cshtml homeGmbPostCshtml5 = homeGmbPostCshtml1;
+      // ISSUE: reference to a compiler-generated field
+      if (_Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__12 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        _Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__12 = CallSite<Func<CallSite, object, object>>.Create(Binder.GetMember(CSharpBinderFlags.None, "firsturls", typeof (_Views_Home_GMBPost_cshtml), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj4 = _Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__12.Target((CallSite) _Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__12, homeGmbPostCshtml1.ViewBag);
+      target4((CallSite) p13, homeGmbPostCshtml5, "", 20668, obj4, 20668, 20, false);
+      homeGmbPostCshtml1.EndWriteAttribute();
+      homeGmbPostCshtml1.BeginContext(20689, 336, true);
+      homeGmbPostCshtml1.WriteLiteral(" />\r\n                    <div class=\"form-horizontal form-label-left\">\r\n                        <div class=\"form-group\">\r\n                            <label class=\"control-label col-md-3 col-sm-3 col-xs-12\">Select Folder : </label>\r\n                            <div class=\"col-md-8 col-sm-8 col-xs-12\">\r\n                                ");
+      homeGmbPostCshtml1.EndContext();
+      homeGmbPostCshtml1.BeginContext(21025, 145, false);
+      homeGmbPostCshtml1.__tagHelperExecutionContext = homeGmbPostCshtml1.__tagHelperScopeManager.Begin("select", TagMode.StartTagAndEndTag, "292ccfeead7f40728828c931ef14255c", (Func<Task>) (async () => { }));
+      homeGmbPostCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper = homeGmbPostCshtml1.CreateTagHelper<SelectTagHelper>();
+      homeGmbPostCshtml1.__tagHelperExecutionContext.Add((ITagHelper) homeGmbPostCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper);
+      homeGmbPostCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper.For = homeGmbPostCshtml1.ModelExpressionProvider.CreateModelExpression<trafficjob, int>(homeGmbPostCshtml1.ViewData, _Views_Home_GMBPost_cshtml.__h0);
+      homeGmbPostCshtml1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) homeGmbPostCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper.For, HtmlAttributeValueStyle.DoubleQuotes);
+      homeGmbPostCshtml1.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_GMBPost_cshtml.__tagHelperAttribute_102);
+      SelectTagHelper helpersSelectTagHelper1 = homeGmbPostCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper;
+      // ISSUE: reference to a compiler-generated field
+      if (_Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__15 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        _Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__15 = CallSite<Func<CallSite, Type, object, string, string, SelectList>>.Create(Binder.InvokeConstructor(CSharpBinderFlags.None, typeof (_Views_Home_GMBPost_cshtml), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[4]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.IsStaticType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Func<CallSite, Type, object, string, string, SelectList> target5 = _Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__15.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Func<CallSite, Type, object, string, string, SelectList>> p15 = _Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__15;
+      Type type1 = typeof (SelectList);
+      // ISSUE: reference to a compiler-generated field
+      if (_Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__14 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        _Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__14 = CallSite<Func<CallSite, object, object>>.Create(Binder.GetMember(CSharpBinderFlags.None, "listofitems", typeof (_Views_Home_GMBPost_cshtml), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj5 = _Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__14.Target((CallSite) _Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__14, homeGmbPostCshtml1.ViewBag);
+      SelectList selectList1 = target5((CallSite) p15, type1, obj5, "id", "job_name");
+      helpersSelectTagHelper1.Items = (IEnumerable<SelectListItem>) selectList1;
+      homeGmbPostCshtml1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-items", (object) homeGmbPostCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper.Items, HtmlAttributeValueStyle.DoubleQuotes);
+      homeGmbPostCshtml1.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_GMBPost_cshtml.__tagHelperAttribute_103);
+      await homeGmbPostCshtml1.__tagHelperRunner.RunAsync(homeGmbPostCshtml1.__tagHelperExecutionContext);
+      if (!homeGmbPostCshtml1.__tagHelperExecutionContext.Output.IsContentModified)
+        await homeGmbPostCshtml1.__tagHelperExecutionContext.SetOutputContentAsync();
+      homeGmbPostCshtml1.Write((object) homeGmbPostCshtml1.__tagHelperExecutionContext.Output);
+      homeGmbPostCshtml1.__tagHelperExecutionContext = homeGmbPostCshtml1.__tagHelperScopeManager.End();
+      homeGmbPostCshtml1.EndContext();
+      homeGmbPostCshtml1.BeginContext(21170, 1211, true);
+      homeGmbPostCshtml1.WriteLiteral("\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n            <div class=\"modal-footer\">\r\n                <button type=\"button\" class=\"btn btn-default\" OnClick=\"btnSelectFolder_Click(0)\" data-dismiss=\"modal\">OK</button>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n<div id=\"SelectFolder1\" class=\"modal fade\" tabindex=\"-1\" role=\"dialog\" aria-hidden=\"true\">\r\n    <div class=\"modal-dialog\">\r\n        <div class=\"modal-content\">\r\n            <div class=\"modal-header\">\r\n                <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\">\r\n                    <span aria-hidden=\"true\">×</span>\r\n                </button>\r\n                <h4 class=\"modal-title\">Create</h4>\r\n            </div>\r\n            <div class=\"modal-body\">\r\n                <div>\r\n                    <div class=\"form-horizontal form-label-left\">\r\n                        <div class=\"form-group\">\r\n                           ");
+      homeGmbPostCshtml1.WriteLiteral(" <label class=\"control-label col-md-3 col-sm-3 col-xs-12\">Select Folder : </label>\r\n                            <div class=\"col-md-8 col-sm-8 col-xs-12\">\r\n                                ");
+      homeGmbPostCshtml1.EndContext();
+      homeGmbPostCshtml1.BeginContext(22381, 146, false);
+      homeGmbPostCshtml1.__tagHelperExecutionContext = homeGmbPostCshtml1.__tagHelperScopeManager.Begin("select", TagMode.StartTagAndEndTag, "2dc8302515d64399abf458fe80c5cd73", (Func<Task>) (async () => { }));
+      homeGmbPostCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper = homeGmbPostCshtml1.CreateTagHelper<SelectTagHelper>();
+      homeGmbPostCshtml1.__tagHelperExecutionContext.Add((ITagHelper) homeGmbPostCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper);
+      homeGmbPostCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper.For = homeGmbPostCshtml1.ModelExpressionProvider.CreateModelExpression<trafficjob, int>(homeGmbPostCshtml1.ViewData, _Views_Home_GMBPost_cshtml.__h1);
+      homeGmbPostCshtml1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) homeGmbPostCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper.For, HtmlAttributeValueStyle.DoubleQuotes);
+      homeGmbPostCshtml1.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_GMBPost_cshtml.__tagHelperAttribute_104);
+      SelectTagHelper helpersSelectTagHelper2 = homeGmbPostCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper;
+      // ISSUE: reference to a compiler-generated field
+      if (_Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__17 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        _Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__17 = CallSite<Func<CallSite, Type, object, string, string, SelectList>>.Create(Binder.InvokeConstructor(CSharpBinderFlags.None, typeof (_Views_Home_GMBPost_cshtml), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[4]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.IsStaticType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Func<CallSite, Type, object, string, string, SelectList> target6 = _Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__17.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Func<CallSite, Type, object, string, string, SelectList>> p17 = _Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__17;
+      Type type2 = typeof (SelectList);
+      // ISSUE: reference to a compiler-generated field
+      if (_Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__16 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        _Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__16 = CallSite<Func<CallSite, object, object>>.Create(Binder.GetMember(CSharpBinderFlags.None, "listofitems", typeof (_Views_Home_GMBPost_cshtml), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj6 = _Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__16.Target((CallSite) _Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__16, homeGmbPostCshtml1.ViewBag);
+      SelectList selectList2 = target6((CallSite) p17, type2, obj6, "id", "job_name");
+      helpersSelectTagHelper2.Items = (IEnumerable<SelectListItem>) selectList2;
+      homeGmbPostCshtml1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-items", (object) homeGmbPostCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper.Items, HtmlAttributeValueStyle.DoubleQuotes);
+      homeGmbPostCshtml1.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_GMBPost_cshtml.__tagHelperAttribute_103);
+      await homeGmbPostCshtml1.__tagHelperRunner.RunAsync(homeGmbPostCshtml1.__tagHelperExecutionContext);
+      if (!homeGmbPostCshtml1.__tagHelperExecutionContext.Output.IsContentModified)
+        await homeGmbPostCshtml1.__tagHelperExecutionContext.SetOutputContentAsync();
+      homeGmbPostCshtml1.Write((object) homeGmbPostCshtml1.__tagHelperExecutionContext.Output);
+      homeGmbPostCshtml1.__tagHelperExecutionContext = homeGmbPostCshtml1.__tagHelperScopeManager.End();
+      homeGmbPostCshtml1.EndContext();
+      homeGmbPostCshtml1.BeginContext(22527, 1211, true);
+      homeGmbPostCshtml1.WriteLiteral("\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n            <div class=\"modal-footer\">\r\n                <button type=\"button\" class=\"btn btn-default\" OnClick=\"btnSelectFolder_Click(1)\" data-dismiss=\"modal\">OK</button>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n<div id=\"SelectFolder2\" class=\"modal fade\" tabindex=\"-1\" role=\"dialog\" aria-hidden=\"true\">\r\n    <div class=\"modal-dialog\">\r\n        <div class=\"modal-content\">\r\n            <div class=\"modal-header\">\r\n                <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\">\r\n                    <span aria-hidden=\"true\">×</span>\r\n                </button>\r\n                <h4 class=\"modal-title\">Create</h4>\r\n            </div>\r\n            <div class=\"modal-body\">\r\n                <div>\r\n                    <div class=\"form-horizontal form-label-left\">\r\n                        <div class=\"form-group\">\r\n                           ");
+      homeGmbPostCshtml1.WriteLiteral(" <label class=\"control-label col-md-3 col-sm-3 col-xs-12\">Select Folder : </label>\r\n                            <div class=\"col-md-8 col-sm-8 col-xs-12\">\r\n                                ");
+      homeGmbPostCshtml1.EndContext();
+      homeGmbPostCshtml1.BeginContext(23738, 146, false);
+      homeGmbPostCshtml1.__tagHelperExecutionContext = homeGmbPostCshtml1.__tagHelperScopeManager.Begin("select", TagMode.StartTagAndEndTag, "6a434198dbb84244b44a562c1fc307c0", (Func<Task>) (async () => { }));
+      homeGmbPostCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper = homeGmbPostCshtml1.CreateTagHelper<SelectTagHelper>();
+      homeGmbPostCshtml1.__tagHelperExecutionContext.Add((ITagHelper) homeGmbPostCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper);
+      homeGmbPostCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper.For = homeGmbPostCshtml1.ModelExpressionProvider.CreateModelExpression<trafficjob, int>(homeGmbPostCshtml1.ViewData, _Views_Home_GMBPost_cshtml.__h2);
+      homeGmbPostCshtml1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) homeGmbPostCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper.For, HtmlAttributeValueStyle.DoubleQuotes);
+      homeGmbPostCshtml1.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_GMBPost_cshtml.__tagHelperAttribute_105);
+      SelectTagHelper helpersSelectTagHelper3 = homeGmbPostCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper;
+      // ISSUE: reference to a compiler-generated field
+      if (_Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__19 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        _Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__19 = CallSite<Func<CallSite, Type, object, string, string, SelectList>>.Create(Binder.InvokeConstructor(CSharpBinderFlags.None, typeof (_Views_Home_GMBPost_cshtml), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[4]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.IsStaticType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Func<CallSite, Type, object, string, string, SelectList> target7 = _Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__19.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Func<CallSite, Type, object, string, string, SelectList>> p19 = _Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__19;
+      Type type3 = typeof (SelectList);
+      // ISSUE: reference to a compiler-generated field
+      if (_Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__18 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        _Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__18 = CallSite<Func<CallSite, object, object>>.Create(Binder.GetMember(CSharpBinderFlags.None, "listofitems", typeof (_Views_Home_GMBPost_cshtml), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj7 = _Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__18.Target((CallSite) _Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__18, homeGmbPostCshtml1.ViewBag);
+      SelectList selectList3 = target7((CallSite) p19, type3, obj7, "id", "job_name");
+      helpersSelectTagHelper3.Items = (IEnumerable<SelectListItem>) selectList3;
+      homeGmbPostCshtml1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-items", (object) homeGmbPostCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper.Items, HtmlAttributeValueStyle.DoubleQuotes);
+      homeGmbPostCshtml1.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_GMBPost_cshtml.__tagHelperAttribute_103);
+      await homeGmbPostCshtml1.__tagHelperRunner.RunAsync(homeGmbPostCshtml1.__tagHelperExecutionContext);
+      if (!homeGmbPostCshtml1.__tagHelperExecutionContext.Output.IsContentModified)
+        await homeGmbPostCshtml1.__tagHelperExecutionContext.SetOutputContentAsync();
+      homeGmbPostCshtml1.Write((object) homeGmbPostCshtml1.__tagHelperExecutionContext.Output);
+      homeGmbPostCshtml1.__tagHelperExecutionContext = homeGmbPostCshtml1.__tagHelperScopeManager.End();
+      homeGmbPostCshtml1.EndContext();
+      homeGmbPostCshtml1.BeginContext(23884, 2749, true);
+      homeGmbPostCshtml1.WriteLiteral("\r\n                            </div>\r\n                        </div>\r\n                        <div class=\"form-group\">\r\n                            <label class=\"control-label col-md-3 col-sm-3 col-xs-12\">Second Url : </label>\r\n                            <div class=\"col-md-8 col-sm-8 col-xs-12\">\r\n                                <input type=\"text\" id=\"Surl\" class=\"form-control input-sm\" placeholder=\"\" aria-controls=\"posttable\">\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n            <div class=\"modal-footer\">\r\n                <button type=\"button\" class=\"btn btn-default\" OnClick=\"btnSelectFolder_Click(2)\" data-dismiss=\"modal\">OK</button>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n\r\n<div id=\"SelectFolder3\" class=\"modal fade\" tabindex=\"-1\" role=\"dialog\" aria-hidden=\"true\">\r\n    <div class=\"modal-dialog\">\r\n        <div class=\"modal-content\">\r\n            <div class=\"modal-header\">\r\n                <butt");
+      homeGmbPostCshtml1.WriteLiteral("on type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\">\r\n                    <span aria-hidden=\"true\">×</span>\r\n                </button>\r\n                <h4 class=\"modal-title\">To Add T1 Company Urls</h4>\r\n            </div>\r\n            <div class=\"modal-body\">\r\n                <div>\r\n                    <div class=\"form-horizontal form-label-left\">                        \r\n                        <div class=\"form-group\">\r\n                            <label class=\"control-label col-md-3 col-sm-3 col-xs-12\"> Urls : </label>\r\n                            <div class=\"col-md-8 col-sm-8 col-xs-12\">\r\n                                <textarea id=\"furl\" class=\"form-control input-sm\"></textarea>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n            <div class=\"modal-footer\">\r\n                <button type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\">OK</button>\r\n            </div>\r\n        </div");
+      homeGmbPostCshtml1.WriteLiteral(">\r\n    </div>\r\n</div>\r\n<style>\r\n    .nav-link i {\r\n        font-size: 18px;\r\n        margin-right: 4px;\r\n    }\r\n\r\n    #posttable thead tr th {\r\n        color: #000;\r\n        cursor: pointer;\r\n    }\r\n</style>\r\n<script>\r\n    $(function () {\r\n        showTooltip();\r\n        function showTooltip() {\r\n            $(\"a[data-toggle=\\\"tooltip\\\"]\").each(function () {\r\n                $(this).tooltip();\r\n            });\r\n        }\r\n    });\r\n\r\n    $(\"#modalshow\").bind(\"click\", function () {\r\n        $(\"#AddModal\").modal();\r\n    });\r\n    $(\"#copyT1Urls\").bind(\"click\", function () {\r\n        $(\"#SelectFolder3\").modal();\r\n    });\r\n    var clickedlocation = \"\";\r\n\r\n    var tblpost;\r\n\r\n    var postlistdata = ");
+      homeGmbPostCshtml1.EndContext();
+      homeGmbPostCshtml1.BeginContext(26634, 42, false);
+      // ISSUE: reference to a compiler-generated field
+      if (_Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__23 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        _Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__23 = CallSite<Action<CallSite, _Views_Home_GMBPost_cshtml, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (_Views_Home_GMBPost_cshtml), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, _Views_Home_GMBPost_cshtml, object> target8 = _Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__23.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, _Views_Home_GMBPost_cshtml, object>> p23 = _Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__23;
+      _Views_Home_GMBPost_cshtml homeGmbPostCshtml6 = homeGmbPostCshtml1;
+      // ISSUE: reference to a compiler-generated field
+      if (_Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__22 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        _Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__22 = CallSite<Func<CallSite, IHtmlHelper<trafficjob>, object, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.None, "Raw", (IEnumerable<Type>) null, typeof (_Views_Home_GMBPost_cshtml), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Func<CallSite, IHtmlHelper<trafficjob>, object, object> target9 = _Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__22.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Func<CallSite, IHtmlHelper<trafficjob>, object, object>> p22 = _Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__22;
+      IHtmlHelper<trafficjob> html = homeGmbPostCshtml1.Html;
+      // ISSUE: reference to a compiler-generated field
+      if (_Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__21 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        _Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__21 = CallSite<Func<CallSite, IJsonHelper, object, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.None, "Serialize", (IEnumerable<Type>) null, typeof (_Views_Home_GMBPost_cshtml), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Func<CallSite, IJsonHelper, object, object> target10 = _Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__21.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Func<CallSite, IJsonHelper, object, object>> p21 = _Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__21;
+      IJsonHelper json = homeGmbPostCshtml1.Json;
+      // ISSUE: reference to a compiler-generated field
+      if (_Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__20 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        _Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__20 = CallSite<Func<CallSite, object, object>>.Create(Binder.GetMember(CSharpBinderFlags.None, "PostList", typeof (_Views_Home_GMBPost_cshtml), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj8 = _Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__20.Target((CallSite) _Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__20, homeGmbPostCshtml1.ViewBag);
+      object obj9 = target10((CallSite) p21, json, obj8);
+      object obj10 = target9((CallSite) p22, html, obj9);
+      target8((CallSite) p23, homeGmbPostCshtml6, obj10);
+      homeGmbPostCshtml1.EndContext();
+      homeGmbPostCshtml1.BeginContext(26676, 936, true);
+      homeGmbPostCshtml1.WriteLiteral(";\r\n\r\n    function RedrawSearchConsoleTabs()\r\n    {\r\n        tblpost.rows().remove().draw();\r\n\r\n        for (var i = 0; i < postlistdata.length; i++) {\r\n            var summary = postlistdata[i][\"summary\"];\r\n            if (postlistdata[i][\"summary\"].length > 40)\r\n                summary = postlistdata[i][\"summary\"].substring(0, 39) + \"...\"\r\n            tblpost.row.add([\r\n                postlistdata[i][\"name\"],\r\n                summary, \"REGULAR\",\r\n                postlistdata[i][\"createTime\"].replace(\"T\", \" \").substring(0, 19),\r\n                postlistdata[i][\"views\"]+\" / \" +  postlistdata[i][\"clicks\"],\r\n                \"Posted\",\r\n                postlistdata[i][\"state\"],\r\n                postlistdata[i][\"callToAction\"][\"url\"],\r\n            ]);\r\n            tblpost.draw();\r\n        }\r\n    }\r\n\r\n    function btnSelectFolder_Click(index) {\r\n        if (index == 0) {\r\n            window.location = '/Home/GMBCreateJourney?id=");
+      homeGmbPostCshtml1.EndContext();
+      homeGmbPostCshtml1.BeginContext(27613, 14, false);
+      // ISSUE: reference to a compiler-generated field
+      if (_Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__25 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        _Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__25 = CallSite<Action<CallSite, _Views_Home_GMBPost_cshtml, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (_Views_Home_GMBPost_cshtml), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, _Views_Home_GMBPost_cshtml, object> target11 = _Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__25.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, _Views_Home_GMBPost_cshtml, object>> p25 = _Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__25;
+      _Views_Home_GMBPost_cshtml homeGmbPostCshtml7 = homeGmbPostCshtml1;
+      // ISSUE: reference to a compiler-generated field
+      if (_Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__24 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        _Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__24 = CallSite<Func<CallSite, object, object>>.Create(Binder.GetMember(CSharpBinderFlags.None, "Userid", typeof (_Views_Home_GMBPost_cshtml), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj11 = _Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__24.Target((CallSite) _Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__24, homeGmbPostCshtml1.ViewBag);
+      target11((CallSite) p25, homeGmbPostCshtml7, obj11);
+      homeGmbPostCshtml1.EndContext();
+      homeGmbPostCshtml1.BeginContext(27627, 11, true);
+      homeGmbPostCshtml1.WriteLiteral("&projectid=");
+      homeGmbPostCshtml1.EndContext();
+      homeGmbPostCshtml1.BeginContext(27639, 17, false);
+      // ISSUE: reference to a compiler-generated field
+      if (_Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__27 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        _Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__27 = CallSite<Action<CallSite, _Views_Home_GMBPost_cshtml, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (_Views_Home_GMBPost_cshtml), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, _Views_Home_GMBPost_cshtml, object> target12 = _Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__27.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, _Views_Home_GMBPost_cshtml, object>> p27 = _Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__27;
+      _Views_Home_GMBPost_cshtml homeGmbPostCshtml8 = homeGmbPostCshtml1;
+      // ISSUE: reference to a compiler-generated field
+      if (_Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__26 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        _Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__26 = CallSite<Func<CallSite, object, object>>.Create(Binder.GetMember(CSharpBinderFlags.None, "Projectid", typeof (_Views_Home_GMBPost_cshtml), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj12 = _Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__26.Target((CallSite) _Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__26, homeGmbPostCshtml1.ViewBag);
+      target12((CallSite) p27, homeGmbPostCshtml8, obj12);
+      homeGmbPostCshtml1.EndContext();
+      homeGmbPostCshtml1.BeginContext(27656, 306, true);
+      homeGmbPostCshtml1.WriteLiteral("&locationname=' + $(\"#accountname\").text().replace(/&/g, \" \") + '&websiteUrl=' + $(\"#weburl\").val() + '&contentSnipet=' + $(\"#contentSnipet\").val().replace(/&/g, \"%%%\") + '&folderid=' + $(\"#droplist\").val();\r\n        }\r\n        else if (index == 1)\r\n            window.location = '/Home/GMBStartJourney?id=");
+      homeGmbPostCshtml1.EndContext();
+      homeGmbPostCshtml1.BeginContext(27963, 14, false);
+      // ISSUE: reference to a compiler-generated field
+      if (_Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__29 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        _Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__29 = CallSite<Action<CallSite, _Views_Home_GMBPost_cshtml, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (_Views_Home_GMBPost_cshtml), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, _Views_Home_GMBPost_cshtml, object> target13 = _Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__29.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, _Views_Home_GMBPost_cshtml, object>> p29 = _Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__29;
+      _Views_Home_GMBPost_cshtml homeGmbPostCshtml9 = homeGmbPostCshtml1;
+      // ISSUE: reference to a compiler-generated field
+      if (_Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__28 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        _Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__28 = CallSite<Func<CallSite, object, object>>.Create(Binder.GetMember(CSharpBinderFlags.None, "Userid", typeof (_Views_Home_GMBPost_cshtml), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj13 = _Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__28.Target((CallSite) _Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__28, homeGmbPostCshtml1.ViewBag);
+      target13((CallSite) p29, homeGmbPostCshtml9, obj13);
+      homeGmbPostCshtml1.EndContext();
+      homeGmbPostCshtml1.BeginContext(27977, 11, true);
+      homeGmbPostCshtml1.WriteLiteral("&projectid=");
+      homeGmbPostCshtml1.EndContext();
+      homeGmbPostCshtml1.BeginContext(27989, 17, false);
+      // ISSUE: reference to a compiler-generated field
+      if (_Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__31 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        _Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__31 = CallSite<Action<CallSite, _Views_Home_GMBPost_cshtml, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (_Views_Home_GMBPost_cshtml), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, _Views_Home_GMBPost_cshtml, object> target14 = _Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__31.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, _Views_Home_GMBPost_cshtml, object>> p31 = _Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__31;
+      _Views_Home_GMBPost_cshtml homeGmbPostCshtml10 = homeGmbPostCshtml1;
+      // ISSUE: reference to a compiler-generated field
+      if (_Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__30 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        _Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__30 = CallSite<Func<CallSite, object, object>>.Create(Binder.GetMember(CSharpBinderFlags.None, "Projectid", typeof (_Views_Home_GMBPost_cshtml), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj14 = _Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__30.Target((CallSite) _Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__30, homeGmbPostCshtml1.ViewBag);
+      target14((CallSite) p31, homeGmbPostCshtml10, obj14);
+      homeGmbPostCshtml1.EndContext();
+      homeGmbPostCshtml1.BeginContext(28006, 594, true);
+      homeGmbPostCshtml1.WriteLiteral("&locationname=' + $(\"#accountname\").text().replace(/&/g, \" \") + '&websiteUrl=' + $(\"#weburl\").val() + '&contentSnipet=' + $(\"#contentSnipet\").val().replace(/&/g, \"%%%\") + '&folderid=' + $(\"#droplist1\").val();\r\n        else {\r\n            if ($(\"#Surl\").val() == \"\") {\r\n                alert(\"Please input the Url !\");\r\n                return;\r\n            }\r\n            if ($(\"#furl\").val() == \"\") {\r\n                alert(\"Please input the Url !\");\r\n                $(\"#SelectFolder3\").modal();\r\n                return;\r\n            }\r\n            window.location = '/Home/T1CreateJourney?id=");
+      homeGmbPostCshtml1.EndContext();
+      homeGmbPostCshtml1.BeginContext(28601, 14, false);
+      // ISSUE: reference to a compiler-generated field
+      if (_Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__33 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        _Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__33 = CallSite<Action<CallSite, _Views_Home_GMBPost_cshtml, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (_Views_Home_GMBPost_cshtml), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, _Views_Home_GMBPost_cshtml, object> target15 = _Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__33.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, _Views_Home_GMBPost_cshtml, object>> p33 = _Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__33;
+      _Views_Home_GMBPost_cshtml homeGmbPostCshtml11 = homeGmbPostCshtml1;
+      // ISSUE: reference to a compiler-generated field
+      if (_Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__32 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        _Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__32 = CallSite<Func<CallSite, object, object>>.Create(Binder.GetMember(CSharpBinderFlags.None, "Userid", typeof (_Views_Home_GMBPost_cshtml), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj15 = _Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__32.Target((CallSite) _Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__32, homeGmbPostCshtml1.ViewBag);
+      target15((CallSite) p33, homeGmbPostCshtml11, obj15);
+      homeGmbPostCshtml1.EndContext();
+      homeGmbPostCshtml1.BeginContext(28615, 11, true);
+      homeGmbPostCshtml1.WriteLiteral("&projectid=");
+      homeGmbPostCshtml1.EndContext();
+      homeGmbPostCshtml1.BeginContext(28627, 17, false);
+      // ISSUE: reference to a compiler-generated field
+      if (_Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__35 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        _Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__35 = CallSite<Action<CallSite, _Views_Home_GMBPost_cshtml, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (_Views_Home_GMBPost_cshtml), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, _Views_Home_GMBPost_cshtml, object> target16 = _Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__35.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, _Views_Home_GMBPost_cshtml, object>> p35 = _Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__35;
+      _Views_Home_GMBPost_cshtml homeGmbPostCshtml12 = homeGmbPostCshtml1;
+      // ISSUE: reference to a compiler-generated field
+      if (_Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__34 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        _Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__34 = CallSite<Func<CallSite, object, object>>.Create(Binder.GetMember(CSharpBinderFlags.None, "Projectid", typeof (_Views_Home_GMBPost_cshtml), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj16 = _Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__34.Target((CallSite) _Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__34, homeGmbPostCshtml1.ViewBag);
+      target16((CallSite) p35, homeGmbPostCshtml12, obj16);
+      homeGmbPostCshtml1.EndContext();
+      homeGmbPostCshtml1.BeginContext(28644, 3067, true);
+      homeGmbPostCshtml1.WriteLiteral("&locationname=' + $(\"#accountname\").text().replace(/&/g, \" \") + '&websiteUrl=' + $(\"#weburl\").val() + '&contentSnipet=' + $(\"#contentSnipet\").val().replace(/&/g, \"%%%\") + '&folderid=' + $(\"#droplist2\").val() + '&secondurl=' + $(\"#Surl\").val() + '&firsturls=' + $(\"#furl\").val().replace(/(?:\\r\\n|\\r|\\n)/g, ',');\r\n        }\r\n    }\r\n\r\n    $(document).ready(function () {\r\n        var index = 0;\r\n\r\n        $(\"#time_zone\").val(\"Central Standard Time\");\r\n        $('#post_time').datetimepicker({ format: 'yyyy-mm-dd hh:ii' });\r\n\r\n\r\n        $(\"#controltab\").tabs();\r\n        //$('#controltab').hide();\r\n\r\n\r\n        tblpost = $('#posttable').DataTable({\r\n            \"columnDefs\": [{\r\n                \"targets\": -1,\r\n                \"data\": null,\r\n                //\"defaultContent\": \"<button>Edit</button><button>Delete</button><button>Create Journey</button><button>Start Journey</button>\"\r\n                \"defaultContent\": \"<a class=\\\"nav-link\\\" href=\\\"#\\\" data-toggle=\\\"tooltip\\\" title=\\\"Edit\\\" data-original-title=\\\"Edit\\\"><i");
+      homeGmbPostCshtml1.WriteLiteral(" class=\\\"fa fa-fw fa-edit\\\" style=\\\"color:#1e75eb;\\\"></i></a><a href=\\\"#\\\" data-toggle=\\\"tooltip\\\" title=\\\"Delete\\\" class=\\\"nav-link delete_records\\\" data-original-title=\\\"Delete\\\"><i class=\\\"fa fa-fw fa-trash\\\" style=\\\"color:#eb5a4b;\\\"></i></a><a href=\\\"#\\\" data-toggle=\\\"tooltip\\\" title=\\\"Create Journey\\\" class=\\\"nav-link archive_records\\\" data-original-title=\\\"Create Journey\\\"><i class=\\\"fa fa-file-archive-o\\\" style=\\\"color:#e50b8a;margin-left:3px;\\\"></i></a><a href=\\\"#\\\" data-toggle=\\\"tooltip\\\" title=\\\"Start Journey\\\" class=\\\"nav-link archive_records\\\" data-original-title=\\\"Start Journey\\\"><i class=\\\" fa fa-clock-o\\\" style=\\\"color:#e50b8a;margin-left:3px;\\\"></i></a><a href=\\\"#\\\" data-toggle=\\\"tooltip\\\" title=\\\"Create T1 Company\\\" class=\\\"nav-link archive_records\\\" data-original-title=\\\"Create T1 Company\\\"><i class=\\\"fa fa-tumblr-square\\\" style=\\\"color:#e50b8a;margin-left:3px;\\\"></i></a>\"\r\n            }]\r\n        });\r\n        tblpost.column(0).visible(false);\r\n\r\n        $('#posttable').on('click', 'tbody tr");
+      homeGmbPostCshtml1.WriteLiteral("', function () {\r\n\r\n            var clickedname = $('#posttable').dataTable().fnGetData(this)[0];\r\n            var summary = $('#posttable').dataTable().fnGetData(this)[1];\r\n            if (clickedlocation !== \"\") {\r\n                $(\"input[name=locationnameforedit]\").val(clickedname);\r\n                $(\"input[name=locationnamefordelete]\").val(clickedname);\r\n\r\n                $(\"input[name=post_editsummary]\").val(summary);\r\n            }\r\n            RedrawSearchConsoleTabs();\r\n        })\r\n\r\n        $('#posttable tbody').on('click', 'a', function () {\r\n            if ($(this).attr(\"data-original-title\") == 'Edit') {\r\n                var data = tblpost.row($(this).parents('tr')).data();\r\n                window.location = '/Home/EditPost?postname=' + data[0];\r\n            }\r\n            else if ($(this).attr(\"data-original-title\") == 'Delete') {\r\n                var data = tblpost.row($(this).parents('tr')).data();\r\n                window.location = '/Home/DeletePost?postname=' + data[0] +'&projectid='+ ");
+      homeGmbPostCshtml1.EndContext();
+      homeGmbPostCshtml1.BeginContext(31712, 17, false);
+      // ISSUE: reference to a compiler-generated field
+      if (_Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__37 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        _Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__37 = CallSite<Action<CallSite, _Views_Home_GMBPost_cshtml, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (_Views_Home_GMBPost_cshtml), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, _Views_Home_GMBPost_cshtml, object> target17 = _Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__37.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, _Views_Home_GMBPost_cshtml, object>> p37 = _Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__37;
+      _Views_Home_GMBPost_cshtml homeGmbPostCshtml13 = homeGmbPostCshtml1;
+      // ISSUE: reference to a compiler-generated field
+      if (_Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__36 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        _Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__36 = CallSite<Func<CallSite, object, object>>.Create(Binder.GetMember(CSharpBinderFlags.None, "Projectid", typeof (_Views_Home_GMBPost_cshtml), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj17 = _Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__36.Target((CallSite) _Views_Home_GMBPost_cshtml.\u003C\u003Eo__138.\u003C\u003Ep__36, homeGmbPostCshtml1.ViewBag);
+      target17((CallSite) p37, homeGmbPostCshtml13, obj17);
+      homeGmbPostCshtml1.EndContext();
+      homeGmbPostCshtml1.BeginContext(31729, 1020, true);
+      homeGmbPostCshtml1.WriteLiteral(";\r\n            }\r\n            else if ($(this).attr(\"data-original-title\") == 'Create Journey') {\r\n                var data = tblpost.row($(this).parents('tr')).data();\r\n                $(\"#weburl\").val(data[8]);\r\n                $(\"#contentSnipet\").val(data[1]);\r\n                $(\"#SelectFolder\").modal();\r\n            }\r\n            else if ($(this).attr(\"data-original-title\") == 'Start Journey') {\r\n                var data = tblpost.row($(this).parents('tr')).data();\r\n                $(\"#weburl\").val(data[8]);\r\n                $(\"#contentSnipet\").val(data[1]);\r\n                $(\"#SelectFolder1\").modal();\r\n            }\r\n            else if ($(this).attr(\"data-original-title\") == 'Create T1 Company') {\r\n                var data = tblpost.row($(this).parents('tr')).data();\r\n                $(\"#weburl\").val(data[8]);\r\n                $(\"#contentSnipet\").val(data[1]);\r\n                $(\"#SelectFolder2\").modal();\r\n            }\r\n        });\r\n\r\n\r\n        RedrawSearchConsoleTabs();\r\n    });\r\n</script>\r\n\r\n\r\n");
+      homeGmbPostCshtml1.EndContext();
+      homeGmbPostCshtml1.BeginContext(32749, 93, false);
+      homeGmbPostCshtml1.__tagHelperExecutionContext = homeGmbPostCshtml1.__tagHelperScopeManager.Begin("link", TagMode.SelfClosing, "9a3e6865fb984304914a4c6018201df7", (Func<Task>) (async () => { }));
+      homeGmbPostCshtml1.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = homeGmbPostCshtml1.CreateTagHelper<UrlResolutionTagHelper>();
+      homeGmbPostCshtml1.__tagHelperExecutionContext.Add((ITagHelper) homeGmbPostCshtml1.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper);
+      homeGmbPostCshtml1.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_GMBPost_cshtml.__tagHelperAttribute_106);
+      homeGmbPostCshtml1.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_GMBPost_cshtml.__tagHelperAttribute_107);
+      homeGmbPostCshtml1.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_GMBPost_cshtml.__tagHelperAttribute_108);
+      await homeGmbPostCshtml1.__tagHelperRunner.RunAsync(homeGmbPostCshtml1.__tagHelperExecutionContext);
+      if (!homeGmbPostCshtml1.__tagHelperExecutionContext.Output.IsContentModified)
+        await homeGmbPostCshtml1.__tagHelperExecutionContext.SetOutputContentAsync();
+      homeGmbPostCshtml1.Write((object) homeGmbPostCshtml1.__tagHelperExecutionContext.Output);
+      homeGmbPostCshtml1.__tagHelperExecutionContext = homeGmbPostCshtml1.__tagHelperScopeManager.End();
+      homeGmbPostCshtml1.EndContext();
+      homeGmbPostCshtml1.BeginContext(32842, 2, true);
+      homeGmbPostCshtml1.WriteLiteral("\r\n");
+      homeGmbPostCshtml1.EndContext();
+      homeGmbPostCshtml1.BeginContext(32844, 91, false);
+      homeGmbPostCshtml1.__tagHelperExecutionContext = homeGmbPostCshtml1.__tagHelperScopeManager.Begin("link", TagMode.SelfClosing, "23587a91fc9942dd91940f00305af8c1", (Func<Task>) (async () => { }));
+      homeGmbPostCshtml1.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = homeGmbPostCshtml1.CreateTagHelper<UrlResolutionTagHelper>();
+      homeGmbPostCshtml1.__tagHelperExecutionContext.Add((ITagHelper) homeGmbPostCshtml1.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper);
+      homeGmbPostCshtml1.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_GMBPost_cshtml.__tagHelperAttribute_109);
+      homeGmbPostCshtml1.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_GMBPost_cshtml.__tagHelperAttribute_107);
+      homeGmbPostCshtml1.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_GMBPost_cshtml.__tagHelperAttribute_108);
+      await homeGmbPostCshtml1.__tagHelperRunner.RunAsync(homeGmbPostCshtml1.__tagHelperExecutionContext);
+      if (!homeGmbPostCshtml1.__tagHelperExecutionContext.Output.IsContentModified)
+        await homeGmbPostCshtml1.__tagHelperExecutionContext.SetOutputContentAsync();
+      homeGmbPostCshtml1.Write((object) homeGmbPostCshtml1.__tagHelperExecutionContext.Output);
+      homeGmbPostCshtml1.__tagHelperExecutionContext = homeGmbPostCshtml1.__tagHelperScopeManager.End();
+      homeGmbPostCshtml1.EndContext();
+      homeGmbPostCshtml1.BeginContext(32935, 2, true);
+      homeGmbPostCshtml1.WriteLiteral("\r\n");
+      homeGmbPostCshtml1.EndContext();
+      homeGmbPostCshtml1.BeginContext(32937, 64, false);
+      homeGmbPostCshtml1.__tagHelperExecutionContext = homeGmbPostCshtml1.__tagHelperScopeManager.Begin("script", TagMode.StartTagAndEndTag, "f2136a4eb31744858f7a031dc863edff", (Func<Task>) (async () => { }));
+      homeGmbPostCshtml1.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = homeGmbPostCshtml1.CreateTagHelper<UrlResolutionTagHelper>();
+      homeGmbPostCshtml1.__tagHelperExecutionContext.Add((ITagHelper) homeGmbPostCshtml1.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper);
+      homeGmbPostCshtml1.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_GMBPost_cshtml.__tagHelperAttribute_110);
+      await homeGmbPostCshtml1.__tagHelperRunner.RunAsync(homeGmbPostCshtml1.__tagHelperExecutionContext);
+      if (!homeGmbPostCshtml1.__tagHelperExecutionContext.Output.IsContentModified)
+        await homeGmbPostCshtml1.__tagHelperExecutionContext.SetOutputContentAsync();
+      homeGmbPostCshtml1.Write((object) homeGmbPostCshtml1.__tagHelperExecutionContext.Output);
+      homeGmbPostCshtml1.__tagHelperExecutionContext = homeGmbPostCshtml1.__tagHelperScopeManager.End();
+      homeGmbPostCshtml1.EndContext();
+      homeGmbPostCshtml1.BeginContext(33001, 2, true);
+      homeGmbPostCshtml1.WriteLiteral("\r\n");
+      homeGmbPostCshtml1.EndContext();
+      homeGmbPostCshtml1.BeginContext(33003, 63, false);
+      homeGmbPostCshtml1.__tagHelperExecutionContext = homeGmbPostCshtml1.__tagHelperScopeManager.Begin("script", TagMode.StartTagAndEndTag, "40db22969b5043dc835854d7b7172a51", (Func<Task>) (async () => { }));
+      homeGmbPostCshtml1.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = homeGmbPostCshtml1.CreateTagHelper<UrlResolutionTagHelper>();
+      homeGmbPostCshtml1.__tagHelperExecutionContext.Add((ITagHelper) homeGmbPostCshtml1.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper);
+      homeGmbPostCshtml1.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_GMBPost_cshtml.__tagHelperAttribute_111);
+      await homeGmbPostCshtml1.__tagHelperRunner.RunAsync(homeGmbPostCshtml1.__tagHelperExecutionContext);
+      if (!homeGmbPostCshtml1.__tagHelperExecutionContext.Output.IsContentModified)
+        await homeGmbPostCshtml1.__tagHelperExecutionContext.SetOutputContentAsync();
+      homeGmbPostCshtml1.Write((object) homeGmbPostCshtml1.__tagHelperExecutionContext.Output);
+      homeGmbPostCshtml1.__tagHelperExecutionContext = homeGmbPostCshtml1.__tagHelperScopeManager.End();
+      homeGmbPostCshtml1.EndContext();
+      homeGmbPostCshtml1.BeginContext(33066, 2, true);
+      homeGmbPostCshtml1.WriteLiteral("\r\n");
+      homeGmbPostCshtml1.EndContext();
+      homeGmbPostCshtml1.BeginContext(33068, 65, false);
+      homeGmbPostCshtml1.__tagHelperExecutionContext = homeGmbPostCshtml1.__tagHelperScopeManager.Begin("script", TagMode.StartTagAndEndTag, "abdb3041e98f4617bc4174fb8ab9c56c", (Func<Task>) (async () => { }));
+      homeGmbPostCshtml1.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = homeGmbPostCshtml1.CreateTagHelper<UrlResolutionTagHelper>();
+      homeGmbPostCshtml1.__tagHelperExecutionContext.Add((ITagHelper) homeGmbPostCshtml1.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper);
+      homeGmbPostCshtml1.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_GMBPost_cshtml.__tagHelperAttribute_112);
+      await homeGmbPostCshtml1.__tagHelperRunner.RunAsync(homeGmbPostCshtml1.__tagHelperExecutionContext);
+      if (!homeGmbPostCshtml1.__tagHelperExecutionContext.Output.IsContentModified)
+        await homeGmbPostCshtml1.__tagHelperExecutionContext.SetOutputContentAsync();
+      homeGmbPostCshtml1.Write((object) homeGmbPostCshtml1.__tagHelperExecutionContext.Output);
+      homeGmbPostCshtml1.__tagHelperExecutionContext = homeGmbPostCshtml1.__tagHelperScopeManager.End();
+      homeGmbPostCshtml1.EndContext();
+      homeGmbPostCshtml1.BeginContext(33133, 2, true);
+      homeGmbPostCshtml1.WriteLiteral("\r\n");
+      homeGmbPostCshtml1.EndContext();
+      homeGmbPostCshtml1.BeginContext(33135, 64, false);
+      homeGmbPostCshtml1.__tagHelperExecutionContext = homeGmbPostCshtml1.__tagHelperScopeManager.Begin("script", TagMode.StartTagAndEndTag, "11ce0c102d664484945cb6953c5ef9d9", (Func<Task>) (async () => { }));
+      homeGmbPostCshtml1.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = homeGmbPostCshtml1.CreateTagHelper<UrlResolutionTagHelper>();
+      homeGmbPostCshtml1.__tagHelperExecutionContext.Add((ITagHelper) homeGmbPostCshtml1.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper);
+      homeGmbPostCshtml1.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_GMBPost_cshtml.__tagHelperAttribute_113);
+      await homeGmbPostCshtml1.__tagHelperRunner.RunAsync(homeGmbPostCshtml1.__tagHelperExecutionContext);
+      if (!homeGmbPostCshtml1.__tagHelperExecutionContext.Output.IsContentModified)
+        await homeGmbPostCshtml1.__tagHelperExecutionContext.SetOutputContentAsync();
+      homeGmbPostCshtml1.Write((object) homeGmbPostCshtml1.__tagHelperExecutionContext.Output);
+      homeGmbPostCshtml1.__tagHelperExecutionContext = homeGmbPostCshtml1.__tagHelperScopeManager.End();
+      homeGmbPostCshtml1.EndContext();
+      homeGmbPostCshtml1.BeginContext(33199, 2, true);
+      homeGmbPostCshtml1.WriteLiteral("\r\n");
+      homeGmbPostCshtml1.EndContext();
+      homeGmbPostCshtml1.BeginContext(33201, 52, false);
+      homeGmbPostCshtml1.__tagHelperExecutionContext = homeGmbPostCshtml1.__tagHelperScopeManager.Begin("script", TagMode.StartTagAndEndTag, "c81279149c6246ee933002997ccbc8f3", (Func<Task>) (async () => { }));
+      homeGmbPostCshtml1.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = homeGmbPostCshtml1.CreateTagHelper<UrlResolutionTagHelper>();
+      homeGmbPostCshtml1.__tagHelperExecutionContext.Add((ITagHelper) homeGmbPostCshtml1.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper);
+      homeGmbPostCshtml1.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_GMBPost_cshtml.__tagHelperAttribute_114);
+      await homeGmbPostCshtml1.__tagHelperRunner.RunAsync(homeGmbPostCshtml1.__tagHelperExecutionContext);
+      if (!homeGmbPostCshtml1.__tagHelperExecutionContext.Output.IsContentModified)
+        await homeGmbPostCshtml1.__tagHelperExecutionContext.SetOutputContentAsync();
+      homeGmbPostCshtml1.Write((object) homeGmbPostCshtml1.__tagHelperExecutionContext.Output);
+      homeGmbPostCshtml1.__tagHelperExecutionContext = homeGmbPostCshtml1.__tagHelperScopeManager.End();
+      homeGmbPostCshtml1.EndContext();
+      homeGmbPostCshtml1.BeginContext(33253, 2, true);
+      homeGmbPostCshtml1.WriteLiteral("\r\n");
+      homeGmbPostCshtml1.EndContext();
+      homeGmbPostCshtml1.BeginContext(33255, 54, false);
+      homeGmbPostCshtml1.__tagHelperExecutionContext = homeGmbPostCshtml1.__tagHelperScopeManager.Begin("script", TagMode.StartTagAndEndTag, "892e66e3cc02417188c6ef578057de61", (Func<Task>) (async () => { }));
+      homeGmbPostCshtml1.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = homeGmbPostCshtml1.CreateTagHelper<UrlResolutionTagHelper>();
+      homeGmbPostCshtml1.__tagHelperExecutionContext.Add((ITagHelper) homeGmbPostCshtml1.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper);
+      homeGmbPostCshtml1.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_GMBPost_cshtml.__tagHelperAttribute_115);
+      await homeGmbPostCshtml1.__tagHelperRunner.RunAsync(homeGmbPostCshtml1.__tagHelperExecutionContext);
+      if (!homeGmbPostCshtml1.__tagHelperExecutionContext.Output.IsContentModified)
+        await homeGmbPostCshtml1.__tagHelperExecutionContext.SetOutputContentAsync();
+      homeGmbPostCshtml1.Write((object) homeGmbPostCshtml1.__tagHelperExecutionContext.Output);
+      homeGmbPostCshtml1.__tagHelperExecutionContext = homeGmbPostCshtml1.__tagHelperScopeManager.End();
+      homeGmbPostCshtml1.EndContext();
+      homeGmbPostCshtml1.BeginContext(33309, 2, true);
+      homeGmbPostCshtml1.WriteLiteral("\r\n");
+      homeGmbPostCshtml1.EndContext();
+      homeGmbPostCshtml1.BeginContext(33311, 52, false);
+      homeGmbPostCshtml1.__tagHelperExecutionContext = homeGmbPostCshtml1.__tagHelperScopeManager.Begin("script", TagMode.StartTagAndEndTag, "646ca0610ce94aa7a3ab1a3f076d31e1", (Func<Task>) (async () => { }));
+      homeGmbPostCshtml1.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = homeGmbPostCshtml1.CreateTagHelper<UrlResolutionTagHelper>();
+      homeGmbPostCshtml1.__tagHelperExecutionContext.Add((ITagHelper) homeGmbPostCshtml1.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper);
+      homeGmbPostCshtml1.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_GMBPost_cshtml.__tagHelperAttribute_116);
+      await homeGmbPostCshtml1.__tagHelperRunner.RunAsync(homeGmbPostCshtml1.__tagHelperExecutionContext);
+      if (!homeGmbPostCshtml1.__tagHelperExecutionContext.Output.IsContentModified)
+        await homeGmbPostCshtml1.__tagHelperExecutionContext.SetOutputContentAsync();
+      homeGmbPostCshtml1.Write((object) homeGmbPostCshtml1.__tagHelperExecutionContext.Output);
+      homeGmbPostCshtml1.__tagHelperExecutionContext = homeGmbPostCshtml1.__tagHelperScopeManager.End();
+      homeGmbPostCshtml1.EndContext();
+      homeGmbPostCshtml1.BeginContext(33363, 2, true);
+      homeGmbPostCshtml1.WriteLiteral("\r\n");
+      homeGmbPostCshtml1.EndContext();
+      homeGmbPostCshtml1.BeginContext(33365, 60, false);
+      homeGmbPostCshtml1.__tagHelperExecutionContext = homeGmbPostCshtml1.__tagHelperScopeManager.Begin("script", TagMode.StartTagAndEndTag, "4d81623995e24ad39cb161b341b98a36", (Func<Task>) (async () => { }));
+      homeGmbPostCshtml1.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = homeGmbPostCshtml1.CreateTagHelper<UrlResolutionTagHelper>();
+      homeGmbPostCshtml1.__tagHelperExecutionContext.Add((ITagHelper) homeGmbPostCshtml1.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper);
+      homeGmbPostCshtml1.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_GMBPost_cshtml.__tagHelperAttribute_117);
+      await homeGmbPostCshtml1.__tagHelperRunner.RunAsync(homeGmbPostCshtml1.__tagHelperExecutionContext);
+      if (!homeGmbPostCshtml1.__tagHelperExecutionContext.Output.IsContentModified)
+        await homeGmbPostCshtml1.__tagHelperExecutionContext.SetOutputContentAsync();
+      homeGmbPostCshtml1.Write((object) homeGmbPostCshtml1.__tagHelperExecutionContext.Output);
+      homeGmbPostCshtml1.__tagHelperExecutionContext = homeGmbPostCshtml1.__tagHelperScopeManager.End();
+      homeGmbPostCshtml1.EndContext();
+      homeGmbPostCshtml1.BeginContext(33425, 2, true);
+      homeGmbPostCshtml1.WriteLiteral("\r\n");
+      homeGmbPostCshtml1.EndContext();
+      homeGmbPostCshtml1.BeginContext(33427, 60, false);
+      homeGmbPostCshtml1.__tagHelperExecutionContext = homeGmbPostCshtml1.__tagHelperScopeManager.Begin("script", TagMode.StartTagAndEndTag, "d44e7f5a9d2c4026b558d09560c9b95c", (Func<Task>) (async () => { }));
+      homeGmbPostCshtml1.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = homeGmbPostCshtml1.CreateTagHelper<UrlResolutionTagHelper>();
+      homeGmbPostCshtml1.__tagHelperExecutionContext.Add((ITagHelper) homeGmbPostCshtml1.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper);
+      homeGmbPostCshtml1.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_GMBPost_cshtml.__tagHelperAttribute_118);
+      await homeGmbPostCshtml1.__tagHelperRunner.RunAsync(homeGmbPostCshtml1.__tagHelperExecutionContext);
+      if (!homeGmbPostCshtml1.__tagHelperExecutionContext.Output.IsContentModified)
+        await homeGmbPostCshtml1.__tagHelperExecutionContext.SetOutputContentAsync();
+      homeGmbPostCshtml1.Write((object) homeGmbPostCshtml1.__tagHelperExecutionContext.Output);
+      homeGmbPostCshtml1.__tagHelperExecutionContext = homeGmbPostCshtml1.__tagHelperScopeManager.End();
+      homeGmbPostCshtml1.EndContext();
+      homeGmbPostCshtml1.BeginContext(33487, 2, true);
+      homeGmbPostCshtml1.WriteLiteral("\r\n");
+      homeGmbPostCshtml1.EndContext();
+      homeGmbPostCshtml1.BeginContext(33489, 69, false);
+      homeGmbPostCshtml1.__tagHelperExecutionContext = homeGmbPostCshtml1.__tagHelperScopeManager.Begin("script", TagMode.StartTagAndEndTag, "c54a7d7af3ab4f799b73d85212c64168", (Func<Task>) (async () => { }));
+      homeGmbPostCshtml1.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = homeGmbPostCshtml1.CreateTagHelper<UrlResolutionTagHelper>();
+      homeGmbPostCshtml1.__tagHelperExecutionContext.Add((ITagHelper) homeGmbPostCshtml1.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper);
+      homeGmbPostCshtml1.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_GMBPost_cshtml.__tagHelperAttribute_119);
+      await homeGmbPostCshtml1.__tagHelperRunner.RunAsync(homeGmbPostCshtml1.__tagHelperExecutionContext);
+      if (!homeGmbPostCshtml1.__tagHelperExecutionContext.Output.IsContentModified)
+        await homeGmbPostCshtml1.__tagHelperExecutionContext.SetOutputContentAsync();
+      homeGmbPostCshtml1.Write((object) homeGmbPostCshtml1.__tagHelperExecutionContext.Output);
+      homeGmbPostCshtml1.__tagHelperExecutionContext = homeGmbPostCshtml1.__tagHelperScopeManager.End();
+      homeGmbPostCshtml1.EndContext();
+      homeGmbPostCshtml1.BeginContext(33558, 2, true);
+      homeGmbPostCshtml1.WriteLiteral("\r\n");
+      homeGmbPostCshtml1.EndContext();
+      homeGmbPostCshtml1.BeginContext(33560, 66, false);
+      homeGmbPostCshtml1.__tagHelperExecutionContext = homeGmbPostCshtml1.__tagHelperScopeManager.Begin("script", TagMode.StartTagAndEndTag, "95033cf3c02a4a5dbd0b597d6590dbcf", (Func<Task>) (async () => { }));
+      homeGmbPostCshtml1.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = homeGmbPostCshtml1.CreateTagHelper<UrlResolutionTagHelper>();
+      homeGmbPostCshtml1.__tagHelperExecutionContext.Add((ITagHelper) homeGmbPostCshtml1.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper);
+      homeGmbPostCshtml1.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_GMBPost_cshtml.__tagHelperAttribute_120);
+      await homeGmbPostCshtml1.__tagHelperRunner.RunAsync(homeGmbPostCshtml1.__tagHelperExecutionContext);
+      if (!homeGmbPostCshtml1.__tagHelperExecutionContext.Output.IsContentModified)
+        await homeGmbPostCshtml1.__tagHelperExecutionContext.SetOutputContentAsync();
+      homeGmbPostCshtml1.Write((object) homeGmbPostCshtml1.__tagHelperExecutionContext.Output);
+      homeGmbPostCshtml1.__tagHelperExecutionContext = homeGmbPostCshtml1.__tagHelperScopeManager.End();
+      homeGmbPostCshtml1.EndContext();
+      homeGmbPostCshtml1.BeginContext(33626, 2, true);
+      homeGmbPostCshtml1.WriteLiteral("\r\n");
+      homeGmbPostCshtml1.EndContext();
+      homeGmbPostCshtml1.BeginContext(33628, 68, false);
+      homeGmbPostCshtml1.__tagHelperExecutionContext = homeGmbPostCshtml1.__tagHelperScopeManager.Begin("script", TagMode.StartTagAndEndTag, "62fc423ed6e94b1cafff8dd2bfb5520d", (Func<Task>) (async () => { }));
+      homeGmbPostCshtml1.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = homeGmbPostCshtml1.CreateTagHelper<UrlResolutionTagHelper>();
+      homeGmbPostCshtml1.__tagHelperExecutionContext.Add((ITagHelper) homeGmbPostCshtml1.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper);
+      homeGmbPostCshtml1.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_GMBPost_cshtml.__tagHelperAttribute_121);
+      await homeGmbPostCshtml1.__tagHelperRunner.RunAsync(homeGmbPostCshtml1.__tagHelperExecutionContext);
+      if (!homeGmbPostCshtml1.__tagHelperExecutionContext.Output.IsContentModified)
+        await homeGmbPostCshtml1.__tagHelperExecutionContext.SetOutputContentAsync();
+      homeGmbPostCshtml1.Write((object) homeGmbPostCshtml1.__tagHelperExecutionContext.Output);
+      homeGmbPostCshtml1.__tagHelperExecutionContext = homeGmbPostCshtml1.__tagHelperScopeManager.End();
+      homeGmbPostCshtml1.EndContext();
+      homeGmbPostCshtml1.BeginContext(33696, 2, true);
+      homeGmbPostCshtml1.WriteLiteral("\r\n");
+      homeGmbPostCshtml1.EndContext();
+      homeGmbPostCshtml1.BeginContext(33698, 67, false);
+      homeGmbPostCshtml1.__tagHelperExecutionContext = homeGmbPostCshtml1.__tagHelperScopeManager.Begin("script", TagMode.StartTagAndEndTag, "1ec9fb5622a541e9b21c61a5161fb323", (Func<Task>) (async () => { }));
+      homeGmbPostCshtml1.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = homeGmbPostCshtml1.CreateTagHelper<UrlResolutionTagHelper>();
+      homeGmbPostCshtml1.__tagHelperExecutionContext.Add((ITagHelper) homeGmbPostCshtml1.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper);
+      homeGmbPostCshtml1.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_GMBPost_cshtml.__tagHelperAttribute_122);
+      await homeGmbPostCshtml1.__tagHelperRunner.RunAsync(homeGmbPostCshtml1.__tagHelperExecutionContext);
+      if (!homeGmbPostCshtml1.__tagHelperExecutionContext.Output.IsContentModified)
+        await homeGmbPostCshtml1.__tagHelperExecutionContext.SetOutputContentAsync();
+      homeGmbPostCshtml1.Write((object) homeGmbPostCshtml1.__tagHelperExecutionContext.Output);
+      homeGmbPostCshtml1.__tagHelperExecutionContext = homeGmbPostCshtml1.__tagHelperScopeManager.End();
+      homeGmbPostCshtml1.EndContext();
+      homeGmbPostCshtml1.BeginContext(33765, 2, true);
+      homeGmbPostCshtml1.WriteLiteral("\r\n");
+      homeGmbPostCshtml1.EndContext();
+      homeGmbPostCshtml1.BeginContext(33767, 66, false);
+      homeGmbPostCshtml1.__tagHelperExecutionContext = homeGmbPostCshtml1.__tagHelperScopeManager.Begin("script", TagMode.StartTagAndEndTag, "29661a15bbbf4178b3b0e5cba12e6310", (Func<Task>) (async () => { }));
+      homeGmbPostCshtml1.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = homeGmbPostCshtml1.CreateTagHelper<UrlResolutionTagHelper>();
+      homeGmbPostCshtml1.__tagHelperExecutionContext.Add((ITagHelper) homeGmbPostCshtml1.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper);
+      homeGmbPostCshtml1.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_GMBPost_cshtml.__tagHelperAttribute_123);
+      await homeGmbPostCshtml1.__tagHelperRunner.RunAsync(homeGmbPostCshtml1.__tagHelperExecutionContext);
+      if (!homeGmbPostCshtml1.__tagHelperExecutionContext.Output.IsContentModified)
+        await homeGmbPostCshtml1.__tagHelperExecutionContext.SetOutputContentAsync();
+      homeGmbPostCshtml1.Write((object) homeGmbPostCshtml1.__tagHelperExecutionContext.Output);
+      homeGmbPostCshtml1.__tagHelperExecutionContext = homeGmbPostCshtml1.__tagHelperScopeManager.End();
+      homeGmbPostCshtml1.EndContext();
+      homeGmbPostCshtml1.BeginContext(33833, 4, true);
+      homeGmbPostCshtml1.WriteLiteral("\r\n\r\n");
+      homeGmbPostCshtml1.EndContext();
+      homeGmbPostCshtml1.BeginContext(33837, 101, false);
+      homeGmbPostCshtml1.__tagHelperExecutionContext = homeGmbPostCshtml1.__tagHelperScopeManager.Begin("link", TagMode.SelfClosing, "9bae8dd045b84919b154db5b8de536b5", (Func<Task>) (async () => { }));
+      homeGmbPostCshtml1.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = homeGmbPostCshtml1.CreateTagHelper<UrlResolutionTagHelper>();
+      homeGmbPostCshtml1.__tagHelperExecutionContext.Add((ITagHelper) homeGmbPostCshtml1.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper);
+      homeGmbPostCshtml1.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_GMBPost_cshtml.__tagHelperAttribute_124);
+      homeGmbPostCshtml1.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_GMBPost_cshtml.__tagHelperAttribute_107);
+      homeGmbPostCshtml1.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_GMBPost_cshtml.__tagHelperAttribute_108);
+      await homeGmbPostCshtml1.__tagHelperRunner.RunAsync(homeGmbPostCshtml1.__tagHelperExecutionContext);
+      if (!homeGmbPostCshtml1.__tagHelperExecutionContext.Output.IsContentModified)
+        await homeGmbPostCshtml1.__tagHelperExecutionContext.SetOutputContentAsync();
+      homeGmbPostCshtml1.Write((object) homeGmbPostCshtml1.__tagHelperExecutionContext.Output);
+      homeGmbPostCshtml1.__tagHelperExecutionContext = homeGmbPostCshtml1.__tagHelperScopeManager.End();
+      homeGmbPostCshtml1.EndContext();
+      homeGmbPostCshtml1.BeginContext(33938, 2, true);
+      homeGmbPostCshtml1.WriteLiteral("\r\n");
+      homeGmbPostCshtml1.EndContext();
+      homeGmbPostCshtml1.BeginContext(33940, 75, false);
+      homeGmbPostCshtml1.__tagHelperExecutionContext = homeGmbPostCshtml1.__tagHelperScopeManager.Begin("script", TagMode.StartTagAndEndTag, "76bceb1f4a51449793b02123d8840e9f", (Func<Task>) (async () => { }));
+      homeGmbPostCshtml1.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = homeGmbPostCshtml1.CreateTagHelper<UrlResolutionTagHelper>();
+      homeGmbPostCshtml1.__tagHelperExecutionContext.Add((ITagHelper) homeGmbPostCshtml1.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper);
+      homeGmbPostCshtml1.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_GMBPost_cshtml.__tagHelperAttribute_125);
+      await homeGmbPostCshtml1.__tagHelperRunner.RunAsync(homeGmbPostCshtml1.__tagHelperExecutionContext);
+      if (!homeGmbPostCshtml1.__tagHelperExecutionContext.Output.IsContentModified)
+        await homeGmbPostCshtml1.__tagHelperExecutionContext.SetOutputContentAsync();
+      homeGmbPostCshtml1.Write((object) homeGmbPostCshtml1.__tagHelperExecutionContext.Output);
+      homeGmbPostCshtml1.__tagHelperExecutionContext = homeGmbPostCshtml1.__tagHelperScopeManager.End();
+      homeGmbPostCshtml1.EndContext();
+      homeGmbPostCshtml1.BeginContext(34015, 4, true);
+      homeGmbPostCshtml1.WriteLiteral("\r\n\r\n");
+      homeGmbPostCshtml1.EndContext();
+      // ISSUE: reference to a compiler-generated method
+      homeGmbPostCshtml1.DefineSection("Scripts", new RenderAsyncDelegate(homeGmbPostCshtml1.\u003CExecuteAsync\u003Eb__138_120));
+    }
+
+    [RazorInject]
+    public IModelExpressionProvider ModelExpressionProvider { get; private set; }
+
+    [RazorInject]
+    public IUrlHelper Url { get; private set; }
+
+    [RazorInject]
+    public IViewComponentHelper Component { get; private set; }
+
+    [RazorInject]
+    public IJsonHelper Json { get; private set; }
+
+    [RazorInject]
+    public IHtmlHelper<trafficjob> Html { get; private set; }
+  }
+}

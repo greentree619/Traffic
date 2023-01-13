@@ -1,0 +1,589 @@
+﻿// Decompiled with JetBrains decompiler
+// Type: AspNetCore._Views_Home_RssFeedView_cshtml
+// Assembly: Traffic.PrecompiledViews, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+// MVID: 8B37BA40-0390-40A7-A536-D9CCDBC36390
+// Assembly location: D:\Workstation\TonniProjects\TrafficWebDeploy\Traffic.PrecompiledViews.dll
+
+using Microsoft.AspNetCore.Html;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Razor;
+using Microsoft.AspNetCore.Mvc.Razor.Internal;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.Mvc.TagHelpers;
+using Microsoft.AspNetCore.Mvc.ViewFeatures;
+using Microsoft.AspNetCore.Razor.Runtime.TagHelpers;
+using Microsoft.AspNetCore.Razor.TagHelpers;
+using Microsoft.CSharp.RuntimeBinder;
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq.Expressions;
+using System.Runtime.CompilerServices;
+using System.Text.Encodings.Web;
+using System.Threading.Tasks;
+using Traffic.Models;
+
+namespace AspNetCore
+{
+  public class _Views_Home_RssFeedView_cshtml : RazorPage<IEnumerable<rssfeedtool>>
+  {
+    private static readonly TagHelperAttribute __tagHelperAttribute_0 = new TagHelperAttribute("asp-action", (object) "DeleteRssTool", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_1 = new TagHelperAttribute("class", (object) new HtmlString("btn btn-success btn-xs"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_2 = new TagHelperAttribute("class", (object) new HtmlString("btn btn-danger btn-xs"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_3 = new TagHelperAttribute("onclick", (object) new HtmlString("return DeleteConfirm();"), HtmlAttributeValueStyle.DoubleQuotes);
+    private string __tagHelperStringValueBuffer;
+    private TagHelperExecutionContext __tagHelperExecutionContext;
+    private TagHelperRunner __tagHelperRunner = new TagHelperRunner();
+    private TagHelperScopeManager __backed__tagHelperScopeManager;
+    private AnchorTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper;
+
+    private TagHelperScopeManager __tagHelperScopeManager
+    {
+      get
+      {
+        if (this.__backed__tagHelperScopeManager == null)
+          this.__backed__tagHelperScopeManager = new TagHelperScopeManager(new Action<HtmlEncoder>(((RazorPageBase) this).StartTagHelperWritingScope), new Func<TagHelperContent>(((RazorPageBase) this).EndTagHelperWritingScope));
+        return this.__backed__tagHelperScopeManager;
+      }
+    }
+
+    public virtual async Task ExecuteAsync()
+    {
+      _Views_Home_RssFeedView_cshtml rssFeedViewCshtml1 = this;
+      rssFeedViewCshtml1.ViewData["Title"] = (object) "RssFeedView";
+      // ISSUE: explicit non-virtual call
+      __nonvirtual (rssFeedViewCshtml1.Layout) = "~/Views/Shared/_Layout.cshtml";
+      rssFeedViewCshtml1.BeginContext(142, 924, true);
+      rssFeedViewCshtml1.WriteLiteral("\r\n<h2>RssFeedView</h2>\r\n\r\n</br>\r\n\r\n<style>\r\n    .crop {\r\n        white-space: nowrap;\r\n        overflow: hidden;\r\n        text-overflow: ellipsis\r\n    }\r\n\r\n    .btn-disable {\r\n        cursor: not-allowed;\r\n        pointer-events: none;\r\n        /*Button disabled - CSS color class*/\r\n        color: #c0c0c0;\r\n        background-color: #ffffff;\r\n    }\r\n    /*td{\r\n        max-width:800px\r\n    }*/\r\n</style>\r\n\r\n<table class=\"table\">\r\n    <thead>\r\n        <tr>\r\n            <th style=\"width: 30%;text-align:center;\">\r\n                Url\r\n            </th>\r\n            <th style=\"width: 30%;text-align:center;\">\r\n                Post Url\r\n            </th>\r\n            <th style=\"width: 15%;text-align:center;\">\r\n               \r\n            </th>\r\n            <th style=\"width: 5%;text-align:center;\">\r\n\r\n            </th>\r\n            <th style=\"width: 20%;text-align:center;\">\r\n                <button class=\"btn btn-info\"");
+      rssFeedViewCshtml1.EndContext();
+      rssFeedViewCshtml1.BeginWriteAttribute("onclick", " onclick=\"", 1066, "\"", 1120, 6);
+      rssFeedViewCshtml1.WriteAttributeValue("", 1076, (object) "return", 1076, 6, true);
+      rssFeedViewCshtml1.WriteAttributeValue(" ", 1082, (object) "ScrapUrl('", 1083, 11, true);
+      // ISSUE: reference to a compiler-generated field
+      if (_Views_Home_RssFeedView_cshtml.\u003C\u003Eo__11.\u003C\u003Ep__1 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        _Views_Home_RssFeedView_cshtml.\u003C\u003Eo__11.\u003C\u003Ep__1 = CallSite<Action<CallSite, _Views_Home_RssFeedView_cshtml, string, int, object, int, int, bool>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "WriteAttributeValue", (IEnumerable<Type>) null, typeof (_Views_Home_RssFeedView_cshtml), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[7]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, _Views_Home_RssFeedView_cshtml, string, int, object, int, int, bool> target1 = _Views_Home_RssFeedView_cshtml.\u003C\u003Eo__11.\u003C\u003Ep__1.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, _Views_Home_RssFeedView_cshtml, string, int, object, int, int, bool>> p1 = _Views_Home_RssFeedView_cshtml.\u003C\u003Eo__11.\u003C\u003Ep__1;
+      _Views_Home_RssFeedView_cshtml rssFeedViewCshtml2 = rssFeedViewCshtml1;
+      // ISSUE: reference to a compiler-generated field
+      if (_Views_Home_RssFeedView_cshtml.\u003C\u003Eo__11.\u003C\u003Ep__0 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        _Views_Home_RssFeedView_cshtml.\u003C\u003Eo__11.\u003C\u003Ep__0 = CallSite<Func<CallSite, object, object>>.Create(Binder.GetMember(CSharpBinderFlags.None, "URL", typeof (_Views_Home_RssFeedView_cshtml), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj1 = _Views_Home_RssFeedView_cshtml.\u003C\u003Eo__11.\u003C\u003Ep__0.Target((CallSite) _Views_Home_RssFeedView_cshtml.\u003C\u003Eo__11.\u003C\u003Ep__0, rssFeedViewCshtml1.ViewBag);
+      target1((CallSite) p1, rssFeedViewCshtml2, "", 1093, obj1, 1093, 12, false);
+      rssFeedViewCshtml1.WriteAttributeValue("", 1105, (object) "',", 1105, 2, true);
+      // ISSUE: reference to a compiler-generated field
+      if (_Views_Home_RssFeedView_cshtml.\u003C\u003Eo__11.\u003C\u003Ep__3 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        _Views_Home_RssFeedView_cshtml.\u003C\u003Eo__11.\u003C\u003Ep__3 = CallSite<Action<CallSite, _Views_Home_RssFeedView_cshtml, string, int, object, int, int, bool>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "WriteAttributeValue", (IEnumerable<Type>) null, typeof (_Views_Home_RssFeedView_cshtml), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[7]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, _Views_Home_RssFeedView_cshtml, string, int, object, int, int, bool> target2 = _Views_Home_RssFeedView_cshtml.\u003C\u003Eo__11.\u003C\u003Ep__3.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, _Views_Home_RssFeedView_cshtml, string, int, object, int, int, bool>> p3 = _Views_Home_RssFeedView_cshtml.\u003C\u003Eo__11.\u003C\u003Ep__3;
+      _Views_Home_RssFeedView_cshtml rssFeedViewCshtml3 = rssFeedViewCshtml1;
+      // ISSUE: reference to a compiler-generated field
+      if (_Views_Home_RssFeedView_cshtml.\u003C\u003Eo__11.\u003C\u003Ep__2 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        _Views_Home_RssFeedView_cshtml.\u003C\u003Eo__11.\u003C\u003Ep__2 = CallSite<Func<CallSite, object, object>>.Create(Binder.GetMember(CSharpBinderFlags.None, "id", typeof (_Views_Home_RssFeedView_cshtml), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj2 = _Views_Home_RssFeedView_cshtml.\u003C\u003Eo__11.\u003C\u003Ep__2.Target((CallSite) _Views_Home_RssFeedView_cshtml.\u003C\u003Eo__11.\u003C\u003Ep__2, rssFeedViewCshtml1.ViewBag);
+      target2((CallSite) p3, rssFeedViewCshtml3, "", 1107, obj2, 1107, 11, false);
+      rssFeedViewCshtml1.WriteAttributeValue("", 1118, (object) ");", 1118, 2, true);
+      rssFeedViewCshtml1.EndWriteAttribute();
+      rssFeedViewCshtml1.BeginContext(1121, 224, true);
+      rssFeedViewCshtml1.WriteLiteral(">Scrap Post Link</button>\r\n            </th>\r\n        </tr>\r\n    </thead>\r\n    <tbody>\r\n        <tr style=\"background-color:#ebeeef;\">\r\n            <td style=\"text-align:center;\">\r\n                <div>\r\n                    ");
+      rssFeedViewCshtml1.EndContext();
+      rssFeedViewCshtml1.BeginContext(1346, 11, false);
+      // ISSUE: reference to a compiler-generated field
+      if (_Views_Home_RssFeedView_cshtml.\u003C\u003Eo__11.\u003C\u003Ep__5 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        _Views_Home_RssFeedView_cshtml.\u003C\u003Eo__11.\u003C\u003Ep__5 = CallSite<Action<CallSite, _Views_Home_RssFeedView_cshtml, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (_Views_Home_RssFeedView_cshtml), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, _Views_Home_RssFeedView_cshtml, object> target3 = _Views_Home_RssFeedView_cshtml.\u003C\u003Eo__11.\u003C\u003Ep__5.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, _Views_Home_RssFeedView_cshtml, object>> p5 = _Views_Home_RssFeedView_cshtml.\u003C\u003Eo__11.\u003C\u003Ep__5;
+      _Views_Home_RssFeedView_cshtml rssFeedViewCshtml4 = rssFeedViewCshtml1;
+      // ISSUE: reference to a compiler-generated field
+      if (_Views_Home_RssFeedView_cshtml.\u003C\u003Eo__11.\u003C\u003Ep__4 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        _Views_Home_RssFeedView_cshtml.\u003C\u003Eo__11.\u003C\u003Ep__4 = CallSite<Func<CallSite, object, object>>.Create(Binder.GetMember(CSharpBinderFlags.None, "URL", typeof (_Views_Home_RssFeedView_cshtml), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj3 = _Views_Home_RssFeedView_cshtml.\u003C\u003Eo__11.\u003C\u003Ep__4.Target((CallSite) _Views_Home_RssFeedView_cshtml.\u003C\u003Eo__11.\u003C\u003Ep__4, rssFeedViewCshtml1.ViewBag);
+      target3((CallSite) p5, rssFeedViewCshtml4, obj3);
+      rssFeedViewCshtml1.EndContext();
+      rssFeedViewCshtml1.BeginContext(1357, 393, true);
+      rssFeedViewCshtml1.WriteLiteral("\r\n                </div>\r\n            </td>\r\n\r\n            <td style=\"text-align:center;\"></td>\r\n            <td style=\"text-align:center;\"></td>\r\n            <td style=\"text-align:center;\">\r\n                <span></span>\r\n            </td>\r\n            <td style=\"text-align:center;\">\r\n                <div style=\"white-space: nowrap;\">\r\n                    <a class=\"btn btn-success btn-xs \"");
+      rssFeedViewCshtml1.EndContext();
+      rssFeedViewCshtml1.BeginWriteAttribute("onclick", " onclick=\"", 1750, "\"", 1790, 4);
+      rssFeedViewCshtml1.WriteAttributeValue("", 1760, (object) "return", 1760, 6, true);
+      rssFeedViewCshtml1.WriteAttributeValue(" ", 1766, (object) "ShowRss('", 1767, 10, true);
+      // ISSUE: reference to a compiler-generated field
+      if (_Views_Home_RssFeedView_cshtml.\u003C\u003Eo__11.\u003C\u003Ep__7 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        _Views_Home_RssFeedView_cshtml.\u003C\u003Eo__11.\u003C\u003Ep__7 = CallSite<Action<CallSite, _Views_Home_RssFeedView_cshtml, string, int, object, int, int, bool>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "WriteAttributeValue", (IEnumerable<Type>) null, typeof (_Views_Home_RssFeedView_cshtml), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[7]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, _Views_Home_RssFeedView_cshtml, string, int, object, int, int, bool> target4 = _Views_Home_RssFeedView_cshtml.\u003C\u003Eo__11.\u003C\u003Ep__7.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, _Views_Home_RssFeedView_cshtml, string, int, object, int, int, bool>> p7 = _Views_Home_RssFeedView_cshtml.\u003C\u003Eo__11.\u003C\u003Ep__7;
+      _Views_Home_RssFeedView_cshtml rssFeedViewCshtml5 = rssFeedViewCshtml1;
+      // ISSUE: reference to a compiler-generated field
+      if (_Views_Home_RssFeedView_cshtml.\u003C\u003Eo__11.\u003C\u003Ep__6 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        _Views_Home_RssFeedView_cshtml.\u003C\u003Eo__11.\u003C\u003Ep__6 = CallSite<Func<CallSite, object, object>>.Create(Binder.GetMember(CSharpBinderFlags.None, "id", typeof (_Views_Home_RssFeedView_cshtml), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj4 = _Views_Home_RssFeedView_cshtml.\u003C\u003Eo__11.\u003C\u003Ep__6.Target((CallSite) _Views_Home_RssFeedView_cshtml.\u003C\u003Eo__11.\u003C\u003Ep__6, rssFeedViewCshtml1.ViewBag);
+      target4((CallSite) p7, rssFeedViewCshtml5, "", 1776, obj4, 1776, 11, false);
+      rssFeedViewCshtml1.WriteAttributeValue("", 1787, (object) "');", 1787, 3, true);
+      rssFeedViewCshtml1.EndWriteAttribute();
+      rssFeedViewCshtml1.BeginContext(1791, 30, true);
+      rssFeedViewCshtml1.WriteLiteral(">RSS</a>\r\n                    ");
+      rssFeedViewCshtml1.EndContext();
+      rssFeedViewCshtml1.BeginContext(1821, 97, false);
+      // ISSUE: reference to a compiler-generated method
+      rssFeedViewCshtml1.__tagHelperExecutionContext = rssFeedViewCshtml1.__tagHelperScopeManager.Begin("a", TagMode.StartTagAndEndTag, "a6654c43c1c24eee8af63980aaa6559e", new Func<Task>(rssFeedViewCshtml1.\u003CExecuteAsync\u003Eb__11_0));
+      rssFeedViewCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper = rssFeedViewCshtml1.CreateTagHelper<AnchorTagHelper>();
+      rssFeedViewCshtml1.__tagHelperExecutionContext.Add((ITagHelper) rssFeedViewCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper);
+      rssFeedViewCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.Action = (string) _Views_Home_RssFeedView_cshtml.__tagHelperAttribute_0.Value;
+      rssFeedViewCshtml1.__tagHelperExecutionContext.AddTagHelperAttribute(_Views_Home_RssFeedView_cshtml.__tagHelperAttribute_0);
+      if (rssFeedViewCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues == null)
+        throw new InvalidOperationException(rssFeedViewCshtml1.InvalidTagHelperIndexerAssignment("asp-route-id", "Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper", "RouteValues"));
+      rssFeedViewCshtml1.BeginWriteTagHelperAttribute();
+      // ISSUE: reference to a compiler-generated field
+      if (_Views_Home_RssFeedView_cshtml.\u003C\u003Eo__11.\u003C\u003Ep__9 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        _Views_Home_RssFeedView_cshtml.\u003C\u003Eo__11.\u003C\u003Ep__9 = CallSite<Action<CallSite, _Views_Home_RssFeedView_cshtml, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "WriteLiteral", (IEnumerable<Type>) null, typeof (_Views_Home_RssFeedView_cshtml), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, _Views_Home_RssFeedView_cshtml, object> target5 = _Views_Home_RssFeedView_cshtml.\u003C\u003Eo__11.\u003C\u003Ep__9.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, _Views_Home_RssFeedView_cshtml, object>> p9 = _Views_Home_RssFeedView_cshtml.\u003C\u003Eo__11.\u003C\u003Ep__9;
+      _Views_Home_RssFeedView_cshtml rssFeedViewCshtml6 = rssFeedViewCshtml1;
+      // ISSUE: reference to a compiler-generated field
+      if (_Views_Home_RssFeedView_cshtml.\u003C\u003Eo__11.\u003C\u003Ep__8 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        _Views_Home_RssFeedView_cshtml.\u003C\u003Eo__11.\u003C\u003Ep__8 = CallSite<Func<CallSite, object, object>>.Create(Binder.GetMember(CSharpBinderFlags.None, "id", typeof (_Views_Home_RssFeedView_cshtml), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj5 = _Views_Home_RssFeedView_cshtml.\u003C\u003Eo__11.\u003C\u003Ep__8.Target((CallSite) _Views_Home_RssFeedView_cshtml.\u003C\u003Eo__11.\u003C\u003Ep__8, rssFeedViewCshtml1.ViewBag);
+      target5((CallSite) p9, rssFeedViewCshtml6, obj5);
+      rssFeedViewCshtml1.__tagHelperStringValueBuffer = rssFeedViewCshtml1.EndWriteTagHelperAttribute();
+      rssFeedViewCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues["id"] = rssFeedViewCshtml1.__tagHelperStringValueBuffer;
+      rssFeedViewCshtml1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-route-id", (object) rssFeedViewCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues["id"], HtmlAttributeValueStyle.DoubleQuotes);
+      rssFeedViewCshtml1.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_RssFeedView_cshtml.__tagHelperAttribute_1);
+      await rssFeedViewCshtml1.__tagHelperRunner.RunAsync(rssFeedViewCshtml1.__tagHelperExecutionContext);
+      if (!rssFeedViewCshtml1.__tagHelperExecutionContext.Output.IsContentModified)
+        await rssFeedViewCshtml1.__tagHelperExecutionContext.SetOutputContentAsync();
+      rssFeedViewCshtml1.Write((object) rssFeedViewCshtml1.__tagHelperExecutionContext.Output);
+      rssFeedViewCshtml1.__tagHelperExecutionContext = rssFeedViewCshtml1.__tagHelperScopeManager.End();
+      rssFeedViewCshtml1.EndContext();
+      rssFeedViewCshtml1.BeginContext(1918, 60, true);
+      rssFeedViewCshtml1.WriteLiteral("\r\n                </div>\r\n            </td>\r\n        </tr>\r\n");
+      rssFeedViewCshtml1.EndContext();
+      foreach (rssfeedtool item in rssFeedViewCshtml1.Model)
+      {
+        // ISSUE: reference to a compiler-generated field
+        if (_Views_Home_RssFeedView_cshtml.\u003C\u003Eo__11.\u003C\u003Ep__10 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          _Views_Home_RssFeedView_cshtml.\u003C\u003Eo__11.\u003C\u003Ep__10 = CallSite<Func<CallSite, object, int, object>>.Create(Binder.SetMember(CSharpBinderFlags.None, "count", typeof (_Views_Home_RssFeedView_cshtml), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj6 = _Views_Home_RssFeedView_cshtml.\u003C\u003Eo__11.\u003C\u003Ep__10.Target((CallSite) _Views_Home_RssFeedView_cshtml.\u003C\u003Eo__11.\u003C\u003Ep__10, rssFeedViewCshtml1.ViewBag, 0);
+        rssFeedViewCshtml1.BeginContext(2081, 231, true);
+        rssFeedViewCshtml1.WriteLiteral("            <tr style=\"background-color:#ebeeef;\">\r\n                <td>\r\n                    <div>\r\n\r\n\r\n                    </div>\r\n                </td>\r\n                <td>\r\n                    <div>\r\n                        <a");
+        rssFeedViewCshtml1.EndContext();
+        rssFeedViewCshtml1.BeginWriteAttribute("href", " href=\"", 2312, "\"", 2329, 1);
+        rssFeedViewCshtml1.WriteAttributeValue("", 2319, (object) item.href, 2319, 10, false);
+        rssFeedViewCshtml1.EndWriteAttribute();
+        rssFeedViewCshtml1.BeginContext(2330, 1, true);
+        rssFeedViewCshtml1.WriteLiteral(">");
+        rssFeedViewCshtml1.EndContext();
+        rssFeedViewCshtml1.BeginContext(2332, 9, false);
+        rssFeedViewCshtml1.Write(item.href);
+        rssFeedViewCshtml1.EndContext();
+        rssFeedViewCshtml1.BeginContext(2341, 284, true);
+        rssFeedViewCshtml1.WriteLiteral("</a>\r\n                    </div>\r\n                </td>\r\n                <td style=\"text-align:center;\">\r\n                    <div>\r\n                      \r\n                    </div>\r\n                </td>\r\n                <td style=\"text-align:center;\">\r\n                    <div>\r\n");
+        rssFeedViewCshtml1.EndContext();
+        // ISSUE: reference to a compiler-generated field
+        if (_Views_Home_RssFeedView_cshtml.\u003C\u003Eo__11.\u003C\u003Ep__18 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          _Views_Home_RssFeedView_cshtml.\u003C\u003Eo__11.\u003C\u003Ep__18 = CallSite<Func<CallSite, object, IEnumerable>>.Create(Binder.Convert(CSharpBinderFlags.None, typeof (IEnumerable), typeof (_Views_Home_RssFeedView_cshtml)));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Func<CallSite, object, IEnumerable> target6 = _Views_Home_RssFeedView_cshtml.\u003C\u003Eo__11.\u003C\u003Ep__18.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Func<CallSite, object, IEnumerable>> p18 = _Views_Home_RssFeedView_cshtml.\u003C\u003Eo__11.\u003C\u003Ep__18;
+        // ISSUE: reference to a compiler-generated field
+        if (_Views_Home_RssFeedView_cshtml.\u003C\u003Eo__11.\u003C\u003Ep__11 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          _Views_Home_RssFeedView_cshtml.\u003C\u003Eo__11.\u003C\u003Ep__11 = CallSite<Func<CallSite, object, object>>.Create(Binder.GetMember(CSharpBinderFlags.None, "listofitems", typeof (_Views_Home_RssFeedView_cshtml), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj7 = _Views_Home_RssFeedView_cshtml.\u003C\u003Eo__11.\u003C\u003Ep__11.Target((CallSite) _Views_Home_RssFeedView_cshtml.\u003C\u003Eo__11.\u003C\u003Ep__11, rssFeedViewCshtml1.ViewBag);
+        foreach (object obj8 in target6((CallSite) p18, obj7))
+        {
+          // ISSUE: reference to a compiler-generated field
+          if (_Views_Home_RssFeedView_cshtml.\u003C\u003Eo__11.\u003C\u003Ep__14 == null)
+          {
+            // ISSUE: reference to a compiler-generated field
+            _Views_Home_RssFeedView_cshtml.\u003C\u003Eo__11.\u003C\u003Ep__14 = CallSite<Func<CallSite, object, bool>>.Create(Binder.UnaryOperation(CSharpBinderFlags.None, ExpressionType.IsTrue, typeof (_Views_Home_RssFeedView_cshtml), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+            {
+              CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+            }));
+          }
+          // ISSUE: reference to a compiler-generated field
+          Func<CallSite, object, bool> target7 = _Views_Home_RssFeedView_cshtml.\u003C\u003Eo__11.\u003C\u003Ep__14.Target;
+          // ISSUE: reference to a compiler-generated field
+          CallSite<Func<CallSite, object, bool>> p14 = _Views_Home_RssFeedView_cshtml.\u003C\u003Eo__11.\u003C\u003Ep__14;
+          // ISSUE: reference to a compiler-generated field
+          if (_Views_Home_RssFeedView_cshtml.\u003C\u003Eo__11.\u003C\u003Ep__13 == null)
+          {
+            // ISSUE: reference to a compiler-generated field
+            _Views_Home_RssFeedView_cshtml.\u003C\u003Eo__11.\u003C\u003Ep__13 = CallSite<Func<CallSite, object, int, object>>.Create(Binder.BinaryOperation(CSharpBinderFlags.None, ExpressionType.Equal, typeof (_Views_Home_RssFeedView_cshtml), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+            {
+              CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+              CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null)
+            }));
+          }
+          // ISSUE: reference to a compiler-generated field
+          Func<CallSite, object, int, object> target8 = _Views_Home_RssFeedView_cshtml.\u003C\u003Eo__11.\u003C\u003Ep__13.Target;
+          // ISSUE: reference to a compiler-generated field
+          CallSite<Func<CallSite, object, int, object>> p13 = _Views_Home_RssFeedView_cshtml.\u003C\u003Eo__11.\u003C\u003Ep__13;
+          // ISSUE: reference to a compiler-generated field
+          if (_Views_Home_RssFeedView_cshtml.\u003C\u003Eo__11.\u003C\u003Ep__12 == null)
+          {
+            // ISSUE: reference to a compiler-generated field
+            _Views_Home_RssFeedView_cshtml.\u003C\u003Eo__11.\u003C\u003Ep__12 = CallSite<Func<CallSite, object, object>>.Create(Binder.GetMember(CSharpBinderFlags.None, "parentId", typeof (_Views_Home_RssFeedView_cshtml), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+            {
+              CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+            }));
+          }
+          // ISSUE: reference to a compiler-generated field
+          // ISSUE: reference to a compiler-generated field
+          object obj9 = _Views_Home_RssFeedView_cshtml.\u003C\u003Eo__11.\u003C\u003Ep__12.Target((CallSite) _Views_Home_RssFeedView_cshtml.\u003C\u003Eo__11.\u003C\u003Ep__12, obj8);
+          int id = item.id;
+          object obj10 = target8((CallSite) p13, obj9, id);
+          if (target7((CallSite) p14, obj10))
+          {
+            object viewBag = rssFeedViewCshtml1.ViewBag;
+            // ISSUE: reference to a compiler-generated field
+            if (_Views_Home_RssFeedView_cshtml.\u003C\u003Eo__11.\u003C\u003Ep__16 == null)
+            {
+              // ISSUE: reference to a compiler-generated field
+              _Views_Home_RssFeedView_cshtml.\u003C\u003Eo__11.\u003C\u003Ep__16 = CallSite<Func<CallSite, object, object>>.Create(Binder.GetMember(CSharpBinderFlags.None, "count", typeof (_Views_Home_RssFeedView_cshtml), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+              {
+                CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+              }));
+            }
+            // ISSUE: reference to a compiler-generated field
+            // ISSUE: reference to a compiler-generated field
+            object obj11 = _Views_Home_RssFeedView_cshtml.\u003C\u003Eo__11.\u003C\u003Ep__16.Target((CallSite) _Views_Home_RssFeedView_cshtml.\u003C\u003Eo__11.\u003C\u003Ep__16, viewBag);
+            // ISSUE: reference to a compiler-generated field
+            if (_Views_Home_RssFeedView_cshtml.\u003C\u003Eo__11.\u003C\u003Ep__17 == null)
+            {
+              // ISSUE: reference to a compiler-generated field
+              _Views_Home_RssFeedView_cshtml.\u003C\u003Eo__11.\u003C\u003Ep__17 = CallSite<Func<CallSite, object, object, object>>.Create(Binder.SetMember(CSharpBinderFlags.None, "count", typeof (_Views_Home_RssFeedView_cshtml), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+              {
+                CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+                CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+              }));
+            }
+            // ISSUE: reference to a compiler-generated field
+            Func<CallSite, object, object, object> target9 = _Views_Home_RssFeedView_cshtml.\u003C\u003Eo__11.\u003C\u003Ep__17.Target;
+            // ISSUE: reference to a compiler-generated field
+            CallSite<Func<CallSite, object, object, object>> p17 = _Views_Home_RssFeedView_cshtml.\u003C\u003Eo__11.\u003C\u003Ep__17;
+            object obj12 = viewBag;
+            // ISSUE: reference to a compiler-generated field
+            if (_Views_Home_RssFeedView_cshtml.\u003C\u003Eo__11.\u003C\u003Ep__15 == null)
+            {
+              // ISSUE: reference to a compiler-generated field
+              _Views_Home_RssFeedView_cshtml.\u003C\u003Eo__11.\u003C\u003Ep__15 = CallSite<Func<CallSite, object, object>>.Create(Binder.UnaryOperation(CSharpBinderFlags.None, ExpressionType.Increment, typeof (_Views_Home_RssFeedView_cshtml), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+              {
+                CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+              }));
+            }
+            // ISSUE: reference to a compiler-generated field
+            // ISSUE: reference to a compiler-generated field
+            object obj13 = _Views_Home_RssFeedView_cshtml.\u003C\u003Eo__11.\u003C\u003Ep__15.Target((CallSite) _Views_Home_RssFeedView_cshtml.\u003C\u003Eo__11.\u003C\u003Ep__15, obj11);
+            object obj14 = target9((CallSite) p17, obj12, obj13);
+          }
+        }
+        rssFeedViewCshtml1.BeginContext(2921, 24, true);
+        rssFeedViewCshtml1.WriteLiteral("                        ");
+        rssFeedViewCshtml1.EndContext();
+        // ISSUE: reference to a compiler-generated field
+        if (_Views_Home_RssFeedView_cshtml.\u003C\u003Eo__11.\u003C\u003Ep__21 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          _Views_Home_RssFeedView_cshtml.\u003C\u003Eo__11.\u003C\u003Ep__21 = CallSite<Func<CallSite, object, bool>>.Create(Binder.UnaryOperation(CSharpBinderFlags.None, ExpressionType.IsTrue, typeof (_Views_Home_RssFeedView_cshtml), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Func<CallSite, object, bool> target10 = _Views_Home_RssFeedView_cshtml.\u003C\u003Eo__11.\u003C\u003Ep__21.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Func<CallSite, object, bool>> p21 = _Views_Home_RssFeedView_cshtml.\u003C\u003Eo__11.\u003C\u003Ep__21;
+        // ISSUE: reference to a compiler-generated field
+        if (_Views_Home_RssFeedView_cshtml.\u003C\u003Eo__11.\u003C\u003Ep__20 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          _Views_Home_RssFeedView_cshtml.\u003C\u003Eo__11.\u003C\u003Ep__20 = CallSite<Func<CallSite, object, int, object>>.Create(Binder.BinaryOperation(CSharpBinderFlags.None, ExpressionType.GreaterThan, typeof (_Views_Home_RssFeedView_cshtml), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Func<CallSite, object, int, object> target11 = _Views_Home_RssFeedView_cshtml.\u003C\u003Eo__11.\u003C\u003Ep__20.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Func<CallSite, object, int, object>> p20 = _Views_Home_RssFeedView_cshtml.\u003C\u003Eo__11.\u003C\u003Ep__20;
+        // ISSUE: reference to a compiler-generated field
+        if (_Views_Home_RssFeedView_cshtml.\u003C\u003Eo__11.\u003C\u003Ep__19 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          _Views_Home_RssFeedView_cshtml.\u003C\u003Eo__11.\u003C\u003Ep__19 = CallSite<Func<CallSite, object, object>>.Create(Binder.GetMember(CSharpBinderFlags.None, "count", typeof (_Views_Home_RssFeedView_cshtml), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj15 = _Views_Home_RssFeedView_cshtml.\u003C\u003Eo__11.\u003C\u003Ep__19.Target((CallSite) _Views_Home_RssFeedView_cshtml.\u003C\u003Eo__11.\u003C\u003Ep__19, rssFeedViewCshtml1.ViewBag);
+        object obj16 = target11((CallSite) p20, obj15, 0);
+        if (target10((CallSite) p21, obj16))
+        {
+          rssFeedViewCshtml1.BeginContext(2997, 34, true);
+          rssFeedViewCshtml1.WriteLiteral("                            <span>");
+          rssFeedViewCshtml1.EndContext();
+          rssFeedViewCshtml1.BeginContext(3032, 13, false);
+          // ISSUE: reference to a compiler-generated field
+          if (_Views_Home_RssFeedView_cshtml.\u003C\u003Eo__11.\u003C\u003Ep__23 == null)
+          {
+            // ISSUE: reference to a compiler-generated field
+            _Views_Home_RssFeedView_cshtml.\u003C\u003Eo__11.\u003C\u003Ep__23 = CallSite<Action<CallSite, _Views_Home_RssFeedView_cshtml, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (_Views_Home_RssFeedView_cshtml), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+            {
+              CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+              CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+            }));
+          }
+          // ISSUE: reference to a compiler-generated field
+          Action<CallSite, _Views_Home_RssFeedView_cshtml, object> target12 = _Views_Home_RssFeedView_cshtml.\u003C\u003Eo__11.\u003C\u003Ep__23.Target;
+          // ISSUE: reference to a compiler-generated field
+          CallSite<Action<CallSite, _Views_Home_RssFeedView_cshtml, object>> p23 = _Views_Home_RssFeedView_cshtml.\u003C\u003Eo__11.\u003C\u003Ep__23;
+          _Views_Home_RssFeedView_cshtml rssFeedViewCshtml7 = rssFeedViewCshtml1;
+          // ISSUE: reference to a compiler-generated field
+          if (_Views_Home_RssFeedView_cshtml.\u003C\u003Eo__11.\u003C\u003Ep__22 == null)
+          {
+            // ISSUE: reference to a compiler-generated field
+            _Views_Home_RssFeedView_cshtml.\u003C\u003Eo__11.\u003C\u003Ep__22 = CallSite<Func<CallSite, object, object>>.Create(Binder.GetMember(CSharpBinderFlags.None, "count", typeof (_Views_Home_RssFeedView_cshtml), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+            {
+              CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+            }));
+          }
+          // ISSUE: reference to a compiler-generated field
+          // ISSUE: reference to a compiler-generated field
+          object obj17 = _Views_Home_RssFeedView_cshtml.\u003C\u003Eo__11.\u003C\u003Ep__22.Target((CallSite) _Views_Home_RssFeedView_cshtml.\u003C\u003Eo__11.\u003C\u003Ep__22, rssFeedViewCshtml1.ViewBag);
+          target12((CallSite) p23, rssFeedViewCshtml7, obj17);
+          rssFeedViewCshtml1.EndContext();
+          rssFeedViewCshtml1.BeginContext(3045, 9, true);
+          rssFeedViewCshtml1.WriteLiteral("</span>\r\n");
+          rssFeedViewCshtml1.EndContext();
+          // ISSUE: reference to a compiler-generated field
+          if (_Views_Home_RssFeedView_cshtml.\u003C\u003Eo__11.\u003C\u003Ep__24 == null)
+          {
+            // ISSUE: reference to a compiler-generated field
+            _Views_Home_RssFeedView_cshtml.\u003C\u003Eo__11.\u003C\u003Ep__24 = CallSite<Func<CallSite, object, int, object>>.Create(Binder.SetMember(CSharpBinderFlags.None, "count", typeof (_Views_Home_RssFeedView_cshtml), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+            {
+              CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+              CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+            }));
+          }
+          // ISSUE: reference to a compiler-generated field
+          // ISSUE: reference to a compiler-generated field
+          object obj18 = _Views_Home_RssFeedView_cshtml.\u003C\u003Eo__11.\u003C\u003Ep__24.Target((CallSite) _Views_Home_RssFeedView_cshtml.\u003C\u003Eo__11.\u003C\u003Ep__24, rssFeedViewCshtml1.ViewBag, 0);
+        }
+        rssFeedViewCshtml1.BeginContext(3129, 215, true);
+        rssFeedViewCshtml1.WriteLiteral("                    </div>\r\n                </td>\r\n\r\n                <td style=\"text-align:center;\">\r\n                    <div style=\"white-space: nowrap;\">\r\n                        <a class=\"btn btn-success btn-xs\"");
+        rssFeedViewCshtml1.EndContext();
+        rssFeedViewCshtml1.BeginWriteAttribute("onclick", " onclick=\"", 3344, "\"", 3381, 4);
+        rssFeedViewCshtml1.WriteAttributeValue("", 3354, (object) "return", 3354, 6, true);
+        rssFeedViewCshtml1.WriteAttributeValue(" ", 3360, (object) "ShowRss('", 3361, 10, true);
+        rssFeedViewCshtml1.WriteAttributeValue("", 3370, (object) item.id, 3370, 8, false);
+        rssFeedViewCshtml1.WriteAttributeValue("", 3378, (object) "');", 3378, 3, true);
+        rssFeedViewCshtml1.EndWriteAttribute();
+        rssFeedViewCshtml1.BeginContext(3382, 34, true);
+        rssFeedViewCshtml1.WriteLiteral(">RSS</a>\r\n                        ");
+        rssFeedViewCshtml1.EndContext();
+        rssFeedViewCshtml1.BeginContext(3416, 68, false);
+        // ISSUE: reference to a compiler-generated method
+        rssFeedViewCshtml1.__tagHelperExecutionContext = rssFeedViewCshtml1.__tagHelperScopeManager.Begin("a", TagMode.StartTagAndEndTag, "0406535e8be84a37adaffb9fa7b80800", new Func<Task>(rssFeedViewCshtml1.\u003CExecuteAsync\u003Eb__11_1));
+        rssFeedViewCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper = rssFeedViewCshtml1.CreateTagHelper<AnchorTagHelper>();
+        rssFeedViewCshtml1.__tagHelperExecutionContext.Add((ITagHelper) rssFeedViewCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper);
+        if (rssFeedViewCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues == null)
+          throw new InvalidOperationException(rssFeedViewCshtml1.InvalidTagHelperIndexerAssignment("asp-route-id", "Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper", "RouteValues"));
+        rssFeedViewCshtml1.BeginWriteTagHelperAttribute();
+        rssFeedViewCshtml1.WriteLiteral((object) item.id);
+        rssFeedViewCshtml1.__tagHelperStringValueBuffer = rssFeedViewCshtml1.EndWriteTagHelperAttribute();
+        rssFeedViewCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues["id"] = rssFeedViewCshtml1.__tagHelperStringValueBuffer;
+        rssFeedViewCshtml1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-route-id", (object) rssFeedViewCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues["id"], HtmlAttributeValueStyle.DoubleQuotes);
+        rssFeedViewCshtml1.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_RssFeedView_cshtml.__tagHelperAttribute_1);
+        await rssFeedViewCshtml1.__tagHelperRunner.RunAsync(rssFeedViewCshtml1.__tagHelperExecutionContext);
+        if (!rssFeedViewCshtml1.__tagHelperExecutionContext.Output.IsContentModified)
+          await rssFeedViewCshtml1.__tagHelperExecutionContext.SetOutputContentAsync();
+        rssFeedViewCshtml1.Write((object) rssFeedViewCshtml1.__tagHelperExecutionContext.Output);
+        rssFeedViewCshtml1.__tagHelperExecutionContext = rssFeedViewCshtml1.__tagHelperScopeManager.End();
+        rssFeedViewCshtml1.EndContext();
+        rssFeedViewCshtml1.BeginContext(3484, 26, true);
+        rssFeedViewCshtml1.WriteLiteral("\r\n                        ");
+        rssFeedViewCshtml1.EndContext();
+        rssFeedViewCshtml1.BeginContext(3510, 128, false);
+        // ISSUE: reference to a compiler-generated method
+        rssFeedViewCshtml1.__tagHelperExecutionContext = rssFeedViewCshtml1.__tagHelperScopeManager.Begin("a", TagMode.StartTagAndEndTag, "4265e742566846d085e4c48f00a6d597", new Func<Task>(rssFeedViewCshtml1.\u003CExecuteAsync\u003Eb__11_2));
+        rssFeedViewCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper = rssFeedViewCshtml1.CreateTagHelper<AnchorTagHelper>();
+        rssFeedViewCshtml1.__tagHelperExecutionContext.Add((ITagHelper) rssFeedViewCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper);
+        rssFeedViewCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.Action = (string) _Views_Home_RssFeedView_cshtml.__tagHelperAttribute_0.Value;
+        rssFeedViewCshtml1.__tagHelperExecutionContext.AddTagHelperAttribute(_Views_Home_RssFeedView_cshtml.__tagHelperAttribute_0);
+        if (rssFeedViewCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues == null)
+          throw new InvalidOperationException(rssFeedViewCshtml1.InvalidTagHelperIndexerAssignment("asp-route-id", "Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper", "RouteValues"));
+        rssFeedViewCshtml1.BeginWriteTagHelperAttribute();
+        rssFeedViewCshtml1.WriteLiteral((object) item.id);
+        rssFeedViewCshtml1.__tagHelperStringValueBuffer = rssFeedViewCshtml1.EndWriteTagHelperAttribute();
+        rssFeedViewCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues["id"] = rssFeedViewCshtml1.__tagHelperStringValueBuffer;
+        rssFeedViewCshtml1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-route-id", (object) rssFeedViewCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues["id"], HtmlAttributeValueStyle.DoubleQuotes);
+        rssFeedViewCshtml1.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_RssFeedView_cshtml.__tagHelperAttribute_2);
+        rssFeedViewCshtml1.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_RssFeedView_cshtml.__tagHelperAttribute_3);
+        await rssFeedViewCshtml1.__tagHelperRunner.RunAsync(rssFeedViewCshtml1.__tagHelperExecutionContext);
+        if (!rssFeedViewCshtml1.__tagHelperExecutionContext.Output.IsContentModified)
+          await rssFeedViewCshtml1.__tagHelperExecutionContext.SetOutputContentAsync();
+        rssFeedViewCshtml1.Write((object) rssFeedViewCshtml1.__tagHelperExecutionContext.Output);
+        rssFeedViewCshtml1.__tagHelperExecutionContext = rssFeedViewCshtml1.__tagHelperScopeManager.End();
+        rssFeedViewCshtml1.EndContext();
+        rssFeedViewCshtml1.BeginContext(3638, 72, true);
+        rssFeedViewCshtml1.WriteLiteral("\r\n                    </div>\r\n                </td>\r\n            </tr>\r\n");
+        rssFeedViewCshtml1.EndContext();
+      }
+      rssFeedViewCshtml1.BeginContext(3721, 2789, true);
+      rssFeedViewCshtml1.WriteLiteral("    </tbody>\r\n</table>\r\n\r\n<div id=\"ShowModal\" class=\"modal fade\" tabindex=\"-1\" role=\"dialog\" aria-hidden=\"true\">\r\n    <div class=\"modal-dialog\">\r\n        <div class=\"modal-content\">\r\n            <div class=\"modal-header\">\r\n                <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\">\r\n                    <span aria-hidden=\"true\">×</span>\r\n                </button>\r\n                <h4 class=\"modal-title\">Show Sub Link</h4>\r\n            </div>\r\n\r\n            <div class=\"modal-body\">\r\n\r\n                <div class=\"form-horizontal form-label-left\">                    \r\n                    <div class=\"form-group\">\r\n                        <label class=\"control-label col-md-3 col-sm-3 col-xs-12\">Anchor : </label>\r\n                        <div class=\"col-md-8 col-sm-8 col-xs-12\">\r\n                            <input id=\"anchor2\" type=\"text\" name=\"anchor\" value=\"\" style=\"margin-top:5px\" readonly/>\r\n                        </div>\r\n                    </div>\r\n                    <div clas");
+      rssFeedViewCshtml1.WriteLiteral("s=\"form-group\">\r\n                        <label class=\"control-label col-md-3 col-sm-3 col-xs-12\">Sub Link : </label>\r\n                        <div class=\"col-md-8 col-sm-8 col-xs-12\">\r\n                            <input id=\"href2\" type=\"text\" name=\"href\" value=\"\" style=\"margin-top:5px\" readonly/>\r\n                        </div>\r\n                    </div>\r\n\r\n                </div>\r\n            </div>\r\n            <div class=\"modal-footer\">\r\n                <button type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\">OK</button>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n\r\n<div id=\"AddModal\" class=\"modal fade\" tabindex=\"-1\" role=\"dialog\" aria-hidden=\"true\">\r\n    <div class=\"modal-dialog\" >\r\n        <div class=\"modal-content\">\r\n            <div class=\"modal-header\">\r\n                <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\">\r\n                    <span aria-hidden=\"true\">×</span>\r\n                </button>\r\n                <h4 class=\"modal-title\">Show RSS Fe");
+      rssFeedViewCshtml1.WriteLiteral("ed</h4>\r\n            </div>\r\n\r\n            <div class=\"modal-body\">\r\n\r\n                <div class=\"form-horizontal form-label-left\">\r\n                   \r\n                    <textarea id=\"rssfeedshow\" style=\"width:100%;min-height:300px;resize: none;\" readonly >\r\n\r\n                    </textarea>\r\n\r\n                </div>\r\n            </div>\r\n            <div class=\"modal-footer\">\r\n                <button type=\"button\" class=\"btn btn-default\" OnClick=\"btnCreateJob()\" data-dismiss=\"modal\">OK</button>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n\r\n\r\n<script>\r\n    function DeleteConfirm() {\r\n        return confirm(\"Are you going to delete really?\");\r\n    }\r\n\r\n    function ShowRss(id) {\r\n        $.ajax({\r\n            url: '");
+      rssFeedViewCshtml1.EndContext();
+      rssFeedViewCshtml1.BeginContext(6511, 31, false);
+      rssFeedViewCshtml1.Write(UrlHelperExtensions.Action(rssFeedViewCshtml1.Url, "GetRssXml", "Home"));
+      rssFeedViewCshtml1.EndContext();
+      rssFeedViewCshtml1.BeginContext(6542, 2018, true);
+      rssFeedViewCshtml1.WriteLiteral("',\r\n            contentType: 'application/x-www-form-urlencoded',\r\n            type: 'POST',\r\n            data: { id:id},\r\n            success: function (data) {\r\n               \r\n                if (data != \"\") {\r\n                    xml_formatted = formatXml(data);\r\n\r\n                    xml_escaped = xml_formatted.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/ /g, '&nbsp;').replace(/\\n/g, '<br />');\r\n                    var parser = new DOMParser();\r\n                    var xmlDoc = parser.parseFromString(data, \"text/xml\");\r\n                    $(\"#rssfeedshow\").val(xml_formatted);\r\n                    $(\"#AddModal\").modal();\r\n                }\r\n                else\r\n                    alert(\"server connect error ! \");\r\n            },\r\n            error: function (XMLHttpRequest, textStatus, errorThrown) {\r\n                alert(\"server connect error ! \");\r\n                return;\r\n            }\r\n        });\r\n    }\r\n    function formatXml(xml) {\r\n        var formatted = '';\r\n");
+      rssFeedViewCshtml1.WriteLiteral("        var reg = /(>)(<)(\\/*)/g;\r\n        xml = xml.replace(reg, '$1\\r\\n$2$3');\r\n        var pad = 0;\r\n        jQuery.each(xml.split('\\r\\n'), function (index, node) {\r\n            var indent = 0;\r\n            if (node.match(/.+<\\/\\w[^>]*>$/)) {\r\n                indent = 0;\r\n            } else if (node.match(/^<\\/\\w/)) {\r\n                if (pad != 0) {\r\n                    pad -= 1;\r\n                }\r\n            } else if (node.match(/^<\\w[^>]*[^\\/]>.*$/)) {\r\n                indent = 1;\r\n            } else {\r\n                indent = 0;\r\n            }\r\n\r\n            var padding = '';\r\n            for (var i = 0; i < pad; i++) {\r\n                padding += '  ';\r\n            }\r\n\r\n            formatted += padding + node + '\\r\\n';\r\n            pad += indent;\r\n        });\r\n\r\n        return formatted;\r\n    }\r\n    function DeleteConfirm() {\r\n        return confirm(\"Are you going to delete user really?\");\r\n    }\r\n\r\n    function ScrapUrl(url,id) {\r\n        $.ajax({\r\n            url: '");
+      rssFeedViewCshtml1.EndContext();
+      rssFeedViewCshtml1.BeginContext(8561, 30, false);
+      rssFeedViewCshtml1.Write(UrlHelperExtensions.Action(rssFeedViewCshtml1.Url, "ScrapUrl", "Home"));
+      rssFeedViewCshtml1.EndContext();
+      rssFeedViewCshtml1.BeginContext(8591, 757, true);
+      rssFeedViewCshtml1.WriteLiteral("',\r\n            contentType: 'application/x-www-form-urlencoded',\r\n            type: 'POST',\r\n            data: { mainUrl: url, parentid:id},\r\n            success: function (data) {\r\n                data = jQuery.parseJSON(data);\r\n                if (data[\"data\"] == \"success\") {\r\n                    location.reload();\r\n                }\r\n                else if (data[\"data\"]  == \"already\") {\r\n                    alert(\"Job name already exists\")\r\n                }\r\n                else\r\n                    alert(\"server connect error ! \");\r\n            },\r\n            error: function (XMLHttpRequest, textStatus, errorThrown) {\r\n                alert(\"server connect error ! \");\r\n                return;\r\n            }\r\n        });\r\n    }\r\n</script>\r\n");
+      rssFeedViewCshtml1.EndContext();
+    }
+
+    [RazorInject]
+    public IModelExpressionProvider ModelExpressionProvider { get; private set; }
+
+    [RazorInject]
+    public IUrlHelper Url { get; private set; }
+
+    [RazorInject]
+    public IViewComponentHelper Component { get; private set; }
+
+    [RazorInject]
+    public IJsonHelper Json { get; private set; }
+
+    [RazorInject]
+    public IHtmlHelper<IEnumerable<rssfeedtool>> Html { get; private set; }
+  }
+}

@@ -1,0 +1,318 @@
+﻿// Decompiled with JetBrains decompiler
+// Type: AspNetCore._Views_Home_HtmlBuilder_cshtml
+// Assembly: Traffic.PrecompiledViews, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+// MVID: 8B37BA40-0390-40A7-A536-D9CCDBC36390
+// Assembly location: D:\Workstation\TonniProjects\TrafficWebDeploy\Traffic.PrecompiledViews.dll
+
+using Microsoft.AspNetCore.Html;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Razor;
+using Microsoft.AspNetCore.Mvc.Razor.Internal;
+using Microsoft.AspNetCore.Mvc.Razor.TagHelpers;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.Mvc.TagHelpers;
+using Microsoft.AspNetCore.Mvc.ViewFeatures;
+using Microsoft.AspNetCore.Razor.Runtime.TagHelpers;
+using Microsoft.AspNetCore.Razor.TagHelpers;
+using Microsoft.CSharp.RuntimeBinder;
+using System;
+using System.Collections.Generic;
+using System.Linq.Expressions;
+using System.Runtime.CompilerServices;
+using System.Text.Encodings.Web;
+using System.Threading.Tasks;
+using Traffic.Models;
+
+namespace AspNetCore
+{
+  public class _Views_Home_HtmlBuilder_cshtml : RazorPage<htmltemplate>
+  {
+    private static readonly TagHelperAttribute __tagHelperAttribute_0 = new TagHelperAttribute("src", (object) new HtmlString("~/lib/tinymce/tinymce.min.js"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_1 = new TagHelperAttribute("referrerpolicy", (object) new HtmlString("origin"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_2 = new TagHelperAttribute("href", (object) new HtmlString("~/Home/BuilderManager/"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_3 = new TagHelperAttribute("src", (object) new HtmlString("~/images/2.gif"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_4 = new TagHelperAttribute("id", (object) new HtmlString("droplist"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_5 = new TagHelperAttribute("style", (object) new HtmlString("width:90%,"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_6 = new TagHelperAttribute("class", (object) new HtmlString("form-control"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_7 = new TagHelperAttribute("type", (object) "hidden", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_8 = new TagHelperAttribute("href", (object) new HtmlString("~/Home/location"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_9 = new TagHelperAttribute("class", (object) new HtmlString("btn btn-info"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_10 = new TagHelperAttribute("target", (object) new HtmlString("_blank"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_11 = new TagHelperAttribute("download", (object) new HtmlString(""), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_12 = new TagHelperAttribute("href", (object) new HtmlString("~/Home/template"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_13 = new TagHelperAttribute("method", (object) "post", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_14 = new TagHelperAttribute("asp-action", (object) "HtmlBuilder", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_15 = new TagHelperAttribute("value", (object) "0", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_16 = new TagHelperAttribute("style", (object) new HtmlString("background-color:lightgray"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_17 = new TagHelperAttribute("id", (object) new HtmlString("countrylist"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_18 = new TagHelperAttribute("style", (object) new HtmlString("margin-top:8px;width:225px"), HtmlAttributeValueStyle.DoubleQuotes);
+    private string __tagHelperStringValueBuffer;
+    private TagHelperExecutionContext __tagHelperExecutionContext;
+    private TagHelperRunner __tagHelperRunner = new TagHelperRunner();
+    private TagHelperScopeManager __backed__tagHelperScopeManager;
+    private UrlResolutionTagHelper __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper;
+    private SelectTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper;
+    private FormTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper;
+    private RenderAtEndOfFormTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper;
+    private InputTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper;
+    private OptionTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_OptionTagHelper;
+    private static readonly Expression<Func<htmltemplate, int>> __h0 = (Expression<Func<htmltemplate, int>>) (__model => __model.id);
+    private static readonly Expression<Func<htmltemplate, int>> __h1 = (Expression<Func<htmltemplate, int>>) (__model => __model.id);
+    private static readonly Expression<Func<htmltemplate, int>> __h2 = (Expression<Func<htmltemplate, int>>) (__model => __model.id);
+
+    private TagHelperScopeManager __tagHelperScopeManager
+    {
+      get
+      {
+        if (this.__backed__tagHelperScopeManager == null)
+          this.__backed__tagHelperScopeManager = new TagHelperScopeManager(new Action<HtmlEncoder>(((RazorPageBase) this).StartTagHelperWritingScope), new Func<TagHelperContent>(((RazorPageBase) this).EndTagHelperWritingScope));
+        return this.__backed__tagHelperScopeManager;
+      }
+    }
+
+    public virtual async Task ExecuteAsync()
+    {
+      _Views_Home_HtmlBuilder_cshtml htmlBuilderCshtml = this;
+      htmlBuilderCshtml.ViewData["Title"] = (object) "Html Builder";
+      // ISSUE: explicit non-virtual call
+      __nonvirtual (htmlBuilderCshtml.Layout) = "~/Views/Shared/_Layout.cshtml";
+      htmlBuilderCshtml.BeginContext(133, 237, true);
+      htmlBuilderCshtml.WriteLiteral("\r\n<link rel=\"stylesheet\" href=\"http://code.jquery.com/ui/1.10.4/themes/trontastic/jquery-ui.css\">\r\n\r\n<script src=\"http://code.jquery.com/jquery-1.10.2.js\"></script>\r\n<script src=\"http://code.jquery.com/ui/1.10.4/jquery-ui.js\"></script>\r\n");
+      htmlBuilderCshtml.EndContext();
+      htmlBuilderCshtml.BeginContext(370, 76, false);
+      htmlBuilderCshtml.__tagHelperExecutionContext = htmlBuilderCshtml.__tagHelperScopeManager.Begin("script", TagMode.StartTagAndEndTag, "e6ba3849b56d4724b61516ae3974942c", (Func<Task>) (async () => { }));
+      htmlBuilderCshtml.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = htmlBuilderCshtml.CreateTagHelper<UrlResolutionTagHelper>();
+      htmlBuilderCshtml.__tagHelperExecutionContext.Add((ITagHelper) htmlBuilderCshtml.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper);
+      htmlBuilderCshtml.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_HtmlBuilder_cshtml.__tagHelperAttribute_0);
+      htmlBuilderCshtml.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_HtmlBuilder_cshtml.__tagHelperAttribute_1);
+      await htmlBuilderCshtml.__tagHelperRunner.RunAsync(htmlBuilderCshtml.__tagHelperExecutionContext);
+      if (!htmlBuilderCshtml.__tagHelperExecutionContext.Output.IsContentModified)
+        await htmlBuilderCshtml.__tagHelperExecutionContext.SetOutputContentAsync();
+      htmlBuilderCshtml.Write((object) htmlBuilderCshtml.__tagHelperExecutionContext.Output);
+      htmlBuilderCshtml.__tagHelperExecutionContext = htmlBuilderCshtml.__tagHelperScopeManager.End();
+      htmlBuilderCshtml.EndContext();
+      htmlBuilderCshtml.BeginContext(446, 4, true);
+      htmlBuilderCshtml.WriteLiteral("\r\n\r\n");
+      htmlBuilderCshtml.EndContext();
+      if (htmlBuilderCshtml.Model != null && htmlBuilderCshtml.Model.state == 1)
+      {
+        htmlBuilderCshtml.BeginContext(494, 71, true);
+        htmlBuilderCshtml.WriteLiteral("    <div class=\"bgimg\">\r\n        <div class=\"topleft\">\r\n            <p>");
+        htmlBuilderCshtml.EndContext();
+        htmlBuilderCshtml.BeginContext(565, 52, false);
+        // ISSUE: reference to a compiler-generated method
+        htmlBuilderCshtml.__tagHelperExecutionContext = htmlBuilderCshtml.__tagHelperScopeManager.Begin("a", TagMode.StartTagAndEndTag, "46ad9fe80aae4febb628bef2a7578c63", new Func<Task>(htmlBuilderCshtml.\u003CExecuteAsync\u003Eb__31_1));
+        htmlBuilderCshtml.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = htmlBuilderCshtml.CreateTagHelper<UrlResolutionTagHelper>();
+        htmlBuilderCshtml.__tagHelperExecutionContext.Add((ITagHelper) htmlBuilderCshtml.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper);
+        htmlBuilderCshtml.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_HtmlBuilder_cshtml.__tagHelperAttribute_2);
+        await htmlBuilderCshtml.__tagHelperRunner.RunAsync(htmlBuilderCshtml.__tagHelperExecutionContext);
+        if (!htmlBuilderCshtml.__tagHelperExecutionContext.Output.IsContentModified)
+          await htmlBuilderCshtml.__tagHelperExecutionContext.SetOutputContentAsync();
+        htmlBuilderCshtml.Write((object) htmlBuilderCshtml.__tagHelperExecutionContext.Output);
+        htmlBuilderCshtml.__tagHelperExecutionContext = htmlBuilderCshtml.__tagHelperScopeManager.End();
+        htmlBuilderCshtml.EndContext();
+        htmlBuilderCshtml.BeginContext(617, 64, true);
+        htmlBuilderCshtml.WriteLiteral("</p>\r\n        </div>\r\n        <div class=\"middle\">\r\n            ");
+        htmlBuilderCshtml.EndContext();
+        htmlBuilderCshtml.BeginContext(681, 28, false);
+        htmlBuilderCshtml.__tagHelperExecutionContext = htmlBuilderCshtml.__tagHelperScopeManager.Begin("img", TagMode.SelfClosing, "afe71bbc15184fbdaf437a49e0532e56", (Func<Task>) (async () => { }));
+        htmlBuilderCshtml.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = htmlBuilderCshtml.CreateTagHelper<UrlResolutionTagHelper>();
+        htmlBuilderCshtml.__tagHelperExecutionContext.Add((ITagHelper) htmlBuilderCshtml.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper);
+        htmlBuilderCshtml.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_HtmlBuilder_cshtml.__tagHelperAttribute_3);
+        await htmlBuilderCshtml.__tagHelperRunner.RunAsync(htmlBuilderCshtml.__tagHelperExecutionContext);
+        if (!htmlBuilderCshtml.__tagHelperExecutionContext.Output.IsContentModified)
+          await htmlBuilderCshtml.__tagHelperExecutionContext.SetOutputContentAsync();
+        htmlBuilderCshtml.Write((object) htmlBuilderCshtml.__tagHelperExecutionContext.Output);
+        htmlBuilderCshtml.__tagHelperExecutionContext = htmlBuilderCshtml.__tagHelperScopeManager.End();
+        htmlBuilderCshtml.EndContext();
+        htmlBuilderCshtml.BeginContext(709, 121, true);
+        htmlBuilderCshtml.WriteLiteral("\r\n            <h1 style=\"font-size: 25px;\">Html Builder is running !</h1>\r\n            <hr>\r\n        </div>\r\n    </div>\r\n");
+        htmlBuilderCshtml.EndContext();
+      }
+      htmlBuilderCshtml.BeginContext(833, 236, true);
+      htmlBuilderCshtml.WriteLiteral("\r\n    <div>\r\n        <div class=\"col-md-5\">\r\n            <h2>Html Builder</h2>\r\n        </div>\r\n        <div class=\"col-md-7\">\r\n            <h4 style=\"margin-top:30px\">\r\n                <label>Select Template :</label>\r\n                ");
+      htmlBuilderCshtml.EndContext();
+      htmlBuilderCshtml.BeginContext(1069, 126, false);
+      htmlBuilderCshtml.__tagHelperExecutionContext = htmlBuilderCshtml.__tagHelperScopeManager.Begin("select", TagMode.StartTagAndEndTag, "1a789d0593f5466b9d99d8fbdb54b098", (Func<Task>) (async () => { }));
+      htmlBuilderCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper = htmlBuilderCshtml.CreateTagHelper<SelectTagHelper>();
+      htmlBuilderCshtml.__tagHelperExecutionContext.Add((ITagHelper) htmlBuilderCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper);
+      htmlBuilderCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper.For = htmlBuilderCshtml.ModelExpressionProvider.CreateModelExpression<htmltemplate, int>(htmlBuilderCshtml.ViewData, _Views_Home_HtmlBuilder_cshtml.__h0);
+      htmlBuilderCshtml.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) htmlBuilderCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper.For, HtmlAttributeValueStyle.DoubleQuotes);
+      htmlBuilderCshtml.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_HtmlBuilder_cshtml.__tagHelperAttribute_4);
+      SelectTagHelper helpersSelectTagHelper1 = htmlBuilderCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper;
+      // ISSUE: reference to a compiler-generated field
+      if (_Views_Home_HtmlBuilder_cshtml.\u003C\u003Eo__31.\u003C\u003Ep__1 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        _Views_Home_HtmlBuilder_cshtml.\u003C\u003Eo__31.\u003C\u003Ep__1 = CallSite<Func<CallSite, Type, object, string, string, SelectList>>.Create(Binder.InvokeConstructor(CSharpBinderFlags.None, typeof (_Views_Home_HtmlBuilder_cshtml), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[4]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.IsStaticType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Func<CallSite, Type, object, string, string, SelectList> target1 = _Views_Home_HtmlBuilder_cshtml.\u003C\u003Eo__31.\u003C\u003Ep__1.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Func<CallSite, Type, object, string, string, SelectList>> p1 = _Views_Home_HtmlBuilder_cshtml.\u003C\u003Eo__31.\u003C\u003Ep__1;
+      Type type1 = typeof (SelectList);
+      // ISSUE: reference to a compiler-generated field
+      if (_Views_Home_HtmlBuilder_cshtml.\u003C\u003Eo__31.\u003C\u003Ep__0 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        _Views_Home_HtmlBuilder_cshtml.\u003C\u003Eo__31.\u003C\u003Ep__0 = CallSite<Func<CallSite, object, object>>.Create(Binder.GetMember(CSharpBinderFlags.None, "listofitems", typeof (_Views_Home_HtmlBuilder_cshtml), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj1 = _Views_Home_HtmlBuilder_cshtml.\u003C\u003Eo__31.\u003C\u003Ep__0.Target((CallSite) _Views_Home_HtmlBuilder_cshtml.\u003C\u003Eo__31.\u003C\u003Ep__0, htmlBuilderCshtml.ViewBag);
+      SelectList selectList1 = target1((CallSite) p1, type1, obj1, "id", "name");
+      helpersSelectTagHelper1.Items = (IEnumerable<SelectListItem>) selectList1;
+      htmlBuilderCshtml.__tagHelperExecutionContext.AddTagHelperAttribute("asp-items", (object) htmlBuilderCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper.Items, HtmlAttributeValueStyle.DoubleQuotes);
+      htmlBuilderCshtml.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_HtmlBuilder_cshtml.__tagHelperAttribute_5);
+      await htmlBuilderCshtml.__tagHelperRunner.RunAsync(htmlBuilderCshtml.__tagHelperExecutionContext);
+      if (!htmlBuilderCshtml.__tagHelperExecutionContext.Output.IsContentModified)
+        await htmlBuilderCshtml.__tagHelperExecutionContext.SetOutputContentAsync();
+      htmlBuilderCshtml.Write((object) htmlBuilderCshtml.__tagHelperExecutionContext.Output);
+      htmlBuilderCshtml.__tagHelperExecutionContext = htmlBuilderCshtml.__tagHelperScopeManager.End();
+      htmlBuilderCshtml.EndContext();
+      htmlBuilderCshtml.BeginContext(1195, 57, true);
+      htmlBuilderCshtml.WriteLiteral("\r\n            </h4>\r\n        </div>\r\n    </div>\r\n\r\n\r\n    ");
+      htmlBuilderCshtml.EndContext();
+      htmlBuilderCshtml.BeginContext(1252, 2337, false);
+      // ISSUE: reference to a compiler-generated method
+      htmlBuilderCshtml.__tagHelperExecutionContext = htmlBuilderCshtml.__tagHelperScopeManager.Begin("form", TagMode.StartTagAndEndTag, "5c6742ba522741e8a24a06fafa1c55a8", new Func<Task>(htmlBuilderCshtml.\u003CExecuteAsync\u003Eb__31_4));
+      htmlBuilderCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper = htmlBuilderCshtml.CreateTagHelper<FormTagHelper>();
+      htmlBuilderCshtml.__tagHelperExecutionContext.Add((ITagHelper) htmlBuilderCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper);
+      htmlBuilderCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper = htmlBuilderCshtml.CreateTagHelper<RenderAtEndOfFormTagHelper>();
+      htmlBuilderCshtml.__tagHelperExecutionContext.Add((ITagHelper) htmlBuilderCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper);
+      htmlBuilderCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper.Method = (string) _Views_Home_HtmlBuilder_cshtml.__tagHelperAttribute_13.Value;
+      htmlBuilderCshtml.__tagHelperExecutionContext.AddTagHelperAttribute(_Views_Home_HtmlBuilder_cshtml.__tagHelperAttribute_13);
+      htmlBuilderCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper.Action = (string) _Views_Home_HtmlBuilder_cshtml.__tagHelperAttribute_14.Value;
+      htmlBuilderCshtml.__tagHelperExecutionContext.AddTagHelperAttribute(_Views_Home_HtmlBuilder_cshtml.__tagHelperAttribute_14);
+      await htmlBuilderCshtml.__tagHelperRunner.RunAsync(htmlBuilderCshtml.__tagHelperExecutionContext);
+      if (!htmlBuilderCshtml.__tagHelperExecutionContext.Output.IsContentModified)
+        await htmlBuilderCshtml.__tagHelperExecutionContext.SetOutputContentAsync();
+      htmlBuilderCshtml.Write((object) htmlBuilderCshtml.__tagHelperExecutionContext.Output);
+      htmlBuilderCshtml.__tagHelperExecutionContext = htmlBuilderCshtml.__tagHelperScopeManager.End();
+      htmlBuilderCshtml.EndContext();
+      htmlBuilderCshtml.BeginContext(3589, 845, true);
+      htmlBuilderCshtml.WriteLiteral("\r\n\r\n<div id=\"AddModal\" class=\"modal fade\" tabindex=\"-1\" role=\"dialog\" aria-hidden=\"true\">\r\n    <div class=\"modal-dialog\" style=\"width:768px\">\r\n        <div class=\"modal-content\">\r\n            <div class=\"modal-header\">\r\n                <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\">\r\n                    <span aria-hidden=\"true\">×</span>\r\n                </button>\r\n                <h4 class=\"modal-title\">Select Location</h4>\r\n            </div>\r\n            <div class=\"modal-body\">\r\n                <div class=\"form-horizontal form-label-left\">\r\n                    <div class=\"form-group\">\r\n                        <label class=\"control-label col-md-2 col-sm-3 col-xs-12\" style=\"padding-right:0\">Country : </label>\r\n                        <div class=\"col-md-4 col-sm-8 col-xs-12\">\r\n                            ");
+      htmlBuilderCshtml.EndContext();
+      htmlBuilderCshtml.BeginContext(4434, 285, false);
+      // ISSUE: reference to a compiler-generated method
+      htmlBuilderCshtml.__tagHelperExecutionContext = htmlBuilderCshtml.__tagHelperScopeManager.Begin("select", TagMode.StartTagAndEndTag, "c378c8574d9e48008b44d8c53dd8159f", new Func<Task>(htmlBuilderCshtml.\u003CExecuteAsync\u003Eb__31_10));
+      htmlBuilderCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper = htmlBuilderCshtml.CreateTagHelper<SelectTagHelper>();
+      htmlBuilderCshtml.__tagHelperExecutionContext.Add((ITagHelper) htmlBuilderCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper);
+      htmlBuilderCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper.For = htmlBuilderCshtml.ModelExpressionProvider.CreateModelExpression<htmltemplate, int>(htmlBuilderCshtml.ViewData, _Views_Home_HtmlBuilder_cshtml.__h2);
+      htmlBuilderCshtml.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) htmlBuilderCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper.For, HtmlAttributeValueStyle.DoubleQuotes);
+      htmlBuilderCshtml.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_HtmlBuilder_cshtml.__tagHelperAttribute_17);
+      SelectTagHelper helpersSelectTagHelper2 = htmlBuilderCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper;
+      // ISSUE: reference to a compiler-generated field
+      if (_Views_Home_HtmlBuilder_cshtml.\u003C\u003Eo__31.\u003C\u003Ep__3 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        _Views_Home_HtmlBuilder_cshtml.\u003C\u003Eo__31.\u003C\u003Ep__3 = CallSite<Func<CallSite, Type, object, string, string, SelectList>>.Create(Binder.InvokeConstructor(CSharpBinderFlags.None, typeof (_Views_Home_HtmlBuilder_cshtml), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[4]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.IsStaticType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Func<CallSite, Type, object, string, string, SelectList> target2 = _Views_Home_HtmlBuilder_cshtml.\u003C\u003Eo__31.\u003C\u003Ep__3.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Func<CallSite, Type, object, string, string, SelectList>> p3 = _Views_Home_HtmlBuilder_cshtml.\u003C\u003Eo__31.\u003C\u003Ep__3;
+      Type type2 = typeof (SelectList);
+      // ISSUE: reference to a compiler-generated field
+      if (_Views_Home_HtmlBuilder_cshtml.\u003C\u003Eo__31.\u003C\u003Ep__2 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        _Views_Home_HtmlBuilder_cshtml.\u003C\u003Eo__31.\u003C\u003Ep__2 = CallSite<Func<CallSite, object, object>>.Create(Binder.GetMember(CSharpBinderFlags.None, "List", typeof (_Views_Home_HtmlBuilder_cshtml), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj2 = _Views_Home_HtmlBuilder_cshtml.\u003C\u003Eo__31.\u003C\u003Ep__2.Target((CallSite) _Views_Home_HtmlBuilder_cshtml.\u003C\u003Eo__31.\u003C\u003Ep__2, htmlBuilderCshtml.ViewBag);
+      SelectList selectList2 = target2((CallSite) p3, type2, obj2, "id", "label");
+      helpersSelectTagHelper2.Items = (IEnumerable<SelectListItem>) selectList2;
+      htmlBuilderCshtml.__tagHelperExecutionContext.AddTagHelperAttribute("asp-items", (object) htmlBuilderCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper.Items, HtmlAttributeValueStyle.DoubleQuotes);
+      htmlBuilderCshtml.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_HtmlBuilder_cshtml.__tagHelperAttribute_18);
+      await htmlBuilderCshtml.__tagHelperRunner.RunAsync(htmlBuilderCshtml.__tagHelperExecutionContext);
+      if (!htmlBuilderCshtml.__tagHelperExecutionContext.Output.IsContentModified)
+        await htmlBuilderCshtml.__tagHelperExecutionContext.SetOutputContentAsync();
+      htmlBuilderCshtml.Write((object) htmlBuilderCshtml.__tagHelperExecutionContext.Output);
+      htmlBuilderCshtml.__tagHelperExecutionContext = htmlBuilderCshtml.__tagHelperScopeManager.End();
+      htmlBuilderCshtml.EndContext();
+      htmlBuilderCshtml.BeginContext(4719, 3982, true);
+      htmlBuilderCshtml.WriteLiteral("\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"form-group\">\r\n                        <label class=\"control-label col-md-2 col-sm-3 col-xs-12\" style=\"padding-right:0\">State : </label>\r\n                        <div class=\"col-md-4 col-sm-8 col-xs-12\">\r\n                            <select multiple=\"multiple\" size=\"7\" id=\"statelist\" style=\"width:100%\"></select>\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"form-group\">\r\n                        <label class=\"control-label col-md-2 col-sm-3 col-xs-12\" style=\"padding-right:0\">City : </label>\r\n                        <div class=\"col-md-4 col-sm-8 col-xs-12\">\r\n                            <select multiple=\"multiple\" size=\"7\" id=\"citylist\" style=\"width:100%\"></select>\r\n                        </div>\r\n                        <div class=\"col-md-1 col-sm-8 col-xs-12\" style=\"text-align:center\">\r\n                            <button type=\"button\" class=\"btn btn-default\" style=\"margin");
+      htmlBuilderCshtml.WriteLiteral(": 15px 0;\" onclick=\"insertMission()\">=></button>\r\n                            <br />\r\n                            <button type=\"button\" class=\"btn btn-default\" onclick=\"RemoveMission()\"><=</button>\r\n                        </div>\r\n                        <div class=\"col-md-4 col-sm-8 col-xs-12\">\r\n                            <select multiple=\"multiple\" size=\"7\" id=\"loclist\" style=\"width:100%\"></select>\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"form-group\">\r\n                        <label class=\"control-label col-md-2 col-sm-3 col-xs-12\" style=\"padding-right:0\">Neighborhood : </label>\r\n                        <div class=\"col-md-4 col-sm-8 col-xs-12\">\r\n                            <select multiple=\"multiple\" size=\"7\" id=\"neighbortlist\" style=\"width:100%\"></select>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n            <div class=\"modal-footer\">\r\n                <button type=\"button\" class=\"btn btn-defa");
+      htmlBuilderCshtml.WriteLiteral("ult\" OnClick=\"btnAddLocation_Click()\" data-dismiss=\"modal\">OK</button>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n\r\n<style>\r\n    body, html {\r\n        height: 100%;\r\n        margin: 0;\r\n    }\r\n\r\n    .bgimg {\r\n        background-color: aliceblue;\r\n        height: 100vh;\r\n        right: 0;\r\n        top: 0;\r\n        left: 0;\r\n        bottom: 0;\r\n        z-index: 2000;\r\n        background-position: center;\r\n        background-size: cover;\r\n        position: absolute;\r\n        color: black;\r\n        font-family: \"Courier New\", Courier, monospace;\r\n    }\r\n\r\n    .topleft {\r\n        position: absolute;\r\n        top: 20px;\r\n        left: 30px;\r\n        font-size: 20px;\r\n    }\r\n\r\n    .bottomleft {\r\n        position: absolute;\r\n        bottom: 0;\r\n        left: 16px;\r\n    }\r\n\r\n    .middle {\r\n        position: absolute;\r\n        top: 50%;\r\n        left: 50%;\r\n        transform: translate(-50%, -50%);\r\n        text-align: center;\r\n    }\r\n\r\n    hr {\r\n        margin: auto;\r\n        width: 40%;\r\n    }\r\n</style>");
+      htmlBuilderCshtml.WriteLiteral("\r\n\r\n<script language=\"javascript\">\r\n    var type = 0;\r\n    tinymce.init({\r\n        selector: '#htmlcontent',\r\n        height: 600,\r\n        toolbar: \"insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image | print preview media fullpage | forecolor backcolor emoticons\",\r\n        plugins: [\r\n            \"fullpage\",\r\n            \"advlist autolink link image lists charmap print preview hr anchor pagebreak\",\r\n            \"searchreplace wordcount visualblocks visualchars code fullscreen insertdatetime media nonbreaking\",\r\n            \"save table contextmenu directionality emoticons template paste textcolor\"\r\n        ],\r\n    });\r\n    //if (Model.state == 1) {\r\n    //    $(\".bgimg\").css(\"display\", \"block\");\r\n    //}\r\n    var handle = null;\r\n\r\n    hadndle = setInterval(function () {\r\n        $.ajax({\r\n            url: '");
+      htmlBuilderCshtml.EndContext();
+      htmlBuilderCshtml.BeginContext(8702, 31, false);
+      htmlBuilderCshtml.Write(UrlHelperExtensions.Action(htmlBuilderCshtml.Url, "CheckHtml", "Home"));
+      htmlBuilderCshtml.EndContext();
+      htmlBuilderCshtml.BeginContext(8733, 2995, true);
+      htmlBuilderCshtml.WriteLiteral("',\r\n            contentType: 'application/x-www-form-urlencoded',\r\n            type: 'POST',\r\n            data: { id: $(\"#id\").val() },\r\n            success: function (data) {\r\n                data = jQuery.parseJSON(data);\r\n                if (data[\"data\"] == \"success\") {\r\n                    $(\".bgimg\").css(\"display\", \"none\");\r\n                    clearInterval(hadndle); \r\n                }\r\n                else if (data[\"data\"] == \"loading\")\r\n                    $(\".bgimg\").css(\"display\", \"block\");\r\n                return;\r\n            },\r\n            error: function (XMLHttpRequest, textStatus, errorThrown) {\r\n                alert(\"server connect error ! \");\r\n                return;\r\n            }\r\n        });\r\n    }, 3000);\r\n    function insertMission() {\r\n\r\n        if ($(\"#neighbortlist\").val() != null) {\r\n            if (type != 3) {\r\n                $(\"#loclist\").html(\"\");\r\n            }\r\n            $('#neighbortlist :selected').each(function (i, selected) {\r\n                var value = $(selected).");
+      htmlBuilderCshtml.WriteLiteral("val();\r\n                var text = $(selected).text();\r\n                $(\"#loclist\").append('<option value=\"' + value + '\">' + text + '</option>');\r\n                type = 3;\r\n            });\r\n        }\r\n        else if ($(\"#citylist\").val() != null) {\r\n            if (type != 2) {\r\n                $(\"#loclist\").html(\"\");\r\n            }\r\n            $('#citylist :selected').each(function (i, selected) {\r\n                var value = $(selected).val();\r\n                var text = $(selected).text();\r\n                $(\"#loclist\").append('<option value=\"' + value + '\">' + text + '</option>');\r\n            });\r\n            type = 2;\r\n        }\r\n        else if ($(\"#statelist\").val() != null) {\r\n            if (type != 1) {\r\n                $(\"#loclist\").html(\"\");\r\n            }\r\n            $('#statelist :selected').each(function (i, selected) {\r\n                var value = $(selected).val();\r\n                var text = $(selected).text();\r\n                $(\"#loclist\").append('<option value=\"' + value + '\">' + ");
+      htmlBuilderCshtml.WriteLiteral("text + '</option>');\r\n            });\r\n            type = 1;\r\n        }\r\n    }\r\n    $(\"#btnBuildHtml\").click(function(){\r\n        $(\".bgimg\").css(\"display\", \"block\");\r\n        setTimeout(\r\n            function () {\r\n                //do something special\r\n                location.reload();\r\n            }, 1000);\r\n        \r\n    });\r\n    function RemoveMission() {\r\n        $(\"#loclist option:selected\").remove();\r\n    }\r\n\r\n    function btnAddLocation_Click() {\r\n        //var type = 0;\r\n        var ids=\"\";\r\n        if ($(\"#countrylist\").val() == 0) {\r\n            alert(\"Select the Country !\");\r\n            $(\"#selLoc\").attr(\"checked\", false);\r\n            $(\"#selLoc\").val(false);\r\n            return;\r\n        }\r\n        ids += $(\"#countrylist\").val();\r\n\r\n        $(\"#loclist option\").each(function () {\r\n            // Add $(this).val() to your list\r\n            ids += \",\" +  $(this).val()\r\n        });\r\n        $.ajax({\r\n            url: '");
+      htmlBuilderCshtml.EndContext();
+      htmlBuilderCshtml.BeginContext(11729, 33, false);
+      htmlBuilderCshtml.Write(UrlHelperExtensions.Action(htmlBuilderCshtml.Url, "AddLocation", "Home"));
+      htmlBuilderCshtml.EndContext();
+      htmlBuilderCshtml.BeginContext(11762, 553, true);
+      htmlBuilderCshtml.WriteLiteral("',\r\n            contentType: 'application/x-www-form-urlencoded',\r\n            type: 'POST',\r\n            data: { type: type, ids: ids, rid: $(\"#id\").val()},\r\n            success: function (data) {\r\n                $(\"#loc_str\").val(data);\r\n                return;\r\n            },\r\n            error: function (XMLHttpRequest, textStatus, errorThrown) {\r\n                alert(\"server connect error ! \");\r\n                return;\r\n            }\r\n        });\r\n\r\n    }\r\n    $(\"#droplist\").bind(\"change\", function () {\r\n        $.ajax({\r\n            url: '");
+      htmlBuilderCshtml.EndContext();
+      htmlBuilderCshtml.BeginContext(12316, 32, false);
+      htmlBuilderCshtml.Write(UrlHelperExtensions.Action(htmlBuilderCshtml.Url, "changetemp", "Home"));
+      htmlBuilderCshtml.EndContext();
+      htmlBuilderCshtml.BeginContext(12348, 1839, true);
+      htmlBuilderCshtml.WriteLiteral("',\r\n            contentType: 'application/x-www-form-urlencoded',\r\n            type: 'POST',\r\n            data: { id: $(\"#droplist\").val() },\r\n            success: function (data) {\r\n                $(\"#htmlcontent\").text(decodeURIComponent(data).replace(/\\+/gi, \" \"));\r\n                $(\".tox-tinymce\").remove();\r\n                tinymce.init({\r\n                    selector: '#htmlcontent',\r\n                    height: 600,\r\n                    toolbar: \"insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image | print preview media fullpage | forecolor backcolor emoticons\",\r\n                    plugins: [\r\n                        \"fullpage\",\r\n                        \"advlist autolink link image lists charmap print preview hr anchor pagebreak\",\r\n                        \"searchreplace wordcount visualblocks visualchars code fullscreen insertdatetime media nonbreaking\",\r\n                        \"save table contextmenu direction");
+      htmlBuilderCshtml.WriteLiteral("ality emoticons template paste textcolor\"\r\n                    ],\r\n                });\r\n                $(\".tox-tinymce\").show();\r\n                return;\r\n            },\r\n            error: function (XMLHttpRequest, textStatus, errorThrown) {\r\n                alert(\"server connect error ! \");\r\n                return;\r\n            }\r\n        });\r\n\r\n    });\r\n\r\n    $(\"#selLoc\").change(function () {\r\n        if (this.checked) {\r\n            $(\"#AddModal\").modal();\r\n            $(\"#selLoc\").val(true);\r\n        } else\r\n            $(\"#selLoc\").val(false);\r\n    });\r\n\r\n    $(\"#countrylist\").bind(\"change\", function () {\r\n        $(\"#statelist\").empty();\r\n        $(\"#citylist\").empty();\r\n        $(\"#neighbortlist\").empty();\r\n        if ($(\"#countrylist\").val() != 0) {\r\n            $.ajax({\r\n                url: '");
+      htmlBuilderCshtml.EndContext();
+      htmlBuilderCshtml.BeginContext(14188, 33, false);
+      htmlBuilderCshtml.Write(UrlHelperExtensions.Action(htmlBuilderCshtml.Url, "changestate", "Home"));
+      htmlBuilderCshtml.EndContext();
+      htmlBuilderCshtml.BeginContext(14221, 1738, true);
+      htmlBuilderCshtml.WriteLiteral("',\r\n                contentType: 'application/x-www-form-urlencoded',\r\n                dataType: 'json',\r\n                type: 'POST',\r\n                data: { id: $(\"#countrylist\").val() },\r\n                success: function (data) {\r\n                    if (data == \"}\") {\r\n                        return;\r\n                    }\r\n                    data = jQuery.parseJSON(data);\r\n                    var strHtml = \"\";\r\n                    for (var j = 0; j < data[\"state\"].length; j++) {\r\n                        strHtml += \"<option value=\\\"\" + data[\"state\"][j].id + \"\\\">\" + data[\"state\"][j].name + \"</option>\";\r\n                    }\r\n                    $(\"#statelist\").html(strHtml);\r\n                    strHtml = \"\";\r\n                    for (var j = 0; j < data[\"city\"].length; j++) {\r\n                        strHtml += \"<option value=\\\"\" + data[\"city\"][j].id + \"\\\">\" + data[\"city\"][j].name + \"</option>\";\r\n                    }\r\n                    $(\"#citylist\").html(strHtml);\r\n                    strHtml = \"");
+      htmlBuilderCshtml.WriteLiteral("\";\r\n                    for (var j = 0; j < data[\"neighbor\"].length; j++) {\r\n                        strHtml += \"<option value=\\\"\" + data[\"neighbor\"][j].id + \"\\\">\" + data[\"neighbor\"][j].name + \"</option>\";\r\n                    }\r\n                    $(\"#neighborhoodlist\").html(strHtml);\r\n                    return;\r\n                },\r\n                error: function (XMLHttpRequest, textStatus, errorThrown) {\r\n                    alert(\"server connect error ! \");\r\n                    return;\r\n                }\r\n            });\r\n        }\r\n    });\r\n    $(\"#statelist\").bind(\"change\", function () {\r\n\r\n        $(\"#citylist\").empty();\r\n        $(\"#neighbortlist\").empty();\r\n        $.ajax({\r\n            url: '");
+      htmlBuilderCshtml.EndContext();
+      htmlBuilderCshtml.BeginContext(15960, 33, false);
+      htmlBuilderCshtml.Write(UrlHelperExtensions.Action(htmlBuilderCshtml.Url, "changeCity1", "Home"));
+      htmlBuilderCshtml.EndContext();
+      htmlBuilderCshtml.BeginContext(15993, 966, true);
+      htmlBuilderCshtml.WriteLiteral("',\r\n            contentType: 'application/x-www-form-urlencoded',\r\n            type: 'POST',\r\n            data: { ids: $(\"#statelist\").val() },\r\n            success: function (data) {\r\n                if (data == \"{\\\"city\\\":]}\") {\r\n                    return;\r\n                }\r\n                data = jQuery.parseJSON(data);\r\n                var strHtml = \"\";\r\n                for (var j = 0; j < data[\"city\"].length; j++) {\r\n                    strHtml += \"<option value=\\\"\" + data[\"city\"][j].id + \"\\\">\" + data[\"city\"][j].name + \"</option>\";\r\n                }\r\n                $(\"#citylist\").html(strHtml);\r\n                return;\r\n            },\r\n            error: function (XMLHttpRequest, textStatus, errorThrown) {\r\n                alert(\"server connect error ! \");\r\n                return;\r\n            }\r\n        });\r\n\r\n    });\r\n    $(\"#citylist\").bind(\"change\", function () {\r\n\r\n        $(\"#neighbortlist\").empty();\r\n        $.ajax({\r\n            url: '");
+      htmlBuilderCshtml.EndContext();
+      htmlBuilderCshtml.BeginContext(16960, 41, false);
+      htmlBuilderCshtml.Write(UrlHelperExtensions.Action(htmlBuilderCshtml.Url, "changeNeighborhood1", "Home"));
+      htmlBuilderCshtml.EndContext();
+      htmlBuilderCshtml.BeginContext(17001, 857, true);
+      htmlBuilderCshtml.WriteLiteral("',\r\n            contentType: 'application/x-www-form-urlencoded',\r\n            type: 'POST',\r\n            data: { ids: $(\"#citylist\").val() },\r\n            success: function (data) {\r\n                if (data == \"}\") {\r\n                    return;\r\n                }\r\n                var strHtml = \"\";\r\n                data = jQuery.parseJSON(data);\r\n                for (var j = 0; j < data[\"neighbor\"].length; j++) {\r\n                    strHtml += \"<option value=\\\"\" + data[\"neighbor\"][j].id + \"\\\">\" + data[\"neighbor\"][j].name + \"</option>\";\r\n                }\r\n                $(\"#neighbortlist\").html(strHtml);\r\n                return;\r\n            },\r\n            error: function (XMLHttpRequest, textStatus, errorThrown) {\r\n                alert(\"server connect error ! \");\r\n                return;\r\n            }\r\n        });\r\n    });\r\n</script>\r\n\r\n");
+      htmlBuilderCshtml.EndContext();
+      // ISSUE: reference to a compiler-generated method
+      htmlBuilderCshtml.DefineSection("Scripts", new RenderAsyncDelegate(htmlBuilderCshtml.\u003CExecuteAsync\u003Eb__31_12));
+    }
+
+    [RazorInject]
+    public IModelExpressionProvider ModelExpressionProvider { get; private set; }
+
+    [RazorInject]
+    public IUrlHelper Url { get; private set; }
+
+    [RazorInject]
+    public IViewComponentHelper Component { get; private set; }
+
+    [RazorInject]
+    public IJsonHelper Json { get; private set; }
+
+    [RazorInject]
+    public IHtmlHelper<htmltemplate> Html { get; private set; }
+  }
+}

@@ -1,0 +1,140 @@
+﻿// Decompiled with JetBrains decompiler
+// Type: AspNetCore._Views_Home_TwitterPost_cshtml
+// Assembly: Traffic.PrecompiledViews, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+// MVID: 8B37BA40-0390-40A7-A536-D9CCDBC36390
+// Assembly location: D:\Workstation\TonniProjects\TrafficWebDeploy\Traffic.PrecompiledViews.dll
+
+using Microsoft.AspNetCore.Html;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Razor;
+using Microsoft.AspNetCore.Mvc.Razor.Internal;
+using Microsoft.AspNetCore.Mvc.Razor.TagHelpers;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.Mvc.TagHelpers;
+using Microsoft.AspNetCore.Mvc.ViewFeatures;
+using Microsoft.AspNetCore.Razor.Runtime.TagHelpers;
+using Microsoft.AspNetCore.Razor.TagHelpers;
+using System;
+using System.Text.Encodings.Web;
+using System.Threading.Tasks;
+using Traffic.Models;
+
+namespace AspNetCore
+{
+  public class _Views_Home_TwitterPost_cshtml : RazorPage<twitterpost>
+  {
+    private static readonly TagHelperAttribute __tagHelperAttribute_0 = new TagHelperAttribute("href", (object) new HtmlString("~/Home/TweetUrl/"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_1 = new TagHelperAttribute("src", (object) new HtmlString("~/images/2.gif"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_2 = new TagHelperAttribute("asp-action", (object) "TweetUrl", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_3 = new TagHelperAttribute("class", (object) new HtmlString("btn btn-info"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_4 = new TagHelperAttribute("style", (object) new HtmlString("margin-bottom: 10px;"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_5 = new TagHelperAttribute("method", (object) "post", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_6 = new TagHelperAttribute("asp-action", (object) "twitterStart", HtmlAttributeValueStyle.DoubleQuotes);
+    private string __tagHelperStringValueBuffer;
+    private TagHelperExecutionContext __tagHelperExecutionContext;
+    private TagHelperRunner __tagHelperRunner = new TagHelperRunner();
+    private TagHelperScopeManager __backed__tagHelperScopeManager;
+    private UrlResolutionTagHelper __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper;
+    private FormTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper;
+    private RenderAtEndOfFormTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper;
+    private AnchorTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper;
+
+    private TagHelperScopeManager __tagHelperScopeManager
+    {
+      get
+      {
+        if (this.__backed__tagHelperScopeManager == null)
+          this.__backed__tagHelperScopeManager = new TagHelperScopeManager(new Action<HtmlEncoder>(((RazorPageBase) this).StartTagHelperWritingScope), new Func<TagHelperContent>(((RazorPageBase) this).EndTagHelperWritingScope));
+        return this.__backed__tagHelperScopeManager;
+      }
+    }
+
+    public virtual async Task ExecuteAsync()
+    {
+      _Views_Home_TwitterPost_cshtml twitterPostCshtml = this;
+      twitterPostCshtml.ViewData["Title"] = (object) "TwitterPost";
+      // ISSUE: explicit non-virtual call
+      __nonvirtual (twitterPostCshtml.Layout) = "~/Views/Shared/_Layout.cshtml";
+      if (twitterPostCshtml.Model.state == 1)
+      {
+        twitterPostCshtml.BeginContext(156, 71, true);
+        twitterPostCshtml.WriteLiteral("    <div class=\"bgimg\">\r\n        <div class=\"topleft\">\r\n            <p>");
+        twitterPostCshtml.EndContext();
+        twitterPostCshtml.BeginContext(227, 48, false);
+        // ISSUE: reference to a compiler-generated method
+        twitterPostCshtml.__tagHelperExecutionContext = twitterPostCshtml.__tagHelperScopeManager.Begin("a", TagMode.StartTagAndEndTag, "305053275bd94c74b9973e40619c2e5c", new Func<Task>(twitterPostCshtml.\u003CExecuteAsync\u003Eb__17_0));
+        twitterPostCshtml.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = twitterPostCshtml.CreateTagHelper<UrlResolutionTagHelper>();
+        twitterPostCshtml.__tagHelperExecutionContext.Add((ITagHelper) twitterPostCshtml.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper);
+        twitterPostCshtml.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_TwitterPost_cshtml.__tagHelperAttribute_0);
+        await twitterPostCshtml.__tagHelperRunner.RunAsync(twitterPostCshtml.__tagHelperExecutionContext);
+        if (!twitterPostCshtml.__tagHelperExecutionContext.Output.IsContentModified)
+          await twitterPostCshtml.__tagHelperExecutionContext.SetOutputContentAsync();
+        twitterPostCshtml.Write((object) twitterPostCshtml.__tagHelperExecutionContext.Output);
+        twitterPostCshtml.__tagHelperExecutionContext = twitterPostCshtml.__tagHelperScopeManager.End();
+        twitterPostCshtml.EndContext();
+        twitterPostCshtml.BeginContext(275, 64, true);
+        twitterPostCshtml.WriteLiteral("</p>\r\n        </div>\r\n        <div class=\"middle\">\r\n            ");
+        twitterPostCshtml.EndContext();
+        twitterPostCshtml.BeginContext(339, 28, false);
+        twitterPostCshtml.__tagHelperExecutionContext = twitterPostCshtml.__tagHelperScopeManager.Begin("img", TagMode.SelfClosing, "a3c17deff9a443339176e9d69402f5d7", (Func<Task>) (async () => { }));
+        twitterPostCshtml.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = twitterPostCshtml.CreateTagHelper<UrlResolutionTagHelper>();
+        twitterPostCshtml.__tagHelperExecutionContext.Add((ITagHelper) twitterPostCshtml.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper);
+        twitterPostCshtml.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_TwitterPost_cshtml.__tagHelperAttribute_1);
+        await twitterPostCshtml.__tagHelperRunner.RunAsync(twitterPostCshtml.__tagHelperExecutionContext);
+        if (!twitterPostCshtml.__tagHelperExecutionContext.Output.IsContentModified)
+          await twitterPostCshtml.__tagHelperExecutionContext.SetOutputContentAsync();
+        twitterPostCshtml.Write((object) twitterPostCshtml.__tagHelperExecutionContext.Output);
+        twitterPostCshtml.__tagHelperExecutionContext = twitterPostCshtml.__tagHelperScopeManager.End();
+        twitterPostCshtml.EndContext();
+        twitterPostCshtml.BeginContext(367, 123, true);
+        twitterPostCshtml.WriteLiteral("\r\n            <h1 style=\"font-size: 25px;\">Tweet function is running !</h1>\r\n            <hr>\r\n        </div>\r\n    </div>\r\n");
+        twitterPostCshtml.EndContext();
+      }
+      twitterPostCshtml.BeginContext(493, 32, true);
+      twitterPostCshtml.WriteLiteral("<h2>TwitterPost</h2>\r\n\r\n<br />\r\n");
+      twitterPostCshtml.EndContext();
+      twitterPostCshtml.BeginContext(525, 1074, false);
+      // ISSUE: reference to a compiler-generated method
+      twitterPostCshtml.__tagHelperExecutionContext = twitterPostCshtml.__tagHelperScopeManager.Begin("form", TagMode.StartTagAndEndTag, "32d2f817bbc044f493927c74a54473f7", new Func<Task>(twitterPostCshtml.\u003CExecuteAsync\u003Eb__17_2));
+      twitterPostCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper = twitterPostCshtml.CreateTagHelper<FormTagHelper>();
+      twitterPostCshtml.__tagHelperExecutionContext.Add((ITagHelper) twitterPostCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper);
+      twitterPostCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper = twitterPostCshtml.CreateTagHelper<RenderAtEndOfFormTagHelper>();
+      twitterPostCshtml.__tagHelperExecutionContext.Add((ITagHelper) twitterPostCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper);
+      twitterPostCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper.Method = (string) _Views_Home_TwitterPost_cshtml.__tagHelperAttribute_5.Value;
+      twitterPostCshtml.__tagHelperExecutionContext.AddTagHelperAttribute(_Views_Home_TwitterPost_cshtml.__tagHelperAttribute_5);
+      twitterPostCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper.Action = (string) _Views_Home_TwitterPost_cshtml.__tagHelperAttribute_6.Value;
+      twitterPostCshtml.__tagHelperExecutionContext.AddTagHelperAttribute(_Views_Home_TwitterPost_cshtml.__tagHelperAttribute_6);
+      await twitterPostCshtml.__tagHelperRunner.RunAsync(twitterPostCshtml.__tagHelperExecutionContext);
+      if (!twitterPostCshtml.__tagHelperExecutionContext.Output.IsContentModified)
+        await twitterPostCshtml.__tagHelperExecutionContext.SetOutputContentAsync();
+      twitterPostCshtml.Write((object) twitterPostCshtml.__tagHelperExecutionContext.Output);
+      twitterPostCshtml.__tagHelperExecutionContext = twitterPostCshtml.__tagHelperScopeManager.End();
+      twitterPostCshtml.EndContext();
+      twitterPostCshtml.BeginContext(1599, 1142, true);
+      twitterPostCshtml.WriteLiteral("\r\n<style>\r\n    body, html {\r\n        height: 100%;\r\n        margin: 0;\r\n    }\r\n\r\n    .bgimg {\r\n        background-color: aliceblue;\r\n        height: 100vh;\r\n        right: 0;\r\n        top: 0;\r\n        left: 0;\r\n        bottom: 0;\r\n        z-index: 2000;\r\n        background-position: center;\r\n        background-size: cover;\r\n        position: absolute;\r\n        color: black;\r\n        font-family: \"Courier New\", Courier, monospace;\r\n    }\r\n\r\n    .topleft {\r\n        position: absolute;\r\n        top: 20px;\r\n        left: 30px;\r\n        font-size: 20px;\r\n    }\r\n\r\n    .bottomleft {\r\n        position: absolute;\r\n        bottom: 0;\r\n        left: 16px;\r\n    }\r\n\r\n    .middle {\r\n        position: absolute;\r\n        top: 50%;\r\n        left: 50%;\r\n        transform: translate(-50%, -50%);\r\n        text-align: center;\r\n    }\r\n\r\n    hr {\r\n        margin: auto;\r\n        width: 40%;\r\n    }\r\n</style>\r\n<script language=\"javascript\">\r\n\r\n    $(\"#startTweet\").click(function () {\r\n        $(\".bgimg\").css(\"display\", \"block\");      ");
+      twitterPostCshtml.WriteLiteral(" \r\n\r\n    });\r\n     var handle = null;\r\n\r\n    hadndle = setInterval(function () {\r\n        $.ajax({\r\n            url: '");
+      twitterPostCshtml.EndContext();
+      twitterPostCshtml.BeginContext(2742, 31, false);
+      twitterPostCshtml.Write(UrlHelperExtensions.Action(twitterPostCshtml.Url, "CheckTurl", "Home"));
+      twitterPostCshtml.EndContext();
+      twitterPostCshtml.BeginContext(2773, 706, true);
+      twitterPostCshtml.WriteLiteral("',\r\n            contentType: 'application/x-www-form-urlencoded',\r\n            type: 'POST',\r\n            success: function (data) {\r\n                data = jQuery.parseJSON(data);\r\n                if (data[\"data\"] == \"success\") {\r\n                    $(\".bgimg\").css(\"display\", \"none\");\r\n                    clearInterval(hadndle);\r\n                }\r\n                else if (data[\"data\"] == \"loading\")\r\n                    $(\".bgimg\").css(\"display\", \"block\");\r\n                return;\r\n            },\r\n            error: function (XMLHttpRequest, textStatus, errorThrown) {\r\n                alert(\"server connect error ! \");\r\n                return;\r\n            }\r\n        });\r\n    }, 3000);\r\n</script>");
+      twitterPostCshtml.EndContext();
+    }
+
+    [RazorInject]
+    public IModelExpressionProvider ModelExpressionProvider { get; private set; }
+
+    [RazorInject]
+    public IUrlHelper Url { get; private set; }
+
+    [RazorInject]
+    public IViewComponentHelper Component { get; private set; }
+
+    [RazorInject]
+    public IJsonHelper Json { get; private set; }
+
+    [RazorInject]
+    public IHtmlHelper<twitterpost> Html { get; private set; }
+  }
+}

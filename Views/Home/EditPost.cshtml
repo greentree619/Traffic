@@ -1,0 +1,126 @@
+﻿// Decompiled with JetBrains decompiler
+// Type: AspNetCore._Views_Home_EditPost_cshtml
+// Assembly: Traffic.PrecompiledViews, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+// MVID: 8B37BA40-0390-40A7-A536-D9CCDBC36390
+// Assembly location: D:\Workstation\TonniProjects\TrafficWebDeploy\Traffic.PrecompiledViews.dll
+
+using Microsoft.AspNetCore.Html;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Razor;
+using Microsoft.AspNetCore.Mvc.Razor.Internal;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.Mvc.TagHelpers;
+using Microsoft.AspNetCore.Mvc.ViewFeatures;
+using Microsoft.AspNetCore.Razor.Runtime.TagHelpers;
+using Microsoft.AspNetCore.Razor.TagHelpers;
+using System;
+using System.Linq.Expressions;
+using System.Text.Encodings.Web;
+using System.Threading.Tasks;
+using Traffic.Models;
+
+namespace AspNetCore
+{
+  public class _Views_Home_EditPost_cshtml : RazorPage<myBusinessPost>
+  {
+    private static readonly TagHelperAttribute __tagHelperAttribute_0 = new TagHelperAttribute("class", (object) new HtmlString("control-label col-md-2"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_1 = new TagHelperAttribute("class", (object) new HtmlString("form-control"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_2 = new TagHelperAttribute("class", (object) new HtmlString("text-danger"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_3 = new TagHelperAttribute("row", (object) new HtmlString("3"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_4 = new TagHelperAttribute("asp-action", (object) "EditPost", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_5 = new TagHelperAttribute("id", (object) new HtmlString("mainform"), HtmlAttributeValueStyle.DoubleQuotes);
+    private string __tagHelperStringValueBuffer;
+    private TagHelperExecutionContext __tagHelperExecutionContext;
+    private TagHelperRunner __tagHelperRunner = new TagHelperRunner();
+    private TagHelperScopeManager __backed__tagHelperScopeManager;
+    private FormTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper;
+    private RenderAtEndOfFormTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper;
+    private InputTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper;
+    private LabelTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_LabelTagHelper;
+    private ValidationMessageTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper;
+    private TextAreaTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_TextAreaTagHelper;
+    private static readonly Expression<Func<myBusinessPost, string>> __h0 = (Expression<Func<myBusinessPost, string>>) (__model => __model.name);
+    private static readonly Expression<Func<myBusinessPost, string>> __h1 = (Expression<Func<myBusinessPost, string>>) (__model => __model.languageCode);
+    private static readonly Expression<Func<myBusinessPost, string>> __h2 = (Expression<Func<myBusinessPost, string>>) (__model => __model.languageCode);
+    private static readonly Expression<Func<myBusinessPost, string>> __h3 = (Expression<Func<myBusinessPost, string>>) (__model => __model.languageCode);
+    private static readonly Expression<Func<myBusinessPost, string>> __h4 = (Expression<Func<myBusinessPost, string>>) (__model => __model.summary);
+    private static readonly Expression<Func<myBusinessPost, string>> __h5 = (Expression<Func<myBusinessPost, string>>) (__model => __model.summary);
+    private static readonly Expression<Func<myBusinessPost, string>> __h6 = (Expression<Func<myBusinessPost, string>>) (__model => __model.summary);
+    private static readonly Expression<Func<myBusinessPost, string>> __h7 = (Expression<Func<myBusinessPost, string>>) (__model => __model.searchUrl);
+    private static readonly Expression<Func<myBusinessPost, string>> __h8 = (Expression<Func<myBusinessPost, string>>) (__model => __model.searchUrl);
+    private static readonly Expression<Func<myBusinessPost, string>> __h9 = (Expression<Func<myBusinessPost, string>>) (__model => __model.searchUrl);
+    private static readonly Expression<Func<myBusinessPost, string>> __h10 = (Expression<Func<myBusinessPost, string>>) (__model => __model.state);
+    private static readonly Expression<Func<myBusinessPost, string>> __h11 = (Expression<Func<myBusinessPost, string>>) (__model => __model.state);
+    private static readonly Expression<Func<myBusinessPost, string>> __h12 = (Expression<Func<myBusinessPost, string>>) (__model => __model.state);
+    private static readonly Expression<Func<myBusinessPost, string>> __h13 = (Expression<Func<myBusinessPost, string>>) (__model => __model.topicType);
+    private static readonly Expression<Func<myBusinessPost, string>> __h14 = (Expression<Func<myBusinessPost, string>>) (__model => __model.topicType);
+    private static readonly Expression<Func<myBusinessPost, string>> __h15 = (Expression<Func<myBusinessPost, string>>) (__model => __model.topicType);
+    private static readonly Expression<Func<myBusinessPost, string>> __h16 = (Expression<Func<myBusinessPost, string>>) (__model => __model.updateTime);
+    private static readonly Expression<Func<myBusinessPost, string>> __h17 = (Expression<Func<myBusinessPost, string>>) (__model => __model.updateTime);
+    private static readonly Expression<Func<myBusinessPost, string>> __h18 = (Expression<Func<myBusinessPost, string>>) (__model => __model.updateTime);
+    private static readonly Expression<Func<myBusinessPost, string>> __h19 = (Expression<Func<myBusinessPost, string>>) (__model => __model.createTime);
+    private static readonly Expression<Func<myBusinessPost, string>> __h20 = (Expression<Func<myBusinessPost, string>>) (__model => __model.createTime);
+    private static readonly Expression<Func<myBusinessPost, string>> __h21 = (Expression<Func<myBusinessPost, string>>) (__model => __model.createTime);
+
+    private TagHelperScopeManager __tagHelperScopeManager
+    {
+      get
+      {
+        if (this.__backed__tagHelperScopeManager == null)
+          this.__backed__tagHelperScopeManager = new TagHelperScopeManager(new Action<HtmlEncoder>(((RazorPageBase) this).StartTagHelperWritingScope), new Func<TagHelperContent>(((RazorPageBase) this).EndTagHelperWritingScope));
+        return this.__backed__tagHelperScopeManager;
+      }
+    }
+
+    public virtual async Task ExecuteAsync()
+    {
+      _Views_Home_EditPost_cshtml homeEditPostCshtml = this;
+      homeEditPostCshtml.BeginContext(38, 2, true);
+      homeEditPostCshtml.WriteLiteral("\r\n");
+      homeEditPostCshtml.EndContext();
+      homeEditPostCshtml.ViewData["Title"] = (object) "Edit Post";
+      // ISSUE: explicit non-virtual call
+      __nonvirtual (homeEditPostCshtml.Layout) = "~/Views/Shared/_Layout.cshtml";
+      homeEditPostCshtml.BeginContext(132, 1153, true);
+      homeEditPostCshtml.WriteLiteral("\r\n<style>\r\n    /* Always set the map height explicitly to define the size of the div\r\n       * element that contains the map. */\r\n    #map {\r\n        height: 100%;\r\n    }\r\n    /* Optional: Makes the sample page fill the window. */\r\n    html, body {\r\n        height: 100%;\r\n        margin: 0;\r\n        padding: 0;\r\n    }\r\n\r\n    .controls {\r\n        background-color: #fff;\r\n        border-radius: 2px;\r\n        border: 1px solid transparent;\r\n        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);\r\n        box-sizing: border-box;\r\n        font-family: Roboto;\r\n        font-size: 15px;\r\n        font-weight: 300;\r\n        height: 29px;\r\n        margin-left: 17px;\r\n        margin-top: 10px;\r\n        outline: none;\r\n        padding: 0 11px 0 13px;\r\n        text-overflow: ellipsis;\r\n        width: 400px;\r\n    }\r\n\r\n    .controls:focus {\r\n        border-color: #4d90fe;\r\n    }\r\n\r\n    .title {\r\n        font-weight: bold;\r\n    }\r\n\r\n    #infowindow-content {\r\n        display: none;\r\n    }\r\n\r\n    #map #infowindow-content {\r\n       ");
+      homeEditPostCshtml.WriteLiteral(" display: inline;\r\n    }\r\n</style>\r\n\r\n<h2>Edit Traffic Job</h2>\r\n<hr />\r\n<div class=\"row\">\r\n    <div class=\"col-md-12\">\r\n        ");
+      homeEditPostCshtml.EndContext();
+      homeEditPostCshtml.BeginContext(1285, 3295, false);
+      // ISSUE: reference to a compiler-generated method
+      homeEditPostCshtml.__tagHelperExecutionContext = homeEditPostCshtml.__tagHelperScopeManager.Begin("form", TagMode.StartTagAndEndTag, "370bcd031d434a91a60d476bc888a1bf", new Func<Task>(homeEditPostCshtml.\u003CExecuteAsync\u003Eb__18_0));
+      homeEditPostCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper = homeEditPostCshtml.CreateTagHelper<FormTagHelper>();
+      homeEditPostCshtml.__tagHelperExecutionContext.Add((ITagHelper) homeEditPostCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper);
+      homeEditPostCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper = homeEditPostCshtml.CreateTagHelper<RenderAtEndOfFormTagHelper>();
+      homeEditPostCshtml.__tagHelperExecutionContext.Add((ITagHelper) homeEditPostCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper);
+      homeEditPostCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper.Action = (string) _Views_Home_EditPost_cshtml.__tagHelperAttribute_4.Value;
+      homeEditPostCshtml.__tagHelperExecutionContext.AddTagHelperAttribute(_Views_Home_EditPost_cshtml.__tagHelperAttribute_4);
+      homeEditPostCshtml.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_EditPost_cshtml.__tagHelperAttribute_5);
+      await homeEditPostCshtml.__tagHelperRunner.RunAsync(homeEditPostCshtml.__tagHelperExecutionContext);
+      if (!homeEditPostCshtml.__tagHelperExecutionContext.Output.IsContentModified)
+        await homeEditPostCshtml.__tagHelperExecutionContext.SetOutputContentAsync();
+      homeEditPostCshtml.Write((object) homeEditPostCshtml.__tagHelperExecutionContext.Output);
+      homeEditPostCshtml.__tagHelperExecutionContext = homeEditPostCshtml.__tagHelperScopeManager.End();
+      homeEditPostCshtml.EndContext();
+      homeEditPostCshtml.BeginContext(4580, 24, true);
+      homeEditPostCshtml.WriteLiteral("\r\n    </div>\r\n</div>\r\n\r\n");
+      homeEditPostCshtml.EndContext();
+      // ISSUE: reference to a compiler-generated method
+      homeEditPostCshtml.DefineSection("Scripts", new RenderAsyncDelegate(homeEditPostCshtml.\u003CExecuteAsync\u003Eb__18_23));
+    }
+
+    [RazorInject]
+    public IModelExpressionProvider ModelExpressionProvider { get; private set; }
+
+    [RazorInject]
+    public IUrlHelper Url { get; private set; }
+
+    [RazorInject]
+    public IViewComponentHelper Component { get; private set; }
+
+    [RazorInject]
+    public IJsonHelper Json { get; private set; }
+
+    [RazorInject]
+    public IHtmlHelper<myBusinessPost> Html { get; private set; }
+  }
+}

@@ -1,52 +1,227 @@
-﻿@model ExternalLoginsViewModel
-@{
-    ViewData["Title"] = "Manage your external logins";
-    ViewData.AddActivePage(ManageNavPages.ExternalLogins);
-}
+﻿// Decompiled with JetBrains decompiler
+// Type: AspNetCore._Views_Manage_ExternalLogins_cshtml
+// Assembly: Traffic.PrecompiledViews, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+// MVID: 8B37BA40-0390-40A7-A536-D9CCDBC36390
+// Assembly location: D:\Workstation\TonniProjects\TrafficWebDeploy\Traffic.PrecompiledViews.dll
 
-@Html.Partial("_StatusMessage", Model.StatusMessage)
-@if (Model.CurrentLogins?.Count > 0)
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Html;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Razor;
+using Microsoft.AspNetCore.Mvc.Razor.Internal;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.Mvc.TagHelpers;
+using Microsoft.AspNetCore.Mvc.ViewFeatures;
+using Microsoft.AspNetCore.Razor.Runtime.TagHelpers;
+using Microsoft.AspNetCore.Razor.TagHelpers;
+using System;
+using System.Collections.Generic;
+using System.Linq.Expressions;
+using System.Text.Encodings.Web;
+using System.Threading.Tasks;
+using Traffic.Models.ManageViewModels;
+using Traffic.Views.Manage;
+
+namespace AspNetCore
 {
-    <h4>Registered Logins</h4>
-    <table class="table">
-        <tbody>
-            @foreach (var login in Model.CurrentLogins)
+  public class _Views_Manage_ExternalLogins_cshtml : RazorPage<ExternalLoginsViewModel>
+  {
+    private static readonly TagHelperAttribute __tagHelperAttribute_0 = new TagHelperAttribute("name", (object) new HtmlString("LoginProvider"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_1 = new TagHelperAttribute("type", (object) "hidden", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_2 = new TagHelperAttribute("name", (object) new HtmlString("ProviderKey"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_3 = new TagHelperAttribute("asp-action", (object) "RemoveLogin", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_4 = new TagHelperAttribute("method", (object) "post", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_5 = new TagHelperAttribute("asp-action", (object) "LinkLogin", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_6 = new TagHelperAttribute("class", (object) new HtmlString("form-horizontal"), HtmlAttributeValueStyle.DoubleQuotes);
+    private string __tagHelperStringValueBuffer;
+    private TagHelperExecutionContext __tagHelperExecutionContext;
+    private TagHelperRunner __tagHelperRunner = new TagHelperRunner();
+    private TagHelperScopeManager __backed__tagHelperScopeManager;
+    private FormTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper;
+    private RenderAtEndOfFormTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper;
+    private InputTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper;
+
+    private TagHelperScopeManager __tagHelperScopeManager
+    {
+      get
+      {
+        if (this.__backed__tagHelperScopeManager == null)
+          this.__backed__tagHelperScopeManager = new TagHelperScopeManager(new Action<HtmlEncoder>(((RazorPageBase) this).StartTagHelperWritingScope), new Func<TagHelperContent>(((RazorPageBase) this).EndTagHelperWritingScope));
+        return this.__backed__tagHelperScopeManager;
+      }
+    }
+
+    public virtual async Task ExecuteAsync()
+    {
+      _Views_Manage_ExternalLogins_cshtml externalLoginsCshtml1 = this;
+      externalLoginsCshtml1.ViewData["Title"] = (object) "Manage your external logins";
+      externalLoginsCshtml1.ViewData.AddActivePage(ManageNavPages.ExternalLogins);
+      externalLoginsCshtml1.BeginContext(155, 2, true);
+      externalLoginsCshtml1.WriteLiteral("\r\n");
+      externalLoginsCshtml1.EndContext();
+      externalLoginsCshtml1.BeginContext(158, 51, false);
+      externalLoginsCshtml1.Write((object) externalLoginsCshtml1.Html.Partial("_StatusMessage", (object) externalLoginsCshtml1.Model.StatusMessage));
+      externalLoginsCshtml1.EndContext();
+      externalLoginsCshtml1.BeginContext(209, 2, true);
+      externalLoginsCshtml1.WriteLiteral("\r\n");
+      externalLoginsCshtml1.EndContext();
+      IList<UserLoginInfo> currentLogins = externalLoginsCshtml1.Model.CurrentLogins;
+      if ((currentLogins != null ? (currentLogins.Count > 0 ? 1 : 0) : 0) != 0)
+      {
+        externalLoginsCshtml1.BeginContext(252, 76, true);
+        externalLoginsCshtml1.WriteLiteral("    <h4>Registered Logins</h4>\r\n    <table class=\"table\">\r\n        <tbody>\r\n");
+        externalLoginsCshtml1.EndContext();
+        foreach (UserLoginInfo currentLogin in (IEnumerable<UserLoginInfo>) externalLoginsCshtml1.Model.CurrentLogins)
+        {
+          _Views_Manage_ExternalLogins_cshtml externalLoginsCshtml = externalLoginsCshtml1;
+          UserLoginInfo login = currentLogin;
+          externalLoginsCshtml1.BeginContext(400, 46, true);
+          externalLoginsCshtml1.WriteLiteral("                <tr>\r\n                    <td>");
+          externalLoginsCshtml1.EndContext();
+          externalLoginsCshtml1.BeginContext(447, 19, false);
+          externalLoginsCshtml1.Write(login.LoginProvider);
+          externalLoginsCshtml1.EndContext();
+          externalLoginsCshtml1.BeginContext(466, 33, true);
+          externalLoginsCshtml1.WriteLiteral("</td>\r\n                    <td>\r\n");
+          externalLoginsCshtml1.EndContext();
+          if (externalLoginsCshtml1.Model.ShowRemoveButton)
+          {
+            externalLoginsCshtml1.BeginContext(580, 28, true);
+            externalLoginsCshtml1.WriteLiteral("                            ");
+            externalLoginsCshtml1.EndContext();
+            externalLoginsCshtml1.BeginContext(608, 547, false);
+            externalLoginsCshtml1.__tagHelperExecutionContext = externalLoginsCshtml1.__tagHelperScopeManager.Begin("form", TagMode.StartTagAndEndTag, "da34bfb1769f40a8a3ed4801f1f7f82c", (Func<Task>) (async () =>
             {
-                <tr>
-                    <td>@login.LoginProvider</td>
-                    <td>
-                        @if (Model.ShowRemoveButton)
-                        {
-                            <form asp-action="RemoveLogin" method="post">
-                                <div>
-                                    <input asp-for="@login.LoginProvider" name="LoginProvider" type="hidden" />
-                                    <input asp-for="@login.ProviderKey" name="ProviderKey" type="hidden" />
-                                    <button type="submit" class="btn btn-default" title="Remove this @login.LoginProvider login from your account">Remove</button>
-                                </div>
-                            </form>
-                        }
-                        else
-                        {
-                            @: &nbsp;
-                        }
-                    </td>
-                </tr>
-            }
-        </tbody>
-    </table>
-}
-@if (Model.OtherLogins?.Count > 0)
-{
-    <h4>Add another service to log in.</h4>
-    <hr />
-    <form asp-action="LinkLogin" method="post" class="form-horizontal">
-        <div id="socialLoginList">
-            <p>
-                @foreach (var provider in Model.OtherLogins)
-                {
-                    <button type="submit" class="btn btn-default" name="provider" value="@provider.Name" title="Log in using your @provider.DisplayName account">@provider.DisplayName</button>
-                }
-            </p>
-        </div>
-    </form>
+              externalLoginsCshtml.BeginContext(653, 77, true);
+              externalLoginsCshtml.WriteLiteral("\r\n                                <div>\r\n                                    ");
+              externalLoginsCshtml.EndContext();
+              externalLoginsCshtml.BeginContext(730, 75, false);
+              externalLoginsCshtml.__tagHelperExecutionContext = externalLoginsCshtml.__tagHelperScopeManager.Begin("input", TagMode.SelfClosing, "7286f5e045694ed6a70aeab8dc3c5232", (Func<Task>) (async () => { }));
+              externalLoginsCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = externalLoginsCshtml.CreateTagHelper<InputTagHelper>();
+              externalLoginsCshtml.__tagHelperExecutionContext.Add((ITagHelper) externalLoginsCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+              externalLoginsCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = externalLoginsCshtml.ModelExpressionProvider.CreateModelExpression<ExternalLoginsViewModel, string>(externalLoginsCshtml.ViewData, (Expression<Func<ExternalLoginsViewModel, string>>) (__model => login.LoginProvider));
+              externalLoginsCshtml.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) externalLoginsCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, HtmlAttributeValueStyle.DoubleQuotes);
+              externalLoginsCshtml.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Manage_ExternalLogins_cshtml.__tagHelperAttribute_0);
+              externalLoginsCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.InputTypeName = (string) _Views_Manage_ExternalLogins_cshtml.__tagHelperAttribute_1.Value;
+              externalLoginsCshtml.__tagHelperExecutionContext.AddTagHelperAttribute(_Views_Manage_ExternalLogins_cshtml.__tagHelperAttribute_1);
+              await externalLoginsCshtml.__tagHelperRunner.RunAsync(externalLoginsCshtml.__tagHelperExecutionContext);
+              if (!externalLoginsCshtml.__tagHelperExecutionContext.Output.IsContentModified)
+                await externalLoginsCshtml.__tagHelperExecutionContext.SetOutputContentAsync();
+              externalLoginsCshtml.Write((object) externalLoginsCshtml.__tagHelperExecutionContext.Output);
+              externalLoginsCshtml.__tagHelperExecutionContext = externalLoginsCshtml.__tagHelperScopeManager.End();
+              externalLoginsCshtml.EndContext();
+              externalLoginsCshtml.BeginContext(805, 38, true);
+              externalLoginsCshtml.WriteLiteral("\r\n                                    ");
+              externalLoginsCshtml.EndContext();
+              externalLoginsCshtml.BeginContext(843, 71, false);
+              externalLoginsCshtml.__tagHelperExecutionContext = externalLoginsCshtml.__tagHelperScopeManager.Begin("input", TagMode.SelfClosing, "b9957ff75f1f4170aaa533bafd1068fd", (Func<Task>) (async () => { }));
+              externalLoginsCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = externalLoginsCshtml.CreateTagHelper<InputTagHelper>();
+              externalLoginsCshtml.__tagHelperExecutionContext.Add((ITagHelper) externalLoginsCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+              externalLoginsCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = externalLoginsCshtml.ModelExpressionProvider.CreateModelExpression<ExternalLoginsViewModel, string>(externalLoginsCshtml.ViewData, (Expression<Func<ExternalLoginsViewModel, string>>) (__model => login.ProviderKey));
+              externalLoginsCshtml.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) externalLoginsCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, HtmlAttributeValueStyle.DoubleQuotes);
+              externalLoginsCshtml.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Manage_ExternalLogins_cshtml.__tagHelperAttribute_2);
+              externalLoginsCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.InputTypeName = (string) _Views_Manage_ExternalLogins_cshtml.__tagHelperAttribute_1.Value;
+              externalLoginsCshtml.__tagHelperExecutionContext.AddTagHelperAttribute(_Views_Manage_ExternalLogins_cshtml.__tagHelperAttribute_1);
+              await externalLoginsCshtml.__tagHelperRunner.RunAsync(externalLoginsCshtml.__tagHelperExecutionContext);
+              if (!externalLoginsCshtml.__tagHelperExecutionContext.Output.IsContentModified)
+                await externalLoginsCshtml.__tagHelperExecutionContext.SetOutputContentAsync();
+              externalLoginsCshtml.Write((object) externalLoginsCshtml.__tagHelperExecutionContext.Output);
+              externalLoginsCshtml.__tagHelperExecutionContext = externalLoginsCshtml.__tagHelperScopeManager.End();
+              externalLoginsCshtml.EndContext();
+              externalLoginsCshtml.BeginContext(914, 83, true);
+              externalLoginsCshtml.WriteLiteral("\r\n                                    <button type=\"submit\" class=\"btn btn-default\"");
+              externalLoginsCshtml.EndContext();
+              externalLoginsCshtml.BeginWriteAttribute("title", " title=\"", 997, "\"", 1061, 7);
+              externalLoginsCshtml.WriteAttributeValue("", 1005, (object) "Remove", 1005, 6, true);
+              externalLoginsCshtml.WriteAttributeValue(" ", 1011, (object) "this", 1012, 5, true);
+              externalLoginsCshtml.WriteAttributeValue(" ", 1016, (object) login.LoginProvider, 1017, 20, false);
+              externalLoginsCshtml.WriteAttributeValue(" ", 1037, (object) "login", 1038, 6, true);
+              externalLoginsCshtml.WriteAttributeValue(" ", 1043, (object) "from", 1044, 5, true);
+              externalLoginsCshtml.WriteAttributeValue(" ", 1048, (object) "your", 1049, 5, true);
+              externalLoginsCshtml.WriteAttributeValue(" ", 1053, (object) "account", 1054, 8, true);
+              externalLoginsCshtml.EndWriteAttribute();
+              externalLoginsCshtml.BeginContext(1062, 86, true);
+              externalLoginsCshtml.WriteLiteral(">Remove</button>\r\n                                </div>\r\n                            ");
+              externalLoginsCshtml.EndContext();
+            }));
+            externalLoginsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper = externalLoginsCshtml1.CreateTagHelper<FormTagHelper>();
+            externalLoginsCshtml1.__tagHelperExecutionContext.Add((ITagHelper) externalLoginsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper);
+            externalLoginsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper = externalLoginsCshtml1.CreateTagHelper<RenderAtEndOfFormTagHelper>();
+            externalLoginsCshtml1.__tagHelperExecutionContext.Add((ITagHelper) externalLoginsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper);
+            externalLoginsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper.Action = (string) _Views_Manage_ExternalLogins_cshtml.__tagHelperAttribute_3.Value;
+            externalLoginsCshtml1.__tagHelperExecutionContext.AddTagHelperAttribute(_Views_Manage_ExternalLogins_cshtml.__tagHelperAttribute_3);
+            externalLoginsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper.Method = (string) _Views_Manage_ExternalLogins_cshtml.__tagHelperAttribute_4.Value;
+            externalLoginsCshtml1.__tagHelperExecutionContext.AddTagHelperAttribute(_Views_Manage_ExternalLogins_cshtml.__tagHelperAttribute_4);
+            await externalLoginsCshtml1.__tagHelperRunner.RunAsync(externalLoginsCshtml1.__tagHelperExecutionContext);
+            if (!externalLoginsCshtml1.__tagHelperExecutionContext.Output.IsContentModified)
+              await externalLoginsCshtml1.__tagHelperExecutionContext.SetOutputContentAsync();
+            externalLoginsCshtml1.Write((object) externalLoginsCshtml1.__tagHelperExecutionContext.Output);
+            externalLoginsCshtml1.__tagHelperExecutionContext = externalLoginsCshtml1.__tagHelperScopeManager.End();
+            externalLoginsCshtml1.EndContext();
+            externalLoginsCshtml1.BeginContext(1155, 2, true);
+            externalLoginsCshtml1.WriteLiteral("\r\n");
+            externalLoginsCshtml1.EndContext();
+          }
+          else
+          {
+            externalLoginsCshtml1.BeginContext(1241, 28, true);
+            externalLoginsCshtml1.WriteLiteral("                            ");
+            externalLoginsCshtml1.EndContext();
+            externalLoginsCshtml1.BeginContext(1271, 9, true);
+            externalLoginsCshtml1.WriteLiteral(" &nbsp;\r\n");
+            externalLoginsCshtml1.EndContext();
+          }
+          externalLoginsCshtml1.BeginContext(1307, 50, true);
+          externalLoginsCshtml1.WriteLiteral("                    </td>\r\n                </tr>\r\n");
+          externalLoginsCshtml1.EndContext();
+        }
+        externalLoginsCshtml1.BeginContext(1372, 32, true);
+        externalLoginsCshtml1.WriteLiteral("        </tbody>\r\n    </table>\r\n");
+        externalLoginsCshtml1.EndContext();
+      }
+      IList<AuthenticationScheme> otherLogins = externalLoginsCshtml1.Model.OtherLogins;
+      if ((otherLogins != null ? (otherLogins.Count > 0 ? 1 : 0) : 0) == 0)
+        return;
+      externalLoginsCshtml1.BeginContext(1446, 61, true);
+      externalLoginsCshtml1.WriteLiteral("    <h4>Add another service to log in.</h4>\r\n    <hr />\r\n    ");
+      externalLoginsCshtml1.EndContext();
+      externalLoginsCshtml1.BeginContext(1507, 460, false);
+      // ISSUE: reference to a compiler-generated method
+      externalLoginsCshtml1.__tagHelperExecutionContext = externalLoginsCshtml1.__tagHelperScopeManager.Begin("form", TagMode.StartTagAndEndTag, "c6e148cc371d4be19de66a8dc63394ec", new Func<Task>(externalLoginsCshtml1.\u003CExecuteAsync\u003Eb__16_3));
+      externalLoginsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper = externalLoginsCshtml1.CreateTagHelper<FormTagHelper>();
+      externalLoginsCshtml1.__tagHelperExecutionContext.Add((ITagHelper) externalLoginsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper);
+      externalLoginsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper = externalLoginsCshtml1.CreateTagHelper<RenderAtEndOfFormTagHelper>();
+      externalLoginsCshtml1.__tagHelperExecutionContext.Add((ITagHelper) externalLoginsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper);
+      externalLoginsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper.Action = (string) _Views_Manage_ExternalLogins_cshtml.__tagHelperAttribute_5.Value;
+      externalLoginsCshtml1.__tagHelperExecutionContext.AddTagHelperAttribute(_Views_Manage_ExternalLogins_cshtml.__tagHelperAttribute_5);
+      externalLoginsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper.Method = (string) _Views_Manage_ExternalLogins_cshtml.__tagHelperAttribute_4.Value;
+      externalLoginsCshtml1.__tagHelperExecutionContext.AddTagHelperAttribute(_Views_Manage_ExternalLogins_cshtml.__tagHelperAttribute_4);
+      externalLoginsCshtml1.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Manage_ExternalLogins_cshtml.__tagHelperAttribute_6);
+      await externalLoginsCshtml1.__tagHelperRunner.RunAsync(externalLoginsCshtml1.__tagHelperExecutionContext);
+      if (!externalLoginsCshtml1.__tagHelperExecutionContext.Output.IsContentModified)
+        await externalLoginsCshtml1.__tagHelperExecutionContext.SetOutputContentAsync();
+      externalLoginsCshtml1.Write((object) externalLoginsCshtml1.__tagHelperExecutionContext.Output);
+      externalLoginsCshtml1.__tagHelperExecutionContext = externalLoginsCshtml1.__tagHelperScopeManager.End();
+      externalLoginsCshtml1.EndContext();
+      externalLoginsCshtml1.BeginContext(1967, 2, true);
+      externalLoginsCshtml1.WriteLiteral("\r\n");
+      externalLoginsCshtml1.EndContext();
+    }
+
+    [RazorInject]
+    public IModelExpressionProvider ModelExpressionProvider { get; private set; }
+
+    [RazorInject]
+    public IUrlHelper Url { get; private set; }
+
+    [RazorInject]
+    public IViewComponentHelper Component { get; private set; }
+
+    [RazorInject]
+    public IJsonHelper Json { get; private set; }
+
+    [RazorInject]
+    public IHtmlHelper<ExternalLoginsViewModel> Html { get; private set; }
+  }
 }

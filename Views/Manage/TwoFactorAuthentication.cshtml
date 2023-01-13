@@ -1,49 +1,265 @@
-@model TwoFactorAuthenticationViewModel
-@{
-    ViewData["Title"] = "Two-factor authentication";
-    ViewData.AddActivePage(ManageNavPages.TwoFactorAuthentication);
-}
+﻿// Decompiled with JetBrains decompiler
+// Type: AspNetCore._Views_Manage_TwoFactorAuthentication_cshtml
+// Assembly: Traffic.PrecompiledViews, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+// MVID: 8B37BA40-0390-40A7-A536-D9CCDBC36390
+// Assembly location: D:\Workstation\TonniProjects\TrafficWebDeploy\Traffic.PrecompiledViews.dll
 
-<h4>@ViewData["Title"]</h4>
-@if (Model.Is2faEnabled)
+using Microsoft.AspNetCore.Html;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Razor;
+using Microsoft.AspNetCore.Mvc.Razor.Internal;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.Mvc.TagHelpers;
+using Microsoft.AspNetCore.Mvc.ViewFeatures;
+using Microsoft.AspNetCore.Razor.Runtime.TagHelpers;
+using Microsoft.AspNetCore.Razor.TagHelpers;
+using System;
+using System.Text.Encodings.Web;
+using System.Threading.Tasks;
+using Traffic.Models.ManageViewModels;
+using Traffic.Views.Manage;
+
+namespace AspNetCore
 {
-    if (Model.RecoveryCodesLeft == 0)
+  public class _Views_Manage_TwoFactorAuthentication_cshtml : 
+    RazorPage<TwoFactorAuthenticationViewModel>
+  {
+    private static readonly TagHelperAttribute __tagHelperAttribute_0 = new TagHelperAttribute("asp-action", (object) "GenerateRecoveryCodes", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_1 = new TagHelperAttribute("asp-action", (object) "Disable2faWarning", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_2 = new TagHelperAttribute("class", (object) new HtmlString("btn btn-default"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_3 = new TagHelperAttribute("asp-action", (object) "GenerateRecoveryCodesWarning", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_4 = new TagHelperAttribute("asp-action", (object) "EnableAuthenticator", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_5 = new TagHelperAttribute("class", (object) new HtmlString("btn btn-primary"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_6 = new TagHelperAttribute("class", (object) new HtmlString("btn btn-info"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_7 = new TagHelperAttribute("asp-action", (object) "ResetAuthenticatorWarning", HtmlAttributeValueStyle.DoubleQuotes);
+    private string __tagHelperStringValueBuffer;
+    private TagHelperExecutionContext __tagHelperExecutionContext;
+    private TagHelperRunner __tagHelperRunner = new TagHelperRunner();
+    private TagHelperScopeManager __backed__tagHelperScopeManager;
+    private AnchorTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper;
+
+    private TagHelperScopeManager __tagHelperScopeManager
     {
-        <div class="alert alert-danger">
-            <strong>You have no recovery codes left.</strong>
-            <p>You must <a asp-action="GenerateRecoveryCodes">generate a new set of recovery codes</a> before you can log in with a recovery code.</p>
-        </div>
-    }
-    else if (Model.RecoveryCodesLeft == 1)
-    {
-        <div class="alert alert-danger">
-            <strong>You have 1 recovery code left.</strong>
-            <p>You can <a asp-action="GenerateRecoveryCodes">generate a new set of recovery codes</a>.</p>
-        </div>
-    }
-    else if (Model.RecoveryCodesLeft <= 3)
-    {
-        <div class="alert alert-warning">
-            <strong>You have @Model.RecoveryCodesLeft recovery codes left.</strong>
-            <p>You should <a asp-action="GenerateRecoveryCodes">generate a new set of recovery codes</a>.</p>
-        </div>
+      get
+      {
+        if (this.__backed__tagHelperScopeManager == null)
+          this.__backed__tagHelperScopeManager = new TagHelperScopeManager(new Action<HtmlEncoder>(((RazorPageBase) this).StartTagHelperWritingScope), new Func<TagHelperContent>(((RazorPageBase) this).EndTagHelperWritingScope));
+        return this.__backed__tagHelperScopeManager;
+      }
     }
 
-    <a asp-action="Disable2faWarning" class="btn btn-default">Disable 2FA</a>
-    <a asp-action="GenerateRecoveryCodesWarning" class="btn btn-default">Reset recovery codes</a>
-}
+    public virtual async Task ExecuteAsync()
+    {
+      _Views_Manage_TwoFactorAuthentication_cshtml authenticationCshtml = this;
+      authenticationCshtml.ViewData["Title"] = (object) "Two-factor authentication";
+      authenticationCshtml.ViewData.AddActivePage(ManageNavPages.TwoFactorAuthentication);
+      authenticationCshtml.BeginContext(171, 6, true);
+      authenticationCshtml.WriteLiteral("\r\n<h4>");
+      authenticationCshtml.EndContext();
+      authenticationCshtml.BeginContext(178, 17, false);
+      authenticationCshtml.Write(authenticationCshtml.ViewData["Title"]);
+      authenticationCshtml.EndContext();
+      authenticationCshtml.BeginContext(195, 7, true);
+      authenticationCshtml.WriteLiteral("</h4>\r\n");
+      authenticationCshtml.EndContext();
+      if (authenticationCshtml.Model.Is2faEnabled)
+      {
+        if (authenticationCshtml.Model.RecoveryCodesLeft == 0)
+        {
+          authenticationCshtml.BeginContext(277, 129, true);
+          authenticationCshtml.WriteLiteral("        <div class=\"alert alert-danger\">\r\n            <strong>You have no recovery codes left.</strong>\r\n            <p>You must ");
+          authenticationCshtml.EndContext();
+          authenticationCshtml.BeginContext(406, 78, false);
+          // ISSUE: reference to a compiler-generated method
+          authenticationCshtml.__tagHelperExecutionContext = authenticationCshtml.__tagHelperScopeManager.Begin("a", TagMode.StartTagAndEndTag, "e23aacdab3514b26a67b32aa31eb9f45", new Func<Task>(authenticationCshtml.\u003CExecuteAsync\u003Eb__15_0));
+          authenticationCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper = authenticationCshtml.CreateTagHelper<AnchorTagHelper>();
+          authenticationCshtml.__tagHelperExecutionContext.Add((ITagHelper) authenticationCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper);
+          authenticationCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.Action = (string) _Views_Manage_TwoFactorAuthentication_cshtml.__tagHelperAttribute_0.Value;
+          authenticationCshtml.__tagHelperExecutionContext.AddTagHelperAttribute(_Views_Manage_TwoFactorAuthentication_cshtml.__tagHelperAttribute_0);
+          await authenticationCshtml.__tagHelperRunner.RunAsync(authenticationCshtml.__tagHelperExecutionContext);
+          if (!authenticationCshtml.__tagHelperExecutionContext.Output.IsContentModified)
+            await authenticationCshtml.__tagHelperExecutionContext.SetOutputContentAsync();
+          authenticationCshtml.Write((object) authenticationCshtml.__tagHelperExecutionContext.Output);
+          authenticationCshtml.__tagHelperExecutionContext = authenticationCshtml.__tagHelperScopeManager.End();
+          authenticationCshtml.EndContext();
+          authenticationCshtml.BeginContext(484, 66, true);
+          authenticationCshtml.WriteLiteral(" before you can log in with a recovery code.</p>\r\n        </div>\r\n");
+          authenticationCshtml.EndContext();
+        }
+        else if (authenticationCshtml.Model.RecoveryCodesLeft == 1)
+        {
+          authenticationCshtml.BeginContext(608, 126, true);
+          authenticationCshtml.WriteLiteral("        <div class=\"alert alert-danger\">\r\n            <strong>You have 1 recovery code left.</strong>\r\n            <p>You can ");
+          authenticationCshtml.EndContext();
+          authenticationCshtml.BeginContext(734, 78, false);
+          // ISSUE: reference to a compiler-generated method
+          authenticationCshtml.__tagHelperExecutionContext = authenticationCshtml.__tagHelperScopeManager.Begin("a", TagMode.StartTagAndEndTag, "4b2a1129d32a439291948029fa92a6e5", new Func<Task>(authenticationCshtml.\u003CExecuteAsync\u003Eb__15_1));
+          authenticationCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper = authenticationCshtml.CreateTagHelper<AnchorTagHelper>();
+          authenticationCshtml.__tagHelperExecutionContext.Add((ITagHelper) authenticationCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper);
+          authenticationCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.Action = (string) _Views_Manage_TwoFactorAuthentication_cshtml.__tagHelperAttribute_0.Value;
+          authenticationCshtml.__tagHelperExecutionContext.AddTagHelperAttribute(_Views_Manage_TwoFactorAuthentication_cshtml.__tagHelperAttribute_0);
+          await authenticationCshtml.__tagHelperRunner.RunAsync(authenticationCshtml.__tagHelperExecutionContext);
+          if (!authenticationCshtml.__tagHelperExecutionContext.Output.IsContentModified)
+            await authenticationCshtml.__tagHelperExecutionContext.SetOutputContentAsync();
+          authenticationCshtml.Write((object) authenticationCshtml.__tagHelperExecutionContext.Output);
+          authenticationCshtml.__tagHelperExecutionContext = authenticationCshtml.__tagHelperScopeManager.End();
+          authenticationCshtml.EndContext();
+          authenticationCshtml.BeginContext(812, 23, true);
+          authenticationCshtml.WriteLiteral(".</p>\r\n        </div>\r\n");
+          authenticationCshtml.EndContext();
+        }
+        else if (authenticationCshtml.Model.RecoveryCodesLeft <= 3)
+        {
+          authenticationCshtml.BeginContext(893, 72, true);
+          authenticationCshtml.WriteLiteral("        <div class=\"alert alert-warning\">\r\n            <strong>You have ");
+          authenticationCshtml.EndContext();
+          authenticationCshtml.BeginContext(966, 23, false);
+          authenticationCshtml.Write((object) authenticationCshtml.Model.RecoveryCodesLeft);
+          authenticationCshtml.EndContext();
+          authenticationCshtml.BeginContext(989, 58, true);
+          authenticationCshtml.WriteLiteral(" recovery codes left.</strong>\r\n            <p>You should ");
+          authenticationCshtml.EndContext();
+          authenticationCshtml.BeginContext(1047, 78, false);
+          // ISSUE: reference to a compiler-generated method
+          authenticationCshtml.__tagHelperExecutionContext = authenticationCshtml.__tagHelperScopeManager.Begin("a", TagMode.StartTagAndEndTag, "b63ce156eb1d40a3905278d9e30b1cce", new Func<Task>(authenticationCshtml.\u003CExecuteAsync\u003Eb__15_2));
+          authenticationCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper = authenticationCshtml.CreateTagHelper<AnchorTagHelper>();
+          authenticationCshtml.__tagHelperExecutionContext.Add((ITagHelper) authenticationCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper);
+          authenticationCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.Action = (string) _Views_Manage_TwoFactorAuthentication_cshtml.__tagHelperAttribute_0.Value;
+          authenticationCshtml.__tagHelperExecutionContext.AddTagHelperAttribute(_Views_Manage_TwoFactorAuthentication_cshtml.__tagHelperAttribute_0);
+          await authenticationCshtml.__tagHelperRunner.RunAsync(authenticationCshtml.__tagHelperExecutionContext);
+          if (!authenticationCshtml.__tagHelperExecutionContext.Output.IsContentModified)
+            await authenticationCshtml.__tagHelperExecutionContext.SetOutputContentAsync();
+          authenticationCshtml.Write((object) authenticationCshtml.__tagHelperExecutionContext.Output);
+          authenticationCshtml.__tagHelperExecutionContext = authenticationCshtml.__tagHelperScopeManager.End();
+          authenticationCshtml.EndContext();
+          authenticationCshtml.BeginContext(1125, 23, true);
+          authenticationCshtml.WriteLiteral(".</p>\r\n        </div>\r\n");
+          authenticationCshtml.EndContext();
+        }
+        authenticationCshtml.BeginContext(1157, 4, true);
+        authenticationCshtml.WriteLiteral("    ");
+        authenticationCshtml.EndContext();
+        authenticationCshtml.BeginContext(1161, 73, false);
+        // ISSUE: reference to a compiler-generated method
+        authenticationCshtml.__tagHelperExecutionContext = authenticationCshtml.__tagHelperScopeManager.Begin("a", TagMode.StartTagAndEndTag, "a4edd6f8cd574236b6e59c75c0fc05cc", new Func<Task>(authenticationCshtml.\u003CExecuteAsync\u003Eb__15_3));
+        authenticationCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper = authenticationCshtml.CreateTagHelper<AnchorTagHelper>();
+        authenticationCshtml.__tagHelperExecutionContext.Add((ITagHelper) authenticationCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper);
+        authenticationCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.Action = (string) _Views_Manage_TwoFactorAuthentication_cshtml.__tagHelperAttribute_1.Value;
+        authenticationCshtml.__tagHelperExecutionContext.AddTagHelperAttribute(_Views_Manage_TwoFactorAuthentication_cshtml.__tagHelperAttribute_1);
+        authenticationCshtml.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Manage_TwoFactorAuthentication_cshtml.__tagHelperAttribute_2);
+        await authenticationCshtml.__tagHelperRunner.RunAsync(authenticationCshtml.__tagHelperExecutionContext);
+        if (!authenticationCshtml.__tagHelperExecutionContext.Output.IsContentModified)
+          await authenticationCshtml.__tagHelperExecutionContext.SetOutputContentAsync();
+        authenticationCshtml.Write((object) authenticationCshtml.__tagHelperExecutionContext.Output);
+        authenticationCshtml.__tagHelperExecutionContext = authenticationCshtml.__tagHelperScopeManager.End();
+        authenticationCshtml.EndContext();
+        authenticationCshtml.BeginContext(1234, 6, true);
+        authenticationCshtml.WriteLiteral("\r\n    ");
+        authenticationCshtml.EndContext();
+        authenticationCshtml.BeginContext(1240, 93, false);
+        // ISSUE: reference to a compiler-generated method
+        authenticationCshtml.__tagHelperExecutionContext = authenticationCshtml.__tagHelperScopeManager.Begin("a", TagMode.StartTagAndEndTag, "62efe0156b694cbe92273f78268a3f61", new Func<Task>(authenticationCshtml.\u003CExecuteAsync\u003Eb__15_4));
+        authenticationCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper = authenticationCshtml.CreateTagHelper<AnchorTagHelper>();
+        authenticationCshtml.__tagHelperExecutionContext.Add((ITagHelper) authenticationCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper);
+        authenticationCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.Action = (string) _Views_Manage_TwoFactorAuthentication_cshtml.__tagHelperAttribute_3.Value;
+        authenticationCshtml.__tagHelperExecutionContext.AddTagHelperAttribute(_Views_Manage_TwoFactorAuthentication_cshtml.__tagHelperAttribute_3);
+        authenticationCshtml.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Manage_TwoFactorAuthentication_cshtml.__tagHelperAttribute_2);
+        await authenticationCshtml.__tagHelperRunner.RunAsync(authenticationCshtml.__tagHelperExecutionContext);
+        if (!authenticationCshtml.__tagHelperExecutionContext.Output.IsContentModified)
+          await authenticationCshtml.__tagHelperExecutionContext.SetOutputContentAsync();
+        authenticationCshtml.Write((object) authenticationCshtml.__tagHelperExecutionContext.Output);
+        authenticationCshtml.__tagHelperExecutionContext = authenticationCshtml.__tagHelperScopeManager.End();
+        authenticationCshtml.EndContext();
+        authenticationCshtml.BeginContext(1333, 2, true);
+        authenticationCshtml.WriteLiteral("\r\n");
+        authenticationCshtml.EndContext();
+      }
+      authenticationCshtml.BeginContext(1338, 30, true);
+      authenticationCshtml.WriteLiteral("\r\n<h5>Authenticator app</h5>\r\n");
+      authenticationCshtml.EndContext();
+      if (!authenticationCshtml.Model.HasAuthenticator)
+      {
+        authenticationCshtml.BeginContext(1402, 4, true);
+        authenticationCshtml.WriteLiteral("    ");
+        authenticationCshtml.EndContext();
+        authenticationCshtml.BeginContext(1406, 85, false);
+        // ISSUE: reference to a compiler-generated method
+        authenticationCshtml.__tagHelperExecutionContext = authenticationCshtml.__tagHelperScopeManager.Begin("a", TagMode.StartTagAndEndTag, "3067a5c12d1a43678d6192f883d5f590", new Func<Task>(authenticationCshtml.\u003CExecuteAsync\u003Eb__15_5));
+        authenticationCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper = authenticationCshtml.CreateTagHelper<AnchorTagHelper>();
+        authenticationCshtml.__tagHelperExecutionContext.Add((ITagHelper) authenticationCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper);
+        authenticationCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.Action = (string) _Views_Manage_TwoFactorAuthentication_cshtml.__tagHelperAttribute_4.Value;
+        authenticationCshtml.__tagHelperExecutionContext.AddTagHelperAttribute(_Views_Manage_TwoFactorAuthentication_cshtml.__tagHelperAttribute_4);
+        authenticationCshtml.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Manage_TwoFactorAuthentication_cshtml.__tagHelperAttribute_5);
+        await authenticationCshtml.__tagHelperRunner.RunAsync(authenticationCshtml.__tagHelperExecutionContext);
+        if (!authenticationCshtml.__tagHelperExecutionContext.Output.IsContentModified)
+          await authenticationCshtml.__tagHelperExecutionContext.SetOutputContentAsync();
+        authenticationCshtml.Write((object) authenticationCshtml.__tagHelperExecutionContext.Output);
+        authenticationCshtml.__tagHelperExecutionContext = authenticationCshtml.__tagHelperScopeManager.End();
+        authenticationCshtml.EndContext();
+        authenticationCshtml.BeginContext(1491, 2, true);
+        authenticationCshtml.WriteLiteral("\r\n");
+        authenticationCshtml.EndContext();
+      }
+      else
+      {
+        authenticationCshtml.BeginContext(1505, 4, true);
+        authenticationCshtml.WriteLiteral("    ");
+        authenticationCshtml.EndContext();
+        authenticationCshtml.BeginContext(1509, 88, false);
+        // ISSUE: reference to a compiler-generated method
+        authenticationCshtml.__tagHelperExecutionContext = authenticationCshtml.__tagHelperScopeManager.Begin("a", TagMode.StartTagAndEndTag, "cd069e0c4a8b4586a8ba02fadce8f295", new Func<Task>(authenticationCshtml.\u003CExecuteAsync\u003Eb__15_6));
+        authenticationCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper = authenticationCshtml.CreateTagHelper<AnchorTagHelper>();
+        authenticationCshtml.__tagHelperExecutionContext.Add((ITagHelper) authenticationCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper);
+        authenticationCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.Action = (string) _Views_Manage_TwoFactorAuthentication_cshtml.__tagHelperAttribute_4.Value;
+        authenticationCshtml.__tagHelperExecutionContext.AddTagHelperAttribute(_Views_Manage_TwoFactorAuthentication_cshtml.__tagHelperAttribute_4);
+        authenticationCshtml.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Manage_TwoFactorAuthentication_cshtml.__tagHelperAttribute_6);
+        await authenticationCshtml.__tagHelperRunner.RunAsync(authenticationCshtml.__tagHelperExecutionContext);
+        if (!authenticationCshtml.__tagHelperExecutionContext.Output.IsContentModified)
+          await authenticationCshtml.__tagHelperExecutionContext.SetOutputContentAsync();
+        authenticationCshtml.Write((object) authenticationCshtml.__tagHelperExecutionContext.Output);
+        authenticationCshtml.__tagHelperExecutionContext = authenticationCshtml.__tagHelperScopeManager.End();
+        authenticationCshtml.EndContext();
+        authenticationCshtml.BeginContext(1597, 6, true);
+        authenticationCshtml.WriteLiteral("\r\n    ");
+        authenticationCshtml.EndContext();
+        authenticationCshtml.BeginContext(1603, 93, false);
+        // ISSUE: reference to a compiler-generated method
+        authenticationCshtml.__tagHelperExecutionContext = authenticationCshtml.__tagHelperScopeManager.Begin("a", TagMode.StartTagAndEndTag, "c29e42f5156a4539b2dadcbc3a26d9b9", new Func<Task>(authenticationCshtml.\u003CExecuteAsync\u003Eb__15_7));
+        authenticationCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper = authenticationCshtml.CreateTagHelper<AnchorTagHelper>();
+        authenticationCshtml.__tagHelperExecutionContext.Add((ITagHelper) authenticationCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper);
+        authenticationCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.Action = (string) _Views_Manage_TwoFactorAuthentication_cshtml.__tagHelperAttribute_7.Value;
+        authenticationCshtml.__tagHelperExecutionContext.AddTagHelperAttribute(_Views_Manage_TwoFactorAuthentication_cshtml.__tagHelperAttribute_7);
+        authenticationCshtml.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Manage_TwoFactorAuthentication_cshtml.__tagHelperAttribute_5);
+        await authenticationCshtml.__tagHelperRunner.RunAsync(authenticationCshtml.__tagHelperExecutionContext);
+        if (!authenticationCshtml.__tagHelperExecutionContext.Output.IsContentModified)
+          await authenticationCshtml.__tagHelperExecutionContext.SetOutputContentAsync();
+        authenticationCshtml.Write((object) authenticationCshtml.__tagHelperExecutionContext.Output);
+        authenticationCshtml.__tagHelperExecutionContext = authenticationCshtml.__tagHelperScopeManager.End();
+        authenticationCshtml.EndContext();
+        authenticationCshtml.BeginContext(1696, 2, true);
+        authenticationCshtml.WriteLiteral("\r\n");
+        authenticationCshtml.EndContext();
+      }
+      authenticationCshtml.BeginContext(1701, 2, true);
+      authenticationCshtml.WriteLiteral("\r\n");
+      authenticationCshtml.EndContext();
+      // ISSUE: reference to a compiler-generated method
+      authenticationCshtml.DefineSection("Scripts", new RenderAsyncDelegate(authenticationCshtml.\u003CExecuteAsync\u003Eb__15_8));
+    }
 
-<h5>Authenticator app</h5>
-@if (!Model.HasAuthenticator)
-{
-    <a asp-action="EnableAuthenticator" class="btn btn-default">Add authenticator app</a>
-}
-else
-{
-    <a asp-action="EnableAuthenticator" class="btn btn-default">Configure authenticator app</a>
-    <a asp-action="ResetAuthenticatorWarning" class="btn btn-default">Reset authenticator key</a>
-}
+    [RazorInject]
+    public IModelExpressionProvider ModelExpressionProvider { get; private set; }
 
-@section Scripts {
-    @await Html.PartialAsync("_ValidationScriptsPartial")
+    [RazorInject]
+    public IUrlHelper Url { get; private set; }
+
+    [RazorInject]
+    public IViewComponentHelper Component { get; private set; }
+
+    [RazorInject]
+    public IJsonHelper Json { get; private set; }
+
+    [RazorInject]
+    public IHtmlHelper<TwoFactorAuthenticationViewModel> Html { get; private set; }
+  }
 }

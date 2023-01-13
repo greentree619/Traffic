@@ -1,0 +1,76 @@
+﻿// Decompiled with JetBrains decompiler
+// Type: AspNetCore._Views_Home_TweetUrl_cshtml
+// Assembly: Traffic.PrecompiledViews, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+// MVID: 8B37BA40-0390-40A7-A536-D9CCDBC36390
+// Assembly location: D:\Workstation\TonniProjects\TrafficWebDeploy\Traffic.PrecompiledViews.dll
+
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Razor;
+using Microsoft.AspNetCore.Mvc.Razor.Internal;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.Mvc.ViewFeatures;
+using System;
+using System.Collections.Generic;
+using System.Linq.Expressions;
+using System.Threading.Tasks;
+using Traffic.Models;
+
+namespace AspNetCore
+{
+  public class _Views_Home_TweetUrl_cshtml : RazorPage<IEnumerable<tweeturl>>
+  {
+    public virtual async Task ExecuteAsync()
+    {
+      _Views_Home_TweetUrl_cshtml homeTweetUrlCshtml = this;
+      homeTweetUrlCshtml.ViewData["Title"] = (object) "TweetUrl";
+      // ISSUE: explicit non-virtual call
+      __nonvirtual (homeTweetUrlCshtml.Layout) = "~/Views/Shared/_Layout.cshtml";
+      homeTweetUrlCshtml.BeginContext(136, 331, true);
+      homeTweetUrlCshtml.WriteLiteral("\r\n<h2>TweetUrl</h2>\r\n\r\n<table class=\"table\">\r\n    <thead>\r\n        <tr>\r\n            <th style=\"width: 60%;text-align:center;\">\r\n                Urls\r\n            </th>\r\n            <th style=\"width: 40%;text-align:center;\">\r\n                Twitter Urls\r\n            </th>\r\n        </tr>\r\n    </thead>\r\n    <tbody id=\"resultTb\">\r\n");
+      homeTweetUrlCshtml.EndContext();
+      foreach (tweeturl tweeturl in homeTweetUrlCshtml.Model)
+      {
+        tweeturl item = tweeturl;
+        homeTweetUrlCshtml.BeginContext(516, 120, true);
+        homeTweetUrlCshtml.WriteLiteral("             <tr >\r\n                <td style=\"text-align:center;\">\r\n                    <div>\r\n                        ");
+        homeTweetUrlCshtml.EndContext();
+        homeTweetUrlCshtml.BeginContext(637, 38, false);
+        homeTweetUrlCshtml.Write((object) homeTweetUrlCshtml.Html.DisplayFor<IEnumerable<tweeturl>, string>((Expression<Func<IEnumerable<tweeturl>, string>>) (modelItem => item.url)));
+        homeTweetUrlCshtml.EndContext();
+        homeTweetUrlCshtml.BeginContext(675, 124, true);
+        homeTweetUrlCshtml.WriteLiteral("\r\n                    </div>\r\n                </td>\r\n                <td style=\"text-align:center;\">\r\n                    <a");
+        homeTweetUrlCshtml.EndContext();
+        homeTweetUrlCshtml.BeginWriteAttribute("href", " href=\"", 799, "\"", 846, 1);
+        homeTweetUrlCshtml.WriteAttributeValue("", 806, (object) homeTweetUrlCshtml.Html.DisplayFor<IEnumerable<tweeturl>, string>((Expression<Func<IEnumerable<tweeturl>, string>>) (modelItem => item.turl)), 806, 40, false);
+        homeTweetUrlCshtml.EndWriteAttribute();
+        homeTweetUrlCshtml.BeginContext(847, 43, true);
+        homeTweetUrlCshtml.WriteLiteral(" style=\"color:deepskyblue\" target=\"_blank\">");
+        homeTweetUrlCshtml.EndContext();
+        homeTweetUrlCshtml.BeginContext(891, 39, false);
+        homeTweetUrlCshtml.Write((object) homeTweetUrlCshtml.Html.DisplayFor<IEnumerable<tweeturl>, string>((Expression<Func<IEnumerable<tweeturl>, string>>) (modelItem => item.turl)));
+        homeTweetUrlCshtml.EndContext();
+        homeTweetUrlCshtml.BeginContext(930, 49, true);
+        homeTweetUrlCshtml.WriteLiteral("</a>\r\n                </td>\r\n             </tr>\r\n");
+        homeTweetUrlCshtml.EndContext();
+      }
+      homeTweetUrlCshtml.BeginContext(990, 22, true);
+      homeTweetUrlCshtml.WriteLiteral("    </tbody>\r\n</table>");
+      homeTweetUrlCshtml.EndContext();
+    }
+
+    [RazorInject]
+    public IModelExpressionProvider ModelExpressionProvider { get; private set; }
+
+    [RazorInject]
+    public IUrlHelper Url { get; private set; }
+
+    [RazorInject]
+    public IViewComponentHelper Component { get; private set; }
+
+    [RazorInject]
+    public IJsonHelper Json { get; private set; }
+
+    [RazorInject]
+    public IHtmlHelper<IEnumerable<tweeturl>> Html { get; private set; }
+  }
+}

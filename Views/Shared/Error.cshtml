@@ -1,22 +1,58 @@
-﻿@model ErrorViewModel
-@{
-    ViewData["Title"] = "Error";
-}
+﻿// Decompiled with JetBrains decompiler
+// Type: AspNetCore._Views_Shared_Error_cshtml
+// Assembly: Traffic.PrecompiledViews, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+// MVID: 8B37BA40-0390-40A7-A536-D9CCDBC36390
+// Assembly location: D:\Workstation\TonniProjects\TrafficWebDeploy\Traffic.PrecompiledViews.dll
 
-<h1 class="text-danger">Error.</h1>
-<h2 class="text-danger">An error occurred while processing your request.</h2>
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Razor;
+using Microsoft.AspNetCore.Mvc.Razor.Internal;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.Mvc.ViewFeatures;
+using System.Threading.Tasks;
+using Traffic.Models;
 
-@if (Model.ShowRequestId)
+namespace AspNetCore
 {
-    <p>
-        <strong>Request ID:</strong> <code>@Model.RequestId</code>
-    </p>
-}
+  public class _Views_Shared_Error_cshtml : RazorPage<ErrorViewModel>
+  {
+    public virtual async Task ExecuteAsync()
+    {
+      _Views_Shared_Error_cshtml sharedErrorCshtml = this;
+      sharedErrorCshtml.ViewData["Title"] = (object) "Error";
+      sharedErrorCshtml.BeginContext(64, 120, true);
+      sharedErrorCshtml.WriteLiteral("\r\n<h1 class=\"text-danger\">Error.</h1>\r\n<h2 class=\"text-danger\">An error occurred while processing your request.</h2>\r\n\r\n");
+      sharedErrorCshtml.EndContext();
+      if (sharedErrorCshtml.Model.ShowRequestId)
+      {
+        sharedErrorCshtml.BeginContext(214, 52, true);
+        sharedErrorCshtml.WriteLiteral("    <p>\r\n        <strong>Request ID:</strong> <code>");
+        sharedErrorCshtml.EndContext();
+        sharedErrorCshtml.BeginContext(267, 15, false);
+        sharedErrorCshtml.Write(sharedErrorCshtml.Model.RequestId);
+        sharedErrorCshtml.EndContext();
+        sharedErrorCshtml.BeginContext(282, 19, true);
+        sharedErrorCshtml.WriteLiteral("</code>\r\n    </p>\r\n");
+        sharedErrorCshtml.EndContext();
+      }
+      sharedErrorCshtml.BeginContext(304, 562, true);
+      sharedErrorCshtml.WriteLiteral("\r\n<h3>Development Mode</h3>\r\n<p>\r\n    Swapping to <strong>Development</strong> environment will display more detailed information about the error that occurred.\r\n</p>\r\n<p>\r\n    <strong>Development environment should not be enabled in deployed applications</strong>, as it can result in sensitive information from exceptions being displayed to end users. For local debugging, development environment can be enabled by setting the <strong>ASPNETCORE_ENVIRONMENT</strong> environment variable to <strong>Development</strong>, and restarting the application.\r\n</p>\r\n");
+      sharedErrorCshtml.EndContext();
+    }
 
-<h3>Development Mode</h3>
-<p>
-    Swapping to <strong>Development</strong> environment will display more detailed information about the error that occurred.
-</p>
-<p>
-    <strong>Development environment should not be enabled in deployed applications</strong>, as it can result in sensitive information from exceptions being displayed to end users. For local debugging, development environment can be enabled by setting the <strong>ASPNETCORE_ENVIRONMENT</strong> environment variable to <strong>Development</strong>, and restarting the application.
-</p>
+    [RazorInject]
+    public IModelExpressionProvider ModelExpressionProvider { get; private set; }
+
+    [RazorInject]
+    public IUrlHelper Url { get; private set; }
+
+    [RazorInject]
+    public IViewComponentHelper Component { get; private set; }
+
+    [RazorInject]
+    public IJsonHelper Json { get; private set; }
+
+    [RazorInject]
+    public IHtmlHelper<ErrorViewModel> Html { get; private set; }
+  }
+}

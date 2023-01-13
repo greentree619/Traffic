@@ -1,26 +1,115 @@
-﻿@{
-    ViewData["Title"] = "Generate two-factor authentication (2FA) recovery codes";
-    ViewData.AddActivePage(ManageNavPages.TwoFactorAuthentication);
+﻿// Decompiled with JetBrains decompiler
+// Type: AspNetCore._Views_Manage_GenerateRecoveryCodes_cshtml
+// Assembly: Traffic.PrecompiledViews, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+// MVID: 8B37BA40-0390-40A7-A536-D9CCDBC36390
+// Assembly location: D:\Workstation\TonniProjects\TrafficWebDeploy\Traffic.PrecompiledViews.dll
+
+using Microsoft.AspNetCore.Html;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Razor;
+using Microsoft.AspNetCore.Mvc.Razor.Internal;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.Mvc.TagHelpers;
+using Microsoft.AspNetCore.Mvc.ViewFeatures;
+using Microsoft.AspNetCore.Razor.Runtime.TagHelpers;
+using Microsoft.AspNetCore.Razor.TagHelpers;
+using System;
+using System.Text.Encodings.Web;
+using System.Threading.Tasks;
+using Traffic.Views.Manage;
+
+namespace AspNetCore
+{
+  public class _Views_Manage_GenerateRecoveryCodes_cshtml : RazorPage<object>
+  {
+    private static readonly TagHelperAttribute __tagHelperAttribute_0 = new TagHelperAttribute("asp-action", (object) "ResetAuthenticatorWarning", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_1 = new TagHelperAttribute("asp-action", (object) "GenerateRecoveryCodes", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_2 = new TagHelperAttribute("method", (object) "post", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_3 = new TagHelperAttribute("class", (object) new HtmlString("form-group"), HtmlAttributeValueStyle.DoubleQuotes);
+    private string __tagHelperStringValueBuffer;
+    private TagHelperExecutionContext __tagHelperExecutionContext;
+    private TagHelperRunner __tagHelperRunner = new TagHelperRunner();
+    private TagHelperScopeManager __backed__tagHelperScopeManager;
+    private AnchorTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper;
+    private FormTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper;
+    private RenderAtEndOfFormTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper;
+
+    private TagHelperScopeManager __tagHelperScopeManager
+    {
+      get
+      {
+        if (this.__backed__tagHelperScopeManager == null)
+          this.__backed__tagHelperScopeManager = new TagHelperScopeManager(new Action<HtmlEncoder>(((RazorPageBase) this).StartTagHelperWritingScope), new Func<TagHelperContent>(((RazorPageBase) this).EndTagHelperWritingScope));
+        return this.__backed__tagHelperScopeManager;
+      }
+    }
+
+    public virtual async Task ExecuteAsync()
+    {
+      _Views_Manage_GenerateRecoveryCodes_cshtml recoveryCodesCshtml = this;
+      recoveryCodesCshtml.ViewData["Title"] = (object) "Generate two-factor authentication (2FA) recovery codes";
+      recoveryCodesCshtml.ViewData.AddActivePage(ManageNavPages.TwoFactorAuthentication);
+      recoveryCodesCshtml.BeginContext(160, 6, true);
+      recoveryCodesCshtml.WriteLiteral("\r\n<h2>");
+      recoveryCodesCshtml.EndContext();
+      recoveryCodesCshtml.BeginContext(167, 17, false);
+      recoveryCodesCshtml.Write(recoveryCodesCshtml.ViewData["Title"]);
+      recoveryCodesCshtml.EndContext();
+      recoveryCodesCshtml.BeginContext(184, 511, true);
+      recoveryCodesCshtml.WriteLiteral("</h2>\r\n\r\n<div class=\"alert alert-warning\" role=\"alert\">\r\n    <p>\r\n        <span class=\"glyphicon glyphicon-warning-sign\"></span>\r\n        <strong>This action generates new recovery codes.</strong>\r\n    </p>\r\n    <p>\r\n        If you lose your device and don't have the recovery codes you will lose access to your account.\r\n    </p>\r\n    <p>\r\n        Generating new recovery codes does not change the keys used in authenticator apps. If you wish to change the key\r\n        used in an authenticator app you should ");
+      recoveryCodesCshtml.EndContext();
+      recoveryCodesCshtml.BeginContext(695, 76, false);
+      // ISSUE: reference to a compiler-generated method
+      recoveryCodesCshtml.__tagHelperExecutionContext = recoveryCodesCshtml.__tagHelperScopeManager.Begin("a", TagMode.StartTagAndEndTag, "f5025ec4f44a4af898b91d8aab9d985f", new Func<Task>(recoveryCodesCshtml.\u003CExecuteAsync\u003Eb__13_0));
+      recoveryCodesCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper = recoveryCodesCshtml.CreateTagHelper<AnchorTagHelper>();
+      recoveryCodesCshtml.__tagHelperExecutionContext.Add((ITagHelper) recoveryCodesCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper);
+      recoveryCodesCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.Action = (string) _Views_Manage_GenerateRecoveryCodes_cshtml.__tagHelperAttribute_0.Value;
+      recoveryCodesCshtml.__tagHelperExecutionContext.AddTagHelperAttribute(_Views_Manage_GenerateRecoveryCodes_cshtml.__tagHelperAttribute_0);
+      await recoveryCodesCshtml.__tagHelperRunner.RunAsync(recoveryCodesCshtml.__tagHelperExecutionContext);
+      if (!recoveryCodesCshtml.__tagHelperExecutionContext.Output.IsContentModified)
+        await recoveryCodesCshtml.__tagHelperExecutionContext.SetOutputContentAsync();
+      recoveryCodesCshtml.Write((object) recoveryCodesCshtml.__tagHelperExecutionContext.Output);
+      recoveryCodesCshtml.__tagHelperExecutionContext = recoveryCodesCshtml.__tagHelperScopeManager.End();
+      recoveryCodesCshtml.EndContext();
+      recoveryCodesCshtml.BeginContext(771, 33, true);
+      recoveryCodesCshtml.WriteLiteral("\r\n    </p>\r\n</div>\r\n\r\n<div>\r\n    ");
+      recoveryCodesCshtml.EndContext();
+      recoveryCodesCshtml.BeginContext(804, 174, false);
+      // ISSUE: reference to a compiler-generated method
+      recoveryCodesCshtml.__tagHelperExecutionContext = recoveryCodesCshtml.__tagHelperScopeManager.Begin("form", TagMode.StartTagAndEndTag, "b43a008c03c743789acaa48fc2dd6cd5", new Func<Task>(recoveryCodesCshtml.\u003CExecuteAsync\u003Eb__13_1));
+      recoveryCodesCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper = recoveryCodesCshtml.CreateTagHelper<FormTagHelper>();
+      recoveryCodesCshtml.__tagHelperExecutionContext.Add((ITagHelper) recoveryCodesCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper);
+      recoveryCodesCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper = recoveryCodesCshtml.CreateTagHelper<RenderAtEndOfFormTagHelper>();
+      recoveryCodesCshtml.__tagHelperExecutionContext.Add((ITagHelper) recoveryCodesCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper);
+      recoveryCodesCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper.Action = (string) _Views_Manage_GenerateRecoveryCodes_cshtml.__tagHelperAttribute_1.Value;
+      recoveryCodesCshtml.__tagHelperExecutionContext.AddTagHelperAttribute(_Views_Manage_GenerateRecoveryCodes_cshtml.__tagHelperAttribute_1);
+      recoveryCodesCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper.Method = (string) _Views_Manage_GenerateRecoveryCodes_cshtml.__tagHelperAttribute_2.Value;
+      recoveryCodesCshtml.__tagHelperExecutionContext.AddTagHelperAttribute(_Views_Manage_GenerateRecoveryCodes_cshtml.__tagHelperAttribute_2);
+      recoveryCodesCshtml.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Manage_GenerateRecoveryCodes_cshtml.__tagHelperAttribute_3);
+      await recoveryCodesCshtml.__tagHelperRunner.RunAsync(recoveryCodesCshtml.__tagHelperExecutionContext);
+      if (!recoveryCodesCshtml.__tagHelperExecutionContext.Output.IsContentModified)
+        await recoveryCodesCshtml.__tagHelperExecutionContext.SetOutputContentAsync();
+      recoveryCodesCshtml.Write((object) recoveryCodesCshtml.__tagHelperExecutionContext.Output);
+      recoveryCodesCshtml.__tagHelperExecutionContext = recoveryCodesCshtml.__tagHelperScopeManager.End();
+      recoveryCodesCshtml.EndContext();
+      recoveryCodesCshtml.BeginContext(978, 10, true);
+      recoveryCodesCshtml.WriteLiteral("\r\n</div>\r\n");
+      recoveryCodesCshtml.EndContext();
+    }
+
+    [RazorInject]
+    public IModelExpressionProvider ModelExpressionProvider { get; private set; }
+
+    [RazorInject]
+    public IUrlHelper Url { get; private set; }
+
+    [RazorInject]
+    public IViewComponentHelper Component { get; private set; }
+
+    [RazorInject]
+    public IJsonHelper Json { get; private set; }
+
+    [RazorInject]
+    public IHtmlHelper<object> Html { get; private set; }
+  }
 }
-
-<h2>@ViewData["Title"]</h2>
-
-<div class="alert alert-warning" role="alert">
-    <p>
-        <span class="glyphicon glyphicon-warning-sign"></span>
-        <strong>This action generates new recovery codes.</strong>
-    </p>
-    <p>
-        If you lose your device and don't have the recovery codes you will lose access to your account.
-    </p>
-    <p>
-        Generating new recovery codes does not change the keys used in authenticator apps. If you wish to change the key
-        used in an authenticator app you should <a asp-action="ResetAuthenticatorWarning">reset your authenticator keys.</a>
-    </p>
-</div>
-
-<div>
-    <form asp-action="GenerateRecoveryCodes" method="post" class="form-group">
-        <button class="btn btn-danger" type="submit">Generate Recovery Codes</button>
-    </form>
-</div>

@@ -1,16 +1,171 @@
-﻿@using Traffic.Views.Manage
-@inject SignInManager<ApplicationUser> SignInManager
-@{
-    var hasExternalLogins = (await SignInManager.GetExternalAuthenticationSchemesAsync()).Any();
-}
+﻿// Decompiled with JetBrains decompiler
+// Type: AspNetCore._Views_Manage__ManageNav_cshtml
+// Assembly: Traffic.PrecompiledViews, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+// MVID: 8B37BA40-0390-40A7-A536-D9CCDBC36390
+// Assembly location: D:\Workstation\TonniProjects\TrafficWebDeploy\Traffic.PrecompiledViews.dll
 
-<ul class="nav nav-pills nav-stacked">
-    <li class="@ManageNavPages.IndexNavClass(ViewContext)"><a asp-action="Index">Profile</a></li>
-    <li class="@ManageNavPages.ChangePasswordNavClass(ViewContext)"><a asp-action="ChangePassword">Password</a></li>
-    @if (hasExternalLogins)
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Razor;
+using Microsoft.AspNetCore.Mvc.Razor.Internal;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.Mvc.TagHelpers;
+using Microsoft.AspNetCore.Mvc.ViewFeatures;
+using Microsoft.AspNetCore.Razor.Runtime.TagHelpers;
+using Microsoft.AspNetCore.Razor.TagHelpers;
+using System;
+using System.Linq;
+using System.Text.Encodings.Web;
+using System.Threading.Tasks;
+using Traffic.Models;
+using Traffic.Views.Manage;
+
+namespace AspNetCore
+{
+  public class _Views_Manage__ManageNav_cshtml : RazorPage<object>
+  {
+    private static readonly TagHelperAttribute __tagHelperAttribute_0 = new TagHelperAttribute("asp-action", (object) "Index", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_1 = new TagHelperAttribute("asp-action", (object) "ChangePassword", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_2 = new TagHelperAttribute("asp-action", (object) "ExternalLogins", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_3 = new TagHelperAttribute("asp-action", (object) "TwoFactorAuthentication", HtmlAttributeValueStyle.DoubleQuotes);
+    private string __tagHelperStringValueBuffer;
+    private TagHelperExecutionContext __tagHelperExecutionContext;
+    private TagHelperRunner __tagHelperRunner = new TagHelperRunner();
+    private TagHelperScopeManager __backed__tagHelperScopeManager;
+    private AnchorTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper;
+
+    private TagHelperScopeManager __tagHelperScopeManager
     {
-        <li class="@ManageNavPages.ExternalLoginsNavClass(ViewContext)"><a asp-action="ExternalLogins">External logins</a></li>
+      get
+      {
+        if (this.__backed__tagHelperScopeManager == null)
+          this.__backed__tagHelperScopeManager = new TagHelperScopeManager(new Action<HtmlEncoder>(((RazorPageBase) this).StartTagHelperWritingScope), new Func<TagHelperContent>(((RazorPageBase) this).EndTagHelperWritingScope));
+        return this.__backed__tagHelperScopeManager;
+      }
     }
-    <li class="@ManageNavPages.TwoFactorAuthenticationNavClass(ViewContext)"><a asp-action="TwoFactorAuthentication">Two-factor authentication</a></li>
-</ul>
 
+    public virtual async Task ExecuteAsync()
+    {
+      _Views_Manage__ManageNav_cshtml manageManageNavCshtml = this;
+      bool hasExternalLogins = (await manageManageNavCshtml.SignInManager.GetExternalAuthenticationSchemesAsync()).Any<AuthenticationScheme>();
+      manageManageNavCshtml.BeginContext(188, 49, true);
+      manageManageNavCshtml.WriteLiteral("\r\n<ul class=\"nav nav-pills nav-stacked\">\r\n    <li");
+      manageManageNavCshtml.EndContext();
+      manageManageNavCshtml.BeginWriteAttribute("class", " class=\"", 237, "\"", 287, 1);
+      manageManageNavCshtml.WriteAttributeValue("", 245, (object) ManageNavPages.IndexNavClass(manageManageNavCshtml.ViewContext), 245, 42, false);
+      manageManageNavCshtml.EndWriteAttribute();
+      manageManageNavCshtml.BeginContext(288, 1, true);
+      manageManageNavCshtml.WriteLiteral(">");
+      manageManageNavCshtml.EndContext();
+      manageManageNavCshtml.BeginContext(289, 33, false);
+      // ISSUE: reference to a compiler-generated method
+      manageManageNavCshtml.__tagHelperExecutionContext = manageManageNavCshtml.__tagHelperScopeManager.Begin("a", TagMode.StartTagAndEndTag, "d8bcfe29f9134ce79ee586ac36a5872d", new Func<Task>(manageManageNavCshtml.\u003CExecuteAsync\u003Eb__11_0));
+      manageManageNavCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper = manageManageNavCshtml.CreateTagHelper<AnchorTagHelper>();
+      manageManageNavCshtml.__tagHelperExecutionContext.Add((ITagHelper) manageManageNavCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper);
+      manageManageNavCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.Action = (string) _Views_Manage__ManageNav_cshtml.__tagHelperAttribute_0.Value;
+      manageManageNavCshtml.__tagHelperExecutionContext.AddTagHelperAttribute(_Views_Manage__ManageNav_cshtml.__tagHelperAttribute_0);
+      await manageManageNavCshtml.__tagHelperRunner.RunAsync(manageManageNavCshtml.__tagHelperExecutionContext);
+      if (!manageManageNavCshtml.__tagHelperExecutionContext.Output.IsContentModified)
+        await manageManageNavCshtml.__tagHelperExecutionContext.SetOutputContentAsync();
+      manageManageNavCshtml.Write((object) manageManageNavCshtml.__tagHelperExecutionContext.Output);
+      manageManageNavCshtml.__tagHelperExecutionContext = manageManageNavCshtml.__tagHelperScopeManager.End();
+      manageManageNavCshtml.EndContext();
+      manageManageNavCshtml.BeginContext(322, 14, true);
+      manageManageNavCshtml.WriteLiteral("</li>\r\n    <li");
+      manageManageNavCshtml.EndContext();
+      manageManageNavCshtml.BeginWriteAttribute("class", " class=\"", 336, "\"", 395, 1);
+      manageManageNavCshtml.WriteAttributeValue("", 344, (object) ManageNavPages.ChangePasswordNavClass(manageManageNavCshtml.ViewContext), 344, 51, false);
+      manageManageNavCshtml.EndWriteAttribute();
+      manageManageNavCshtml.BeginContext(396, 1, true);
+      manageManageNavCshtml.WriteLiteral(">");
+      manageManageNavCshtml.EndContext();
+      manageManageNavCshtml.BeginContext(397, 43, false);
+      // ISSUE: reference to a compiler-generated method
+      manageManageNavCshtml.__tagHelperExecutionContext = manageManageNavCshtml.__tagHelperScopeManager.Begin("a", TagMode.StartTagAndEndTag, "31f6cf443e784ad7a9764be46023e39c", new Func<Task>(manageManageNavCshtml.\u003CExecuteAsync\u003Eb__11_1));
+      manageManageNavCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper = manageManageNavCshtml.CreateTagHelper<AnchorTagHelper>();
+      manageManageNavCshtml.__tagHelperExecutionContext.Add((ITagHelper) manageManageNavCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper);
+      manageManageNavCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.Action = (string) _Views_Manage__ManageNav_cshtml.__tagHelperAttribute_1.Value;
+      manageManageNavCshtml.__tagHelperExecutionContext.AddTagHelperAttribute(_Views_Manage__ManageNav_cshtml.__tagHelperAttribute_1);
+      await manageManageNavCshtml.__tagHelperRunner.RunAsync(manageManageNavCshtml.__tagHelperExecutionContext);
+      if (!manageManageNavCshtml.__tagHelperExecutionContext.Output.IsContentModified)
+        await manageManageNavCshtml.__tagHelperExecutionContext.SetOutputContentAsync();
+      manageManageNavCshtml.Write((object) manageManageNavCshtml.__tagHelperExecutionContext.Output);
+      manageManageNavCshtml.__tagHelperExecutionContext = manageManageNavCshtml.__tagHelperScopeManager.End();
+      manageManageNavCshtml.EndContext();
+      manageManageNavCshtml.BeginContext(440, 7, true);
+      manageManageNavCshtml.WriteLiteral("</li>\r\n");
+      manageManageNavCshtml.EndContext();
+      if (hasExternalLogins)
+      {
+        manageManageNavCshtml.BeginContext(483, 11, true);
+        manageManageNavCshtml.WriteLiteral("        <li");
+        manageManageNavCshtml.EndContext();
+        manageManageNavCshtml.BeginWriteAttribute("class", " class=\"", 494, "\"", 553, 1);
+        manageManageNavCshtml.WriteAttributeValue("", 502, (object) ManageNavPages.ExternalLoginsNavClass(manageManageNavCshtml.ViewContext), 502, 51, false);
+        manageManageNavCshtml.EndWriteAttribute();
+        manageManageNavCshtml.BeginContext(554, 1, true);
+        manageManageNavCshtml.WriteLiteral(">");
+        manageManageNavCshtml.EndContext();
+        manageManageNavCshtml.BeginContext(555, 50, false);
+        // ISSUE: reference to a compiler-generated method
+        manageManageNavCshtml.__tagHelperExecutionContext = manageManageNavCshtml.__tagHelperScopeManager.Begin("a", TagMode.StartTagAndEndTag, "968ca15b23a943c1af4cb4c8bcae8bce", new Func<Task>(manageManageNavCshtml.\u003CExecuteAsync\u003Eb__11_2));
+        manageManageNavCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper = manageManageNavCshtml.CreateTagHelper<AnchorTagHelper>();
+        manageManageNavCshtml.__tagHelperExecutionContext.Add((ITagHelper) manageManageNavCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper);
+        manageManageNavCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.Action = (string) _Views_Manage__ManageNav_cshtml.__tagHelperAttribute_2.Value;
+        manageManageNavCshtml.__tagHelperExecutionContext.AddTagHelperAttribute(_Views_Manage__ManageNav_cshtml.__tagHelperAttribute_2);
+        await manageManageNavCshtml.__tagHelperRunner.RunAsync(manageManageNavCshtml.__tagHelperExecutionContext);
+        if (!manageManageNavCshtml.__tagHelperExecutionContext.Output.IsContentModified)
+          await manageManageNavCshtml.__tagHelperExecutionContext.SetOutputContentAsync();
+        manageManageNavCshtml.Write((object) manageManageNavCshtml.__tagHelperExecutionContext.Output);
+        manageManageNavCshtml.__tagHelperExecutionContext = manageManageNavCshtml.__tagHelperScopeManager.End();
+        manageManageNavCshtml.EndContext();
+        manageManageNavCshtml.BeginContext(605, 7, true);
+        manageManageNavCshtml.WriteLiteral("</li>\r\n");
+        manageManageNavCshtml.EndContext();
+      }
+      manageManageNavCshtml.BeginContext(619, 7, true);
+      manageManageNavCshtml.WriteLiteral("    <li");
+      manageManageNavCshtml.EndContext();
+      manageManageNavCshtml.BeginWriteAttribute("class", " class=\"", 626, "\"", 694, 1);
+      manageManageNavCshtml.WriteAttributeValue("", 634, (object) ManageNavPages.TwoFactorAuthenticationNavClass(manageManageNavCshtml.ViewContext), 634, 60, false);
+      manageManageNavCshtml.EndWriteAttribute();
+      manageManageNavCshtml.BeginContext(695, 1, true);
+      manageManageNavCshtml.WriteLiteral(">");
+      manageManageNavCshtml.EndContext();
+      manageManageNavCshtml.BeginContext(696, 69, false);
+      // ISSUE: reference to a compiler-generated method
+      manageManageNavCshtml.__tagHelperExecutionContext = manageManageNavCshtml.__tagHelperScopeManager.Begin("a", TagMode.StartTagAndEndTag, "7e22ea49f1b14a7988e45107b8505fa7", new Func<Task>(manageManageNavCshtml.\u003CExecuteAsync\u003Eb__11_3));
+      manageManageNavCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper = manageManageNavCshtml.CreateTagHelper<AnchorTagHelper>();
+      manageManageNavCshtml.__tagHelperExecutionContext.Add((ITagHelper) manageManageNavCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper);
+      manageManageNavCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.Action = (string) _Views_Manage__ManageNav_cshtml.__tagHelperAttribute_3.Value;
+      manageManageNavCshtml.__tagHelperExecutionContext.AddTagHelperAttribute(_Views_Manage__ManageNav_cshtml.__tagHelperAttribute_3);
+      await manageManageNavCshtml.__tagHelperRunner.RunAsync(manageManageNavCshtml.__tagHelperExecutionContext);
+      if (!manageManageNavCshtml.__tagHelperExecutionContext.Output.IsContentModified)
+        await manageManageNavCshtml.__tagHelperExecutionContext.SetOutputContentAsync();
+      manageManageNavCshtml.Write((object) manageManageNavCshtml.__tagHelperExecutionContext.Output);
+      manageManageNavCshtml.__tagHelperExecutionContext = manageManageNavCshtml.__tagHelperScopeManager.End();
+      manageManageNavCshtml.EndContext();
+      manageManageNavCshtml.BeginContext(765, 16, true);
+      manageManageNavCshtml.WriteLiteral("</li>\r\n</ul>\r\n\r\n");
+      manageManageNavCshtml.EndContext();
+    }
+
+    [RazorInject]
+    public Microsoft.AspNetCore.Identity.SignInManager<ApplicationUser> SignInManager { get; private set; }
+
+    [RazorInject]
+    public IModelExpressionProvider ModelExpressionProvider { get; private set; }
+
+    [RazorInject]
+    public IUrlHelper Url { get; private set; }
+
+    [RazorInject]
+    public IViewComponentHelper Component { get; private set; }
+
+    [RazorInject]
+    public IJsonHelper Json { get; private set; }
+
+    [RazorInject]
+    public IHtmlHelper<object> Html { get; private set; }
+  }
+}

@@ -1,10 +1,62 @@
-﻿@model string
+﻿// Decompiled with JetBrains decompiler
+// Type: AspNetCore._Views_Manage__StatusMessage_cshtml
+// Assembly: Traffic.PrecompiledViews, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+// MVID: 8B37BA40-0390-40A7-A536-D9CCDBC36390
+// Assembly location: D:\Workstation\TonniProjects\TrafficWebDeploy\Traffic.PrecompiledViews.dll
 
-@if (!String.IsNullOrEmpty(Model))
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Razor;
+using Microsoft.AspNetCore.Mvc.Razor.Internal;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.Mvc.ViewFeatures;
+using System.Threading.Tasks;
+
+namespace AspNetCore
 {
-    var statusMessageClass = Model.StartsWith("Error") ? "danger" : "success";
-    <div class="alert alert-@statusMessageClass alert-dismissible" role="alert">
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        @Model
-    </div>
+  public class _Views_Manage__StatusMessage_cshtml : RazorPage<string>
+  {
+    public virtual async Task ExecuteAsync()
+    {
+      _Views_Manage__StatusMessage_cshtml statusMessageCshtml = this;
+      statusMessageCshtml.BeginContext(15, 2, true);
+      statusMessageCshtml.WriteLiteral("\r\n");
+      statusMessageCshtml.EndContext();
+      if (string.IsNullOrEmpty(statusMessageCshtml.Model))
+        return;
+      string str = statusMessageCshtml.Model.StartsWith("Error") ? "danger" : "success";
+      statusMessageCshtml.BeginContext(136, 8, true);
+      statusMessageCshtml.WriteLiteral("    <div");
+      statusMessageCshtml.EndContext();
+      statusMessageCshtml.BeginWriteAttribute("class", " class=\"", 144, "\"", 201, 4);
+      statusMessageCshtml.WriteAttributeValue("", 152, (object) "alert", 152, 5, true);
+      statusMessageCshtml.WriteAttributeValue(" ", 157, (object) "alert-", 158, 7, true);
+      statusMessageCshtml.WriteAttributeValue("", 164, (object) str, 164, 19, false);
+      statusMessageCshtml.WriteAttributeValue(" ", 183, (object) "alert-dismissible", 184, 18, true);
+      statusMessageCshtml.EndWriteAttribute();
+      statusMessageCshtml.BeginContext(202, 158, true);
+      statusMessageCshtml.WriteLiteral(" role=\"alert\">\r\n        <button type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></button>\r\n        ");
+      statusMessageCshtml.EndContext();
+      statusMessageCshtml.BeginContext(361, 5, false);
+      statusMessageCshtml.Write(statusMessageCshtml.Model);
+      statusMessageCshtml.EndContext();
+      statusMessageCshtml.BeginContext(366, 14, true);
+      statusMessageCshtml.WriteLiteral("\r\n    </div>\r\n");
+      statusMessageCshtml.EndContext();
+    }
+
+    [RazorInject]
+    public IModelExpressionProvider ModelExpressionProvider { get; private set; }
+
+    [RazorInject]
+    public IUrlHelper Url { get; private set; }
+
+    [RazorInject]
+    public IViewComponentHelper Component { get; private set; }
+
+    [RazorInject]
+    public IJsonHelper Json { get; private set; }
+
+    [RazorInject]
+    public IHtmlHelper<string> Html { get; private set; }
+  }
 }

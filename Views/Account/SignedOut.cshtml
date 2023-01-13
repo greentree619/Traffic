@@ -1,8 +1,48 @@
-﻿@{
-    ViewData["Title"] = "Signed out";
-}
+﻿// Decompiled with JetBrains decompiler
+// Type: AspNetCore._Views_Account_SignedOut_cshtml
+// Assembly: Traffic.PrecompiledViews, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+// MVID: 8B37BA40-0390-40A7-A536-D9CCDBC36390
+// Assembly location: D:\Workstation\TonniProjects\TrafficWebDeploy\Traffic.PrecompiledViews.dll
 
-<h2>@ViewData["Title"]</h2>
-<p>
-    You have successfully signed out.
-</p>
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Razor;
+using Microsoft.AspNetCore.Mvc.Razor.Internal;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.Mvc.ViewFeatures;
+using System.Threading.Tasks;
+
+namespace AspNetCore
+{
+  public class _Views_Account_SignedOut_cshtml : RazorPage<object>
+  {
+    public virtual async Task ExecuteAsync()
+    {
+      _Views_Account_SignedOut_cshtml accountSignedOutCshtml = this;
+      accountSignedOutCshtml.ViewData["Title"] = (object) "Signed out";
+      accountSignedOutCshtml.BeginContext(46, 6, true);
+      accountSignedOutCshtml.WriteLiteral("\r\n<h2>");
+      accountSignedOutCshtml.EndContext();
+      accountSignedOutCshtml.BeginContext(53, 17, false);
+      accountSignedOutCshtml.Write(accountSignedOutCshtml.ViewData["Title"]);
+      accountSignedOutCshtml.EndContext();
+      accountSignedOutCshtml.BeginContext(70, 57, true);
+      accountSignedOutCshtml.WriteLiteral("</h2>\r\n<p>\r\n    You have successfully signed out.\r\n</p>\r\n");
+      accountSignedOutCshtml.EndContext();
+    }
+
+    [RazorInject]
+    public IModelExpressionProvider ModelExpressionProvider { get; private set; }
+
+    [RazorInject]
+    public IUrlHelper Url { get; private set; }
+
+    [RazorInject]
+    public IViewComponentHelper Component { get; private set; }
+
+    [RazorInject]
+    public IJsonHelper Json { get; private set; }
+
+    [RazorInject]
+    public IHtmlHelper<object> Html { get; private set; }
+  }
+}

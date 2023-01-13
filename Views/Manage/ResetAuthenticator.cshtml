@@ -1,21 +1,97 @@
-﻿@{
-    ViewData["Title"] = "Reset authenticator key";
-    ViewData.AddActivePage(ManageNavPages.TwoFactorAuthentication);
-}
+﻿// Decompiled with JetBrains decompiler
+// Type: AspNetCore._Views_Manage_ResetAuthenticator_cshtml
+// Assembly: Traffic.PrecompiledViews, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+// MVID: 8B37BA40-0390-40A7-A536-D9CCDBC36390
+// Assembly location: D:\Workstation\TonniProjects\TrafficWebDeploy\Traffic.PrecompiledViews.dll
 
-<h4>@ViewData["Title"]</h4>
-<div class="alert alert-warning" role="alert">
-    <p>
-        <span class="glyphicon glyphicon-warning-sign"></span>
-        <strong>If you reset your authenticator key your authenticator app will not work until you reconfigure it.</strong>
-    </p>
-    <p>
-        This process disables 2FA until you verify your authenticator app and will also reset your 2FA recovery codes.
-        If you do not complete your authenticator app configuration you may lose access to your account.
-    </p>
-</div>
-<div>
-    <form asp-action="ResetAuthenticator" method="post" class="form-group">
-        <button class="btn btn-danger" type="submit">Reset authenticator key</button>
-    </form>
-</div>
+using Microsoft.AspNetCore.Html;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Razor;
+using Microsoft.AspNetCore.Mvc.Razor.Internal;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.Mvc.TagHelpers;
+using Microsoft.AspNetCore.Mvc.ViewFeatures;
+using Microsoft.AspNetCore.Razor.Runtime.TagHelpers;
+using Microsoft.AspNetCore.Razor.TagHelpers;
+using System;
+using System.Text.Encodings.Web;
+using System.Threading.Tasks;
+using Traffic.Views.Manage;
+
+namespace AspNetCore
+{
+  public class _Views_Manage_ResetAuthenticator_cshtml : RazorPage<object>
+  {
+    private static readonly TagHelperAttribute __tagHelperAttribute_0 = new TagHelperAttribute("asp-action", (object) "ResetAuthenticator", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_1 = new TagHelperAttribute("method", (object) "post", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_2 = new TagHelperAttribute("class", (object) new HtmlString("form-group"), HtmlAttributeValueStyle.DoubleQuotes);
+    private string __tagHelperStringValueBuffer;
+    private TagHelperExecutionContext __tagHelperExecutionContext;
+    private TagHelperRunner __tagHelperRunner = new TagHelperRunner();
+    private TagHelperScopeManager __backed__tagHelperScopeManager;
+    private FormTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper;
+    private RenderAtEndOfFormTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper;
+
+    private TagHelperScopeManager __tagHelperScopeManager
+    {
+      get
+      {
+        if (this.__backed__tagHelperScopeManager == null)
+          this.__backed__tagHelperScopeManager = new TagHelperScopeManager(new Action<HtmlEncoder>(((RazorPageBase) this).StartTagHelperWritingScope), new Func<TagHelperContent>(((RazorPageBase) this).EndTagHelperWritingScope));
+        return this.__backed__tagHelperScopeManager;
+      }
+    }
+
+    public virtual async Task ExecuteAsync()
+    {
+      _Views_Manage_ResetAuthenticator_cshtml authenticatorCshtml = this;
+      authenticatorCshtml.ViewData["Title"] = (object) "Reset authenticator key";
+      authenticatorCshtml.ViewData.AddActivePage(ManageNavPages.TwoFactorAuthentication);
+      authenticatorCshtml.BeginContext(128, 6, true);
+      authenticatorCshtml.WriteLiteral("\r\n<h4>");
+      authenticatorCshtml.EndContext();
+      authenticatorCshtml.BeginContext(135, 17, false);
+      authenticatorCshtml.Write(authenticatorCshtml.ViewData["Title"]);
+      authenticatorCshtml.EndContext();
+      authenticatorCshtml.BeginContext(152, 527, true);
+      authenticatorCshtml.WriteLiteral("</h4>\r\n<div class=\"alert alert-warning\" role=\"alert\">\r\n    <p>\r\n        <span class=\"glyphicon glyphicon-warning-sign\"></span>\r\n        <strong>If you reset your authenticator key your authenticator app will not work until you reconfigure it.</strong>\r\n    </p>\r\n    <p>\r\n        This process disables 2FA until you verify your authenticator app and will also reset your 2FA recovery codes.\r\n        If you do not complete your authenticator app configuration you may lose access to your account.\r\n    </p>\r\n</div>\r\n<div>\r\n    ");
+      authenticatorCshtml.EndContext();
+      authenticatorCshtml.BeginContext(679, 171, false);
+      // ISSUE: reference to a compiler-generated method
+      authenticatorCshtml.__tagHelperExecutionContext = authenticatorCshtml.__tagHelperScopeManager.Begin("form", TagMode.StartTagAndEndTag, "3f6c5b28aae747be9e71a37925f891c9", new Func<Task>(authenticatorCshtml.\u003CExecuteAsync\u003Eb__11_0));
+      authenticatorCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper = authenticatorCshtml.CreateTagHelper<FormTagHelper>();
+      authenticatorCshtml.__tagHelperExecutionContext.Add((ITagHelper) authenticatorCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper);
+      authenticatorCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper = authenticatorCshtml.CreateTagHelper<RenderAtEndOfFormTagHelper>();
+      authenticatorCshtml.__tagHelperExecutionContext.Add((ITagHelper) authenticatorCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper);
+      authenticatorCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper.Action = (string) _Views_Manage_ResetAuthenticator_cshtml.__tagHelperAttribute_0.Value;
+      authenticatorCshtml.__tagHelperExecutionContext.AddTagHelperAttribute(_Views_Manage_ResetAuthenticator_cshtml.__tagHelperAttribute_0);
+      authenticatorCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper.Method = (string) _Views_Manage_ResetAuthenticator_cshtml.__tagHelperAttribute_1.Value;
+      authenticatorCshtml.__tagHelperExecutionContext.AddTagHelperAttribute(_Views_Manage_ResetAuthenticator_cshtml.__tagHelperAttribute_1);
+      authenticatorCshtml.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Manage_ResetAuthenticator_cshtml.__tagHelperAttribute_2);
+      await authenticatorCshtml.__tagHelperRunner.RunAsync(authenticatorCshtml.__tagHelperExecutionContext);
+      if (!authenticatorCshtml.__tagHelperExecutionContext.Output.IsContentModified)
+        await authenticatorCshtml.__tagHelperExecutionContext.SetOutputContentAsync();
+      authenticatorCshtml.Write((object) authenticatorCshtml.__tagHelperExecutionContext.Output);
+      authenticatorCshtml.__tagHelperExecutionContext = authenticatorCshtml.__tagHelperScopeManager.End();
+      authenticatorCshtml.EndContext();
+      authenticatorCshtml.BeginContext(850, 8, true);
+      authenticatorCshtml.WriteLiteral("\r\n</div>");
+      authenticatorCshtml.EndContext();
+    }
+
+    [RazorInject]
+    public IModelExpressionProvider ModelExpressionProvider { get; private set; }
+
+    [RazorInject]
+    public IUrlHelper Url { get; private set; }
+
+    [RazorInject]
+    public IViewComponentHelper Component { get; private set; }
+
+    [RazorInject]
+    public IJsonHelper Json { get; private set; }
+
+    [RazorInject]
+    public IHtmlHelper<object> Html { get; private set; }
+  }
+}

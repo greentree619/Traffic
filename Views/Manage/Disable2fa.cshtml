@@ -1,24 +1,115 @@
-﻿@{
-    ViewData["Title"] = "Disable two-factor authentication (2FA)";
-    ViewData.AddActivePage(ManageNavPages.TwoFactorAuthentication);
+﻿// Decompiled with JetBrains decompiler
+// Type: AspNetCore._Views_Manage_Disable2fa_cshtml
+// Assembly: Traffic.PrecompiledViews, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+// MVID: 8B37BA40-0390-40A7-A536-D9CCDBC36390
+// Assembly location: D:\Workstation\TonniProjects\TrafficWebDeploy\Traffic.PrecompiledViews.dll
+
+using Microsoft.AspNetCore.Html;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Razor;
+using Microsoft.AspNetCore.Mvc.Razor.Internal;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.Mvc.TagHelpers;
+using Microsoft.AspNetCore.Mvc.ViewFeatures;
+using Microsoft.AspNetCore.Razor.Runtime.TagHelpers;
+using Microsoft.AspNetCore.Razor.TagHelpers;
+using System;
+using System.Text.Encodings.Web;
+using System.Threading.Tasks;
+using Traffic.Views.Manage;
+
+namespace AspNetCore
+{
+  public class _Views_Manage_Disable2fa_cshtml : RazorPage<object>
+  {
+    private static readonly TagHelperAttribute __tagHelperAttribute_0 = new TagHelperAttribute("asp-action", (object) "ResetAuthenticatorWarning", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_1 = new TagHelperAttribute("asp-action", (object) "Disable2fa", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_2 = new TagHelperAttribute("method", (object) "post", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_3 = new TagHelperAttribute("class", (object) new HtmlString("form-group"), HtmlAttributeValueStyle.DoubleQuotes);
+    private string __tagHelperStringValueBuffer;
+    private TagHelperExecutionContext __tagHelperExecutionContext;
+    private TagHelperRunner __tagHelperRunner = new TagHelperRunner();
+    private TagHelperScopeManager __backed__tagHelperScopeManager;
+    private AnchorTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper;
+    private FormTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper;
+    private RenderAtEndOfFormTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper;
+
+    private TagHelperScopeManager __tagHelperScopeManager
+    {
+      get
+      {
+        if (this.__backed__tagHelperScopeManager == null)
+          this.__backed__tagHelperScopeManager = new TagHelperScopeManager(new Action<HtmlEncoder>(((RazorPageBase) this).StartTagHelperWritingScope), new Func<TagHelperContent>(((RazorPageBase) this).EndTagHelperWritingScope));
+        return this.__backed__tagHelperScopeManager;
+      }
+    }
+
+    public virtual async Task ExecuteAsync()
+    {
+      _Views_Manage_Disable2fa_cshtml disable2faCshtml = this;
+      disable2faCshtml.ViewData["Title"] = (object) "Disable two-factor authentication (2FA)";
+      disable2faCshtml.ViewData.AddActivePage(ManageNavPages.TwoFactorAuthentication);
+      disable2faCshtml.BeginContext(144, 6, true);
+      disable2faCshtml.WriteLiteral("\r\n<h2>");
+      disable2faCshtml.EndContext();
+      disable2faCshtml.BeginContext(151, 17, false);
+      disable2faCshtml.Write(disable2faCshtml.ViewData["Title"]);
+      disable2faCshtml.EndContext();
+      disable2faCshtml.BeginContext(168, 360, true);
+      disable2faCshtml.WriteLiteral("</h2>\r\n\r\n<div class=\"alert alert-warning\" role=\"alert\">\r\n    <p>\r\n        <span class=\"glyphicon glyphicon-warning-sign\"></span>\r\n        <strong>This action only disables 2FA.</strong>\r\n    </p>\r\n    <p>\r\n        Disabling 2FA does not change the keys used in authenticator apps. If you wish to change the key\r\n        used in an authenticator app you should ");
+      disable2faCshtml.EndContext();
+      disable2faCshtml.BeginContext(528, 85, false);
+      // ISSUE: reference to a compiler-generated method
+      disable2faCshtml.__tagHelperExecutionContext = disable2faCshtml.__tagHelperScopeManager.Begin("a", TagMode.StartTagAndEndTag, "fc8a44dfc62d4de5bb9df7ee15f383e7", new Func<Task>(disable2faCshtml.\u003CExecuteAsync\u003Eb__13_0));
+      disable2faCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper = disable2faCshtml.CreateTagHelper<AnchorTagHelper>();
+      disable2faCshtml.__tagHelperExecutionContext.Add((ITagHelper) disable2faCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper);
+      disable2faCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.Action = (string) _Views_Manage_Disable2fa_cshtml.__tagHelperAttribute_0.Value;
+      disable2faCshtml.__tagHelperExecutionContext.AddTagHelperAttribute(_Views_Manage_Disable2fa_cshtml.__tagHelperAttribute_0);
+      await disable2faCshtml.__tagHelperRunner.RunAsync(disable2faCshtml.__tagHelperExecutionContext);
+      if (!disable2faCshtml.__tagHelperExecutionContext.Output.IsContentModified)
+        await disable2faCshtml.__tagHelperExecutionContext.SetOutputContentAsync();
+      disable2faCshtml.Write((object) disable2faCshtml.__tagHelperExecutionContext.Output);
+      disable2faCshtml.__tagHelperExecutionContext = disable2faCshtml.__tagHelperScopeManager.End();
+      disable2faCshtml.EndContext();
+      disable2faCshtml.BeginContext(613, 33, true);
+      disable2faCshtml.WriteLiteral("\r\n    </p>\r\n</div>\r\n\r\n<div>\r\n    ");
+      disable2faCshtml.EndContext();
+      disable2faCshtml.BeginContext(646, 151, false);
+      // ISSUE: reference to a compiler-generated method
+      disable2faCshtml.__tagHelperExecutionContext = disable2faCshtml.__tagHelperScopeManager.Begin("form", TagMode.StartTagAndEndTag, "5f9476a34b124d2b8d232c3101a652f4", new Func<Task>(disable2faCshtml.\u003CExecuteAsync\u003Eb__13_1));
+      disable2faCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper = disable2faCshtml.CreateTagHelper<FormTagHelper>();
+      disable2faCshtml.__tagHelperExecutionContext.Add((ITagHelper) disable2faCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper);
+      disable2faCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper = disable2faCshtml.CreateTagHelper<RenderAtEndOfFormTagHelper>();
+      disable2faCshtml.__tagHelperExecutionContext.Add((ITagHelper) disable2faCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper);
+      disable2faCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper.Action = (string) _Views_Manage_Disable2fa_cshtml.__tagHelperAttribute_1.Value;
+      disable2faCshtml.__tagHelperExecutionContext.AddTagHelperAttribute(_Views_Manage_Disable2fa_cshtml.__tagHelperAttribute_1);
+      disable2faCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper.Method = (string) _Views_Manage_Disable2fa_cshtml.__tagHelperAttribute_2.Value;
+      disable2faCshtml.__tagHelperExecutionContext.AddTagHelperAttribute(_Views_Manage_Disable2fa_cshtml.__tagHelperAttribute_2);
+      disable2faCshtml.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Manage_Disable2fa_cshtml.__tagHelperAttribute_3);
+      await disable2faCshtml.__tagHelperRunner.RunAsync(disable2faCshtml.__tagHelperExecutionContext);
+      if (!disable2faCshtml.__tagHelperExecutionContext.Output.IsContentModified)
+        await disable2faCshtml.__tagHelperExecutionContext.SetOutputContentAsync();
+      disable2faCshtml.Write((object) disable2faCshtml.__tagHelperExecutionContext.Output);
+      disable2faCshtml.__tagHelperExecutionContext = disable2faCshtml.__tagHelperScopeManager.End();
+      disable2faCshtml.EndContext();
+      disable2faCshtml.BeginContext(797, 10, true);
+      disable2faCshtml.WriteLiteral("\r\n</div>\r\n");
+      disable2faCshtml.EndContext();
+    }
+
+    [RazorInject]
+    public IModelExpressionProvider ModelExpressionProvider { get; private set; }
+
+    [RazorInject]
+    public IUrlHelper Url { get; private set; }
+
+    [RazorInject]
+    public IViewComponentHelper Component { get; private set; }
+
+    [RazorInject]
+    public IJsonHelper Json { get; private set; }
+
+    [RazorInject]
+    public IHtmlHelper<object> Html { get; private set; }
+  }
 }
-
-<h2>@ViewData["Title"]</h2>
-
-<div class="alert alert-warning" role="alert">
-    <p>
-        <span class="glyphicon glyphicon-warning-sign"></span>
-        <strong>This action only disables 2FA.</strong>
-    </p>
-    <p>
-        Disabling 2FA does not change the keys used in authenticator apps. If you wish to change the key
-        used in an authenticator app you should <a asp-action="ResetAuthenticatorWarning">reset your
-        authenticator keys.</a>
-    </p>
-</div>
-
-<div>
-    <form asp-action="Disable2fa" method="post" class="form-group">
-        <button class="btn btn-danger" type="submit">Disable 2FA</button>
-    </form>
-</div>

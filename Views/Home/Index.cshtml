@@ -1,150 +1,205 @@
-﻿@model IEnumerable<Traffic.Models.trafficjob>
+﻿// Decompiled with JetBrains decompiler
+// Type: AspNetCore._Views_Home_Index_cshtml
+// Assembly: Traffic.PrecompiledViews, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+// MVID: 8B37BA40-0390-40A7-A536-D9CCDBC36390
+// Assembly location: D:\Workstation\TonniProjects\TrafficWebDeploy\Traffic.PrecompiledViews.dll
 
-@{
-    String startLabel = "";
-    String stopConfirm = "return true;";
-    String pauseLabel = "";
-    String disableCls = "btn-disabled";
-    ViewData["Title"] = "Index";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+using Microsoft.AspNetCore.Html;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Razor;
+using Microsoft.AspNetCore.Mvc.Razor.Internal;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.Mvc.TagHelpers;
+using Microsoft.AspNetCore.Mvc.ViewFeatures;
+using Microsoft.AspNetCore.Razor.Runtime.TagHelpers;
+using Microsoft.AspNetCore.Razor.TagHelpers;
+using System;
+using System.Collections.Generic;
+using System.Linq.Expressions;
+using System.Text.Encodings.Web;
+using System.Threading.Tasks;
+using Traffic.Models;
+
+namespace AspNetCore
+{
+  public class _Views_Home_Index_cshtml : RazorPage<IEnumerable<ApplicationUser>>
+  {
+    private static readonly TagHelperAttribute __tagHelperAttribute_0 = new TagHelperAttribute("asp-action", (object) "TwitterPost", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_1 = new TagHelperAttribute("class", (object) new HtmlString("btn btn-info"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_2 = new TagHelperAttribute("asp-action", (object) "BuilderManager", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_3 = new TagHelperAttribute("asp-action", (object) "OverviewTool", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_4 = new TagHelperAttribute("asp-action", (object) "RssFeedTool", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_5 = new TagHelperAttribute("asp-action", (object) "Statistics", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_6 = new TagHelperAttribute("asp-action", (object) "JobIndex", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_7 = new TagHelperAttribute("class", (object) new HtmlString("btn btn-success btn-xs"), HtmlAttributeValueStyle.DoubleQuotes);
+    private string __tagHelperStringValueBuffer;
+    private TagHelperExecutionContext __tagHelperExecutionContext;
+    private TagHelperRunner __tagHelperRunner = new TagHelperRunner();
+    private TagHelperScopeManager __backed__tagHelperScopeManager;
+    private AnchorTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper;
+
+    private TagHelperScopeManager __tagHelperScopeManager
+    {
+      get
+      {
+        if (this.__backed__tagHelperScopeManager == null)
+          this.__backed__tagHelperScopeManager = new TagHelperScopeManager(new Action<HtmlEncoder>(((RazorPageBase) this).StartTagHelperWritingScope), new Func<TagHelperContent>(((RazorPageBase) this).EndTagHelperWritingScope));
+        return this.__backed__tagHelperScopeManager;
+      }
+    }
+
+    public virtual async Task ExecuteAsync()
+    {
+      _Views_Home_Index_cshtml viewsHomeIndexCshtml = this;
+      viewsHomeIndexCshtml.BeginContext(52, 2, true);
+      viewsHomeIndexCshtml.WriteLiteral("\r\n");
+      viewsHomeIndexCshtml.EndContext();
+      viewsHomeIndexCshtml.ViewData["Title"] = (object) "Index";
+      // ISSUE: explicit non-virtual call
+      __nonvirtual (viewsHomeIndexCshtml.Layout) = "~/Views/Shared/_Layout.cshtml";
+      viewsHomeIndexCshtml.BeginContext(283, 39, true);
+      viewsHomeIndexCshtml.WriteLiteral("\r\n</br>\r\n<p class=\"text-right\">\r\n\r\n    ");
+      viewsHomeIndexCshtml.EndContext();
+      viewsHomeIndexCshtml.BeginContext(322, 65, false);
+      // ISSUE: reference to a compiler-generated method
+      viewsHomeIndexCshtml.__tagHelperExecutionContext = viewsHomeIndexCshtml.__tagHelperScopeManager.Begin("a", TagMode.StartTagAndEndTag, "6567f2a418ef41f991a55a747f7f31bc", new Func<Task>(viewsHomeIndexCshtml.\u003CExecuteAsync\u003Eb__15_0));
+      viewsHomeIndexCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper = viewsHomeIndexCshtml.CreateTagHelper<AnchorTagHelper>();
+      viewsHomeIndexCshtml.__tagHelperExecutionContext.Add((ITagHelper) viewsHomeIndexCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper);
+      viewsHomeIndexCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.Action = (string) _Views_Home_Index_cshtml.__tagHelperAttribute_0.Value;
+      viewsHomeIndexCshtml.__tagHelperExecutionContext.AddTagHelperAttribute(_Views_Home_Index_cshtml.__tagHelperAttribute_0);
+      viewsHomeIndexCshtml.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_Index_cshtml.__tagHelperAttribute_1);
+      await viewsHomeIndexCshtml.__tagHelperRunner.RunAsync(viewsHomeIndexCshtml.__tagHelperExecutionContext);
+      if (!viewsHomeIndexCshtml.__tagHelperExecutionContext.Output.IsContentModified)
+        await viewsHomeIndexCshtml.__tagHelperExecutionContext.SetOutputContentAsync();
+      viewsHomeIndexCshtml.Write((object) viewsHomeIndexCshtml.__tagHelperExecutionContext.Output);
+      viewsHomeIndexCshtml.__tagHelperExecutionContext = viewsHomeIndexCshtml.__tagHelperScopeManager.End();
+      viewsHomeIndexCshtml.EndContext();
+      viewsHomeIndexCshtml.BeginContext(387, 6, true);
+      viewsHomeIndexCshtml.WriteLiteral("\r\n    ");
+      viewsHomeIndexCshtml.EndContext();
+      viewsHomeIndexCshtml.BeginContext(393, 68, false);
+      // ISSUE: reference to a compiler-generated method
+      viewsHomeIndexCshtml.__tagHelperExecutionContext = viewsHomeIndexCshtml.__tagHelperScopeManager.Begin("a", TagMode.StartTagAndEndTag, "175bf4340fb9443b8aee864a99457d7e", new Func<Task>(viewsHomeIndexCshtml.\u003CExecuteAsync\u003Eb__15_1));
+      viewsHomeIndexCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper = viewsHomeIndexCshtml.CreateTagHelper<AnchorTagHelper>();
+      viewsHomeIndexCshtml.__tagHelperExecutionContext.Add((ITagHelper) viewsHomeIndexCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper);
+      viewsHomeIndexCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.Action = (string) _Views_Home_Index_cshtml.__tagHelperAttribute_2.Value;
+      viewsHomeIndexCshtml.__tagHelperExecutionContext.AddTagHelperAttribute(_Views_Home_Index_cshtml.__tagHelperAttribute_2);
+      viewsHomeIndexCshtml.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_Index_cshtml.__tagHelperAttribute_1);
+      await viewsHomeIndexCshtml.__tagHelperRunner.RunAsync(viewsHomeIndexCshtml.__tagHelperExecutionContext);
+      if (!viewsHomeIndexCshtml.__tagHelperExecutionContext.Output.IsContentModified)
+        await viewsHomeIndexCshtml.__tagHelperExecutionContext.SetOutputContentAsync();
+      viewsHomeIndexCshtml.Write((object) viewsHomeIndexCshtml.__tagHelperExecutionContext.Output);
+      viewsHomeIndexCshtml.__tagHelperExecutionContext = viewsHomeIndexCshtml.__tagHelperScopeManager.End();
+      viewsHomeIndexCshtml.EndContext();
+      viewsHomeIndexCshtml.BeginContext(461, 6, true);
+      viewsHomeIndexCshtml.WriteLiteral("\r\n    ");
+      viewsHomeIndexCshtml.EndContext();
+      viewsHomeIndexCshtml.BeginContext(467, 67, false);
+      // ISSUE: reference to a compiler-generated method
+      viewsHomeIndexCshtml.__tagHelperExecutionContext = viewsHomeIndexCshtml.__tagHelperScopeManager.Begin("a", TagMode.StartTagAndEndTag, "e26c0adc10e442b886e165f5d5ad9c42", new Func<Task>(viewsHomeIndexCshtml.\u003CExecuteAsync\u003Eb__15_2));
+      viewsHomeIndexCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper = viewsHomeIndexCshtml.CreateTagHelper<AnchorTagHelper>();
+      viewsHomeIndexCshtml.__tagHelperExecutionContext.Add((ITagHelper) viewsHomeIndexCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper);
+      viewsHomeIndexCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.Action = (string) _Views_Home_Index_cshtml.__tagHelperAttribute_3.Value;
+      viewsHomeIndexCshtml.__tagHelperExecutionContext.AddTagHelperAttribute(_Views_Home_Index_cshtml.__tagHelperAttribute_3);
+      viewsHomeIndexCshtml.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_Index_cshtml.__tagHelperAttribute_1);
+      await viewsHomeIndexCshtml.__tagHelperRunner.RunAsync(viewsHomeIndexCshtml.__tagHelperExecutionContext);
+      if (!viewsHomeIndexCshtml.__tagHelperExecutionContext.Output.IsContentModified)
+        await viewsHomeIndexCshtml.__tagHelperExecutionContext.SetOutputContentAsync();
+      viewsHomeIndexCshtml.Write((object) viewsHomeIndexCshtml.__tagHelperExecutionContext.Output);
+      viewsHomeIndexCshtml.__tagHelperExecutionContext = viewsHomeIndexCshtml.__tagHelperScopeManager.End();
+      viewsHomeIndexCshtml.EndContext();
+      viewsHomeIndexCshtml.BeginContext(534, 6, true);
+      viewsHomeIndexCshtml.WriteLiteral("\r\n    ");
+      viewsHomeIndexCshtml.EndContext();
+      viewsHomeIndexCshtml.BeginContext(540, 66, false);
+      // ISSUE: reference to a compiler-generated method
+      viewsHomeIndexCshtml.__tagHelperExecutionContext = viewsHomeIndexCshtml.__tagHelperScopeManager.Begin("a", TagMode.StartTagAndEndTag, "1390f2abea224464b3601c20f7a5e060", new Func<Task>(viewsHomeIndexCshtml.\u003CExecuteAsync\u003Eb__15_3));
+      viewsHomeIndexCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper = viewsHomeIndexCshtml.CreateTagHelper<AnchorTagHelper>();
+      viewsHomeIndexCshtml.__tagHelperExecutionContext.Add((ITagHelper) viewsHomeIndexCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper);
+      viewsHomeIndexCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.Action = (string) _Views_Home_Index_cshtml.__tagHelperAttribute_4.Value;
+      viewsHomeIndexCshtml.__tagHelperExecutionContext.AddTagHelperAttribute(_Views_Home_Index_cshtml.__tagHelperAttribute_4);
+      viewsHomeIndexCshtml.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_Index_cshtml.__tagHelperAttribute_1);
+      await viewsHomeIndexCshtml.__tagHelperRunner.RunAsync(viewsHomeIndexCshtml.__tagHelperExecutionContext);
+      if (!viewsHomeIndexCshtml.__tagHelperExecutionContext.Output.IsContentModified)
+        await viewsHomeIndexCshtml.__tagHelperExecutionContext.SetOutputContentAsync();
+      viewsHomeIndexCshtml.Write((object) viewsHomeIndexCshtml.__tagHelperExecutionContext.Output);
+      viewsHomeIndexCshtml.__tagHelperExecutionContext = viewsHomeIndexCshtml.__tagHelperScopeManager.End();
+      viewsHomeIndexCshtml.EndContext();
+      viewsHomeIndexCshtml.BeginContext(606, 6, true);
+      viewsHomeIndexCshtml.WriteLiteral("\r\n    ");
+      viewsHomeIndexCshtml.EndContext();
+      viewsHomeIndexCshtml.BeginContext(612, 62, false);
+      // ISSUE: reference to a compiler-generated method
+      viewsHomeIndexCshtml.__tagHelperExecutionContext = viewsHomeIndexCshtml.__tagHelperScopeManager.Begin("a", TagMode.StartTagAndEndTag, "8fe6033c14584adcb5f57d48c2e3cd4b", new Func<Task>(viewsHomeIndexCshtml.\u003CExecuteAsync\u003Eb__15_4));
+      viewsHomeIndexCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper = viewsHomeIndexCshtml.CreateTagHelper<AnchorTagHelper>();
+      viewsHomeIndexCshtml.__tagHelperExecutionContext.Add((ITagHelper) viewsHomeIndexCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper);
+      viewsHomeIndexCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.Action = (string) _Views_Home_Index_cshtml.__tagHelperAttribute_5.Value;
+      viewsHomeIndexCshtml.__tagHelperExecutionContext.AddTagHelperAttribute(_Views_Home_Index_cshtml.__tagHelperAttribute_5);
+      viewsHomeIndexCshtml.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_Index_cshtml.__tagHelperAttribute_1);
+      await viewsHomeIndexCshtml.__tagHelperRunner.RunAsync(viewsHomeIndexCshtml.__tagHelperExecutionContext);
+      if (!viewsHomeIndexCshtml.__tagHelperExecutionContext.Output.IsContentModified)
+        await viewsHomeIndexCshtml.__tagHelperExecutionContext.SetOutputContentAsync();
+      viewsHomeIndexCshtml.Write((object) viewsHomeIndexCshtml.__tagHelperExecutionContext.Output);
+      viewsHomeIndexCshtml.__tagHelperExecutionContext = viewsHomeIndexCshtml.__tagHelperScopeManager.End();
+      viewsHomeIndexCshtml.EndContext();
+      viewsHomeIndexCshtml.BeginContext(674, 604, true);
+      viewsHomeIndexCshtml.WriteLiteral("\r\n</p>\r\n<style>\r\n    .crop {\r\n        white-space: nowrap;\r\n        overflow: hidden;\r\n        text-overflow: ellipsis\r\n    }\r\n\r\n    .btn-disable {\r\n        cursor: not-allowed;\r\n        pointer-events: none;\r\n        /*Button disabled - CSS color class*/\r\n        color: #c0c0c0;\r\n        background-color: #ffffff;\r\n    }\r\n</style>\r\n<table class=\"table\">\r\n    <thead>\r\n        <tr>\r\n            <th style=\"width: 40%;text-align:center;\">\r\n                User Name\r\n            </th>\r\n            <th style=\"width: 30%;text-align:center;\">\r\n            </th>\r\n        </tr>\r\n    </thead>\r\n    <tbody>\r\n");
+      viewsHomeIndexCshtml.EndContext();
+      foreach (ApplicationUser applicationUser in viewsHomeIndexCshtml.Model)
+      {
+        ApplicationUser item = applicationUser;
+        viewsHomeIndexCshtml.BeginContext(1351, 165, true);
+        viewsHomeIndexCshtml.WriteLiteral("            <tr style=\"background-color:#ebeeef;\">\r\n           \r\n                <td style=\"text-align:center;\">\r\n                    <div>\r\n                        ");
+        viewsHomeIndexCshtml.EndContext();
+        viewsHomeIndexCshtml.BeginContext(1517, 43, false);
+        viewsHomeIndexCshtml.Write((object) viewsHomeIndexCshtml.Html.DisplayFor<IEnumerable<ApplicationUser>, string>((Expression<Func<IEnumerable<ApplicationUser>, string>>) (modelItem => item.UserName)));
+        viewsHomeIndexCshtml.EndContext();
+        viewsHomeIndexCshtml.BeginContext(1560, 184, true);
+        viewsHomeIndexCshtml.WriteLiteral("\r\n                    </div>\r\n                </td>\r\n\r\n                <td style=\"text-align:center;\">\r\n                    <div style=\"white-space: nowrap;\">\r\n                        ");
+        viewsHomeIndexCshtml.EndContext();
+        viewsHomeIndexCshtml.BeginContext(1744, 89, false);
+        // ISSUE: reference to a compiler-generated method
+        viewsHomeIndexCshtml.__tagHelperExecutionContext = viewsHomeIndexCshtml.__tagHelperScopeManager.Begin("a", TagMode.StartTagAndEndTag, "2e3abd0e9c214a22a641c46bff1b410d", new Func<Task>(viewsHomeIndexCshtml.\u003CExecuteAsync\u003Eb__15_5));
+        viewsHomeIndexCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper = viewsHomeIndexCshtml.CreateTagHelper<AnchorTagHelper>();
+        viewsHomeIndexCshtml.__tagHelperExecutionContext.Add((ITagHelper) viewsHomeIndexCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper);
+        viewsHomeIndexCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.Action = (string) _Views_Home_Index_cshtml.__tagHelperAttribute_6.Value;
+        viewsHomeIndexCshtml.__tagHelperExecutionContext.AddTagHelperAttribute(_Views_Home_Index_cshtml.__tagHelperAttribute_6);
+        if (viewsHomeIndexCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues == null)
+          throw new InvalidOperationException(viewsHomeIndexCshtml.InvalidTagHelperIndexerAssignment("asp-route-id", "Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper", "RouteValues"));
+        viewsHomeIndexCshtml.BeginWriteTagHelperAttribute();
+        viewsHomeIndexCshtml.WriteLiteral(item.Id);
+        viewsHomeIndexCshtml.__tagHelperStringValueBuffer = viewsHomeIndexCshtml.EndWriteTagHelperAttribute();
+        viewsHomeIndexCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues["id"] = viewsHomeIndexCshtml.__tagHelperStringValueBuffer;
+        viewsHomeIndexCshtml.__tagHelperExecutionContext.AddTagHelperAttribute("asp-route-id", (object) viewsHomeIndexCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues["id"], HtmlAttributeValueStyle.DoubleQuotes);
+        viewsHomeIndexCshtml.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_Index_cshtml.__tagHelperAttribute_7);
+        await viewsHomeIndexCshtml.__tagHelperRunner.RunAsync(viewsHomeIndexCshtml.__tagHelperExecutionContext);
+        if (!viewsHomeIndexCshtml.__tagHelperExecutionContext.Output.IsContentModified)
+          await viewsHomeIndexCshtml.__tagHelperExecutionContext.SetOutputContentAsync();
+        viewsHomeIndexCshtml.Write((object) viewsHomeIndexCshtml.__tagHelperExecutionContext.Output);
+        viewsHomeIndexCshtml.__tagHelperExecutionContext = viewsHomeIndexCshtml.__tagHelperScopeManager.End();
+        viewsHomeIndexCshtml.EndContext();
+        viewsHomeIndexCshtml.BeginContext(1833, 72, true);
+        viewsHomeIndexCshtml.WriteLiteral("\r\n                    </div>\r\n                </td>\r\n            </tr>\r\n");
+        viewsHomeIndexCshtml.EndContext();
+      }
+      viewsHomeIndexCshtml.BeginContext(1918, 24, true);
+      viewsHomeIndexCshtml.WriteLiteral("    </tbody>\r\n</table>\r\n");
+      viewsHomeIndexCshtml.EndContext();
+    }
+
+    [RazorInject]
+    public IModelExpressionProvider ModelExpressionProvider { get; private set; }
+
+    [RazorInject]
+    public IUrlHelper Url { get; private set; }
+
+    [RazorInject]
+    public IViewComponentHelper Component { get; private set; }
+
+    [RazorInject]
+    public IJsonHelper Json { get; private set; }
+
+    [RazorInject]
+    public IHtmlHelper<IEnumerable<ApplicationUser>> Html { get; private set; }
+  }
 }
-
-</br>
-<p class="text-right">
-    <a asp-action="CreateFolder" class="btn btn-info">Create Folder</a> <a asp-action="Create" asp-route-id="-1" class="btn btn-info">Create Job</a>
-</p>
-<style>
-    .crop {
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis
-    }
-
-    .btn-disable {
-        cursor: not-allowed;
-        pointer-events: none;
-        /*Button disabled - CSS color class*/
-        color: #c0c0c0;
-        background-color: #ffffff;
-    }
-</style>
-<table class="table">
-    <thead>
-        <tr>
-            <th style="width: 10%;text-align:center;">
-                Job Name
-            </th>
-            <th style="width: 20%;text-align:center;">
-                Target URL
-            </th>
-            <th style="width: 30%;text-align:center;">
-                Keyword
-            </th>
-            <th style="width: 10%;text-align:center;">
-                Search Engine
-            </th>
-            <th style="width: 10%;text-align:center;">
-                Count
-            </th>
-            <th style="width: 20%;text-align:center;">
-            </th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var item in Model)
-        {
-            @if (item.search_term.CompareTo("FOLDER") == 0 && item.session_count == -1)
-            {
-                //folder
-                <tr style="background-color:cadetblue;">
-                    <td>
-                        <div class="crop" style="width: 100px;">
-                            @Html.DisplayFor(modelItem => item.job_name)
-                        </div>
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.target_url)
-                    </td>
-                    <td>
-                        <div class="crop" style="width: 300px;">
-                            @*@Html.DisplayFor(modelItem => item.search_term)*@
-                        </div>
-                    </td>
-                    <td style="text-align:center;">
-                        @*@Html.DisplayFor(modelItem => item.search_engine)*@
-                    </td>
-                    <td style="text-align:center;">
-                        @*@Html.DisplayFor(modelItem => item.session_count)*@
-                    </td>
-                    <td style="text-align:center;">
-                        <div style="white-space: nowrap;">
-                            <a asp-action="Create" asp-route-id="@item.id" class="btn btn-success btn-xs">Add New Job</a>
-                            <a asp-action="RemoveFolder" asp-route-id="@item.id" class="btn btn-success btn-xs" onclick="return RemoveConfirm();">Remove Folder</a>
-                        </div>
-                    </td>
-                </tr>
-            }
-            else
-            {
-                <tr style="background-color:@Html.Raw((@item.group_id != -1 ? "honeydew" : ""));">
-                    <td>
-                        <div class="crop" style="width: 100px;">
-                            @Html.Raw((@item.group_id != -1 ? "&nbsp;&nbsp;&nbsp;" : ""))
-                            @Html.DisplayFor(modelItem => item.job_name)
-                        </div>
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.target_url)
-                    </td>
-                    <td>
-                        <div class="crop" style="width: 300px;">
-                            @Html.DisplayFor(modelItem => item.search_term)
-                        </div>
-                    </td>
-                    <td style="text-align:center;">
-                        @Html.DisplayFor(modelItem => item.search_engine)
-                    </td>
-                    <td style="text-align:center;">
-                        @Html.DisplayFor(modelItem => item.session_count)
-                    </td>
-                    <td style="text-align:center;">
-                        @{
-                            startLabel = "Stop";
-                            stopConfirm = "return StopConfirm();";
-                            disableCls = "";
-                            if (!SettingManager.IsRunning(item.job_name))
-                            {
-                                startLabel = "Start";
-                                stopConfirm = "return true;";
-                                disableCls = "btn-disable";
-                            }
-
-                            pauseLabel = "Resume";
-                            if (!SettingManager.IsPause(item.job_name))
-                            {
-                                pauseLabel = "Pause";
-                            }
-                        }
-                        <div style="white-space: nowrap;">
-                            <a asp-action="Start" asp-route-id="@item.id" class="btn btn-success btn-xs" onclick="@stopConfirm">@startLabel</a>
-                            <a asp-action="Pause" asp-route-id="@item.id" class="btn btn-success btn-xs @disableCls">@pauseLabel</a>
-                            @*<a asp-action="Edit" asp-route-id="@item.id">Edit</a>*@
-                            <a asp-action="Details" asp-route-id="@item.id" class="btn btn-success btn-xs">View</a>
-                            @*<a asp-action="Delete" asp-route-id="@item.id">Delete</a>*@
-                            <a asp-action="LogView" asp-route-id="@item.id" asp-route-date="@DateTime.Now.ToString("yyyy-MM-dd").Substring(2)" class="btn btn-success btn-xs">Log</a>
-                        </div>
-                    </td>
-                </tr>
-            }
-        }
-    </tbody>
-</table>
-<script>
-    function StopConfirm() {
-        return confirm("Are you going to stop really?");
-    }
-
-    function RemoveConfirm() {
-        return confirm("Are you going to remove folder really?");
-    }
-</script>

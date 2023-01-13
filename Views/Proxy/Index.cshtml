@@ -1,0 +1,262 @@
+﻿// Decompiled with JetBrains decompiler
+// Type: AspNetCore._Views_Proxy_Index_cshtml
+// Assembly: Traffic.PrecompiledViews, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+// MVID: 8B37BA40-0390-40A7-A536-D9CCDBC36390
+// Assembly location: D:\Workstation\TonniProjects\TrafficWebDeploy\Traffic.PrecompiledViews.dll
+
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Razor;
+using Microsoft.AspNetCore.Mvc.Razor.Internal;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.Mvc.TagHelpers;
+using Microsoft.AspNetCore.Mvc.ViewFeatures;
+using Microsoft.AspNetCore.Razor.Runtime.TagHelpers;
+using Microsoft.AspNetCore.Razor.TagHelpers;
+using System;
+using System.Collections.Generic;
+using System.Linq.Expressions;
+using System.Text.Encodings.Web;
+using System.Threading.Tasks;
+using Traffic.Models;
+
+namespace AspNetCore
+{
+  public class _Views_Proxy_Index_cshtml : RazorPage<IEnumerable<location>>
+  {
+    private static readonly TagHelperAttribute __tagHelperAttribute_0 = new TagHelperAttribute("asp-action", (object) "Edit", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_1 = new TagHelperAttribute("asp-action", (object) "Delete", HtmlAttributeValueStyle.DoubleQuotes);
+    private string __tagHelperStringValueBuffer;
+    private TagHelperExecutionContext __tagHelperExecutionContext;
+    private TagHelperRunner __tagHelperRunner = new TagHelperRunner();
+    private TagHelperScopeManager __backed__tagHelperScopeManager;
+    private AnchorTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper;
+
+    private TagHelperScopeManager __tagHelperScopeManager
+    {
+      get
+      {
+        if (this.__backed__tagHelperScopeManager == null)
+          this.__backed__tagHelperScopeManager = new TagHelperScopeManager(new Action<HtmlEncoder>(((RazorPageBase) this).StartTagHelperWritingScope), new Func<TagHelperContent>(((RazorPageBase) this).EndTagHelperWritingScope));
+        return this.__backed__tagHelperScopeManager;
+      }
+    }
+
+    public virtual async Task ExecuteAsync()
+    {
+      _Views_Proxy_Index_cshtml proxyIndexCshtml = this;
+      proxyIndexCshtml.BeginContext(45, 2, true);
+      proxyIndexCshtml.WriteLiteral("\r\n");
+      proxyIndexCshtml.EndContext();
+      proxyIndexCshtml.ViewData["Title"] = (object) "Index";
+      // ISSUE: explicit non-virtual call
+      __nonvirtual (proxyIndexCshtml.Layout) = "~/Views/Shared/_Layout.cshtml";
+      proxyIndexCshtml.BeginContext(135, 217, true);
+      proxyIndexCshtml.WriteLiteral("\r\n<h2>Proxy Manage</h2>\r\n\r\n<table class=\"table\">\r\n    <thead>\r\n        <tr>\r\n                <th>\r\n                    Location\r\n                </th>\r\n            <th></th>\r\n        </tr>\r\n    </thead>\r\n    <tbody>\r\n");
+      proxyIndexCshtml.EndContext();
+      foreach (location location1 in proxyIndexCshtml.Model)
+      {
+        location item = location1;
+        if (item.depth == 1)
+        {
+          proxyIndexCshtml.BeginContext(451, 73, true);
+          proxyIndexCshtml.WriteLiteral("                <tr>\r\n                    <td >\r\n                        ");
+          proxyIndexCshtml.EndContext();
+          proxyIndexCshtml.BeginContext(525, 40, false);
+          proxyIndexCshtml.Write((object) proxyIndexCshtml.Html.DisplayFor<IEnumerable<location>, string>((Expression<Func<IEnumerable<location>, string>>) (modelItem => item.label)));
+          proxyIndexCshtml.EndContext();
+          proxyIndexCshtml.BeginContext(565, 99, true);
+          proxyIndexCshtml.WriteLiteral("\r\n                    </td>                    \r\n                    <td>\r\n                        ");
+          proxyIndexCshtml.EndContext();
+          proxyIndexCshtml.BeginContext(664, 53, false);
+          // ISSUE: reference to a compiler-generated method
+          proxyIndexCshtml.__tagHelperExecutionContext = proxyIndexCshtml.__tagHelperScopeManager.Begin("a", TagMode.StartTagAndEndTag, "a01b26b0cedb413083c4680fcf972322", new Func<Task>(proxyIndexCshtml.\u003CExecuteAsync\u003Eb__9_0));
+          proxyIndexCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper = proxyIndexCshtml.CreateTagHelper<AnchorTagHelper>();
+          proxyIndexCshtml.__tagHelperExecutionContext.Add((ITagHelper) proxyIndexCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper);
+          proxyIndexCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.Action = (string) _Views_Proxy_Index_cshtml.__tagHelperAttribute_0.Value;
+          proxyIndexCshtml.__tagHelperExecutionContext.AddTagHelperAttribute(_Views_Proxy_Index_cshtml.__tagHelperAttribute_0);
+          if (proxyIndexCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues == null)
+            throw new InvalidOperationException(proxyIndexCshtml.InvalidTagHelperIndexerAssignment("asp-route-id", "Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper", "RouteValues"));
+          proxyIndexCshtml.BeginWriteTagHelperAttribute();
+          proxyIndexCshtml.WriteLiteral((object) item.id);
+          proxyIndexCshtml.__tagHelperStringValueBuffer = proxyIndexCshtml.EndWriteTagHelperAttribute();
+          proxyIndexCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues["id"] = proxyIndexCshtml.__tagHelperStringValueBuffer;
+          proxyIndexCshtml.__tagHelperExecutionContext.AddTagHelperAttribute("asp-route-id", (object) proxyIndexCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues["id"], HtmlAttributeValueStyle.DoubleQuotes);
+          await proxyIndexCshtml.__tagHelperRunner.RunAsync(proxyIndexCshtml.__tagHelperExecutionContext);
+          if (!proxyIndexCshtml.__tagHelperExecutionContext.Output.IsContentModified)
+            await proxyIndexCshtml.__tagHelperExecutionContext.SetOutputContentAsync();
+          proxyIndexCshtml.Write((object) proxyIndexCshtml.__tagHelperExecutionContext.Output);
+          proxyIndexCshtml.__tagHelperExecutionContext = proxyIndexCshtml.__tagHelperScopeManager.End();
+          proxyIndexCshtml.EndContext();
+          proxyIndexCshtml.BeginContext(717, 28, true);
+          proxyIndexCshtml.WriteLiteral(" |\r\n                        ");
+          proxyIndexCshtml.EndContext();
+          proxyIndexCshtml.BeginContext(745, 57, false);
+          // ISSUE: reference to a compiler-generated method
+          proxyIndexCshtml.__tagHelperExecutionContext = proxyIndexCshtml.__tagHelperScopeManager.Begin("a", TagMode.StartTagAndEndTag, "7fcbc9191dff4e28a37c6f7cd636257e", new Func<Task>(proxyIndexCshtml.\u003CExecuteAsync\u003Eb__9_1));
+          proxyIndexCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper = proxyIndexCshtml.CreateTagHelper<AnchorTagHelper>();
+          proxyIndexCshtml.__tagHelperExecutionContext.Add((ITagHelper) proxyIndexCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper);
+          proxyIndexCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.Action = (string) _Views_Proxy_Index_cshtml.__tagHelperAttribute_1.Value;
+          proxyIndexCshtml.__tagHelperExecutionContext.AddTagHelperAttribute(_Views_Proxy_Index_cshtml.__tagHelperAttribute_1);
+          if (proxyIndexCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues == null)
+            throw new InvalidOperationException(proxyIndexCshtml.InvalidTagHelperIndexerAssignment("asp-route-id", "Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper", "RouteValues"));
+          proxyIndexCshtml.BeginWriteTagHelperAttribute();
+          proxyIndexCshtml.WriteLiteral((object) item.id);
+          proxyIndexCshtml.__tagHelperStringValueBuffer = proxyIndexCshtml.EndWriteTagHelperAttribute();
+          proxyIndexCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues["id"] = proxyIndexCshtml.__tagHelperStringValueBuffer;
+          proxyIndexCshtml.__tagHelperExecutionContext.AddTagHelperAttribute("asp-route-id", (object) proxyIndexCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues["id"], HtmlAttributeValueStyle.DoubleQuotes);
+          await proxyIndexCshtml.__tagHelperRunner.RunAsync(proxyIndexCshtml.__tagHelperExecutionContext);
+          if (!proxyIndexCshtml.__tagHelperExecutionContext.Output.IsContentModified)
+            await proxyIndexCshtml.__tagHelperExecutionContext.SetOutputContentAsync();
+          proxyIndexCshtml.Write((object) proxyIndexCshtml.__tagHelperExecutionContext.Output);
+          proxyIndexCshtml.__tagHelperExecutionContext = proxyIndexCshtml.__tagHelperScopeManager.End();
+          proxyIndexCshtml.EndContext();
+          proxyIndexCshtml.BeginContext(802, 52, true);
+          proxyIndexCshtml.WriteLiteral("\r\n                    </td>\r\n                </tr>\r\n");
+          proxyIndexCshtml.EndContext();
+          foreach (location location2 in proxyIndexCshtml.Model)
+          {
+            location items = location2;
+            if (items.depth == 2 && items.parentid == item.id)
+            {
+              proxyIndexCshtml.BeginContext(1016, 123, true);
+              proxyIndexCshtml.WriteLiteral("                        <tr>\r\n                            <td style=\"padding-left: 26%;\">\r\n                                ");
+              proxyIndexCshtml.EndContext();
+              proxyIndexCshtml.BeginContext(1140, 41, false);
+              proxyIndexCshtml.Write((object) proxyIndexCshtml.Html.DisplayFor<IEnumerable<location>, string>((Expression<Func<IEnumerable<location>, string>>) (modelItem => items.label)));
+              proxyIndexCshtml.EndContext();
+              proxyIndexCshtml.BeginContext(1181, 103, true);
+              proxyIndexCshtml.WriteLiteral("\r\n                            </td>\r\n                            <td>\r\n                                ");
+              proxyIndexCshtml.EndContext();
+              proxyIndexCshtml.BeginContext(1284, 54, false);
+              // ISSUE: reference to a compiler-generated method
+              proxyIndexCshtml.__tagHelperExecutionContext = proxyIndexCshtml.__tagHelperScopeManager.Begin("a", TagMode.StartTagAndEndTag, "dc068ec7626c41bab76cc3a98ceb8b1a", new Func<Task>(proxyIndexCshtml.\u003CExecuteAsync\u003Eb__9_2));
+              proxyIndexCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper = proxyIndexCshtml.CreateTagHelper<AnchorTagHelper>();
+              proxyIndexCshtml.__tagHelperExecutionContext.Add((ITagHelper) proxyIndexCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper);
+              proxyIndexCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.Action = (string) _Views_Proxy_Index_cshtml.__tagHelperAttribute_0.Value;
+              proxyIndexCshtml.__tagHelperExecutionContext.AddTagHelperAttribute(_Views_Proxy_Index_cshtml.__tagHelperAttribute_0);
+              if (proxyIndexCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues == null)
+                throw new InvalidOperationException(proxyIndexCshtml.InvalidTagHelperIndexerAssignment("asp-route-id", "Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper", "RouteValues"));
+              proxyIndexCshtml.BeginWriteTagHelperAttribute();
+              proxyIndexCshtml.WriteLiteral((object) items.id);
+              proxyIndexCshtml.__tagHelperStringValueBuffer = proxyIndexCshtml.EndWriteTagHelperAttribute();
+              proxyIndexCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues["id"] = proxyIndexCshtml.__tagHelperStringValueBuffer;
+              proxyIndexCshtml.__tagHelperExecutionContext.AddTagHelperAttribute("asp-route-id", (object) proxyIndexCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues["id"], HtmlAttributeValueStyle.DoubleQuotes);
+              await proxyIndexCshtml.__tagHelperRunner.RunAsync(proxyIndexCshtml.__tagHelperExecutionContext);
+              if (!proxyIndexCshtml.__tagHelperExecutionContext.Output.IsContentModified)
+                await proxyIndexCshtml.__tagHelperExecutionContext.SetOutputContentAsync();
+              proxyIndexCshtml.Write((object) proxyIndexCshtml.__tagHelperExecutionContext.Output);
+              proxyIndexCshtml.__tagHelperExecutionContext = proxyIndexCshtml.__tagHelperScopeManager.End();
+              proxyIndexCshtml.EndContext();
+              proxyIndexCshtml.BeginContext(1338, 36, true);
+              proxyIndexCshtml.WriteLiteral(" |\r\n                                ");
+              proxyIndexCshtml.EndContext();
+              proxyIndexCshtml.BeginContext(1374, 58, false);
+              // ISSUE: reference to a compiler-generated method
+              proxyIndexCshtml.__tagHelperExecutionContext = proxyIndexCshtml.__tagHelperScopeManager.Begin("a", TagMode.StartTagAndEndTag, "6338ef17f7d0415aa0f4ba50c87a297c", new Func<Task>(proxyIndexCshtml.\u003CExecuteAsync\u003Eb__9_3));
+              proxyIndexCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper = proxyIndexCshtml.CreateTagHelper<AnchorTagHelper>();
+              proxyIndexCshtml.__tagHelperExecutionContext.Add((ITagHelper) proxyIndexCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper);
+              proxyIndexCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.Action = (string) _Views_Proxy_Index_cshtml.__tagHelperAttribute_1.Value;
+              proxyIndexCshtml.__tagHelperExecutionContext.AddTagHelperAttribute(_Views_Proxy_Index_cshtml.__tagHelperAttribute_1);
+              if (proxyIndexCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues == null)
+                throw new InvalidOperationException(proxyIndexCshtml.InvalidTagHelperIndexerAssignment("asp-route-id", "Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper", "RouteValues"));
+              proxyIndexCshtml.BeginWriteTagHelperAttribute();
+              proxyIndexCshtml.WriteLiteral((object) items.id);
+              proxyIndexCshtml.__tagHelperStringValueBuffer = proxyIndexCshtml.EndWriteTagHelperAttribute();
+              proxyIndexCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues["id"] = proxyIndexCshtml.__tagHelperStringValueBuffer;
+              proxyIndexCshtml.__tagHelperExecutionContext.AddTagHelperAttribute("asp-route-id", (object) proxyIndexCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues["id"], HtmlAttributeValueStyle.DoubleQuotes);
+              await proxyIndexCshtml.__tagHelperRunner.RunAsync(proxyIndexCshtml.__tagHelperExecutionContext);
+              if (!proxyIndexCshtml.__tagHelperExecutionContext.Output.IsContentModified)
+                await proxyIndexCshtml.__tagHelperExecutionContext.SetOutputContentAsync();
+              proxyIndexCshtml.Write((object) proxyIndexCshtml.__tagHelperExecutionContext.Output);
+              proxyIndexCshtml.__tagHelperExecutionContext = proxyIndexCshtml.__tagHelperScopeManager.End();
+              proxyIndexCshtml.EndContext();
+              proxyIndexCshtml.BeginContext(1432, 68, true);
+              proxyIndexCshtml.WriteLiteral("\r\n                            </td>\r\n                        </tr>\r\n");
+              proxyIndexCshtml.EndContext();
+              foreach (location location3 in proxyIndexCshtml.Model)
+              {
+                location itemc = location3;
+                if (itemc.depth == 3 && itemc.parentid == items.id)
+                {
+                  proxyIndexCshtml.BeginContext(1697, 147, true);
+                  proxyIndexCshtml.WriteLiteral("                                <tr>\r\n                                    <td style=\"padding-left: 52%;\">\r\n                                        ");
+                  proxyIndexCshtml.EndContext();
+                  proxyIndexCshtml.BeginContext(1845, 41, false);
+                  proxyIndexCshtml.Write((object) proxyIndexCshtml.Html.DisplayFor<IEnumerable<location>, string>((Expression<Func<IEnumerable<location>, string>>) (modelItem => itemc.label)));
+                  proxyIndexCshtml.EndContext();
+                  proxyIndexCshtml.BeginContext(1886, 163, true);
+                  proxyIndexCshtml.WriteLiteral("\r\n                                    </td>                                    \r\n                                    <td>\r\n                                        ");
+                  proxyIndexCshtml.EndContext();
+                  proxyIndexCshtml.BeginContext(2049, 54, false);
+                  // ISSUE: reference to a compiler-generated method
+                  proxyIndexCshtml.__tagHelperExecutionContext = proxyIndexCshtml.__tagHelperScopeManager.Begin("a", TagMode.StartTagAndEndTag, "ff32ba953a6f43099c1333c806026188", new Func<Task>(proxyIndexCshtml.\u003CExecuteAsync\u003Eb__9_4));
+                  proxyIndexCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper = proxyIndexCshtml.CreateTagHelper<AnchorTagHelper>();
+                  proxyIndexCshtml.__tagHelperExecutionContext.Add((ITagHelper) proxyIndexCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper);
+                  proxyIndexCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.Action = (string) _Views_Proxy_Index_cshtml.__tagHelperAttribute_0.Value;
+                  proxyIndexCshtml.__tagHelperExecutionContext.AddTagHelperAttribute(_Views_Proxy_Index_cshtml.__tagHelperAttribute_0);
+                  if (proxyIndexCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues == null)
+                    throw new InvalidOperationException(proxyIndexCshtml.InvalidTagHelperIndexerAssignment("asp-route-id", "Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper", "RouteValues"));
+                  proxyIndexCshtml.BeginWriteTagHelperAttribute();
+                  proxyIndexCshtml.WriteLiteral((object) itemc.id);
+                  proxyIndexCshtml.__tagHelperStringValueBuffer = proxyIndexCshtml.EndWriteTagHelperAttribute();
+                  proxyIndexCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues["id"] = proxyIndexCshtml.__tagHelperStringValueBuffer;
+                  proxyIndexCshtml.__tagHelperExecutionContext.AddTagHelperAttribute("asp-route-id", (object) proxyIndexCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues["id"], HtmlAttributeValueStyle.DoubleQuotes);
+                  await proxyIndexCshtml.__tagHelperRunner.RunAsync(proxyIndexCshtml.__tagHelperExecutionContext);
+                  if (!proxyIndexCshtml.__tagHelperExecutionContext.Output.IsContentModified)
+                    await proxyIndexCshtml.__tagHelperExecutionContext.SetOutputContentAsync();
+                  proxyIndexCshtml.Write((object) proxyIndexCshtml.__tagHelperExecutionContext.Output);
+                  proxyIndexCshtml.__tagHelperExecutionContext = proxyIndexCshtml.__tagHelperScopeManager.End();
+                  proxyIndexCshtml.EndContext();
+                  proxyIndexCshtml.BeginContext(2103, 44, true);
+                  proxyIndexCshtml.WriteLiteral(" |\r\n                                        ");
+                  proxyIndexCshtml.EndContext();
+                  proxyIndexCshtml.BeginContext(2147, 58, false);
+                  // ISSUE: reference to a compiler-generated method
+                  proxyIndexCshtml.__tagHelperExecutionContext = proxyIndexCshtml.__tagHelperScopeManager.Begin("a", TagMode.StartTagAndEndTag, "8f23b9d1ce8f493caa7b0eb86b7ad783", new Func<Task>(proxyIndexCshtml.\u003CExecuteAsync\u003Eb__9_5));
+                  proxyIndexCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper = proxyIndexCshtml.CreateTagHelper<AnchorTagHelper>();
+                  proxyIndexCshtml.__tagHelperExecutionContext.Add((ITagHelper) proxyIndexCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper);
+                  proxyIndexCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.Action = (string) _Views_Proxy_Index_cshtml.__tagHelperAttribute_1.Value;
+                  proxyIndexCshtml.__tagHelperExecutionContext.AddTagHelperAttribute(_Views_Proxy_Index_cshtml.__tagHelperAttribute_1);
+                  if (proxyIndexCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues == null)
+                    throw new InvalidOperationException(proxyIndexCshtml.InvalidTagHelperIndexerAssignment("asp-route-id", "Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper", "RouteValues"));
+                  proxyIndexCshtml.BeginWriteTagHelperAttribute();
+                  proxyIndexCshtml.WriteLiteral((object) itemc.id);
+                  proxyIndexCshtml.__tagHelperStringValueBuffer = proxyIndexCshtml.EndWriteTagHelperAttribute();
+                  proxyIndexCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues["id"] = proxyIndexCshtml.__tagHelperStringValueBuffer;
+                  proxyIndexCshtml.__tagHelperExecutionContext.AddTagHelperAttribute("asp-route-id", (object) proxyIndexCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues["id"], HtmlAttributeValueStyle.DoubleQuotes);
+                  await proxyIndexCshtml.__tagHelperRunner.RunAsync(proxyIndexCshtml.__tagHelperExecutionContext);
+                  if (!proxyIndexCshtml.__tagHelperExecutionContext.Output.IsContentModified)
+                    await proxyIndexCshtml.__tagHelperExecutionContext.SetOutputContentAsync();
+                  proxyIndexCshtml.Write((object) proxyIndexCshtml.__tagHelperExecutionContext.Output);
+                  proxyIndexCshtml.__tagHelperExecutionContext = proxyIndexCshtml.__tagHelperScopeManager.End();
+                  proxyIndexCshtml.EndContext();
+                  proxyIndexCshtml.BeginContext(2205, 84, true);
+                  proxyIndexCshtml.WriteLiteral("\r\n                                    </td>\r\n                                </tr>\r\n");
+                  proxyIndexCshtml.EndContext();
+                }
+              }
+            }
+          }
+        }
+      }
+      proxyIndexCshtml.BeginContext(2415, 24, true);
+      proxyIndexCshtml.WriteLiteral("    </tbody>\r\n</table>\r\n");
+      proxyIndexCshtml.EndContext();
+    }
+
+    [RazorInject]
+    public IModelExpressionProvider ModelExpressionProvider { get; private set; }
+
+    [RazorInject]
+    public IUrlHelper Url { get; private set; }
+
+    [RazorInject]
+    public IViewComponentHelper Component { get; private set; }
+
+    [RazorInject]
+    public IJsonHelper Json { get; private set; }
+
+    [RazorInject]
+    public IHtmlHelper<IEnumerable<location>> Html { get; private set; }
+  }
+}

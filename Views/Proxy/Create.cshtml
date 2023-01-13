@@ -1,0 +1,127 @@
+﻿// Decompiled with JetBrains decompiler
+// Type: AspNetCore._Views_Proxy_Create_cshtml
+// Assembly: Traffic.PrecompiledViews, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+// MVID: 8B37BA40-0390-40A7-A536-D9CCDBC36390
+// Assembly location: D:\Workstation\TonniProjects\TrafficWebDeploy\Traffic.PrecompiledViews.dll
+
+using Microsoft.AspNetCore.Html;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Razor;
+using Microsoft.AspNetCore.Mvc.Razor.Internal;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.Mvc.TagHelpers;
+using Microsoft.AspNetCore.Mvc.ViewFeatures;
+using Microsoft.AspNetCore.Razor.Runtime.TagHelpers;
+using Microsoft.AspNetCore.Razor.TagHelpers;
+using System;
+using System.Linq.Expressions;
+using System.Text.Encodings.Web;
+using System.Threading.Tasks;
+using Traffic.Models;
+
+namespace AspNetCore
+{
+  public class _Views_Proxy_Create_cshtml : RazorPage<location>
+  {
+    private static readonly TagHelperAttribute __tagHelperAttribute_0 = new TagHelperAttribute("class", (object) new HtmlString("text-danger"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_1 = new TagHelperAttribute("class", (object) new HtmlString("control-label"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_2 = new TagHelperAttribute("class", (object) new HtmlString("form-control"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_3 = new TagHelperAttribute("asp-action", (object) "Create", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_4 = new TagHelperAttribute("asp-action", (object) "Index", HtmlAttributeValueStyle.DoubleQuotes);
+    private string __tagHelperStringValueBuffer;
+    private TagHelperExecutionContext __tagHelperExecutionContext;
+    private TagHelperRunner __tagHelperRunner = new TagHelperRunner();
+    private TagHelperScopeManager __backed__tagHelperScopeManager;
+    private FormTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper;
+    private RenderAtEndOfFormTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper;
+    private ValidationSummaryTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_ValidationSummaryTagHelper;
+    private LabelTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_LabelTagHelper;
+    private InputTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper;
+    private ValidationMessageTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper;
+    private AnchorTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper;
+    private static readonly Expression<Func<location, int>> __h0 = (Expression<Func<location, int>>) (__model => __model.depth);
+    private static readonly Expression<Func<location, int>> __h1 = (Expression<Func<location, int>>) (__model => __model.depth);
+    private static readonly Expression<Func<location, int>> __h2 = (Expression<Func<location, int>>) (__model => __model.depth);
+    private static readonly Expression<Func<location, int>> __h3 = (Expression<Func<location, int>>) (__model => __model.parentid);
+    private static readonly Expression<Func<location, int>> __h4 = (Expression<Func<location, int>>) (__model => __model.parentid);
+    private static readonly Expression<Func<location, int>> __h5 = (Expression<Func<location, int>>) (__model => __model.parentid);
+    private static readonly Expression<Func<location, string>> __h6 = (Expression<Func<location, string>>) (__model => __model.label);
+    private static readonly Expression<Func<location, string>> __h7 = (Expression<Func<location, string>>) (__model => __model.label);
+    private static readonly Expression<Func<location, string>> __h8 = (Expression<Func<location, string>>) (__model => __model.label);
+
+    private TagHelperScopeManager __tagHelperScopeManager
+    {
+      get
+      {
+        if (this.__backed__tagHelperScopeManager == null)
+          this.__backed__tagHelperScopeManager = new TagHelperScopeManager(new Action<HtmlEncoder>(((RazorPageBase) this).StartTagHelperWritingScope), new Func<TagHelperContent>(((RazorPageBase) this).EndTagHelperWritingScope));
+        return this.__backed__tagHelperScopeManager;
+      }
+    }
+
+    public virtual async Task ExecuteAsync()
+    {
+      _Views_Proxy_Create_cshtml proxyCreateCshtml = this;
+      proxyCreateCshtml.BeginContext(32, 2, true);
+      proxyCreateCshtml.WriteLiteral("\r\n");
+      proxyCreateCshtml.EndContext();
+      proxyCreateCshtml.ViewData["Title"] = (object) "Create";
+      // ISSUE: explicit non-virtual call
+      __nonvirtual (proxyCreateCshtml.Layout) = "~/Views/Shared/_Layout.cshtml";
+      proxyCreateCshtml.BeginContext(123, 103, true);
+      proxyCreateCshtml.WriteLiteral("\r\n<h2>Create</h2>\r\n\r\n<h4>location</h4>\r\n<hr />\r\n<div class=\"row\">\r\n    <div class=\"col-md-4\">\r\n        ");
+      proxyCreateCshtml.EndContext();
+      proxyCreateCshtml.BeginContext(226, 1083, false);
+      // ISSUE: reference to a compiler-generated method
+      proxyCreateCshtml.__tagHelperExecutionContext = proxyCreateCshtml.__tagHelperScopeManager.Begin("form", TagMode.StartTagAndEndTag, "4d74398bd0954e1589f2609845bdcdbf", new Func<Task>(proxyCreateCshtml.\u003CExecuteAsync\u003Eb__18_0));
+      proxyCreateCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper = proxyCreateCshtml.CreateTagHelper<FormTagHelper>();
+      proxyCreateCshtml.__tagHelperExecutionContext.Add((ITagHelper) proxyCreateCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper);
+      proxyCreateCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper = proxyCreateCshtml.CreateTagHelper<RenderAtEndOfFormTagHelper>();
+      proxyCreateCshtml.__tagHelperExecutionContext.Add((ITagHelper) proxyCreateCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper);
+      proxyCreateCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper.Action = (string) _Views_Proxy_Create_cshtml.__tagHelperAttribute_3.Value;
+      proxyCreateCshtml.__tagHelperExecutionContext.AddTagHelperAttribute(_Views_Proxy_Create_cshtml.__tagHelperAttribute_3);
+      await proxyCreateCshtml.__tagHelperRunner.RunAsync(proxyCreateCshtml.__tagHelperExecutionContext);
+      if (!proxyCreateCshtml.__tagHelperExecutionContext.Output.IsContentModified)
+        await proxyCreateCshtml.__tagHelperExecutionContext.SetOutputContentAsync();
+      proxyCreateCshtml.Write((object) proxyCreateCshtml.__tagHelperExecutionContext.Output);
+      proxyCreateCshtml.__tagHelperExecutionContext = proxyCreateCshtml.__tagHelperScopeManager.End();
+      proxyCreateCshtml.EndContext();
+      proxyCreateCshtml.BeginContext(1309, 35, true);
+      proxyCreateCshtml.WriteLiteral("\r\n    </div>\r\n</div>\r\n\r\n<div>\r\n    ");
+      proxyCreateCshtml.EndContext();
+      proxyCreateCshtml.BeginContext(1344, 38, false);
+      // ISSUE: reference to a compiler-generated method
+      proxyCreateCshtml.__tagHelperExecutionContext = proxyCreateCshtml.__tagHelperScopeManager.Begin("a", TagMode.StartTagAndEndTag, "fd87bdcae6124f5ca3fadfd2de9b9f30", new Func<Task>(proxyCreateCshtml.\u003CExecuteAsync\u003Eb__18_11));
+      proxyCreateCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper = proxyCreateCshtml.CreateTagHelper<AnchorTagHelper>();
+      proxyCreateCshtml.__tagHelperExecutionContext.Add((ITagHelper) proxyCreateCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper);
+      proxyCreateCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.Action = (string) _Views_Proxy_Create_cshtml.__tagHelperAttribute_4.Value;
+      proxyCreateCshtml.__tagHelperExecutionContext.AddTagHelperAttribute(_Views_Proxy_Create_cshtml.__tagHelperAttribute_4);
+      await proxyCreateCshtml.__tagHelperRunner.RunAsync(proxyCreateCshtml.__tagHelperExecutionContext);
+      if (!proxyCreateCshtml.__tagHelperExecutionContext.Output.IsContentModified)
+        await proxyCreateCshtml.__tagHelperExecutionContext.SetOutputContentAsync();
+      proxyCreateCshtml.Write((object) proxyCreateCshtml.__tagHelperExecutionContext.Output);
+      proxyCreateCshtml.__tagHelperExecutionContext = proxyCreateCshtml.__tagHelperScopeManager.End();
+      proxyCreateCshtml.EndContext();
+      proxyCreateCshtml.BeginContext(1382, 12, true);
+      proxyCreateCshtml.WriteLiteral("\r\n</div>\r\n\r\n");
+      proxyCreateCshtml.EndContext();
+      // ISSUE: reference to a compiler-generated method
+      proxyCreateCshtml.DefineSection("Scripts", new RenderAsyncDelegate(proxyCreateCshtml.\u003CExecuteAsync\u003Eb__18_12));
+    }
+
+    [RazorInject]
+    public IModelExpressionProvider ModelExpressionProvider { get; private set; }
+
+    [RazorInject]
+    public IUrlHelper Url { get; private set; }
+
+    [RazorInject]
+    public IViewComponentHelper Component { get; private set; }
+
+    [RazorInject]
+    public IJsonHelper Json { get; private set; }
+
+    [RazorInject]
+    public IHtmlHelper<location> Html { get; private set; }
+  }
+}

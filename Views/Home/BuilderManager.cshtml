@@ -1,0 +1,184 @@
+﻿// Decompiled with JetBrains decompiler
+// Type: AspNetCore._Views_Home_BuilderManager_cshtml
+// Assembly: Traffic.PrecompiledViews, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+// MVID: 8B37BA40-0390-40A7-A536-D9CCDBC36390
+// Assembly location: D:\Workstation\TonniProjects\TrafficWebDeploy\Traffic.PrecompiledViews.dll
+
+using Microsoft.AspNetCore.Html;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Razor;
+using Microsoft.AspNetCore.Mvc.Razor.Internal;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.Mvc.TagHelpers;
+using Microsoft.AspNetCore.Mvc.ViewFeatures;
+using Microsoft.AspNetCore.Razor.Runtime.TagHelpers;
+using Microsoft.AspNetCore.Razor.TagHelpers;
+using System;
+using System.Collections.Generic;
+using System.Linq.Expressions;
+using System.Text.Encodings.Web;
+using System.Threading.Tasks;
+using Traffic.Models;
+
+namespace AspNetCore
+{
+  public class _Views_Home_BuilderManager_cshtml : RazorPage<IEnumerable<htmltemplate>>
+  {
+    private static readonly TagHelperAttribute __tagHelperAttribute_0 = new TagHelperAttribute("asp-action", (object) "HtmlBuilder", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_1 = new TagHelperAttribute("class", (object) new HtmlString("btn btn-success btn-xs"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_2 = new TagHelperAttribute("asp-action", (object) "DeleteHtml", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_3 = new TagHelperAttribute("onclick", (object) new HtmlString("return DeleteConfirm();"), HtmlAttributeValueStyle.DoubleQuotes);
+    private string __tagHelperStringValueBuffer;
+    private TagHelperExecutionContext __tagHelperExecutionContext;
+    private TagHelperRunner __tagHelperRunner = new TagHelperRunner();
+    private TagHelperScopeManager __backed__tagHelperScopeManager;
+    private AnchorTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper;
+
+    private TagHelperScopeManager __tagHelperScopeManager
+    {
+      get
+      {
+        if (this.__backed__tagHelperScopeManager == null)
+          this.__backed__tagHelperScopeManager = new TagHelperScopeManager(new Action<HtmlEncoder>(((RazorPageBase) this).StartTagHelperWritingScope), new Func<TagHelperContent>(((RazorPageBase) this).EndTagHelperWritingScope));
+        return this.__backed__tagHelperScopeManager;
+      }
+    }
+
+    public virtual async Task ExecuteAsync()
+    {
+      _Views_Home_BuilderManager_cshtml builderManagerCshtml = this;
+      builderManagerCshtml.ViewData["Title"] = (object) "BuilderManager";
+      // ISSUE: explicit non-virtual call
+      __nonvirtual (builderManagerCshtml.Layout) = "~/Views/Shared/_Layout.cshtml";
+      builderManagerCshtml.BeginContext(146, 776, true);
+      builderManagerCshtml.WriteLiteral("\r\n<h2>BuilderManager</h2>\r\n\r\n</br>\r\n\r\n<style>\r\n    .crop {\r\n        white-space: nowrap;\r\n        overflow: hidden;\r\n        text-overflow: ellipsis\r\n    }\r\n\r\n    .btn-disable {\r\n        cursor: not-allowed;\r\n        pointer-events: none;\r\n        /*Button disabled - CSS color class*/\r\n        color: #c0c0c0;\r\n        background-color: #ffffff;\r\n    }\r\n</style>\r\n<table class=\"table\">\r\n    <thead>\r\n        <tr>\r\n            <th style=\"width: 30%;text-align:center;\">\r\n                Task Name\r\n            </th>\r\n            <th style=\"width: 20%;text-align:center;\">\r\n                Status\r\n            </th>\r\n            <th style=\"width: 30%;text-align:center;\">\r\n                Build Count\r\n            </th>\r\n            <th style=\"width: 20%;text-align:center;\">\r\n");
+      builderManagerCshtml.EndContext();
+      builderManagerCshtml.BeginContext(1006, 146, true);
+      builderManagerCshtml.WriteLiteral("                <button class=\"btn btn-info\" id=\"btnCreateHtml\">Create Job</button>\r\n            </th>\r\n        </tr>\r\n    </thead>\r\n    <tbody>\r\n");
+      builderManagerCshtml.EndContext();
+      foreach (htmltemplate htmltemplate in builderManagerCshtml.Model)
+      {
+        htmltemplate item = htmltemplate;
+        builderManagerCshtml.BeginContext(1225, 138, true);
+        builderManagerCshtml.WriteLiteral("        <tr style=\"background-color:cadetblue;\">\r\n            <td style=\"text-align:center;\">\r\n                <div>\r\n                    ");
+        builderManagerCshtml.EndContext();
+        builderManagerCshtml.BeginContext(1364, 42, false);
+        builderManagerCshtml.Write((object) builderManagerCshtml.Html.DisplayFor<IEnumerable<htmltemplate>, string>((Expression<Func<IEnumerable<htmltemplate>, string>>) (modelItem => item.jobname)));
+        builderManagerCshtml.EndContext();
+        builderManagerCshtml.BeginContext(1406, 92, true);
+        builderManagerCshtml.WriteLiteral("\r\n                </div>\r\n            </td>\r\n            <td style=\"text-align:center;\">\r\n\r\n");
+        builderManagerCshtml.EndContext();
+        if (item.state == 1)
+        {
+          builderManagerCshtml.BeginContext(1556, 40, true);
+          builderManagerCshtml.WriteLiteral("                    <div>Running</div>\r\n");
+          builderManagerCshtml.EndContext();
+        }
+        else
+        {
+          builderManagerCshtml.BeginContext(1656, 37, true);
+          builderManagerCshtml.WriteLiteral("                    <div>Done</div>\r\n");
+          builderManagerCshtml.EndContext();
+        }
+        builderManagerCshtml.BeginContext(1712, 137, true);
+        builderManagerCshtml.WriteLiteral("\r\n                    \r\n            </td>\r\n            <td style=\"text-align:center;\">\r\n                <div>\r\n                    build ");
+        builderManagerCshtml.EndContext();
+        builderManagerCshtml.BeginContext(1850, 45, false);
+        builderManagerCshtml.Write((object) builderManagerCshtml.Html.DisplayFor<IEnumerable<htmltemplate>, int>((Expression<Func<IEnumerable<htmltemplate>, int>>) (modelItem => item.processCnt)));
+        builderManagerCshtml.EndContext();
+        builderManagerCshtml.BeginContext(1895, 8, true);
+        builderManagerCshtml.WriteLiteral(" out of ");
+        builderManagerCshtml.EndContext();
+        builderManagerCshtml.BeginContext(1904, 43, false);
+        builderManagerCshtml.Write((object) builderManagerCshtml.Html.DisplayFor<IEnumerable<htmltemplate>, int>((Expression<Func<IEnumerable<htmltemplate>, int>>) (modelItem => item.totalCnt)));
+        builderManagerCshtml.EndContext();
+        builderManagerCshtml.BeginContext(1947, 142, true);
+        builderManagerCshtml.WriteLiteral("\r\n                </div>\r\n            </td>\r\n            <td style=\"text-align:center;\">\r\n                <div style=\"white-space: nowrap;\">\r\n");
+        builderManagerCshtml.EndContext();
+        if (item.state == 0)
+        {
+          builderManagerCshtml.BeginContext(2155, 24, true);
+          builderManagerCshtml.WriteLiteral("                        ");
+          builderManagerCshtml.EndContext();
+          builderManagerCshtml.BeginContext(2179, 92, false);
+          // ISSUE: reference to a compiler-generated method
+          builderManagerCshtml.__tagHelperExecutionContext = builderManagerCshtml.__tagHelperScopeManager.Begin("a", TagMode.StartTagAndEndTag, "4b6e8283cea04bd5b223c0fbf0a507e7", new Func<Task>(builderManagerCshtml.\u003CExecuteAsync\u003Eb__11_0));
+          builderManagerCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper = builderManagerCshtml.CreateTagHelper<AnchorTagHelper>();
+          builderManagerCshtml.__tagHelperExecutionContext.Add((ITagHelper) builderManagerCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper);
+          builderManagerCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.Action = (string) _Views_Home_BuilderManager_cshtml.__tagHelperAttribute_0.Value;
+          builderManagerCshtml.__tagHelperExecutionContext.AddTagHelperAttribute(_Views_Home_BuilderManager_cshtml.__tagHelperAttribute_0);
+          if (builderManagerCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues == null)
+            throw new InvalidOperationException(builderManagerCshtml.InvalidTagHelperIndexerAssignment("asp-route-id", "Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper", "RouteValues"));
+          builderManagerCshtml.BeginWriteTagHelperAttribute();
+          builderManagerCshtml.WriteLiteral((object) item.id);
+          builderManagerCshtml.__tagHelperStringValueBuffer = builderManagerCshtml.EndWriteTagHelperAttribute();
+          builderManagerCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues["id"] = builderManagerCshtml.__tagHelperStringValueBuffer;
+          builderManagerCshtml.__tagHelperExecutionContext.AddTagHelperAttribute("asp-route-id", (object) builderManagerCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues["id"], HtmlAttributeValueStyle.DoubleQuotes);
+          builderManagerCshtml.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_BuilderManager_cshtml.__tagHelperAttribute_1);
+          await builderManagerCshtml.__tagHelperRunner.RunAsync(builderManagerCshtml.__tagHelperExecutionContext);
+          if (!builderManagerCshtml.__tagHelperExecutionContext.Output.IsContentModified)
+            await builderManagerCshtml.__tagHelperExecutionContext.SetOutputContentAsync();
+          builderManagerCshtml.Write((object) builderManagerCshtml.__tagHelperExecutionContext.Output);
+          builderManagerCshtml.__tagHelperExecutionContext = builderManagerCshtml.__tagHelperScopeManager.End();
+          builderManagerCshtml.EndContext();
+          builderManagerCshtml.BeginContext(2271, 2, true);
+          builderManagerCshtml.WriteLiteral("\r\n");
+          builderManagerCshtml.EndContext();
+        }
+        builderManagerCshtml.BeginContext(2296, 20, true);
+        builderManagerCshtml.WriteLiteral("                    ");
+        builderManagerCshtml.EndContext();
+        builderManagerCshtml.BeginContext(2316, 126, false);
+        // ISSUE: reference to a compiler-generated method
+        builderManagerCshtml.__tagHelperExecutionContext = builderManagerCshtml.__tagHelperScopeManager.Begin("a", TagMode.StartTagAndEndTag, "b7f99850c75344b8bf4840e8cfb495a1", new Func<Task>(builderManagerCshtml.\u003CExecuteAsync\u003Eb__11_1));
+        builderManagerCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper = builderManagerCshtml.CreateTagHelper<AnchorTagHelper>();
+        builderManagerCshtml.__tagHelperExecutionContext.Add((ITagHelper) builderManagerCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper);
+        builderManagerCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.Action = (string) _Views_Home_BuilderManager_cshtml.__tagHelperAttribute_2.Value;
+        builderManagerCshtml.__tagHelperExecutionContext.AddTagHelperAttribute(_Views_Home_BuilderManager_cshtml.__tagHelperAttribute_2);
+        if (builderManagerCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues == null)
+          throw new InvalidOperationException(builderManagerCshtml.InvalidTagHelperIndexerAssignment("asp-route-id", "Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper", "RouteValues"));
+        builderManagerCshtml.BeginWriteTagHelperAttribute();
+        builderManagerCshtml.WriteLiteral((object) item.id);
+        builderManagerCshtml.__tagHelperStringValueBuffer = builderManagerCshtml.EndWriteTagHelperAttribute();
+        builderManagerCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues["id"] = builderManagerCshtml.__tagHelperStringValueBuffer;
+        builderManagerCshtml.__tagHelperExecutionContext.AddTagHelperAttribute("asp-route-id", (object) builderManagerCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues["id"], HtmlAttributeValueStyle.DoubleQuotes);
+        builderManagerCshtml.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_BuilderManager_cshtml.__tagHelperAttribute_1);
+        builderManagerCshtml.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_BuilderManager_cshtml.__tagHelperAttribute_3);
+        await builderManagerCshtml.__tagHelperRunner.RunAsync(builderManagerCshtml.__tagHelperExecutionContext);
+        if (!builderManagerCshtml.__tagHelperExecutionContext.Output.IsContentModified)
+          await builderManagerCshtml.__tagHelperExecutionContext.SetOutputContentAsync();
+        builderManagerCshtml.Write((object) builderManagerCshtml.__tagHelperExecutionContext.Output);
+        builderManagerCshtml.__tagHelperExecutionContext = builderManagerCshtml.__tagHelperScopeManager.End();
+        builderManagerCshtml.EndContext();
+        builderManagerCshtml.BeginContext(2442, 60, true);
+        builderManagerCshtml.WriteLiteral("\r\n                </div>\r\n            </td>\r\n        </tr>\r\n");
+        builderManagerCshtml.EndContext();
+      }
+      builderManagerCshtml.BeginContext(2515, 1612, true);
+      builderManagerCshtml.WriteLiteral("    </tbody>\r\n</table>\r\n\r\n<div id=\"AddModal\" class=\"modal fade\" tabindex=\"-1\" role=\"dialog\" aria-hidden=\"true\">\r\n    <div class=\"modal-dialog\" >\r\n        <div class=\"modal-content\">\r\n            <div class=\"modal-header\">\r\n                <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\">\r\n                    <span aria-hidden=\"true\">×</span>\r\n                </button>\r\n                <h4 class=\"modal-title\">Create Html Folder</h4>\r\n            </div>\r\n            <div class=\"modal-body\">\r\n\r\n                <div class=\"form-horizontal form-label-left\">\r\n\r\n                    <div class=\"form-group\">\r\n                        <label class=\"control-label col-md-3 col-sm-3 col-xs-12\">Job Name : </label>\r\n                        <div class=\"col-md-8 col-sm-8 col-xs-12\">\r\n                            <input id=\"jobname\" type=\"text\" name=\"jobname\"  value=\"\" style=\"margin-top:5px\"/>\r\n                        </div>\r\n                    </div>\r\n\r\n                </div>\r\n            </div>\r\n   ");
+      builderManagerCshtml.WriteLiteral("         <div class=\"modal-footer\">\r\n                <button type=\"button\" class=\"btn btn-default\" OnClick=\"btnCreateJob()\" data-dismiss=\"modal\">OK</button>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n<script>\r\n    function DeleteConfirm() {\r\n        return confirm(\"Are you going to delete user really?\");\r\n    }\r\n\r\n    $(\"#btnCreateHtml\").click(function () {\r\n        $(\"#AddModal\").modal();\r\n    });\r\n    function DeleteConfirm() {\r\n        return confirm(\"Are you going to delete user really?\");\r\n    }\r\n    function btnCreateJob() {\r\n        $.ajax({\r\n            url: '");
+      builderManagerCshtml.EndContext();
+      builderManagerCshtml.BeginContext(4128, 32, false);
+      builderManagerCshtml.Write(UrlHelperExtensions.Action(builderManagerCshtml.Url, "CreateHtml", "Home"));
+      builderManagerCshtml.EndContext();
+      builderManagerCshtml.BeginContext(4160, 762, true);
+      builderManagerCshtml.WriteLiteral("',\r\n            contentType: 'application/x-www-form-urlencoded',\r\n            type: 'POST',\r\n            data: { jobname: $(\"#jobname\").val() },\r\n            success: function (data) {\r\n                data = jQuery.parseJSON(data);\r\n                if (data[\"data\"] == \"success\") {\r\n                    location.reload();\r\n                }\r\n                else if (data[\"data\"]  == \"already\") {\r\n                    alert(\"Job name already exists\")\r\n                }\r\n                else\r\n                    alert(\"server connect error ! \"); \r\n            },\r\n            error: function (XMLHttpRequest, textStatus, errorThrown) {\r\n                alert(\"server connect error ! \");\r\n                return;\r\n            }\r\n        });\r\n    }\r\n</script>\r\n");
+      builderManagerCshtml.EndContext();
+    }
+
+    [RazorInject]
+    public IModelExpressionProvider ModelExpressionProvider { get; private set; }
+
+    [RazorInject]
+    public IUrlHelper Url { get; private set; }
+
+    [RazorInject]
+    public IViewComponentHelper Component { get; private set; }
+
+    [RazorInject]
+    public IJsonHelper Json { get; private set; }
+
+    [RazorInject]
+    public IHtmlHelper<IEnumerable<htmltemplate>> Html { get; private set; }
+  }
+}

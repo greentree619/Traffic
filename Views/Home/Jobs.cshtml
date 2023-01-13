@@ -1,0 +1,729 @@
+﻿// Decompiled with JetBrains decompiler
+// Type: AspNetCore._Views_Home_Jobs_cshtml
+// Assembly: Traffic.PrecompiledViews, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+// MVID: 8B37BA40-0390-40A7-A536-D9CCDBC36390
+// Assembly location: D:\Workstation\TonniProjects\TrafficWebDeploy\Traffic.PrecompiledViews.dll
+
+using Microsoft.AspNetCore.Html;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Razor;
+using Microsoft.AspNetCore.Mvc.Razor.Internal;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.Mvc.TagHelpers;
+using Microsoft.AspNetCore.Mvc.ViewFeatures;
+using Microsoft.AspNetCore.Razor.Runtime.TagHelpers;
+using Microsoft.AspNetCore.Razor.TagHelpers;
+using Microsoft.CSharp.RuntimeBinder;
+using System;
+using System.Collections.Generic;
+using System.Linq.Expressions;
+using System.Runtime.CompilerServices;
+using System.Text.Encodings.Web;
+using System.Threading.Tasks;
+using Traffic.Models;
+
+namespace AspNetCore
+{
+  public class _Views_Home_Jobs_cshtml : RazorPage<IEnumerable<trafficjob>>
+  {
+    private static readonly TagHelperAttribute __tagHelperAttribute_0 = new TagHelperAttribute("asp-action", (object) "Index", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_1 = new TagHelperAttribute("class", (object) new HtmlString("btn btn-info"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_2 = new TagHelperAttribute("asp-action", (object) "JobIndex", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_3 = new TagHelperAttribute("asp-action", (object) "Create", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_4 = new TagHelperAttribute("asp-action", (object) "CreateFromGoogle", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_5 = new TagHelperAttribute("asp-action", (object) "CreateFromGooglemyBusiness", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_6 = new TagHelperAttribute("method", (object) "post", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_7 = new TagHelperAttribute("enctype", (object) new HtmlString("multipart/form-data"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_8 = new TagHelperAttribute("asp-controller", (object) "Home", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_9 = new TagHelperAttribute("asp-action", (object) "CreateFromFile", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_10 = new TagHelperAttribute("asp-action", (object) "Start", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_11 = new TagHelperAttribute("class", (object) new HtmlString("btn btn-success btn-xs"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_12 = new TagHelperAttribute("asp-action", (object) "Edit", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_13 = new TagHelperAttribute("asp-action", (object) "Details", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_14 = new TagHelperAttribute("asp-action", (object) "LogView", HtmlAttributeValueStyle.DoubleQuotes);
+    private string __tagHelperStringValueBuffer;
+    private TagHelperExecutionContext __tagHelperExecutionContext;
+    private TagHelperRunner __tagHelperRunner = new TagHelperRunner();
+    private TagHelperScopeManager __backed__tagHelperScopeManager;
+    private AnchorTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper;
+    private FormTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper;
+    private RenderAtEndOfFormTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper;
+
+    private TagHelperScopeManager __tagHelperScopeManager
+    {
+      get
+      {
+        if (this.__backed__tagHelperScopeManager == null)
+          this.__backed__tagHelperScopeManager = new TagHelperScopeManager(new Action<HtmlEncoder>(((RazorPageBase) this).StartTagHelperWritingScope), new Func<TagHelperContent>(((RazorPageBase) this).EndTagHelperWritingScope));
+        return this.__backed__tagHelperScopeManager;
+      }
+    }
+
+    public virtual async Task ExecuteAsync()
+    {
+      _Views_Home_Jobs_cshtml viewsHomeJobsCshtml1 = this;
+      _Views_Home_Jobs_cshtml viewsHomeJobsCshtml = viewsHomeJobsCshtml1;
+      viewsHomeJobsCshtml1.BeginContext(47, 2, true);
+      viewsHomeJobsCshtml1.WriteLiteral("\r\n");
+      viewsHomeJobsCshtml1.EndContext();
+      string startLabel = "";
+      viewsHomeJobsCshtml1.ViewData["Title"] = (object) "Index";
+      // ISSUE: explicit non-virtual call
+      __nonvirtual (viewsHomeJobsCshtml1.Layout) = "~/Views/Shared/_Layout.cshtml";
+      viewsHomeJobsCshtml1.BeginContext((int) byte.MaxValue, 33, true);
+      viewsHomeJobsCshtml1.WriteLiteral("\r\n</br>\r\n<p class=\"text-right\">\r\n");
+      viewsHomeJobsCshtml1.EndContext();
+      // ISSUE: reference to a compiler-generated field
+      if (_Views_Home_Jobs_cshtml.\u003C\u003Eo__24.\u003C\u003Ep__2 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        _Views_Home_Jobs_cshtml.\u003C\u003Eo__24.\u003C\u003Ep__2 = CallSite<Func<CallSite, object, bool>>.Create(Binder.UnaryOperation(CSharpBinderFlags.None, ExpressionType.IsTrue, typeof (_Views_Home_Jobs_cshtml), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Func<CallSite, object, bool> target1 = _Views_Home_Jobs_cshtml.\u003C\u003Eo__24.\u003C\u003Ep__2.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Func<CallSite, object, bool>> p2 = _Views_Home_Jobs_cshtml.\u003C\u003Eo__24.\u003C\u003Ep__2;
+      // ISSUE: reference to a compiler-generated field
+      if (_Views_Home_Jobs_cshtml.\u003C\u003Eo__24.\u003C\u003Ep__1 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        _Views_Home_Jobs_cshtml.\u003C\u003Eo__24.\u003C\u003Ep__1 = CallSite<Func<CallSite, Type, object, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.None, "IsNullOrEmpty", (IEnumerable<Type>) null, typeof (_Views_Home_Jobs_cshtml), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.IsStaticType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Func<CallSite, Type, object, object> target2 = _Views_Home_Jobs_cshtml.\u003C\u003Eo__24.\u003C\u003Ep__1.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Func<CallSite, Type, object, object>> p1 = _Views_Home_Jobs_cshtml.\u003C\u003Eo__24.\u003C\u003Ep__1;
+      Type type = typeof (string);
+      // ISSUE: reference to a compiler-generated field
+      if (_Views_Home_Jobs_cshtml.\u003C\u003Eo__24.\u003C\u003Ep__0 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        _Views_Home_Jobs_cshtml.\u003C\u003Eo__24.\u003C\u003Ep__0 = CallSite<Func<CallSite, object, object>>.Create(Binder.GetMember(CSharpBinderFlags.None, "UserId", typeof (_Views_Home_Jobs_cshtml), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj1 = _Views_Home_Jobs_cshtml.\u003C\u003Eo__24.\u003C\u003Ep__0.Target((CallSite) _Views_Home_Jobs_cshtml.\u003C\u003Eo__24.\u003C\u003Ep__0, viewsHomeJobsCshtml1.ViewBag);
+      object obj2 = target2((CallSite) p1, type, obj1);
+      if (target1((CallSite) p2, obj2))
+      {
+        viewsHomeJobsCshtml1.BeginContext(343, 8, true);
+        viewsHomeJobsCshtml1.WriteLiteral("        ");
+        viewsHomeJobsCshtml1.EndContext();
+        viewsHomeJobsCshtml1.BeginContext(351, 59, false);
+        // ISSUE: reference to a compiler-generated method
+        viewsHomeJobsCshtml1.__tagHelperExecutionContext = viewsHomeJobsCshtml1.__tagHelperScopeManager.Begin("a", TagMode.StartTagAndEndTag, "311aaac6478945bab7714db0574e7657", new Func<Task>(viewsHomeJobsCshtml1.\u003CExecuteAsync\u003Eb__24_0));
+        viewsHomeJobsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper = viewsHomeJobsCshtml1.CreateTagHelper<AnchorTagHelper>();
+        viewsHomeJobsCshtml1.__tagHelperExecutionContext.Add((ITagHelper) viewsHomeJobsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper);
+        viewsHomeJobsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.Action = (string) _Views_Home_Jobs_cshtml.__tagHelperAttribute_0.Value;
+        viewsHomeJobsCshtml1.__tagHelperExecutionContext.AddTagHelperAttribute(_Views_Home_Jobs_cshtml.__tagHelperAttribute_0);
+        viewsHomeJobsCshtml1.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_Jobs_cshtml.__tagHelperAttribute_1);
+        await viewsHomeJobsCshtml1.__tagHelperRunner.RunAsync(viewsHomeJobsCshtml1.__tagHelperExecutionContext);
+        if (!viewsHomeJobsCshtml1.__tagHelperExecutionContext.Output.IsContentModified)
+          await viewsHomeJobsCshtml1.__tagHelperExecutionContext.SetOutputContentAsync();
+        viewsHomeJobsCshtml1.Write((object) viewsHomeJobsCshtml1.__tagHelperExecutionContext.Output);
+        viewsHomeJobsCshtml1.__tagHelperExecutionContext = viewsHomeJobsCshtml1.__tagHelperScopeManager.End();
+        viewsHomeJobsCshtml1.EndContext();
+        viewsHomeJobsCshtml1.BeginContext(410, 2, true);
+        viewsHomeJobsCshtml1.WriteLiteral("\r\n");
+        viewsHomeJobsCshtml1.EndContext();
+      }
+      else
+      {
+        viewsHomeJobsCshtml1.BeginContext(436, 8, true);
+        viewsHomeJobsCshtml1.WriteLiteral("        ");
+        viewsHomeJobsCshtml1.EndContext();
+        viewsHomeJobsCshtml1.BeginContext(444, 93, false);
+        // ISSUE: reference to a compiler-generated method
+        viewsHomeJobsCshtml1.__tagHelperExecutionContext = viewsHomeJobsCshtml1.__tagHelperScopeManager.Begin("a", TagMode.StartTagAndEndTag, "3e99e65e2e4440eda208dc3fba757982", new Func<Task>(viewsHomeJobsCshtml1.\u003CExecuteAsync\u003Eb__24_1));
+        viewsHomeJobsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper = viewsHomeJobsCshtml1.CreateTagHelper<AnchorTagHelper>();
+        viewsHomeJobsCshtml1.__tagHelperExecutionContext.Add((ITagHelper) viewsHomeJobsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper);
+        viewsHomeJobsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.Action = (string) _Views_Home_Jobs_cshtml.__tagHelperAttribute_2.Value;
+        viewsHomeJobsCshtml1.__tagHelperExecutionContext.AddTagHelperAttribute(_Views_Home_Jobs_cshtml.__tagHelperAttribute_2);
+        if (viewsHomeJobsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues == null)
+          throw new InvalidOperationException(viewsHomeJobsCshtml1.InvalidTagHelperIndexerAssignment("asp-route-id", "Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper", "RouteValues"));
+        viewsHomeJobsCshtml1.BeginWriteTagHelperAttribute();
+        // ISSUE: reference to a compiler-generated field
+        if (_Views_Home_Jobs_cshtml.\u003C\u003Eo__24.\u003C\u003Ep__4 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          _Views_Home_Jobs_cshtml.\u003C\u003Eo__24.\u003C\u003Ep__4 = CallSite<Action<CallSite, _Views_Home_Jobs_cshtml, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "WriteLiteral", (IEnumerable<Type>) null, typeof (_Views_Home_Jobs_cshtml), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, _Views_Home_Jobs_cshtml, object> target3 = _Views_Home_Jobs_cshtml.\u003C\u003Eo__24.\u003C\u003Ep__4.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, _Views_Home_Jobs_cshtml, object>> p4 = _Views_Home_Jobs_cshtml.\u003C\u003Eo__24.\u003C\u003Ep__4;
+        _Views_Home_Jobs_cshtml viewsHomeJobsCshtml2 = viewsHomeJobsCshtml1;
+        // ISSUE: reference to a compiler-generated field
+        if (_Views_Home_Jobs_cshtml.\u003C\u003Eo__24.\u003C\u003Ep__3 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          _Views_Home_Jobs_cshtml.\u003C\u003Eo__24.\u003C\u003Ep__3 = CallSite<Func<CallSite, object, object>>.Create(Binder.GetMember(CSharpBinderFlags.None, "UserId", typeof (_Views_Home_Jobs_cshtml), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj3 = _Views_Home_Jobs_cshtml.\u003C\u003Eo__24.\u003C\u003Ep__3.Target((CallSite) _Views_Home_Jobs_cshtml.\u003C\u003Eo__24.\u003C\u003Ep__3, viewsHomeJobsCshtml1.ViewBag);
+        target3((CallSite) p4, viewsHomeJobsCshtml2, obj3);
+        viewsHomeJobsCshtml1.__tagHelperStringValueBuffer = viewsHomeJobsCshtml1.EndWriteTagHelperAttribute();
+        viewsHomeJobsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues["id"] = viewsHomeJobsCshtml1.__tagHelperStringValueBuffer;
+        viewsHomeJobsCshtml1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-route-id", (object) viewsHomeJobsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues["id"], HtmlAttributeValueStyle.DoubleQuotes);
+        viewsHomeJobsCshtml1.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_Jobs_cshtml.__tagHelperAttribute_1);
+        await viewsHomeJobsCshtml1.__tagHelperRunner.RunAsync(viewsHomeJobsCshtml1.__tagHelperExecutionContext);
+        if (!viewsHomeJobsCshtml1.__tagHelperExecutionContext.Output.IsContentModified)
+          await viewsHomeJobsCshtml1.__tagHelperExecutionContext.SetOutputContentAsync();
+        viewsHomeJobsCshtml1.Write((object) viewsHomeJobsCshtml1.__tagHelperExecutionContext.Output);
+        viewsHomeJobsCshtml1.__tagHelperExecutionContext = viewsHomeJobsCshtml1.__tagHelperScopeManager.End();
+        viewsHomeJobsCshtml1.EndContext();
+        viewsHomeJobsCshtml1.BeginContext(537, 2, true);
+        viewsHomeJobsCshtml1.WriteLiteral("\r\n");
+        viewsHomeJobsCshtml1.EndContext();
+      }
+      viewsHomeJobsCshtml1.BeginContext(546, 2, true);
+      viewsHomeJobsCshtml1.WriteLiteral("\r\n");
+      viewsHomeJobsCshtml1.EndContext();
+      // ISSUE: reference to a compiler-generated field
+      if (_Views_Home_Jobs_cshtml.\u003C\u003Eo__24.\u003C\u003Ep__6 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        _Views_Home_Jobs_cshtml.\u003C\u003Eo__24.\u003C\u003Ep__6 = CallSite<Func<CallSite, object, bool>>.Create(Binder.UnaryOperation(CSharpBinderFlags.None, ExpressionType.IsTrue, typeof (_Views_Home_Jobs_cshtml), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Func<CallSite, object, bool> target4 = _Views_Home_Jobs_cshtml.\u003C\u003Eo__24.\u003C\u003Ep__6.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Func<CallSite, object, bool>> p6 = _Views_Home_Jobs_cshtml.\u003C\u003Eo__24.\u003C\u003Ep__6;
+      // ISSUE: reference to a compiler-generated field
+      if (_Views_Home_Jobs_cshtml.\u003C\u003Eo__24.\u003C\u003Ep__5 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        _Views_Home_Jobs_cshtml.\u003C\u003Eo__24.\u003C\u003Ep__5 = CallSite<Func<CallSite, object, object>>.Create(Binder.GetMember(CSharpBinderFlags.None, "CanCreateJob", typeof (_Views_Home_Jobs_cshtml), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj4 = _Views_Home_Jobs_cshtml.\u003C\u003Eo__24.\u003C\u003Ep__5.Target((CallSite) _Views_Home_Jobs_cshtml.\u003C\u003Eo__24.\u003C\u003Ep__5, viewsHomeJobsCshtml1.ViewBag);
+      if (target4((CallSite) p6, obj4))
+      {
+        viewsHomeJobsCshtml1.BeginContext(587, 8, true);
+        viewsHomeJobsCshtml1.WriteLiteral("        ");
+        viewsHomeJobsCshtml1.EndContext();
+        viewsHomeJobsCshtml1.BeginContext(595, 91, false);
+        // ISSUE: reference to a compiler-generated method
+        viewsHomeJobsCshtml1.__tagHelperExecutionContext = viewsHomeJobsCshtml1.__tagHelperScopeManager.Begin("a", TagMode.StartTagAndEndTag, "bcbfc227244446b9ad526b3d467885a4", new Func<Task>(viewsHomeJobsCshtml1.\u003CExecuteAsync\u003Eb__24_2));
+        viewsHomeJobsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper = viewsHomeJobsCshtml1.CreateTagHelper<AnchorTagHelper>();
+        viewsHomeJobsCshtml1.__tagHelperExecutionContext.Add((ITagHelper) viewsHomeJobsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper);
+        viewsHomeJobsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.Action = (string) _Views_Home_Jobs_cshtml.__tagHelperAttribute_3.Value;
+        viewsHomeJobsCshtml1.__tagHelperExecutionContext.AddTagHelperAttribute(_Views_Home_Jobs_cshtml.__tagHelperAttribute_3);
+        if (viewsHomeJobsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues == null)
+          throw new InvalidOperationException(viewsHomeJobsCshtml1.InvalidTagHelperIndexerAssignment("asp-route-id", "Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper", "RouteValues"));
+        viewsHomeJobsCshtml1.BeginWriteTagHelperAttribute();
+        // ISSUE: reference to a compiler-generated field
+        if (_Views_Home_Jobs_cshtml.\u003C\u003Eo__24.\u003C\u003Ep__8 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          _Views_Home_Jobs_cshtml.\u003C\u003Eo__24.\u003C\u003Ep__8 = CallSite<Action<CallSite, _Views_Home_Jobs_cshtml, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "WriteLiteral", (IEnumerable<Type>) null, typeof (_Views_Home_Jobs_cshtml), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, _Views_Home_Jobs_cshtml, object> target5 = _Views_Home_Jobs_cshtml.\u003C\u003Eo__24.\u003C\u003Ep__8.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, _Views_Home_Jobs_cshtml, object>> p8 = _Views_Home_Jobs_cshtml.\u003C\u003Eo__24.\u003C\u003Ep__8;
+        _Views_Home_Jobs_cshtml viewsHomeJobsCshtml3 = viewsHomeJobsCshtml1;
+        // ISSUE: reference to a compiler-generated field
+        if (_Views_Home_Jobs_cshtml.\u003C\u003Eo__24.\u003C\u003Ep__7 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          _Views_Home_Jobs_cshtml.\u003C\u003Eo__24.\u003C\u003Ep__7 = CallSite<Func<CallSite, object, object>>.Create(Binder.GetMember(CSharpBinderFlags.None, "FolderId", typeof (_Views_Home_Jobs_cshtml), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj5 = _Views_Home_Jobs_cshtml.\u003C\u003Eo__24.\u003C\u003Ep__7.Target((CallSite) _Views_Home_Jobs_cshtml.\u003C\u003Eo__24.\u003C\u003Ep__7, viewsHomeJobsCshtml1.ViewBag);
+        target5((CallSite) p8, viewsHomeJobsCshtml3, obj5);
+        viewsHomeJobsCshtml1.__tagHelperStringValueBuffer = viewsHomeJobsCshtml1.EndWriteTagHelperAttribute();
+        viewsHomeJobsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues["id"] = viewsHomeJobsCshtml1.__tagHelperStringValueBuffer;
+        viewsHomeJobsCshtml1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-route-id", (object) viewsHomeJobsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues["id"], HtmlAttributeValueStyle.DoubleQuotes);
+        viewsHomeJobsCshtml1.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_Jobs_cshtml.__tagHelperAttribute_1);
+        await viewsHomeJobsCshtml1.__tagHelperRunner.RunAsync(viewsHomeJobsCshtml1.__tagHelperExecutionContext);
+        if (!viewsHomeJobsCshtml1.__tagHelperExecutionContext.Output.IsContentModified)
+          await viewsHomeJobsCshtml1.__tagHelperExecutionContext.SetOutputContentAsync();
+        viewsHomeJobsCshtml1.Write((object) viewsHomeJobsCshtml1.__tagHelperExecutionContext.Output);
+        viewsHomeJobsCshtml1.__tagHelperExecutionContext = viewsHomeJobsCshtml1.__tagHelperScopeManager.End();
+        viewsHomeJobsCshtml1.EndContext();
+        viewsHomeJobsCshtml1.BeginContext(686, 2, true);
+        viewsHomeJobsCshtml1.WriteLiteral("\r\n");
+        viewsHomeJobsCshtml1.EndContext();
+        // ISSUE: reference to a compiler-generated field
+        if (_Views_Home_Jobs_cshtml.\u003C\u003Eo__24.\u003C\u003Ep__10 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          _Views_Home_Jobs_cshtml.\u003C\u003Eo__24.\u003C\u003Ep__10 = CallSite<Func<CallSite, object, bool>>.Create(Binder.UnaryOperation(CSharpBinderFlags.None, ExpressionType.IsTrue, typeof (_Views_Home_Jobs_cshtml), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Func<CallSite, object, bool> target6 = _Views_Home_Jobs_cshtml.\u003C\u003Eo__24.\u003C\u003Ep__10.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Func<CallSite, object, bool>> p10 = _Views_Home_Jobs_cshtml.\u003C\u003Eo__24.\u003C\u003Ep__10;
+        // ISSUE: reference to a compiler-generated field
+        if (_Views_Home_Jobs_cshtml.\u003C\u003Eo__24.\u003C\u003Ep__9 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          _Views_Home_Jobs_cshtml.\u003C\u003Eo__24.\u003C\u003Ep__9 = CallSite<Func<CallSite, object, object>>.Create(Binder.GetMember(CSharpBinderFlags.None, "EnableGoogleSearchConsole", typeof (_Views_Home_Jobs_cshtml), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj6 = _Views_Home_Jobs_cshtml.\u003C\u003Eo__24.\u003C\u003Ep__9.Target((CallSite) _Views_Home_Jobs_cshtml.\u003C\u003Eo__24.\u003C\u003Ep__9, viewsHomeJobsCshtml1.ViewBag);
+        if (target6((CallSite) p10, obj6))
+        {
+          viewsHomeJobsCshtml1.BeginContext(750, 12, true);
+          viewsHomeJobsCshtml1.WriteLiteral("            ");
+          viewsHomeJobsCshtml1.EndContext();
+          viewsHomeJobsCshtml1.BeginContext(762, 128, false);
+          // ISSUE: reference to a compiler-generated method
+          viewsHomeJobsCshtml1.__tagHelperExecutionContext = viewsHomeJobsCshtml1.__tagHelperScopeManager.Begin("a", TagMode.StartTagAndEndTag, "4dfe16262af64fafa6c202b30f65e05c", new Func<Task>(viewsHomeJobsCshtml1.\u003CExecuteAsync\u003Eb__24_3));
+          viewsHomeJobsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper = viewsHomeJobsCshtml1.CreateTagHelper<AnchorTagHelper>();
+          viewsHomeJobsCshtml1.__tagHelperExecutionContext.Add((ITagHelper) viewsHomeJobsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper);
+          viewsHomeJobsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.Action = (string) _Views_Home_Jobs_cshtml.__tagHelperAttribute_4.Value;
+          viewsHomeJobsCshtml1.__tagHelperExecutionContext.AddTagHelperAttribute(_Views_Home_Jobs_cshtml.__tagHelperAttribute_4);
+          if (viewsHomeJobsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues == null)
+            throw new InvalidOperationException(viewsHomeJobsCshtml1.InvalidTagHelperIndexerAssignment("asp-route-id", "Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper", "RouteValues"));
+          viewsHomeJobsCshtml1.BeginWriteTagHelperAttribute();
+          // ISSUE: reference to a compiler-generated field
+          if (_Views_Home_Jobs_cshtml.\u003C\u003Eo__24.\u003C\u003Ep__12 == null)
+          {
+            // ISSUE: reference to a compiler-generated field
+            _Views_Home_Jobs_cshtml.\u003C\u003Eo__24.\u003C\u003Ep__12 = CallSite<Action<CallSite, _Views_Home_Jobs_cshtml, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "WriteLiteral", (IEnumerable<Type>) null, typeof (_Views_Home_Jobs_cshtml), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+            {
+              CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+              CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+            }));
+          }
+          // ISSUE: reference to a compiler-generated field
+          Action<CallSite, _Views_Home_Jobs_cshtml, object> target7 = _Views_Home_Jobs_cshtml.\u003C\u003Eo__24.\u003C\u003Ep__12.Target;
+          // ISSUE: reference to a compiler-generated field
+          CallSite<Action<CallSite, _Views_Home_Jobs_cshtml, object>> p12 = _Views_Home_Jobs_cshtml.\u003C\u003Eo__24.\u003C\u003Ep__12;
+          _Views_Home_Jobs_cshtml viewsHomeJobsCshtml4 = viewsHomeJobsCshtml1;
+          // ISSUE: reference to a compiler-generated field
+          if (_Views_Home_Jobs_cshtml.\u003C\u003Eo__24.\u003C\u003Ep__11 == null)
+          {
+            // ISSUE: reference to a compiler-generated field
+            _Views_Home_Jobs_cshtml.\u003C\u003Eo__24.\u003C\u003Ep__11 = CallSite<Func<CallSite, object, object>>.Create(Binder.GetMember(CSharpBinderFlags.None, "FolderId", typeof (_Views_Home_Jobs_cshtml), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+            {
+              CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+            }));
+          }
+          // ISSUE: reference to a compiler-generated field
+          // ISSUE: reference to a compiler-generated field
+          object obj7 = _Views_Home_Jobs_cshtml.\u003C\u003Eo__24.\u003C\u003Ep__11.Target((CallSite) _Views_Home_Jobs_cshtml.\u003C\u003Eo__24.\u003C\u003Ep__11, viewsHomeJobsCshtml1.ViewBag);
+          target7((CallSite) p12, viewsHomeJobsCshtml4, obj7);
+          viewsHomeJobsCshtml1.__tagHelperStringValueBuffer = viewsHomeJobsCshtml1.EndWriteTagHelperAttribute();
+          viewsHomeJobsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues["id"] = viewsHomeJobsCshtml1.__tagHelperStringValueBuffer;
+          viewsHomeJobsCshtml1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-route-id", (object) viewsHomeJobsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues["id"], HtmlAttributeValueStyle.DoubleQuotes);
+          viewsHomeJobsCshtml1.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_Jobs_cshtml.__tagHelperAttribute_1);
+          await viewsHomeJobsCshtml1.__tagHelperRunner.RunAsync(viewsHomeJobsCshtml1.__tagHelperExecutionContext);
+          if (!viewsHomeJobsCshtml1.__tagHelperExecutionContext.Output.IsContentModified)
+            await viewsHomeJobsCshtml1.__tagHelperExecutionContext.SetOutputContentAsync();
+          viewsHomeJobsCshtml1.Write((object) viewsHomeJobsCshtml1.__tagHelperExecutionContext.Output);
+          viewsHomeJobsCshtml1.__tagHelperExecutionContext = viewsHomeJobsCshtml1.__tagHelperScopeManager.End();
+          viewsHomeJobsCshtml1.EndContext();
+          viewsHomeJobsCshtml1.BeginContext(890, 14, true);
+          viewsHomeJobsCshtml1.WriteLiteral("\r\n            ");
+          viewsHomeJobsCshtml1.EndContext();
+          viewsHomeJobsCshtml1.BeginContext(904, 140, false);
+          // ISSUE: reference to a compiler-generated method
+          viewsHomeJobsCshtml1.__tagHelperExecutionContext = viewsHomeJobsCshtml1.__tagHelperScopeManager.Begin("a", TagMode.StartTagAndEndTag, "88aa85224e2646d09fb14e4fff167be0", new Func<Task>(viewsHomeJobsCshtml1.\u003CExecuteAsync\u003Eb__24_4));
+          viewsHomeJobsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper = viewsHomeJobsCshtml1.CreateTagHelper<AnchorTagHelper>();
+          viewsHomeJobsCshtml1.__tagHelperExecutionContext.Add((ITagHelper) viewsHomeJobsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper);
+          viewsHomeJobsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.Action = (string) _Views_Home_Jobs_cshtml.__tagHelperAttribute_5.Value;
+          viewsHomeJobsCshtml1.__tagHelperExecutionContext.AddTagHelperAttribute(_Views_Home_Jobs_cshtml.__tagHelperAttribute_5);
+          if (viewsHomeJobsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues == null)
+            throw new InvalidOperationException(viewsHomeJobsCshtml1.InvalidTagHelperIndexerAssignment("asp-route-id", "Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper", "RouteValues"));
+          viewsHomeJobsCshtml1.BeginWriteTagHelperAttribute();
+          // ISSUE: reference to a compiler-generated field
+          if (_Views_Home_Jobs_cshtml.\u003C\u003Eo__24.\u003C\u003Ep__14 == null)
+          {
+            // ISSUE: reference to a compiler-generated field
+            _Views_Home_Jobs_cshtml.\u003C\u003Eo__24.\u003C\u003Ep__14 = CallSite<Action<CallSite, _Views_Home_Jobs_cshtml, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "WriteLiteral", (IEnumerable<Type>) null, typeof (_Views_Home_Jobs_cshtml), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+            {
+              CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+              CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+            }));
+          }
+          // ISSUE: reference to a compiler-generated field
+          Action<CallSite, _Views_Home_Jobs_cshtml, object> target8 = _Views_Home_Jobs_cshtml.\u003C\u003Eo__24.\u003C\u003Ep__14.Target;
+          // ISSUE: reference to a compiler-generated field
+          CallSite<Action<CallSite, _Views_Home_Jobs_cshtml, object>> p14 = _Views_Home_Jobs_cshtml.\u003C\u003Eo__24.\u003C\u003Ep__14;
+          _Views_Home_Jobs_cshtml viewsHomeJobsCshtml5 = viewsHomeJobsCshtml1;
+          // ISSUE: reference to a compiler-generated field
+          if (_Views_Home_Jobs_cshtml.\u003C\u003Eo__24.\u003C\u003Ep__13 == null)
+          {
+            // ISSUE: reference to a compiler-generated field
+            _Views_Home_Jobs_cshtml.\u003C\u003Eo__24.\u003C\u003Ep__13 = CallSite<Func<CallSite, object, object>>.Create(Binder.GetMember(CSharpBinderFlags.None, "FolderId", typeof (_Views_Home_Jobs_cshtml), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+            {
+              CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+            }));
+          }
+          // ISSUE: reference to a compiler-generated field
+          // ISSUE: reference to a compiler-generated field
+          object obj8 = _Views_Home_Jobs_cshtml.\u003C\u003Eo__24.\u003C\u003Ep__13.Target((CallSite) _Views_Home_Jobs_cshtml.\u003C\u003Eo__24.\u003C\u003Ep__13, viewsHomeJobsCshtml1.ViewBag);
+          target8((CallSite) p14, viewsHomeJobsCshtml5, obj8);
+          viewsHomeJobsCshtml1.__tagHelperStringValueBuffer = viewsHomeJobsCshtml1.EndWriteTagHelperAttribute();
+          viewsHomeJobsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues["id"] = viewsHomeJobsCshtml1.__tagHelperStringValueBuffer;
+          viewsHomeJobsCshtml1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-route-id", (object) viewsHomeJobsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues["id"], HtmlAttributeValueStyle.DoubleQuotes);
+          viewsHomeJobsCshtml1.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_Jobs_cshtml.__tagHelperAttribute_1);
+          await viewsHomeJobsCshtml1.__tagHelperRunner.RunAsync(viewsHomeJobsCshtml1.__tagHelperExecutionContext);
+          if (!viewsHomeJobsCshtml1.__tagHelperExecutionContext.Output.IsContentModified)
+            await viewsHomeJobsCshtml1.__tagHelperExecutionContext.SetOutputContentAsync();
+          viewsHomeJobsCshtml1.Write((object) viewsHomeJobsCshtml1.__tagHelperExecutionContext.Output);
+          viewsHomeJobsCshtml1.__tagHelperExecutionContext = viewsHomeJobsCshtml1.__tagHelperScopeManager.End();
+          viewsHomeJobsCshtml1.EndContext();
+          viewsHomeJobsCshtml1.BeginContext(1044, 2, true);
+          viewsHomeJobsCshtml1.WriteLiteral("\r\n");
+          viewsHomeJobsCshtml1.EndContext();
+        }
+      }
+      viewsHomeJobsCshtml1.BeginContext(1064, 12, true);
+      viewsHomeJobsCshtml1.WriteLiteral("</p>\r\n\r\n\r\n\r\n");
+      viewsHomeJobsCshtml1.EndContext();
+      // ISSUE: reference to a compiler-generated field
+      if (_Views_Home_Jobs_cshtml.\u003C\u003Eo__24.\u003C\u003Ep__19 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        _Views_Home_Jobs_cshtml.\u003C\u003Eo__24.\u003C\u003Ep__19 = CallSite<Func<CallSite, object, bool>>.Create(Binder.UnaryOperation(CSharpBinderFlags.None, ExpressionType.IsTrue, typeof (_Views_Home_Jobs_cshtml), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Func<CallSite, object, bool> target9 = _Views_Home_Jobs_cshtml.\u003C\u003Eo__24.\u003C\u003Ep__19.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Func<CallSite, object, bool>> p19 = _Views_Home_Jobs_cshtml.\u003C\u003Eo__24.\u003C\u003Ep__19;
+      // ISSUE: reference to a compiler-generated field
+      if (_Views_Home_Jobs_cshtml.\u003C\u003Eo__24.\u003C\u003Ep__15 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        _Views_Home_Jobs_cshtml.\u003C\u003Eo__24.\u003C\u003Ep__15 = CallSite<Func<CallSite, object, object>>.Create(Binder.GetMember(CSharpBinderFlags.None, "CanCreateJob", typeof (_Views_Home_Jobs_cshtml), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj9 = _Views_Home_Jobs_cshtml.\u003C\u003Eo__24.\u003C\u003Ep__15.Target((CallSite) _Views_Home_Jobs_cshtml.\u003C\u003Eo__24.\u003C\u003Ep__15, viewsHomeJobsCshtml1.ViewBag);
+      // ISSUE: reference to a compiler-generated field
+      if (_Views_Home_Jobs_cshtml.\u003C\u003Eo__24.\u003C\u003Ep__18 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        _Views_Home_Jobs_cshtml.\u003C\u003Eo__24.\u003C\u003Ep__18 = CallSite<Func<CallSite, object, bool>>.Create(Binder.UnaryOperation(CSharpBinderFlags.None, ExpressionType.IsFalse, typeof (_Views_Home_Jobs_cshtml), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      object obj10;
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      if (!_Views_Home_Jobs_cshtml.\u003C\u003Eo__24.\u003C\u003Ep__18.Target((CallSite) _Views_Home_Jobs_cshtml.\u003C\u003Eo__24.\u003C\u003Ep__18, obj9))
+      {
+        // ISSUE: reference to a compiler-generated field
+        if (_Views_Home_Jobs_cshtml.\u003C\u003Eo__24.\u003C\u003Ep__17 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          _Views_Home_Jobs_cshtml.\u003C\u003Eo__24.\u003C\u003Ep__17 = CallSite<Func<CallSite, object, object, object>>.Create(Binder.BinaryOperation(CSharpBinderFlags.BinaryOperationLogical, ExpressionType.And, typeof (_Views_Home_Jobs_cshtml), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Func<CallSite, object, object, object> target10 = _Views_Home_Jobs_cshtml.\u003C\u003Eo__24.\u003C\u003Ep__17.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Func<CallSite, object, object, object>> p17 = _Views_Home_Jobs_cshtml.\u003C\u003Eo__24.\u003C\u003Ep__17;
+        object obj11 = obj9;
+        // ISSUE: reference to a compiler-generated field
+        if (_Views_Home_Jobs_cshtml.\u003C\u003Eo__24.\u003C\u003Ep__16 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          _Views_Home_Jobs_cshtml.\u003C\u003Eo__24.\u003C\u003Ep__16 = CallSite<Func<CallSite, object, object>>.Create(Binder.GetMember(CSharpBinderFlags.None, "EnableCreateJobFromFile", typeof (_Views_Home_Jobs_cshtml), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj12 = _Views_Home_Jobs_cshtml.\u003C\u003Eo__24.\u003C\u003Ep__16.Target((CallSite) _Views_Home_Jobs_cshtml.\u003C\u003Eo__24.\u003C\u003Ep__16, viewsHomeJobsCshtml1.ViewBag);
+        obj10 = target10((CallSite) p17, obj11, obj12);
+      }
+      else
+        obj10 = obj9;
+      if (target9((CallSite) p19, obj10))
+      {
+        viewsHomeJobsCshtml1.BeginContext(1144, 4, true);
+        viewsHomeJobsCshtml1.WriteLiteral("    ");
+        viewsHomeJobsCshtml1.EndContext();
+        viewsHomeJobsCshtml1.BeginContext(1148, 399, false);
+        // ISSUE: reference to a compiler-generated method
+        viewsHomeJobsCshtml1.__tagHelperExecutionContext = viewsHomeJobsCshtml1.__tagHelperScopeManager.Begin("form", TagMode.StartTagAndEndTag, "246bd896b7484bec9e9c4df88c8cd948", new Func<Task>(viewsHomeJobsCshtml1.\u003CExecuteAsync\u003Eb__24_5));
+        viewsHomeJobsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper = viewsHomeJobsCshtml1.CreateTagHelper<FormTagHelper>();
+        viewsHomeJobsCshtml1.__tagHelperExecutionContext.Add((ITagHelper) viewsHomeJobsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper);
+        viewsHomeJobsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper = viewsHomeJobsCshtml1.CreateTagHelper<RenderAtEndOfFormTagHelper>();
+        viewsHomeJobsCshtml1.__tagHelperExecutionContext.Add((ITagHelper) viewsHomeJobsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper);
+        viewsHomeJobsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper.Method = (string) _Views_Home_Jobs_cshtml.__tagHelperAttribute_6.Value;
+        viewsHomeJobsCshtml1.__tagHelperExecutionContext.AddTagHelperAttribute(_Views_Home_Jobs_cshtml.__tagHelperAttribute_6);
+        viewsHomeJobsCshtml1.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_Jobs_cshtml.__tagHelperAttribute_7);
+        viewsHomeJobsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper.Controller = (string) _Views_Home_Jobs_cshtml.__tagHelperAttribute_8.Value;
+        viewsHomeJobsCshtml1.__tagHelperExecutionContext.AddTagHelperAttribute(_Views_Home_Jobs_cshtml.__tagHelperAttribute_8);
+        viewsHomeJobsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper.Action = (string) _Views_Home_Jobs_cshtml.__tagHelperAttribute_9.Value;
+        viewsHomeJobsCshtml1.__tagHelperExecutionContext.AddTagHelperAttribute(_Views_Home_Jobs_cshtml.__tagHelperAttribute_9);
+        await viewsHomeJobsCshtml1.__tagHelperRunner.RunAsync(viewsHomeJobsCshtml1.__tagHelperExecutionContext);
+        if (!viewsHomeJobsCshtml1.__tagHelperExecutionContext.Output.IsContentModified)
+          await viewsHomeJobsCshtml1.__tagHelperExecutionContext.SetOutputContentAsync();
+        viewsHomeJobsCshtml1.Write((object) viewsHomeJobsCshtml1.__tagHelperExecutionContext.Output);
+        viewsHomeJobsCshtml1.__tagHelperExecutionContext = viewsHomeJobsCshtml1.__tagHelperScopeManager.End();
+        viewsHomeJobsCshtml1.EndContext();
+        viewsHomeJobsCshtml1.BeginContext(1547, 2, true);
+        viewsHomeJobsCshtml1.WriteLiteral("\r\n");
+        viewsHomeJobsCshtml1.EndContext();
+      }
+      viewsHomeJobsCshtml1.BeginContext(1554, 1275, true);
+      viewsHomeJobsCshtml1.WriteLiteral("\r\n<style>\r\n    .crop {\r\n        white-space: nowrap;\r\n        overflow: hidden;\r\n        text-overflow: ellipsis\r\n    }\r\n\r\n    .btn-disable {\r\n        cursor: not-allowed;\r\n        pointer-events: none;\r\n        /*Button disabled - CSS color class*/\r\n        color: #c0c0c0;\r\n        background-color: #ffffff;\r\n    }\r\n</style>\r\n\r\n<a class=\"btn btn-info\" onclick=\"BulkStart()\" >Start</a>\r\n<a class=\"btn btn-info\" onclick=\"BulkStop()\">Stop</a>\r\n\r\n<table class=\"table\">\r\n    <thead>\r\n        <tr>\r\n            <th style=\"width: 5%;\">\r\n                <input type=\"checkbox\" name=\"chkselectall\" onchange='ChangeBulkCheckbox(this);'>\r\n            </th>\r\n            <th style=\"width: 10%;text-align:center;\">\r\n                Job Name\r\n            </th>\r\n            <th style=\"width: 10%;text-align:center;\">\r\n                Journey Option\r\n            </th>\r\n            <th style=\"width: 30%;text-align:center;\">\r\n                Target URL\r\n            </th>\r\n            <th style=\"width: 20%;text-align:center;\">\r\n       ");
+      viewsHomeJobsCshtml1.WriteLiteral("         Keyword\r\n            </th>\r\n            <th style=\"width: 5%;text-align:center;\">\r\n                Count\r\n            </th>\r\n            <th style=\"width: 20%;text-align:center;\">\r\n            </th>\r\n        </tr>\r\n    </thead>\r\n    <tbody>\r\n");
+      viewsHomeJobsCshtml1.EndContext();
+      foreach (trafficjob trafficjob in viewsHomeJobsCshtml1.Model)
+      {
+        trafficjob item = trafficjob;
+        viewsHomeJobsCshtml1.BeginContext(2878, 15, true);
+        viewsHomeJobsCshtml1.WriteLiteral("            <tr");
+        viewsHomeJobsCshtml1.EndContext();
+        viewsHomeJobsCshtml1.BeginWriteAttribute("style", " style=\"", 2893, "\"", 2970, 3);
+        viewsHomeJobsCshtml1.WriteAttributeValue("", 2901, (object) "background-color:", 2901, 17, true);
+        viewsHomeJobsCshtml1.WriteAttributeValue("", 2918, (object) viewsHomeJobsCshtml1.Html.Raw(item.group_id != -1 ? "honeydew" : ""), 2918, 51, false);
+        viewsHomeJobsCshtml1.WriteAttributeValue("", 2969, (object) ";", 2969, 1, true);
+        viewsHomeJobsCshtml1.EndWriteAttribute();
+        viewsHomeJobsCshtml1.BeginContext(2971, 80, true);
+        viewsHomeJobsCshtml1.WriteLiteral(">\r\n                <td>\r\n                    <input type=\"checkbox\" name=\"jobid\"");
+        viewsHomeJobsCshtml1.EndContext();
+        viewsHomeJobsCshtml1.BeginWriteAttribute("value", " value=\"", 3051, "\"", 3067, 1);
+        viewsHomeJobsCshtml1.WriteAttributeValue("", 3059, (object) item.id, 3059, 8, false);
+        viewsHomeJobsCshtml1.EndWriteAttribute();
+        viewsHomeJobsCshtml1.BeginContext(3068, 137, true);
+        viewsHomeJobsCshtml1.WriteLiteral(">\r\n                </td>\r\n                <td style=\"text-align:center;\">\r\n                    <div class=\"crop\" style=\"width: 100px;\">\r\n");
+        viewsHomeJobsCshtml1.EndContext();
+        viewsHomeJobsCshtml1.BeginContext(3296, 24, true);
+        viewsHomeJobsCshtml1.WriteLiteral("                        ");
+        viewsHomeJobsCshtml1.EndContext();
+        viewsHomeJobsCshtml1.BeginContext(3321, 43, false);
+        viewsHomeJobsCshtml1.Write((object) viewsHomeJobsCshtml1.Html.DisplayFor<IEnumerable<trafficjob>, string>((Expression<Func<IEnumerable<trafficjob>, string>>) (modelItem => item.job_name)));
+        viewsHomeJobsCshtml1.EndContext();
+        viewsHomeJobsCshtml1.BeginContext(3364, 122, true);
+        viewsHomeJobsCshtml1.WriteLiteral("\r\n                    </div>\r\n                </td>\r\n                <td style=\"text-align:center;\">\r\n                    ");
+        viewsHomeJobsCshtml1.EndContext();
+        viewsHomeJobsCshtml1.BeginContext(3487, 49, false);
+        viewsHomeJobsCshtml1.Write((object) viewsHomeJobsCshtml1.Html.DisplayFor<IEnumerable<trafficjob>, string>((Expression<Func<IEnumerable<trafficjob>, string>>) (modelItem => item.journey_option)));
+        viewsHomeJobsCshtml1.EndContext();
+        viewsHomeJobsCshtml1.BeginContext(3536, 94, true);
+        viewsHomeJobsCshtml1.WriteLiteral("\r\n                </td>\r\n                <td style=\"text-align:center;\">\r\n                    ");
+        viewsHomeJobsCshtml1.EndContext();
+        viewsHomeJobsCshtml1.BeginContext(3631, 45, false);
+        viewsHomeJobsCshtml1.Write((object) viewsHomeJobsCshtml1.Html.DisplayFor<IEnumerable<trafficjob>, string>((Expression<Func<IEnumerable<trafficjob>, string>>) (modelItem => item.target_url)));
+        viewsHomeJobsCshtml1.EndContext();
+        viewsHomeJobsCshtml1.BeginContext(3676, 160, true);
+        viewsHomeJobsCshtml1.WriteLiteral("\r\n                </td>\r\n                <td style=\"text-align:center;\">\r\n                    <div class=\"crop\" style=\"width: 300px;\">\r\n                        ");
+        viewsHomeJobsCshtml1.EndContext();
+        viewsHomeJobsCshtml1.BeginContext(3837, 46, false);
+        viewsHomeJobsCshtml1.Write((object) viewsHomeJobsCshtml1.Html.DisplayFor<IEnumerable<trafficjob>, string>((Expression<Func<IEnumerable<trafficjob>, string>>) (modelItem => item.search_term)));
+        viewsHomeJobsCshtml1.EndContext();
+        viewsHomeJobsCshtml1.BeginContext(3883, 122, true);
+        viewsHomeJobsCshtml1.WriteLiteral("\r\n                    </div>\r\n                </td>\r\n                <td style=\"text-align:center;\">\r\n                    ");
+        viewsHomeJobsCshtml1.EndContext();
+        viewsHomeJobsCshtml1.BeginContext(4006, 48, false);
+        viewsHomeJobsCshtml1.Write((object) viewsHomeJobsCshtml1.Html.DisplayFor<IEnumerable<trafficjob>, int>((Expression<Func<IEnumerable<trafficjob>, int>>) (modelItem => item.session_count)));
+        viewsHomeJobsCshtml1.EndContext();
+        viewsHomeJobsCshtml1.BeginContext(4054, 74, true);
+        viewsHomeJobsCshtml1.WriteLiteral("\r\n                </td>\r\n                <td style=\"text-align:center;\">\r\n");
+        viewsHomeJobsCshtml1.EndContext();
+        startLabel = "Stop";
+        string str1 = "return StopConfirm();";
+        if (!item.switch_on)
+        {
+          startLabel = "Start";
+          str1 = "return true;";
+        }
+        viewsHomeJobsCshtml1.BeginContext(4594, 80, true);
+        viewsHomeJobsCshtml1.WriteLiteral("                    <div style=\"white-space: nowrap;\">\r\n                        ");
+        viewsHomeJobsCshtml1.EndContext();
+        viewsHomeJobsCshtml1.BeginContext(4674, 115, false);
+        viewsHomeJobsCshtml1.__tagHelperExecutionContext = viewsHomeJobsCshtml1.__tagHelperScopeManager.Begin("a", TagMode.StartTagAndEndTag, "e95018d0feba4a90aa9cab307af11263", (Func<Task>) (async () =>
+        {
+          viewsHomeJobsCshtml.BeginContext(4775, 10, false);
+          viewsHomeJobsCshtml.Write(startLabel);
+          viewsHomeJobsCshtml.EndContext();
+        }));
+        viewsHomeJobsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper = viewsHomeJobsCshtml1.CreateTagHelper<AnchorTagHelper>();
+        viewsHomeJobsCshtml1.__tagHelperExecutionContext.Add((ITagHelper) viewsHomeJobsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper);
+        viewsHomeJobsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.Action = (string) _Views_Home_Jobs_cshtml.__tagHelperAttribute_10.Value;
+        viewsHomeJobsCshtml1.__tagHelperExecutionContext.AddTagHelperAttribute(_Views_Home_Jobs_cshtml.__tagHelperAttribute_10);
+        if (viewsHomeJobsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues == null)
+          throw new InvalidOperationException(viewsHomeJobsCshtml1.InvalidTagHelperIndexerAssignment("asp-route-id", "Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper", "RouteValues"));
+        viewsHomeJobsCshtml1.BeginWriteTagHelperAttribute();
+        viewsHomeJobsCshtml1.WriteLiteral((object) item.id);
+        viewsHomeJobsCshtml1.__tagHelperStringValueBuffer = viewsHomeJobsCshtml1.EndWriteTagHelperAttribute();
+        viewsHomeJobsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues["id"] = viewsHomeJobsCshtml1.__tagHelperStringValueBuffer;
+        viewsHomeJobsCshtml1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-route-id", (object) viewsHomeJobsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues["id"], HtmlAttributeValueStyle.DoubleQuotes);
+        viewsHomeJobsCshtml1.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_Jobs_cshtml.__tagHelperAttribute_11);
+        viewsHomeJobsCshtml1.BeginAddHtmlAttributeValues(viewsHomeJobsCshtml1.__tagHelperExecutionContext, "onclick", 1, HtmlAttributeValueStyle.DoubleQuotes);
+        viewsHomeJobsCshtml1.AddHtmlAttributeValue("", 4760, (object) str1, 4760, 12, false);
+        viewsHomeJobsCshtml1.EndAddHtmlAttributeValues(viewsHomeJobsCshtml1.__tagHelperExecutionContext);
+        await viewsHomeJobsCshtml1.__tagHelperRunner.RunAsync(viewsHomeJobsCshtml1.__tagHelperExecutionContext);
+        if (!viewsHomeJobsCshtml1.__tagHelperExecutionContext.Output.IsContentModified)
+          await viewsHomeJobsCshtml1.__tagHelperExecutionContext.SetOutputContentAsync();
+        viewsHomeJobsCshtml1.Write((object) viewsHomeJobsCshtml1.__tagHelperExecutionContext.Output);
+        viewsHomeJobsCshtml1.__tagHelperExecutionContext = viewsHomeJobsCshtml1.__tagHelperScopeManager.End();
+        viewsHomeJobsCshtml1.EndContext();
+        viewsHomeJobsCshtml1.BeginContext(4789, 50, true);
+        viewsHomeJobsCshtml1.WriteLiteral("                        \r\n                        ");
+        viewsHomeJobsCshtml1.EndContext();
+        viewsHomeJobsCshtml1.BeginContext(4839, 84, false);
+        // ISSUE: reference to a compiler-generated method
+        viewsHomeJobsCshtml1.__tagHelperExecutionContext = viewsHomeJobsCshtml1.__tagHelperScopeManager.Begin("a", TagMode.StartTagAndEndTag, "5e45cf768ece4b0bb3d8dd8b75092629", new Func<Task>(viewsHomeJobsCshtml1.\u003CExecuteAsync\u003Eb__24_7));
+        viewsHomeJobsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper = viewsHomeJobsCshtml1.CreateTagHelper<AnchorTagHelper>();
+        viewsHomeJobsCshtml1.__tagHelperExecutionContext.Add((ITagHelper) viewsHomeJobsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper);
+        viewsHomeJobsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.Action = (string) _Views_Home_Jobs_cshtml.__tagHelperAttribute_12.Value;
+        viewsHomeJobsCshtml1.__tagHelperExecutionContext.AddTagHelperAttribute(_Views_Home_Jobs_cshtml.__tagHelperAttribute_12);
+        if (viewsHomeJobsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues == null)
+          throw new InvalidOperationException(viewsHomeJobsCshtml1.InvalidTagHelperIndexerAssignment("asp-route-id", "Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper", "RouteValues"));
+        viewsHomeJobsCshtml1.BeginWriteTagHelperAttribute();
+        viewsHomeJobsCshtml1.WriteLiteral((object) item.id);
+        viewsHomeJobsCshtml1.__tagHelperStringValueBuffer = viewsHomeJobsCshtml1.EndWriteTagHelperAttribute();
+        viewsHomeJobsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues["id"] = viewsHomeJobsCshtml1.__tagHelperStringValueBuffer;
+        viewsHomeJobsCshtml1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-route-id", (object) viewsHomeJobsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues["id"], HtmlAttributeValueStyle.DoubleQuotes);
+        viewsHomeJobsCshtml1.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_Jobs_cshtml.__tagHelperAttribute_11);
+        await viewsHomeJobsCshtml1.__tagHelperRunner.RunAsync(viewsHomeJobsCshtml1.__tagHelperExecutionContext);
+        if (!viewsHomeJobsCshtml1.__tagHelperExecutionContext.Output.IsContentModified)
+          await viewsHomeJobsCshtml1.__tagHelperExecutionContext.SetOutputContentAsync();
+        viewsHomeJobsCshtml1.Write((object) viewsHomeJobsCshtml1.__tagHelperExecutionContext.Output);
+        viewsHomeJobsCshtml1.__tagHelperExecutionContext = viewsHomeJobsCshtml1.__tagHelperScopeManager.End();
+        viewsHomeJobsCshtml1.EndContext();
+        viewsHomeJobsCshtml1.BeginContext(4923, 26, true);
+        viewsHomeJobsCshtml1.WriteLiteral("\r\n                        ");
+        viewsHomeJobsCshtml1.EndContext();
+        viewsHomeJobsCshtml1.BeginContext(4949, 87, false);
+        // ISSUE: reference to a compiler-generated method
+        viewsHomeJobsCshtml1.__tagHelperExecutionContext = viewsHomeJobsCshtml1.__tagHelperScopeManager.Begin("a", TagMode.StartTagAndEndTag, "52d4d56ea7bb44dcb39fb9e33fe04171", new Func<Task>(viewsHomeJobsCshtml1.\u003CExecuteAsync\u003Eb__24_8));
+        viewsHomeJobsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper = viewsHomeJobsCshtml1.CreateTagHelper<AnchorTagHelper>();
+        viewsHomeJobsCshtml1.__tagHelperExecutionContext.Add((ITagHelper) viewsHomeJobsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper);
+        viewsHomeJobsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.Action = (string) _Views_Home_Jobs_cshtml.__tagHelperAttribute_13.Value;
+        viewsHomeJobsCshtml1.__tagHelperExecutionContext.AddTagHelperAttribute(_Views_Home_Jobs_cshtml.__tagHelperAttribute_13);
+        if (viewsHomeJobsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues == null)
+          throw new InvalidOperationException(viewsHomeJobsCshtml1.InvalidTagHelperIndexerAssignment("asp-route-id", "Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper", "RouteValues"));
+        viewsHomeJobsCshtml1.BeginWriteTagHelperAttribute();
+        viewsHomeJobsCshtml1.WriteLiteral((object) item.id);
+        viewsHomeJobsCshtml1.__tagHelperStringValueBuffer = viewsHomeJobsCshtml1.EndWriteTagHelperAttribute();
+        viewsHomeJobsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues["id"] = viewsHomeJobsCshtml1.__tagHelperStringValueBuffer;
+        viewsHomeJobsCshtml1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-route-id", (object) viewsHomeJobsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues["id"], HtmlAttributeValueStyle.DoubleQuotes);
+        viewsHomeJobsCshtml1.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_Jobs_cshtml.__tagHelperAttribute_11);
+        await viewsHomeJobsCshtml1.__tagHelperRunner.RunAsync(viewsHomeJobsCshtml1.__tagHelperExecutionContext);
+        if (!viewsHomeJobsCshtml1.__tagHelperExecutionContext.Output.IsContentModified)
+          await viewsHomeJobsCshtml1.__tagHelperExecutionContext.SetOutputContentAsync();
+        viewsHomeJobsCshtml1.Write((object) viewsHomeJobsCshtml1.__tagHelperExecutionContext.Output);
+        viewsHomeJobsCshtml1.__tagHelperExecutionContext = viewsHomeJobsCshtml1.__tagHelperScopeManager.End();
+        viewsHomeJobsCshtml1.EndContext();
+        viewsHomeJobsCshtml1.BeginContext(5036, 2, true);
+        viewsHomeJobsCshtml1.WriteLiteral("\r\n");
+        viewsHomeJobsCshtml1.EndContext();
+        viewsHomeJobsCshtml1.BeginContext(5125, 24, true);
+        viewsHomeJobsCshtml1.WriteLiteral("                        ");
+        viewsHomeJobsCshtml1.EndContext();
+        viewsHomeJobsCshtml1.BeginContext(5149, 214, false);
+        // ISSUE: reference to a compiler-generated method
+        viewsHomeJobsCshtml1.__tagHelperExecutionContext = viewsHomeJobsCshtml1.__tagHelperScopeManager.Begin("a", TagMode.StartTagAndEndTag, "c66996b436e5483eacb6dc6185da649e", new Func<Task>(viewsHomeJobsCshtml1.\u003CExecuteAsync\u003Eb__24_9));
+        viewsHomeJobsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper = viewsHomeJobsCshtml1.CreateTagHelper<AnchorTagHelper>();
+        viewsHomeJobsCshtml1.__tagHelperExecutionContext.Add((ITagHelper) viewsHomeJobsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper);
+        viewsHomeJobsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.Action = (string) _Views_Home_Jobs_cshtml.__tagHelperAttribute_14.Value;
+        viewsHomeJobsCshtml1.__tagHelperExecutionContext.AddTagHelperAttribute(_Views_Home_Jobs_cshtml.__tagHelperAttribute_14);
+        if (viewsHomeJobsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues == null)
+          throw new InvalidOperationException(viewsHomeJobsCshtml1.InvalidTagHelperIndexerAssignment("asp-route-id", "Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper", "RouteValues"));
+        viewsHomeJobsCshtml1.BeginWriteTagHelperAttribute();
+        viewsHomeJobsCshtml1.WriteLiteral((object) item.id);
+        viewsHomeJobsCshtml1.__tagHelperStringValueBuffer = viewsHomeJobsCshtml1.EndWriteTagHelperAttribute();
+        viewsHomeJobsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues["id"] = viewsHomeJobsCshtml1.__tagHelperStringValueBuffer;
+        viewsHomeJobsCshtml1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-route-id", (object) viewsHomeJobsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues["id"], HtmlAttributeValueStyle.DoubleQuotes);
+        viewsHomeJobsCshtml1.BeginWriteTagHelperAttribute();
+        _Views_Home_Jobs_cshtml viewsHomeJobsCshtml6 = viewsHomeJobsCshtml1;
+        DateTime dateTime = DateTime.Now;
+        dateTime = dateTime.AddDays(-5.0);
+        string str2 = dateTime.ToString("yyyy-MM-dd");
+        viewsHomeJobsCshtml6.WriteLiteral(str2);
+        viewsHomeJobsCshtml1.__tagHelperStringValueBuffer = viewsHomeJobsCshtml1.EndWriteTagHelperAttribute();
+        viewsHomeJobsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues["startdate"] = viewsHomeJobsCshtml1.__tagHelperStringValueBuffer;
+        viewsHomeJobsCshtml1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-route-startdate", (object) viewsHomeJobsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues["startdate"], HtmlAttributeValueStyle.DoubleQuotes);
+        viewsHomeJobsCshtml1.BeginWriteTagHelperAttribute();
+        _Views_Home_Jobs_cshtml viewsHomeJobsCshtml7 = viewsHomeJobsCshtml1;
+        dateTime = DateTime.Now;
+        string str3 = dateTime.ToString("yyyy-MM-dd");
+        viewsHomeJobsCshtml7.WriteLiteral(str3);
+        viewsHomeJobsCshtml1.__tagHelperStringValueBuffer = viewsHomeJobsCshtml1.EndWriteTagHelperAttribute();
+        viewsHomeJobsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues["enddate"] = viewsHomeJobsCshtml1.__tagHelperStringValueBuffer;
+        viewsHomeJobsCshtml1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-route-enddate", (object) viewsHomeJobsCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues["enddate"], HtmlAttributeValueStyle.DoubleQuotes);
+        viewsHomeJobsCshtml1.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_Jobs_cshtml.__tagHelperAttribute_11);
+        await viewsHomeJobsCshtml1.__tagHelperRunner.RunAsync(viewsHomeJobsCshtml1.__tagHelperExecutionContext);
+        if (!viewsHomeJobsCshtml1.__tagHelperExecutionContext.Output.IsContentModified)
+          await viewsHomeJobsCshtml1.__tagHelperExecutionContext.SetOutputContentAsync();
+        viewsHomeJobsCshtml1.Write((object) viewsHomeJobsCshtml1.__tagHelperExecutionContext.Output);
+        viewsHomeJobsCshtml1.__tagHelperExecutionContext = viewsHomeJobsCshtml1.__tagHelperScopeManager.End();
+        viewsHomeJobsCshtml1.EndContext();
+        viewsHomeJobsCshtml1.BeginContext(5363, 72, true);
+        viewsHomeJobsCshtml1.WriteLiteral("\r\n                    </div>\r\n                </td>\r\n            </tr>\r\n");
+        viewsHomeJobsCshtml1.EndContext();
+      }
+      viewsHomeJobsCshtml1.BeginContext(5448, 1362, true);
+      viewsHomeJobsCshtml1.WriteLiteral("    </tbody>\r\n</table>\r\n\r\n<script>\r\n    function StopConfirm() {\r\n        return confirm(\"Are you going to stop really?\");\r\n    }\r\n\r\n    function RemoveConfirm() {\r\n        return confirm(\"Are you going to remove folder really?\");\r\n    }\r\n\r\n    function ChangeBulkCheckbox() {\r\n        var a = $(\"input[name='chkselectall']\").is(':checked');\r\n        $(\"input[name='jobid']\").prop('checked', a);\r\n    }\r\n\r\n    function BulkStart() {\r\n        if (confirm(\"Are you going to start all selected journeys?\") != true)\r\n            return;\r\n\r\n        var tableVal = \"\";\r\n\r\n        $(\"input[name='jobid']\").each(function () {\r\n            if ($(this).prop('checked') == true)\r\n                tableVal += $(this).attr('value') + \",\";\r\n        });\r\n\r\n        $.post(\"/Home/BulkStart/\", { param: tableVal }, function (result) {\r\n            window.location.reload();\r\n        });\r\n    }\r\n\r\n    function BulkStop() {\r\n\r\n        if (confirm(\"Are you going to stop all selected journeys?\") != true)\r\n            return;\r\n\r\n        var ta");
+      viewsHomeJobsCshtml1.WriteLiteral("bleVal = \"\";\r\n\r\n        $(\"input[name='jobid']\").each(function () {\r\n            if ($(this).prop('checked') == true)\r\n                tableVal += $(this).attr('value') + \",\";\r\n        });\r\n\r\n        $.post(\"/Home/BulkStop/\", { param: tableVal }, function (result) {\r\n            window.location.reload();\r\n        });\r\n    }\r\n</script>\r\n");
+      viewsHomeJobsCshtml1.EndContext();
+    }
+
+    [RazorInject]
+    public IModelExpressionProvider ModelExpressionProvider { get; private set; }
+
+    [RazorInject]
+    public IUrlHelper Url { get; private set; }
+
+    [RazorInject]
+    public IViewComponentHelper Component { get; private set; }
+
+    [RazorInject]
+    public IJsonHelper Json { get; private set; }
+
+    [RazorInject]
+    public IHtmlHelper<IEnumerable<trafficjob>> Html { get; private set; }
+  }
+}

@@ -1,46 +1,117 @@
-﻿@model Traffic.Models.trafficjob
+﻿// Decompiled with JetBrains decompiler
+// Type: AspNetCore._Views_Home_CreateFolder_cshtml
+// Assembly: Traffic.PrecompiledViews, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+// MVID: 8B37BA40-0390-40A7-A536-D9CCDBC36390
+// Assembly location: D:\Workstation\TonniProjects\TrafficWebDeploy\Traffic.PrecompiledViews.dll
 
-@{
-    ViewData["Title"] = "Create Folder";
-    Layout = "~/Views/Shared/_Layout.cshtml";
-}
+using Microsoft.AspNetCore.Html;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Razor;
+using Microsoft.AspNetCore.Mvc.Razor.Internal;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.Mvc.TagHelpers;
+using Microsoft.AspNetCore.Mvc.ViewFeatures;
+using Microsoft.AspNetCore.Razor.Runtime.TagHelpers;
+using Microsoft.AspNetCore.Razor.TagHelpers;
+using System;
+using System.Linq.Expressions;
+using System.Text.Encodings.Web;
+using System.Threading.Tasks;
+using Traffic.Models;
 
-<h2>Create Job Folder</h2>
-<hr />
-<div class="row">
-    <div class="col-md-12">
-        <form asp-action="CreateFolder">
-            <div class="form-horizontal">
-                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-                <div class="form-group">
-                    <label class="control-label col-md-2">Folder Name</label>
-                    <div class="col-md-10">
-                        <input asp-for="job_name" class="form-control" />
-                        <span asp-validation-for="job_name" class="text-danger"></span>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label class="control-label col-md-2">Description</label>
-                    <div class="col-md-10">
-                        <input asp-for="target_url" class="form-control" />
-                        <span asp-validation-for="target_url" class="text-danger"></span>
-                    </div>
-                </div>
-                <input asp-for="search_term" value="FOLDER" style="display:none;" />
-                <input asp-for="search_engine" value="0" style="display:none;" />
-                <input asp-for="session_count" value="-1" style="display:none;" />
-                <input asp-for="group_id" value="-1" style="display:none;" />
-                <div class="form-group">
-                    <div class="col-md-10 col-lg-offset-2">
-                        <input type="submit" value="CreateFolder" class="btn btn-success" />
-                        <a asp-action="Index" class="btn btn-primary">Back to List</a>
-                    </div>
-                </div>
-            </div>
-        </form>
-    </div>
-</div>
+namespace AspNetCore
+{
+  public class _Views_Home_CreateFolder_cshtml : RazorPage<trafficjob>
+  {
+    private static readonly TagHelperAttribute __tagHelperAttribute_0 = new TagHelperAttribute("class", (object) new HtmlString("text-danger"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_1 = new TagHelperAttribute("class", (object) new HtmlString("form-control"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_2 = new TagHelperAttribute("value", (object) "", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_3 = new TagHelperAttribute("style", (object) new HtmlString("display:none;"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_4 = new TagHelperAttribute("value", (object) "FOLDER", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_5 = new TagHelperAttribute("value", (object) "0", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_6 = new TagHelperAttribute("value", (object) "-1", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_7 = new TagHelperAttribute("asp-action", (object) "Index", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_8 = new TagHelperAttribute("class", (object) new HtmlString("btn btn-primary"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_9 = new TagHelperAttribute("asp-action", (object) "CreateFolder", HtmlAttributeValueStyle.DoubleQuotes);
+    private string __tagHelperStringValueBuffer;
+    private TagHelperExecutionContext __tagHelperExecutionContext;
+    private TagHelperRunner __tagHelperRunner = new TagHelperRunner();
+    private TagHelperScopeManager __backed__tagHelperScopeManager;
+    private FormTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper;
+    private RenderAtEndOfFormTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper;
+    private ValidationSummaryTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_ValidationSummaryTagHelper;
+    private InputTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper;
+    private ValidationMessageTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper;
+    private AnchorTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper;
+    private static readonly Expression<Func<trafficjob, string>> __h0 = (Expression<Func<trafficjob, string>>) (__model => __model.job_name);
+    private static readonly Expression<Func<trafficjob, string>> __h1 = (Expression<Func<trafficjob, string>>) (__model => __model.job_name);
+    private static readonly Expression<Func<trafficjob, string>> __h2 = (Expression<Func<trafficjob, string>>) (__model => __model.target_url);
+    private static readonly Expression<Func<trafficjob, string>> __h3 = (Expression<Func<trafficjob, string>>) (__model => __model.target_url);
+    private static readonly Expression<Func<trafficjob, string>> __h4 = (Expression<Func<trafficjob, string>>) (__model => __model.exttarget_url);
+    private static readonly Expression<Func<trafficjob, string>> __h5 = (Expression<Func<trafficjob, string>>) (__model => __model.search_term);
+    private static readonly Expression<Func<trafficjob, string>> __h6 = (Expression<Func<trafficjob, string>>) (__model => __model.journey_option);
+    private static readonly Expression<Func<trafficjob, trafficjob.SEARCH_ENGINE>> __h7 = (Expression<Func<trafficjob, trafficjob.SEARCH_ENGINE>>) (__model => __model.search_engine);
+    private static readonly Expression<Func<trafficjob, int>> __h8 = (Expression<Func<trafficjob, int>>) (__model => __model.session_count);
+    private static readonly Expression<Func<trafficjob, bool>> __h9 = (Expression<Func<trafficjob, bool>>) (__model => __model.wild_card);
+    private static readonly Expression<Func<trafficjob, int>> __h10 = (Expression<Func<trafficjob, int>>) (__model => __model.group_id);
 
-@section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    private TagHelperScopeManager __tagHelperScopeManager
+    {
+      get
+      {
+        if (this.__backed__tagHelperScopeManager == null)
+          this.__backed__tagHelperScopeManager = new TagHelperScopeManager(new Action<HtmlEncoder>(((RazorPageBase) this).StartTagHelperWritingScope), new Func<TagHelperContent>(((RazorPageBase) this).EndTagHelperWritingScope));
+        return this.__backed__tagHelperScopeManager;
+      }
+    }
+
+    public virtual async Task ExecuteAsync()
+    {
+      _Views_Home_CreateFolder_cshtml createFolderCshtml = this;
+      createFolderCshtml.BeginContext(34, 2, true);
+      createFolderCshtml.WriteLiteral("\r\n");
+      createFolderCshtml.EndContext();
+      createFolderCshtml.ViewData["Title"] = (object) "Create Folder";
+      // ISSUE: explicit non-virtual call
+      __nonvirtual (createFolderCshtml.Layout) = "~/Views/Shared/_Layout.cshtml";
+      createFolderCshtml.BeginContext(132, 94, true);
+      createFolderCshtml.WriteLiteral("\r\n<h2>Create Job Folder</h2>\r\n<hr />\r\n<div class=\"row\">\r\n    <div class=\"col-md-12\">\r\n        ");
+      createFolderCshtml.EndContext();
+      createFolderCshtml.BeginContext(226, 1886, false);
+      // ISSUE: reference to a compiler-generated method
+      createFolderCshtml.__tagHelperExecutionContext = createFolderCshtml.__tagHelperScopeManager.Begin("form", TagMode.StartTagAndEndTag, "f46f8274b1ae4dca89029cc1d6fccba5", new Func<Task>(createFolderCshtml.\u003CExecuteAsync\u003Eb__22_0));
+      createFolderCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper = createFolderCshtml.CreateTagHelper<FormTagHelper>();
+      createFolderCshtml.__tagHelperExecutionContext.Add((ITagHelper) createFolderCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper);
+      createFolderCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper = createFolderCshtml.CreateTagHelper<RenderAtEndOfFormTagHelper>();
+      createFolderCshtml.__tagHelperExecutionContext.Add((ITagHelper) createFolderCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper);
+      createFolderCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper.Action = (string) _Views_Home_CreateFolder_cshtml.__tagHelperAttribute_9.Value;
+      createFolderCshtml.__tagHelperExecutionContext.AddTagHelperAttribute(_Views_Home_CreateFolder_cshtml.__tagHelperAttribute_9);
+      await createFolderCshtml.__tagHelperRunner.RunAsync(createFolderCshtml.__tagHelperExecutionContext);
+      if (!createFolderCshtml.__tagHelperExecutionContext.Output.IsContentModified)
+        await createFolderCshtml.__tagHelperExecutionContext.SetOutputContentAsync();
+      createFolderCshtml.Write((object) createFolderCshtml.__tagHelperExecutionContext.Output);
+      createFolderCshtml.__tagHelperExecutionContext = createFolderCshtml.__tagHelperScopeManager.End();
+      createFolderCshtml.EndContext();
+      createFolderCshtml.BeginContext(2112, 24, true);
+      createFolderCshtml.WriteLiteral("\r\n    </div>\r\n</div>\r\n\r\n");
+      createFolderCshtml.EndContext();
+      // ISSUE: reference to a compiler-generated method
+      createFolderCshtml.DefineSection("Scripts", new RenderAsyncDelegate(createFolderCshtml.\u003CExecuteAsync\u003Eb__22_14));
+    }
+
+    [RazorInject]
+    public IModelExpressionProvider ModelExpressionProvider { get; private set; }
+
+    [RazorInject]
+    public IUrlHelper Url { get; private set; }
+
+    [RazorInject]
+    public IViewComponentHelper Component { get; private set; }
+
+    [RazorInject]
+    public IJsonHelper Json { get; private set; }
+
+    [RazorInject]
+    public IHtmlHelper<trafficjob> Html { get; private set; }
+  }
 }

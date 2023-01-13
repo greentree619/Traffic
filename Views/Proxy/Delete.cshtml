@@ -1,0 +1,102 @@
+﻿// Decompiled with JetBrains decompiler
+// Type: AspNetCore._Views_Proxy_Delete_cshtml
+// Assembly: Traffic.PrecompiledViews, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+// MVID: 8B37BA40-0390-40A7-A536-D9CCDBC36390
+// Assembly location: D:\Workstation\TonniProjects\TrafficWebDeploy\Traffic.PrecompiledViews.dll
+
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Razor;
+using Microsoft.AspNetCore.Mvc.Razor.Internal;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.Mvc.TagHelpers;
+using Microsoft.AspNetCore.Mvc.ViewFeatures;
+using Microsoft.AspNetCore.Razor.Runtime.TagHelpers;
+using Microsoft.AspNetCore.Razor.TagHelpers;
+using System;
+using System.Linq.Expressions;
+using System.Text.Encodings.Web;
+using System.Threading.Tasks;
+using Traffic.Models;
+
+namespace AspNetCore
+{
+  public class _Views_Proxy_Delete_cshtml : RazorPage<location>
+  {
+    private static readonly TagHelperAttribute __tagHelperAttribute_0 = new TagHelperAttribute("type", (object) "hidden", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_1 = new TagHelperAttribute("asp-action", (object) "Index", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_2 = new TagHelperAttribute("asp-action", (object) "Delete", HtmlAttributeValueStyle.DoubleQuotes);
+    private string __tagHelperStringValueBuffer;
+    private TagHelperExecutionContext __tagHelperExecutionContext;
+    private TagHelperRunner __tagHelperRunner = new TagHelperRunner();
+    private TagHelperScopeManager __backed__tagHelperScopeManager;
+    private FormTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper;
+    private RenderAtEndOfFormTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper;
+    private InputTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper;
+    private AnchorTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper;
+    private static readonly Expression<Func<location, string>> __h0 = (Expression<Func<location, string>>) (model => model.label);
+    private static readonly Expression<Func<location, int>> __h1 = (Expression<Func<location, int>>) (__model => __model.id);
+
+    private TagHelperScopeManager __tagHelperScopeManager
+    {
+      get
+      {
+        if (this.__backed__tagHelperScopeManager == null)
+          this.__backed__tagHelperScopeManager = new TagHelperScopeManager(new Action<HtmlEncoder>(((RazorPageBase) this).StartTagHelperWritingScope), new Func<TagHelperContent>(((RazorPageBase) this).EndTagHelperWritingScope));
+        return this.__backed__tagHelperScopeManager;
+      }
+    }
+
+    public virtual async Task ExecuteAsync()
+    {
+      _Views_Proxy_Delete_cshtml proxyDeleteCshtml = this;
+      proxyDeleteCshtml.BeginContext(32, 2, true);
+      proxyDeleteCshtml.WriteLiteral("\r\n");
+      proxyDeleteCshtml.EndContext();
+      proxyDeleteCshtml.ViewData["Title"] = (object) "Delete";
+      // ISSUE: explicit non-virtual call
+      __nonvirtual (proxyDeleteCshtml.Layout) = "~/Views/Shared/_Layout.cshtml";
+      proxyDeleteCshtml.BeginContext(123, 230, true);
+      proxyDeleteCshtml.WriteLiteral("\r\n<h2>Delete</h2>\r\n\r\n<h3>Are you sure you want to delete this?</h3>\r\n<div>\r\n    <h4>location</h4>\r\n    <hr />\r\n    <dl class=\"dl-horizontal\">\r\n        \r\n        <dt>\r\n            location\r\n        </dt>\r\n        <dd>\r\n            ");
+      proxyDeleteCshtml.EndContext();
+      proxyDeleteCshtml.BeginContext(354, 37, false);
+      proxyDeleteCshtml.Write((object) proxyDeleteCshtml.Html.DisplayFor<location, string>(_Views_Proxy_Delete_cshtml.__h0));
+      proxyDeleteCshtml.EndContext();
+      proxyDeleteCshtml.BeginContext(391, 38, true);
+      proxyDeleteCshtml.WriteLiteral("\r\n        </dd>\r\n    </dl>\r\n    \r\n    ");
+      proxyDeleteCshtml.EndContext();
+      proxyDeleteCshtml.BeginContext(429, 207, false);
+      // ISSUE: reference to a compiler-generated method
+      proxyDeleteCshtml.__tagHelperExecutionContext = proxyDeleteCshtml.__tagHelperScopeManager.Begin("form", TagMode.StartTagAndEndTag, "b0882f93d0764003a9a5165fb183fb50", new Func<Task>(proxyDeleteCshtml.\u003CExecuteAsync\u003Eb__13_0));
+      proxyDeleteCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper = proxyDeleteCshtml.CreateTagHelper<FormTagHelper>();
+      proxyDeleteCshtml.__tagHelperExecutionContext.Add((ITagHelper) proxyDeleteCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper);
+      proxyDeleteCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper = proxyDeleteCshtml.CreateTagHelper<RenderAtEndOfFormTagHelper>();
+      proxyDeleteCshtml.__tagHelperExecutionContext.Add((ITagHelper) proxyDeleteCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper);
+      proxyDeleteCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper.Action = (string) _Views_Proxy_Delete_cshtml.__tagHelperAttribute_2.Value;
+      proxyDeleteCshtml.__tagHelperExecutionContext.AddTagHelperAttribute(_Views_Proxy_Delete_cshtml.__tagHelperAttribute_2);
+      await proxyDeleteCshtml.__tagHelperRunner.RunAsync(proxyDeleteCshtml.__tagHelperExecutionContext);
+      if (!proxyDeleteCshtml.__tagHelperExecutionContext.Output.IsContentModified)
+        await proxyDeleteCshtml.__tagHelperExecutionContext.SetOutputContentAsync();
+      proxyDeleteCshtml.Write((object) proxyDeleteCshtml.__tagHelperExecutionContext.Output);
+      proxyDeleteCshtml.__tagHelperExecutionContext = proxyDeleteCshtml.__tagHelperScopeManager.End();
+      proxyDeleteCshtml.EndContext();
+      proxyDeleteCshtml.BeginContext(636, 10, true);
+      proxyDeleteCshtml.WriteLiteral("\r\n</div>\r\n");
+      proxyDeleteCshtml.EndContext();
+    }
+
+    [RazorInject]
+    public IModelExpressionProvider ModelExpressionProvider { get; private set; }
+
+    [RazorInject]
+    public IUrlHelper Url { get; private set; }
+
+    [RazorInject]
+    public IViewComponentHelper Component { get; private set; }
+
+    [RazorInject]
+    public IJsonHelper Json { get; private set; }
+
+    [RazorInject]
+    public IHtmlHelper<location> Html { get; private set; }
+  }
+}

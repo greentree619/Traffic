@@ -1,0 +1,183 @@
+﻿// Decompiled with JetBrains decompiler
+// Type: AspNetCore._Views_Home_template_cshtml
+// Assembly: Traffic.PrecompiledViews, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+// MVID: 8B37BA40-0390-40A7-A536-D9CCDBC36390
+// Assembly location: D:\Workstation\TonniProjects\TrafficWebDeploy\Traffic.PrecompiledViews.dll
+
+using Microsoft.AspNetCore.Html;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Razor;
+using Microsoft.AspNetCore.Mvc.Razor.Internal;
+using Microsoft.AspNetCore.Mvc.Razor.TagHelpers;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.Mvc.TagHelpers;
+using Microsoft.AspNetCore.Mvc.ViewFeatures;
+using Microsoft.AspNetCore.Razor.Runtime.TagHelpers;
+using Microsoft.AspNetCore.Razor.TagHelpers;
+using Microsoft.CSharp.RuntimeBinder;
+using System;
+using System.Collections.Generic;
+using System.Linq.Expressions;
+using System.Runtime.CompilerServices;
+using System.Text.Encodings.Web;
+using System.Threading.Tasks;
+using Traffic.Models;
+
+namespace AspNetCore
+{
+  public class _Views_Home_template_cshtml : RazorPage<templates>
+  {
+    private static readonly TagHelperAttribute __tagHelperAttribute_0 = new TagHelperAttribute("src", (object) new HtmlString("~/lib/tinymce/tinymce.min.js"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_1 = new TagHelperAttribute("referrerpolicy", (object) new HtmlString("origin"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_2 = new TagHelperAttribute("value", (object) "0", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_3 = new TagHelperAttribute("style", (object) new HtmlString("background-color:lightgray"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_4 = new TagHelperAttribute("id", (object) new HtmlString("droplist"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_5 = new TagHelperAttribute("style", (object) new HtmlString("width:90%,"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_6 = new TagHelperAttribute("href", (object) new HtmlString("~/Home/HtmlBuilder"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_7 = new TagHelperAttribute("class", (object) new HtmlString("btn btn-info"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_8 = new TagHelperAttribute("method", (object) "post", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_9 = new TagHelperAttribute("asp-action", (object) "Htmltemplate", HtmlAttributeValueStyle.DoubleQuotes);
+    private string __tagHelperStringValueBuffer;
+    private TagHelperExecutionContext __tagHelperExecutionContext;
+    private TagHelperRunner __tagHelperRunner = new TagHelperRunner();
+    private TagHelperScopeManager __backed__tagHelperScopeManager;
+    private UrlResolutionTagHelper __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper;
+    private SelectTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper;
+    private OptionTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_OptionTagHelper;
+    private FormTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper;
+    private RenderAtEndOfFormTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper;
+    private static readonly Expression<Func<templates, int>> __h0 = (Expression<Func<templates, int>>) (__model => __model.id);
+
+    private TagHelperScopeManager __tagHelperScopeManager
+    {
+      get
+      {
+        if (this.__backed__tagHelperScopeManager == null)
+          this.__backed__tagHelperScopeManager = new TagHelperScopeManager(new Action<HtmlEncoder>(((RazorPageBase) this).StartTagHelperWritingScope), new Func<TagHelperContent>(((RazorPageBase) this).EndTagHelperWritingScope));
+        return this.__backed__tagHelperScopeManager;
+      }
+    }
+
+    public virtual async Task ExecuteAsync()
+    {
+      _Views_Home_template_cshtml homeTemplateCshtml = this;
+      homeTemplateCshtml.ViewData["Title"] = (object) "template";
+      // ISSUE: explicit non-virtual call
+      __nonvirtual (homeTemplateCshtml.Layout) = "~/Views/Shared/_Layout.cshtml";
+      homeTemplateCshtml.BeginContext(124, 237, true);
+      homeTemplateCshtml.WriteLiteral("\r\n<link rel=\"stylesheet\" href=\"http://code.jquery.com/ui/1.10.4/themes/trontastic/jquery-ui.css\">\r\n\r\n<script src=\"http://code.jquery.com/jquery-1.10.2.js\"></script>\r\n<script src=\"http://code.jquery.com/ui/1.10.4/jquery-ui.js\"></script>\r\n");
+      homeTemplateCshtml.EndContext();
+      homeTemplateCshtml.BeginContext(361, 76, false);
+      homeTemplateCshtml.__tagHelperExecutionContext = homeTemplateCshtml.__tagHelperScopeManager.Begin("script", TagMode.StartTagAndEndTag, "73e529b9854d4e8bae8e8875fcb7f1d8", (Func<Task>) (async () => { }));
+      homeTemplateCshtml.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = homeTemplateCshtml.CreateTagHelper<UrlResolutionTagHelper>();
+      homeTemplateCshtml.__tagHelperExecutionContext.Add((ITagHelper) homeTemplateCshtml.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper);
+      homeTemplateCshtml.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_template_cshtml.__tagHelperAttribute_0);
+      homeTemplateCshtml.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_template_cshtml.__tagHelperAttribute_1);
+      await homeTemplateCshtml.__tagHelperRunner.RunAsync(homeTemplateCshtml.__tagHelperExecutionContext);
+      if (!homeTemplateCshtml.__tagHelperExecutionContext.Output.IsContentModified)
+        await homeTemplateCshtml.__tagHelperExecutionContext.SetOutputContentAsync();
+      homeTemplateCshtml.Write((object) homeTemplateCshtml.__tagHelperExecutionContext.Output);
+      homeTemplateCshtml.__tagHelperExecutionContext = homeTemplateCshtml.__tagHelperScopeManager.End();
+      homeTemplateCshtml.EndContext();
+      homeTemplateCshtml.BeginContext(437, 202, true);
+      homeTemplateCshtml.WriteLiteral("\r\n\r\n<div>\r\n    <div class=\"col-md-5\">\r\n        <h2>Template</h2>\r\n    </div>\r\n    <div class=\"col-md-7\">\r\n        <h4 style=\"margin-top:30px\">\r\n            <label>Select Template :</label>\r\n            ");
+      homeTemplateCshtml.EndContext();
+      homeTemplateCshtml.BeginContext(639, 238, false);
+      // ISSUE: reference to a compiler-generated method
+      homeTemplateCshtml.__tagHelperExecutionContext = homeTemplateCshtml.__tagHelperScopeManager.Begin("select", TagMode.StartTagAndEndTag, "17697716a6f643f992e2df9d6fb7ab60", new Func<Task>(homeTemplateCshtml.\u003CExecuteAsync\u003Eb__21_1));
+      homeTemplateCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper = homeTemplateCshtml.CreateTagHelper<SelectTagHelper>();
+      homeTemplateCshtml.__tagHelperExecutionContext.Add((ITagHelper) homeTemplateCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper);
+      homeTemplateCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper.For = homeTemplateCshtml.ModelExpressionProvider.CreateModelExpression<templates, int>(homeTemplateCshtml.ViewData, _Views_Home_template_cshtml.__h0);
+      homeTemplateCshtml.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) homeTemplateCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper.For, HtmlAttributeValueStyle.DoubleQuotes);
+      homeTemplateCshtml.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_template_cshtml.__tagHelperAttribute_4);
+      SelectTagHelper helpersSelectTagHelper = homeTemplateCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper;
+      // ISSUE: reference to a compiler-generated field
+      if (_Views_Home_template_cshtml.\u003C\u003Eo__21.\u003C\u003Ep__1 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        _Views_Home_template_cshtml.\u003C\u003Eo__21.\u003C\u003Ep__1 = CallSite<Func<CallSite, Type, object, string, string, SelectList>>.Create(Binder.InvokeConstructor(CSharpBinderFlags.None, typeof (_Views_Home_template_cshtml), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[4]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.IsStaticType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Func<CallSite, Type, object, string, string, SelectList> target = _Views_Home_template_cshtml.\u003C\u003Eo__21.\u003C\u003Ep__1.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Func<CallSite, Type, object, string, string, SelectList>> p1 = _Views_Home_template_cshtml.\u003C\u003Eo__21.\u003C\u003Ep__1;
+      Type type = typeof (SelectList);
+      // ISSUE: reference to a compiler-generated field
+      if (_Views_Home_template_cshtml.\u003C\u003Eo__21.\u003C\u003Ep__0 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        _Views_Home_template_cshtml.\u003C\u003Eo__21.\u003C\u003Ep__0 = CallSite<Func<CallSite, object, object>>.Create(Binder.GetMember(CSharpBinderFlags.None, "listofitems", typeof (_Views_Home_template_cshtml), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj = _Views_Home_template_cshtml.\u003C\u003Eo__21.\u003C\u003Ep__0.Target((CallSite) _Views_Home_template_cshtml.\u003C\u003Eo__21.\u003C\u003Ep__0, homeTemplateCshtml.ViewBag);
+      SelectList selectList = target((CallSite) p1, type, obj, "id", "name");
+      helpersSelectTagHelper.Items = (IEnumerable<SelectListItem>) selectList;
+      homeTemplateCshtml.__tagHelperExecutionContext.AddTagHelperAttribute("asp-items", (object) homeTemplateCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper.Items, HtmlAttributeValueStyle.DoubleQuotes);
+      homeTemplateCshtml.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_template_cshtml.__tagHelperAttribute_5);
+      await homeTemplateCshtml.__tagHelperRunner.RunAsync(homeTemplateCshtml.__tagHelperExecutionContext);
+      if (!homeTemplateCshtml.__tagHelperExecutionContext.Output.IsContentModified)
+        await homeTemplateCshtml.__tagHelperExecutionContext.SetOutputContentAsync();
+      homeTemplateCshtml.Write((object) homeTemplateCshtml.__tagHelperExecutionContext.Output);
+      homeTemplateCshtml.__tagHelperExecutionContext = homeTemplateCshtml.__tagHelperScopeManager.End();
+      homeTemplateCshtml.EndContext();
+      homeTemplateCshtml.BeginContext(877, 39, true);
+      homeTemplateCshtml.WriteLiteral("\r\n        </h4>\r\n    </div>\r\n</div>\r\n\r\n");
+      homeTemplateCshtml.EndContext();
+      homeTemplateCshtml.BeginContext(916, 1071, false);
+      // ISSUE: reference to a compiler-generated method
+      homeTemplateCshtml.__tagHelperExecutionContext = homeTemplateCshtml.__tagHelperScopeManager.Begin("form", TagMode.StartTagAndEndTag, "080ac0194d304c21ab5de1fdde3f8561", new Func<Task>(homeTemplateCshtml.\u003CExecuteAsync\u003Eb__21_3));
+      homeTemplateCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper = homeTemplateCshtml.CreateTagHelper<FormTagHelper>();
+      homeTemplateCshtml.__tagHelperExecutionContext.Add((ITagHelper) homeTemplateCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper);
+      homeTemplateCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper = homeTemplateCshtml.CreateTagHelper<RenderAtEndOfFormTagHelper>();
+      homeTemplateCshtml.__tagHelperExecutionContext.Add((ITagHelper) homeTemplateCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper);
+      homeTemplateCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper.Method = (string) _Views_Home_template_cshtml.__tagHelperAttribute_8.Value;
+      homeTemplateCshtml.__tagHelperExecutionContext.AddTagHelperAttribute(_Views_Home_template_cshtml.__tagHelperAttribute_8);
+      homeTemplateCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper.Action = (string) _Views_Home_template_cshtml.__tagHelperAttribute_9.Value;
+      homeTemplateCshtml.__tagHelperExecutionContext.AddTagHelperAttribute(_Views_Home_template_cshtml.__tagHelperAttribute_9);
+      await homeTemplateCshtml.__tagHelperRunner.RunAsync(homeTemplateCshtml.__tagHelperExecutionContext);
+      if (!homeTemplateCshtml.__tagHelperExecutionContext.Output.IsContentModified)
+        await homeTemplateCshtml.__tagHelperExecutionContext.SetOutputContentAsync();
+      homeTemplateCshtml.Write((object) homeTemplateCshtml.__tagHelperExecutionContext.Output);
+      homeTemplateCshtml.__tagHelperExecutionContext = homeTemplateCshtml.__tagHelperScopeManager.End();
+      homeTemplateCshtml.EndContext();
+      homeTemplateCshtml.BeginContext(1987, 1779, true);
+      homeTemplateCshtml.WriteLiteral("\r\n\r\n<script language=\"javascript\">\r\n    tinymce.init({\r\n        selector: '#htmlcontent',\r\n        height: 600,\r\n        toolbar: \"insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image | print preview media fullpage | forecolor backcolor emoticons\",\r\n        plugins: [\r\n            \"fullpage\",\r\n            \"advlist autolink link image lists charmap print preview hr anchor pagebreak\",\r\n            \"searchreplace wordcount visualblocks visualchars code fullscreen insertdatetime media nonbreaking\",\r\n            \"save table contextmenu directionality emoticons template paste textcolor\"\r\n        ],\r\n    });\r\n    \r\n    $(\"#droplist\").bind(\"change\", function () {\r\n        if ($(\"#droplist\").val() == 0) {\r\n            $(\"#htmlcontent\").text(\"\");\r\n            $(\".tox-tinymce\").remove();\r\n            tinymce.init({\r\n                selector: '#htmlcontent',\r\n                height: 600,\r\n                toolbar: \"insertfile undo re");
+      homeTemplateCshtml.WriteLiteral("do | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image | print preview media fullpage | forecolor backcolor emoticons\",\r\n                plugins: [\r\n                    \"fullpage\",\r\n                    \"advlist autolink link image lists charmap print preview hr anchor pagebreak\",\r\n                    \"searchreplace wordcount visualblocks visualchars code fullscreen insertdatetime media nonbreaking\",\r\n                    \"save table contextmenu directionality emoticons template paste textcolor\"\r\n                ],\r\n            });\r\n            $(\".tox-tinymce\").show();\r\n            $(\"#tempTitle\").val(\"\");\r\n        }\r\n        else {\r\n            $.ajax({\r\n                url: '");
+      homeTemplateCshtml.EndContext();
+      homeTemplateCshtml.BeginContext(3767, 32, false);
+      homeTemplateCshtml.Write(UrlHelperExtensions.Action(homeTemplateCshtml.Url, "changetemp", "Home"));
+      homeTemplateCshtml.EndContext();
+      homeTemplateCshtml.BeginContext(3799, 1614, true);
+      homeTemplateCshtml.WriteLiteral("',\r\n                contentType: 'application/x-www-form-urlencoded',\r\n                type: 'POST',\r\n                data: { id: $(\"#droplist\").val() },\r\n                success: function (data) {\r\n                    $(\"#htmlcontent\").text(decodeURIComponent(data).replace(/\\+/gi, \" \"));\r\n                    $(\".tox-tinymce\").remove();\r\n                    tinymce.init({\r\n                        selector: '#htmlcontent',\r\n                        height: 600,\r\n                        toolbar: \"insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image | print preview media fullpage | forecolor backcolor emoticons\",\r\n                        plugins: [\r\n                            \"fullpage\",\r\n                            \"advlist autolink link image lists charmap print preview hr anchor pagebreak\",\r\n                            \"searchreplace wordcount visualblocks visualchars code fullscreen insertdatetime media nonbreaking\",\r\n ");
+      homeTemplateCshtml.WriteLiteral("                           \"save table contextmenu directionality emoticons template paste textcolor\"\r\n                        ],\r\n                    });\r\n                    $(\".tox-tinymce\").show();\r\n                    $(\"#tempTitle\").val($(\"#droplist option[value=\" + $(\"#droplist\").val() + \"]\").html());\r\n                    return;\r\n                },\r\n                error: function (XMLHttpRequest, textStatus, errorThrown) {\r\n                    alert(\"server connect error ! \");\r\n                    return;\r\n                }\r\n            });\r\n        }\r\n    });\r\n</script>\r\n\r\n");
+      homeTemplateCshtml.EndContext();
+      // ISSUE: reference to a compiler-generated method
+      homeTemplateCshtml.DefineSection("Scripts", new RenderAsyncDelegate(homeTemplateCshtml.\u003CExecuteAsync\u003Eb__21_5));
+    }
+
+    [RazorInject]
+    public IModelExpressionProvider ModelExpressionProvider { get; private set; }
+
+    [RazorInject]
+    public IUrlHelper Url { get; private set; }
+
+    [RazorInject]
+    public IViewComponentHelper Component { get; private set; }
+
+    [RazorInject]
+    public IJsonHelper Json { get; private set; }
+
+    [RazorInject]
+    public IHtmlHelper<templates> Html { get; private set; }
+  }
+}

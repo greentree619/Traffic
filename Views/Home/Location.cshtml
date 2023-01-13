@@ -1,0 +1,265 @@
+﻿// Decompiled with JetBrains decompiler
+// Type: AspNetCore._Views_Home_Location_cshtml
+// Assembly: Traffic.PrecompiledViews, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+// MVID: 8B37BA40-0390-40A7-A536-D9CCDBC36390
+// Assembly location: D:\Workstation\TonniProjects\TrafficWebDeploy\Traffic.PrecompiledViews.dll
+
+using Microsoft.AspNetCore.Html;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Razor;
+using Microsoft.AspNetCore.Mvc.Razor.Internal;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.Mvc.TagHelpers;
+using Microsoft.AspNetCore.Mvc.ViewFeatures;
+using Microsoft.AspNetCore.Razor.Runtime.TagHelpers;
+using Microsoft.AspNetCore.Razor.TagHelpers;
+using Microsoft.CSharp.RuntimeBinder;
+using System;
+using System.Collections.Generic;
+using System.Linq.Expressions;
+using System.Runtime.CompilerServices;
+using System.Text.Encodings.Web;
+using System.Threading.Tasks;
+using Traffic.Models;
+
+namespace AspNetCore
+{
+  public class _Views_Home_Location_cshtml : RazorPage<location>
+  {
+    private static readonly TagHelperAttribute __tagHelperAttribute_0 = new TagHelperAttribute("value", (object) "0", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_1 = new TagHelperAttribute("style", (object) new HtmlString("background-color:lightgray"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_2 = new TagHelperAttribute("id", (object) new HtmlString("countrylist"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_3 = new TagHelperAttribute("style", (object) new HtmlString("width:90%;font-size: 25px;margin-top: 20px;"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_4 = new TagHelperAttribute("id", (object) new HtmlString("statelist"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_5 = new TagHelperAttribute("id", (object) new HtmlString("citylist"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_6 = new TagHelperAttribute("id", (object) new HtmlString("neighborhoodlist"), HtmlAttributeValueStyle.DoubleQuotes);
+    private string __tagHelperStringValueBuffer;
+    private TagHelperExecutionContext __tagHelperExecutionContext;
+    private TagHelperRunner __tagHelperRunner = new TagHelperRunner();
+    private TagHelperScopeManager __backed__tagHelperScopeManager;
+    private SelectTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper;
+    private OptionTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_OptionTagHelper;
+    private static readonly Expression<Func<location, int>> __h0 = (Expression<Func<location, int>>) (__model => __model.id);
+    private static readonly Expression<Func<location, int>> __h1 = (Expression<Func<location, int>>) (__model => __model.id);
+    private static readonly Expression<Func<location, int>> __h2 = (Expression<Func<location, int>>) (__model => __model.id);
+    private static readonly Expression<Func<location, int>> __h3 = (Expression<Func<location, int>>) (__model => __model.id);
+
+    private TagHelperScopeManager __tagHelperScopeManager
+    {
+      get
+      {
+        if (this.__backed__tagHelperScopeManager == null)
+          this.__backed__tagHelperScopeManager = new TagHelperScopeManager(new Action<HtmlEncoder>(((RazorPageBase) this).StartTagHelperWritingScope), new Func<TagHelperContent>(((RazorPageBase) this).EndTagHelperWritingScope));
+        return this.__backed__tagHelperScopeManager;
+      }
+    }
+
+    public virtual async Task ExecuteAsync()
+    {
+      _Views_Home_Location_cshtml homeLocationCshtml = this;
+      homeLocationCshtml.ViewData["Title"] = (object) "Location";
+      // ISSUE: explicit non-virtual call
+      __nonvirtual (homeLocationCshtml.Layout) = "~/Views/Shared/_Layout.cshtml";
+      homeLocationCshtml.BeginContext(123, 489, true);
+      homeLocationCshtml.WriteLiteral("<link rel=\"stylesheet\" href=\"http://code.jquery.com/ui/1.10.4/themes/trontastic/jquery-ui.css\">\r\n\r\n<script src=\"http://code.jquery.com/jquery-1.10.2.js\"></script>\r\n<script src=\"http://code.jquery.com/ui/1.10.4/jquery-ui.js\"></script>\r\n\r\n<div>\r\n    <div class=\"row\" style=\"text-align:center\">\r\n        <h2 >LOCATION</h2>        \r\n    </div>\r\n    <div class=\"row\">\r\n        <div class=\"col-md-3\">\r\n            <h2>Country : </h2>\r\n        </div>\r\n        <div class=\"col-md-6\">\r\n            ");
+      homeLocationCshtml.EndContext();
+      homeLocationCshtml.BeginContext(612, 277, false);
+      // ISSUE: reference to a compiler-generated method
+      homeLocationCshtml.__tagHelperExecutionContext = homeLocationCshtml.__tagHelperScopeManager.Begin("select", TagMode.StartTagAndEndTag, "7f9e9d544fda410d8cbff2471316b8f7", new Func<Task>(homeLocationCshtml.\u003CExecuteAsync\u003Eb__15_0));
+      homeLocationCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper = homeLocationCshtml.CreateTagHelper<SelectTagHelper>();
+      homeLocationCshtml.__tagHelperExecutionContext.Add((ITagHelper) homeLocationCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper);
+      homeLocationCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper.For = homeLocationCshtml.ModelExpressionProvider.CreateModelExpression<location, int>(homeLocationCshtml.ViewData, _Views_Home_Location_cshtml.__h0);
+      homeLocationCshtml.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) homeLocationCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper.For, HtmlAttributeValueStyle.DoubleQuotes);
+      homeLocationCshtml.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_Location_cshtml.__tagHelperAttribute_2);
+      SelectTagHelper helpersSelectTagHelper = homeLocationCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper;
+      // ISSUE: reference to a compiler-generated field
+      if (_Views_Home_Location_cshtml.\u003C\u003Eo__15.\u003C\u003Ep__1 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        _Views_Home_Location_cshtml.\u003C\u003Eo__15.\u003C\u003Ep__1 = CallSite<Func<CallSite, Type, object, string, string, SelectList>>.Create(Binder.InvokeConstructor(CSharpBinderFlags.None, typeof (_Views_Home_Location_cshtml), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[4]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.IsStaticType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Func<CallSite, Type, object, string, string, SelectList> target = _Views_Home_Location_cshtml.\u003C\u003Eo__15.\u003C\u003Ep__1.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Func<CallSite, Type, object, string, string, SelectList>> p1 = _Views_Home_Location_cshtml.\u003C\u003Eo__15.\u003C\u003Ep__1;
+      Type type = typeof (SelectList);
+      // ISSUE: reference to a compiler-generated field
+      if (_Views_Home_Location_cshtml.\u003C\u003Eo__15.\u003C\u003Ep__0 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        _Views_Home_Location_cshtml.\u003C\u003Eo__15.\u003C\u003Ep__0 = CallSite<Func<CallSite, object, object>>.Create(Binder.GetMember(CSharpBinderFlags.None, "listofitems", typeof (_Views_Home_Location_cshtml), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj = _Views_Home_Location_cshtml.\u003C\u003Eo__15.\u003C\u003Ep__0.Target((CallSite) _Views_Home_Location_cshtml.\u003C\u003Eo__15.\u003C\u003Ep__0, homeLocationCshtml.ViewBag);
+      SelectList selectList = target((CallSite) p1, type, obj, "id", "label");
+      helpersSelectTagHelper.Items = (IEnumerable<SelectListItem>) selectList;
+      homeLocationCshtml.__tagHelperExecutionContext.AddTagHelperAttribute("asp-items", (object) homeLocationCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper.Items, HtmlAttributeValueStyle.DoubleQuotes);
+      homeLocationCshtml.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_Location_cshtml.__tagHelperAttribute_3);
+      await homeLocationCshtml.__tagHelperRunner.RunAsync(homeLocationCshtml.__tagHelperExecutionContext);
+      if (!homeLocationCshtml.__tagHelperExecutionContext.Output.IsContentModified)
+        await homeLocationCshtml.__tagHelperExecutionContext.SetOutputContentAsync();
+      homeLocationCshtml.Write((object) homeLocationCshtml.__tagHelperExecutionContext.Output);
+      homeLocationCshtml.__tagHelperExecutionContext = homeLocationCshtml.__tagHelperScopeManager.End();
+      homeLocationCshtml.EndContext();
+      homeLocationCshtml.BeginContext(889, 591, true);
+      homeLocationCshtml.WriteLiteral("\r\n        </div>\r\n        <div class=\"col-md-3\">\r\n            <button id=\"CountryAdd\" type=\"button\" class=\"btn col-md-1 btn-info\" style=\"width:30%;font-size: 20px;margin: 18px 10px 0 0;\" onclick=\"showAddCountryModal(this);\"> Add</button>\r\n            <button id=\"CountryDel\" type=\"button\" class=\"btn col-md-1 btn-danger\" style=\"width:30%;font-size: 20px;margin-top: 18px;\" onclick=\"CountryDel();\"> Delete</button>\r\n        </div>\r\n    </div>\r\n\r\n    <div class=\"row\">\r\n        <div class=\"col-md-3\">\r\n            <h2>State : </h2>\r\n        </div>\r\n        <div class=\"col-md-6\">\r\n            ");
+      homeLocationCshtml.EndContext();
+      homeLocationCshtml.BeginContext(1480, 97, false);
+      homeLocationCshtml.__tagHelperExecutionContext = homeLocationCshtml.__tagHelperScopeManager.Begin("select", TagMode.StartTagAndEndTag, "e2c0184c130b4654bbd6d98aa479f6bf", (Func<Task>) (async () => { }));
+      homeLocationCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper = homeLocationCshtml.CreateTagHelper<SelectTagHelper>();
+      homeLocationCshtml.__tagHelperExecutionContext.Add((ITagHelper) homeLocationCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper);
+      homeLocationCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper.For = homeLocationCshtml.ModelExpressionProvider.CreateModelExpression<location, int>(homeLocationCshtml.ViewData, _Views_Home_Location_cshtml.__h1);
+      homeLocationCshtml.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) homeLocationCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper.For, HtmlAttributeValueStyle.DoubleQuotes);
+      homeLocationCshtml.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_Location_cshtml.__tagHelperAttribute_4);
+      homeLocationCshtml.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_Location_cshtml.__tagHelperAttribute_3);
+      await homeLocationCshtml.__tagHelperRunner.RunAsync(homeLocationCshtml.__tagHelperExecutionContext);
+      if (!homeLocationCshtml.__tagHelperExecutionContext.Output.IsContentModified)
+        await homeLocationCshtml.__tagHelperExecutionContext.SetOutputContentAsync();
+      homeLocationCshtml.Write((object) homeLocationCshtml.__tagHelperExecutionContext.Output);
+      homeLocationCshtml.__tagHelperExecutionContext = homeLocationCshtml.__tagHelperScopeManager.End();
+      homeLocationCshtml.EndContext();
+      homeLocationCshtml.BeginContext(1577, 586, true);
+      homeLocationCshtml.WriteLiteral("\r\n        </div>\r\n        <div class=\"col-md-3\">\r\n            <button id=\"CountryAdd\" type=\"button\" class=\"btn col-md-1 btn-info\" style=\"width:30%;font-size: 20px;margin: 18px 10px 0 0;\" onclick=\"showAddstateModal(this);\"> Add</button>\r\n            <button id=\"CountryDel\" type=\"button\" class=\"btn col-md-1 btn-danger\" style=\"width:30%;font-size: 20px;margin-top: 18px;\" onclick=\"StateDel();\"> Delete</button>\r\n        </div>\r\n    </div>\r\n\r\n    <div class=\"row\">\r\n        <div class=\"col-md-3\">\r\n            <h2>City : </h2>\r\n        </div>\r\n        <div class=\"col-md-6\">\r\n            ");
+      homeLocationCshtml.EndContext();
+      homeLocationCshtml.BeginContext(2163, 96, false);
+      homeLocationCshtml.__tagHelperExecutionContext = homeLocationCshtml.__tagHelperScopeManager.Begin("select", TagMode.StartTagAndEndTag, "51c69f7955174d149be7925f4a6ee3b9", (Func<Task>) (async () => { }));
+      homeLocationCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper = homeLocationCshtml.CreateTagHelper<SelectTagHelper>();
+      homeLocationCshtml.__tagHelperExecutionContext.Add((ITagHelper) homeLocationCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper);
+      homeLocationCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper.For = homeLocationCshtml.ModelExpressionProvider.CreateModelExpression<location, int>(homeLocationCshtml.ViewData, _Views_Home_Location_cshtml.__h2);
+      homeLocationCshtml.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) homeLocationCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper.For, HtmlAttributeValueStyle.DoubleQuotes);
+      homeLocationCshtml.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_Location_cshtml.__tagHelperAttribute_5);
+      homeLocationCshtml.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_Location_cshtml.__tagHelperAttribute_3);
+      await homeLocationCshtml.__tagHelperRunner.RunAsync(homeLocationCshtml.__tagHelperExecutionContext);
+      if (!homeLocationCshtml.__tagHelperExecutionContext.Output.IsContentModified)
+        await homeLocationCshtml.__tagHelperExecutionContext.SetOutputContentAsync();
+      homeLocationCshtml.Write((object) homeLocationCshtml.__tagHelperExecutionContext.Output);
+      homeLocationCshtml.__tagHelperExecutionContext = homeLocationCshtml.__tagHelperScopeManager.End();
+      homeLocationCshtml.EndContext();
+      homeLocationCshtml.BeginContext(2259, 592, true);
+      homeLocationCshtml.WriteLiteral("\r\n        </div>\r\n        <div class=\"col-md-3\">\r\n            <button id=\"CountryAdd\" type=\"button\" class=\"btn col-md-1 btn-info\" style=\"width:30%;font-size: 20px;margin: 18px 10px 0 0;\" onclick=\"showAddCityModal(this);\"> Add</button>\r\n            <button id=\"CountryDel\" type=\"button\" class=\"btn col-md-1 btn-danger\" style=\"width:30%;font-size: 20px;margin-top: 18px;\" onclick=\"cityDel();\"> Delete</button>\r\n        </div>\r\n    </div>\r\n\r\n    <div class=\"row\">\r\n        <div class=\"col-md-3\">\r\n            <h2>Neighborhood : </h2>\r\n        </div>\r\n        <div class=\"col-md-6\">\r\n            ");
+      homeLocationCshtml.EndContext();
+      homeLocationCshtml.BeginContext(2851, 104, false);
+      homeLocationCshtml.__tagHelperExecutionContext = homeLocationCshtml.__tagHelperScopeManager.Begin("select", TagMode.StartTagAndEndTag, "fe7d4c8ac6074977bca946253451fa37", (Func<Task>) (async () => { }));
+      homeLocationCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper = homeLocationCshtml.CreateTagHelper<SelectTagHelper>();
+      homeLocationCshtml.__tagHelperExecutionContext.Add((ITagHelper) homeLocationCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper);
+      homeLocationCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper.For = homeLocationCshtml.ModelExpressionProvider.CreateModelExpression<location, int>(homeLocationCshtml.ViewData, _Views_Home_Location_cshtml.__h3);
+      homeLocationCshtml.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) homeLocationCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper.For, HtmlAttributeValueStyle.DoubleQuotes);
+      homeLocationCshtml.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_Location_cshtml.__tagHelperAttribute_6);
+      homeLocationCshtml.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_Location_cshtml.__tagHelperAttribute_3);
+      await homeLocationCshtml.__tagHelperRunner.RunAsync(homeLocationCshtml.__tagHelperExecutionContext);
+      if (!homeLocationCshtml.__tagHelperExecutionContext.Output.IsContentModified)
+        await homeLocationCshtml.__tagHelperExecutionContext.SetOutputContentAsync();
+      homeLocationCshtml.Write((object) homeLocationCshtml.__tagHelperExecutionContext.Output);
+      homeLocationCshtml.__tagHelperExecutionContext = homeLocationCshtml.__tagHelperScopeManager.End();
+      homeLocationCshtml.EndContext();
+      homeLocationCshtml.BeginContext(2955, 6730, true);
+      homeLocationCshtml.WriteLiteral("\r\n        </div>\r\n        <div class=\"col-md-3\">\r\n            <button id=\"CountryAdd\" type=\"button\" class=\"btn col-md-1 btn-info\" style=\"width:30%;font-size: 20px;margin: 18px 10px 0 0;\" onclick=\"showAddneighboModal(this);\"> Add</button>\r\n            <button id=\"CountryDel\" type=\"button\" class=\"btn col-md-1 btn-danger\" style=\"width:30%;font-size: 20px;margin-top: 18px;\" onclick=\"NeighborDel();\"> Delete</button>\r\n        </div>\r\n    </div>\r\n</div>\r\n\r\n<div id=\"AddModal\" class=\"modal fade\" tabindex=\"-1\" role=\"dialog\" aria-hidden=\"true\">\r\n    <div class=\"modal-dialog\">\r\n        <div class=\"modal-content\">\r\n            <div class=\"modal-header\">\r\n                <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\">\r\n                    <span aria-hidden=\"true\">×</span>\r\n                </button>\r\n                <h4 class=\"modal-title\">Add</h4>\r\n            </div>\r\n            <div class=\"modal-body\">\r\n                <div class=\"form-horizontal form-label-left\">                  \r\n         ");
+      homeLocationCshtml.WriteLiteral("           <div class=\"form-group\">\r\n                        <label class=\"control-label col-md-3 col-sm-3 col-xs-12\">Country  </label>\r\n                        <div class=\"col-md-8 col-sm-8 col-xs-12\">\r\n                            <textarea ID=\"tbxCountry\" runat=\"server\" Rows=\"5\" TextMode=\"MultiLine\" CssClass=\"form-control\" Text=\"\" placeholder=\"\" style=\"width: 100%;\"></textarea>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n            <div class=\"modal-footer\">\r\n                <button type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\">Cancel</button>\r\n                <button type=\"button\" class=\"btn btn-default\" OnClick=\"btnAddcountry_Click()\" data-dismiss=\"modal\">Add</button>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n\r\n<div id=\"AddneighborModal\" class=\"modal fade\" tabindex=\"-1\" role=\"dialog\" aria-hidden=\"true\">\r\n    <div class=\"modal-dialog\">\r\n        <div class=\"modal-content\">\r\n            <div class=\"modal-header\">\r\n     ");
+      homeLocationCshtml.WriteLiteral("           <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\">\r\n                    <span aria-hidden=\"true\">×</span>\r\n                </button>\r\n                <h4 class=\"modal-title\">Add</h4>\r\n            </div>\r\n            <div class=\"modal-body\">\r\n                <div class=\"form-horizontal form-label-left\">\r\n                    <div class=\"form-group\">\r\n                        <label class=\"control-label col-md-3 col-sm-3 col-xs-12\">Neighborhood  </label>\r\n                        <div class=\"col-md-8 col-sm-8 col-xs-12\">\r\n                            <textarea ID=\"tbxNeighbor\" runat=\"server\" Rows=\"5\" TextMode=\"MultiLine\" CssClass=\"form-control\" Text=\"\" placeholder=\"\" style=\"width: 100%;\"></textarea>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n            <div class=\"modal-footer\">\r\n                <button type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\">Cancel</button>\r\n                <button type=\"button\" c");
+      homeLocationCshtml.WriteLiteral("lass=\"btn btn-default\" OnClick=\"btnAddneighbor_Click()\" data-dismiss=\"modal\">Add</button>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n\r\n<div id=\"AddstateModal\" class=\"modal fade\" tabindex=\"-1\" role=\"dialog\" aria-hidden=\"true\">\r\n    <div class=\"modal-dialog\">\r\n        <div class=\"modal-content\">\r\n            <div class=\"modal-header\">\r\n                <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\">\r\n                    <span aria-hidden=\"true\">×</span>\r\n                </button>\r\n                <h4 class=\"modal-title\">Add</h4>\r\n            </div>\r\n            <div class=\"modal-body\">\r\n                <div class=\"form-horizontal form-label-left\">\r\n                    <div class=\"form-group\">\r\n                        <label class=\"control-label col-md-3 col-sm-3 col-xs-12\">State  </label>\r\n                        <div class=\"col-md-4 col-sm-8 col-xs-12\">\r\n                            <textarea ID=\"tbxState\" runat=\"server\" Rows=\"5\" TextMode=\"MultiLine\" CssClass=\"form-cont");
+      homeLocationCshtml.WriteLiteral("rol\" Text=\"\" placeholder=\"\" style=\"width: 100%;\"></textarea>\r\n                        </div>\r\n                        <div class=\"col-md-4 col-sm-8 col-xs-12\">\r\n                            <textarea ID=\"tbxStateShort\" runat=\"server\" Rows=\"5\" TextMode=\"MultiLine\" CssClass=\"form-control\" Text=\"\" placeholder=\"\" style=\"width: 100%;\"></textarea>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n            <div class=\"modal-footer\">\r\n                <button type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\">Cancel</button>\r\n                <button type=\"button\" class=\"btn btn-default\" OnClick=\"btnAddstate_Click()\" data-dismiss=\"modal\">Add</button>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n\r\n<div id=\"AddcityModal\" class=\"modal fade\" tabindex=\"-1\" role=\"dialog\" aria-hidden=\"true\">\r\n    <div class=\"modal-dialog\">\r\n        <div class=\"modal-content\">\r\n            <div class=\"modal-header\">\r\n                <button type=\"button\" class=\"close\"");
+      homeLocationCshtml.WriteLiteral(" data-dismiss=\"modal\" aria-label=\"Close\">\r\n                    <span aria-hidden=\"true\">×</span>\r\n                </button>\r\n                <h4 class=\"modal-title\">Add</h4>\r\n            </div>\r\n            <div class=\"modal-body\">\r\n                <div class=\"form-horizontal form-label-left\">\r\n                    <div class=\"form-group\">\r\n                        <label class=\"control-label col-md-3 col-sm-3 col-xs-12\">City  </label>\r\n                        <div class=\"col-md-8 col-sm-8 col-xs-12\">\r\n                            <textarea ID=\"tbxCity\" runat=\"server\" Rows=\"5\" TextMode=\"MultiLine\" CssClass=\"form-control\" Text=\"\" placeholder=\"\" style=\"width: 100%;\"></textarea>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n            <div class=\"modal-footer\">\r\n                <button type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\">Cancel</button>\r\n                <button type=\"button\" class=\"btn btn-default\" OnClick=\"btnAddcity_Click()\" data-d");
+      homeLocationCshtml.WriteLiteral("ismiss=\"modal\">Add</button>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n    <script language=\"javascript\">\r\n        function showAddCountryModal() {\r\n            \r\n            $(\"#AddModal\").modal();\r\n        }\r\n        function showAddCityModal() {\r\n            $(\"#AddcityModal\").modal();\r\n        }\r\n        function showAddstateModal() {\r\n            $(\"#AddstateModal\").modal();\r\n        }\r\n        function showAddneighboModal() {\r\n            $(\"#AddneighborModal\").modal();\r\n        }\r\n\r\n        function CountryDel() {\r\n            $.ajax({\r\n                url: '");
+      homeLocationCshtml.EndContext();
+      homeLocationCshtml.BeginContext(9686, 33, false);
+      homeLocationCshtml.Write(UrlHelperExtensions.Action(homeLocationCshtml.Url, "dellocation", "Home"));
+      homeLocationCshtml.EndContext();
+      homeLocationCshtml.BeginContext(9719, 797, true);
+      homeLocationCshtml.WriteLiteral("',\r\n                contentType: 'application/x-www-form-urlencoded',\r\n                dataType: 'json',\r\n                type: 'POST',\r\n                data: { id: $(\"#countrylist\").val() },\r\n                success: function (data) {\r\n                    data = jQuery.parseJSON(data);\r\n                    if (data[\"data\"] == \"success\") {\r\n                        $(\"#countrylist option[value=\" + $(\"#countrylist\").val() + \"]\").remove();\r\n                    }\r\n                    return;\r\n                },\r\n                error: function (XMLHttpRequest, textStatus, errorThrown) {\r\n                    alert(\"server connect error ! \");\r\n                    return;\r\n                }\r\n            });\r\n        }\r\n        function StateDel() {\r\n            $.ajax({\r\n                url: '");
+      homeLocationCshtml.EndContext();
+      homeLocationCshtml.BeginContext(10517, 33, false);
+      homeLocationCshtml.Write(UrlHelperExtensions.Action(homeLocationCshtml.Url, "dellocation", "Home"));
+      homeLocationCshtml.EndContext();
+      homeLocationCshtml.BeginContext(10550, 790, true);
+      homeLocationCshtml.WriteLiteral("',\r\n                contentType: 'application/x-www-form-urlencoded',\r\n                dataType: 'json',\r\n                type: 'POST',\r\n                data: { id: $(\"#statelist\").val() },\r\n                success: function (data) {\r\n                    data = jQuery.parseJSON(data);\r\n                    if (data[\"data\"] == \"success\") {\r\n                        $(\"#statelist option[value=\" + $(\"#statelist\").val() + \"]\").remove();\r\n                    }\r\n                    return;\r\n                },\r\n                error: function (XMLHttpRequest, textStatus, errorThrown) {\r\n                    alert(\"server connect error ! \");\r\n                    return;\r\n                }\r\n            });\r\n        }\r\n        function cityDel() {\r\n            $.ajax({\r\n                url: '");
+      homeLocationCshtml.EndContext();
+      homeLocationCshtml.BeginContext(11341, 33, false);
+      homeLocationCshtml.Write(UrlHelperExtensions.Action(homeLocationCshtml.Url, "dellocation", "Home"));
+      homeLocationCshtml.EndContext();
+      homeLocationCshtml.BeginContext(11374, 791, true);
+      homeLocationCshtml.WriteLiteral("',\r\n                contentType: 'application/x-www-form-urlencoded',\r\n                dataType: 'json',\r\n                type: 'POST',\r\n                data: { id: $(\"#citylist\").val() },\r\n                success: function (data) {\r\n                    data = jQuery.parseJSON(data);\r\n                    if (data[\"data\"] == \"success\") {\r\n                        $(\"#citylist option[value=\" + $(\"#citylist\").val() + \"]\").remove();\r\n                    }\r\n                    return;\r\n                },\r\n                error: function (XMLHttpRequest, textStatus, errorThrown) {\r\n                    alert(\"server connect error ! \");\r\n                    return;\r\n                }\r\n            });\r\n        }\r\n        function NeighborDel() {\r\n            $.ajax({\r\n                url: '");
+      homeLocationCshtml.EndContext();
+      homeLocationCshtml.BeginContext(12166, 33, false);
+      homeLocationCshtml.Write(UrlHelperExtensions.Action(homeLocationCshtml.Url, "dellocation", "Home"));
+      homeLocationCshtml.EndContext();
+      homeLocationCshtml.BeginContext(12199, 829, true);
+      homeLocationCshtml.WriteLiteral("',\r\n                contentType: 'application/x-www-form-urlencoded',\r\n                dataType: 'json',\r\n                type: 'POST',\r\n                data: { id: $(\"#neighborhoodlist\").val() },\r\n                success: function (data) {\r\n                    data = jQuery.parseJSON(data);\r\n                    if (data[\"data\"] == \"success\") {\r\n                        $(\"#neighborhoodlist option[value=\" + $(\"#neighborhoodlist\").val() + \"]\").remove();\r\n                    }\r\n                    return;\r\n                },\r\n                error: function (XMLHttpRequest, textStatus, errorThrown) {\r\n                    alert(\"server connect error ! \");\r\n                    return;\r\n                }\r\n            });\r\n        }\r\n        function btnAddcountry_Click() {\r\n\r\n            $.ajax({\r\n                    url: '");
+      homeLocationCshtml.EndContext();
+      homeLocationCshtml.BeginContext(13029, 32, false);
+      homeLocationCshtml.Write(UrlHelperExtensions.Action(homeLocationCshtml.Url, "addCountry", "Home"));
+      homeLocationCshtml.EndContext();
+      homeLocationCshtml.BeginContext(13061, 1297, true);
+      homeLocationCshtml.WriteLiteral("',\r\n                    contentType: 'application/x-www-form-urlencoded',\r\n                    dataType: 'json',\r\n                    type: 'POST',\r\n                    data: { \"name\": $(\"#tbxCountry\").val() },\r\n                    success: function (data) {\r\n                        \r\n                        data = jQuery.parseJSON(data);\r\n                        var strHtml = \"\";\r\n                        for (var j = 0; j < data[\"data\"].length; j++) {\r\n                            strHtml += \"<option value=\\\"\" + data[\"data\"][j].id + \"\\\">\" + data[\"data\"][j].name + \"</option>\";\r\n                        }\r\n                        $(\"#countrylist\").append(strHtml);  \r\n                        \r\n                        $(\"#tbxCountry\").val(\"\");\r\n\r\n                        return;\r\n                    },\r\n                    error: function (XMLHttpRequest, textStatus, errorThrown) {\r\n                        alert(\"server connect error ! \");\r\n                        return;\r\n                    }\r\n                });");
+      homeLocationCshtml.WriteLiteral("\r\n        }\r\n        function btnAddstate_Click() {\r\n            if ($(\"#countrylist\").val() == null || $(\"#countrylist\").val() == 0) {\r\n                alert(\"Select the Country!\");\r\n                return;\r\n            }\r\n             $.ajax({\r\n                    url: '");
+      homeLocationCshtml.EndContext();
+      homeLocationCshtml.BeginContext(14359, 30, false);
+      homeLocationCshtml.Write(UrlHelperExtensions.Action(homeLocationCshtml.Url, "addState", "Home"));
+      homeLocationCshtml.EndContext();
+      homeLocationCshtml.BeginContext(14389, 1325, true);
+      homeLocationCshtml.WriteLiteral("',\r\n                    contentType: 'application/x-www-form-urlencoded',\r\n                    dataType: 'json',\r\n                    type: 'POST',\r\n                 data: { id: $(\"#countrylist\").val(), name: $(\"#tbxState\").val(), shortname: $(\"#tbxStateShort\").val()},\r\n                    success: function (data) {\r\n                        \r\n                        data = jQuery.parseJSON(data);\r\n                        var strHtml = \"\";\r\n                        for (var j = 0; j < data[\"data\"].length; j++) {\r\n                            strHtml += \"<option value=\\\"\" + data[\"data\"][j].id + \"\\\">\" + data[\"data\"][j].name + \" - \" + data[\"data\"][j].shortname + \"</option>\";\r\n                        }\r\n                        $(\"#statelist\").append(strHtml);    \r\n                        $(\"#tbxState\").val(\"\");\r\n                        return;\r\n                    },\r\n                    error: function (XMLHttpRequest, textStatus, errorThrown) {\r\n                        alert(\"server connect error ! \");\r\n          ");
+      homeLocationCshtml.WriteLiteral("              return;\r\n                    }\r\n                });\r\n        }\r\n        function btnAddcity_Click() {\r\n            if ($(\"#statelist\").val() == null) {\r\n                alert(\"Select the State!\");\r\n                return;\r\n            }\r\n             $.ajax({\r\n                    url: '");
+      homeLocationCshtml.EndContext();
+      homeLocationCshtml.BeginContext(15715, 29, false);
+      homeLocationCshtml.Write(UrlHelperExtensions.Action(homeLocationCshtml.Url, "addCity", "Home"));
+      homeLocationCshtml.EndContext();
+      homeLocationCshtml.BeginContext(15744, 1252, true);
+      homeLocationCshtml.WriteLiteral("',\r\n                    contentType: 'application/x-www-form-urlencoded',\r\n                    dataType: 'json',\r\n                    type: 'POST',\r\n                    data: { id: $(\"#statelist\").val(), name: $(\"#tbxCity\").val() },\r\n                    success: function (data) {\r\n                        \r\n                        data = jQuery.parseJSON(data);\r\n                        var strHtml = \"\";\r\n                        for (var j = 0; j < data[\"data\"].length; j++) {\r\n                            strHtml += \"<option value=\\\"\" + data[\"data\"][j].id + \"\\\">\" + data[\"data\"][j].name + \"</option>\";\r\n                        }\r\n                        $(\"#citylist\").append(strHtml);   \r\n                        $(\"#tbxCity\").val(\"\");\r\n                        return;\r\n                    },\r\n                    error: function (XMLHttpRequest, textStatus, errorThrown) {\r\n                        alert(\"server connect error ! \");\r\n                        return;\r\n                    }\r\n                });\r\n        }");
+      homeLocationCshtml.WriteLiteral("\r\n        function btnAddneighbor_Click() {\r\n            if ($(\"#statelist\").val() == null) {\r\n                alert(\"Select the City!\");\r\n                return;\r\n            }\r\n             $.ajax({\r\n                    url: '");
+      homeLocationCshtml.EndContext();
+      homeLocationCshtml.BeginContext(16997, 33, false);
+      homeLocationCshtml.Write(UrlHelperExtensions.Action(homeLocationCshtml.Url, "addNeighbor", "Home"));
+      homeLocationCshtml.EndContext();
+      homeLocationCshtml.BeginContext(17030, 1318, true);
+      homeLocationCshtml.WriteLiteral("',\r\n                    contentType: 'application/x-www-form-urlencoded',\r\n                    dataType: 'json',\r\n                    type: 'POST',\r\n                    data: { id: $(\"#citylist\").val(), name: $(\"#tbxNeighbor\").val() },\r\n                    success: function (data) {\r\n                        \r\n                        data = jQuery.parseJSON(data);\r\n                        var strHtml = \"\";\r\n                        for (var j = 0; j < data[\"data\"].length; j++) {\r\n                            strHtml += \"<option value=\\\"\" + data[\"data\"][j].id + \"\\\">\" + data[\"data\"][j].name + \"</option>\";\r\n                        }\r\n                        $(\"#neighborhoodlist\").append(strHtml); \r\n                        $(\"#tbxNeighbor\").val(\"\");\r\n                        return;\r\n                    },\r\n                    error: function (XMLHttpRequest, textStatus, errorThrown) {\r\n                        alert(\"server connect error ! \");\r\n                        return;\r\n                    }\r\n                }");
+      homeLocationCshtml.WriteLiteral(");\r\n        }\r\n\r\n        $(\"#countrylist\").bind(\"change\", function () {\r\n            $(\"#statelist\").empty();\r\n            $(\"#citylist\").empty();\r\n            $(\"#neighborhoodlist\").empty();\r\n            if ($(\"#countrylist\").val() != 0) {\r\n                $.ajax({\r\n                    url: '");
+      homeLocationCshtml.EndContext();
+      homeLocationCshtml.BeginContext(18349, 33, false);
+      homeLocationCshtml.Write(UrlHelperExtensions.Action(homeLocationCshtml.Url, "changestate", "Home"));
+      homeLocationCshtml.EndContext();
+      homeLocationCshtml.BeginContext(18382, 1906, true);
+      homeLocationCshtml.WriteLiteral("',\r\n                    contentType: 'application/x-www-form-urlencoded',\r\n                    dataType: 'json',\r\n                    type: 'POST',\r\n                    data: { id: $(\"#countrylist\").val() },\r\n                    success: function (data) {\r\n                        if (data == \"}\") {\r\n                            return;\r\n                        }\r\n                        data = jQuery.parseJSON(data);\r\n                        var strHtml = \"\";\r\n                        for (var j = 0; j < data[\"state\"].length; j++) {\r\n                            strHtml += \"<option value=\\\"\" + data[\"state\"][j].id + \"\\\">\" + data[\"state\"][j].name + \"</option>\";\r\n                        }\r\n                        $(\"#statelist\").html(strHtml);\r\n                        strHtml = \"\";\r\n                        for (var j = 0; j < data[\"city\"].length; j++) {\r\n                            strHtml += \"<option value=\\\"\" + data[\"city\"][j].id + \"\\\">\" + data[\"city\"][j].name + \"</option>\";\r\n                        }\r\n          ");
+      homeLocationCshtml.WriteLiteral("              $(\"#citylist\").html(strHtml);\r\n                        strHtml = \"\";\r\n                        for (var j = 0; j < data[\"neighbor\"].length; j++) {\r\n                            strHtml += \"<option value=\\\"\" + data[\"neighbor\"][j].id + \"\\\">\" + data[\"neighbor\"][j].name + \"</option>\";\r\n                        }\r\n                        $(\"#neighborhoodlist\").html(strHtml);\r\n                        return;\r\n                    },\r\n                    error: function (XMLHttpRequest, textStatus, errorThrown) {\r\n                        alert(\"server connect error ! \");\r\n                        return;\r\n                    }\r\n                });\r\n            }\r\n        });\r\n\r\n        $(\"#statelist\").bind(\"change\", function () {\r\n           \r\n            $(\"#citylist\").empty();\r\n            $(\"#neighborhoodlist\").empty();\r\n            $.ajax({\r\n                url: '");
+      homeLocationCshtml.EndContext();
+      homeLocationCshtml.BeginContext(20289, 32, false);
+      homeLocationCshtml.Write(UrlHelperExtensions.Action(homeLocationCshtml.Url, "changeCity", "Home"));
+      homeLocationCshtml.EndContext();
+      homeLocationCshtml.BeginContext(20321, 1401, true);
+      homeLocationCshtml.WriteLiteral("',\r\n                contentType: 'application/x-www-form-urlencoded',\r\n                type: 'POST',\r\n                data: { id: $(\"#statelist\").val() },\r\n                success: function (data) {\r\n                    if (data == \"}\") {\r\n                        return;\r\n                    }\r\n                    data = jQuery.parseJSON(data);\r\n                    var strHtml = \"\";\r\n                    for (var j = 0; j < data[\"city\"].length; j++) {\r\n                        strHtml += \"<option value=\\\"\" + data[\"city\"][j].id + \"\\\">\" + data[\"city\"][j].name + \"</option>\";\r\n                    }\r\n                    $(\"#citylist\").html(strHtml);\r\n                    strHtml = \"\";\r\n                    for (var j = 0; j < data[\"neighbor\"].length; j++) {\r\n                        strHtml += \"<option value=\\\"\" + data[\"neighbor\"][j].id + \"\\\">\" + data[\"neighbor\"][j].name + \"</option>\";\r\n                    }\r\n                    $(\"#neighborhoodlist\").html(strHtml);\r\n                    return;\r\n                },\r\n   ");
+      homeLocationCshtml.WriteLiteral("             error: function (XMLHttpRequest, textStatus, errorThrown) {\r\n                    alert(\"server connect error ! \");\r\n                    return;\r\n                }\r\n            });\r\n           \r\n        });\r\n\r\n        $(\"#citylist\").bind(\"change\", function () {\r\n           \r\n            $(\"#neighborhoodlist\").empty();\r\n            $.ajax({\r\n                url: '");
+      homeLocationCshtml.EndContext();
+      homeLocationCshtml.BeginContext(21723, 40, false);
+      homeLocationCshtml.Write(UrlHelperExtensions.Action(homeLocationCshtml.Url, "changeNeighborhood", "Home"));
+      homeLocationCshtml.EndContext();
+      homeLocationCshtml.BeginContext(21763, 947, true);
+      homeLocationCshtml.WriteLiteral("',\r\n                contentType: 'application/x-www-form-urlencoded',\r\n                type: 'POST',\r\n                data: { id: $(\"#citylist\").val() },\r\n                success: function (data) {\r\n                    if (data == \"}\") {\r\n                        return;\r\n                    }\r\n                    var strHtml = \"\";\r\n                    data = jQuery.parseJSON(data);\r\n                    for (var j = 0; j < data[\"neighbor\"].length; j++) {\r\n                        strHtml += \"<option value=\\\"\" + data[\"neighbor\"][j].id + \"\\\">\" + data[\"neighbor\"][j].name + \"</option>\";\r\n                    }\r\n                    $(\"#neighborhoodlist\").html(strHtml);\r\n                    return;\r\n                },\r\n                error: function (XMLHttpRequest, textStatus, errorThrown) {\r\n                    alert(\"server connect error ! \");\r\n                    return;\r\n                }\r\n            });\r\n        });\r\n    </script>\r\n\r\n");
+      homeLocationCshtml.EndContext();
+      // ISSUE: reference to a compiler-generated method
+      homeLocationCshtml.DefineSection("Scripts", new RenderAsyncDelegate(homeLocationCshtml.\u003CExecuteAsync\u003Eb__15_5));
+    }
+
+    [RazorInject]
+    public IModelExpressionProvider ModelExpressionProvider { get; private set; }
+
+    [RazorInject]
+    public IUrlHelper Url { get; private set; }
+
+    [RazorInject]
+    public IViewComponentHelper Component { get; private set; }
+
+    [RazorInject]
+    public IJsonHelper Json { get; private set; }
+
+    [RazorInject]
+    public IHtmlHelper<location> Html { get; private set; }
+  }
+}

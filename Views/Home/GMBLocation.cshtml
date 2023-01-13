@@ -1,0 +1,530 @@
+﻿// Decompiled with JetBrains decompiler
+// Type: AspNetCore._Views_Home_GMBLocation_cshtml
+// Assembly: Traffic.PrecompiledViews, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+// MVID: 8B37BA40-0390-40A7-A536-D9CCDBC36390
+// Assembly location: D:\Workstation\TonniProjects\TrafficWebDeploy\Traffic.PrecompiledViews.dll
+
+using Microsoft.AspNetCore.Html;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Razor;
+using Microsoft.AspNetCore.Mvc.Razor.Internal;
+using Microsoft.AspNetCore.Mvc.Razor.TagHelpers;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.Mvc.TagHelpers;
+using Microsoft.AspNetCore.Mvc.ViewFeatures;
+using Microsoft.AspNetCore.Razor.Runtime.TagHelpers;
+using Microsoft.AspNetCore.Razor.TagHelpers;
+using Microsoft.CSharp.RuntimeBinder;
+using System;
+using System.Collections.Generic;
+using System.Linq.Expressions;
+using System.Runtime.CompilerServices;
+using System.Text.Encodings.Web;
+using System.Threading.Tasks;
+using Traffic.Models;
+
+namespace AspNetCore
+{
+  public class _Views_Home_GMBLocation_cshtml : RazorPage<IEnumerable<myBusinessLocation>>
+  {
+    private static readonly TagHelperAttribute __tagHelperAttribute_0 = new TagHelperAttribute("asp-action", (object) "GMBIndex", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_1 = new TagHelperAttribute("class", (object) new HtmlString("btn btn-info"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_2 = new TagHelperAttribute("asp-action", (object) "GMBPost", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_3 = new TagHelperAttribute("class", (object) new HtmlString("btn btn-success btn-xs"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_4 = new TagHelperAttribute("href", (object) new HtmlString("~/js/datatables/responsive.bootstrap.min.css"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_5 = new TagHelperAttribute("rel", (object) new HtmlString("stylesheet"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_6 = new TagHelperAttribute("type", (object) new HtmlString("text/css"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_7 = new TagHelperAttribute("href", (object) new HtmlString("~/js/datatables/scroller.bootstrap.min.css"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_8 = new TagHelperAttribute("src", (object) new HtmlString("~/js/datatables/jquery.dataTables.min.js"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_9 = new TagHelperAttribute("src", (object) new HtmlString("~/js/datatables/dataTables.bootstrap.js"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_10 = new TagHelperAttribute("src", (object) new HtmlString("~/js/datatables/dataTables.buttons.min.js"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_11 = new TagHelperAttribute("src", (object) new HtmlString("~/js/datatables/buttons.bootstrap.min.js"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_12 = new TagHelperAttribute("src", (object) new HtmlString("~/js/datatables/jszip.min.js"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_13 = new TagHelperAttribute("src", (object) new HtmlString("~/js/datatables/pdfmake.min.js"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_14 = new TagHelperAttribute("src", (object) new HtmlString("~/js/datatables/vfs_fonts.js"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_15 = new TagHelperAttribute("src", (object) new HtmlString("~/js/datatables/buttons.html5.min.js"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_16 = new TagHelperAttribute("src", (object) new HtmlString("~/js/datatables/buttons.print.min.js"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_17 = new TagHelperAttribute("src", (object) new HtmlString("~/js/datatables/dataTables.fixedHeader.min.js"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_18 = new TagHelperAttribute("src", (object) new HtmlString("~/js/datatables/dataTables.keyTable.min.js"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_19 = new TagHelperAttribute("src", (object) new HtmlString("~/js/datatables/dataTables.responsive.min.js"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_20 = new TagHelperAttribute("src", (object) new HtmlString("~/js/datatables/responsive.bootstrap.min.js"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_21 = new TagHelperAttribute("src", (object) new HtmlString("~/js/datatables/dataTables.scroller.min.js"), HtmlAttributeValueStyle.DoubleQuotes);
+    private string __tagHelperStringValueBuffer;
+    private TagHelperExecutionContext __tagHelperExecutionContext;
+    private TagHelperRunner __tagHelperRunner = new TagHelperRunner();
+    private TagHelperScopeManager __backed__tagHelperScopeManager;
+    private AnchorTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper;
+    private UrlResolutionTagHelper __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper;
+
+    private TagHelperScopeManager __tagHelperScopeManager
+    {
+      get
+      {
+        if (this.__backed__tagHelperScopeManager == null)
+          this.__backed__tagHelperScopeManager = new TagHelperScopeManager(new Action<HtmlEncoder>(((RazorPageBase) this).StartTagHelperWritingScope), new Func<TagHelperContent>(((RazorPageBase) this).EndTagHelperWritingScope));
+        return this.__backed__tagHelperScopeManager;
+      }
+    }
+
+    public virtual async Task ExecuteAsync()
+    {
+      _Views_Home_GMBLocation_cshtml gmbLocationCshtml1 = this;
+      gmbLocationCshtml1.BeginContext(55, 2, true);
+      gmbLocationCshtml1.WriteLiteral("\r\n");
+      gmbLocationCshtml1.EndContext();
+      gmbLocationCshtml1.ViewData["Title"] = (object) "Create";
+      // ISSUE: explicit non-virtual call
+      __nonvirtual (gmbLocationCshtml1.Layout) = "~/Views/Shared/_Layout.cshtml";
+      gmbLocationCshtml1.BeginContext(146, 37, true);
+      gmbLocationCshtml1.WriteLiteral("\r\n</br>\r\n<p class=\"text-right\">\r\n    ");
+      gmbLocationCshtml1.EndContext();
+      gmbLocationCshtml1.BeginContext(183, 93, false);
+      // ISSUE: reference to a compiler-generated method
+      gmbLocationCshtml1.__tagHelperExecutionContext = gmbLocationCshtml1.__tagHelperScopeManager.Begin("a", TagMode.StartTagAndEndTag, "dd9cd49a052e41aaa2d75789c2efcd69", new Func<Task>(gmbLocationCshtml1.\u003CExecuteAsync\u003Eb__30_0));
+      gmbLocationCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper = gmbLocationCshtml1.CreateTagHelper<AnchorTagHelper>();
+      gmbLocationCshtml1.__tagHelperExecutionContext.Add((ITagHelper) gmbLocationCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper);
+      gmbLocationCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.Action = (string) _Views_Home_GMBLocation_cshtml.__tagHelperAttribute_0.Value;
+      gmbLocationCshtml1.__tagHelperExecutionContext.AddTagHelperAttribute(_Views_Home_GMBLocation_cshtml.__tagHelperAttribute_0);
+      if (gmbLocationCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues == null)
+        throw new InvalidOperationException(gmbLocationCshtml1.InvalidTagHelperIndexerAssignment("asp-route-id", "Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper", "RouteValues"));
+      gmbLocationCshtml1.BeginWriteTagHelperAttribute();
+      // ISSUE: reference to a compiler-generated field
+      if (_Views_Home_GMBLocation_cshtml.\u003C\u003Eo__30.\u003C\u003Ep__1 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        _Views_Home_GMBLocation_cshtml.\u003C\u003Eo__30.\u003C\u003Ep__1 = CallSite<Action<CallSite, _Views_Home_GMBLocation_cshtml, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "WriteLiteral", (IEnumerable<Type>) null, typeof (_Views_Home_GMBLocation_cshtml), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, _Views_Home_GMBLocation_cshtml, object> target1 = _Views_Home_GMBLocation_cshtml.\u003C\u003Eo__30.\u003C\u003Ep__1.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, _Views_Home_GMBLocation_cshtml, object>> p1 = _Views_Home_GMBLocation_cshtml.\u003C\u003Eo__30.\u003C\u003Ep__1;
+      _Views_Home_GMBLocation_cshtml gmbLocationCshtml2 = gmbLocationCshtml1;
+      // ISSUE: reference to a compiler-generated field
+      if (_Views_Home_GMBLocation_cshtml.\u003C\u003Eo__30.\u003C\u003Ep__0 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        _Views_Home_GMBLocation_cshtml.\u003C\u003Eo__30.\u003C\u003Ep__0 = CallSite<Func<CallSite, object, object>>.Create(Binder.GetMember(CSharpBinderFlags.None, "Userid", typeof (_Views_Home_GMBLocation_cshtml), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj1 = _Views_Home_GMBLocation_cshtml.\u003C\u003Eo__30.\u003C\u003Ep__0.Target((CallSite) _Views_Home_GMBLocation_cshtml.\u003C\u003Eo__30.\u003C\u003Ep__0, gmbLocationCshtml1.ViewBag);
+      target1((CallSite) p1, gmbLocationCshtml2, obj1);
+      gmbLocationCshtml1.__tagHelperStringValueBuffer = gmbLocationCshtml1.EndWriteTagHelperAttribute();
+      gmbLocationCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues["id"] = gmbLocationCshtml1.__tagHelperStringValueBuffer;
+      gmbLocationCshtml1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-route-id", (object) gmbLocationCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues["id"], HtmlAttributeValueStyle.DoubleQuotes);
+      gmbLocationCshtml1.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_GMBLocation_cshtml.__tagHelperAttribute_1);
+      await gmbLocationCshtml1.__tagHelperRunner.RunAsync(gmbLocationCshtml1.__tagHelperExecutionContext);
+      if (!gmbLocationCshtml1.__tagHelperExecutionContext.Output.IsContentModified)
+        await gmbLocationCshtml1.__tagHelperExecutionContext.SetOutputContentAsync();
+      gmbLocationCshtml1.Write((object) gmbLocationCshtml1.__tagHelperExecutionContext.Output);
+      gmbLocationCshtml1.__tagHelperExecutionContext = gmbLocationCshtml1.__tagHelperScopeManager.End();
+      gmbLocationCshtml1.EndContext();
+      gmbLocationCshtml1.BeginContext(276, 49, true);
+      gmbLocationCshtml1.WriteLiteral("\r\n</p>\r\n\r\n\r\n<div class=\"row\">\r\n    <h1>\r\n        ");
+      gmbLocationCshtml1.EndContext();
+      gmbLocationCshtml1.BeginContext(326, 19, false);
+      // ISSUE: reference to a compiler-generated field
+      if (_Views_Home_GMBLocation_cshtml.\u003C\u003Eo__30.\u003C\u003Ep__3 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        _Views_Home_GMBLocation_cshtml.\u003C\u003Eo__30.\u003C\u003Ep__3 = CallSite<Action<CallSite, _Views_Home_GMBLocation_cshtml, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (_Views_Home_GMBLocation_cshtml), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, _Views_Home_GMBLocation_cshtml, object> target2 = _Views_Home_GMBLocation_cshtml.\u003C\u003Eo__30.\u003C\u003Ep__3.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, _Views_Home_GMBLocation_cshtml, object>> p3 = _Views_Home_GMBLocation_cshtml.\u003C\u003Eo__30.\u003C\u003Ep__3;
+      _Views_Home_GMBLocation_cshtml gmbLocationCshtml3 = gmbLocationCshtml1;
+      // ISSUE: reference to a compiler-generated field
+      if (_Views_Home_GMBLocation_cshtml.\u003C\u003Eo__30.\u003C\u003Ep__2 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        _Views_Home_GMBLocation_cshtml.\u003C\u003Eo__30.\u003C\u003Ep__2 = CallSite<Func<CallSite, object, object>>.Create(Binder.GetMember(CSharpBinderFlags.None, "AccountName", typeof (_Views_Home_GMBLocation_cshtml), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj2 = _Views_Home_GMBLocation_cshtml.\u003C\u003Eo__30.\u003C\u003Ep__2.Target((CallSite) _Views_Home_GMBLocation_cshtml.\u003C\u003Eo__30.\u003C\u003Ep__2, gmbLocationCshtml1.ViewBag);
+      target2((CallSite) p3, gmbLocationCshtml3, obj2);
+      gmbLocationCshtml1.EndContext();
+      gmbLocationCshtml1.BeginContext(345, 1025, true);
+      gmbLocationCshtml1.WriteLiteral("\r\n    </h1>\r\n</div>\r\n<div class=\"row\">\r\n    <table class=\"table\">\r\n        <thead>\r\n            <tr>\r\n                <th style=\"width: 20%;text-align:center;\">\r\n                    Name\r\n                </th>\r\n                <th style=\"width: 30%;text-align:center;\">\r\n                    WebSite\r\n                </th>\r\n                <th style=\"width: 10%;text-align:center;\">\r\n                    Last Post\r\n                </th>\r\n                <th style=\"width: 15%;text-align:center;\">\r\n                    Upcoming Post\r\n                </th>\r\n                <th style=\"width: 15%;text-align:center;\">\r\n                    Review / Reply\r\n                </th>\r\n                <th style=\"width: 5%;text-align:center;\">\r\n                    Rating\r\n                </th>\r\n                <th style=\"width: 5%;text-align:center;\">\r\n                    QA\r\n                </th>\r\n                <th style=\"width: 5%;text-align:right;\">\r\n                </th>\r\n            </tr>\r\n        </thead>\r\n        <tbody>\r");
+      gmbLocationCshtml1.WriteLiteral("\n");
+      gmbLocationCshtml1.EndContext();
+      foreach (myBusinessLocation businessLocation in gmbLocationCshtml1.Model)
+      {
+        myBusinessLocation item = businessLocation;
+        gmbLocationCshtml1.BeginContext(1427, 116, true);
+        gmbLocationCshtml1.WriteLiteral("            <tr>\r\n                <td style=\"text-align:left;\">\r\n                    <div>\r\n                        ");
+        gmbLocationCshtml1.EndContext();
+        gmbLocationCshtml1.BeginContext(1544, 47, false);
+        gmbLocationCshtml1.Write((object) gmbLocationCshtml1.Html.DisplayFor<IEnumerable<myBusinessLocation>, string>((Expression<Func<IEnumerable<myBusinessLocation>, string>>) (modelItem => item.locationName)));
+        gmbLocationCshtml1.EndContext();
+        gmbLocationCshtml1.BeginContext(1591, 153, true);
+        gmbLocationCshtml1.WriteLiteral("\r\n                    </div>\r\n                </td>\r\n                <td style=\"text-align:left;\">\r\n                    <div>\r\n                        <a");
+        gmbLocationCshtml1.EndContext();
+        gmbLocationCshtml1.BeginWriteAttribute("href", " href=\"", 1744, "\"", 1797, 1);
+        gmbLocationCshtml1.WriteAttributeValue("", 1751, (object) gmbLocationCshtml1.Html.DisplayFor<IEnumerable<myBusinessLocation>, string>((Expression<Func<IEnumerable<myBusinessLocation>, string>>) (modelItem => item.websiteUrl)), 1751, 46, false);
+        gmbLocationCshtml1.EndWriteAttribute();
+        gmbLocationCshtml1.BeginContext(1798, 43, true);
+        gmbLocationCshtml1.WriteLiteral(" style=\"color:deepskyblue\" target=\"_blank\">");
+        gmbLocationCshtml1.EndContext();
+        gmbLocationCshtml1.BeginContext(1842, 45, false);
+        gmbLocationCshtml1.Write((object) gmbLocationCshtml1.Html.DisplayFor<IEnumerable<myBusinessLocation>, string>((Expression<Func<IEnumerable<myBusinessLocation>, string>>) (modelItem => item.websiteUrl)));
+        gmbLocationCshtml1.EndContext();
+        gmbLocationCshtml1.BeginContext(1887, 1115, true);
+        gmbLocationCshtml1.WriteLiteral("</a>\r\n                    </div>\r\n                </td>\r\n                <td style=\"text-align:center;\">\r\n                    <div style=\"white-space: nowrap;\">\r\n                        No Post\r\n                    </div>\r\n                </td>\r\n                <td style=\"text-align:center;\">\r\n                    <div style=\"white-space: nowrap;\">\r\n                        No Post\r\n                    </div>\r\n                </td>\r\n                <td style=\"text-align:center;\">\r\n                    <div style=\"white-space: nowrap;\">\r\n                        0 / 0\r\n                    </div>\r\n                </td>\r\n                <td style=\"text-align:center;\">\r\n                    <div style=\"white-space: nowrap;\">\r\n                        0\r\n                    </div>\r\n                </td>\r\n                <td style=\"text-align:center;\">\r\n                    <div style=\"white-space: nowrap;\">\r\n                        0\r\n                    </div>\r\n                </td>\r\n                <td style=\"text-alig");
+        gmbLocationCshtml1.WriteLiteral("n:left;\">\r\n                    <div style=\"white-space: nowrap;\">\r\n                        ");
+        gmbLocationCshtml1.EndContext();
+        gmbLocationCshtml1.BeginContext(3002, 172, false);
+        // ISSUE: reference to a compiler-generated method
+        gmbLocationCshtml1.__tagHelperExecutionContext = gmbLocationCshtml1.__tagHelperScopeManager.Begin("a", TagMode.StartTagAndEndTag, "b97f6ab0eb0c48b6947859f0702f4b34", new Func<Task>(gmbLocationCshtml1.\u003CExecuteAsync\u003Eb__30_1));
+        gmbLocationCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper = gmbLocationCshtml1.CreateTagHelper<AnchorTagHelper>();
+        gmbLocationCshtml1.__tagHelperExecutionContext.Add((ITagHelper) gmbLocationCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper);
+        gmbLocationCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.Action = (string) _Views_Home_GMBLocation_cshtml.__tagHelperAttribute_2.Value;
+        gmbLocationCshtml1.__tagHelperExecutionContext.AddTagHelperAttribute(_Views_Home_GMBLocation_cshtml.__tagHelperAttribute_2);
+        if (gmbLocationCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues == null)
+          throw new InvalidOperationException(gmbLocationCshtml1.InvalidTagHelperIndexerAssignment("asp-route-id", "Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper", "RouteValues"));
+        gmbLocationCshtml1.BeginWriteTagHelperAttribute();
+        // ISSUE: reference to a compiler-generated field
+        if (_Views_Home_GMBLocation_cshtml.\u003C\u003Eo__30.\u003C\u003Ep__5 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          _Views_Home_GMBLocation_cshtml.\u003C\u003Eo__30.\u003C\u003Ep__5 = CallSite<Action<CallSite, _Views_Home_GMBLocation_cshtml, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "WriteLiteral", (IEnumerable<Type>) null, typeof (_Views_Home_GMBLocation_cshtml), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, _Views_Home_GMBLocation_cshtml, object> target3 = _Views_Home_GMBLocation_cshtml.\u003C\u003Eo__30.\u003C\u003Ep__5.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, _Views_Home_GMBLocation_cshtml, object>> p5 = _Views_Home_GMBLocation_cshtml.\u003C\u003Eo__30.\u003C\u003Ep__5;
+        _Views_Home_GMBLocation_cshtml gmbLocationCshtml4 = gmbLocationCshtml1;
+        // ISSUE: reference to a compiler-generated field
+        if (_Views_Home_GMBLocation_cshtml.\u003C\u003Eo__30.\u003C\u003Ep__4 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          _Views_Home_GMBLocation_cshtml.\u003C\u003Eo__30.\u003C\u003Ep__4 = CallSite<Func<CallSite, object, object>>.Create(Binder.GetMember(CSharpBinderFlags.None, "Userid", typeof (_Views_Home_GMBLocation_cshtml), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj3 = _Views_Home_GMBLocation_cshtml.\u003C\u003Eo__30.\u003C\u003Ep__4.Target((CallSite) _Views_Home_GMBLocation_cshtml.\u003C\u003Eo__30.\u003C\u003Ep__4, gmbLocationCshtml1.ViewBag);
+        target3((CallSite) p5, gmbLocationCshtml4, obj3);
+        gmbLocationCshtml1.__tagHelperStringValueBuffer = gmbLocationCshtml1.EndWriteTagHelperAttribute();
+        gmbLocationCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues["id"] = gmbLocationCshtml1.__tagHelperStringValueBuffer;
+        gmbLocationCshtml1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-route-id", (object) gmbLocationCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues["id"], HtmlAttributeValueStyle.DoubleQuotes);
+        gmbLocationCshtml1.BeginWriteTagHelperAttribute();
+        // ISSUE: reference to a compiler-generated field
+        if (_Views_Home_GMBLocation_cshtml.\u003C\u003Eo__30.\u003C\u003Ep__7 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          _Views_Home_GMBLocation_cshtml.\u003C\u003Eo__30.\u003C\u003Ep__7 = CallSite<Action<CallSite, _Views_Home_GMBLocation_cshtml, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "WriteLiteral", (IEnumerable<Type>) null, typeof (_Views_Home_GMBLocation_cshtml), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, _Views_Home_GMBLocation_cshtml, object> target4 = _Views_Home_GMBLocation_cshtml.\u003C\u003Eo__30.\u003C\u003Ep__7.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, _Views_Home_GMBLocation_cshtml, object>> p7 = _Views_Home_GMBLocation_cshtml.\u003C\u003Eo__30.\u003C\u003Ep__7;
+        _Views_Home_GMBLocation_cshtml gmbLocationCshtml5 = gmbLocationCshtml1;
+        // ISSUE: reference to a compiler-generated field
+        if (_Views_Home_GMBLocation_cshtml.\u003C\u003Eo__30.\u003C\u003Ep__6 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          _Views_Home_GMBLocation_cshtml.\u003C\u003Eo__30.\u003C\u003Ep__6 = CallSite<Func<CallSite, object, object>>.Create(Binder.GetMember(CSharpBinderFlags.None, "Projectid", typeof (_Views_Home_GMBLocation_cshtml), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj4 = _Views_Home_GMBLocation_cshtml.\u003C\u003Eo__30.\u003C\u003Ep__6.Target((CallSite) _Views_Home_GMBLocation_cshtml.\u003C\u003Eo__30.\u003C\u003Ep__6, gmbLocationCshtml1.ViewBag);
+        target4((CallSite) p7, gmbLocationCshtml5, obj4);
+        gmbLocationCshtml1.__tagHelperStringValueBuffer = gmbLocationCshtml1.EndWriteTagHelperAttribute();
+        gmbLocationCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues["projectid"] = gmbLocationCshtml1.__tagHelperStringValueBuffer;
+        gmbLocationCshtml1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-route-projectid", (object) gmbLocationCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues["projectid"], HtmlAttributeValueStyle.DoubleQuotes);
+        gmbLocationCshtml1.BeginWriteTagHelperAttribute();
+        gmbLocationCshtml1.WriteLiteral(item.name);
+        gmbLocationCshtml1.__tagHelperStringValueBuffer = gmbLocationCshtml1.EndWriteTagHelperAttribute();
+        gmbLocationCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues["locationname"] = gmbLocationCshtml1.__tagHelperStringValueBuffer;
+        gmbLocationCshtml1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-route-locationname", (object) gmbLocationCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues["locationname"], HtmlAttributeValueStyle.DoubleQuotes);
+        gmbLocationCshtml1.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_GMBLocation_cshtml.__tagHelperAttribute_3);
+        await gmbLocationCshtml1.__tagHelperRunner.RunAsync(gmbLocationCshtml1.__tagHelperExecutionContext);
+        if (!gmbLocationCshtml1.__tagHelperExecutionContext.Output.IsContentModified)
+          await gmbLocationCshtml1.__tagHelperExecutionContext.SetOutputContentAsync();
+        gmbLocationCshtml1.Write((object) gmbLocationCshtml1.__tagHelperExecutionContext.Output);
+        gmbLocationCshtml1.__tagHelperExecutionContext = gmbLocationCshtml1.__tagHelperScopeManager.End();
+        gmbLocationCshtml1.EndContext();
+        gmbLocationCshtml1.BeginContext(3174, 72, true);
+        gmbLocationCshtml1.WriteLiteral("\r\n                    </div>\r\n                </td>\r\n            </tr>\r\n");
+        gmbLocationCshtml1.EndContext();
+      }
+      gmbLocationCshtml1.BeginContext(3261, 67, true);
+      gmbLocationCshtml1.WriteLiteral("        </tbody>\r\n    </table>\r\n</div>\r\n<script>\r\n\r\n</script>\r\n\r\n\r\n");
+      gmbLocationCshtml1.EndContext();
+      gmbLocationCshtml1.BeginContext(3328, 93, false);
+      gmbLocationCshtml1.__tagHelperExecutionContext = gmbLocationCshtml1.__tagHelperScopeManager.Begin("link", TagMode.SelfClosing, "5054ccb98ffe4676964d2f1d01de8397", (Func<Task>) (async () => { }));
+      gmbLocationCshtml1.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = gmbLocationCshtml1.CreateTagHelper<UrlResolutionTagHelper>();
+      gmbLocationCshtml1.__tagHelperExecutionContext.Add((ITagHelper) gmbLocationCshtml1.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper);
+      gmbLocationCshtml1.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_GMBLocation_cshtml.__tagHelperAttribute_4);
+      gmbLocationCshtml1.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_GMBLocation_cshtml.__tagHelperAttribute_5);
+      gmbLocationCshtml1.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_GMBLocation_cshtml.__tagHelperAttribute_6);
+      await gmbLocationCshtml1.__tagHelperRunner.RunAsync(gmbLocationCshtml1.__tagHelperExecutionContext);
+      if (!gmbLocationCshtml1.__tagHelperExecutionContext.Output.IsContentModified)
+        await gmbLocationCshtml1.__tagHelperExecutionContext.SetOutputContentAsync();
+      gmbLocationCshtml1.Write((object) gmbLocationCshtml1.__tagHelperExecutionContext.Output);
+      gmbLocationCshtml1.__tagHelperExecutionContext = gmbLocationCshtml1.__tagHelperScopeManager.End();
+      gmbLocationCshtml1.EndContext();
+      gmbLocationCshtml1.BeginContext(3421, 2, true);
+      gmbLocationCshtml1.WriteLiteral("\r\n");
+      gmbLocationCshtml1.EndContext();
+      gmbLocationCshtml1.BeginContext(3423, 91, false);
+      gmbLocationCshtml1.__tagHelperExecutionContext = gmbLocationCshtml1.__tagHelperScopeManager.Begin("link", TagMode.SelfClosing, "8a927787825f4f5c8a81f760357e8da6", (Func<Task>) (async () => { }));
+      gmbLocationCshtml1.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = gmbLocationCshtml1.CreateTagHelper<UrlResolutionTagHelper>();
+      gmbLocationCshtml1.__tagHelperExecutionContext.Add((ITagHelper) gmbLocationCshtml1.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper);
+      gmbLocationCshtml1.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_GMBLocation_cshtml.__tagHelperAttribute_7);
+      gmbLocationCshtml1.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_GMBLocation_cshtml.__tagHelperAttribute_5);
+      gmbLocationCshtml1.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_GMBLocation_cshtml.__tagHelperAttribute_6);
+      await gmbLocationCshtml1.__tagHelperRunner.RunAsync(gmbLocationCshtml1.__tagHelperExecutionContext);
+      if (!gmbLocationCshtml1.__tagHelperExecutionContext.Output.IsContentModified)
+        await gmbLocationCshtml1.__tagHelperExecutionContext.SetOutputContentAsync();
+      gmbLocationCshtml1.Write((object) gmbLocationCshtml1.__tagHelperExecutionContext.Output);
+      gmbLocationCshtml1.__tagHelperExecutionContext = gmbLocationCshtml1.__tagHelperScopeManager.End();
+      gmbLocationCshtml1.EndContext();
+      gmbLocationCshtml1.BeginContext(3514, 2, true);
+      gmbLocationCshtml1.WriteLiteral("\r\n");
+      gmbLocationCshtml1.EndContext();
+      gmbLocationCshtml1.BeginContext(3516, 64, false);
+      gmbLocationCshtml1.__tagHelperExecutionContext = gmbLocationCshtml1.__tagHelperScopeManager.Begin("script", TagMode.StartTagAndEndTag, "3d47842b58b54b8eab5ffca8a51700cf", (Func<Task>) (async () => { }));
+      gmbLocationCshtml1.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = gmbLocationCshtml1.CreateTagHelper<UrlResolutionTagHelper>();
+      gmbLocationCshtml1.__tagHelperExecutionContext.Add((ITagHelper) gmbLocationCshtml1.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper);
+      gmbLocationCshtml1.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_GMBLocation_cshtml.__tagHelperAttribute_8);
+      await gmbLocationCshtml1.__tagHelperRunner.RunAsync(gmbLocationCshtml1.__tagHelperExecutionContext);
+      if (!gmbLocationCshtml1.__tagHelperExecutionContext.Output.IsContentModified)
+        await gmbLocationCshtml1.__tagHelperExecutionContext.SetOutputContentAsync();
+      gmbLocationCshtml1.Write((object) gmbLocationCshtml1.__tagHelperExecutionContext.Output);
+      gmbLocationCshtml1.__tagHelperExecutionContext = gmbLocationCshtml1.__tagHelperScopeManager.End();
+      gmbLocationCshtml1.EndContext();
+      gmbLocationCshtml1.BeginContext(3580, 2, true);
+      gmbLocationCshtml1.WriteLiteral("\r\n");
+      gmbLocationCshtml1.EndContext();
+      gmbLocationCshtml1.BeginContext(3582, 63, false);
+      gmbLocationCshtml1.__tagHelperExecutionContext = gmbLocationCshtml1.__tagHelperScopeManager.Begin("script", TagMode.StartTagAndEndTag, "cc8a5a4e71b44b6c980599bc34b48374", (Func<Task>) (async () => { }));
+      gmbLocationCshtml1.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = gmbLocationCshtml1.CreateTagHelper<UrlResolutionTagHelper>();
+      gmbLocationCshtml1.__tagHelperExecutionContext.Add((ITagHelper) gmbLocationCshtml1.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper);
+      gmbLocationCshtml1.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_GMBLocation_cshtml.__tagHelperAttribute_9);
+      await gmbLocationCshtml1.__tagHelperRunner.RunAsync(gmbLocationCshtml1.__tagHelperExecutionContext);
+      if (!gmbLocationCshtml1.__tagHelperExecutionContext.Output.IsContentModified)
+        await gmbLocationCshtml1.__tagHelperExecutionContext.SetOutputContentAsync();
+      gmbLocationCshtml1.Write((object) gmbLocationCshtml1.__tagHelperExecutionContext.Output);
+      gmbLocationCshtml1.__tagHelperExecutionContext = gmbLocationCshtml1.__tagHelperScopeManager.End();
+      gmbLocationCshtml1.EndContext();
+      gmbLocationCshtml1.BeginContext(3645, 2, true);
+      gmbLocationCshtml1.WriteLiteral("\r\n");
+      gmbLocationCshtml1.EndContext();
+      gmbLocationCshtml1.BeginContext(3647, 65, false);
+      gmbLocationCshtml1.__tagHelperExecutionContext = gmbLocationCshtml1.__tagHelperScopeManager.Begin("script", TagMode.StartTagAndEndTag, "7b93490080804b6fa5f0ad891ef1086a", (Func<Task>) (async () => { }));
+      gmbLocationCshtml1.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = gmbLocationCshtml1.CreateTagHelper<UrlResolutionTagHelper>();
+      gmbLocationCshtml1.__tagHelperExecutionContext.Add((ITagHelper) gmbLocationCshtml1.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper);
+      gmbLocationCshtml1.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_GMBLocation_cshtml.__tagHelperAttribute_10);
+      await gmbLocationCshtml1.__tagHelperRunner.RunAsync(gmbLocationCshtml1.__tagHelperExecutionContext);
+      if (!gmbLocationCshtml1.__tagHelperExecutionContext.Output.IsContentModified)
+        await gmbLocationCshtml1.__tagHelperExecutionContext.SetOutputContentAsync();
+      gmbLocationCshtml1.Write((object) gmbLocationCshtml1.__tagHelperExecutionContext.Output);
+      gmbLocationCshtml1.__tagHelperExecutionContext = gmbLocationCshtml1.__tagHelperScopeManager.End();
+      gmbLocationCshtml1.EndContext();
+      gmbLocationCshtml1.BeginContext(3712, 2, true);
+      gmbLocationCshtml1.WriteLiteral("\r\n");
+      gmbLocationCshtml1.EndContext();
+      gmbLocationCshtml1.BeginContext(3714, 64, false);
+      gmbLocationCshtml1.__tagHelperExecutionContext = gmbLocationCshtml1.__tagHelperScopeManager.Begin("script", TagMode.StartTagAndEndTag, "f381569c58074d53855d56106ed238a3", (Func<Task>) (async () => { }));
+      gmbLocationCshtml1.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = gmbLocationCshtml1.CreateTagHelper<UrlResolutionTagHelper>();
+      gmbLocationCshtml1.__tagHelperExecutionContext.Add((ITagHelper) gmbLocationCshtml1.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper);
+      gmbLocationCshtml1.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_GMBLocation_cshtml.__tagHelperAttribute_11);
+      await gmbLocationCshtml1.__tagHelperRunner.RunAsync(gmbLocationCshtml1.__tagHelperExecutionContext);
+      if (!gmbLocationCshtml1.__tagHelperExecutionContext.Output.IsContentModified)
+        await gmbLocationCshtml1.__tagHelperExecutionContext.SetOutputContentAsync();
+      gmbLocationCshtml1.Write((object) gmbLocationCshtml1.__tagHelperExecutionContext.Output);
+      gmbLocationCshtml1.__tagHelperExecutionContext = gmbLocationCshtml1.__tagHelperScopeManager.End();
+      gmbLocationCshtml1.EndContext();
+      gmbLocationCshtml1.BeginContext(3778, 2, true);
+      gmbLocationCshtml1.WriteLiteral("\r\n");
+      gmbLocationCshtml1.EndContext();
+      gmbLocationCshtml1.BeginContext(3780, 52, false);
+      gmbLocationCshtml1.__tagHelperExecutionContext = gmbLocationCshtml1.__tagHelperScopeManager.Begin("script", TagMode.StartTagAndEndTag, "8c1d4d73e80842db9472c76fc920170c", (Func<Task>) (async () => { }));
+      gmbLocationCshtml1.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = gmbLocationCshtml1.CreateTagHelper<UrlResolutionTagHelper>();
+      gmbLocationCshtml1.__tagHelperExecutionContext.Add((ITagHelper) gmbLocationCshtml1.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper);
+      gmbLocationCshtml1.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_GMBLocation_cshtml.__tagHelperAttribute_12);
+      await gmbLocationCshtml1.__tagHelperRunner.RunAsync(gmbLocationCshtml1.__tagHelperExecutionContext);
+      if (!gmbLocationCshtml1.__tagHelperExecutionContext.Output.IsContentModified)
+        await gmbLocationCshtml1.__tagHelperExecutionContext.SetOutputContentAsync();
+      gmbLocationCshtml1.Write((object) gmbLocationCshtml1.__tagHelperExecutionContext.Output);
+      gmbLocationCshtml1.__tagHelperExecutionContext = gmbLocationCshtml1.__tagHelperScopeManager.End();
+      gmbLocationCshtml1.EndContext();
+      gmbLocationCshtml1.BeginContext(3832, 2, true);
+      gmbLocationCshtml1.WriteLiteral("\r\n");
+      gmbLocationCshtml1.EndContext();
+      gmbLocationCshtml1.BeginContext(3834, 54, false);
+      gmbLocationCshtml1.__tagHelperExecutionContext = gmbLocationCshtml1.__tagHelperScopeManager.Begin("script", TagMode.StartTagAndEndTag, "f9242223510b44c69e0e63f1798bb119", (Func<Task>) (async () => { }));
+      gmbLocationCshtml1.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = gmbLocationCshtml1.CreateTagHelper<UrlResolutionTagHelper>();
+      gmbLocationCshtml1.__tagHelperExecutionContext.Add((ITagHelper) gmbLocationCshtml1.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper);
+      gmbLocationCshtml1.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_GMBLocation_cshtml.__tagHelperAttribute_13);
+      await gmbLocationCshtml1.__tagHelperRunner.RunAsync(gmbLocationCshtml1.__tagHelperExecutionContext);
+      if (!gmbLocationCshtml1.__tagHelperExecutionContext.Output.IsContentModified)
+        await gmbLocationCshtml1.__tagHelperExecutionContext.SetOutputContentAsync();
+      gmbLocationCshtml1.Write((object) gmbLocationCshtml1.__tagHelperExecutionContext.Output);
+      gmbLocationCshtml1.__tagHelperExecutionContext = gmbLocationCshtml1.__tagHelperScopeManager.End();
+      gmbLocationCshtml1.EndContext();
+      gmbLocationCshtml1.BeginContext(3888, 2, true);
+      gmbLocationCshtml1.WriteLiteral("\r\n");
+      gmbLocationCshtml1.EndContext();
+      gmbLocationCshtml1.BeginContext(3890, 52, false);
+      gmbLocationCshtml1.__tagHelperExecutionContext = gmbLocationCshtml1.__tagHelperScopeManager.Begin("script", TagMode.StartTagAndEndTag, "0fedd1c171914ba4abfdb0be0236978e", (Func<Task>) (async () => { }));
+      gmbLocationCshtml1.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = gmbLocationCshtml1.CreateTagHelper<UrlResolutionTagHelper>();
+      gmbLocationCshtml1.__tagHelperExecutionContext.Add((ITagHelper) gmbLocationCshtml1.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper);
+      gmbLocationCshtml1.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_GMBLocation_cshtml.__tagHelperAttribute_14);
+      await gmbLocationCshtml1.__tagHelperRunner.RunAsync(gmbLocationCshtml1.__tagHelperExecutionContext);
+      if (!gmbLocationCshtml1.__tagHelperExecutionContext.Output.IsContentModified)
+        await gmbLocationCshtml1.__tagHelperExecutionContext.SetOutputContentAsync();
+      gmbLocationCshtml1.Write((object) gmbLocationCshtml1.__tagHelperExecutionContext.Output);
+      gmbLocationCshtml1.__tagHelperExecutionContext = gmbLocationCshtml1.__tagHelperScopeManager.End();
+      gmbLocationCshtml1.EndContext();
+      gmbLocationCshtml1.BeginContext(3942, 2, true);
+      gmbLocationCshtml1.WriteLiteral("\r\n");
+      gmbLocationCshtml1.EndContext();
+      gmbLocationCshtml1.BeginContext(3944, 60, false);
+      gmbLocationCshtml1.__tagHelperExecutionContext = gmbLocationCshtml1.__tagHelperScopeManager.Begin("script", TagMode.StartTagAndEndTag, "f7ee8394ae3d4d04a966c026b8ccd6ed", (Func<Task>) (async () => { }));
+      gmbLocationCshtml1.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = gmbLocationCshtml1.CreateTagHelper<UrlResolutionTagHelper>();
+      gmbLocationCshtml1.__tagHelperExecutionContext.Add((ITagHelper) gmbLocationCshtml1.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper);
+      gmbLocationCshtml1.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_GMBLocation_cshtml.__tagHelperAttribute_15);
+      await gmbLocationCshtml1.__tagHelperRunner.RunAsync(gmbLocationCshtml1.__tagHelperExecutionContext);
+      if (!gmbLocationCshtml1.__tagHelperExecutionContext.Output.IsContentModified)
+        await gmbLocationCshtml1.__tagHelperExecutionContext.SetOutputContentAsync();
+      gmbLocationCshtml1.Write((object) gmbLocationCshtml1.__tagHelperExecutionContext.Output);
+      gmbLocationCshtml1.__tagHelperExecutionContext = gmbLocationCshtml1.__tagHelperScopeManager.End();
+      gmbLocationCshtml1.EndContext();
+      gmbLocationCshtml1.BeginContext(4004, 2, true);
+      gmbLocationCshtml1.WriteLiteral("\r\n");
+      gmbLocationCshtml1.EndContext();
+      gmbLocationCshtml1.BeginContext(4006, 60, false);
+      gmbLocationCshtml1.__tagHelperExecutionContext = gmbLocationCshtml1.__tagHelperScopeManager.Begin("script", TagMode.StartTagAndEndTag, "dab7d996b61d4346a83d5e0270d67564", (Func<Task>) (async () => { }));
+      gmbLocationCshtml1.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = gmbLocationCshtml1.CreateTagHelper<UrlResolutionTagHelper>();
+      gmbLocationCshtml1.__tagHelperExecutionContext.Add((ITagHelper) gmbLocationCshtml1.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper);
+      gmbLocationCshtml1.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_GMBLocation_cshtml.__tagHelperAttribute_16);
+      await gmbLocationCshtml1.__tagHelperRunner.RunAsync(gmbLocationCshtml1.__tagHelperExecutionContext);
+      if (!gmbLocationCshtml1.__tagHelperExecutionContext.Output.IsContentModified)
+        await gmbLocationCshtml1.__tagHelperExecutionContext.SetOutputContentAsync();
+      gmbLocationCshtml1.Write((object) gmbLocationCshtml1.__tagHelperExecutionContext.Output);
+      gmbLocationCshtml1.__tagHelperExecutionContext = gmbLocationCshtml1.__tagHelperScopeManager.End();
+      gmbLocationCshtml1.EndContext();
+      gmbLocationCshtml1.BeginContext(4066, 2, true);
+      gmbLocationCshtml1.WriteLiteral("\r\n");
+      gmbLocationCshtml1.EndContext();
+      gmbLocationCshtml1.BeginContext(4068, 69, false);
+      gmbLocationCshtml1.__tagHelperExecutionContext = gmbLocationCshtml1.__tagHelperScopeManager.Begin("script", TagMode.StartTagAndEndTag, "7e1348ad2865435d87503e0b03052d33", (Func<Task>) (async () => { }));
+      gmbLocationCshtml1.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = gmbLocationCshtml1.CreateTagHelper<UrlResolutionTagHelper>();
+      gmbLocationCshtml1.__tagHelperExecutionContext.Add((ITagHelper) gmbLocationCshtml1.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper);
+      gmbLocationCshtml1.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_GMBLocation_cshtml.__tagHelperAttribute_17);
+      await gmbLocationCshtml1.__tagHelperRunner.RunAsync(gmbLocationCshtml1.__tagHelperExecutionContext);
+      if (!gmbLocationCshtml1.__tagHelperExecutionContext.Output.IsContentModified)
+        await gmbLocationCshtml1.__tagHelperExecutionContext.SetOutputContentAsync();
+      gmbLocationCshtml1.Write((object) gmbLocationCshtml1.__tagHelperExecutionContext.Output);
+      gmbLocationCshtml1.__tagHelperExecutionContext = gmbLocationCshtml1.__tagHelperScopeManager.End();
+      gmbLocationCshtml1.EndContext();
+      gmbLocationCshtml1.BeginContext(4137, 2, true);
+      gmbLocationCshtml1.WriteLiteral("\r\n");
+      gmbLocationCshtml1.EndContext();
+      gmbLocationCshtml1.BeginContext(4139, 66, false);
+      gmbLocationCshtml1.__tagHelperExecutionContext = gmbLocationCshtml1.__tagHelperScopeManager.Begin("script", TagMode.StartTagAndEndTag, "84073d0550ff4472b7b5f0c2085e89c6", (Func<Task>) (async () => { }));
+      gmbLocationCshtml1.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = gmbLocationCshtml1.CreateTagHelper<UrlResolutionTagHelper>();
+      gmbLocationCshtml1.__tagHelperExecutionContext.Add((ITagHelper) gmbLocationCshtml1.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper);
+      gmbLocationCshtml1.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_GMBLocation_cshtml.__tagHelperAttribute_18);
+      await gmbLocationCshtml1.__tagHelperRunner.RunAsync(gmbLocationCshtml1.__tagHelperExecutionContext);
+      if (!gmbLocationCshtml1.__tagHelperExecutionContext.Output.IsContentModified)
+        await gmbLocationCshtml1.__tagHelperExecutionContext.SetOutputContentAsync();
+      gmbLocationCshtml1.Write((object) gmbLocationCshtml1.__tagHelperExecutionContext.Output);
+      gmbLocationCshtml1.__tagHelperExecutionContext = gmbLocationCshtml1.__tagHelperScopeManager.End();
+      gmbLocationCshtml1.EndContext();
+      gmbLocationCshtml1.BeginContext(4205, 2, true);
+      gmbLocationCshtml1.WriteLiteral("\r\n");
+      gmbLocationCshtml1.EndContext();
+      gmbLocationCshtml1.BeginContext(4207, 68, false);
+      gmbLocationCshtml1.__tagHelperExecutionContext = gmbLocationCshtml1.__tagHelperScopeManager.Begin("script", TagMode.StartTagAndEndTag, "7d35c17b05f545d482e301f72d92d6d1", (Func<Task>) (async () => { }));
+      gmbLocationCshtml1.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = gmbLocationCshtml1.CreateTagHelper<UrlResolutionTagHelper>();
+      gmbLocationCshtml1.__tagHelperExecutionContext.Add((ITagHelper) gmbLocationCshtml1.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper);
+      gmbLocationCshtml1.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_GMBLocation_cshtml.__tagHelperAttribute_19);
+      await gmbLocationCshtml1.__tagHelperRunner.RunAsync(gmbLocationCshtml1.__tagHelperExecutionContext);
+      if (!gmbLocationCshtml1.__tagHelperExecutionContext.Output.IsContentModified)
+        await gmbLocationCshtml1.__tagHelperExecutionContext.SetOutputContentAsync();
+      gmbLocationCshtml1.Write((object) gmbLocationCshtml1.__tagHelperExecutionContext.Output);
+      gmbLocationCshtml1.__tagHelperExecutionContext = gmbLocationCshtml1.__tagHelperScopeManager.End();
+      gmbLocationCshtml1.EndContext();
+      gmbLocationCshtml1.BeginContext(4275, 2, true);
+      gmbLocationCshtml1.WriteLiteral("\r\n");
+      gmbLocationCshtml1.EndContext();
+      gmbLocationCshtml1.BeginContext(4277, 67, false);
+      gmbLocationCshtml1.__tagHelperExecutionContext = gmbLocationCshtml1.__tagHelperScopeManager.Begin("script", TagMode.StartTagAndEndTag, "22447dbc25e94740992a15199dab932e", (Func<Task>) (async () => { }));
+      gmbLocationCshtml1.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = gmbLocationCshtml1.CreateTagHelper<UrlResolutionTagHelper>();
+      gmbLocationCshtml1.__tagHelperExecutionContext.Add((ITagHelper) gmbLocationCshtml1.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper);
+      gmbLocationCshtml1.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_GMBLocation_cshtml.__tagHelperAttribute_20);
+      await gmbLocationCshtml1.__tagHelperRunner.RunAsync(gmbLocationCshtml1.__tagHelperExecutionContext);
+      if (!gmbLocationCshtml1.__tagHelperExecutionContext.Output.IsContentModified)
+        await gmbLocationCshtml1.__tagHelperExecutionContext.SetOutputContentAsync();
+      gmbLocationCshtml1.Write((object) gmbLocationCshtml1.__tagHelperExecutionContext.Output);
+      gmbLocationCshtml1.__tagHelperExecutionContext = gmbLocationCshtml1.__tagHelperScopeManager.End();
+      gmbLocationCshtml1.EndContext();
+      gmbLocationCshtml1.BeginContext(4344, 2, true);
+      gmbLocationCshtml1.WriteLiteral("\r\n");
+      gmbLocationCshtml1.EndContext();
+      gmbLocationCshtml1.BeginContext(4346, 66, false);
+      gmbLocationCshtml1.__tagHelperExecutionContext = gmbLocationCshtml1.__tagHelperScopeManager.Begin("script", TagMode.StartTagAndEndTag, "270a3562101a488eb75360c0a71fcdbe", (Func<Task>) (async () => { }));
+      gmbLocationCshtml1.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = gmbLocationCshtml1.CreateTagHelper<UrlResolutionTagHelper>();
+      gmbLocationCshtml1.__tagHelperExecutionContext.Add((ITagHelper) gmbLocationCshtml1.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper);
+      gmbLocationCshtml1.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_GMBLocation_cshtml.__tagHelperAttribute_21);
+      await gmbLocationCshtml1.__tagHelperRunner.RunAsync(gmbLocationCshtml1.__tagHelperExecutionContext);
+      if (!gmbLocationCshtml1.__tagHelperExecutionContext.Output.IsContentModified)
+        await gmbLocationCshtml1.__tagHelperExecutionContext.SetOutputContentAsync();
+      gmbLocationCshtml1.Write((object) gmbLocationCshtml1.__tagHelperExecutionContext.Output);
+      gmbLocationCshtml1.__tagHelperExecutionContext = gmbLocationCshtml1.__tagHelperScopeManager.End();
+      gmbLocationCshtml1.EndContext();
+      gmbLocationCshtml1.BeginContext(4412, 4, true);
+      gmbLocationCshtml1.WriteLiteral("\r\n\r\n");
+      gmbLocationCshtml1.EndContext();
+      // ISSUE: reference to a compiler-generated method
+      gmbLocationCshtml1.DefineSection("Scripts", new RenderAsyncDelegate(gmbLocationCshtml1.\u003CExecuteAsync\u003Eb__30_18));
+    }
+
+    [RazorInject]
+    public IModelExpressionProvider ModelExpressionProvider { get; private set; }
+
+    [RazorInject]
+    public IUrlHelper Url { get; private set; }
+
+    [RazorInject]
+    public IViewComponentHelper Component { get; private set; }
+
+    [RazorInject]
+    public IJsonHelper Json { get; private set; }
+
+    [RazorInject]
+    public IHtmlHelper<IEnumerable<myBusinessLocation>> Html { get; private set; }
+  }
+}

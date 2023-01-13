@@ -1,0 +1,617 @@
+﻿// Decompiled with JetBrains decompiler
+// Type: AspNetCore._Views_Home_CreateFromGoogle_cshtml
+// Assembly: Traffic.PrecompiledViews, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+// MVID: 8B37BA40-0390-40A7-A536-D9CCDBC36390
+// Assembly location: D:\Workstation\TonniProjects\TrafficWebDeploy\Traffic.PrecompiledViews.dll
+
+using Microsoft.AspNetCore.Html;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Razor;
+using Microsoft.AspNetCore.Mvc.Razor.Internal;
+using Microsoft.AspNetCore.Mvc.Razor.TagHelpers;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.Mvc.TagHelpers;
+using Microsoft.AspNetCore.Mvc.ViewFeatures;
+using Microsoft.AspNetCore.Razor.Runtime.TagHelpers;
+using Microsoft.AspNetCore.Razor.TagHelpers;
+using Microsoft.CSharp.RuntimeBinder;
+using System;
+using System.Collections.Generic;
+using System.Linq.Expressions;
+using System.Runtime.CompilerServices;
+using System.Text.Encodings.Web;
+using System.Threading.Tasks;
+using Traffic.Models;
+
+namespace AspNetCore
+{
+  public class _Views_Home_CreateFromGoogle_cshtml : RazorPage<trafficjob>
+  {
+    private static readonly TagHelperAttribute __tagHelperAttribute_0 = new TagHelperAttribute("asp-action", (object) "CreateFromGoogle", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_1 = new TagHelperAttribute("class", (object) new HtmlString("text-danger"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_2 = new TagHelperAttribute("class", (object) new HtmlString("control-label col-md-2"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_3 = new TagHelperAttribute("style", (object) new HtmlString("margin-top:18px;"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_4 = new TagHelperAttribute("class", (object) new HtmlString("form-control"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_5 = new TagHelperAttribute("row", (object) new HtmlString("3"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_6 = new TagHelperAttribute("selected", (object) new HtmlString("selected"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_7 = new TagHelperAttribute("value", (object) "", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_8 = new TagHelperAttribute("class", (object) new HtmlString("control-label col-md-1"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_9 = new TagHelperAttribute("value", (object) "Morocco Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_10 = new TagHelperAttribute("value", (object) "GMT Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_11 = new TagHelperAttribute("value", (object) "Greenwich Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_12 = new TagHelperAttribute("value", (object) "W. Europe Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_13 = new TagHelperAttribute("value", (object) "Central Europe Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_14 = new TagHelperAttribute("value", (object) "Romance Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_15 = new TagHelperAttribute("value", (object) "Central European Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_16 = new TagHelperAttribute("value", (object) "W. Central Africa Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_17 = new TagHelperAttribute("value", (object) "Jordan Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_18 = new TagHelperAttribute("value", (object) "GTB Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_19 = new TagHelperAttribute("value", (object) "Middle East Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_20 = new TagHelperAttribute("value", (object) "Egypt Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_21 = new TagHelperAttribute("value", (object) "South Africa Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_22 = new TagHelperAttribute("value", (object) "FLE Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_23 = new TagHelperAttribute("value", (object) "Israel Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_24 = new TagHelperAttribute("value", (object) "E. Europe Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_25 = new TagHelperAttribute("value", (object) "Namibia Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_26 = new TagHelperAttribute("value", (object) "Arabic Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_27 = new TagHelperAttribute("value", (object) "Arab Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_28 = new TagHelperAttribute("value", (object) "Russian Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_29 = new TagHelperAttribute("value", (object) "E. Africa Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_30 = new TagHelperAttribute("value", (object) "Georgian Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_31 = new TagHelperAttribute("value", (object) "Iran Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_32 = new TagHelperAttribute("value", (object) "Arabian Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_33 = new TagHelperAttribute("value", (object) "Azerbaijan Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_34 = new TagHelperAttribute("value", (object) "Mauritius Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_35 = new TagHelperAttribute("value", (object) "Caucasus Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_36 = new TagHelperAttribute("value", (object) "Afghanistan Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_37 = new TagHelperAttribute("value", (object) "Ekaterinburg Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_38 = new TagHelperAttribute("value", (object) "Pakistan Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_39 = new TagHelperAttribute("value", (object) "West Asia Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_40 = new TagHelperAttribute("value", (object) "India Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_41 = new TagHelperAttribute("value", (object) "Sri Lanka Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_42 = new TagHelperAttribute("value", (object) "Nepal Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_43 = new TagHelperAttribute("value", (object) "N. Central Asia Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_44 = new TagHelperAttribute("value", (object) "Central Asia Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_45 = new TagHelperAttribute("value", (object) "Myanmar Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_46 = new TagHelperAttribute("value", (object) "SE Asia Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_47 = new TagHelperAttribute("value", (object) "North Asia Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_48 = new TagHelperAttribute("value", (object) "China Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_49 = new TagHelperAttribute("value", (object) "North Asia East Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_50 = new TagHelperAttribute("value", (object) "Singapore Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_51 = new TagHelperAttribute("value", (object) "W. Australia Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_52 = new TagHelperAttribute("value", (object) "Taipei Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_53 = new TagHelperAttribute("value", (object) "Tokyo Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_54 = new TagHelperAttribute("value", (object) "Korea Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_55 = new TagHelperAttribute("value", (object) "Yakutsk Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_56 = new TagHelperAttribute("value", (object) "Cen. Australia Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_57 = new TagHelperAttribute("value", (object) "AUS Central Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_58 = new TagHelperAttribute("value", (object) "E. Australia Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_59 = new TagHelperAttribute("value", (object) "AUS Eastern Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_60 = new TagHelperAttribute("value", (object) "West Pacific Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_61 = new TagHelperAttribute("value", (object) "Tasmania Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_62 = new TagHelperAttribute("value", (object) "Vladivostok Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_63 = new TagHelperAttribute("value", (object) "Central Pacific Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_64 = new TagHelperAttribute("value", (object) "New Zealand Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_65 = new TagHelperAttribute("value", (object) "Fiji Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_66 = new TagHelperAttribute("value", (object) "Tonga Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_67 = new TagHelperAttribute("value", (object) "Azores Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_68 = new TagHelperAttribute("value", (object) "Cape Verde Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_69 = new TagHelperAttribute("value", (object) "Mid-Atlantic Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_70 = new TagHelperAttribute("value", (object) "E. South America Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_71 = new TagHelperAttribute("value", (object) "Argentina Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_72 = new TagHelperAttribute("value", (object) "SA Eastern Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_73 = new TagHelperAttribute("value", (object) "Greenland Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_74 = new TagHelperAttribute("value", (object) "Montevideo Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_75 = new TagHelperAttribute("value", (object) "Newfoundland Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_76 = new TagHelperAttribute("value", (object) "Atlantic Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_77 = new TagHelperAttribute("value", (object) "SA Western Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_78 = new TagHelperAttribute("value", (object) "Central Brazilian Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_79 = new TagHelperAttribute("value", (object) "Pacific SA Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_80 = new TagHelperAttribute("value", (object) "Venezuela Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_81 = new TagHelperAttribute("value", (object) "SA Pacific Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_82 = new TagHelperAttribute("value", (object) "Eastern Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_83 = new TagHelperAttribute("value", (object) "US Eastern Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_84 = new TagHelperAttribute("value", (object) "Central America Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_85 = new TagHelperAttribute("value", (object) "Central Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_86 = new TagHelperAttribute("value", (object) "Central Standard Time (Mexico)", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_87 = new TagHelperAttribute("value", (object) "Canada Central Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_88 = new TagHelperAttribute("value", (object) "US Mountain Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_89 = new TagHelperAttribute("value", (object) "Mountain Standard Time (Mexico)", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_90 = new TagHelperAttribute("value", (object) "Mountain Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_91 = new TagHelperAttribute("value", (object) "Pacific Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_92 = new TagHelperAttribute("value", (object) "Pacific Standard Time (Mexico)", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_93 = new TagHelperAttribute("value", (object) "Alaskan Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_94 = new TagHelperAttribute("value", (object) "Hawaiian Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_95 = new TagHelperAttribute("value", (object) "Samoa Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_96 = new TagHelperAttribute("value", (object) "Dateline Standard Time", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_97 = new TagHelperAttribute("rows", (object) new HtmlString("3"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_98 = new TagHelperAttribute("placeholder", (object) new HtmlString("Example: Name:Username, Phone:TelephoneNumber, Email:EmailAddress"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_99 = new TagHelperAttribute("style", (object) new HtmlString("display:none;"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_100 = new TagHelperAttribute("asp-action", (object) "Jobs", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_101 = new TagHelperAttribute("class", (object) new HtmlString("btn btn-primary"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_102 = new TagHelperAttribute("asp-action", (object) "Create", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_103 = new TagHelperAttribute("id", (object) new HtmlString("CreateForm"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_104 = new TagHelperAttribute("href", (object) new HtmlString("~/js/datatables/responsive.bootstrap.min.css"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_105 = new TagHelperAttribute("rel", (object) new HtmlString("stylesheet"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_106 = new TagHelperAttribute("type", (object) new HtmlString("text/css"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_107 = new TagHelperAttribute("href", (object) new HtmlString("~/js/datatables/scroller.bootstrap.min.css"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_108 = new TagHelperAttribute("src", (object) new HtmlString("~/js/datatables/jquery.dataTables.min.js"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_109 = new TagHelperAttribute("src", (object) new HtmlString("~/js/datatables/dataTables.bootstrap.js"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_110 = new TagHelperAttribute("src", (object) new HtmlString("~/js/datatables/dataTables.buttons.min.js"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_111 = new TagHelperAttribute("src", (object) new HtmlString("~/js/datatables/buttons.bootstrap.min.js"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_112 = new TagHelperAttribute("src", (object) new HtmlString("~/js/datatables/jszip.min.js"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_113 = new TagHelperAttribute("src", (object) new HtmlString("~/js/datatables/pdfmake.min.js"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_114 = new TagHelperAttribute("src", (object) new HtmlString("~/js/datatables/vfs_fonts.js"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_115 = new TagHelperAttribute("src", (object) new HtmlString("~/js/datatables/buttons.html5.min.js"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_116 = new TagHelperAttribute("src", (object) new HtmlString("~/js/datatables/buttons.print.min.js"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_117 = new TagHelperAttribute("src", (object) new HtmlString("~/js/datatables/dataTables.fixedHeader.min.js"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_118 = new TagHelperAttribute("src", (object) new HtmlString("~/js/datatables/dataTables.keyTable.min.js"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_119 = new TagHelperAttribute("src", (object) new HtmlString("~/js/datatables/dataTables.responsive.min.js"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_120 = new TagHelperAttribute("src", (object) new HtmlString("~/js/datatables/responsive.bootstrap.min.js"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_121 = new TagHelperAttribute("src", (object) new HtmlString("~/js/datatables/dataTables.scroller.min.js"), HtmlAttributeValueStyle.DoubleQuotes);
+    private string __tagHelperStringValueBuffer;
+    private TagHelperExecutionContext __tagHelperExecutionContext;
+    private TagHelperRunner __tagHelperRunner = new TagHelperRunner();
+    private TagHelperScopeManager __backed__tagHelperScopeManager;
+    private FormTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper;
+    private RenderAtEndOfFormTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper;
+    private ValidationSummaryTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_ValidationSummaryTagHelper;
+    private LabelTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_LabelTagHelper;
+    private InputTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper;
+    private ValidationMessageTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper;
+    private TextAreaTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_TextAreaTagHelper;
+    private SelectTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper;
+    private OptionTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_OptionTagHelper;
+    private AnchorTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper;
+    private UrlResolutionTagHelper __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper;
+    private static readonly Expression<Func<trafficjob, string>> __h0 = (Expression<Func<trafficjob, string>>) (__model => __model.job_name);
+    private static readonly Expression<Func<trafficjob, string>> __h1 = (Expression<Func<trafficjob, string>>) (__model => __model.job_name);
+    private static readonly Expression<Func<trafficjob, string>> __h2 = (Expression<Func<trafficjob, string>>) (__model => __model.job_name);
+    private static readonly Expression<Func<trafficjob, string>> __h3 = (Expression<Func<trafficjob, string>>) (__model => __model.target_url);
+    private static readonly Expression<Func<trafficjob, string>> __h4 = (Expression<Func<trafficjob, string>>) (__model => __model.target_url);
+    private static readonly Expression<Func<trafficjob, string>> __h5 = (Expression<Func<trafficjob, string>>) (__model => __model.target_url);
+    private static readonly Expression<Func<trafficjob, string>> __h6 = (Expression<Func<trafficjob, string>>) (__model => __model.exttarget_url);
+    private static readonly Expression<Func<trafficjob, string>> __h7 = (Expression<Func<trafficjob, string>>) (__model => __model.exttarget_url);
+    private static readonly Expression<Func<trafficjob, string>> __h8 = (Expression<Func<trafficjob, string>>) (__model => __model.exttarget_url);
+    private static readonly Expression<Func<trafficjob, string>> __h9 = (Expression<Func<trafficjob, string>>) (__model => __model.name_business);
+    private static readonly Expression<Func<trafficjob, string>> __h10 = (Expression<Func<trafficjob, string>>) (__model => __model.name_business);
+    private static readonly Expression<Func<trafficjob, string>> __h11 = (Expression<Func<trafficjob, string>>) (__model => __model.name_business);
+    private static readonly Expression<Func<trafficjob, bool>> __h12 = (Expression<Func<trafficjob, bool>>) (__model => __model.wild_card);
+    private static readonly Expression<Func<trafficjob, bool>> __h13 = (Expression<Func<trafficjob, bool>>) (__model => __model.wild_card);
+    private static readonly Expression<Func<trafficjob, bool>> __h14 = (Expression<Func<trafficjob, bool>>) (__model => __model.wild_card);
+    private static readonly Expression<Func<trafficjob, string>> __h15 = (Expression<Func<trafficjob, string>>) (__model => __model.search_term);
+    private static readonly Expression<Func<trafficjob, string>> __h16 = (Expression<Func<trafficjob, string>>) (__model => __model.search_term);
+    private static readonly Expression<Func<trafficjob, string>> __h17 = (Expression<Func<trafficjob, string>>) (__model => __model.search_term);
+    private static readonly Expression<Func<trafficjob, trafficjob.SEARCH_ENGINE>> __h18 = (Expression<Func<trafficjob, trafficjob.SEARCH_ENGINE>>) (__model => __model.search_engine);
+    private static readonly Expression<Func<trafficjob, trafficjob.SEARCH_ENGINE>> __h19 = (Expression<Func<trafficjob, trafficjob.SEARCH_ENGINE>>) (__model => __model.search_engine);
+    private static readonly Expression<Func<trafficjob, trafficjob.SEARCH_ENGINE>> __h20 = (Expression<Func<trafficjob, trafficjob.SEARCH_ENGINE>>) (__model => __model.search_engine);
+    private static readonly Expression<Func<trafficjob, trafficjob.AGENT_KIND>> __h21 = (Expression<Func<trafficjob, trafficjob.AGENT_KIND>>) (__model => __model.agent_kind);
+    private static readonly Expression<Func<trafficjob, trafficjob.AGENT_KIND>> __h22 = (Expression<Func<trafficjob, trafficjob.AGENT_KIND>>) (__model => __model.agent_kind);
+    private static readonly Expression<Func<trafficjob, trafficjob.AGENT_KIND>> __h23 = (Expression<Func<trafficjob, trafficjob.AGENT_KIND>>) (__model => __model.agent_kind);
+    private static readonly Expression<Func<trafficjob, trafficjob.AGENT_AGE>> __h24 = (Expression<Func<trafficjob, trafficjob.AGENT_AGE>>) (__model => __model.agent_age);
+    private static readonly Expression<Func<trafficjob, trafficjob.AGENT_AGE>> __h25 = (Expression<Func<trafficjob, trafficjob.AGENT_AGE>>) (__model => __model.agent_age);
+    private static readonly Expression<Func<trafficjob, trafficjob.AGENT_AGE>> __h26 = (Expression<Func<trafficjob, trafficjob.AGENT_AGE>>) (__model => __model.agent_age);
+    private static readonly Expression<Func<trafficjob, int>> __h27 = (Expression<Func<trafficjob, int>>) (__model => __model.session_count);
+    private static readonly Expression<Func<trafficjob, int>> __h28 = (Expression<Func<trafficjob, int>>) (__model => __model.session_count);
+    private static readonly Expression<Func<trafficjob, int>> __h29 = (Expression<Func<trafficjob, int>>) (__model => __model.session_count);
+    private static readonly Expression<Func<trafficjob, string>> __h30 = (Expression<Func<trafficjob, string>>) (__model => __model.proxy_setting);
+    private static readonly Expression<Func<trafficjob, string>> __h31 = (Expression<Func<trafficjob, string>>) (__model => __model.proxy_setting);
+    private static readonly Expression<Func<trafficjob, string>> __h32 = (Expression<Func<trafficjob, string>>) (__model => __model.journey_url);
+    private static readonly Expression<Func<trafficjob, string>> __h33 = (Expression<Func<trafficjob, string>>) (__model => __model.journey_url);
+    private static readonly Expression<Func<trafficjob, string>> __h34 = (Expression<Func<trafficjob, string>>) (__model => __model.form_fields);
+    private static readonly Expression<Func<trafficjob, string>> __h35 = (Expression<Func<trafficjob, string>>) (__model => __model.form_fields);
+    private static readonly Expression<Func<trafficjob, int>> __h36 = (Expression<Func<trafficjob, int>>) (__model => __model.group_id);
+
+    private TagHelperScopeManager __tagHelperScopeManager
+    {
+      get
+      {
+        if (this.__backed__tagHelperScopeManager == null)
+          this.__backed__tagHelperScopeManager = new TagHelperScopeManager(new Action<HtmlEncoder>(((RazorPageBase) this).StartTagHelperWritingScope), new Func<TagHelperContent>(((RazorPageBase) this).EndTagHelperWritingScope));
+        return this.__backed__tagHelperScopeManager;
+      }
+    }
+
+    public virtual async Task ExecuteAsync()
+    {
+      _Views_Home_CreateFromGoogle_cshtml fromGoogleCshtml1 = this;
+      fromGoogleCshtml1.BeginContext(34, 2, true);
+      fromGoogleCshtml1.WriteLiteral("\r\n");
+      fromGoogleCshtml1.EndContext();
+      fromGoogleCshtml1.ViewData["Title"] = (object) "Create";
+      // ISSUE: explicit non-virtual call
+      __nonvirtual (fromGoogleCshtml1.Layout) = "~/Views/Shared/_Layout.cshtml";
+      fromGoogleCshtml1.BeginContext(125, 107, true);
+      fromGoogleCshtml1.WriteLiteral("\r\n<h2>Create Traffic Job</h2>\r\n<hr />\r\n<div class=\"row\">\r\n    <div class=\"col-md-12\">\r\n        \r\n\r\n        ");
+      fromGoogleCshtml1.EndContext();
+      fromGoogleCshtml1.BeginContext(232, 909, false);
+      // ISSUE: reference to a compiler-generated method
+      fromGoogleCshtml1.__tagHelperExecutionContext = fromGoogleCshtml1.__tagHelperScopeManager.Begin("form", TagMode.StartTagAndEndTag, "6a90b04176a04c65a9696e1b79f53c96", new Func<Task>(fromGoogleCshtml1.\u003CExecuteAsync\u003Eb__139_0));
+      fromGoogleCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper = fromGoogleCshtml1.CreateTagHelper<FormTagHelper>();
+      fromGoogleCshtml1.__tagHelperExecutionContext.Add((ITagHelper) fromGoogleCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper);
+      fromGoogleCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper = fromGoogleCshtml1.CreateTagHelper<RenderAtEndOfFormTagHelper>();
+      fromGoogleCshtml1.__tagHelperExecutionContext.Add((ITagHelper) fromGoogleCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper);
+      fromGoogleCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper.Action = (string) _Views_Home_CreateFromGoogle_cshtml.__tagHelperAttribute_0.Value;
+      fromGoogleCshtml1.__tagHelperExecutionContext.AddTagHelperAttribute(_Views_Home_CreateFromGoogle_cshtml.__tagHelperAttribute_0);
+      await fromGoogleCshtml1.__tagHelperRunner.RunAsync(fromGoogleCshtml1.__tagHelperExecutionContext);
+      if (!fromGoogleCshtml1.__tagHelperExecutionContext.Output.IsContentModified)
+        await fromGoogleCshtml1.__tagHelperExecutionContext.SetOutputContentAsync();
+      fromGoogleCshtml1.Write((object) fromGoogleCshtml1.__tagHelperExecutionContext.Output);
+      fromGoogleCshtml1.__tagHelperExecutionContext = fromGoogleCshtml1.__tagHelperScopeManager.End();
+      fromGoogleCshtml1.EndContext();
+      fromGoogleCshtml1.BeginContext(1141, 1837, true);
+      fromGoogleCshtml1.WriteLiteral("\r\n\r\n        \r\n        <div class=\"form-group\" style=\"margin-top: 20px;\">\r\n            <label class=\"control-label col-md-2\"></label>\r\n            <div id=\"googleconsoledatatab\" class=\"col-md-10\">\r\n                <ul>\r\n                    <li><a href=\"#tabs-1\">QUERIES</a></li>\r\n                    <li><a href=\"#tabs-2\">PAGES</a></li>\r\n                </ul>\r\n                <div id=\"tabs-1\">\r\n                    <table id=\"queriesgroup\" class=\"table table-striped table-bordered dt-responsive nowrap\" cellspacing=\"0\" width=\"100%\">\r\n                        <thead>\r\n                            <tr>\r\n                                <th style=\"width:5%\"></th>\r\n                                <th style=\"width:50%\">Query</th>\r\n                                <th style=\"width:15%\">Clicks</th>\r\n                                <th style=\"width:15%\">Impressions</th>\r\n                                <th style=\"width:15%\">Position</th>\r\n                            </tr>\r\n                        </thead>\r\n                   ");
+      fromGoogleCshtml1.WriteLiteral("     <tbody></tbody>\r\n                    </table>\r\n                </div>\r\n                <div id=\"tabs-2\">\r\n                    <table id=\"pagesgroup\" class=\"table table-striped table-bordered dt-responsive nowrap\" cellspacing=\"0\" width=\"100%\">\r\n                        <thead>\r\n                            <tr>\r\n                                <th style=\"width:55%\">Page</th>\r\n                                <th style=\"width:15%\">Clicks</th>\r\n                                <th style=\"width:15%\">Impressions</th>\r\n                                <th style=\"width:15%\">Position</th>\r\n                            </tr>\r\n                        </thead>\r\n                        <tbody></tbody>\r\n                    </table>\r\n                </div>\r\n            </div>\r\n        </div>\r\n        <hr />\r\n        ");
+      fromGoogleCshtml1.EndContext();
+      fromGoogleCshtml1.BeginContext(2978, 20484, false);
+      // ISSUE: reference to a compiler-generated method
+      fromGoogleCshtml1.__tagHelperExecutionContext = fromGoogleCshtml1.__tagHelperScopeManager.Begin("form", TagMode.StartTagAndEndTag, "f00c09adeaec4fbf8d2c1e1e9fdde37b", new Func<Task>(fromGoogleCshtml1.\u003CExecuteAsync\u003Eb__139_1));
+      fromGoogleCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper = fromGoogleCshtml1.CreateTagHelper<FormTagHelper>();
+      fromGoogleCshtml1.__tagHelperExecutionContext.Add((ITagHelper) fromGoogleCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper);
+      fromGoogleCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper = fromGoogleCshtml1.CreateTagHelper<RenderAtEndOfFormTagHelper>();
+      fromGoogleCshtml1.__tagHelperExecutionContext.Add((ITagHelper) fromGoogleCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper);
+      fromGoogleCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper.Action = (string) _Views_Home_CreateFromGoogle_cshtml.__tagHelperAttribute_102.Value;
+      fromGoogleCshtml1.__tagHelperExecutionContext.AddTagHelperAttribute(_Views_Home_CreateFromGoogle_cshtml.__tagHelperAttribute_102);
+      fromGoogleCshtml1.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_CreateFromGoogle_cshtml.__tagHelperAttribute_103);
+      await fromGoogleCshtml1.__tagHelperRunner.RunAsync(fromGoogleCshtml1.__tagHelperExecutionContext);
+      if (!fromGoogleCshtml1.__tagHelperExecutionContext.Output.IsContentModified)
+        await fromGoogleCshtml1.__tagHelperExecutionContext.SetOutputContentAsync();
+      fromGoogleCshtml1.Write((object) fromGoogleCshtml1.__tagHelperExecutionContext.Output);
+      fromGoogleCshtml1.__tagHelperExecutionContext = fromGoogleCshtml1.__tagHelperScopeManager.End();
+      fromGoogleCshtml1.EndContext();
+      fromGoogleCshtml1.BeginContext(23462, 103, true);
+      fromGoogleCshtml1.WriteLiteral("\r\n    </div>\r\n</div>\r\n\r\n<script>\r\n\r\n    var queriestable, pagestable;\r\n  \r\n    var searchconsoledata = ");
+      fromGoogleCshtml1.EndContext();
+      fromGoogleCshtml1.BeginContext(23566, 52, false);
+      // ISSUE: reference to a compiler-generated field
+      if (_Views_Home_CreateFromGoogle_cshtml.\u003C\u003Eo__139.\u003C\u003Ep__14 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        _Views_Home_CreateFromGoogle_cshtml.\u003C\u003Eo__139.\u003C\u003Ep__14 = CallSite<Action<CallSite, _Views_Home_CreateFromGoogle_cshtml, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (_Views_Home_CreateFromGoogle_cshtml), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, _Views_Home_CreateFromGoogle_cshtml, object> target1 = _Views_Home_CreateFromGoogle_cshtml.\u003C\u003Eo__139.\u003C\u003Ep__14.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, _Views_Home_CreateFromGoogle_cshtml, object>> p14 = _Views_Home_CreateFromGoogle_cshtml.\u003C\u003Eo__139.\u003C\u003Ep__14;
+      _Views_Home_CreateFromGoogle_cshtml fromGoogleCshtml2 = fromGoogleCshtml1;
+      // ISSUE: reference to a compiler-generated field
+      if (_Views_Home_CreateFromGoogle_cshtml.\u003C\u003Eo__139.\u003C\u003Ep__13 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        _Views_Home_CreateFromGoogle_cshtml.\u003C\u003Eo__139.\u003C\u003Ep__13 = CallSite<Func<CallSite, IHtmlHelper<trafficjob>, object, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.None, "Raw", (IEnumerable<Type>) null, typeof (_Views_Home_CreateFromGoogle_cshtml), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Func<CallSite, IHtmlHelper<trafficjob>, object, object> target2 = _Views_Home_CreateFromGoogle_cshtml.\u003C\u003Eo__139.\u003C\u003Ep__13.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Func<CallSite, IHtmlHelper<trafficjob>, object, object>> p13 = _Views_Home_CreateFromGoogle_cshtml.\u003C\u003Eo__139.\u003C\u003Ep__13;
+      IHtmlHelper<trafficjob> html = fromGoogleCshtml1.Html;
+      // ISSUE: reference to a compiler-generated field
+      if (_Views_Home_CreateFromGoogle_cshtml.\u003C\u003Eo__139.\u003C\u003Ep__12 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        _Views_Home_CreateFromGoogle_cshtml.\u003C\u003Eo__139.\u003C\u003Ep__12 = CallSite<Func<CallSite, IJsonHelper, object, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.None, "Serialize", (IEnumerable<Type>) null, typeof (_Views_Home_CreateFromGoogle_cshtml), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Func<CallSite, IJsonHelper, object, object> target3 = _Views_Home_CreateFromGoogle_cshtml.\u003C\u003Eo__139.\u003C\u003Ep__12.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Func<CallSite, IJsonHelper, object, object>> p12 = _Views_Home_CreateFromGoogle_cshtml.\u003C\u003Eo__139.\u003C\u003Ep__12;
+      IJsonHelper json = fromGoogleCshtml1.Json;
+      // ISSUE: reference to a compiler-generated field
+      if (_Views_Home_CreateFromGoogle_cshtml.\u003C\u003Eo__139.\u003C\u003Ep__11 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        _Views_Home_CreateFromGoogle_cshtml.\u003C\u003Eo__139.\u003C\u003Ep__11 = CallSite<Func<CallSite, object, object>>.Create(Binder.GetMember(CSharpBinderFlags.None, "Searchconsoledatas", typeof (_Views_Home_CreateFromGoogle_cshtml), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj1 = _Views_Home_CreateFromGoogle_cshtml.\u003C\u003Eo__139.\u003C\u003Ep__11.Target((CallSite) _Views_Home_CreateFromGoogle_cshtml.\u003C\u003Eo__139.\u003C\u003Ep__11, fromGoogleCshtml1.ViewBag);
+      object obj2 = target3((CallSite) p12, json, obj1);
+      object obj3 = target2((CallSite) p13, html, obj2);
+      target1((CallSite) p14, fromGoogleCshtml2, obj3);
+      fromGoogleCshtml1.EndContext();
+      fromGoogleCshtml1.BeginContext(23618, 5172, true);
+      fromGoogleCshtml1.WriteLiteral(";\r\n\r\n    function RedrawSearchConsoleOptions()\r\n    {\r\n        for (var i = 0; i < searchconsoledata.length; i++) {\r\n            $(\"select[name=url_kind]\").append($('<option>', { value: searchconsoledata[i][\"siteUrl\"], text: searchconsoledata[i][\"siteUrl\"] }));\r\n        }\r\n        $(\"#url_kind\").val(searchconsoledata[0][\"siteUrl\"]);\r\n\r\n        RedrawSearchConsoleTabs();\r\n    }\r\n\r\n    function RedrawSearchConsoleTabs()\r\n    {        \r\n        var selOption = $(\"select[name=url_kind] option:selected\").text();\r\n        var target_url = $(\"input[name=target_url]\").val();\r\n        var search_term = $(\"textarea[name=search_term]\").val();\r\n\r\n        queriestable.rows().remove().draw();\r\n        pagestable.rows().remove().draw();\r\n\r\n        var querylist = [], pagelist = [];\r\n        var bPageOnceAdded = false, bQueryOnceAdded = false;\r\n\r\n        for (var i = 0; i < searchconsoledata.length; i++) {\r\n            if (searchconsoledata[i][\"siteUrl\"] == selOption) {\r\n                for (var j = 0; j < searchconsoledata[");
+      fromGoogleCshtml1.WriteLiteral("i][\"siteData\"].length; j++)\r\n                {\r\n                    var siteurldata = searchconsoledata[i][\"siteData\"][j];\r\n\r\n                    if (target_url != \"\") {\r\n                        if (siteurldata[\"siteSubUrl\"] == target_url) {\r\n                            queriestable.row.add([\r\n                                siteurldata[\"query\"],\r\n                                siteurldata[\"query\"],\r\n                                siteurldata[\"clicks\"],\r\n                                siteurldata[\"impressions\"],\r\n                                Math.round(siteurldata[\"position\"] * 100) / 100\r\n                            ]);\r\n                            queriestable.draw();\r\n\r\n                            if (bPageOnceAdded == false)\r\n                            {\r\n                                pagestable.row.add([\r\n                                    siteurldata[\"siteSubUrl\"],\r\n                                    siteurldata[\"clicks\"],\r\n                                    siteurldata[\"impressions\"],\r\n    ");
+      fromGoogleCshtml1.WriteLiteral("                                Math.round(siteurldata[\"position\"] * 100) / 100\r\n                                ]);\r\n                                pagestable.draw();\r\n                                bPageOnceAdded = true;\r\n                            }\r\n                        }\r\n                    }\r\n                    else {\r\n                        var bqueryAlreadyadded = false;\r\n                        for (var k = 0; k < querylist.length; k++) {\r\n                            if (querylist[k][\"query\"] == siteurldata[\"query\"]) {\r\n                                bqueryAlreadyadded = true;\r\n                            }\r\n                        }\r\n                        if (bqueryAlreadyadded == false) {\r\n                            querylist.push(siteurldata);\r\n                            queriestable.row.add([\r\n                                siteurldata[\"query\"],\r\n                                siteurldata[\"query\"],\r\n                                siteurldata[\"clicks\"],\r\n                          ");
+      fromGoogleCshtml1.WriteLiteral("      siteurldata[\"impressions\"],\r\n                                Math.round(siteurldata[\"position\"] * 100) / 100\r\n                            ]);\r\n                            queriestable.draw();\r\n                        }\r\n\r\n                        var bpageAlreadyadded = false;\r\n                        for (var k = 0; k < pagelist.length; k++) {\r\n                            if (pagelist[k][\"siteSubUrl\"] == siteurldata[\"siteSubUrl\"]) {\r\n                                bpageAlreadyadded = true;\r\n                            }\r\n                        }\r\n                        if (bpageAlreadyadded == false) {\r\n                            pagelist.push(siteurldata);\r\n                            pagestable.row.add([\r\n                                siteurldata[\"siteSubUrl\"],\r\n                                siteurldata[\"clicks\"],\r\n                                siteurldata[\"impressions\"],\r\n                                Math.round(siteurldata[\"position\"] * 100) / 100\r\n                            ]);\r\n      ");
+      fromGoogleCshtml1.WriteLiteral("                      pagestable.draw();\r\n\r\n                        }\r\n                    }\r\n                }\r\n                \r\n            }\r\n        }\r\n       \r\n    }\r\n\r\n    function resetTargetURL()\r\n    {\r\n        $(\"input[name=target_url]\").val('');\r\n        RedrawSearchConsoleTabs();\r\n    }\r\n\r\n    function RedrawTimeZone()\r\n    {\r\n        $(\"#time_zone\").val(\"Central Standard Time\");\r\n    }\r\n\r\n    function RedrawTimeSelector()\r\n    {\r\n        for (var i = 0; i < 24; i++)\r\n        {\r\n\r\n            $(\"select[name=start_time]\").append($('<option>', { value: i, text: i + \":00\"}));\r\n            $(\"select[name=end_time]\").append($('<option>', { value: i, text: i + \":00\" }));\r\n        }\r\n\r\n        $(\"#start_time\").val(0);\r\n        $(\"#end_time\").val(0);\r\n    }\r\n\r\n  \r\n    $(document).ready(function () {\r\n\r\n        $(\"#startdate\").datepicker({ dateFormat: 'yy-mm-dd'});\r\n        $(\"#enddate\").datepicker({ dateFormat: 'yy-mm-dd'});\r\n\r\n        \r\n        $(\"#CreateForm\").validate({\r\n            rules: {\r\n        ");
+      fromGoogleCshtml1.WriteLiteral("        session_count: { required: true, range: [1, ");
+      fromGoogleCshtml1.EndContext();
+      fromGoogleCshtml1.BeginContext(28791, 23, false);
+      // ISSUE: reference to a compiler-generated field
+      if (_Views_Home_CreateFromGoogle_cshtml.\u003C\u003Eo__139.\u003C\u003Ep__16 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        _Views_Home_CreateFromGoogle_cshtml.\u003C\u003Eo__139.\u003C\u003Ep__16 = CallSite<Action<CallSite, _Views_Home_CreateFromGoogle_cshtml, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (_Views_Home_CreateFromGoogle_cshtml), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, _Views_Home_CreateFromGoogle_cshtml, object> target4 = _Views_Home_CreateFromGoogle_cshtml.\u003C\u003Eo__139.\u003C\u003Ep__16.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, _Views_Home_CreateFromGoogle_cshtml, object>> p16 = _Views_Home_CreateFromGoogle_cshtml.\u003C\u003Eo__139.\u003C\u003Ep__16;
+      _Views_Home_CreateFromGoogle_cshtml fromGoogleCshtml3 = fromGoogleCshtml1;
+      // ISSUE: reference to a compiler-generated field
+      if (_Views_Home_CreateFromGoogle_cshtml.\u003C\u003Eo__139.\u003C\u003Ep__15 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        _Views_Home_CreateFromGoogle_cshtml.\u003C\u003Eo__139.\u003C\u003Ep__15 = CallSite<Func<CallSite, object, object>>.Create(Binder.GetMember(CSharpBinderFlags.None, "MaxSessionCount", typeof (_Views_Home_CreateFromGoogle_cshtml), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj4 = _Views_Home_CreateFromGoogle_cshtml.\u003C\u003Eo__139.\u003C\u003Ep__15.Target((CallSite) _Views_Home_CreateFromGoogle_cshtml.\u003C\u003Eo__139.\u003C\u003Ep__15, fromGoogleCshtml1.ViewBag);
+      target4((CallSite) p16, fromGoogleCshtml3, obj4);
+      fromGoogleCshtml1.EndContext();
+      fromGoogleCshtml1.BeginContext(28814, 2947, true);
+      fromGoogleCshtml1.WriteLiteral("] }\r\n            }\r\n        });\r\n        $(\"#googleconsoledatatab\").tabs();\r\n\r\n        var index = 0;\r\n        queriestable = $('#queriesgroup').DataTable({\r\n            'columnDefs': [{\r\n                'targets': 0,\r\n                'searchable': false,\r\n                'orderable': false,\r\n                'className': 'dt-body-center',\r\n                'render': function (data, type, full, meta) {\r\n                    return '<input type=\"checkbox\" name=\"' + $('<div/>').text(data).html() + '\" value=\"' + $('<div/>').text(data).html() + '\">';\r\n                }\r\n            }]\r\n        });\r\n\r\n        $('#queriesgroup tbody').on('change', 'input[type=\"checkbox\"]', function () {\r\n            // If checkbox is not checked\r\n            var clickedquery = \"\";\r\n\r\n            queriestable.$('input[type=\"checkbox\"]').each(function () {\r\n                // If checkbox doesn't exist in DOM\r\n                \r\n                if (this.checked) {\r\n                    // Create a hidden element\r\n                    clicke");
+      fromGoogleCshtml1.WriteLiteral("dquery += this.name + \",\";                        \r\n                }\r\n                \r\n            });            \r\n\r\n            $(\"textarea[name=search_term]\").val(clickedquery);\r\n        });\r\n\r\n        pagestable = $('#pagesgroup').DataTable();              \r\n\r\n        $('#pagesgroup').on('click', 'tbody tr', function () {\r\n            var clickedpage = this.children[0].textContent;\r\n            $(\"input[name=target_url]\").val(clickedpage);\r\n            RedrawSearchConsoleTabs();\r\n        })\r\n\r\n        $(\"input[name=target_url]\").tooltip({ 'trigger': 'focus', 'title': 'Target url of Post' });\r\n        $(\"input[name=exttarget_url]\").tooltip({ 'trigger': 'focus', 'title': 'Extra Target url of Post (i.e mobile page)' });\r\n        $(\"input[name=session_count]\").tooltip({ 'trigger': 'focus', 'title': 'count of running in a day' });\r\n        $(\"input[name=proxy_setting]\").tooltip({ 'trigger': 'focus', 'title': 'These proxies will be used when journey works' });\r\n        $(\"textarea[name=search_term]\").tooltip(");
+      fromGoogleCshtml1.WriteLiteral("{ 'trigger': 'focus', 'title': 'The journey will be started with this keyword' });\r\n        $(\"input[name=name_business]\").tooltip({ 'trigger': 'focus', 'title': 'Available only for GMB & Brand, for getting intermediate panel box' });\r\n\r\n        $(\"textarea[name=search_term]\").bind('input propertychange', function () {\r\n\r\n            var text = $(\"textarea[name=search_term]\").val().split(\"|\");\r\n            var arraylength = text.length;\r\n            var newlinedtext = \"\";\r\n            for (var i = 0; i < arraylength; i++) {\r\n                newlinedtext += text[i];\r\n                if (i != arraylength - 1)\r\n                    newlinedtext += \"\\n\";\r\n            }\r\n            $(\"textarea[name=search_term]\").val(newlinedtext);\r\n\r\n        });\r\n\r\n\r\n       \r\n        RedrawTimeZone();\r\n        RedrawTimeSelector();\r\n\r\n        RedrawSearchConsoleOptions();\r\n        \r\n    });\r\n</script>\r\n\r\n\r\n");
+      fromGoogleCshtml1.EndContext();
+      fromGoogleCshtml1.BeginContext(31761, 93, false);
+      fromGoogleCshtml1.__tagHelperExecutionContext = fromGoogleCshtml1.__tagHelperScopeManager.Begin("link", TagMode.SelfClosing, "9971fcf7ca134f64835c19bb45cfd322", (Func<Task>) (async () => { }));
+      fromGoogleCshtml1.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = fromGoogleCshtml1.CreateTagHelper<UrlResolutionTagHelper>();
+      fromGoogleCshtml1.__tagHelperExecutionContext.Add((ITagHelper) fromGoogleCshtml1.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper);
+      fromGoogleCshtml1.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_CreateFromGoogle_cshtml.__tagHelperAttribute_104);
+      fromGoogleCshtml1.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_CreateFromGoogle_cshtml.__tagHelperAttribute_105);
+      fromGoogleCshtml1.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_CreateFromGoogle_cshtml.__tagHelperAttribute_106);
+      await fromGoogleCshtml1.__tagHelperRunner.RunAsync(fromGoogleCshtml1.__tagHelperExecutionContext);
+      if (!fromGoogleCshtml1.__tagHelperExecutionContext.Output.IsContentModified)
+        await fromGoogleCshtml1.__tagHelperExecutionContext.SetOutputContentAsync();
+      fromGoogleCshtml1.Write((object) fromGoogleCshtml1.__tagHelperExecutionContext.Output);
+      fromGoogleCshtml1.__tagHelperExecutionContext = fromGoogleCshtml1.__tagHelperScopeManager.End();
+      fromGoogleCshtml1.EndContext();
+      fromGoogleCshtml1.BeginContext(31854, 2, true);
+      fromGoogleCshtml1.WriteLiteral("\r\n");
+      fromGoogleCshtml1.EndContext();
+      fromGoogleCshtml1.BeginContext(31856, 91, false);
+      fromGoogleCshtml1.__tagHelperExecutionContext = fromGoogleCshtml1.__tagHelperScopeManager.Begin("link", TagMode.SelfClosing, "d848529ca70d4c5bb7cca784bcfd09cc", (Func<Task>) (async () => { }));
+      fromGoogleCshtml1.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = fromGoogleCshtml1.CreateTagHelper<UrlResolutionTagHelper>();
+      fromGoogleCshtml1.__tagHelperExecutionContext.Add((ITagHelper) fromGoogleCshtml1.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper);
+      fromGoogleCshtml1.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_CreateFromGoogle_cshtml.__tagHelperAttribute_107);
+      fromGoogleCshtml1.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_CreateFromGoogle_cshtml.__tagHelperAttribute_105);
+      fromGoogleCshtml1.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_CreateFromGoogle_cshtml.__tagHelperAttribute_106);
+      await fromGoogleCshtml1.__tagHelperRunner.RunAsync(fromGoogleCshtml1.__tagHelperExecutionContext);
+      if (!fromGoogleCshtml1.__tagHelperExecutionContext.Output.IsContentModified)
+        await fromGoogleCshtml1.__tagHelperExecutionContext.SetOutputContentAsync();
+      fromGoogleCshtml1.Write((object) fromGoogleCshtml1.__tagHelperExecutionContext.Output);
+      fromGoogleCshtml1.__tagHelperExecutionContext = fromGoogleCshtml1.__tagHelperScopeManager.End();
+      fromGoogleCshtml1.EndContext();
+      fromGoogleCshtml1.BeginContext(31947, 2, true);
+      fromGoogleCshtml1.WriteLiteral("\r\n");
+      fromGoogleCshtml1.EndContext();
+      fromGoogleCshtml1.BeginContext(31949, 64, false);
+      fromGoogleCshtml1.__tagHelperExecutionContext = fromGoogleCshtml1.__tagHelperScopeManager.Begin("script", TagMode.StartTagAndEndTag, "09fd85c54a32421fbfbfc72d4f587f1e", (Func<Task>) (async () => { }));
+      fromGoogleCshtml1.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = fromGoogleCshtml1.CreateTagHelper<UrlResolutionTagHelper>();
+      fromGoogleCshtml1.__tagHelperExecutionContext.Add((ITagHelper) fromGoogleCshtml1.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper);
+      fromGoogleCshtml1.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_CreateFromGoogle_cshtml.__tagHelperAttribute_108);
+      await fromGoogleCshtml1.__tagHelperRunner.RunAsync(fromGoogleCshtml1.__tagHelperExecutionContext);
+      if (!fromGoogleCshtml1.__tagHelperExecutionContext.Output.IsContentModified)
+        await fromGoogleCshtml1.__tagHelperExecutionContext.SetOutputContentAsync();
+      fromGoogleCshtml1.Write((object) fromGoogleCshtml1.__tagHelperExecutionContext.Output);
+      fromGoogleCshtml1.__tagHelperExecutionContext = fromGoogleCshtml1.__tagHelperScopeManager.End();
+      fromGoogleCshtml1.EndContext();
+      fromGoogleCshtml1.BeginContext(32013, 2, true);
+      fromGoogleCshtml1.WriteLiteral("\r\n");
+      fromGoogleCshtml1.EndContext();
+      fromGoogleCshtml1.BeginContext(32015, 63, false);
+      fromGoogleCshtml1.__tagHelperExecutionContext = fromGoogleCshtml1.__tagHelperScopeManager.Begin("script", TagMode.StartTagAndEndTag, "c1a6000485514d46b4f1b030ddc71030", (Func<Task>) (async () => { }));
+      fromGoogleCshtml1.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = fromGoogleCshtml1.CreateTagHelper<UrlResolutionTagHelper>();
+      fromGoogleCshtml1.__tagHelperExecutionContext.Add((ITagHelper) fromGoogleCshtml1.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper);
+      fromGoogleCshtml1.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_CreateFromGoogle_cshtml.__tagHelperAttribute_109);
+      await fromGoogleCshtml1.__tagHelperRunner.RunAsync(fromGoogleCshtml1.__tagHelperExecutionContext);
+      if (!fromGoogleCshtml1.__tagHelperExecutionContext.Output.IsContentModified)
+        await fromGoogleCshtml1.__tagHelperExecutionContext.SetOutputContentAsync();
+      fromGoogleCshtml1.Write((object) fromGoogleCshtml1.__tagHelperExecutionContext.Output);
+      fromGoogleCshtml1.__tagHelperExecutionContext = fromGoogleCshtml1.__tagHelperScopeManager.End();
+      fromGoogleCshtml1.EndContext();
+      fromGoogleCshtml1.BeginContext(32078, 2, true);
+      fromGoogleCshtml1.WriteLiteral("\r\n");
+      fromGoogleCshtml1.EndContext();
+      fromGoogleCshtml1.BeginContext(32080, 65, false);
+      fromGoogleCshtml1.__tagHelperExecutionContext = fromGoogleCshtml1.__tagHelperScopeManager.Begin("script", TagMode.StartTagAndEndTag, "35b61c52823a4e38963bd0ff330bbdf1", (Func<Task>) (async () => { }));
+      fromGoogleCshtml1.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = fromGoogleCshtml1.CreateTagHelper<UrlResolutionTagHelper>();
+      fromGoogleCshtml1.__tagHelperExecutionContext.Add((ITagHelper) fromGoogleCshtml1.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper);
+      fromGoogleCshtml1.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_CreateFromGoogle_cshtml.__tagHelperAttribute_110);
+      await fromGoogleCshtml1.__tagHelperRunner.RunAsync(fromGoogleCshtml1.__tagHelperExecutionContext);
+      if (!fromGoogleCshtml1.__tagHelperExecutionContext.Output.IsContentModified)
+        await fromGoogleCshtml1.__tagHelperExecutionContext.SetOutputContentAsync();
+      fromGoogleCshtml1.Write((object) fromGoogleCshtml1.__tagHelperExecutionContext.Output);
+      fromGoogleCshtml1.__tagHelperExecutionContext = fromGoogleCshtml1.__tagHelperScopeManager.End();
+      fromGoogleCshtml1.EndContext();
+      fromGoogleCshtml1.BeginContext(32145, 2, true);
+      fromGoogleCshtml1.WriteLiteral("\r\n");
+      fromGoogleCshtml1.EndContext();
+      fromGoogleCshtml1.BeginContext(32147, 64, false);
+      fromGoogleCshtml1.__tagHelperExecutionContext = fromGoogleCshtml1.__tagHelperScopeManager.Begin("script", TagMode.StartTagAndEndTag, "4a455b3da4704b959833cfbe04224c3f", (Func<Task>) (async () => { }));
+      fromGoogleCshtml1.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = fromGoogleCshtml1.CreateTagHelper<UrlResolutionTagHelper>();
+      fromGoogleCshtml1.__tagHelperExecutionContext.Add((ITagHelper) fromGoogleCshtml1.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper);
+      fromGoogleCshtml1.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_CreateFromGoogle_cshtml.__tagHelperAttribute_111);
+      await fromGoogleCshtml1.__tagHelperRunner.RunAsync(fromGoogleCshtml1.__tagHelperExecutionContext);
+      if (!fromGoogleCshtml1.__tagHelperExecutionContext.Output.IsContentModified)
+        await fromGoogleCshtml1.__tagHelperExecutionContext.SetOutputContentAsync();
+      fromGoogleCshtml1.Write((object) fromGoogleCshtml1.__tagHelperExecutionContext.Output);
+      fromGoogleCshtml1.__tagHelperExecutionContext = fromGoogleCshtml1.__tagHelperScopeManager.End();
+      fromGoogleCshtml1.EndContext();
+      fromGoogleCshtml1.BeginContext(32211, 2, true);
+      fromGoogleCshtml1.WriteLiteral("\r\n");
+      fromGoogleCshtml1.EndContext();
+      fromGoogleCshtml1.BeginContext(32213, 52, false);
+      fromGoogleCshtml1.__tagHelperExecutionContext = fromGoogleCshtml1.__tagHelperScopeManager.Begin("script", TagMode.StartTagAndEndTag, "9fd05574444b4726b13cb179ca0da045", (Func<Task>) (async () => { }));
+      fromGoogleCshtml1.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = fromGoogleCshtml1.CreateTagHelper<UrlResolutionTagHelper>();
+      fromGoogleCshtml1.__tagHelperExecutionContext.Add((ITagHelper) fromGoogleCshtml1.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper);
+      fromGoogleCshtml1.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_CreateFromGoogle_cshtml.__tagHelperAttribute_112);
+      await fromGoogleCshtml1.__tagHelperRunner.RunAsync(fromGoogleCshtml1.__tagHelperExecutionContext);
+      if (!fromGoogleCshtml1.__tagHelperExecutionContext.Output.IsContentModified)
+        await fromGoogleCshtml1.__tagHelperExecutionContext.SetOutputContentAsync();
+      fromGoogleCshtml1.Write((object) fromGoogleCshtml1.__tagHelperExecutionContext.Output);
+      fromGoogleCshtml1.__tagHelperExecutionContext = fromGoogleCshtml1.__tagHelperScopeManager.End();
+      fromGoogleCshtml1.EndContext();
+      fromGoogleCshtml1.BeginContext(32265, 2, true);
+      fromGoogleCshtml1.WriteLiteral("\r\n");
+      fromGoogleCshtml1.EndContext();
+      fromGoogleCshtml1.BeginContext(32267, 54, false);
+      fromGoogleCshtml1.__tagHelperExecutionContext = fromGoogleCshtml1.__tagHelperScopeManager.Begin("script", TagMode.StartTagAndEndTag, "bb75f09cdb064908a99243219625b353", (Func<Task>) (async () => { }));
+      fromGoogleCshtml1.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = fromGoogleCshtml1.CreateTagHelper<UrlResolutionTagHelper>();
+      fromGoogleCshtml1.__tagHelperExecutionContext.Add((ITagHelper) fromGoogleCshtml1.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper);
+      fromGoogleCshtml1.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_CreateFromGoogle_cshtml.__tagHelperAttribute_113);
+      await fromGoogleCshtml1.__tagHelperRunner.RunAsync(fromGoogleCshtml1.__tagHelperExecutionContext);
+      if (!fromGoogleCshtml1.__tagHelperExecutionContext.Output.IsContentModified)
+        await fromGoogleCshtml1.__tagHelperExecutionContext.SetOutputContentAsync();
+      fromGoogleCshtml1.Write((object) fromGoogleCshtml1.__tagHelperExecutionContext.Output);
+      fromGoogleCshtml1.__tagHelperExecutionContext = fromGoogleCshtml1.__tagHelperScopeManager.End();
+      fromGoogleCshtml1.EndContext();
+      fromGoogleCshtml1.BeginContext(32321, 2, true);
+      fromGoogleCshtml1.WriteLiteral("\r\n");
+      fromGoogleCshtml1.EndContext();
+      fromGoogleCshtml1.BeginContext(32323, 52, false);
+      fromGoogleCshtml1.__tagHelperExecutionContext = fromGoogleCshtml1.__tagHelperScopeManager.Begin("script", TagMode.StartTagAndEndTag, "529c0d0a08974e22869d8ee95da9bc9c", (Func<Task>) (async () => { }));
+      fromGoogleCshtml1.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = fromGoogleCshtml1.CreateTagHelper<UrlResolutionTagHelper>();
+      fromGoogleCshtml1.__tagHelperExecutionContext.Add((ITagHelper) fromGoogleCshtml1.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper);
+      fromGoogleCshtml1.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_CreateFromGoogle_cshtml.__tagHelperAttribute_114);
+      await fromGoogleCshtml1.__tagHelperRunner.RunAsync(fromGoogleCshtml1.__tagHelperExecutionContext);
+      if (!fromGoogleCshtml1.__tagHelperExecutionContext.Output.IsContentModified)
+        await fromGoogleCshtml1.__tagHelperExecutionContext.SetOutputContentAsync();
+      fromGoogleCshtml1.Write((object) fromGoogleCshtml1.__tagHelperExecutionContext.Output);
+      fromGoogleCshtml1.__tagHelperExecutionContext = fromGoogleCshtml1.__tagHelperScopeManager.End();
+      fromGoogleCshtml1.EndContext();
+      fromGoogleCshtml1.BeginContext(32375, 2, true);
+      fromGoogleCshtml1.WriteLiteral("\r\n");
+      fromGoogleCshtml1.EndContext();
+      fromGoogleCshtml1.BeginContext(32377, 60, false);
+      fromGoogleCshtml1.__tagHelperExecutionContext = fromGoogleCshtml1.__tagHelperScopeManager.Begin("script", TagMode.StartTagAndEndTag, "1e34474f1cb0495a8a47d7fb93566a87", (Func<Task>) (async () => { }));
+      fromGoogleCshtml1.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = fromGoogleCshtml1.CreateTagHelper<UrlResolutionTagHelper>();
+      fromGoogleCshtml1.__tagHelperExecutionContext.Add((ITagHelper) fromGoogleCshtml1.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper);
+      fromGoogleCshtml1.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_CreateFromGoogle_cshtml.__tagHelperAttribute_115);
+      await fromGoogleCshtml1.__tagHelperRunner.RunAsync(fromGoogleCshtml1.__tagHelperExecutionContext);
+      if (!fromGoogleCshtml1.__tagHelperExecutionContext.Output.IsContentModified)
+        await fromGoogleCshtml1.__tagHelperExecutionContext.SetOutputContentAsync();
+      fromGoogleCshtml1.Write((object) fromGoogleCshtml1.__tagHelperExecutionContext.Output);
+      fromGoogleCshtml1.__tagHelperExecutionContext = fromGoogleCshtml1.__tagHelperScopeManager.End();
+      fromGoogleCshtml1.EndContext();
+      fromGoogleCshtml1.BeginContext(32437, 2, true);
+      fromGoogleCshtml1.WriteLiteral("\r\n");
+      fromGoogleCshtml1.EndContext();
+      fromGoogleCshtml1.BeginContext(32439, 60, false);
+      fromGoogleCshtml1.__tagHelperExecutionContext = fromGoogleCshtml1.__tagHelperScopeManager.Begin("script", TagMode.StartTagAndEndTag, "5be0b0f423184584938b0caf0af05762", (Func<Task>) (async () => { }));
+      fromGoogleCshtml1.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = fromGoogleCshtml1.CreateTagHelper<UrlResolutionTagHelper>();
+      fromGoogleCshtml1.__tagHelperExecutionContext.Add((ITagHelper) fromGoogleCshtml1.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper);
+      fromGoogleCshtml1.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_CreateFromGoogle_cshtml.__tagHelperAttribute_116);
+      await fromGoogleCshtml1.__tagHelperRunner.RunAsync(fromGoogleCshtml1.__tagHelperExecutionContext);
+      if (!fromGoogleCshtml1.__tagHelperExecutionContext.Output.IsContentModified)
+        await fromGoogleCshtml1.__tagHelperExecutionContext.SetOutputContentAsync();
+      fromGoogleCshtml1.Write((object) fromGoogleCshtml1.__tagHelperExecutionContext.Output);
+      fromGoogleCshtml1.__tagHelperExecutionContext = fromGoogleCshtml1.__tagHelperScopeManager.End();
+      fromGoogleCshtml1.EndContext();
+      fromGoogleCshtml1.BeginContext(32499, 2, true);
+      fromGoogleCshtml1.WriteLiteral("\r\n");
+      fromGoogleCshtml1.EndContext();
+      fromGoogleCshtml1.BeginContext(32501, 69, false);
+      fromGoogleCshtml1.__tagHelperExecutionContext = fromGoogleCshtml1.__tagHelperScopeManager.Begin("script", TagMode.StartTagAndEndTag, "e070f86ee77f4168b8b9022417506b76", (Func<Task>) (async () => { }));
+      fromGoogleCshtml1.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = fromGoogleCshtml1.CreateTagHelper<UrlResolutionTagHelper>();
+      fromGoogleCshtml1.__tagHelperExecutionContext.Add((ITagHelper) fromGoogleCshtml1.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper);
+      fromGoogleCshtml1.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_CreateFromGoogle_cshtml.__tagHelperAttribute_117);
+      await fromGoogleCshtml1.__tagHelperRunner.RunAsync(fromGoogleCshtml1.__tagHelperExecutionContext);
+      if (!fromGoogleCshtml1.__tagHelperExecutionContext.Output.IsContentModified)
+        await fromGoogleCshtml1.__tagHelperExecutionContext.SetOutputContentAsync();
+      fromGoogleCshtml1.Write((object) fromGoogleCshtml1.__tagHelperExecutionContext.Output);
+      fromGoogleCshtml1.__tagHelperExecutionContext = fromGoogleCshtml1.__tagHelperScopeManager.End();
+      fromGoogleCshtml1.EndContext();
+      fromGoogleCshtml1.BeginContext(32570, 2, true);
+      fromGoogleCshtml1.WriteLiteral("\r\n");
+      fromGoogleCshtml1.EndContext();
+      fromGoogleCshtml1.BeginContext(32572, 66, false);
+      fromGoogleCshtml1.__tagHelperExecutionContext = fromGoogleCshtml1.__tagHelperScopeManager.Begin("script", TagMode.StartTagAndEndTag, "4b7f74e80ced49a1b081fba270225ba5", (Func<Task>) (async () => { }));
+      fromGoogleCshtml1.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = fromGoogleCshtml1.CreateTagHelper<UrlResolutionTagHelper>();
+      fromGoogleCshtml1.__tagHelperExecutionContext.Add((ITagHelper) fromGoogleCshtml1.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper);
+      fromGoogleCshtml1.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_CreateFromGoogle_cshtml.__tagHelperAttribute_118);
+      await fromGoogleCshtml1.__tagHelperRunner.RunAsync(fromGoogleCshtml1.__tagHelperExecutionContext);
+      if (!fromGoogleCshtml1.__tagHelperExecutionContext.Output.IsContentModified)
+        await fromGoogleCshtml1.__tagHelperExecutionContext.SetOutputContentAsync();
+      fromGoogleCshtml1.Write((object) fromGoogleCshtml1.__tagHelperExecutionContext.Output);
+      fromGoogleCshtml1.__tagHelperExecutionContext = fromGoogleCshtml1.__tagHelperScopeManager.End();
+      fromGoogleCshtml1.EndContext();
+      fromGoogleCshtml1.BeginContext(32638, 2, true);
+      fromGoogleCshtml1.WriteLiteral("\r\n");
+      fromGoogleCshtml1.EndContext();
+      fromGoogleCshtml1.BeginContext(32640, 68, false);
+      fromGoogleCshtml1.__tagHelperExecutionContext = fromGoogleCshtml1.__tagHelperScopeManager.Begin("script", TagMode.StartTagAndEndTag, "efc11105faff4e38a9c019c9db0da234", (Func<Task>) (async () => { }));
+      fromGoogleCshtml1.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = fromGoogleCshtml1.CreateTagHelper<UrlResolutionTagHelper>();
+      fromGoogleCshtml1.__tagHelperExecutionContext.Add((ITagHelper) fromGoogleCshtml1.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper);
+      fromGoogleCshtml1.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_CreateFromGoogle_cshtml.__tagHelperAttribute_119);
+      await fromGoogleCshtml1.__tagHelperRunner.RunAsync(fromGoogleCshtml1.__tagHelperExecutionContext);
+      if (!fromGoogleCshtml1.__tagHelperExecutionContext.Output.IsContentModified)
+        await fromGoogleCshtml1.__tagHelperExecutionContext.SetOutputContentAsync();
+      fromGoogleCshtml1.Write((object) fromGoogleCshtml1.__tagHelperExecutionContext.Output);
+      fromGoogleCshtml1.__tagHelperExecutionContext = fromGoogleCshtml1.__tagHelperScopeManager.End();
+      fromGoogleCshtml1.EndContext();
+      fromGoogleCshtml1.BeginContext(32708, 2, true);
+      fromGoogleCshtml1.WriteLiteral("\r\n");
+      fromGoogleCshtml1.EndContext();
+      fromGoogleCshtml1.BeginContext(32710, 67, false);
+      fromGoogleCshtml1.__tagHelperExecutionContext = fromGoogleCshtml1.__tagHelperScopeManager.Begin("script", TagMode.StartTagAndEndTag, "8ed720d1a2c945b7ae726c2c22106b61", (Func<Task>) (async () => { }));
+      fromGoogleCshtml1.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = fromGoogleCshtml1.CreateTagHelper<UrlResolutionTagHelper>();
+      fromGoogleCshtml1.__tagHelperExecutionContext.Add((ITagHelper) fromGoogleCshtml1.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper);
+      fromGoogleCshtml1.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_CreateFromGoogle_cshtml.__tagHelperAttribute_120);
+      await fromGoogleCshtml1.__tagHelperRunner.RunAsync(fromGoogleCshtml1.__tagHelperExecutionContext);
+      if (!fromGoogleCshtml1.__tagHelperExecutionContext.Output.IsContentModified)
+        await fromGoogleCshtml1.__tagHelperExecutionContext.SetOutputContentAsync();
+      fromGoogleCshtml1.Write((object) fromGoogleCshtml1.__tagHelperExecutionContext.Output);
+      fromGoogleCshtml1.__tagHelperExecutionContext = fromGoogleCshtml1.__tagHelperScopeManager.End();
+      fromGoogleCshtml1.EndContext();
+      fromGoogleCshtml1.BeginContext(32777, 2, true);
+      fromGoogleCshtml1.WriteLiteral("\r\n");
+      fromGoogleCshtml1.EndContext();
+      fromGoogleCshtml1.BeginContext(32779, 66, false);
+      fromGoogleCshtml1.__tagHelperExecutionContext = fromGoogleCshtml1.__tagHelperScopeManager.Begin("script", TagMode.StartTagAndEndTag, "c02979c0405341b9b1e74c985d217460", (Func<Task>) (async () => { }));
+      fromGoogleCshtml1.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = fromGoogleCshtml1.CreateTagHelper<UrlResolutionTagHelper>();
+      fromGoogleCshtml1.__tagHelperExecutionContext.Add((ITagHelper) fromGoogleCshtml1.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper);
+      fromGoogleCshtml1.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_CreateFromGoogle_cshtml.__tagHelperAttribute_121);
+      await fromGoogleCshtml1.__tagHelperRunner.RunAsync(fromGoogleCshtml1.__tagHelperExecutionContext);
+      if (!fromGoogleCshtml1.__tagHelperExecutionContext.Output.IsContentModified)
+        await fromGoogleCshtml1.__tagHelperExecutionContext.SetOutputContentAsync();
+      fromGoogleCshtml1.Write((object) fromGoogleCshtml1.__tagHelperExecutionContext.Output);
+      fromGoogleCshtml1.__tagHelperExecutionContext = fromGoogleCshtml1.__tagHelperScopeManager.End();
+      fromGoogleCshtml1.EndContext();
+      fromGoogleCshtml1.BeginContext(32845, 4, true);
+      fromGoogleCshtml1.WriteLiteral("\r\n\r\n");
+      fromGoogleCshtml1.EndContext();
+      // ISSUE: reference to a compiler-generated method
+      fromGoogleCshtml1.DefineSection("Scripts", new RenderAsyncDelegate(fromGoogleCshtml1.\u003CExecuteAsync\u003Eb__139_146));
+    }
+
+    [RazorInject]
+    public IModelExpressionProvider ModelExpressionProvider { get; private set; }
+
+    [RazorInject]
+    public IUrlHelper Url { get; private set; }
+
+    [RazorInject]
+    public IViewComponentHelper Component { get; private set; }
+
+    [RazorInject]
+    public IJsonHelper Json { get; private set; }
+
+    [RazorInject]
+    public IHtmlHelper<trafficjob> Html { get; private set; }
+  }
+}

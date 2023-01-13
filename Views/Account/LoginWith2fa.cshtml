@@ -1,40 +1,141 @@
-﻿@model LoginWith2faViewModel
-@{
-    ViewData["Title"] = "Two-factor authentication";
-}
+﻿// Decompiled with JetBrains decompiler
+// Type: AspNetCore._Views_Account_LoginWith2fa_cshtml
+// Assembly: Traffic.PrecompiledViews, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+// MVID: 8B37BA40-0390-40A7-A536-D9CCDBC36390
+// Assembly location: D:\Workstation\TonniProjects\TrafficWebDeploy\Traffic.PrecompiledViews.dll
 
-<h2>@ViewData["Title"]</h2>
-<hr />
-<p>Your login is protected with an authenticator app. Enter your authenticator code below.</p>
-<div class="row">
-    <div class="col-md-4">
-        <form method="post" asp-route-returnUrl="@ViewData["ReturnUrl"]">
-            <input asp-for="RememberMe" type="hidden" />
-            <div asp-validation-summary="All" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="TwoFactorCode"></label>
-                <input asp-for="TwoFactorCode" class="form-control" autocomplete="off" />
-                <span asp-validation-for="TwoFactorCode" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <div class="checkbox">
-                    <label asp-for="RememberMachine">
-                        <input asp-for="RememberMachine" />
-                        @Html.DisplayNameFor(m => m.RememberMachine)
-                    </label>
-                </div>
-            </div>
-            <div class="form-group">
-                <button type="submit" class="btn btn-default">Log in</button>
-            </div>
-        </form>
-    </div>
-</div>
-<p>
-    Don't have access to your authenticator device? You can 
-    <a asp-action="LoginWithRecoveryCode" asp-route-returnUrl="@ViewData["ReturnUrl"]">log in with a recovery code</a>.
-</p>
+using Microsoft.AspNetCore.Html;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Razor;
+using Microsoft.AspNetCore.Mvc.Razor.Internal;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.Mvc.TagHelpers;
+using Microsoft.AspNetCore.Mvc.ViewFeatures;
+using Microsoft.AspNetCore.Razor.Runtime.TagHelpers;
+using Microsoft.AspNetCore.Razor.TagHelpers;
+using System;
+using System.Linq.Expressions;
+using System.Text.Encodings.Web;
+using System.Threading.Tasks;
+using Traffic.Models.AccountViewModels;
 
-@section Scripts {
-    @await Html.PartialAsync("_ValidationScriptsPartial")
+namespace AspNetCore
+{
+  public class _Views_Account_LoginWith2fa_cshtml : RazorPage<LoginWith2faViewModel>
+  {
+    private static readonly TagHelperAttribute __tagHelperAttribute_0 = new TagHelperAttribute("type", (object) "hidden", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_1 = new TagHelperAttribute("class", (object) new HtmlString("text-danger"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_2 = new TagHelperAttribute("class", (object) new HtmlString("form-control"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_3 = new TagHelperAttribute("autocomplete", (object) new HtmlString("off"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_4 = new TagHelperAttribute("method", (object) "post", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_5 = new TagHelperAttribute("asp-action", (object) "LoginWithRecoveryCode", HtmlAttributeValueStyle.DoubleQuotes);
+    private string __tagHelperStringValueBuffer;
+    private TagHelperExecutionContext __tagHelperExecutionContext;
+    private TagHelperRunner __tagHelperRunner = new TagHelperRunner();
+    private TagHelperScopeManager __backed__tagHelperScopeManager;
+    private FormTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper;
+    private RenderAtEndOfFormTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper;
+    private InputTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper;
+    private ValidationSummaryTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_ValidationSummaryTagHelper;
+    private LabelTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_LabelTagHelper;
+    private ValidationMessageTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper;
+    private AnchorTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper;
+    private static readonly Expression<Func<LoginWith2faViewModel, bool>> __h0 = (Expression<Func<LoginWith2faViewModel, bool>>) (__model => __model.RememberMe);
+    private static readonly Expression<Func<LoginWith2faViewModel, string>> __h1 = (Expression<Func<LoginWith2faViewModel, string>>) (__model => __model.TwoFactorCode);
+    private static readonly Expression<Func<LoginWith2faViewModel, string>> __h2 = (Expression<Func<LoginWith2faViewModel, string>>) (__model => __model.TwoFactorCode);
+    private static readonly Expression<Func<LoginWith2faViewModel, string>> __h3 = (Expression<Func<LoginWith2faViewModel, string>>) (__model => __model.TwoFactorCode);
+    private static readonly Expression<Func<LoginWith2faViewModel, bool>> __h4 = (Expression<Func<LoginWith2faViewModel, bool>>) (__model => __model.RememberMachine);
+    private static readonly Expression<Func<LoginWith2faViewModel, bool>> __h5 = (Expression<Func<LoginWith2faViewModel, bool>>) (m => m.RememberMachine);
+    private static readonly Expression<Func<LoginWith2faViewModel, bool>> __h6 = (Expression<Func<LoginWith2faViewModel, bool>>) (__model => __model.RememberMachine);
+
+    private TagHelperScopeManager __tagHelperScopeManager
+    {
+      get
+      {
+        if (this.__backed__tagHelperScopeManager == null)
+          this.__backed__tagHelperScopeManager = new TagHelperScopeManager(new Action<HtmlEncoder>(((RazorPageBase) this).StartTagHelperWritingScope), new Func<TagHelperContent>(((RazorPageBase) this).EndTagHelperWritingScope));
+        return this.__backed__tagHelperScopeManager;
+      }
+    }
+
+    public virtual async Task ExecuteAsync()
+    {
+      _Views_Account_LoginWith2fa_cshtml loginWith2faCshtml = this;
+      loginWith2faCshtml.ViewData["Title"] = (object) "Two-factor authentication";
+      loginWith2faCshtml.BeginContext(91, 6, true);
+      loginWith2faCshtml.WriteLiteral("\r\n<h2>");
+      loginWith2faCshtml.EndContext();
+      loginWith2faCshtml.BeginContext(98, 17, false);
+      loginWith2faCshtml.Write(loginWith2faCshtml.ViewData["Title"]);
+      loginWith2faCshtml.EndContext();
+      loginWith2faCshtml.BeginContext(115, 166, true);
+      loginWith2faCshtml.WriteLiteral("</h2>\r\n<hr />\r\n<p>Your login is protected with an authenticator app. Enter your authenticator code below.</p>\r\n<div class=\"row\">\r\n    <div class=\"col-md-4\">\r\n        ");
+      loginWith2faCshtml.EndContext();
+      loginWith2faCshtml.BeginContext(281, 981, false);
+      // ISSUE: reference to a compiler-generated method
+      loginWith2faCshtml.__tagHelperExecutionContext = loginWith2faCshtml.__tagHelperScopeManager.Begin("form", TagMode.StartTagAndEndTag, "06efa617fc3144e2a3bcc268b6a4a8b1", new Func<Task>(loginWith2faCshtml.\u003CExecuteAsync\u003Eb__19_0));
+      loginWith2faCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper = loginWith2faCshtml.CreateTagHelper<FormTagHelper>();
+      loginWith2faCshtml.__tagHelperExecutionContext.Add((ITagHelper) loginWith2faCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper);
+      loginWith2faCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper = loginWith2faCshtml.CreateTagHelper<RenderAtEndOfFormTagHelper>();
+      loginWith2faCshtml.__tagHelperExecutionContext.Add((ITagHelper) loginWith2faCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper);
+      loginWith2faCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper.Method = (string) _Views_Account_LoginWith2fa_cshtml.__tagHelperAttribute_4.Value;
+      loginWith2faCshtml.__tagHelperExecutionContext.AddTagHelperAttribute(_Views_Account_LoginWith2fa_cshtml.__tagHelperAttribute_4);
+      if (loginWith2faCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper.RouteValues == null)
+        throw new InvalidOperationException(loginWith2faCshtml.InvalidTagHelperIndexerAssignment("asp-route-returnUrl", "Microsoft.AspNetCore.Mvc.TagHelpers.FormTagHelper", "RouteValues"));
+      loginWith2faCshtml.BeginWriteTagHelperAttribute();
+      loginWith2faCshtml.WriteLiteral(loginWith2faCshtml.ViewData["ReturnUrl"]);
+      loginWith2faCshtml.__tagHelperStringValueBuffer = loginWith2faCshtml.EndWriteTagHelperAttribute();
+      loginWith2faCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper.RouteValues["returnUrl"] = loginWith2faCshtml.__tagHelperStringValueBuffer;
+      loginWith2faCshtml.__tagHelperExecutionContext.AddTagHelperAttribute("asp-route-returnUrl", (object) loginWith2faCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper.RouteValues["returnUrl"], HtmlAttributeValueStyle.DoubleQuotes);
+      await loginWith2faCshtml.__tagHelperRunner.RunAsync(loginWith2faCshtml.__tagHelperExecutionContext);
+      if (!loginWith2faCshtml.__tagHelperExecutionContext.Output.IsContentModified)
+        await loginWith2faCshtml.__tagHelperExecutionContext.SetOutputContentAsync();
+      loginWith2faCshtml.Write((object) loginWith2faCshtml.__tagHelperExecutionContext.Output);
+      loginWith2faCshtml.__tagHelperExecutionContext = loginWith2faCshtml.__tagHelperScopeManager.End();
+      loginWith2faCshtml.EndContext();
+      loginWith2faCshtml.BeginContext(1262, 93, true);
+      loginWith2faCshtml.WriteLiteral("\r\n    </div>\r\n</div>\r\n<p>\r\n    Don't have access to your authenticator device? You can \r\n    ");
+      loginWith2faCshtml.EndContext();
+      loginWith2faCshtml.BeginContext(1355, 114, false);
+      // ISSUE: reference to a compiler-generated method
+      loginWith2faCshtml.__tagHelperExecutionContext = loginWith2faCshtml.__tagHelperScopeManager.Begin("a", TagMode.StartTagAndEndTag, "ccf158f4445c4e2f9ce00f1ac154be1d", new Func<Task>(loginWith2faCshtml.\u003CExecuteAsync\u003Eb__19_8));
+      loginWith2faCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper = loginWith2faCshtml.CreateTagHelper<AnchorTagHelper>();
+      loginWith2faCshtml.__tagHelperExecutionContext.Add((ITagHelper) loginWith2faCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper);
+      loginWith2faCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.Action = (string) _Views_Account_LoginWith2fa_cshtml.__tagHelperAttribute_5.Value;
+      loginWith2faCshtml.__tagHelperExecutionContext.AddTagHelperAttribute(_Views_Account_LoginWith2fa_cshtml.__tagHelperAttribute_5);
+      if (loginWith2faCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues == null)
+        throw new InvalidOperationException(loginWith2faCshtml.InvalidTagHelperIndexerAssignment("asp-route-returnUrl", "Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper", "RouteValues"));
+      loginWith2faCshtml.BeginWriteTagHelperAttribute();
+      loginWith2faCshtml.WriteLiteral(loginWith2faCshtml.ViewData["ReturnUrl"]);
+      loginWith2faCshtml.__tagHelperStringValueBuffer = loginWith2faCshtml.EndWriteTagHelperAttribute();
+      loginWith2faCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues["returnUrl"] = loginWith2faCshtml.__tagHelperStringValueBuffer;
+      loginWith2faCshtml.__tagHelperExecutionContext.AddTagHelperAttribute("asp-route-returnUrl", (object) loginWith2faCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues["returnUrl"], HtmlAttributeValueStyle.DoubleQuotes);
+      await loginWith2faCshtml.__tagHelperRunner.RunAsync(loginWith2faCshtml.__tagHelperExecutionContext);
+      if (!loginWith2faCshtml.__tagHelperExecutionContext.Output.IsContentModified)
+        await loginWith2faCshtml.__tagHelperExecutionContext.SetOutputContentAsync();
+      loginWith2faCshtml.Write((object) loginWith2faCshtml.__tagHelperExecutionContext.Output);
+      loginWith2faCshtml.__tagHelperExecutionContext = loginWith2faCshtml.__tagHelperScopeManager.End();
+      loginWith2faCshtml.EndContext();
+      loginWith2faCshtml.BeginContext(1469, 11, true);
+      loginWith2faCshtml.WriteLiteral(".\r\n</p>\r\n\r\n");
+      loginWith2faCshtml.EndContext();
+      // ISSUE: reference to a compiler-generated method
+      loginWith2faCshtml.DefineSection("Scripts", new RenderAsyncDelegate(loginWith2faCshtml.\u003CExecuteAsync\u003Eb__19_9));
+    }
+
+    [RazorInject]
+    public IModelExpressionProvider ModelExpressionProvider { get; private set; }
+
+    [RazorInject]
+    public IUrlHelper Url { get; private set; }
+
+    [RazorInject]
+    public IViewComponentHelper Component { get; private set; }
+
+    [RazorInject]
+    public IJsonHelper Json { get; private set; }
+
+    [RazorInject]
+    public IHtmlHelper<LoginWith2faViewModel> Html { get; private set; }
+  }
 }

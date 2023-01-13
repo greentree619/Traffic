@@ -1,52 +1,119 @@
-﻿@model EnableAuthenticatorViewModel
-@{
-    ViewData["Title"] = "Enable authenticator";
-    ViewData.AddActivePage(ManageNavPages.TwoFactorAuthentication);
-}
+﻿// Decompiled with JetBrains decompiler
+// Type: AspNetCore._Views_Manage_EnableAuthenticator_cshtml
+// Assembly: Traffic.PrecompiledViews, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+// MVID: 8B37BA40-0390-40A7-A536-D9CCDBC36390
+// Assembly location: D:\Workstation\TonniProjects\TrafficWebDeploy\Traffic.PrecompiledViews.dll
 
-<h4>@ViewData["Title"]</h4>
-<div>
-    <p>To use an authenticator app go through the following steps:</p>
-    <ol class="list">
-        <li>
-            <p>
-                Download a two-factor authenticator app like Microsoft Authenticator for
-                <a href="https://go.microsoft.com/fwlink/?Linkid=825071">Windows Phone</a>,
-                <a href="https://go.microsoft.com/fwlink/?Linkid=825072">Android</a> and
-                <a href="https://go.microsoft.com/fwlink/?Linkid=825073">iOS</a> or
-                Google Authenticator for
-                <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2&amp;hl=en">Android</a> and
-                <a href="https://itunes.apple.com/us/app/google-authenticator/id388497605?mt=8">iOS</a>.
-            </p>
-        </li>
-        <li>
-            <p>Scan the QR Code or enter this key <kbd>@Model.SharedKey</kbd> into your two factor authenticator app. Spaces and casing do not matter.</p>
-            <div class="alert alert-info">To enable QR code generation please read our <a href="https://go.microsoft.com/fwlink/?Linkid=852423">documentation</a>.</div>
-            <div id="qrCode"></div>
-            <div id="qrCodeData" data-url="@Model.AuthenticatorUri"></div>
-        </li>
-        <li>
-            <p>
-                Once you have scanned the QR code or input the key above, your two factor authentication app will provide you
-                with a unique code. Enter the code in the confirmation box below.
-            </p>
-            <div class="row">
-                <div class="col-md-6">
-                    <form method="post">
-                        <div class="form-group">
-                            <label asp-for="Code" class="control-label">Verification Code</label>
-                            <input asp-for="Code" class="form-control" autocomplete="off" />
-                            <span asp-validation-for="Code" class="text-danger"></span>
-                        </div>
-                        <button type="submit" class="btn btn-default">Verify</button>
-                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-                    </form>
-                </div>
-            </div>
-        </li>
-    </ol>
-</div>
+using Microsoft.AspNetCore.Html;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Razor;
+using Microsoft.AspNetCore.Mvc.Razor.Internal;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.Mvc.TagHelpers;
+using Microsoft.AspNetCore.Mvc.ViewFeatures;
+using Microsoft.AspNetCore.Razor.Runtime.TagHelpers;
+using Microsoft.AspNetCore.Razor.TagHelpers;
+using System;
+using System.Linq.Expressions;
+using System.Text.Encodings.Web;
+using System.Threading.Tasks;
+using Traffic.Models.ManageViewModels;
+using Traffic.Views.Manage;
 
-@section Scripts {
-    @await Html.PartialAsync("_ValidationScriptsPartial")
+namespace AspNetCore
+{
+  public class _Views_Manage_EnableAuthenticator_cshtml : RazorPage<EnableAuthenticatorViewModel>
+  {
+    private static readonly TagHelperAttribute __tagHelperAttribute_0 = new TagHelperAttribute("class", (object) new HtmlString("control-label"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_1 = new TagHelperAttribute("class", (object) new HtmlString("form-control"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_2 = new TagHelperAttribute("autocomplete", (object) new HtmlString("off"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_3 = new TagHelperAttribute("class", (object) new HtmlString("text-danger"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_4 = new TagHelperAttribute("method", (object) "post", HtmlAttributeValueStyle.DoubleQuotes);
+    private string __tagHelperStringValueBuffer;
+    private TagHelperExecutionContext __tagHelperExecutionContext;
+    private TagHelperRunner __tagHelperRunner = new TagHelperRunner();
+    private TagHelperScopeManager __backed__tagHelperScopeManager;
+    private FormTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper;
+    private RenderAtEndOfFormTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper;
+    private LabelTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_LabelTagHelper;
+    private InputTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper;
+    private ValidationMessageTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper;
+    private ValidationSummaryTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_ValidationSummaryTagHelper;
+    private static readonly Expression<Func<EnableAuthenticatorViewModel, string>> __h0 = (Expression<Func<EnableAuthenticatorViewModel, string>>) (__model => __model.Code);
+    private static readonly Expression<Func<EnableAuthenticatorViewModel, string>> __h1 = (Expression<Func<EnableAuthenticatorViewModel, string>>) (__model => __model.Code);
+    private static readonly Expression<Func<EnableAuthenticatorViewModel, string>> __h2 = (Expression<Func<EnableAuthenticatorViewModel, string>>) (__model => __model.Code);
+
+    private TagHelperScopeManager __tagHelperScopeManager
+    {
+      get
+      {
+        if (this.__backed__tagHelperScopeManager == null)
+          this.__backed__tagHelperScopeManager = new TagHelperScopeManager(new Action<HtmlEncoder>(((RazorPageBase) this).StartTagHelperWritingScope), new Func<TagHelperContent>(((RazorPageBase) this).EndTagHelperWritingScope));
+        return this.__backed__tagHelperScopeManager;
+      }
+    }
+
+    public virtual async Task ExecuteAsync()
+    {
+      _Views_Manage_EnableAuthenticator_cshtml authenticatorCshtml = this;
+      authenticatorCshtml.ViewData["Title"] = (object) "Enable authenticator";
+      authenticatorCshtml.ViewData.AddActivePage(ManageNavPages.TwoFactorAuthentication);
+      authenticatorCshtml.BeginContext(162, 6, true);
+      authenticatorCshtml.WriteLiteral("\r\n<h4>");
+      authenticatorCshtml.EndContext();
+      authenticatorCshtml.BeginContext(169, 17, false);
+      authenticatorCshtml.Write(authenticatorCshtml.ViewData["Title"]);
+      authenticatorCshtml.EndContext();
+      authenticatorCshtml.BeginContext(186, 886, true);
+      authenticatorCshtml.WriteLiteral("</h4>\r\n<div>\r\n    <p>To use an authenticator app go through the following steps:</p>\r\n    <ol class=\"list\">\r\n        <li>\r\n            <p>\r\n                Download a two-factor authenticator app like Microsoft Authenticator for\r\n                <a href=\"https://go.microsoft.com/fwlink/?Linkid=825071\">Windows Phone</a>,\r\n                <a href=\"https://go.microsoft.com/fwlink/?Linkid=825072\">Android</a> and\r\n                <a href=\"https://go.microsoft.com/fwlink/?Linkid=825073\">iOS</a> or\r\n                Google Authenticator for\r\n                <a href=\"https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2&amp;hl=en\">Android</a> and\r\n                <a href=\"https://itunes.apple.com/us/app/google-authenticator/id388497605?mt=8\">iOS</a>.\r\n            </p>\r\n        </li>\r\n        <li>\r\n            <p>Scan the QR Code or enter this key <kbd>");
+      authenticatorCshtml.EndContext();
+      authenticatorCshtml.BeginContext(1073, 15, false);
+      authenticatorCshtml.Write(authenticatorCshtml.Model.SharedKey);
+      authenticatorCshtml.EndContext();
+      authenticatorCshtml.BeginContext(1088, 335, true);
+      authenticatorCshtml.WriteLiteral("</kbd> into your two factor authenticator app. Spaces and casing do not matter.</p>\r\n            <div class=\"alert alert-info\">To enable QR code generation please read our <a href=\"https://go.microsoft.com/fwlink/?Linkid=852423\">documentation</a>.</div>\r\n            <div id=\"qrCode\"></div>\r\n            <div id=\"qrCodeData\" data-url=\"");
+      authenticatorCshtml.EndContext();
+      authenticatorCshtml.BeginContext(1424, 22, false);
+      authenticatorCshtml.Write(authenticatorCshtml.Model.AuthenticatorUri);
+      authenticatorCshtml.EndContext();
+      authenticatorCshtml.BeginContext(1446, 375, true);
+      authenticatorCshtml.WriteLiteral("\"></div>\r\n        </li>\r\n        <li>\r\n            <p>\r\n                Once you have scanned the QR code or input the key above, your two factor authentication app will provide you\r\n                with a unique code. Enter the code in the confirmation box below.\r\n            </p>\r\n            <div class=\"row\">\r\n                <div class=\"col-md-6\">\r\n                    ");
+      authenticatorCshtml.EndContext();
+      authenticatorCshtml.BeginContext(1821, 592, false);
+      // ISSUE: reference to a compiler-generated method
+      authenticatorCshtml.__tagHelperExecutionContext = authenticatorCshtml.__tagHelperScopeManager.Begin("form", TagMode.StartTagAndEndTag, "a6026d7349f54525a147cb74d05b9534", new Func<Task>(authenticatorCshtml.\u003CExecuteAsync\u003Eb__17_0));
+      authenticatorCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper = authenticatorCshtml.CreateTagHelper<FormTagHelper>();
+      authenticatorCshtml.__tagHelperExecutionContext.Add((ITagHelper) authenticatorCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper);
+      authenticatorCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper = authenticatorCshtml.CreateTagHelper<RenderAtEndOfFormTagHelper>();
+      authenticatorCshtml.__tagHelperExecutionContext.Add((ITagHelper) authenticatorCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper);
+      authenticatorCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper.Method = (string) _Views_Manage_EnableAuthenticator_cshtml.__tagHelperAttribute_4.Value;
+      authenticatorCshtml.__tagHelperExecutionContext.AddTagHelperAttribute(_Views_Manage_EnableAuthenticator_cshtml.__tagHelperAttribute_4);
+      await authenticatorCshtml.__tagHelperRunner.RunAsync(authenticatorCshtml.__tagHelperExecutionContext);
+      if (!authenticatorCshtml.__tagHelperExecutionContext.Output.IsContentModified)
+        await authenticatorCshtml.__tagHelperExecutionContext.SetOutputContentAsync();
+      authenticatorCshtml.Write((object) authenticatorCshtml.__tagHelperExecutionContext.Output);
+      authenticatorCshtml.__tagHelperExecutionContext = authenticatorCshtml.__tagHelperScopeManager.End();
+      authenticatorCshtml.EndContext();
+      authenticatorCshtml.BeginContext(2413, 82, true);
+      authenticatorCshtml.WriteLiteral("\r\n                </div>\r\n            </div>\r\n        </li>\r\n    </ol>\r\n</div>\r\n\r\n");
+      authenticatorCshtml.EndContext();
+      // ISSUE: reference to a compiler-generated method
+      authenticatorCshtml.DefineSection("Scripts", new RenderAsyncDelegate(authenticatorCshtml.\u003CExecuteAsync\u003Eb__17_5));
+    }
+
+    [RazorInject]
+    public IModelExpressionProvider ModelExpressionProvider { get; private set; }
+
+    [RazorInject]
+    public IUrlHelper Url { get; private set; }
+
+    [RazorInject]
+    public IViewComponentHelper Component { get; private set; }
+
+    [RazorInject]
+    public IJsonHelper Json { get; private set; }
+
+    [RazorInject]
+    public IHtmlHelper<EnableAuthenticatorViewModel> Html { get; private set; }
+  }
 }

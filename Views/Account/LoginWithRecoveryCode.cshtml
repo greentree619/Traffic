@@ -1,28 +1,105 @@
-﻿@model LoginWithRecoveryCodeViewModel
-@{
-    ViewData["Title"] = "Recovery code verification";
-}
+﻿// Decompiled with JetBrains decompiler
+// Type: AspNetCore._Views_Account_LoginWithRecoveryCode_cshtml
+// Assembly: Traffic.PrecompiledViews, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+// MVID: 8B37BA40-0390-40A7-A536-D9CCDBC36390
+// Assembly location: D:\Workstation\TonniProjects\TrafficWebDeploy\Traffic.PrecompiledViews.dll
 
-<h2>@ViewData["Title"]</h2>
-<hr />
-<p>
-    You have requested to login with a recovery code. This login will not be remembered until you provide
-    an authenticator app code at login or disable 2FA and login again.
-</p>
-<div class="row">
-    <div class="col-md-4">
-        <form method="post">
-            <div asp-validation-summary="All" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="RecoveryCode"></label>
-                <input asp-for="RecoveryCode" class="form-control" autocomplete="off" />
-                <span asp-validation-for="RecoveryCode" class="text-danger"></span>
-            </div>
-            <button type="submit" class="btn btn-default">Log in</button>
-        </form>
-    </div>
-</div>
+using Microsoft.AspNetCore.Html;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Razor;
+using Microsoft.AspNetCore.Mvc.Razor.Internal;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.Mvc.TagHelpers;
+using Microsoft.AspNetCore.Mvc.ViewFeatures;
+using Microsoft.AspNetCore.Razor.Runtime.TagHelpers;
+using Microsoft.AspNetCore.Razor.TagHelpers;
+using System;
+using System.Linq.Expressions;
+using System.Text.Encodings.Web;
+using System.Threading.Tasks;
+using Traffic.Models.AccountViewModels;
 
-@section Scripts {
-    @await Html.PartialAsync("_ValidationScriptsPartial")
+namespace AspNetCore
+{
+  public class _Views_Account_LoginWithRecoveryCode_cshtml : 
+    RazorPage<LoginWithRecoveryCodeViewModel>
+  {
+    private static readonly TagHelperAttribute __tagHelperAttribute_0 = new TagHelperAttribute("class", (object) new HtmlString("text-danger"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_1 = new TagHelperAttribute("class", (object) new HtmlString("form-control"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_2 = new TagHelperAttribute("autocomplete", (object) new HtmlString("off"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_3 = new TagHelperAttribute("method", (object) "post", HtmlAttributeValueStyle.DoubleQuotes);
+    private string __tagHelperStringValueBuffer;
+    private TagHelperExecutionContext __tagHelperExecutionContext;
+    private TagHelperRunner __tagHelperRunner = new TagHelperRunner();
+    private TagHelperScopeManager __backed__tagHelperScopeManager;
+    private FormTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper;
+    private RenderAtEndOfFormTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper;
+    private ValidationSummaryTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_ValidationSummaryTagHelper;
+    private LabelTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_LabelTagHelper;
+    private InputTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper;
+    private ValidationMessageTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper;
+    private static readonly Expression<Func<LoginWithRecoveryCodeViewModel, string>> __h0 = (Expression<Func<LoginWithRecoveryCodeViewModel, string>>) (__model => __model.RecoveryCode);
+    private static readonly Expression<Func<LoginWithRecoveryCodeViewModel, string>> __h1 = (Expression<Func<LoginWithRecoveryCodeViewModel, string>>) (__model => __model.RecoveryCode);
+    private static readonly Expression<Func<LoginWithRecoveryCodeViewModel, string>> __h2 = (Expression<Func<LoginWithRecoveryCodeViewModel, string>>) (__model => __model.RecoveryCode);
+
+    private TagHelperScopeManager __tagHelperScopeManager
+    {
+      get
+      {
+        if (this.__backed__tagHelperScopeManager == null)
+          this.__backed__tagHelperScopeManager = new TagHelperScopeManager(new Action<HtmlEncoder>(((RazorPageBase) this).StartTagHelperWritingScope), new Func<TagHelperContent>(((RazorPageBase) this).EndTagHelperWritingScope));
+        return this.__backed__tagHelperScopeManager;
+      }
+    }
+
+    public virtual async Task ExecuteAsync()
+    {
+      _Views_Account_LoginWithRecoveryCode_cshtml recoveryCodeCshtml = this;
+      recoveryCodeCshtml.ViewData["Title"] = (object) "Recovery code verification";
+      recoveryCodeCshtml.BeginContext(101, 6, true);
+      recoveryCodeCshtml.WriteLiteral("\r\n<h2>");
+      recoveryCodeCshtml.EndContext();
+      recoveryCodeCshtml.BeginContext(108, 17, false);
+      recoveryCodeCshtml.Write(recoveryCodeCshtml.ViewData["Title"]);
+      recoveryCodeCshtml.EndContext();
+      recoveryCodeCshtml.BeginContext(125, 260, true);
+      recoveryCodeCshtml.WriteLiteral("</h2>\r\n<hr />\r\n<p>\r\n    You have requested to login with a recovery code. This login will not be remembered until you provide\r\n    an authenticator app code at login or disable 2FA and login again.\r\n</p>\r\n<div class=\"row\">\r\n    <div class=\"col-md-4\">\r\n        ");
+      recoveryCodeCshtml.EndContext();
+      recoveryCodeCshtml.BeginContext(385, 475, false);
+      // ISSUE: reference to a compiler-generated method
+      recoveryCodeCshtml.__tagHelperExecutionContext = recoveryCodeCshtml.__tagHelperScopeManager.Begin("form", TagMode.StartTagAndEndTag, "95a5561f992048529f4b631815f25442", new Func<Task>(recoveryCodeCshtml.\u003CExecuteAsync\u003Eb__16_0));
+      recoveryCodeCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper = recoveryCodeCshtml.CreateTagHelper<FormTagHelper>();
+      recoveryCodeCshtml.__tagHelperExecutionContext.Add((ITagHelper) recoveryCodeCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper);
+      recoveryCodeCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper = recoveryCodeCshtml.CreateTagHelper<RenderAtEndOfFormTagHelper>();
+      recoveryCodeCshtml.__tagHelperExecutionContext.Add((ITagHelper) recoveryCodeCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper);
+      recoveryCodeCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper.Method = (string) _Views_Account_LoginWithRecoveryCode_cshtml.__tagHelperAttribute_3.Value;
+      recoveryCodeCshtml.__tagHelperExecutionContext.AddTagHelperAttribute(_Views_Account_LoginWithRecoveryCode_cshtml.__tagHelperAttribute_3);
+      await recoveryCodeCshtml.__tagHelperRunner.RunAsync(recoveryCodeCshtml.__tagHelperExecutionContext);
+      if (!recoveryCodeCshtml.__tagHelperExecutionContext.Output.IsContentModified)
+        await recoveryCodeCshtml.__tagHelperExecutionContext.SetOutputContentAsync();
+      recoveryCodeCshtml.Write((object) recoveryCodeCshtml.__tagHelperExecutionContext.Output);
+      recoveryCodeCshtml.__tagHelperExecutionContext = recoveryCodeCshtml.__tagHelperScopeManager.End();
+      recoveryCodeCshtml.EndContext();
+      recoveryCodeCshtml.BeginContext(860, 24, true);
+      recoveryCodeCshtml.WriteLiteral("\r\n    </div>\r\n</div>\r\n\r\n");
+      recoveryCodeCshtml.EndContext();
+      // ISSUE: reference to a compiler-generated method
+      recoveryCodeCshtml.DefineSection("Scripts", new RenderAsyncDelegate(recoveryCodeCshtml.\u003CExecuteAsync\u003Eb__16_5));
+    }
+
+    [RazorInject]
+    public IModelExpressionProvider ModelExpressionProvider { get; private set; }
+
+    [RazorInject]
+    public IUrlHelper Url { get; private set; }
+
+    [RazorInject]
+    public IViewComponentHelper Component { get; private set; }
+
+    [RazorInject]
+    public IJsonHelper Json { get; private set; }
+
+    [RazorInject]
+    public IHtmlHelper<LoginWithRecoveryCodeViewModel> Html { get; private set; }
+  }
 }

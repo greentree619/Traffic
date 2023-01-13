@@ -1,0 +1,155 @@
+﻿// Decompiled with JetBrains decompiler
+// Type: AspNetCore._Views_Home_OverviewTool_cshtml
+// Assembly: Traffic.PrecompiledViews, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+// MVID: 8B37BA40-0390-40A7-A536-D9CCDBC36390
+// Assembly location: D:\Workstation\TonniProjects\TrafficWebDeploy\Traffic.PrecompiledViews.dll
+
+using Microsoft.AspNetCore.Html;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Razor;
+using Microsoft.AspNetCore.Mvc.Razor.Internal;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.Mvc.TagHelpers;
+using Microsoft.AspNetCore.Mvc.ViewFeatures;
+using Microsoft.AspNetCore.Razor.Runtime.TagHelpers;
+using Microsoft.AspNetCore.Razor.TagHelpers;
+using System;
+using System.Collections.Generic;
+using System.Linq.Expressions;
+using System.Text.Encodings.Web;
+using System.Threading.Tasks;
+using Traffic.Models;
+
+namespace AspNetCore
+{
+  public class _Views_Home_OverviewTool_cshtml : RazorPage<IEnumerable<overviewtool>>
+  {
+    private static readonly TagHelperAttribute __tagHelperAttribute_0 = new TagHelperAttribute("asp-action", (object) "OverLink", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_1 = new TagHelperAttribute("class", (object) new HtmlString("btn btn-success btn-xs"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_2 = new TagHelperAttribute("asp-action", (object) "DeleteToolProject", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_3 = new TagHelperAttribute("class", (object) new HtmlString("btn btn-danger btn-xs"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_4 = new TagHelperAttribute("onclick", (object) new HtmlString("return DeleteConfirm();"), HtmlAttributeValueStyle.DoubleQuotes);
+    private string __tagHelperStringValueBuffer;
+    private TagHelperExecutionContext __tagHelperExecutionContext;
+    private TagHelperRunner __tagHelperRunner = new TagHelperRunner();
+    private TagHelperScopeManager __backed__tagHelperScopeManager;
+    private AnchorTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper;
+
+    private TagHelperScopeManager __tagHelperScopeManager
+    {
+      get
+      {
+        if (this.__backed__tagHelperScopeManager == null)
+          this.__backed__tagHelperScopeManager = new TagHelperScopeManager(new Action<HtmlEncoder>(((RazorPageBase) this).StartTagHelperWritingScope), new Func<TagHelperContent>(((RazorPageBase) this).EndTagHelperWritingScope));
+        return this.__backed__tagHelperScopeManager;
+      }
+    }
+
+    public virtual async Task ExecuteAsync()
+    {
+      _Views_Home_OverviewTool_cshtml overviewToolCshtml = this;
+      overviewToolCshtml.ViewData["Title"] = (object) "Overview Tool";
+      // ISSUE: explicit non-virtual call
+      __nonvirtual (overviewToolCshtml.Layout) = "~/Views/Shared/_Layout.cshtml";
+      overviewToolCshtml.BeginContext(145, 697, true);
+      overviewToolCshtml.WriteLiteral("\r\n<h2>Website Link Overview Tool</h2>\r\n\r\n</br>\r\n\r\n<style>\r\n    .crop {\r\n        white-space: nowrap;\r\n        overflow: hidden;\r\n        text-overflow: ellipsis\r\n    }\r\n\r\n    .btn-disable {\r\n        cursor: not-allowed;\r\n        pointer-events: none;\r\n        /*Button disabled - CSS color class*/\r\n        color: #c0c0c0;\r\n        background-color: #ffffff;\r\n    }\r\n</style>\r\n<table class=\"table\">\r\n    <thead>\r\n        <tr>\r\n            <th style=\"width: 30%;text-align:center;\">\r\n                Project Name\r\n            </th>\r\n            <th style=\"width: 50%;text-align:center;\">\r\n                Url\r\n            </th>\r\n           \r\n            <th style=\"width: 20%;text-align:center;\">\r\n");
+      overviewToolCshtml.EndContext();
+      overviewToolCshtml.BeginContext(926, 150, true);
+      overviewToolCshtml.WriteLiteral("                <button class=\"btn btn-info\" id=\"btnCreateHtml\">Create Project</button>\r\n            </th>\r\n        </tr>\r\n    </thead>\r\n    <tbody>\r\n");
+      overviewToolCshtml.EndContext();
+      foreach (overviewtool overviewtool in overviewToolCshtml.Model)
+      {
+        overviewtool item = overviewtool;
+        overviewToolCshtml.BeginContext(1149, 136, true);
+        overviewToolCshtml.WriteLiteral("        <tr style=\"background-color:#ebeeef;\">\r\n            <td style=\"text-align:center;\">\r\n                <div>\r\n                    ");
+        overviewToolCshtml.EndContext();
+        overviewToolCshtml.BeginContext(1286, 46, false);
+        overviewToolCshtml.Write((object) overviewToolCshtml.Html.DisplayFor<IEnumerable<overviewtool>, string>((Expression<Func<IEnumerable<overviewtool>, string>>) (modelItem => item.projectname)));
+        overviewToolCshtml.EndContext();
+        overviewToolCshtml.BeginContext(1332, 146, true);
+        overviewToolCshtml.WriteLiteral("\r\n                </div>\r\n            </td>\r\n           \r\n            <td style=\"text-align:center;\">\r\n                <div>\r\n                    ");
+        overviewToolCshtml.EndContext();
+        overviewToolCshtml.BeginContext(1479, 9, false);
+        overviewToolCshtml.Write(item.href);
+        overviewToolCshtml.EndContext();
+        overviewToolCshtml.BeginContext(1488, 162, true);
+        overviewToolCshtml.WriteLiteral("\r\n                </div>\r\n            </td>\r\n            <td style=\"text-align:center;\">\r\n                <div style=\"white-space: nowrap;\">\r\n                    ");
+        overviewToolCshtml.EndContext();
+        overviewToolCshtml.BeginContext(1650, 89, false);
+        // ISSUE: reference to a compiler-generated method
+        overviewToolCshtml.__tagHelperExecutionContext = overviewToolCshtml.__tagHelperScopeManager.Begin("a", TagMode.StartTagAndEndTag, "3d7723a3c8254609bab52e20ec2c3a22", new Func<Task>(overviewToolCshtml.\u003CExecuteAsync\u003Eb__12_0));
+        overviewToolCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper = overviewToolCshtml.CreateTagHelper<AnchorTagHelper>();
+        overviewToolCshtml.__tagHelperExecutionContext.Add((ITagHelper) overviewToolCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper);
+        overviewToolCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.Action = (string) _Views_Home_OverviewTool_cshtml.__tagHelperAttribute_0.Value;
+        overviewToolCshtml.__tagHelperExecutionContext.AddTagHelperAttribute(_Views_Home_OverviewTool_cshtml.__tagHelperAttribute_0);
+        if (overviewToolCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues == null)
+          throw new InvalidOperationException(overviewToolCshtml.InvalidTagHelperIndexerAssignment("asp-route-id", "Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper", "RouteValues"));
+        overviewToolCshtml.BeginWriteTagHelperAttribute();
+        overviewToolCshtml.WriteLiteral((object) item.id);
+        overviewToolCshtml.__tagHelperStringValueBuffer = overviewToolCshtml.EndWriteTagHelperAttribute();
+        overviewToolCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues["id"] = overviewToolCshtml.__tagHelperStringValueBuffer;
+        overviewToolCshtml.__tagHelperExecutionContext.AddTagHelperAttribute("asp-route-id", (object) overviewToolCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues["id"], HtmlAttributeValueStyle.DoubleQuotes);
+        overviewToolCshtml.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_OverviewTool_cshtml.__tagHelperAttribute_1);
+        await overviewToolCshtml.__tagHelperRunner.RunAsync(overviewToolCshtml.__tagHelperExecutionContext);
+        if (!overviewToolCshtml.__tagHelperExecutionContext.Output.IsContentModified)
+          await overviewToolCshtml.__tagHelperExecutionContext.SetOutputContentAsync();
+        overviewToolCshtml.Write((object) overviewToolCshtml.__tagHelperExecutionContext.Output);
+        overviewToolCshtml.__tagHelperExecutionContext = overviewToolCshtml.__tagHelperScopeManager.End();
+        overviewToolCshtml.EndContext();
+        overviewToolCshtml.BeginContext(1739, 22, true);
+        overviewToolCshtml.WriteLiteral("\r\n                    ");
+        overviewToolCshtml.EndContext();
+        overviewToolCshtml.BeginContext(1761, 132, false);
+        // ISSUE: reference to a compiler-generated method
+        overviewToolCshtml.__tagHelperExecutionContext = overviewToolCshtml.__tagHelperScopeManager.Begin("a", TagMode.StartTagAndEndTag, "1dd8ef95520d43b5a073a2d09e35c662", new Func<Task>(overviewToolCshtml.\u003CExecuteAsync\u003Eb__12_1));
+        overviewToolCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper = overviewToolCshtml.CreateTagHelper<AnchorTagHelper>();
+        overviewToolCshtml.__tagHelperExecutionContext.Add((ITagHelper) overviewToolCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper);
+        overviewToolCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.Action = (string) _Views_Home_OverviewTool_cshtml.__tagHelperAttribute_2.Value;
+        overviewToolCshtml.__tagHelperExecutionContext.AddTagHelperAttribute(_Views_Home_OverviewTool_cshtml.__tagHelperAttribute_2);
+        if (overviewToolCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues == null)
+          throw new InvalidOperationException(overviewToolCshtml.InvalidTagHelperIndexerAssignment("asp-route-id", "Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper", "RouteValues"));
+        overviewToolCshtml.BeginWriteTagHelperAttribute();
+        overviewToolCshtml.WriteLiteral((object) item.id);
+        overviewToolCshtml.__tagHelperStringValueBuffer = overviewToolCshtml.EndWriteTagHelperAttribute();
+        overviewToolCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues["id"] = overviewToolCshtml.__tagHelperStringValueBuffer;
+        overviewToolCshtml.__tagHelperExecutionContext.AddTagHelperAttribute("asp-route-id", (object) overviewToolCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues["id"], HtmlAttributeValueStyle.DoubleQuotes);
+        overviewToolCshtml.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_OverviewTool_cshtml.__tagHelperAttribute_3);
+        overviewToolCshtml.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_OverviewTool_cshtml.__tagHelperAttribute_4);
+        await overviewToolCshtml.__tagHelperRunner.RunAsync(overviewToolCshtml.__tagHelperExecutionContext);
+        if (!overviewToolCshtml.__tagHelperExecutionContext.Output.IsContentModified)
+          await overviewToolCshtml.__tagHelperExecutionContext.SetOutputContentAsync();
+        overviewToolCshtml.Write((object) overviewToolCshtml.__tagHelperExecutionContext.Output);
+        overviewToolCshtml.__tagHelperExecutionContext = overviewToolCshtml.__tagHelperScopeManager.End();
+        overviewToolCshtml.EndContext();
+        overviewToolCshtml.BeginContext(1893, 60, true);
+        overviewToolCshtml.WriteLiteral("\r\n                </div>\r\n            </td>\r\n        </tr>\r\n");
+        overviewToolCshtml.EndContext();
+      }
+      overviewToolCshtml.BeginContext(1966, 2011, true);
+      overviewToolCshtml.WriteLiteral("    </tbody>\r\n</table>\r\n\r\n<div id=\"AddModal\" class=\"modal fade\" tabindex=\"-1\" role=\"dialog\" aria-hidden=\"true\">\r\n    <div class=\"modal-dialog\" >\r\n        <div class=\"modal-content\">\r\n            <div class=\"modal-header\">\r\n                <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\">\r\n                    <span aria-hidden=\"true\">×</span>\r\n                </button>\r\n                <h4 class=\"modal-title\">Create Project</h4>\r\n            </div>\r\n\r\n            <div class=\"modal-body\">\r\n\r\n                <div class=\"form-horizontal form-label-left\">\r\n\r\n                    <div class=\"form-group\">\r\n                        <label class=\"control-label col-md-3 col-sm-3 col-xs-12\">Project Name : </label>\r\n                        <div class=\"col-md-8 col-sm-8 col-xs-12\">\r\n                            <input id=\"projectname\" type=\"text\" name=\"projectname\" value=\"\" style=\"margin-top:5px\" />\r\n                        </div>\r\n                    </div>\r\n\r\n                    <div class=\"form-");
+      overviewToolCshtml.WriteLiteral("group\">\r\n                        <label class=\"control-label col-md-3 col-sm-3 col-xs-12\">Main Link : </label>\r\n                        <div class=\"col-md-8 col-sm-8 col-xs-12\">\r\n                            <input id=\"mainUrl\" type=\"text\" name=\"mainUrl\" value=\"\" style=\"margin-top:5px\" />\r\n                        </div>\r\n                    </div>\r\n\r\n                </div>\r\n            </div>\r\n            <div class=\"modal-footer\">\r\n                <button type=\"button\" class=\"btn btn-default\" OnClick=\"btnCreateJob()\" data-dismiss=\"modal\">OK</button>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n<script>\r\n    function DeleteConfirm() {\r\n        return confirm(\"Are you going to delete user really?\");\r\n    }\r\n\r\n    $(\"#btnCreateHtml\").click(function () {\r\n        $(\"#AddModal\").modal();\r\n    });\r\n    function DeleteConfirm() {\r\n        return confirm(\"Are you going to delete user really?\");\r\n    }\r\n    function btnCreateJob() {\r\n        $.ajax({\r\n            url: '");
+      overviewToolCshtml.EndContext();
+      overviewToolCshtml.BeginContext(3978, 39, false);
+      overviewToolCshtml.Write(UrlHelperExtensions.Action(overviewToolCshtml.Url, "CreateToolProject", "Home"));
+      overviewToolCshtml.EndContext();
+      overviewToolCshtml.BeginContext(4017, 810, true);
+      overviewToolCshtml.WriteLiteral("',\r\n            contentType: 'application/x-www-form-urlencoded',\r\n            type: 'POST',\r\n            data: { projectname: $(\"#projectname\").val(), parentId: 0, href: $(\"#mainUrl\").val() },\r\n            success: function (data) {\r\n                data = jQuery.parseJSON(data);\r\n                if (data[\"data\"] == \"success\") {\r\n                    location.reload();\r\n                }\r\n                else if (data[\"data\"]  == \"already\") {\r\n                    alert(\"Job name already exists\")\r\n                }\r\n                else\r\n                    alert(\"server connect error ! \"); \r\n            },\r\n            error: function (XMLHttpRequest, textStatus, errorThrown) {\r\n                alert(\"server connect error ! \");\r\n                return;\r\n            }\r\n        });\r\n    }\r\n</script>\r\n");
+      overviewToolCshtml.EndContext();
+    }
+
+    [RazorInject]
+    public IModelExpressionProvider ModelExpressionProvider { get; private set; }
+
+    [RazorInject]
+    public IUrlHelper Url { get; private set; }
+
+    [RazorInject]
+    public IViewComponentHelper Component { get; private set; }
+
+    [RazorInject]
+    public IJsonHelper Json { get; private set; }
+
+    [RazorInject]
+    public IHtmlHelper<IEnumerable<overviewtool>> Html { get; private set; }
+  }
+}

@@ -1,8 +1,48 @@
-﻿@{
-    ViewData["Title"] = "Locked out";
-}
+﻿// Decompiled with JetBrains decompiler
+// Type: AspNetCore._Views_Account_Lockout_cshtml
+// Assembly: Traffic.PrecompiledViews, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+// MVID: 8B37BA40-0390-40A7-A536-D9CCDBC36390
+// Assembly location: D:\Workstation\TonniProjects\TrafficWebDeploy\Traffic.PrecompiledViews.dll
 
-<header>
-    <h2 class="text-danger">@ViewData["Title"]</h2>
-    <p class="text-danger">This account has been locked out, please try again later.</p>
-</header>
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Razor;
+using Microsoft.AspNetCore.Mvc.Razor.Internal;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.Mvc.ViewFeatures;
+using System.Threading.Tasks;
+
+namespace AspNetCore
+{
+  public class _Views_Account_Lockout_cshtml : RazorPage<object>
+  {
+    public virtual async Task ExecuteAsync()
+    {
+      _Views_Account_Lockout_cshtml accountLockoutCshtml = this;
+      accountLockoutCshtml.ViewData["Title"] = (object) "Locked out";
+      accountLockoutCshtml.BeginContext(46, 40, true);
+      accountLockoutCshtml.WriteLiteral("\r\n<header>\r\n    <h2 class=\"text-danger\">");
+      accountLockoutCshtml.EndContext();
+      accountLockoutCshtml.BeginContext(87, 17, false);
+      accountLockoutCshtml.Write(accountLockoutCshtml.ViewData["Title"]);
+      accountLockoutCshtml.EndContext();
+      accountLockoutCshtml.BeginContext(104, 108, true);
+      accountLockoutCshtml.WriteLiteral("</h2>\r\n    <p class=\"text-danger\">This account has been locked out, please try again later.</p>\r\n</header>\r\n");
+      accountLockoutCshtml.EndContext();
+    }
+
+    [RazorInject]
+    public IModelExpressionProvider ModelExpressionProvider { get; private set; }
+
+    [RazorInject]
+    public IUrlHelper Url { get; private set; }
+
+    [RazorInject]
+    public IViewComponentHelper Component { get; private set; }
+
+    [RazorInject]
+    public IJsonHelper Json { get; private set; }
+
+    [RazorInject]
+    public IHtmlHelper<object> Html { get; private set; }
+  }
+}

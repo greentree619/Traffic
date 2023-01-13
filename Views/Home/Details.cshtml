@@ -1,71 +1,291 @@
-﻿@model Traffic.Models.trafficjob
+﻿// Decompiled with JetBrains decompiler
+// Type: AspNetCore._Views_Home_Details_cshtml
+// Assembly: Traffic.PrecompiledViews, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+// MVID: 8B37BA40-0390-40A7-A536-D9CCDBC36390
+// Assembly location: D:\Workstation\TonniProjects\TrafficWebDeploy\Traffic.PrecompiledViews.dll
 
-@{
-    ViewData["Title"] = "Details";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+using Microsoft.AspNetCore.Html;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Razor;
+using Microsoft.AspNetCore.Mvc.Razor.Internal;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.Mvc.TagHelpers;
+using Microsoft.AspNetCore.Mvc.ViewFeatures;
+using Microsoft.AspNetCore.Razor.Runtime.TagHelpers;
+using Microsoft.AspNetCore.Razor.TagHelpers;
+using System;
+using System.Linq.Expressions;
+using System.Text.Encodings.Web;
+using System.Threading.Tasks;
+using Traffic.Models;
+
+namespace AspNetCore
+{
+  public class _Views_Home_Details_cshtml : RazorPage<trafficjob>
+  {
+    private static readonly TagHelperAttribute __tagHelperAttribute_0 = new TagHelperAttribute("asp-action", (object) "Edit", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_1 = new TagHelperAttribute("class", (object) new HtmlString("btn btn-success"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_2 = new TagHelperAttribute("asp-action", (object) "Jobs", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_3 = new TagHelperAttribute("class", (object) new HtmlString("btn btn-primary"), HtmlAttributeValueStyle.DoubleQuotes);
+    private string __tagHelperStringValueBuffer;
+    private TagHelperExecutionContext __tagHelperExecutionContext;
+    private TagHelperRunner __tagHelperRunner = new TagHelperRunner();
+    private TagHelperScopeManager __backed__tagHelperScopeManager;
+    private AnchorTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper;
+    private static readonly Expression<Func<trafficjob, string>> __h0 = (Expression<Func<trafficjob, string>>) (model => model.job_name);
+    private static readonly Expression<Func<trafficjob, string>> __h1 = (Expression<Func<trafficjob, string>>) (model => model.job_name);
+    private static readonly Expression<Func<trafficjob, string>> __h2 = (Expression<Func<trafficjob, string>>) (model => model.journey_option);
+    private static readonly Expression<Func<trafficjob, string>> __h3 = (Expression<Func<trafficjob, string>>) (model => model.journey_option);
+    private static readonly Expression<Func<trafficjob, string>> __h4 = (Expression<Func<trafficjob, string>>) (model => model.target_url);
+    private static readonly Expression<Func<trafficjob, string>> __h5 = (Expression<Func<trafficjob, string>>) (model => model.target_url);
+    private static readonly Expression<Func<trafficjob, bool>> __h6 = (Expression<Func<trafficjob, bool>>) (model => model.wild_card);
+    private static readonly Expression<Func<trafficjob, bool>> __h7 = (Expression<Func<trafficjob, bool>>) (model => model.wild_card);
+    private static readonly Expression<Func<trafficjob, string>> __h8 = (Expression<Func<trafficjob, string>>) (model => model.exttarget_url);
+    private static readonly Expression<Func<trafficjob, string>> __h9 = (Expression<Func<trafficjob, string>>) (model => model.exttarget_url);
+    private static readonly Expression<Func<trafficjob, string>> __h10 = (Expression<Func<trafficjob, string>>) (model => model.name_business);
+    private static readonly Expression<Func<trafficjob, string>> __h11 = (Expression<Func<trafficjob, string>>) (model => model.name_business);
+    private static readonly Expression<Func<trafficjob, string>> __h12 = (Expression<Func<trafficjob, string>>) (model => model.search_term);
+    private static readonly Expression<Func<trafficjob, string>> __h13 = (Expression<Func<trafficjob, string>>) (model => model.search_term);
+    private static readonly Expression<Func<trafficjob, trafficjob.SEARCH_ENGINE>> __h14 = (Expression<Func<trafficjob, trafficjob.SEARCH_ENGINE>>) (model => model.search_engine);
+    private static readonly Expression<Func<trafficjob, trafficjob.SEARCH_ENGINE>> __h15 = (Expression<Func<trafficjob, trafficjob.SEARCH_ENGINE>>) (model => model.search_engine);
+    private static readonly Expression<Func<trafficjob, trafficjob.AGENT_KIND>> __h16 = (Expression<Func<trafficjob, trafficjob.AGENT_KIND>>) (model => model.agent_kind);
+    private static readonly Expression<Func<trafficjob, trafficjob.AGENT_KIND>> __h17 = (Expression<Func<trafficjob, trafficjob.AGENT_KIND>>) (model => model.agent_kind);
+    private static readonly Expression<Func<trafficjob, int>> __h18 = (Expression<Func<trafficjob, int>>) (model => model.session_count);
+    private static readonly Expression<Func<trafficjob, int>> __h19 = (Expression<Func<trafficjob, int>>) (model => model.session_count);
+    private static readonly Expression<Func<trafficjob, string>> __h20 = (Expression<Func<trafficjob, string>>) (model => model.journey_url);
+    private static readonly Expression<Func<trafficjob, string>> __h21 = (Expression<Func<trafficjob, string>>) (model => model.journey_url);
+    private static readonly Expression<Func<trafficjob, string>> __h22 = (Expression<Func<trafficjob, string>>) (model => model.form_fields);
+    private static readonly Expression<Func<trafficjob, string>> __h23 = (Expression<Func<trafficjob, string>>) (model => model.form_fields);
+
+    private TagHelperScopeManager __tagHelperScopeManager
+    {
+      get
+      {
+        if (this.__backed__tagHelperScopeManager == null)
+          this.__backed__tagHelperScopeManager = new TagHelperScopeManager(new Action<HtmlEncoder>(((RazorPageBase) this).StartTagHelperWritingScope), new Func<TagHelperContent>(((RazorPageBase) this).EndTagHelperWritingScope));
+        return this.__backed__tagHelperScopeManager;
+      }
+    }
+
+    public virtual async Task ExecuteAsync()
+    {
+      _Views_Home_Details_cshtml homeDetailsCshtml = this;
+      homeDetailsCshtml.BeginContext(34, 2, true);
+      homeDetailsCshtml.WriteLiteral("\r\n");
+      homeDetailsCshtml.EndContext();
+      homeDetailsCshtml.ViewData["Title"] = (object) "Details";
+      // ISSUE: explicit non-virtual call
+      __nonvirtual (homeDetailsCshtml.Layout) = "~/Views/Shared/_Layout.cshtml";
+      homeDetailsCshtml.BeginContext(126, 111, true);
+      homeDetailsCshtml.WriteLiteral("\r\n<h2>Traffic Job Details</h2>\r\n\r\n<div>\r\n    <hr />\r\n    <dl class=\"dl-horizontal\">\r\n        <dt>\r\n            ");
+      homeDetailsCshtml.EndContext();
+      homeDetailsCshtml.BeginContext(238, 44, false);
+      homeDetailsCshtml.Write(homeDetailsCshtml.Html.DisplayNameFor<string>(_Views_Home_Details_cshtml.__h0));
+      homeDetailsCshtml.EndContext();
+      homeDetailsCshtml.BeginContext(282, 43, true);
+      homeDetailsCshtml.WriteLiteral("\r\n        </dt>\r\n        <dd>\r\n            ");
+      homeDetailsCshtml.EndContext();
+      homeDetailsCshtml.BeginContext(326, 40, false);
+      homeDetailsCshtml.Write((object) homeDetailsCshtml.Html.DisplayFor<trafficjob, string>(_Views_Home_Details_cshtml.__h1));
+      homeDetailsCshtml.EndContext();
+      homeDetailsCshtml.BeginContext(366, 43, true);
+      homeDetailsCshtml.WriteLiteral("\r\n        </dd>\r\n        <dt>\r\n            ");
+      homeDetailsCshtml.EndContext();
+      homeDetailsCshtml.BeginContext(410, 50, false);
+      homeDetailsCshtml.Write(homeDetailsCshtml.Html.DisplayNameFor<string>(_Views_Home_Details_cshtml.__h2));
+      homeDetailsCshtml.EndContext();
+      homeDetailsCshtml.BeginContext(460, 43, true);
+      homeDetailsCshtml.WriteLiteral("\r\n        </dt>\r\n        <dd>\r\n            ");
+      homeDetailsCshtml.EndContext();
+      homeDetailsCshtml.BeginContext(504, 46, false);
+      homeDetailsCshtml.Write((object) homeDetailsCshtml.Html.DisplayFor<trafficjob, string>(_Views_Home_Details_cshtml.__h3));
+      homeDetailsCshtml.EndContext();
+      homeDetailsCshtml.BeginContext(550, 43, true);
+      homeDetailsCshtml.WriteLiteral("\r\n        </dd>\r\n        <dt>\r\n            ");
+      homeDetailsCshtml.EndContext();
+      homeDetailsCshtml.BeginContext(594, 46, false);
+      homeDetailsCshtml.Write(homeDetailsCshtml.Html.DisplayNameFor<string>(_Views_Home_Details_cshtml.__h4));
+      homeDetailsCshtml.EndContext();
+      homeDetailsCshtml.BeginContext(640, 43, true);
+      homeDetailsCshtml.WriteLiteral("\r\n        </dt>\r\n        <dd>\r\n            ");
+      homeDetailsCshtml.EndContext();
+      homeDetailsCshtml.BeginContext(684, 42, false);
+      homeDetailsCshtml.Write((object) homeDetailsCshtml.Html.DisplayFor<trafficjob, string>(_Views_Home_Details_cshtml.__h5));
+      homeDetailsCshtml.EndContext();
+      homeDetailsCshtml.BeginContext(726, 43, true);
+      homeDetailsCshtml.WriteLiteral("\r\n        </dd>\r\n        <dt>\r\n            ");
+      homeDetailsCshtml.EndContext();
+      homeDetailsCshtml.BeginContext(770, 45, false);
+      homeDetailsCshtml.Write(homeDetailsCshtml.Html.DisplayNameFor<bool>(_Views_Home_Details_cshtml.__h6));
+      homeDetailsCshtml.EndContext();
+      homeDetailsCshtml.BeginContext(815, 43, true);
+      homeDetailsCshtml.WriteLiteral("\r\n        </dt>\r\n        <dd>\r\n            ");
+      homeDetailsCshtml.EndContext();
+      homeDetailsCshtml.BeginContext(859, 41, false);
+      homeDetailsCshtml.Write((object) homeDetailsCshtml.Html.DisplayFor<trafficjob, bool>(_Views_Home_Details_cshtml.__h7));
+      homeDetailsCshtml.EndContext();
+      homeDetailsCshtml.BeginContext(900, 43, true);
+      homeDetailsCshtml.WriteLiteral("\r\n        </dd>\r\n        <dt>\r\n            ");
+      homeDetailsCshtml.EndContext();
+      homeDetailsCshtml.BeginContext(944, 49, false);
+      homeDetailsCshtml.Write(homeDetailsCshtml.Html.DisplayNameFor<string>(_Views_Home_Details_cshtml.__h8));
+      homeDetailsCshtml.EndContext();
+      homeDetailsCshtml.BeginContext(993, 43, true);
+      homeDetailsCshtml.WriteLiteral("\r\n        </dt>\r\n        <dd>\r\n            ");
+      homeDetailsCshtml.EndContext();
+      homeDetailsCshtml.BeginContext(1037, 45, false);
+      homeDetailsCshtml.Write((object) homeDetailsCshtml.Html.DisplayFor<trafficjob, string>(_Views_Home_Details_cshtml.__h9));
+      homeDetailsCshtml.EndContext();
+      homeDetailsCshtml.BeginContext(1082, 43, true);
+      homeDetailsCshtml.WriteLiteral("\r\n        </dd>\r\n        <dt>\r\n            ");
+      homeDetailsCshtml.EndContext();
+      homeDetailsCshtml.BeginContext(1126, 49, false);
+      homeDetailsCshtml.Write(homeDetailsCshtml.Html.DisplayNameFor<string>(_Views_Home_Details_cshtml.__h10));
+      homeDetailsCshtml.EndContext();
+      homeDetailsCshtml.BeginContext(1175, 43, true);
+      homeDetailsCshtml.WriteLiteral("\r\n        </dt>\r\n        <dd>\r\n            ");
+      homeDetailsCshtml.EndContext();
+      homeDetailsCshtml.BeginContext(1219, 45, false);
+      homeDetailsCshtml.Write((object) homeDetailsCshtml.Html.DisplayFor<trafficjob, string>(_Views_Home_Details_cshtml.__h11));
+      homeDetailsCshtml.EndContext();
+      homeDetailsCshtml.BeginContext(1264, 43, true);
+      homeDetailsCshtml.WriteLiteral("\r\n        </dd>\r\n        <dt>\r\n            ");
+      homeDetailsCshtml.EndContext();
+      homeDetailsCshtml.BeginContext(1308, 47, false);
+      homeDetailsCshtml.Write(homeDetailsCshtml.Html.DisplayNameFor<string>(_Views_Home_Details_cshtml.__h12));
+      homeDetailsCshtml.EndContext();
+      homeDetailsCshtml.BeginContext(1355, 43, true);
+      homeDetailsCshtml.WriteLiteral("\r\n        </dt>\r\n        <dd>\r\n            ");
+      homeDetailsCshtml.EndContext();
+      homeDetailsCshtml.BeginContext(1399, 43, false);
+      homeDetailsCshtml.Write((object) homeDetailsCshtml.Html.DisplayFor<trafficjob, string>(_Views_Home_Details_cshtml.__h13));
+      homeDetailsCshtml.EndContext();
+      homeDetailsCshtml.BeginContext(1442, 43, true);
+      homeDetailsCshtml.WriteLiteral("\r\n        </dd>\r\n        <dt>\r\n            ");
+      homeDetailsCshtml.EndContext();
+      homeDetailsCshtml.BeginContext(1486, 49, false);
+      homeDetailsCshtml.Write(homeDetailsCshtml.Html.DisplayNameFor<trafficjob.SEARCH_ENGINE>(_Views_Home_Details_cshtml.__h14));
+      homeDetailsCshtml.EndContext();
+      homeDetailsCshtml.BeginContext(1535, 43, true);
+      homeDetailsCshtml.WriteLiteral("\r\n        </dt>\r\n        <dd>\r\n            ");
+      homeDetailsCshtml.EndContext();
+      homeDetailsCshtml.BeginContext(1579, 45, false);
+      homeDetailsCshtml.Write((object) homeDetailsCshtml.Html.DisplayFor<trafficjob, trafficjob.SEARCH_ENGINE>(_Views_Home_Details_cshtml.__h15));
+      homeDetailsCshtml.EndContext();
+      homeDetailsCshtml.BeginContext(1624, 43, true);
+      homeDetailsCshtml.WriteLiteral("\r\n        </dd>\r\n        <dt>\r\n            ");
+      homeDetailsCshtml.EndContext();
+      homeDetailsCshtml.BeginContext(1668, 46, false);
+      homeDetailsCshtml.Write(homeDetailsCshtml.Html.DisplayNameFor<trafficjob.AGENT_KIND>(_Views_Home_Details_cshtml.__h16));
+      homeDetailsCshtml.EndContext();
+      homeDetailsCshtml.BeginContext(1714, 43, true);
+      homeDetailsCshtml.WriteLiteral("\r\n        </dt>\r\n        <dd>\r\n            ");
+      homeDetailsCshtml.EndContext();
+      homeDetailsCshtml.BeginContext(1758, 42, false);
+      homeDetailsCshtml.Write((object) homeDetailsCshtml.Html.DisplayFor<trafficjob, trafficjob.AGENT_KIND>(_Views_Home_Details_cshtml.__h17));
+      homeDetailsCshtml.EndContext();
+      homeDetailsCshtml.BeginContext(1800, 43, true);
+      homeDetailsCshtml.WriteLiteral("\r\n        </dd>\r\n        <dt>\r\n            ");
+      homeDetailsCshtml.EndContext();
+      homeDetailsCshtml.BeginContext(1844, 49, false);
+      homeDetailsCshtml.Write(homeDetailsCshtml.Html.DisplayNameFor<int>(_Views_Home_Details_cshtml.__h18));
+      homeDetailsCshtml.EndContext();
+      homeDetailsCshtml.BeginContext(1893, 43, true);
+      homeDetailsCshtml.WriteLiteral("\r\n        </dt>\r\n        <dd>\r\n            ");
+      homeDetailsCshtml.EndContext();
+      homeDetailsCshtml.BeginContext(1937, 45, false);
+      homeDetailsCshtml.Write((object) homeDetailsCshtml.Html.DisplayFor<trafficjob, int>(_Views_Home_Details_cshtml.__h19));
+      homeDetailsCshtml.EndContext();
+      homeDetailsCshtml.BeginContext(1982, 59, true);
+      homeDetailsCshtml.WriteLiteral("\r\n        </dd>\r\n        <hr />\r\n        <dt>\r\n            ");
+      homeDetailsCshtml.EndContext();
+      homeDetailsCshtml.BeginContext(2042, 47, false);
+      homeDetailsCshtml.Write(homeDetailsCshtml.Html.DisplayNameFor<string>(_Views_Home_Details_cshtml.__h20));
+      homeDetailsCshtml.EndContext();
+      homeDetailsCshtml.BeginContext(2089, 43, true);
+      homeDetailsCshtml.WriteLiteral("\r\n        </dt>\r\n        <dd>\r\n            ");
+      homeDetailsCshtml.EndContext();
+      homeDetailsCshtml.BeginContext(2133, 43, false);
+      homeDetailsCshtml.Write((object) homeDetailsCshtml.Html.DisplayFor<trafficjob, string>(_Views_Home_Details_cshtml.__h21));
+      homeDetailsCshtml.EndContext();
+      homeDetailsCshtml.BeginContext(2176, 43, true);
+      homeDetailsCshtml.WriteLiteral("\r\n        </dd>\r\n        <dt>\r\n            ");
+      homeDetailsCshtml.EndContext();
+      homeDetailsCshtml.BeginContext(2220, 47, false);
+      homeDetailsCshtml.Write(homeDetailsCshtml.Html.DisplayNameFor<string>(_Views_Home_Details_cshtml.__h22));
+      homeDetailsCshtml.EndContext();
+      homeDetailsCshtml.BeginContext(2267, 43, true);
+      homeDetailsCshtml.WriteLiteral("\r\n        </dt>\r\n        <dd>\r\n            ");
+      homeDetailsCshtml.EndContext();
+      homeDetailsCshtml.BeginContext(2311, 43, false);
+      homeDetailsCshtml.Write((object) homeDetailsCshtml.Html.DisplayFor<trafficjob, string>(_Views_Home_Details_cshtml.__h23));
+      homeDetailsCshtml.EndContext();
+      homeDetailsCshtml.BeginContext(2354, 106, true);
+      homeDetailsCshtml.WriteLiteral("\r\n        </dd>\r\n        <hr />\r\n        <dt>\r\n        </dt>\r\n        <dd>\r\n            <br>\r\n            ");
+      homeDetailsCshtml.EndContext();
+      homeDetailsCshtml.BeginContext(2460, 78, false);
+      // ISSUE: reference to a compiler-generated method
+      homeDetailsCshtml.__tagHelperExecutionContext = homeDetailsCshtml.__tagHelperScopeManager.Begin("a", TagMode.StartTagAndEndTag, "4bdf5a3953ad4e668b91fa47c7f831db", new Func<Task>(homeDetailsCshtml.\u003CExecuteAsync\u003Eb__11_0));
+      homeDetailsCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper = homeDetailsCshtml.CreateTagHelper<AnchorTagHelper>();
+      homeDetailsCshtml.__tagHelperExecutionContext.Add((ITagHelper) homeDetailsCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper);
+      homeDetailsCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.Action = (string) _Views_Home_Details_cshtml.__tagHelperAttribute_0.Value;
+      homeDetailsCshtml.__tagHelperExecutionContext.AddTagHelperAttribute(_Views_Home_Details_cshtml.__tagHelperAttribute_0);
+      if (homeDetailsCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues == null)
+        throw new InvalidOperationException(homeDetailsCshtml.InvalidTagHelperIndexerAssignment("asp-route-id", "Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper", "RouteValues"));
+      homeDetailsCshtml.BeginWriteTagHelperAttribute();
+      homeDetailsCshtml.WriteLiteral((object) homeDetailsCshtml.Model.id);
+      homeDetailsCshtml.__tagHelperStringValueBuffer = homeDetailsCshtml.EndWriteTagHelperAttribute();
+      homeDetailsCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues["id"] = homeDetailsCshtml.__tagHelperStringValueBuffer;
+      homeDetailsCshtml.__tagHelperExecutionContext.AddTagHelperAttribute("asp-route-id", (object) homeDetailsCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues["id"], HtmlAttributeValueStyle.DoubleQuotes);
+      homeDetailsCshtml.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_Details_cshtml.__tagHelperAttribute_1);
+      await homeDetailsCshtml.__tagHelperRunner.RunAsync(homeDetailsCshtml.__tagHelperExecutionContext);
+      if (!homeDetailsCshtml.__tagHelperExecutionContext.Output.IsContentModified)
+        await homeDetailsCshtml.__tagHelperExecutionContext.SetOutputContentAsync();
+      homeDetailsCshtml.Write((object) homeDetailsCshtml.__tagHelperExecutionContext.Output);
+      homeDetailsCshtml.__tagHelperExecutionContext = homeDetailsCshtml.__tagHelperScopeManager.End();
+      homeDetailsCshtml.EndContext();
+      homeDetailsCshtml.BeginContext(2538, 14, true);
+      homeDetailsCshtml.WriteLiteral("\r\n            ");
+      homeDetailsCshtml.EndContext();
+      homeDetailsCshtml.BeginContext(2552, 92, false);
+      // ISSUE: reference to a compiler-generated method
+      homeDetailsCshtml.__tagHelperExecutionContext = homeDetailsCshtml.__tagHelperScopeManager.Begin("a", TagMode.StartTagAndEndTag, "87abc67486be440dac5ac599ff5e90a2", new Func<Task>(homeDetailsCshtml.\u003CExecuteAsync\u003Eb__11_1));
+      homeDetailsCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper = homeDetailsCshtml.CreateTagHelper<AnchorTagHelper>();
+      homeDetailsCshtml.__tagHelperExecutionContext.Add((ITagHelper) homeDetailsCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper);
+      homeDetailsCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.Action = (string) _Views_Home_Details_cshtml.__tagHelperAttribute_2.Value;
+      homeDetailsCshtml.__tagHelperExecutionContext.AddTagHelperAttribute(_Views_Home_Details_cshtml.__tagHelperAttribute_2);
+      if (homeDetailsCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues == null)
+        throw new InvalidOperationException(homeDetailsCshtml.InvalidTagHelperIndexerAssignment("asp-route-id", "Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper", "RouteValues"));
+      homeDetailsCshtml.BeginWriteTagHelperAttribute();
+      homeDetailsCshtml.WriteLiteral((object) homeDetailsCshtml.Model.group_id);
+      homeDetailsCshtml.__tagHelperStringValueBuffer = homeDetailsCshtml.EndWriteTagHelperAttribute();
+      homeDetailsCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues["id"] = homeDetailsCshtml.__tagHelperStringValueBuffer;
+      homeDetailsCshtml.__tagHelperExecutionContext.AddTagHelperAttribute("asp-route-id", (object) homeDetailsCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues["id"], HtmlAttributeValueStyle.DoubleQuotes);
+      homeDetailsCshtml.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_Details_cshtml.__tagHelperAttribute_3);
+      await homeDetailsCshtml.__tagHelperRunner.RunAsync(homeDetailsCshtml.__tagHelperExecutionContext);
+      if (!homeDetailsCshtml.__tagHelperExecutionContext.Output.IsContentModified)
+        await homeDetailsCshtml.__tagHelperExecutionContext.SetOutputContentAsync();
+      homeDetailsCshtml.Write((object) homeDetailsCshtml.__tagHelperExecutionContext.Output);
+      homeDetailsCshtml.__tagHelperExecutionContext = homeDetailsCshtml.__tagHelperScopeManager.End();
+      homeDetailsCshtml.EndContext();
+      homeDetailsCshtml.BeginContext(2644, 36, true);
+      homeDetailsCshtml.WriteLiteral("\r\n        </dd>\r\n    </dl>\r\n</div>\r\n");
+      homeDetailsCshtml.EndContext();
+    }
+
+    [RazorInject]
+    public IModelExpressionProvider ModelExpressionProvider { get; private set; }
+
+    [RazorInject]
+    public IUrlHelper Url { get; private set; }
+
+    [RazorInject]
+    public IViewComponentHelper Component { get; private set; }
+
+    [RazorInject]
+    public IJsonHelper Json { get; private set; }
+
+    [RazorInject]
+    public IHtmlHelper<trafficjob> Html { get; private set; }
+  }
 }
-
-<h2>Traffic Job Details</h2>
-
-<div>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.job_name)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.job_name)
-        </dd>
-        <dt>
-            Journey Option
-        </dt>
-        <dd>
-            @ViewBag.JourneyOption
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.target_url)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.target_url)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.search_term)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.search_term)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.search_engine)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.search_engine)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.session_count)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.session_count)
-        </dd>
-        <hr />
-        <dt>
-            Google Form URL
-        </dt>
-        <dd>
-            @ViewBag.JourneyURL
-        </dd>
-        <dt>
-            Form Fields
-        </dt>
-        <dd>
-            @ViewBag.form_fields
-        </dd>
-        <hr />
-        <dt>
-        </dt>
-        <dd>
-            <br>
-            <a asp-action="Edit" asp-route-id="@Model.id" class="btn btn-success">Edit</a>
-            <a asp-action="Index" class="btn btn-primary">Back to List</a>
-        </dd>
-    </dl>
-</div>

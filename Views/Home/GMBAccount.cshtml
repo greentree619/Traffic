@@ -1,0 +1,207 @@
+﻿// Decompiled with JetBrains decompiler
+// Type: AspNetCore._Views_Home_GMBAccount_cshtml
+// Assembly: Traffic.PrecompiledViews, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+// MVID: 8B37BA40-0390-40A7-A536-D9CCDBC36390
+// Assembly location: D:\Workstation\TonniProjects\TrafficWebDeploy\Traffic.PrecompiledViews.dll
+
+using Microsoft.AspNetCore.Html;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Razor;
+using Microsoft.AspNetCore.Mvc.Razor.Internal;
+using Microsoft.AspNetCore.Mvc.Razor.TagHelpers;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.Mvc.TagHelpers;
+using Microsoft.AspNetCore.Mvc.ViewFeatures;
+using Microsoft.AspNetCore.Razor.Runtime.TagHelpers;
+using Microsoft.AspNetCore.Razor.TagHelpers;
+using Microsoft.CSharp.RuntimeBinder;
+using System;
+using System.Collections.Generic;
+using System.Runtime.CompilerServices;
+using System.Text.Encodings.Web;
+using System.Threading.Tasks;
+using Traffic.Models;
+
+namespace AspNetCore
+{
+  public class _Views_Home_GMBAccount_cshtml : RazorPage<gmbproject>
+  {
+    private static readonly TagHelperAttribute __tagHelperAttribute_0 = new TagHelperAttribute("value", (object) "0", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_1 = new TagHelperAttribute("id", (object) new HtmlString("selectacc"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_2 = new TagHelperAttribute("class", (object) new HtmlString("form-control"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_3 = new TagHelperAttribute("style", (object) new HtmlString("width:90%,"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_4 = new TagHelperAttribute("asp-action", (object) "AddGMB", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_5 = new TagHelperAttribute("class", (object) new HtmlString("btn btn-primary"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_6 = new TagHelperAttribute("style", (object) new HtmlString("margin-top: 15px;"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_7 = new TagHelperAttribute("src", (object) new HtmlString("~/images/ajax-loader.gif"), HtmlAttributeValueStyle.DoubleQuotes);
+    private string __tagHelperStringValueBuffer;
+    private TagHelperExecutionContext __tagHelperExecutionContext;
+    private TagHelperRunner __tagHelperRunner = new TagHelperRunner();
+    private TagHelperScopeManager __backed__tagHelperScopeManager;
+    private SelectTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper;
+    private OptionTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_OptionTagHelper;
+    private AnchorTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper;
+    private UrlResolutionTagHelper __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper;
+
+    private TagHelperScopeManager __tagHelperScopeManager
+    {
+      get
+      {
+        if (this.__backed__tagHelperScopeManager == null)
+          this.__backed__tagHelperScopeManager = new TagHelperScopeManager(new Action<HtmlEncoder>(((RazorPageBase) this).StartTagHelperWritingScope), new Func<TagHelperContent>(((RazorPageBase) this).EndTagHelperWritingScope));
+        return this.__backed__tagHelperScopeManager;
+      }
+    }
+
+    public virtual async Task ExecuteAsync()
+    {
+      _Views_Home_GMBAccount_cshtml gmbAccountCshtml1 = this;
+      gmbAccountCshtml1.ViewData["Title"] = (object) "GMBAccount";
+      // ISSUE: explicit non-virtual call
+      __nonvirtual (gmbAccountCshtml1.Layout) = "~/Views/Shared/_Layout.cshtml";
+      gmbAccountCshtml1.BeginContext((int) sbyte.MaxValue, 273, true);
+      gmbAccountCshtml1.WriteLiteral("\r\n<h2>GMBAccount</h2>\r\n<br />\r\n<div class=\"row\">\r\n    <div class=\"col-sm-4\">\r\n        <div class=\"form-group\">\r\n            <label for=\"sel4\">Select Account:</label>\r\n            <b style=\"color:green\"> Selected : 3</b><b style=\"color:red\"> / Allowed : 05</b>\r\n            ");
+      gmbAccountCshtml1.EndContext();
+      gmbAccountCshtml1.BeginContext(400, 220, false);
+      // ISSUE: reference to a compiler-generated method
+      gmbAccountCshtml1.__tagHelperExecutionContext = gmbAccountCshtml1.__tagHelperScopeManager.Begin("select", TagMode.StartTagAndEndTag, "a2c1b8163edf4f5a9299be802ec902a6", new Func<Task>(gmbAccountCshtml1.\u003CExecuteAsync\u003Eb__18_0));
+      gmbAccountCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper = gmbAccountCshtml1.CreateTagHelper<SelectTagHelper>();
+      gmbAccountCshtml1.__tagHelperExecutionContext.Add((ITagHelper) gmbAccountCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper);
+      gmbAccountCshtml1.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_GMBAccount_cshtml.__tagHelperAttribute_1);
+      gmbAccountCshtml1.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_GMBAccount_cshtml.__tagHelperAttribute_2);
+      SelectTagHelper helpersSelectTagHelper = gmbAccountCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper;
+      // ISSUE: reference to a compiler-generated field
+      if (_Views_Home_GMBAccount_cshtml.\u003C\u003Eo__18.\u003C\u003Ep__1 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        _Views_Home_GMBAccount_cshtml.\u003C\u003Eo__18.\u003C\u003Ep__1 = CallSite<Func<CallSite, Type, object, string, string, SelectList>>.Create(Binder.InvokeConstructor(CSharpBinderFlags.None, typeof (_Views_Home_GMBAccount_cshtml), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[4]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.IsStaticType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Func<CallSite, Type, object, string, string, SelectList> target1 = _Views_Home_GMBAccount_cshtml.\u003C\u003Eo__18.\u003C\u003Ep__1.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Func<CallSite, Type, object, string, string, SelectList>> p1 = _Views_Home_GMBAccount_cshtml.\u003C\u003Eo__18.\u003C\u003Ep__1;
+      Type type = typeof (SelectList);
+      // ISSUE: reference to a compiler-generated field
+      if (_Views_Home_GMBAccount_cshtml.\u003C\u003Eo__18.\u003C\u003Ep__0 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        _Views_Home_GMBAccount_cshtml.\u003C\u003Eo__18.\u003C\u003Ep__0 = CallSite<Func<CallSite, object, object>>.Create(Binder.GetMember(CSharpBinderFlags.None, "listofitems", typeof (_Views_Home_GMBAccount_cshtml), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj1 = _Views_Home_GMBAccount_cshtml.\u003C\u003Eo__18.\u003C\u003Ep__0.Target((CallSite) _Views_Home_GMBAccount_cshtml.\u003C\u003Eo__18.\u003C\u003Ep__0, gmbAccountCshtml1.ViewBag);
+      SelectList selectList = target1((CallSite) p1, type, obj1, "id", "project_name");
+      helpersSelectTagHelper.Items = (IEnumerable<SelectListItem>) selectList;
+      gmbAccountCshtml1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-items", (object) gmbAccountCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper.Items, HtmlAttributeValueStyle.DoubleQuotes);
+      gmbAccountCshtml1.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_GMBAccount_cshtml.__tagHelperAttribute_3);
+      await gmbAccountCshtml1.__tagHelperRunner.RunAsync(gmbAccountCshtml1.__tagHelperExecutionContext);
+      if (!gmbAccountCshtml1.__tagHelperExecutionContext.Output.IsContentModified)
+        await gmbAccountCshtml1.__tagHelperExecutionContext.SetOutputContentAsync();
+      gmbAccountCshtml1.Write((object) gmbAccountCshtml1.__tagHelperExecutionContext.Output);
+      gmbAccountCshtml1.__tagHelperExecutionContext = gmbAccountCshtml1.__tagHelperScopeManager.End();
+      gmbAccountCshtml1.EndContext();
+      gmbAccountCshtml1.BeginContext(620, 473, true);
+      gmbAccountCshtml1.WriteLiteral("\r\n        </div>\r\n    </div>\r\n\r\n    <div class=\"col-sm-5\">\r\n        <table class=\"table\">\r\n            <tbody>\r\n                <tr>\r\n                    <td style=\"border:0px\">\r\n                        <span id=\"revokebtn\"> </span>\r\n                    </td>\r\n                    <td style=\"border:0px\">\r\n                        <span id=\"mgmtbtn\"> &nbsp;&nbsp;&nbsp;</span>\r\n                    </td>\r\n                    <td style=\"border:0px\">\r\n                        ");
+      gmbAccountCshtml1.EndContext();
+      gmbAccountCshtml1.BeginContext(1093, 123, false);
+      // ISSUE: reference to a compiler-generated method
+      gmbAccountCshtml1.__tagHelperExecutionContext = gmbAccountCshtml1.__tagHelperScopeManager.Begin("a", TagMode.StartTagAndEndTag, "16b9cd497044435e971f047ca3696cd8", new Func<Task>(gmbAccountCshtml1.\u003CExecuteAsync\u003Eb__18_2));
+      gmbAccountCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper = gmbAccountCshtml1.CreateTagHelper<AnchorTagHelper>();
+      gmbAccountCshtml1.__tagHelperExecutionContext.Add((ITagHelper) gmbAccountCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper);
+      gmbAccountCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.Action = (string) _Views_Home_GMBAccount_cshtml.__tagHelperAttribute_4.Value;
+      gmbAccountCshtml1.__tagHelperExecutionContext.AddTagHelperAttribute(_Views_Home_GMBAccount_cshtml.__tagHelperAttribute_4);
+      if (gmbAccountCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues == null)
+        throw new InvalidOperationException(gmbAccountCshtml1.InvalidTagHelperIndexerAssignment("asp-route-id", "Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper", "RouteValues"));
+      gmbAccountCshtml1.BeginWriteTagHelperAttribute();
+      // ISSUE: reference to a compiler-generated field
+      if (_Views_Home_GMBAccount_cshtml.\u003C\u003Eo__18.\u003C\u003Ep__3 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        _Views_Home_GMBAccount_cshtml.\u003C\u003Eo__18.\u003C\u003Ep__3 = CallSite<Action<CallSite, _Views_Home_GMBAccount_cshtml, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "WriteLiteral", (IEnumerable<Type>) null, typeof (_Views_Home_GMBAccount_cshtml), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, _Views_Home_GMBAccount_cshtml, object> target2 = _Views_Home_GMBAccount_cshtml.\u003C\u003Eo__18.\u003C\u003Ep__3.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, _Views_Home_GMBAccount_cshtml, object>> p3 = _Views_Home_GMBAccount_cshtml.\u003C\u003Eo__18.\u003C\u003Ep__3;
+      _Views_Home_GMBAccount_cshtml gmbAccountCshtml2 = gmbAccountCshtml1;
+      // ISSUE: reference to a compiler-generated field
+      if (_Views_Home_GMBAccount_cshtml.\u003C\u003Eo__18.\u003C\u003Ep__2 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        _Views_Home_GMBAccount_cshtml.\u003C\u003Eo__18.\u003C\u003Ep__2 = CallSite<Func<CallSite, object, object>>.Create(Binder.GetMember(CSharpBinderFlags.None, "Userid", typeof (_Views_Home_GMBAccount_cshtml), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj2 = _Views_Home_GMBAccount_cshtml.\u003C\u003Eo__18.\u003C\u003Ep__2.Target((CallSite) _Views_Home_GMBAccount_cshtml.\u003C\u003Eo__18.\u003C\u003Ep__2, gmbAccountCshtml1.ViewBag);
+      target2((CallSite) p3, gmbAccountCshtml2, obj2);
+      gmbAccountCshtml1.__tagHelperStringValueBuffer = gmbAccountCshtml1.EndWriteTagHelperAttribute();
+      gmbAccountCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues["id"] = gmbAccountCshtml1.__tagHelperStringValueBuffer;
+      gmbAccountCshtml1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-route-id", (object) gmbAccountCshtml1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues["id"], HtmlAttributeValueStyle.DoubleQuotes);
+      gmbAccountCshtml1.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_GMBAccount_cshtml.__tagHelperAttribute_5);
+      gmbAccountCshtml1.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_GMBAccount_cshtml.__tagHelperAttribute_6);
+      await gmbAccountCshtml1.__tagHelperRunner.RunAsync(gmbAccountCshtml1.__tagHelperExecutionContext);
+      if (!gmbAccountCshtml1.__tagHelperExecutionContext.Output.IsContentModified)
+        await gmbAccountCshtml1.__tagHelperExecutionContext.SetOutputContentAsync();
+      gmbAccountCshtml1.Write((object) gmbAccountCshtml1.__tagHelperExecutionContext.Output);
+      gmbAccountCshtml1.__tagHelperExecutionContext = gmbAccountCshtml1.__tagHelperScopeManager.End();
+      gmbAccountCshtml1.EndContext();
+      gmbAccountCshtml1.BeginContext(1216, 876, true);
+      gmbAccountCshtml1.WriteLiteral("\r\n                    </td>\r\n                </tr>\r\n            </tbody>\r\n        </table>\r\n    </div>\r\n    <div class=\"col-sm-2\"></div>\r\n</div>\r\n<div class=\"row\">\r\n    <center><span class=\"erroracc\"></span></center>\r\n    <table id=\"location_table\" class=\"table\">\r\n        <thead>\r\n            <tr>\r\n                <th>Location Name </th>                \r\n                <th>Project Name</th>\r\n            </tr>\r\n        </thead>\r\n        <tbody id=\"accdata\"></tbody>\r\n    </table>\r\n</div>\r\n\r\n<div id=\"resultLoading\" style=\"width: 100%; height: 100%; position: fixed; z-index: 10000000; top: 0px; left: 0px; right: 0px; bottom: 0px; margin: auto; display: none;\">\r\n    <div style=\"width: 250px; height: 75px; text-align: center; position: fixed; top: 0px; left: 0px; right: 0px; bottom: 0px; margin: auto; font-size: 16px; z-index: 10; color: rgb(255, 255, 255);\">\r\n        ");
+      gmbAccountCshtml1.EndContext();
+      gmbAccountCshtml1.BeginContext(2092, 36, false);
+      gmbAccountCshtml1.__tagHelperExecutionContext = gmbAccountCshtml1.__tagHelperScopeManager.Begin("img", TagMode.StartTagOnly, "cd2e75c6f1474f11882b141606c565dd", (Func<Task>) (async () => { }));
+      gmbAccountCshtml1.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = gmbAccountCshtml1.CreateTagHelper<UrlResolutionTagHelper>();
+      gmbAccountCshtml1.__tagHelperExecutionContext.Add((ITagHelper) gmbAccountCshtml1.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper);
+      gmbAccountCshtml1.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_GMBAccount_cshtml.__tagHelperAttribute_7);
+      await gmbAccountCshtml1.__tagHelperRunner.RunAsync(gmbAccountCshtml1.__tagHelperExecutionContext);
+      if (!gmbAccountCshtml1.__tagHelperExecutionContext.Output.IsContentModified)
+        await gmbAccountCshtml1.__tagHelperExecutionContext.SetOutputContentAsync();
+      gmbAccountCshtml1.Write((object) gmbAccountCshtml1.__tagHelperExecutionContext.Output);
+      gmbAccountCshtml1.__tagHelperExecutionContext = gmbAccountCshtml1.__tagHelperScopeManager.End();
+      gmbAccountCshtml1.EndContext();
+      gmbAccountCshtml1.BeginContext(2128, 602, true);
+      gmbAccountCshtml1.WriteLiteral("\r\n        <div>Please wait..</div>\r\n    </div>\r\n    <div class=\"bg\" style=\"background: rgb(0, 0, 0); opacity: 0.7; width: 100%; height: 100%; position: absolute; top: 0px;\"></div>\r\n</div>\r\n<script language=\"javascript\">\r\n    $(\"#selectacc\").bind(\"change\", function () {\r\n        var selval = $(this).val();\r\n        if (selval == 0) {\r\n            $(\".erroracc\").html(\"<b style=\\\"color:red\\\">Select any one Account.</b>\");\r\n\r\n            ajaxindicatorstop();\r\n            return;\r\n        }\r\n        else {\r\n            ajaxindicatorstart('Please wait..');\r\n            $.ajax({\r\n                url: '");
+      gmbAccountCshtml1.EndContext();
+      gmbAccountCshtml1.BeginContext(2731, 31, false);
+      gmbAccountCshtml1.Write(UrlHelperExtensions.Action(gmbAccountCshtml1.Url, "ChangeGMB", "Home"));
+      gmbAccountCshtml1.EndContext();
+      gmbAccountCshtml1.BeginContext(2762, 3230, true);
+      gmbAccountCshtml1.WriteLiteral("',\r\n                contentType: 'application/x-www-form-urlencoded',\r\n                type: 'POST',\r\n                data: { id: $(\"#selectacc\").val() },\r\n                success: function (data) {\r\n                    data = jQuery.parseJSON(data);\r\n                    var strHtml = \"\";\r\n                    //var content = \"<tr><td>Tm Telemarketing-2730</td><td><input type=\\\"checkbox\\\" class=\\\"check_29519\\\" onclick=\\\"enstatus(29519)\\\"></td><td><input type=\\\"checkbox\\\" class=\\\"bcheck_29519\\\" onclick=\\\"selbriefcase(29519)\\\" checked=\"\"></td></tr>\"\r\n                    if (data[\"data\"].length > 0) {\r\n                        for (var j = 0; j < data[\"data\"].length; j++) {\r\n                            strHtml += \"<tr><td>\" + data[\"data\"][j].name + \"</td><td>\" + data[\"data\"][j].pname + \"</td></tr>\";\r\n                        }\r\n\r\n                        $(\"#accdata\").html(strHtml);\r\n                    }\r\n                    else {\r\n                        $(\".erroracc\").html(\"<b style=\\\"color:red\\\">No Record Found");
+      gmbAccountCshtml1.WriteLiteral("</b>\");\r\n                        $(\"#accdata\").html(\" \");\r\n                    }\r\n                    ajaxindicatorstop();\r\n                    return;\r\n                },\r\n                error: function (XMLHttpRequest, textStatus, errorThrown) {\r\n                    $(\".erroracc\").html(\"<b style=\\\"color:red\\\">No Record Found</b>\");\r\n                    $(\"#accdata\").html(\" \");\r\n                    ajaxindicatorstop();\r\n                    return;\r\n                }\r\n            });\r\n        }\r\n    });\r\n\r\n    function ajaxindicatorstart(text) {\r\n        if (jQuery('body').find('#resultLoading').attr('id') != 'resultLoading') {\r\n            jQuery('body').append('<div id=\"resultLoading\" style=\"display:none\"><div><img src=\"~/images/ajax-loader.gif\"><div>' + text + '</div></div><div class=\"bg\"></div></div>');\r\n        }\r\n\r\n        jQuery('#resultLoading').css({\r\n            'width': '100%',\r\n            'height': '100%',\r\n            'position': 'fixed',\r\n            'z-index': '10000000',\r\n            'top': ");
+      gmbAccountCshtml1.WriteLiteral("'0',\r\n            'left': '0',\r\n            'right': '0',\r\n            'bottom': '0',\r\n            'margin': 'auto'\r\n        });\r\n\r\n        jQuery('#resultLoading .bg').css({\r\n            'background': '#000000',\r\n            'opacity': '0.7',\r\n            'width': '100%',\r\n            'height': '100%',\r\n            'position': 'absolute',\r\n            'top': '0'\r\n        });\r\n\r\n        jQuery('#resultLoading>div:first').css({\r\n            'width': '250px',\r\n            'height': '75px',\r\n            'text-align': 'center',\r\n            'position': 'fixed',\r\n            'top': '0',\r\n            'left': '0',\r\n            'right': '0',\r\n            'bottom': '0',\r\n            'margin': 'auto',\r\n            'font-size': '16px',\r\n            'z-index': '10',\r\n            'color': '#ffffff'\r\n\r\n        });\r\n\r\n        jQuery('#resultLoading .bg').height('100%');\r\n        jQuery('#resultLoading').fadeIn(300);\r\n        jQuery('body').css('cursor', 'wait');\r\n    }\r\n    function ajaxindicatorstop() {\r\n        jQuery('#r");
+      gmbAccountCshtml1.WriteLiteral("esultLoading .bg').height('100%');\r\n        jQuery('#resultLoading').fadeOut(300);\r\n        jQuery('body').css('cursor', 'default');\r\n    }\r\n\r\n    \r\n</script>");
+      gmbAccountCshtml1.EndContext();
+    }
+
+    [RazorInject]
+    public IModelExpressionProvider ModelExpressionProvider { get; private set; }
+
+    [RazorInject]
+    public IUrlHelper Url { get; private set; }
+
+    [RazorInject]
+    public IViewComponentHelper Component { get; private set; }
+
+    [RazorInject]
+    public IJsonHelper Json { get; private set; }
+
+    [RazorInject]
+    public IHtmlHelper<gmbproject> Html { get; private set; }
+  }
+}

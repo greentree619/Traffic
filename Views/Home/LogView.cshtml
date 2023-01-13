@@ -1,117 +1,382 @@
-﻿@model String
+﻿// Decompiled with JetBrains decompiler
+// Type: AspNetCore._Views_Home_LogView_cshtml
+// Assembly: Traffic.PrecompiledViews, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+// MVID: 8B37BA40-0390-40A7-A536-D9CCDBC36390
+// Assembly location: D:\Workstation\TonniProjects\TrafficWebDeploy\Traffic.PrecompiledViews.dll
 
-@{
-    ViewData["Title"] = "Log View";
-    Layout = "~/Views/Shared/_Layout.cshtml";
-}
+using Microsoft.AspNetCore.Html;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Razor;
+using Microsoft.AspNetCore.Mvc.Razor.Internal;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.Mvc.TagHelpers;
+using Microsoft.AspNetCore.Mvc.ViewFeatures;
+using Microsoft.AspNetCore.Razor.Runtime.TagHelpers;
+using Microsoft.AspNetCore.Razor.TagHelpers;
+using System;
+using System.Collections.Generic;
+using System.Linq.Expressions;
+using System.Text.Encodings.Web;
+using System.Threading.Tasks;
+using Traffic.Models;
 
-<h2>Log View</h2>
+namespace AspNetCore
+{
+  public class _Views_Home_LogView_cshtml : RazorPage<IEnumerable<log>>
+  {
+    private static readonly TagHelperAttribute __tagHelperAttribute_0 = new TagHelperAttribute("value", (object) "0", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_1 = new TagHelperAttribute("value", (object) "1", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_2 = new TagHelperAttribute("value", (object) "2", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_3 = new TagHelperAttribute("asp-action", (object) "LogView", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_4 = new TagHelperAttribute("asp-action", (object) "Jobs", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_5 = new TagHelperAttribute("class", (object) new HtmlString("btn btn-primary"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_6 = new TagHelperAttribute("src", (object) "../../images/pass.png", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_7 = new TagHelperAttribute("style", (object) new HtmlString("width:30px;"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_8 = new TagHelperAttribute("src", (object) "../../images/fail.png", HtmlAttributeValueStyle.DoubleQuotes);
+    private string __tagHelperStringValueBuffer;
+    private TagHelperExecutionContext __tagHelperExecutionContext;
+    private TagHelperRunner __tagHelperRunner = new TagHelperRunner();
+    private TagHelperScopeManager __backed__tagHelperScopeManager;
+    private FormTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper;
+    private RenderAtEndOfFormTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper;
+    private OptionTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_OptionTagHelper;
+    private AnchorTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper;
+    private ImageTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_ImageTagHelper;
 
-<div class="row">
-    <div class="col-md-8">
-        <h4>Job Name: @ViewData["job_name"]</h4>
-    </div>
-    <div class="col-md-4 text-right">
-        <a asp-action="Index" class="btn btn-primary">Back to List</a>
-    </div>
-</div>
-<style>
-    .table thead tr th {
-        text-align: center;
+    private TagHelperScopeManager __tagHelperScopeManager
+    {
+      get
+      {
+        if (this.__backed__tagHelperScopeManager == null)
+          this.__backed__tagHelperScopeManager = new TagHelperScopeManager(new Action<HtmlEncoder>(((RazorPageBase) this).StartTagHelperWritingScope), new Func<TagHelperContent>(((RazorPageBase) this).EndTagHelperWritingScope));
+        return this.__backed__tagHelperScopeManager;
+      }
     }
 
-    .table tbody tr td {
-        text-align: center;
+    public virtual async Task ExecuteAsync()
+    {
+      _Views_Home_LogView_cshtml homeLogViewCshtml = this;
+      homeLogViewCshtml.BeginContext(40, 2, true);
+      homeLogViewCshtml.WriteLiteral("\r\n");
+      homeLogViewCshtml.EndContext();
+      homeLogViewCshtml.ViewData["Title"] = (object) "Log View";
+      // ISSUE: explicit non-virtual call
+      __nonvirtual (homeLogViewCshtml.Layout) = "~/Views/Shared/_Layout.cshtml";
+      homeLogViewCshtml.BeginContext(133, 458, true);
+      homeLogViewCshtml.WriteLiteral("<link rel=\"stylesheet\" href=\"http://code.jquery.com/ui/1.10.4/themes/trontastic/jquery-ui.css\">\r\n<script src=\"http://code.jquery.com/jquery-1.10.2.js\"></script>\r\n<script src=\"http://code.jquery.com/ui/1.10.4/jquery-ui.js\"></script>\r\n<script language=\"javascript\">\r\n    $(function () {\r\n        $(\"#startdatepicker\").datepicker({ dateFormat: 'yy-mm-dd' });\r\n        $(\"#enddatepicker\").datepicker({ dateFormat: 'yy-mm-dd' });\r\n        $('select option[value=\"");
+      homeLogViewCshtml.EndContext();
+      homeLogViewCshtml.BeginContext(592, 16, false);
+      homeLogViewCshtml.Write(homeLogViewCshtml.ViewData["type"]);
+      homeLogViewCshtml.EndContext();
+      homeLogViewCshtml.BeginContext(608, 140, true);
+      homeLogViewCshtml.WriteLiteral("\"]').attr(\"selected\", true);\r\n    });\r\n</script>\r\n<h2>Log View</h2>\r\n\r\n<div class=\"row\">\r\n    <div class=\"col-md-8\">\r\n        <h4>Job Name: ");
+      homeLogViewCshtml.EndContext();
+      homeLogViewCshtml.BeginContext(749, 20, false);
+      homeLogViewCshtml.Write(homeLogViewCshtml.ViewData["job_name"]);
+      homeLogViewCshtml.EndContext();
+      homeLogViewCshtml.BeginContext(769, 23, true);
+      homeLogViewCshtml.WriteLiteral("</h4>\r\n    </div>\r\n    ");
+      homeLogViewCshtml.EndContext();
+      homeLogViewCshtml.BeginContext(792, 739, false);
+      // ISSUE: reference to a compiler-generated method
+      homeLogViewCshtml.__tagHelperExecutionContext = homeLogViewCshtml.__tagHelperScopeManager.Begin("form", TagMode.StartTagAndEndTag, "2f865abcf92d4bd59e3d68877e319425", new Func<Task>(homeLogViewCshtml.\u003CExecuteAsync\u003Eb__20_0));
+      homeLogViewCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper = homeLogViewCshtml.CreateTagHelper<FormTagHelper>();
+      homeLogViewCshtml.__tagHelperExecutionContext.Add((ITagHelper) homeLogViewCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper);
+      homeLogViewCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper = homeLogViewCshtml.CreateTagHelper<RenderAtEndOfFormTagHelper>();
+      homeLogViewCshtml.__tagHelperExecutionContext.Add((ITagHelper) homeLogViewCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper);
+      homeLogViewCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper.Action = (string) _Views_Home_LogView_cshtml.__tagHelperAttribute_3.Value;
+      homeLogViewCshtml.__tagHelperExecutionContext.AddTagHelperAttribute(_Views_Home_LogView_cshtml.__tagHelperAttribute_3);
+      await homeLogViewCshtml.__tagHelperRunner.RunAsync(homeLogViewCshtml.__tagHelperExecutionContext);
+      if (!homeLogViewCshtml.__tagHelperExecutionContext.Output.IsContentModified)
+        await homeLogViewCshtml.__tagHelperExecutionContext.SetOutputContentAsync();
+      homeLogViewCshtml.Write((object) homeLogViewCshtml.__tagHelperExecutionContext.Output);
+      homeLogViewCshtml.__tagHelperExecutionContext = homeLogViewCshtml.__tagHelperScopeManager.End();
+      homeLogViewCshtml.EndContext();
+      homeLogViewCshtml.BeginContext(1531, 49, true);
+      homeLogViewCshtml.WriteLiteral("\r\n    <div class=\"col-md-4 text-right\">\r\n        ");
+      homeLogViewCshtml.EndContext();
+      homeLogViewCshtml.BeginContext(1580, 97, false);
+      // ISSUE: reference to a compiler-generated method
+      homeLogViewCshtml.__tagHelperExecutionContext = homeLogViewCshtml.__tagHelperScopeManager.Begin("a", TagMode.StartTagAndEndTag, "9f33c61675b44fe7a2d8d282742ac4dd", new Func<Task>(homeLogViewCshtml.\u003CExecuteAsync\u003Eb__20_4));
+      homeLogViewCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper = homeLogViewCshtml.CreateTagHelper<AnchorTagHelper>();
+      homeLogViewCshtml.__tagHelperExecutionContext.Add((ITagHelper) homeLogViewCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper);
+      homeLogViewCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.Action = (string) _Views_Home_LogView_cshtml.__tagHelperAttribute_4.Value;
+      homeLogViewCshtml.__tagHelperExecutionContext.AddTagHelperAttribute(_Views_Home_LogView_cshtml.__tagHelperAttribute_4);
+      if (homeLogViewCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues == null)
+        throw new InvalidOperationException(homeLogViewCshtml.InvalidTagHelperIndexerAssignment("asp-route-id", "Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper", "RouteValues"));
+      homeLogViewCshtml.BeginWriteTagHelperAttribute();
+      homeLogViewCshtml.WriteLiteral(homeLogViewCshtml.ViewData["groupid"]);
+      homeLogViewCshtml.__tagHelperStringValueBuffer = homeLogViewCshtml.EndWriteTagHelperAttribute();
+      homeLogViewCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues["id"] = homeLogViewCshtml.__tagHelperStringValueBuffer;
+      homeLogViewCshtml.__tagHelperExecutionContext.AddTagHelperAttribute("asp-route-id", (object) homeLogViewCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues["id"], HtmlAttributeValueStyle.DoubleQuotes);
+      homeLogViewCshtml.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_LogView_cshtml.__tagHelperAttribute_5);
+      await homeLogViewCshtml.__tagHelperRunner.RunAsync(homeLogViewCshtml.__tagHelperExecutionContext);
+      if (!homeLogViewCshtml.__tagHelperExecutionContext.Output.IsContentModified)
+        await homeLogViewCshtml.__tagHelperExecutionContext.SetOutputContentAsync();
+      homeLogViewCshtml.Write((object) homeLogViewCshtml.__tagHelperExecutionContext.Output);
+      homeLogViewCshtml.__tagHelperExecutionContext = homeLogViewCshtml.__tagHelperScopeManager.End();
+      homeLogViewCshtml.EndContext();
+      homeLogViewCshtml.BeginContext(1677, 710, true);
+      homeLogViewCshtml.WriteLiteral("\r\n    </div>\r\n</div>\r\n<style>\r\n    .table thead tr th {\r\n        text-align: center;\r\n    }\r\n\r\n    .table tbody tr td {\r\n        text-align: center;\r\n    }\r\n</style>\r\n<div class=\"row\">\r\n    <div class=\"col-md-12\">\r\n        <table class=\"table\">\r\n            <thead>\r\n                <tr>\r\n                    <th>\r\n                        No\r\n                    </th>\r\n                    <th>\r\n                        Time\r\n                    </th>\r\n                    <th>\r\n                        Search\r\n                    </th>\r\n                    <th>\r\n                        Keyword\r\n                    </th>\r\n                    <th>\r\n                        Agent\r\n                    </th>\r\n\r\n");
+      homeLogViewCshtml.EndContext();
+      if (homeLogViewCshtml.ViewData["showresult"].Equals((object) true))
+      {
+        homeLogViewCshtml.BeginContext(2473, 189, true);
+        homeLogViewCshtml.WriteLiteral("                        <th>\r\n                            Proxy\r\n                        </th>\r\n                        <th>\r\n                            IP\r\n                        </th>\r\n");
+        homeLogViewCshtml.EndContext();
+      }
+      homeLogViewCshtml.BeginContext(2685, 85, true);
+      homeLogViewCshtml.WriteLiteral("                    <th>\r\n                        Size\r\n                    </th>\r\n\r\n");
+      homeLogViewCshtml.EndContext();
+      if (homeLogViewCshtml.ViewData["showresult"].Equals((object) true))
+      {
+        homeLogViewCshtml.BeginContext(2856, 63, true);
+        homeLogViewCshtml.WriteLiteral("                        <th>\r\n\r\n                        </th>\r\n");
+        homeLogViewCshtml.EndContext();
+      }
+      homeLogViewCshtml.BeginContext(2942, 320, true);
+      homeLogViewCshtml.WriteLiteral("                    <th>\r\n                        Kind\r\n                    </th>\r\n                    <th>\r\n                        Ranking\r\n                    </th>\r\n                    <th>\r\n                        Worker\r\n                    </th>\r\n                </tr>\r\n            </thead>\r\n            <tbody>\r\n");
+      homeLogViewCshtml.EndContext();
+      foreach (log log in homeLogViewCshtml.Model)
+      {
+        log item = log;
+        homeLogViewCshtml.BeginContext(3327, 46, true);
+        homeLogViewCshtml.WriteLiteral("                <tr>\r\n                    <td>");
+        homeLogViewCshtml.EndContext();
+        homeLogViewCshtml.BeginContext(3374, 37, false);
+        homeLogViewCshtml.Write((object) homeLogViewCshtml.Html.DisplayFor<IEnumerable<log>, int>((Expression<Func<IEnumerable<log>, int>>) (modelItem => item.id)));
+        homeLogViewCshtml.EndContext();
+        homeLogViewCshtml.BeginContext(3411, 5, true);
+        homeLogViewCshtml.WriteLiteral("</td>");
+        homeLogViewCshtml.EndContext();
+        homeLogViewCshtml.BeginContext(3422, 57, true);
+        homeLogViewCshtml.WriteLiteral("\r\n\r\n                    <td style=\"white-space: nowrap;\">");
+        homeLogViewCshtml.EndContext();
+        homeLogViewCshtml.BeginContext(3480, 46, false);
+        homeLogViewCshtml.Write((object) homeLogViewCshtml.Html.DisplayFor<IEnumerable<log>, DateTime>((Expression<Func<IEnumerable<log>, DateTime>>) (modelItem => item.record_time)));
+        homeLogViewCshtml.EndContext();
+        homeLogViewCshtml.BeginContext(3526, 5, true);
+        homeLogViewCshtml.WriteLiteral("</td>");
+        homeLogViewCshtml.EndContext();
+        homeLogViewCshtml.BeginContext(3539, 26, true);
+        homeLogViewCshtml.WriteLiteral("\r\n                    <td>");
+        homeLogViewCshtml.EndContext();
+        homeLogViewCshtml.BeginContext(3566, 41, false);
+        homeLogViewCshtml.Write((object) homeLogViewCshtml.Html.DisplayFor<IEnumerable<log>, string>((Expression<Func<IEnumerable<log>, string>>) (modelItem => item.search)));
+        homeLogViewCshtml.EndContext();
+        homeLogViewCshtml.BeginContext(3607, 5, true);
+        homeLogViewCshtml.WriteLiteral("</td>");
+        homeLogViewCshtml.EndContext();
+        homeLogViewCshtml.BeginContext(3622, 26, true);
+        homeLogViewCshtml.WriteLiteral("\r\n                    <td>");
+        homeLogViewCshtml.EndContext();
+        homeLogViewCshtml.BeginContext(3649, 42, false);
+        homeLogViewCshtml.Write((object) homeLogViewCshtml.Html.DisplayFor<IEnumerable<log>, string>((Expression<Func<IEnumerable<log>, string>>) (modelItem => item.keyword)));
+        homeLogViewCshtml.EndContext();
+        homeLogViewCshtml.BeginContext(3691, 5, true);
+        homeLogViewCshtml.WriteLiteral("</td>");
+        homeLogViewCshtml.EndContext();
+        homeLogViewCshtml.BeginContext(3707, 2, true);
+        homeLogViewCshtml.WriteLiteral("\r\n");
+        homeLogViewCshtml.EndContext();
+        if (string.IsNullOrEmpty(item.agent))
+        {
+          homeLogViewCshtml.BeginContext(3792, 36, true);
+          homeLogViewCshtml.WriteLiteral("                        <td> </td>\r\n");
+          homeLogViewCshtml.EndContext();
+        }
+        else
+        {
+          homeLogViewCshtml.BeginContext(3900, 28, true);
+          homeLogViewCshtml.WriteLiteral("                        <td>");
+          homeLogViewCshtml.EndContext();
+          homeLogViewCshtml.BeginContext(3929, 100, false);
+          homeLogViewCshtml.Write(item.agent.Substring(0, item.agent.IndexOf('[') == -1 ? item.agent.Length : item.agent.IndexOf('[')));
+          homeLogViewCshtml.EndContext();
+          homeLogViewCshtml.BeginContext(4029, 5, true);
+          homeLogViewCshtml.WriteLiteral("</td>");
+          homeLogViewCshtml.EndContext();
+        }
+        homeLogViewCshtml.BeginContext(4068, 4, true);
+        homeLogViewCshtml.WriteLiteral("\r\n\r\n");
+        homeLogViewCshtml.EndContext();
+        if (homeLogViewCshtml.ViewData["showresult"].Equals((object) true))
+        {
+          homeLogViewCshtml.BeginContext(4158, 28, true);
+          homeLogViewCshtml.WriteLiteral("                        <td>");
+          homeLogViewCshtml.EndContext();
+          homeLogViewCshtml.BeginContext(4187, 40, false);
+          homeLogViewCshtml.Write((object) homeLogViewCshtml.Html.DisplayFor<IEnumerable<log>, string>((Expression<Func<IEnumerable<log>, string>>) (modelItem => item.proxy)));
+          homeLogViewCshtml.EndContext();
+          homeLogViewCshtml.BeginContext(4227, 5, true);
+          homeLogViewCshtml.WriteLiteral("</td>");
+          homeLogViewCshtml.EndContext();
+          homeLogViewCshtml.BeginContext(4243, 28, true);
+          homeLogViewCshtml.WriteLiteral("                        <td>");
+          homeLogViewCshtml.EndContext();
+          homeLogViewCshtml.BeginContext(4272, 37, false);
+          homeLogViewCshtml.Write((object) homeLogViewCshtml.Html.DisplayFor<IEnumerable<log>, string>((Expression<Func<IEnumerable<log>, string>>) (modelItem => item.ip)));
+          homeLogViewCshtml.EndContext();
+          homeLogViewCshtml.BeginContext(4309, 5, true);
+          homeLogViewCshtml.WriteLiteral("</td>");
+          homeLogViewCshtml.EndContext();
+        }
+        homeLogViewCshtml.BeginContext(4345, 24, true);
+        homeLogViewCshtml.WriteLiteral("                    <td>");
+        homeLogViewCshtml.EndContext();
+        homeLogViewCshtml.BeginContext(4370, 39, false);
+        homeLogViewCshtml.Write((object) homeLogViewCshtml.Html.DisplayFor<IEnumerable<log>, string>((Expression<Func<IEnumerable<log>, string>>) (modelItem => item.size)));
+        homeLogViewCshtml.EndContext();
+        homeLogViewCshtml.BeginContext(4409, 5, true);
+        homeLogViewCshtml.WriteLiteral("</td>");
+        homeLogViewCshtml.EndContext();
+        homeLogViewCshtml.BeginContext(4422, 4, true);
+        homeLogViewCshtml.WriteLiteral("\r\n\r\n");
+        homeLogViewCshtml.EndContext();
+        if (homeLogViewCshtml.ViewData["showresult"].Equals((object) true))
+        {
+          homeLogViewCshtml.BeginContext(4512, 30, true);
+          homeLogViewCshtml.WriteLiteral("                        <td>\r\n");
+          homeLogViewCshtml.EndContext();
+          if (item.result)
+          {
+            homeLogViewCshtml.BeginContext(4668, 32, true);
+            homeLogViewCshtml.WriteLiteral("                                ");
+            homeLogViewCshtml.EndContext();
+            homeLogViewCshtml.BeginContext(4700, 81, false);
+            homeLogViewCshtml.__tagHelperExecutionContext = homeLogViewCshtml.__tagHelperScopeManager.Begin("img", TagMode.SelfClosing, "b3a4c3c5e9724de3b4d637680a5389fb", (Func<Task>) (async () => { }));
+            homeLogViewCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_ImageTagHelper = homeLogViewCshtml.CreateTagHelper<ImageTagHelper>();
+            homeLogViewCshtml.__tagHelperExecutionContext.Add((ITagHelper) homeLogViewCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_ImageTagHelper);
+            homeLogViewCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_ImageTagHelper.Src = (string) _Views_Home_LogView_cshtml.__tagHelperAttribute_6.Value;
+            homeLogViewCshtml.__tagHelperExecutionContext.AddTagHelperAttribute(_Views_Home_LogView_cshtml.__tagHelperAttribute_6);
+            homeLogViewCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_ImageTagHelper.AppendVersion = true;
+            homeLogViewCshtml.__tagHelperExecutionContext.AddTagHelperAttribute("asp-append-version", (object) homeLogViewCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_ImageTagHelper.AppendVersion, HtmlAttributeValueStyle.DoubleQuotes);
+            homeLogViewCshtml.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_LogView_cshtml.__tagHelperAttribute_7);
+            await homeLogViewCshtml.__tagHelperRunner.RunAsync(homeLogViewCshtml.__tagHelperExecutionContext);
+            if (!homeLogViewCshtml.__tagHelperExecutionContext.Output.IsContentModified)
+              await homeLogViewCshtml.__tagHelperExecutionContext.SetOutputContentAsync();
+            homeLogViewCshtml.Write((object) homeLogViewCshtml.__tagHelperExecutionContext.Output);
+            homeLogViewCshtml.__tagHelperExecutionContext = homeLogViewCshtml.__tagHelperScopeManager.End();
+            homeLogViewCshtml.EndContext();
+            homeLogViewCshtml.BeginContext(4781, 2, true);
+            homeLogViewCshtml.WriteLiteral("\r\n");
+            homeLogViewCshtml.EndContext();
+          }
+          else
+          {
+            homeLogViewCshtml.BeginContext(4879, 32, true);
+            homeLogViewCshtml.WriteLiteral("                                ");
+            homeLogViewCshtml.EndContext();
+            homeLogViewCshtml.BeginContext(4911, 81, false);
+            homeLogViewCshtml.__tagHelperExecutionContext = homeLogViewCshtml.__tagHelperScopeManager.Begin("img", TagMode.SelfClosing, "f1152cc58a6e4ffc98d36640d3e8d479", (Func<Task>) (async () => { }));
+            homeLogViewCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_ImageTagHelper = homeLogViewCshtml.CreateTagHelper<ImageTagHelper>();
+            homeLogViewCshtml.__tagHelperExecutionContext.Add((ITagHelper) homeLogViewCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_ImageTagHelper);
+            homeLogViewCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_ImageTagHelper.Src = (string) _Views_Home_LogView_cshtml.__tagHelperAttribute_8.Value;
+            homeLogViewCshtml.__tagHelperExecutionContext.AddTagHelperAttribute(_Views_Home_LogView_cshtml.__tagHelperAttribute_8);
+            homeLogViewCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_ImageTagHelper.AppendVersion = true;
+            homeLogViewCshtml.__tagHelperExecutionContext.AddTagHelperAttribute("asp-append-version", (object) homeLogViewCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_ImageTagHelper.AppendVersion, HtmlAttributeValueStyle.DoubleQuotes);
+            homeLogViewCshtml.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Home_LogView_cshtml.__tagHelperAttribute_7);
+            await homeLogViewCshtml.__tagHelperRunner.RunAsync(homeLogViewCshtml.__tagHelperExecutionContext);
+            if (!homeLogViewCshtml.__tagHelperExecutionContext.Output.IsContentModified)
+              await homeLogViewCshtml.__tagHelperExecutionContext.SetOutputContentAsync();
+            homeLogViewCshtml.Write((object) homeLogViewCshtml.__tagHelperExecutionContext.Output);
+            homeLogViewCshtml.__tagHelperExecutionContext = homeLogViewCshtml.__tagHelperScopeManager.End();
+            homeLogViewCshtml.EndContext();
+            homeLogViewCshtml.BeginContext(4992, 2, true);
+            homeLogViewCshtml.WriteLiteral("\r\n");
+            homeLogViewCshtml.EndContext();
+            if (item.failreason == 1)
+            {
+              homeLogViewCshtml.BeginContext(5091, 61, true);
+              homeLogViewCshtml.WriteLiteral("                                    <span>ProxyIssue</span>\r\n");
+              homeLogViewCshtml.EndContext();
+            }
+            else if (item.failreason == 2)
+            {
+              homeLogViewCshtml.BeginContext(5286, 62, true);
+              homeLogViewCshtml.WriteLiteral("                                    <span>LayoutIssue</span>\r\n");
+              homeLogViewCshtml.EndContext();
+            }
+            else if (item.failreason == 3)
+            {
+              homeLogViewCshtml.BeginContext(5482, 59, true);
+              homeLogViewCshtml.WriteLiteral("                                    <span>NoTarget</span>\r\n");
+              homeLogViewCshtml.EndContext();
+            }
+          }
+          homeLogViewCshtml.BeginContext(5609, 31, true);
+          homeLogViewCshtml.WriteLiteral("                        </td>\r\n");
+          homeLogViewCshtml.EndContext();
+        }
+        homeLogViewCshtml.BeginContext(5663, 2, true);
+        homeLogViewCshtml.WriteLiteral("\r\n");
+        homeLogViewCshtml.EndContext();
+        string str = "None";
+        if (item.result)
+        {
+          if (item.brandkind == 1)
+            str = "Normal";
+          else if (item.brandkind == 2)
+            str = "Knowledge";
+          else if (item.brandkind == 3)
+            str = "GMB";
+        }
+        else if (item.brandkind == 4)
+          str = "Incorrect Target";
+        homeLogViewCshtml.BeginContext(6660, 24, true);
+        homeLogViewCshtml.WriteLiteral("                    <td>");
+        homeLogViewCshtml.EndContext();
+        homeLogViewCshtml.BeginContext(6685, 11, false);
+        homeLogViewCshtml.Write(str);
+        homeLogViewCshtml.EndContext();
+        homeLogViewCshtml.BeginContext(6696, 5, true);
+        homeLogViewCshtml.WriteLiteral("</td>");
+        homeLogViewCshtml.EndContext();
+        homeLogViewCshtml.BeginContext(6709, 30, true);
+        homeLogViewCshtml.WriteLiteral("\r\n\r\n\r\n\r\n                <td>\r\n");
+        homeLogViewCshtml.EndContext();
+        if (item.result)
+        {
+          homeLogViewCshtml.BeginContext(6834, 40, false);
+          homeLogViewCshtml.Write((object) homeLogViewCshtml.Html.DisplayFor<IEnumerable<log>, int>((Expression<Func<IEnumerable<log>, int>>) (modelItem => item.ranks)));
+          homeLogViewCshtml.EndContext();
+        }
+        homeLogViewCshtml.BeginContext(6899, 21, true);
+        homeLogViewCshtml.WriteLiteral("                </td>");
+        homeLogViewCshtml.EndContext();
+        homeLogViewCshtml.BeginContext(6929, 30, true);
+        homeLogViewCshtml.WriteLiteral("\r\n\r\n\r\n                    <td>");
+        homeLogViewCshtml.EndContext();
+        homeLogViewCshtml.BeginContext(6960, 41, false);
+        homeLogViewCshtml.Write((object) homeLogViewCshtml.Html.DisplayFor<IEnumerable<log>, string>((Expression<Func<IEnumerable<log>, string>>) (modelItem => item.worker)));
+        homeLogViewCshtml.EndContext();
+        homeLogViewCshtml.BeginContext(7001, 5, true);
+        homeLogViewCshtml.WriteLiteral("</td>");
+        homeLogViewCshtml.EndContext();
+        homeLogViewCshtml.BeginContext(7015, 29, true);
+        homeLogViewCshtml.WriteLiteral("\r\n\r\n\r\n                </tr>\r\n");
+        homeLogViewCshtml.EndContext();
+      }
+      homeLogViewCshtml.BeginContext(7063, 62, true);
+      homeLogViewCshtml.WriteLiteral("            </tbody>\r\n        </table>\r\n    </div>\r\n</div>\r\n\r\n");
+      homeLogViewCshtml.EndContext();
+      // ISSUE: reference to a compiler-generated method
+      homeLogViewCshtml.DefineSection("Scripts", new RenderAsyncDelegate(homeLogViewCshtml.\u003CExecuteAsync\u003Eb__20_7));
     }
-</style>
-<div class="row">
-    <div class="col-md-12">
-        <table class="table">
-            <thead>
-                <tr>
-                    <th>
-                        No
-                    </th>
-                    <th>
-                        sub
-                    </th>
-                    <th>
-                        Date
-                    </th>
-                    <th>
-                        Time
-                    </th>
-                    <th>
-                        Next
-                    </th>
-                    <th>
-                        Search
-                    </th>
-                    <th>
-                        Keyword
-                    </th>
-                    <th>
-                        Agent
-                    </th>
-                    <th">
-                        Proxy
-                    </th>
-                    <th>
-                        IP
-                    </th>
-                    <th>
-                        Size
-                    </th>
-                    <th>
-                        Google
-                    </th>
-                    <th>
 
-                    </th>
-                </tr>
-            </thead>
-            <tbody>
-                @if (ViewData["log"] != null)
-                {
-                    @foreach (var item in (string[])ViewData["log"])
-                    {
-                        string[] rows = item.Split("\t");
-                        @if (rows.Length < 13) { continue; }
-                        <tr>
-                            <td>@rows[0]</td>@*No*@
-                            <td>@rows[1]</td>@*sub*@
-                            <td style="white-space: nowrap;">@rows[2]</td>@*Date*@
-                            <td>@rows[3]</td>@*Time*@
-                            <td>@rows[4]</td>@*Next*@
-                            <td>@rows[5]</td>@*Search*@
-                            <td>@rows[6]</td>@*Keyword*@
-                            <td>@rows[7]</td>@*Agent*@
-                            <td>@rows[8]</td>@*Proxy*@
-                            <td>@rows[9]</td>@*IP*@
-                            <td>@rows[10]</td>@*Size*@
-                            <td>@rows[12]</td>@*Google*@
-                            <td>
-                                @if ("True".CompareTo(@rows[11]) == 0)
-                                {
-                                    <img src="~/images/pass.png" asp-append-version="true" style="width:30px;" />
-                                }
-                                else
-                                {
-                                    <img src="~/images/fail.png" asp-append-version="true" style="width:30px;" />
-                                }
-                            </td>
-                        </tr>
-                    }
-                }
-            </tbody>
-        </table>
-    </div>
-</div>
+    [RazorInject]
+    public IModelExpressionProvider ModelExpressionProvider { get; private set; }
 
-<div class="text-right">
-    <a asp-action="Index" class="btn btn-primary">Back to List</a>
-</div>
+    [RazorInject]
+    public IUrlHelper Url { get; private set; }
 
-@section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    [RazorInject]
+    public IViewComponentHelper Component { get; private set; }
+
+    [RazorInject]
+    public IJsonHelper Json { get; private set; }
+
+    [RazorInject]
+    public IHtmlHelper<IEnumerable<log>> Html { get; private set; }
+  }
 }

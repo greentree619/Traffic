@@ -1,0 +1,159 @@
+﻿// Decompiled with JetBrains decompiler
+// Type: AspNetCore._Views_Account_Manage_cshtml
+// Assembly: Traffic.PrecompiledViews, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+// MVID: 8B37BA40-0390-40A7-A536-D9CCDBC36390
+// Assembly location: D:\Workstation\TonniProjects\TrafficWebDeploy\Traffic.PrecompiledViews.dll
+
+using Microsoft.AspNetCore.Html;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Razor;
+using Microsoft.AspNetCore.Mvc.Razor.Internal;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.Mvc.TagHelpers;
+using Microsoft.AspNetCore.Mvc.ViewFeatures;
+using Microsoft.AspNetCore.Razor.Runtime.TagHelpers;
+using Microsoft.AspNetCore.Razor.TagHelpers;
+using System;
+using System.Collections.Generic;
+using System.Linq.Expressions;
+using System.Text.Encodings.Web;
+using System.Threading.Tasks;
+using Traffic.Models;
+
+namespace AspNetCore
+{
+  public class _Views_Account_Manage_cshtml : RazorPage<IEnumerable<ApplicationUser>>
+  {
+    private static readonly TagHelperAttribute __tagHelperAttribute_0 = new TagHelperAttribute("asp-action", (object) "Register", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_1 = new TagHelperAttribute("class", (object) new HtmlString("btn btn-info"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_2 = new TagHelperAttribute("asp-action", (object) "EditUser", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_3 = new TagHelperAttribute("class", (object) new HtmlString("btn btn-success btn-xs"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_4 = new TagHelperAttribute("asp-action", (object) "DeleteUser", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_5 = new TagHelperAttribute("class", (object) new HtmlString("btn btn-danger btn-xs"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_6 = new TagHelperAttribute("onclick", (object) new HtmlString("return DeleteConfirm();"), HtmlAttributeValueStyle.DoubleQuotes);
+    private string __tagHelperStringValueBuffer;
+    private TagHelperExecutionContext __tagHelperExecutionContext;
+    private TagHelperRunner __tagHelperRunner = new TagHelperRunner();
+    private TagHelperScopeManager __backed__tagHelperScopeManager;
+    private AnchorTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper;
+
+    private TagHelperScopeManager __tagHelperScopeManager
+    {
+      get
+      {
+        if (this.__backed__tagHelperScopeManager == null)
+          this.__backed__tagHelperScopeManager = new TagHelperScopeManager(new Action<HtmlEncoder>(((RazorPageBase) this).StartTagHelperWritingScope), new Func<TagHelperContent>(((RazorPageBase) this).EndTagHelperWritingScope));
+        return this.__backed__tagHelperScopeManager;
+      }
+    }
+
+    public virtual async Task ExecuteAsync()
+    {
+      _Views_Account_Manage_cshtml accountManageCshtml = this;
+      accountManageCshtml.BeginContext(52, 2, true);
+      accountManageCshtml.WriteLiteral("\r\n");
+      accountManageCshtml.EndContext();
+      accountManageCshtml.ViewData["Title"] = (object) "Manage User";
+      accountManageCshtml.BeginContext(103, 361, true);
+      accountManageCshtml.WriteLiteral("\r\n</br>\r\n\r\n<style>\r\n    .crop {\r\n        white-space: nowrap;\r\n        overflow: hidden;\r\n        text-overflow: ellipsis\r\n    }\r\n\r\n    .btn-disable {\r\n        cursor: not-allowed;\r\n        pointer-events: none;\r\n        /*Button disabled - CSS color class*/\r\n        color: #c0c0c0;\r\n        background-color: #ffffff;\r\n    }\r\n</style>\r\n<p class=\"text-right\"> ");
+      accountManageCshtml.EndContext();
+      accountManageCshtml.BeginContext(464, 62, false);
+      // ISSUE: reference to a compiler-generated method
+      accountManageCshtml.__tagHelperExecutionContext = accountManageCshtml.__tagHelperScopeManager.Begin("a", TagMode.StartTagAndEndTag, "44464eff16194b4ebbbc49ce4158a084", new Func<Task>(accountManageCshtml.\u003CExecuteAsync\u003Eb__14_0));
+      accountManageCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper = accountManageCshtml.CreateTagHelper<AnchorTagHelper>();
+      accountManageCshtml.__tagHelperExecutionContext.Add((ITagHelper) accountManageCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper);
+      accountManageCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.Action = (string) _Views_Account_Manage_cshtml.__tagHelperAttribute_0.Value;
+      accountManageCshtml.__tagHelperExecutionContext.AddTagHelperAttribute(_Views_Account_Manage_cshtml.__tagHelperAttribute_0);
+      accountManageCshtml.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Account_Manage_cshtml.__tagHelperAttribute_1);
+      await accountManageCshtml.__tagHelperRunner.RunAsync(accountManageCshtml.__tagHelperExecutionContext);
+      if (!accountManageCshtml.__tagHelperExecutionContext.Output.IsContentModified)
+        await accountManageCshtml.__tagHelperExecutionContext.SetOutputContentAsync();
+      accountManageCshtml.Write((object) accountManageCshtml.__tagHelperExecutionContext.Output);
+      accountManageCshtml.__tagHelperExecutionContext = accountManageCshtml.__tagHelperScopeManager.End();
+      accountManageCshtml.EndContext();
+      accountManageCshtml.BeginContext(526, 304, true);
+      accountManageCshtml.WriteLiteral("</p>\r\n<table class=\"table\">\r\n    <thead>\r\n        <tr>\r\n            <th style=\"width: 40%;text-align:center;\">\r\n                Select User To Modify\r\n            </th>\r\n            <th style=\"width: 30%;text-align:center;\">\r\n               \r\n            </th>\r\n        </tr>\r\n    </thead>\r\n    <tbody>\r\n");
+      accountManageCshtml.EndContext();
+      foreach (ApplicationUser applicationUser in accountManageCshtml.Model)
+      {
+        ApplicationUser item = applicationUser;
+        accountManageCshtml.BeginContext(903, 152, true);
+        accountManageCshtml.WriteLiteral("            <tr style=\"background-color:#ebeeef;\">\r\n                <td style=\"text-align:center;\">\r\n                    <div>\r\n                        ");
+        accountManageCshtml.EndContext();
+        accountManageCshtml.BeginContext(1056, 43, false);
+        accountManageCshtml.Write((object) accountManageCshtml.Html.DisplayFor<IEnumerable<ApplicationUser>, string>((Expression<Func<IEnumerable<ApplicationUser>, string>>) (modelItem => item.UserName)));
+        accountManageCshtml.EndContext();
+        accountManageCshtml.BeginContext(1099, 184, true);
+        accountManageCshtml.WriteLiteral("\r\n                    </div>\r\n                </td>\r\n\r\n                <td style=\"text-align:center;\">\r\n                    <div style=\"white-space: nowrap;\">\r\n                        ");
+        accountManageCshtml.EndContext();
+        accountManageCshtml.BeginContext(1283, 88, false);
+        // ISSUE: reference to a compiler-generated method
+        accountManageCshtml.__tagHelperExecutionContext = accountManageCshtml.__tagHelperScopeManager.Begin("a", TagMode.StartTagAndEndTag, "865fe3efcc2e4bdc8556016463eb6373", new Func<Task>(accountManageCshtml.\u003CExecuteAsync\u003Eb__14_1));
+        accountManageCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper = accountManageCshtml.CreateTagHelper<AnchorTagHelper>();
+        accountManageCshtml.__tagHelperExecutionContext.Add((ITagHelper) accountManageCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper);
+        accountManageCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.Action = (string) _Views_Account_Manage_cshtml.__tagHelperAttribute_2.Value;
+        accountManageCshtml.__tagHelperExecutionContext.AddTagHelperAttribute(_Views_Account_Manage_cshtml.__tagHelperAttribute_2);
+        if (accountManageCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues == null)
+          throw new InvalidOperationException(accountManageCshtml.InvalidTagHelperIndexerAssignment("asp-route-id", "Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper", "RouteValues"));
+        accountManageCshtml.BeginWriteTagHelperAttribute();
+        accountManageCshtml.WriteLiteral(item.Id);
+        accountManageCshtml.__tagHelperStringValueBuffer = accountManageCshtml.EndWriteTagHelperAttribute();
+        accountManageCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues["id"] = accountManageCshtml.__tagHelperStringValueBuffer;
+        accountManageCshtml.__tagHelperExecutionContext.AddTagHelperAttribute("asp-route-id", (object) accountManageCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues["id"], HtmlAttributeValueStyle.DoubleQuotes);
+        accountManageCshtml.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Account_Manage_cshtml.__tagHelperAttribute_3);
+        await accountManageCshtml.__tagHelperRunner.RunAsync(accountManageCshtml.__tagHelperExecutionContext);
+        if (!accountManageCshtml.__tagHelperExecutionContext.Output.IsContentModified)
+          await accountManageCshtml.__tagHelperExecutionContext.SetOutputContentAsync();
+        accountManageCshtml.Write((object) accountManageCshtml.__tagHelperExecutionContext.Output);
+        accountManageCshtml.__tagHelperExecutionContext = accountManageCshtml.__tagHelperScopeManager.End();
+        accountManageCshtml.EndContext();
+        accountManageCshtml.BeginContext(1371, 26, true);
+        accountManageCshtml.WriteLiteral("\r\n                        ");
+        accountManageCshtml.EndContext();
+        accountManageCshtml.BeginContext(1397, 125, false);
+        // ISSUE: reference to a compiler-generated method
+        accountManageCshtml.__tagHelperExecutionContext = accountManageCshtml.__tagHelperScopeManager.Begin("a", TagMode.StartTagAndEndTag, "224bf5f68f194ad5b569a47eca7c9b80", new Func<Task>(accountManageCshtml.\u003CExecuteAsync\u003Eb__14_2));
+        accountManageCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper = accountManageCshtml.CreateTagHelper<AnchorTagHelper>();
+        accountManageCshtml.__tagHelperExecutionContext.Add((ITagHelper) accountManageCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper);
+        accountManageCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.Action = (string) _Views_Account_Manage_cshtml.__tagHelperAttribute_4.Value;
+        accountManageCshtml.__tagHelperExecutionContext.AddTagHelperAttribute(_Views_Account_Manage_cshtml.__tagHelperAttribute_4);
+        if (accountManageCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues == null)
+          throw new InvalidOperationException(accountManageCshtml.InvalidTagHelperIndexerAssignment("asp-route-id", "Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper", "RouteValues"));
+        accountManageCshtml.BeginWriteTagHelperAttribute();
+        accountManageCshtml.WriteLiteral(item.Id);
+        accountManageCshtml.__tagHelperStringValueBuffer = accountManageCshtml.EndWriteTagHelperAttribute();
+        accountManageCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues["id"] = accountManageCshtml.__tagHelperStringValueBuffer;
+        accountManageCshtml.__tagHelperExecutionContext.AddTagHelperAttribute("asp-route-id", (object) accountManageCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues["id"], HtmlAttributeValueStyle.DoubleQuotes);
+        accountManageCshtml.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Account_Manage_cshtml.__tagHelperAttribute_5);
+        accountManageCshtml.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Account_Manage_cshtml.__tagHelperAttribute_6);
+        await accountManageCshtml.__tagHelperRunner.RunAsync(accountManageCshtml.__tagHelperExecutionContext);
+        if (!accountManageCshtml.__tagHelperExecutionContext.Output.IsContentModified)
+          await accountManageCshtml.__tagHelperExecutionContext.SetOutputContentAsync();
+        accountManageCshtml.Write((object) accountManageCshtml.__tagHelperExecutionContext.Output);
+        accountManageCshtml.__tagHelperExecutionContext = accountManageCshtml.__tagHelperScopeManager.End();
+        accountManageCshtml.EndContext();
+        accountManageCshtml.BeginContext(1522, 72, true);
+        accountManageCshtml.WriteLiteral("\r\n                    </div>\r\n                </td>\r\n            </tr>\r\n");
+        accountManageCshtml.EndContext();
+      }
+      accountManageCshtml.BeginContext(1607, 149, true);
+      accountManageCshtml.WriteLiteral("    </tbody>\r\n</table>\r\n<script>\r\n    function DeleteConfirm() {\r\n        return confirm(\"Are you going to delete user really?\");\r\n    }\r\n</script>\r\n");
+      accountManageCshtml.EndContext();
+    }
+
+    [RazorInject]
+    public IModelExpressionProvider ModelExpressionProvider { get; private set; }
+
+    [RazorInject]
+    public IUrlHelper Url { get; private set; }
+
+    [RazorInject]
+    public IViewComponentHelper Component { get; private set; }
+
+    [RazorInject]
+    public IJsonHelper Json { get; private set; }
+
+    [RazorInject]
+    public IHtmlHelper<IEnumerable<ApplicationUser>> Html { get; private set; }
+  }
+}

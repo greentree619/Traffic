@@ -1,24 +1,78 @@
-﻿@model ShowRecoveryCodesViewModel
-@{
-    ViewData["Title"] = "Recovery codes";
-    ViewData.AddActivePage(ManageNavPages.TwoFactorAuthentication);
-}
+﻿// Decompiled with JetBrains decompiler
+// Type: AspNetCore._Views_Manage_ShowRecoveryCodes_cshtml
+// Assembly: Traffic.PrecompiledViews, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+// MVID: 8B37BA40-0390-40A7-A536-D9CCDBC36390
+// Assembly location: D:\Workstation\TonniProjects\TrafficWebDeploy\Traffic.PrecompiledViews.dll
 
-<h4>@ViewData["Title"]</h4>
-<div class="alert alert-warning" role="alert">
-    <p>
-        <span class="glyphicon glyphicon-warning-sign"></span>
-        <strong>Put these codes in a safe place.</strong>
-    </p>
-    <p>
-        If you lose your device and don't have the recovery codes you will lose access to your account.
-    </p>
-</div>
-<div class="row">
-    <div class="col-md-12">
-        @for (var row = 0; row < Model.RecoveryCodes.Length; row += 2)
-        {
-            <code>@Model.RecoveryCodes[row]</code><text>&nbsp;</text><code>@Model.RecoveryCodes[row + 1]</code><br />
-        }
-    </div>
-</div>
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Razor;
+using Microsoft.AspNetCore.Mvc.Razor.Internal;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.Mvc.ViewFeatures;
+using System.Threading.Tasks;
+using Traffic.Models.ManageViewModels;
+using Traffic.Views.Manage;
+
+namespace AspNetCore
+{
+  public class _Views_Manage_ShowRecoveryCodes_cshtml : RazorPage<ShowRecoveryCodesViewModel>
+  {
+    public virtual async Task ExecuteAsync()
+    {
+      _Views_Manage_ShowRecoveryCodes_cshtml recoveryCodesCshtml = this;
+      recoveryCodesCshtml.ViewData["Title"] = (object) "Recovery codes";
+      recoveryCodesCshtml.ViewData.AddActivePage(ManageNavPages.TwoFactorAuthentication);
+      recoveryCodesCshtml.BeginContext(154, 6, true);
+      recoveryCodesCshtml.WriteLiteral("\r\n<h4>");
+      recoveryCodesCshtml.EndContext();
+      recoveryCodesCshtml.BeginContext(161, 17, false);
+      recoveryCodesCshtml.Write(recoveryCodesCshtml.ViewData["Title"]);
+      recoveryCodesCshtml.EndContext();
+      recoveryCodesCshtml.BeginContext(178, 377, true);
+      recoveryCodesCshtml.WriteLiteral("</h4>\r\n<div class=\"alert alert-warning\" role=\"alert\">\r\n    <p>\r\n        <span class=\"glyphicon glyphicon-warning-sign\"></span>\r\n        <strong>Put these codes in a safe place.</strong>\r\n    </p>\r\n    <p>\r\n        If you lose your device and don't have the recovery codes you will lose access to your account.\r\n    </p>\r\n</div>\r\n<div class=\"row\">\r\n    <div class=\"col-md-12\">\r\n");
+      recoveryCodesCshtml.EndContext();
+      for (int index = 0; index < recoveryCodesCshtml.Model.RecoveryCodes.Length; index += 2)
+      {
+        recoveryCodesCshtml.BeginContext(638, 18, true);
+        recoveryCodesCshtml.WriteLiteral("            <code>");
+        recoveryCodesCshtml.EndContext();
+        recoveryCodesCshtml.BeginContext(657, 24, false);
+        recoveryCodesCshtml.Write(recoveryCodesCshtml.Model.RecoveryCodes[index]);
+        recoveryCodesCshtml.EndContext();
+        recoveryCodesCshtml.BeginContext(681, 7, true);
+        recoveryCodesCshtml.WriteLiteral("</code>");
+        recoveryCodesCshtml.EndContext();
+        recoveryCodesCshtml.BeginContext(694, 6, true);
+        recoveryCodesCshtml.WriteLiteral("&nbsp;");
+        recoveryCodesCshtml.EndContext();
+        recoveryCodesCshtml.BeginContext(707, 6, true);
+        recoveryCodesCshtml.WriteLiteral("<code>");
+        recoveryCodesCshtml.EndContext();
+        recoveryCodesCshtml.BeginContext(714, 28, false);
+        recoveryCodesCshtml.Write(recoveryCodesCshtml.Model.RecoveryCodes[index + 1]);
+        recoveryCodesCshtml.EndContext();
+        recoveryCodesCshtml.BeginContext(742, 15, true);
+        recoveryCodesCshtml.WriteLiteral("</code><br />\r\n");
+        recoveryCodesCshtml.EndContext();
+      }
+      recoveryCodesCshtml.BeginContext(768, 18, true);
+      recoveryCodesCshtml.WriteLiteral("    </div>\r\n</div>");
+      recoveryCodesCshtml.EndContext();
+    }
+
+    [RazorInject]
+    public IModelExpressionProvider ModelExpressionProvider { get; private set; }
+
+    [RazorInject]
+    public IUrlHelper Url { get; private set; }
+
+    [RazorInject]
+    public IViewComponentHelper Component { get; private set; }
+
+    [RazorInject]
+    public IJsonHelper Json { get; private set; }
+
+    [RazorInject]
+    public IHtmlHelper<ShowRecoveryCodesViewModel> Html { get; private set; }
+  }
+}

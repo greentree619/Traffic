@@ -1,87 +1,132 @@
-﻿@using System.Collections.Generic
-@using System.Linq
-@using Microsoft.AspNetCore.Http
-@using Microsoft.AspNetCore.Http.Authentication
-@model LoginViewModel
-@inject SignInManager<ApplicationUser> SignInManager
+﻿// Decompiled with JetBrains decompiler
+// Type: AspNetCore._Views_Account_Login_cshtml
+// Assembly: Traffic.PrecompiledViews, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+// MVID: 8B37BA40-0390-40A7-A536-D9CCDBC36390
+// Assembly location: D:\Workstation\TonniProjects\TrafficWebDeploy\Traffic.PrecompiledViews.dll
 
-@{
-    ViewData["Title"] = "Log in";
-}
+using Microsoft.AspNetCore.Html;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Razor;
+using Microsoft.AspNetCore.Mvc.Razor.Internal;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.Mvc.TagHelpers;
+using Microsoft.AspNetCore.Mvc.ViewFeatures;
+using Microsoft.AspNetCore.Razor.Runtime.TagHelpers;
+using Microsoft.AspNetCore.Razor.TagHelpers;
+using System;
+using System.Linq.Expressions;
+using System.Text.Encodings.Web;
+using System.Threading.Tasks;
+using Traffic.Models;
+using Traffic.Models.AccountViewModels;
 
-<h2>@ViewData["Title"]</h2>
-<div class="row">
-    <div class="col-md-4">
-        <section>
-            <form asp-route-returnurl="@ViewData["ReturnUrl"]" method="post">
-                <h4>Use a local account to log in.</h4>
-                <hr />
-                <div asp-validation-summary="All" class="text-danger"></div>
-                <div class="form-group">
-                    <label asp-for="Email"></label>
-                    <input asp-for="Email" class="form-control" />
-                    <span asp-validation-for="Email" class="text-danger"></span>
-                </div>
-                <div class="form-group">
-                    <label asp-for="Password"></label>
-                    <input asp-for="Password" class="form-control" />
-                    <span asp-validation-for="Password" class="text-danger"></span>
-                </div>
-                <div class="form-group">
-                    <div class="checkbox">
-                        <label asp-for="RememberMe">
-                            <input asp-for="RememberMe" />
-                            @Html.DisplayNameFor(m => m.RememberMe)
-                        </label>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <button type="submit" class="btn btn-default">Log in</button>
-                </div>
-                <div class="form-group">
-                    <p>
-                        <a asp-action="ForgotPassword">Forgot your password?</a>
-                    </p>
-                    <p>
-                        <a asp-action="Register" asp-route-returnurl="@ViewData["ReturnUrl"]">Register as a new user?</a>
-                    </p>
-                </div>
-            </form>
-        </section>
-    </div>
-    <div class="col-md-6 col-md-offset-2">
-        <section>
-            <h4>Use another service to log in.</h4>
-            <hr />
-            @{
-                var loginProviders = (await SignInManager.GetExternalAuthenticationSchemesAsync()).ToList();
-                if (loginProviders.Count == 0)
-                {
-                    <div>
-                        <p>
-                            There are no external authentication services configured. See <a href="https://go.microsoft.com/fwlink/?LinkID=532715">this article</a>
-                            for details on setting up this ASP.NET application to support logging in via external services.
-                        </p>
-                    </div>
-                }
-                else
-                {
-                    <form asp-action="ExternalLogin" asp-route-returnurl="@ViewData["ReturnUrl"]" method="post" class="form-horizontal">
-                        <div>
-                            <p>
-                                @foreach (var provider in loginProviders)
-                                {
-                                    <button type="submit" class="btn btn-default" name="provider" value="@provider.Name" title="Log in using your @provider.DisplayName account">@provider.Name</button>
-                                }
-                            </p>
-                        </div>
-                    </form>
-                }
-            }
-        </section>
-    </div>
-</div>
+namespace AspNetCore
+{
+  public class _Views_Account_Login_cshtml : RazorPage<LoginViewModel>
+  {
+    private static readonly TagHelperAttribute __tagHelperAttribute_0 = new TagHelperAttribute("class", (object) new HtmlString("input100"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_1 = new TagHelperAttribute("placeholder", (object) new HtmlString("Enter Email"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_2 = new TagHelperAttribute("class", (object) new HtmlString("text-danger"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_3 = new TagHelperAttribute("placeholder", (object) new HtmlString("Enter password"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_4 = new TagHelperAttribute("style", (object) new HtmlString("margin-top: 2px;"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_5 = new TagHelperAttribute("class", (object) new HtmlString("label-checkbox100"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_6 = new TagHelperAttribute("asp-action", (object) "ForgotPassword", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_7 = new TagHelperAttribute("class", (object) new HtmlString("txt1"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_8 = new TagHelperAttribute("method", (object) "post", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_9 = new TagHelperAttribute("class", (object) new HtmlString("login100-form validate-form"), HtmlAttributeValueStyle.DoubleQuotes);
+    private string __tagHelperStringValueBuffer;
+    private TagHelperExecutionContext __tagHelperExecutionContext;
+    private TagHelperRunner __tagHelperRunner = new TagHelperRunner();
+    private TagHelperScopeManager __backed__tagHelperScopeManager;
+    private FormTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper;
+    private RenderAtEndOfFormTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper;
+    private InputTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper;
+    private ValidationMessageTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper;
+    private LabelTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_LabelTagHelper;
+    private AnchorTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper;
+    private static readonly Expression<Func<LoginViewModel, string>> __h0 = (Expression<Func<LoginViewModel, string>>) (__model => __model.Email);
+    private static readonly Expression<Func<LoginViewModel, string>> __h1 = (Expression<Func<LoginViewModel, string>>) (__model => __model.Email);
+    private static readonly Expression<Func<LoginViewModel, string>> __h2 = (Expression<Func<LoginViewModel, string>>) (__model => __model.Password);
+    private static readonly Expression<Func<LoginViewModel, string>> __h3 = (Expression<Func<LoginViewModel, string>>) (__model => __model.Password);
+    private static readonly Expression<Func<LoginViewModel, bool>> __h4 = (Expression<Func<LoginViewModel, bool>>) (__model => __model.RememberMe);
+    private static readonly Expression<Func<LoginViewModel, bool>> __h5 = (Expression<Func<LoginViewModel, bool>>) (m => m.RememberMe);
+    private static readonly Expression<Func<LoginViewModel, bool>> __h6 = (Expression<Func<LoginViewModel, bool>>) (__model => __model.RememberMe);
 
-@section Scripts {
-    @await Html.PartialAsync("_ValidationScriptsPartial")
+    private TagHelperScopeManager __tagHelperScopeManager
+    {
+      get
+      {
+        if (this.__backed__tagHelperScopeManager == null)
+          this.__backed__tagHelperScopeManager = new TagHelperScopeManager(new Action<HtmlEncoder>(((RazorPageBase) this).StartTagHelperWritingScope), new Func<TagHelperContent>(((RazorPageBase) this).EndTagHelperWritingScope));
+        return this.__backed__tagHelperScopeManager;
+      }
+    }
+
+    public virtual async Task ExecuteAsync()
+    {
+      _Views_Account_Login_cshtml accountLoginCshtml = this;
+      accountLoginCshtml.BeginContext(215, 2, true);
+      accountLoginCshtml.WriteLiteral("\r\n");
+      accountLoginCshtml.EndContext();
+      accountLoginCshtml.ViewData["Title"] = (object) " LOG IN";
+      accountLoginCshtml.BeginContext(260, 2, true);
+      accountLoginCshtml.WriteLiteral("\r\n");
+      accountLoginCshtml.EndContext();
+      accountLoginCshtml.BeginContext(1628, 269, true);
+      accountLoginCshtml.WriteLiteral("<div class=\"limiter\">\r\n    <div class=\"container-login100\">\r\n        <div class=\"wrap-login100\">\r\n            <div class=\"login100-form-title\" style=\"background-image: url(/images/bg-01.jpg);\">\r\n                <span class=\"login100-form-title-1\">\r\n                    ");
+      accountLoginCshtml.EndContext();
+      accountLoginCshtml.BeginContext(1898, 17, false);
+      accountLoginCshtml.Write(accountLoginCshtml.ViewData["Title"]);
+      accountLoginCshtml.EndContext();
+      accountLoginCshtml.BeginContext(1915, 59, true);
+      accountLoginCshtml.WriteLiteral("\r\n                </span>\r\n            </div>\r\n            ");
+      accountLoginCshtml.EndContext();
+      accountLoginCshtml.BeginContext(1974, 1890, false);
+      // ISSUE: reference to a compiler-generated method
+      accountLoginCshtml.__tagHelperExecutionContext = accountLoginCshtml.__tagHelperScopeManager.Begin("form", TagMode.StartTagAndEndTag, "d5d1fbe889b64741b0f1577e3c6bedf9", new Func<Task>(accountLoginCshtml.\u003CExecuteAsync\u003Eb__22_0));
+      accountLoginCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper = accountLoginCshtml.CreateTagHelper<FormTagHelper>();
+      accountLoginCshtml.__tagHelperExecutionContext.Add((ITagHelper) accountLoginCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper);
+      accountLoginCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper = accountLoginCshtml.CreateTagHelper<RenderAtEndOfFormTagHelper>();
+      accountLoginCshtml.__tagHelperExecutionContext.Add((ITagHelper) accountLoginCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper);
+      if (accountLoginCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper.RouteValues == null)
+        throw new InvalidOperationException(accountLoginCshtml.InvalidTagHelperIndexerAssignment("asp-route-returnurl", "Microsoft.AspNetCore.Mvc.TagHelpers.FormTagHelper", "RouteValues"));
+      accountLoginCshtml.BeginWriteTagHelperAttribute();
+      accountLoginCshtml.WriteLiteral(accountLoginCshtml.ViewData["ReturnUrl"]);
+      accountLoginCshtml.__tagHelperStringValueBuffer = accountLoginCshtml.EndWriteTagHelperAttribute();
+      accountLoginCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper.RouteValues["returnurl"] = accountLoginCshtml.__tagHelperStringValueBuffer;
+      accountLoginCshtml.__tagHelperExecutionContext.AddTagHelperAttribute("asp-route-returnurl", (object) accountLoginCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper.RouteValues["returnurl"], HtmlAttributeValueStyle.DoubleQuotes);
+      accountLoginCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper.Method = (string) _Views_Account_Login_cshtml.__tagHelperAttribute_8.Value;
+      accountLoginCshtml.__tagHelperExecutionContext.AddTagHelperAttribute(_Views_Account_Login_cshtml.__tagHelperAttribute_8);
+      accountLoginCshtml.__tagHelperExecutionContext.AddHtmlAttribute(_Views_Account_Login_cshtml.__tagHelperAttribute_9);
+      await accountLoginCshtml.__tagHelperRunner.RunAsync(accountLoginCshtml.__tagHelperExecutionContext);
+      if (!accountLoginCshtml.__tagHelperExecutionContext.Output.IsContentModified)
+        await accountLoginCshtml.__tagHelperExecutionContext.SetOutputContentAsync();
+      accountLoginCshtml.Write((object) accountLoginCshtml.__tagHelperExecutionContext.Output);
+      accountLoginCshtml.__tagHelperExecutionContext = accountLoginCshtml.__tagHelperScopeManager.End();
+      accountLoginCshtml.EndContext();
+      accountLoginCshtml.BeginContext(3864, 38, true);
+      accountLoginCshtml.WriteLiteral("\r\n        </div>\r\n    </div>\r\n</div>\r\n");
+      accountLoginCshtml.EndContext();
+      // ISSUE: reference to a compiler-generated method
+      accountLoginCshtml.DefineSection("Scripts", new RenderAsyncDelegate(accountLoginCshtml.\u003CExecuteAsync\u003Eb__22_8));
+    }
+
+    [RazorInject]
+    public Microsoft.AspNetCore.Identity.SignInManager<ApplicationUser> SignInManager { get; private set; }
+
+    [RazorInject]
+    public IModelExpressionProvider ModelExpressionProvider { get; private set; }
+
+    [RazorInject]
+    public IUrlHelper Url { get; private set; }
+
+    [RazorInject]
+    public IViewComponentHelper Component { get; private set; }
+
+    [RazorInject]
+    public IJsonHelper Json { get; private set; }
+
+    [RazorInject]
+    public IHtmlHelper<LoginViewModel> Html { get; private set; }
+  }
 }

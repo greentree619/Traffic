@@ -1,23 +1,61 @@
-﻿@{ 
-    Layout = "/Views/Shared/_Layout.cshtml";
+﻿// Decompiled with JetBrains decompiler
+// Type: AspNetCore._Views_Manage__Layout_cshtml
+// Assembly: Traffic.PrecompiledViews, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+// MVID: 8B37BA40-0390-40A7-A536-D9CCDBC36390
+// Assembly location: D:\Workstation\TonniProjects\TrafficWebDeploy\Traffic.PrecompiledViews.dll
+
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Razor;
+using Microsoft.AspNetCore.Mvc.Razor.Internal;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.Mvc.ViewFeatures;
+using System.Threading.Tasks;
+
+namespace AspNetCore
+{
+  public class _Views_Manage__Layout_cshtml : RazorPage<object>
+  {
+    public virtual async Task ExecuteAsync()
+    {
+      _Views_Manage__Layout_cshtml manageLayoutCshtml = this;
+      // ISSUE: explicit non-virtual call
+      __nonvirtual (manageLayoutCshtml.Layout) = "/Views/Shared/_Layout.cshtml";
+      manageLayoutCshtml.BeginContext(54, 163, true);
+      manageLayoutCshtml.WriteLiteral("\r\n<h2>Manage your account</h2>\r\n\r\n<div>\r\n    <h4>Change your account settings</h4>\r\n    <hr />\r\n    <div class=\"row\">\r\n        <div class=\"col-md-3\">\r\n            ");
+      manageLayoutCshtml.EndContext();
+      manageLayoutCshtml.BeginContext(218, 37, false);
+      object obj = (object) await HtmlHelperPartialExtensions.PartialAsync((IHtmlHelper) manageLayoutCshtml.Html, "_ManageNav");
+      manageLayoutCshtml.Write(obj);
+      manageLayoutCshtml.EndContext();
+      manageLayoutCshtml.BeginContext((int) byte.MaxValue, 62, true);
+      manageLayoutCshtml.WriteLiteral("\r\n        </div>\r\n        <div class=\"col-md-9\">\r\n            ");
+      manageLayoutCshtml.EndContext();
+      manageLayoutCshtml.BeginContext(318, 12, false);
+      manageLayoutCshtml.Write((object) manageLayoutCshtml.RenderBody());
+      manageLayoutCshtml.EndContext();
+      manageLayoutCshtml.BeginContext(330, 40, true);
+      manageLayoutCshtml.WriteLiteral("\r\n        </div>\r\n    </div>\r\n</div>\r\n\r\n");
+      manageLayoutCshtml.EndContext();
+      // ISSUE: reference to a compiler-generated method
+      manageLayoutCshtml.DefineSection("Scripts", new RenderAsyncDelegate(manageLayoutCshtml.\u003CExecuteAsync\u003Eb__0_0));
+      manageLayoutCshtml.BeginContext(441, 10, true);
+      manageLayoutCshtml.WriteLiteral("        \r\n");
+      manageLayoutCshtml.EndContext();
+    }
+
+    [RazorInject]
+    public IModelExpressionProvider ModelExpressionProvider { get; private set; }
+
+    [RazorInject]
+    public IUrlHelper Url { get; private set; }
+
+    [RazorInject]
+    public IViewComponentHelper Component { get; private set; }
+
+    [RazorInject]
+    public IJsonHelper Json { get; private set; }
+
+    [RazorInject]
+    public IHtmlHelper<object> Html { get; private set; }
+  }
 }
-
-<h2>Manage your account</h2>
-
-<div>
-    <h4>Change your account settings</h4>
-    <hr />
-    <div class="row">
-        <div class="col-md-3">
-            @await Html.PartialAsync("_ManageNav")
-        </div>
-        <div class="col-md-9">
-            @RenderBody()
-        </div>
-    </div>
-</div>
-
-@section Scripts {
-    @RenderSection("Scripts", required: false)
-}
-        

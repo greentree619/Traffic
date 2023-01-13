@@ -1,45 +1,120 @@
-﻿@model IndexViewModel
-@{
-    ViewData["Title"] = "Profile";
-    ViewData.AddActivePage(ManageNavPages.Index);
-}
+﻿// Decompiled with JetBrains decompiler
+// Type: AspNetCore._Views_Manage_Index_cshtml
+// Assembly: Traffic.PrecompiledViews, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+// MVID: 8B37BA40-0390-40A7-A536-D9CCDBC36390
+// Assembly location: D:\Workstation\TonniProjects\TrafficWebDeploy\Traffic.PrecompiledViews.dll
 
-<h4>@ViewData["Title"]</h4>
-@Html.Partial("_StatusMessage", Model.StatusMessage)
-<div class="row">
-    <div class="col-md-6">
-        <form method="post">
-            <div asp-validation-summary="All" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="Username"></label>
-                <input asp-for="Username" class="form-control" disabled />
-            </div>
-            <div class="form-group">
-                <label asp-for="Email"></label>
-                @if (Model.IsEmailConfirmed)
-                {
-                    <div class="input-group">
-                        <input asp-for="Email" class="form-control" />
-                        <span class="input-group-addon" aria-hidden="true"><span class="glyphicon glyphicon-ok text-success"></span></span>
-                    </div>
-                }
-                else
-                {
-                    <input asp-for="Email" class="form-control" />
-                    <button asp-action="SendVerificationEmail" class="btn btn-link">Send verification email</button>
-                }
-                <span asp-validation-for="Email" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="PhoneNumber"></label>
-                <input asp-for="PhoneNumber" class="form-control" />
-                <span asp-validation-for="PhoneNumber" class="text-danger"></span>
-            </div>
-            <button type="submit" class="btn btn-default">Save</button>
-        </form>
-    </div>
-</div>
+using Microsoft.AspNetCore.Html;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Razor;
+using Microsoft.AspNetCore.Mvc.Razor.Internal;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.Mvc.TagHelpers;
+using Microsoft.AspNetCore.Mvc.ViewFeatures;
+using Microsoft.AspNetCore.Razor.Runtime.TagHelpers;
+using Microsoft.AspNetCore.Razor.TagHelpers;
+using System;
+using System.Linq.Expressions;
+using System.Text.Encodings.Web;
+using System.Threading.Tasks;
+using Traffic.Models.ManageViewModels;
+using Traffic.Views.Manage;
 
-@section Scripts {
-    @await Html.PartialAsync("_ValidationScriptsPartial")
+namespace AspNetCore
+{
+  public class _Views_Manage_Index_cshtml : RazorPage<IndexViewModel>
+  {
+    private static readonly TagHelperAttribute __tagHelperAttribute_0 = new TagHelperAttribute("class", (object) new HtmlString("text-danger"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_1 = new TagHelperAttribute("class", (object) new HtmlString("form-control"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_2 = new TagHelperAttribute("asp-action", (object) "SendVerificationEmail", HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_3 = new TagHelperAttribute("class", (object) new HtmlString("btn btn-link"), HtmlAttributeValueStyle.DoubleQuotes);
+    private static readonly TagHelperAttribute __tagHelperAttribute_4 = new TagHelperAttribute("method", (object) "post", HtmlAttributeValueStyle.DoubleQuotes);
+    private string __tagHelperStringValueBuffer;
+    private TagHelperExecutionContext __tagHelperExecutionContext;
+    private TagHelperRunner __tagHelperRunner = new TagHelperRunner();
+    private TagHelperScopeManager __backed__tagHelperScopeManager;
+    private FormTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper;
+    private RenderAtEndOfFormTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper;
+    private ValidationSummaryTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_ValidationSummaryTagHelper;
+    private LabelTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_LabelTagHelper;
+    private InputTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper;
+    private FormActionTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_FormActionTagHelper;
+    private ValidationMessageTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper;
+    private static readonly Expression<Func<IndexViewModel, string>> __h0 = (Expression<Func<IndexViewModel, string>>) (__model => __model.Username);
+    private static readonly Expression<Func<IndexViewModel, string>> __h1 = (Expression<Func<IndexViewModel, string>>) (__model => __model.Username);
+    private static readonly Expression<Func<IndexViewModel, string>> __h2 = (Expression<Func<IndexViewModel, string>>) (__model => __model.Email);
+    private static readonly Expression<Func<IndexViewModel, string>> __h3 = (Expression<Func<IndexViewModel, string>>) (__model => __model.Email);
+    private static readonly Expression<Func<IndexViewModel, string>> __h4 = (Expression<Func<IndexViewModel, string>>) (__model => __model.Email);
+    private static readonly Expression<Func<IndexViewModel, string>> __h5 = (Expression<Func<IndexViewModel, string>>) (__model => __model.Email);
+    private static readonly Expression<Func<IndexViewModel, string>> __h6 = (Expression<Func<IndexViewModel, string>>) (__model => __model.PhoneNumber);
+    private static readonly Expression<Func<IndexViewModel, string>> __h7 = (Expression<Func<IndexViewModel, string>>) (__model => __model.PhoneNumber);
+    private static readonly Expression<Func<IndexViewModel, string>> __h8 = (Expression<Func<IndexViewModel, string>>) (__model => __model.PhoneNumber);
+
+    private TagHelperScopeManager __tagHelperScopeManager
+    {
+      get
+      {
+        if (this.__backed__tagHelperScopeManager == null)
+          this.__backed__tagHelperScopeManager = new TagHelperScopeManager(new Action<HtmlEncoder>(((RazorPageBase) this).StartTagHelperWritingScope), new Func<TagHelperContent>(((RazorPageBase) this).EndTagHelperWritingScope));
+        return this.__backed__tagHelperScopeManager;
+      }
+    }
+
+    public virtual async Task ExecuteAsync()
+    {
+      _Views_Manage_Index_cshtml manageIndexCshtml = this;
+      manageIndexCshtml.ViewData["Title"] = (object) "Profile";
+      manageIndexCshtml.ViewData.AddActivePage(ManageNavPages.Index);
+      manageIndexCshtml.BeginContext(117, 6, true);
+      manageIndexCshtml.WriteLiteral("\r\n<h4>");
+      manageIndexCshtml.EndContext();
+      manageIndexCshtml.BeginContext(124, 17, false);
+      manageIndexCshtml.Write(manageIndexCshtml.ViewData["Title"]);
+      manageIndexCshtml.EndContext();
+      manageIndexCshtml.BeginContext(141, 7, true);
+      manageIndexCshtml.WriteLiteral("</h4>\r\n");
+      manageIndexCshtml.EndContext();
+      manageIndexCshtml.BeginContext(149, 51, false);
+      manageIndexCshtml.Write((object) manageIndexCshtml.Html.Partial("_StatusMessage", (object) manageIndexCshtml.Model.StatusMessage));
+      manageIndexCshtml.EndContext();
+      manageIndexCshtml.BeginContext(200, 57, true);
+      manageIndexCshtml.WriteLiteral("\r\n<div class=\"row\">\r\n    <div class=\"col-md-6\">\r\n        ");
+      manageIndexCshtml.EndContext();
+      manageIndexCshtml.BeginContext(257, 1454, false);
+      // ISSUE: reference to a compiler-generated method
+      manageIndexCshtml.__tagHelperExecutionContext = manageIndexCshtml.__tagHelperScopeManager.Begin("form", TagMode.StartTagAndEndTag, "9e61bf7dab114cf2bdc244e069038b5c", new Func<Task>(manageIndexCshtml.\u003CExecuteAsync\u003Eb__18_0));
+      manageIndexCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper = manageIndexCshtml.CreateTagHelper<FormTagHelper>();
+      manageIndexCshtml.__tagHelperExecutionContext.Add((ITagHelper) manageIndexCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper);
+      manageIndexCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper = manageIndexCshtml.CreateTagHelper<RenderAtEndOfFormTagHelper>();
+      manageIndexCshtml.__tagHelperExecutionContext.Add((ITagHelper) manageIndexCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper);
+      manageIndexCshtml.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper.Method = (string) _Views_Manage_Index_cshtml.__tagHelperAttribute_4.Value;
+      manageIndexCshtml.__tagHelperExecutionContext.AddTagHelperAttribute(_Views_Manage_Index_cshtml.__tagHelperAttribute_4);
+      await manageIndexCshtml.__tagHelperRunner.RunAsync(manageIndexCshtml.__tagHelperExecutionContext);
+      if (!manageIndexCshtml.__tagHelperExecutionContext.Output.IsContentModified)
+        await manageIndexCshtml.__tagHelperExecutionContext.SetOutputContentAsync();
+      manageIndexCshtml.Write((object) manageIndexCshtml.__tagHelperExecutionContext.Output);
+      manageIndexCshtml.__tagHelperExecutionContext = manageIndexCshtml.__tagHelperScopeManager.End();
+      manageIndexCshtml.EndContext();
+      manageIndexCshtml.BeginContext(1711, 24, true);
+      manageIndexCshtml.WriteLiteral("\r\n    </div>\r\n</div>\r\n\r\n");
+      manageIndexCshtml.EndContext();
+      // ISSUE: reference to a compiler-generated method
+      manageIndexCshtml.DefineSection("Scripts", new RenderAsyncDelegate(manageIndexCshtml.\u003CExecuteAsync\u003Eb__18_12));
+    }
+
+    [RazorInject]
+    public IModelExpressionProvider ModelExpressionProvider { get; private set; }
+
+    [RazorInject]
+    public IUrlHelper Url { get; private set; }
+
+    [RazorInject]
+    public IViewComponentHelper Component { get; private set; }
+
+    [RazorInject]
+    public IJsonHelper Json { get; private set; }
+
+    [RazorInject]
+    public IHtmlHelper<IndexViewModel> Html { get; private set; }
+  }
 }
